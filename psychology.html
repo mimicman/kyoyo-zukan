@@ -1,0 +1,861 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="favicon.svg">
+<title>心理学・脳｜教養の図解</title>
+<style>
+/* ===== 教養の図解 共通スタイル（全ページで同一のものを使う） ===== */
+:root {
+  --bg: #f7f5f0;
+  --surface: #ffffff;
+  --ink: #1f2328;
+  --ink-soft: #57606a;
+  --line: #d8d4ca;
+  --accent: #b5532a;        /* 見出し・強調 */
+  --c-phil: #6a4fb3;        /* 哲学 */
+  --c-hist: #b5532a;        /* 歴史 */
+  --c-econ: #1f7a5c;        /* 経済 */
+  --c-reli: #a07a12;        /* 宗教 */
+  --c-sci:  #2a63b5;        /* 科学 */
+  --c-art:  #b53a6b;        /* 芸術 */
+  --c-poli: #3d5a80;        /* 政治・法 */
+  --c-psy:  #0f7c86;        /* 心理学 */
+  --c-jp:   #a8323a;        /* 日本史 */
+  --tint: rgba(181, 83, 42, 0.08);
+  --radius: 12px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15171a; --surface: #1e2125; --ink: #e8e6e1; --ink-soft: #a3a8ae; --line: #3a3f45;
+    --accent: #e08a5f; --c-phil: #a58ee8; --c-hist: #e08a5f; --c-econ: #5cc39d;
+    --c-reli: #d9b24a; --c-sci: #6f9ee8; --c-art: #e57ba3; --c-poli: #8fa9d1; --c-psy: #4fc1c9; --c-jp: #e2767d; --tint: rgba(224, 138, 95, 0.12); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15171a; --surface: #1e2125; --ink: #e8e6e1; --ink-soft: #a3a8ae; --line: #3a3f45;
+  --accent: #e08a5f; --c-phil: #a58ee8; --c-hist: #e08a5f; --c-econ: #5cc39d;
+  --c-reli: #d9b24a; --c-sci: #6f9ee8; --c-art: #e57ba3; --c-poli: #8fa9d1; --c-psy: #4fc1c9; --c-jp: #e2767d; --tint: rgba(224, 138, 95, 0.12); color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  font-size: 16px; line-height: 1.8;
+}
+main { max-width: 860px; margin: 0 auto; padding-block: 0 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+nav.top {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg);
+  border-bottom: 1px solid var(--line); overflow-x: auto; white-space: nowrap;
+}
+nav.top ul { display: flex; gap: 4px; list-style: none; margin: 0 auto; padding-block: 8px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); max-width: 860px; }
+nav.top a {
+  display: inline-block; padding: 4px 12px; border-radius: 999px; color: var(--ink-soft);
+  text-decoration: none; font-size: 14px;
+}
+nav.top a[aria-current="page"] { background: var(--accent); color: #fff; }
+header.hero { padding: 32px 0 8px; }
+header.hero .kicker { color: var(--accent); font-weight: 700; font-size: 13px; letter-spacing: .08em; }
+h1 { font-size: 28px; line-height: 1.35; margin: 4px 0 12px; }
+h2 { font-size: 22px; line-height: 1.4; margin: 48px 0 12px; padding-left: 12px; border-left: 5px solid var(--accent); }
+h3 { font-size: 18px; margin: 28px 0 8px; }
+p { margin: 0 0 14px; }
+.lead { color: var(--ink-soft); }
+.toc { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 20px; }
+.toc ol { margin: 0; padding-left: 1.2em; }
+.toc a { color: var(--ink); }
+figure.diagram {
+  margin: 20px 0; background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 12px;
+}
+figure.diagram svg { display: block; width: 100%; height: auto; }
+figure.diagram figcaption { font-size: 13px; color: var(--ink-soft); margin-top: 8px; text-align: center; }
+/* SVG内の文字・線は必ずこのクラスで色を付ける（ダークモード対応のため直接の色指定はしない） */
+svg .t { fill: var(--ink); font-size: 14px; }
+svg .t-soft { fill: var(--ink-soft); font-size: 12px; }
+svg .t-strong { fill: var(--ink); font-size: 15px; font-weight: 700; }
+svg .ln { stroke: var(--line); stroke-width: 2; fill: none; }
+svg .ln-ink { stroke: var(--ink-soft); stroke-width: 1.5; fill: none; }
+svg .box { fill: var(--surface); stroke: var(--line); stroke-width: 1.5; }
+svg .phil { fill: var(--c-phil); } svg .hist { fill: var(--c-hist); } svg .econ { fill: var(--c-econ); }
+svg .reli { fill: var(--c-reli); } svg .sci { fill: var(--c-sci); } svg .art { fill: var(--c-art); }
+svg .poli { fill: var(--c-poli); } svg .psy { fill: var(--c-psy); } svg .jp { fill: var(--c-jp); }
+svg .s-phil { stroke: var(--c-phil); } svg .s-hist { stroke: var(--c-hist); } svg .s-econ { stroke: var(--c-econ); }
+svg .s-reli { stroke: var(--c-reli); } svg .s-sci { stroke: var(--c-sci); } svg .s-art { stroke: var(--c-art); }
+svg .s-poli { stroke: var(--c-poli); } svg .s-psy { stroke: var(--c-psy); } svg .s-jp { stroke: var(--c-jp); }
+svg .on-color { fill: #fff; font-size: 13px; font-weight: 700; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 16px 0; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; }
+.card h4 { margin: 0 0 6px; font-size: 16px; }
+.card p { margin: 0; font-size: 15px; }
+.card .tag { display: inline-block; font-size: 12px; padding: 0 8px; border-radius: 999px; background: var(--tint); color: var(--accent); margin-bottom: 6px; }
+.point { background: var(--tint); border-radius: var(--radius); padding: 12px 16px; margin: 16px 0; }
+.point strong { color: var(--accent); }
+.table-wrap { overflow-x: auto; margin: 16px 0; }
+table { border-collapse: collapse; width: 100%; min-width: 520px; background: var(--surface); font-size: 15px; }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: var(--tint); white-space: nowrap; }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 16px; margin: 10px 0; }
+details summary { cursor: pointer; font-weight: 700; }
+.next { margin-top: 48px; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.next a { display: block; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; color: var(--ink); text-decoration: none; }
+.next a span { display: block; font-size: 12px; color: var(--ink-soft); }
+footer { margin-top: 48px; font-size: 13px; color: var(--ink-soft); }
+@media (max-width: 480px) { h1 { font-size: 24px; } h2 { font-size: 20px; } }
+/* 図はスマホ幅で組んでいるので、PCで拡大しすぎないよう最大幅を抑える */
+figure.diagram svg { max-width: 520px; margin: 0 auto; }
+/* ダークでは分野色が明るくなるため、色の上の文字は暗くする */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) svg .on-color { fill: var(--bg); }
+  :root:not([data-theme="light"]) nav.top a[aria-current="page"] { color: var(--bg); }
+}
+:root[data-theme="dark"] svg .on-color { fill: var(--bg); }
+:root[data-theme="dark"] nav.top a[aria-current="page"] { color: var(--bg); }
+/* 考え方・用語の解説（dl.glossary） */
+main a { color: var(--accent); }
+.glossary { display: grid; gap: 10px; margin: 16px 0; }
+.glossary > div { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 16px; scroll-margin-top: 64px; }
+.glossary dt { font-weight: 700; }
+.glossary dt .who { font-weight: 400; font-size: 13px; color: var(--ink-soft); margin-left: 0.5em; }
+.glossary dd { margin: 4px 0 0; font-size: 15px; }
+/* psychology固有 */
+.card .tag.psy-tag { background: rgba(15, 124, 134, 0.12); color: var(--c-psy); }
+.card p + p { margin-top: 6px; }
+.card h4 a { color: var(--ink); text-decoration-color: var(--c-psy); text-underline-offset: 3px; }
+figure.diagram svg a { cursor: pointer; }
+</style>
+</head>
+<body>
+<nav class="top" aria-label="教養の図解">
+  <ul>
+    <li><a href="index.html">全体地図</a></li>
+    <li><a href="philosophy.html">哲学・思想史</a></li>
+    <li><a href="religion.html">宗教</a></li>
+    <li><a href="world-history.html">世界史</a></li>
+    <li><a href="japan.html">日本史・日本文化</a></li>
+    <li><a href="politics.html">政治・法</a></li>
+    <li><a href="economics.html">経済・お金</a></li>
+    <li><a href="science.html">科学史</a></li>
+    <li><a href="psychology.html" aria-current="page">心理学・脳</a></li>
+    <li><a href="art.html">芸術</a></li>
+  </ul>
+</nav>
+<main>
+  <header class="hero">
+    <div class="kicker">教養の図解</div>
+    <h1>心理学・脳</h1>
+    <p class="lead">心理学が心をどう科学として扱ってきたかを系譜でたどり、脳の主な部位、2つの思考モードと認知バイアス、記憶の仕組み、動機づけを図で整理します。最後に、判断・学習・チームづくりへの活かし方をまとめます。</p>
+  </header>
+  <nav class="toc" aria-label="目次">
+    <ol>
+      <li><a href="#what">心理学とは何か</a></li>
+      <li><a href="#history">心理学の流れ</a></li>
+      <li><a href="#brain">脳の主な部位と働き</a></li>
+      <li><a href="#thinking">2つの思考モードと認知バイアス</a></li>
+      <li><a href="#memory">記憶の仕組みと学び方</a></li>
+      <li><a href="#motivation">動機づけ</a></li>
+      <li><a href="#work">仕事への活かし方</a></li>
+      <li><a href="#glossary">考え方・用語の解説</a></li>
+    </ol>
+  </nav>
+
+  <!-- 1. 心理学とは -->
+  <h2 id="what">心理学とは何か</h2>
+  <p>心理学は、知覚・記憶・思考・感情・動機といった心の働きと、それが表れる行動を、実験・観察・統計などの科学の方法で調べる学問です。「心とは何か」という問いは古代ギリシャ以来の哲学のテーマでしたが、19世紀に感覚の強さを数量で測る<a href="#g-psychophys">精神物理学</a>が生まれ、1879年にヴントがライプツィヒ大学に心理学の実験室を開いたことで、哲学から独立した学問になったとされます。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 370" role="img" aria-labelledby="fig1-t">
+      <title id="fig1-t">哲学の問いと生理学の方法が合流して心理学が生まれた図</title>
+      <defs>
+        <marker id="ap1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+          <path class="psy" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+      <rect class="box" x="10" y="10" width="160" height="84" rx="8"/>
+      <text class="t-strong" x="90" y="36" text-anchor="middle">哲学</text>
+      <text class="t" x="90" y="58" text-anchor="middle">心とは何か</text>
+      <text class="t" x="90" y="78" text-anchor="middle">どう知るのか</text>
+
+      <rect class="box" x="190" y="10" width="160" height="84" rx="8"/>
+      <text class="t-strong" x="270" y="36" text-anchor="middle">生理学</text>
+      <text class="t" x="270" y="58" text-anchor="middle">感覚や神経を</text>
+      <text class="t" x="270" y="78" text-anchor="middle">測って調べる</text>
+
+      <line class="ln s-psy" x1="90" y1="96" x2="150" y2="136" marker-end="url(#ap1)"/>
+      <line class="ln s-psy" x1="270" y1="96" x2="210" y2="136" marker-end="url(#ap1)"/>
+      <text class="t-soft" x="20" y="124">問い</text>
+      <text class="t-soft" x="340" y="124" text-anchor="end">方法</text>
+
+      <rect class="psy" x="60" y="140" width="240" height="64" rx="8"/>
+      <text class="on-color" x="180" y="166" text-anchor="middle">1879年 ヴントが</text>
+      <text class="on-color" x="180" y="188" text-anchor="middle">心理学の実験室を開く</text>
+
+      <line class="ln s-psy" x1="180" y1="206" x2="180" y2="230" marker-end="url(#ap1)"/>
+
+      <rect class="box" x="10" y="234" width="340" height="126" rx="8"/>
+      <text class="t-strong" x="180" y="260" text-anchor="middle">心を科学の方法で調べる</text>
+      <rect class="box" x="22" y="274" width="100" height="74" rx="6"/>
+      <text class="t-strong" x="72" y="296" text-anchor="middle">実験</text>
+      <text class="t-soft" x="72" y="316" text-anchor="middle">条件を変えて</text>
+      <text class="t-soft" x="72" y="334" text-anchor="middle">結果を比べる</text>
+      <rect class="box" x="130" y="274" width="100" height="74" rx="6"/>
+      <text class="t-strong" x="180" y="296" text-anchor="middle">観察・調査</text>
+      <text class="t-soft" x="180" y="316" text-anchor="middle">行動や回答を</text>
+      <text class="t-soft" x="180" y="334" text-anchor="middle">多く集める</text>
+      <rect class="box" x="238" y="274" width="100" height="74" rx="6"/>
+      <text class="t-strong" x="288" y="296" text-anchor="middle">統計</text>
+      <text class="t-soft" x="288" y="316" text-anchor="middle">偶然の差か</text>
+      <text class="t-soft" x="288" y="334" text-anchor="middle">どうか確かめる</text>
+    </svg>
+    <figcaption>図1 問いは哲学から、方法は自然科学から受け継いで心理学が生まれました</figcaption>
+  </figure>
+
+  <p>いまの心理学は、記憶や判断を調べる認知心理学、発達心理学、社会心理学、臨床心理学、脳との関係を調べる神経科学などに分かれています。どの分野でも、別の研究者が同じ手順で同じ結果を得られるか（再現できるか）で主張が確かめられます。2010年代には有名な研究の一部が再現できないとわかり（<a href="#g-replication">再現性の危機</a>）、研究の進め方が見直されました。このページでも、再現が確認されていない研究ははっきり区別します。</p>
+
+  <!-- 2. 系譜 -->
+  <h2 id="history">心理学の流れ</h2>
+  <p>心理学の主流は、前の学派の弱点を補う形で移り変わってきました。大きな流れは「意識を調べる → 無意識に注目する → 観察できる行動だけを扱う → 人間の成長を重視する → 心を情報処理として捉え直す」です。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 682" role="img" aria-labelledby="fig2-t">
+      <title id="fig2-t">構造主義から行動経済学・神経科学・ポジティブ心理学までの心理学の系譜図</title>
+      <defs>
+        <marker id="ap2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+          <path class="psy" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+      <!-- 構造主義 -->
+      <rect class="box" x="10" y="10" width="340" height="78" rx="8"/>
+      <rect class="psy" x="10" y="10" width="6" height="78"/>
+      <text class="t-strong" x="26" y="34">構造主義</text>
+      <text class="t-soft" x="340" y="34" text-anchor="end">19世紀後半</text>
+      <text class="t" x="26" y="56">ヴント・ティチェナー</text>
+      <text class="t-soft" x="26" y="76">意識を感覚などの要素に分けて調べる</text>
+      <line class="ln s-psy" x1="180" y1="90" x2="180" y2="112" marker-end="url(#ap2)"/>
+      <!-- 精神分析 -->
+      <rect class="box" x="10" y="114" width="340" height="78" rx="8"/>
+      <rect class="psy" x="10" y="114" width="6" height="78"/>
+      <text class="t-strong" x="26" y="138">精神分析</text>
+      <text class="t-soft" x="340" y="138" text-anchor="end">1900年頃〜</text>
+      <text class="t" x="26" y="160">フロイト・ユング</text>
+      <text class="t-soft" x="26" y="180">本人が気づかない無意識が行動を動かす</text>
+      <line class="ln s-psy" x1="180" y1="194" x2="180" y2="216" marker-end="url(#ap2)"/>
+      <!-- 行動主義 -->
+      <rect class="box" x="10" y="218" width="340" height="78" rx="8"/>
+      <rect class="psy" x="10" y="218" width="6" height="78"/>
+      <text class="t-strong" x="26" y="242">行動主義</text>
+      <text class="t-soft" x="340" y="242" text-anchor="end">1910〜50年代</text>
+      <text class="t" x="26" y="264">ワトソン・パブロフ・スキナー</text>
+      <text class="t-soft" x="26" y="284">観察できる刺激と行動だけを扱う</text>
+      <line class="ln s-psy" x1="180" y1="298" x2="180" y2="320" marker-end="url(#ap2)"/>
+      <!-- 人間性心理学 -->
+      <rect class="box" x="10" y="322" width="340" height="78" rx="8"/>
+      <rect class="psy" x="10" y="322" width="6" height="78"/>
+      <text class="t-strong" x="26" y="346">人間性心理学</text>
+      <text class="t-soft" x="340" y="346" text-anchor="end">1950〜60年代</text>
+      <text class="t" x="26" y="368">マズロー・ロジャーズ</text>
+      <text class="t-soft" x="26" y="388">成長しようとする主体として人を見る</text>
+      <line class="ln s-psy" x1="180" y1="402" x2="180" y2="424" marker-end="url(#ap2)"/>
+      <!-- 認知心理学 -->
+      <rect class="psy" x="10" y="426" width="340" height="78" rx="8"/>
+      <text class="on-color" x="26" y="450">認知心理学（認知革命）</text>
+      <text class="on-color" x="340" y="450" text-anchor="end">1950〜70年代</text>
+      <text class="on-color" x="26" y="472">ミラー・ナイサーら</text>
+      <text class="on-color" x="26" y="492">心をコンピュータのような情報処理として捉える</text>
+      <!-- 3つに分岐 -->
+      <path class="ln s-psy" d="M180,506 V520 H64 V556" marker-end="url(#ap2)"/>
+      <line class="ln s-psy" x1="180" y1="520" x2="180" y2="556" marker-end="url(#ap2)"/>
+      <path class="ln s-psy" d="M180,520 H296 V556" marker-end="url(#ap2)"/>
+      <text class="t-soft" x="122" y="546" text-anchor="middle">1970年代〜</text>
+
+      <rect class="box" x="10" y="560" width="108" height="112" rx="8"/>
+      <text class="t-strong" x="64" y="586" text-anchor="middle">行動経済学</text>
+      <text class="t" x="64" y="618" text-anchor="middle">カーネマン</text>
+      <text class="t-soft" x="64" y="640" text-anchor="middle">判断のクセを</text>
+      <text class="t-soft" x="64" y="658" text-anchor="middle">経済に応用</text>
+
+      <rect class="box" x="126" y="560" width="108" height="112" rx="8"/>
+      <text class="t-strong" x="180" y="586" text-anchor="middle">認知神経科学</text>
+      <text class="t" x="180" y="618" text-anchor="middle">fMRIなど</text>
+      <text class="t-soft" x="180" y="640" text-anchor="middle">脳の活動から</text>
+      <text class="t-soft" x="180" y="658" text-anchor="middle">心を調べる</text>
+
+      <rect class="box" x="242" y="560" width="108" height="112" rx="8"/>
+      <text class="t-strong" x="296" y="586" text-anchor="middle">ポジティブ</text>
+      <text class="t-strong" x="296" y="604" text-anchor="middle">心理学</text>
+      <text class="t" x="296" y="624" text-anchor="middle">セリグマン</text>
+      <text class="t-soft" x="296" y="644" text-anchor="middle">強みや幸福を</text>
+      <text class="t-soft" x="296" y="662" text-anchor="middle">研究する</text>
+    </svg>
+    <figcaption>図2 心理学の主流の移り変わり。前の学派が消えたわけではなく、精神分析は臨床の場で、認知心理学は今も多くの研究の土台として続いています</figcaption>
+  </figure>
+
+  <div class="cards">
+    <div class="card">
+      <span class="tag psy-tag">19世紀後半</span>
+      <h4>構造主義</h4>
+      <p>訓練した観察者に自分の意識を報告させ（内観法）、意識を感覚や感情といった要素に分解しようとしました。報告が人によってばらつくことが弱点でした。これに対し、心は要素の足し算ではなく全体のまとまりで捉えられると主張したのが<a href="#g-gestalt">ゲシュタルト心理学</a>です。</p>
+      <p><strong>考え方：</strong><a href="#g-structural">構造主義（内観法）</a></p>
+    </div>
+    <div class="card">
+      <span class="tag psy-tag">1900年頃〜</span>
+      <h4>精神分析</h4>
+      <p>神経症の治療から生まれました。フロイトは、意識されない欲求や記憶が症状や行動に影響すると考えました。ユングは独自の理論に発展させ、内向・外向の区別を広めました。科学的に検証しにくい点が批判されています。</p>
+      <p><strong>考え方：</strong><a href="#g-psychoanalysis">精神分析と無意識</a>／<a href="#g-defense">防衛機制</a>／<a href="#g-jung">分析心理学</a></p>
+    </div>
+    <div class="card">
+      <span class="tag psy-tag">1910〜50年代</span>
+      <h4>行動主義</h4>
+      <p>確かめようのない心の中ではなく、観察できる刺激と反応だけを研究対象にしました。学習を条件づけで説明し、実験の厳密さを心理学に持ち込みました。</p>
+      <p><strong>考え方：</strong><a href="#g-behaviorism">行動主義</a>／<a href="#g-classical">古典的条件づけ</a>／<a href="#g-operant">オペラント条件づけ</a></p>
+    </div>
+    <div class="card">
+      <span class="tag psy-tag">1950〜60年代</span>
+      <h4>人間性心理学</h4>
+      <p>人を無意識や条件づけに動かされる存在ではなく、自分で成長しようとする主体として見ました。カウンセリングの基本姿勢に大きな影響を与えました。</p>
+      <p><strong>考え方：</strong><a href="#g-humanistic">人間性心理学</a>／<a href="#g-maslow">欲求段階説</a></p>
+    </div>
+    <div class="card">
+      <span class="tag psy-tag">1950〜70年代</span>
+      <h4>認知心理学</h4>
+      <p>コンピュータの登場を背景に、心を「情報を受け取り、保存し、処理する仕組み」として研究し直しました。記憶・注意・判断の研究は、ここから大きく進みました。</p>
+      <p><strong>考え方：</strong><a href="#g-cognitive">認知心理学（認知革命）</a></p>
+    </div>
+    <div class="card">
+      <span class="tag psy-tag">1970年代〜</span>
+      <h4>現代の広がり</h4>
+      <p>判断のクセを経済の分析に取り入れる流れ、脳の画像から心の働きを調べる流れ、病気の治療だけでなく強みや幸福も研究する流れが生まれました。</p>
+      <p><strong>考え方：</strong><a href="#g-behavioral-econ">行動経済学</a>／<a href="#g-prospect">プロスペクト理論</a>／<a href="#g-neuro">認知神経科学</a>／<a href="#g-positive">ポジティブ心理学</a></p>
+    </div>
+  </div>
+
+  <!-- 3. 脳 -->
+  <h2 id="brain">脳の主な部位と働き</h2>
+  <p>心の働きは脳の活動によって生まれます。下の図は脳を左側から見た模式図です。番号の部位をタップすると解説に移動できます。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 700" role="img" aria-labelledby="fig3-t">
+      <title id="fig3-t">脳を左側から見た模式図と、主な8つの部位の働き</title>
+      <!-- 脳幹（大脳の下に隠れる部分があるので先に描く） -->
+      <rect class="box" x="180" y="186" width="28" height="78" rx="10"/>
+      <!-- 大脳 -->
+      <ellipse class="box" cx="180" cy="110" rx="150" ry="88"/>
+      <!-- 葉の境目 -->
+      <path class="ln-ink" d="M150,25 Q162,85 150,140" stroke-dasharray="4 4"/>
+      <path class="ln-ink" d="M90,152 Q170,124 248,142" stroke-dasharray="4 4"/>
+      <path class="ln-ink" d="M268,38 Q258,100 274,156" stroke-dasharray="4 4"/>
+      <!-- 小脳 -->
+      <ellipse class="box" cx="272" cy="214" rx="48" ry="26"/>
+      <!-- 番号 -->
+      <a href="#g-pfc"><circle class="psy" cx="80" cy="96" r="12"/><text class="on-color" x="80" y="101" text-anchor="middle">1</text></a>
+      <a href="#g-parietal"><circle class="psy" cx="212" cy="66" r="12"/><text class="on-color" x="212" y="71" text-anchor="middle">2</text></a>
+      <a href="#g-occipital"><circle class="psy" cx="302" cy="106" r="12"/><text class="on-color" x="302" y="111" text-anchor="middle">3</text></a>
+      <a href="#g-temporal"><circle class="psy" cx="236" cy="166" r="12"/><text class="on-color" x="236" y="171" text-anchor="middle">4</text></a>
+      <a href="#g-hippocampus"><circle class="s-psy box" cx="188" cy="164" r="12"/><text class="t-strong" x="188" y="169" text-anchor="middle">5</text></a>
+      <a href="#g-amygdala"><circle class="s-psy box" cx="152" cy="164" r="12"/><text class="t-strong" x="152" y="169" text-anchor="middle">6</text></a>
+      <a href="#g-cerebellum"><circle class="psy" cx="272" cy="214" r="12"/><text class="on-color" x="272" y="219" text-anchor="middle">7</text></a>
+      <a href="#g-brainstem"><circle class="psy" cx="194" cy="240" r="12"/><text class="on-color" x="194" y="245" text-anchor="middle">8</text></a>
+      <text class="t-soft" x="20" y="262">← 前（顔の側）</text>
+      <text class="t-soft" x="340" y="262" text-anchor="end">後ろ →</text>
+      <text class="t-soft" x="180" y="284" text-anchor="middle">白丸の5・6は、側頭葉の内側の深い所にあります</text>
+
+      <!-- 一覧 -->
+      <line class="ln" x1="10" y1="298" x2="350" y2="298"/>
+      <circle class="psy" cx="22" cy="322" r="11"/><text class="on-color" x="22" y="327" text-anchor="middle">1</text>
+      <text class="t-strong" x="42" y="326">前頭前野（前頭葉の前部）</text>
+      <text class="t" x="42" y="346">計画・判断・衝動の抑制、作業記憶</text>
+
+      <circle class="psy" cx="22" cy="372" r="11"/><text class="on-color" x="22" y="377" text-anchor="middle">2</text>
+      <text class="t-strong" x="42" y="376">頭頂葉</text>
+      <text class="t" x="42" y="396">体の感覚、物の位置や空間の把握</text>
+
+      <circle class="psy" cx="22" cy="422" r="11"/><text class="on-color" x="22" y="427" text-anchor="middle">3</text>
+      <text class="t-strong" x="42" y="426">後頭葉</text>
+      <text class="t" x="42" y="446">視覚（形・色・動き）の処理</text>
+
+      <circle class="psy" cx="22" cy="472" r="11"/><text class="on-color" x="22" y="477" text-anchor="middle">4</text>
+      <text class="t-strong" x="42" y="476">側頭葉</text>
+      <text class="t" x="42" y="496">聴覚、言葉の理解、物や顔の認識</text>
+
+      <circle class="box s-psy" cx="22" cy="522" r="11"/><text class="t-strong" x="22" y="527" text-anchor="middle">5</text>
+      <text class="t-strong" x="42" y="526">海馬</text>
+      <text class="t" x="42" y="546">新しい出来事や知識を記憶にする</text>
+
+      <circle class="box s-psy" cx="22" cy="572" r="11"/><text class="t-strong" x="22" y="577" text-anchor="middle">6</text>
+      <text class="t-strong" x="42" y="576">扁桃体</text>
+      <text class="t" x="42" y="596">恐怖・不安など、危険の素早い評価</text>
+
+      <circle class="psy" cx="22" cy="622" r="11"/><text class="on-color" x="22" y="627" text-anchor="middle">7</text>
+      <text class="t-strong" x="42" y="626">小脳</text>
+      <text class="t" x="42" y="646">運動の調整、体で覚える技能の学習</text>
+
+      <circle class="psy" cx="22" cy="672" r="11"/><text class="on-color" x="22" y="677" text-anchor="middle">8</text>
+      <text class="t-strong" x="42" y="676">脳幹</text>
+      <text class="t" x="42" y="696">呼吸・心拍・覚醒など生命の維持</text>
+    </svg>
+    <figcaption>図3 脳の主な部位（模式図）。実際の心の働きは複数の部位の連携で生まれ、1つの部位が1つの機能だけを受け持つわけではありません</figcaption>
+  </figure>
+
+  <p>脳は大人になってからも、経験や学習に応じてつながり方を変え続けます（<a href="#g-plasticity">神経可塑性</a>）。新しい技能を練習すると上達するのは、この性質によるものです。</p>
+
+  <div class="point"><strong>俗説に注意：</strong>「<a href="#g-myth10">人は脳の10%しか使っていない</a>」「<a href="#g-mythlr">右脳型・左脳型の人がいる</a>」は、どちらも研究では支持されていない俗説です。日本で広まっている<a href="#g-mythblood">血液型性格診断</a>にも、科学的な根拠は見つかっていません。</div>
+
+  <!-- 4. 思考モードとバイアス -->
+  <h2 id="thinking">2つの思考モードと認知バイアス</h2>
+  <p>人の判断は、速く直感的に働く「システム1」と、遅く意識的に考える「システム2」の2つのモードの組み合わせで説明できます（<a href="#g-dual">二重過程理論</a>）。カーネマンが一般向けの著書『ファスト＆スロー』で広めた整理です。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 570" role="img" aria-labelledby="fig4-t">
+      <title id="fig4-t">システム1とシステム2の特徴と、判断の流れ</title>
+      <defs>
+        <marker id="ap4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+          <path class="psy" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+      <rect class="psy" x="10" y="10" width="164" height="44" rx="8"/>
+      <text class="on-color" x="92" y="37" text-anchor="middle">システム1（速い）</text>
+      <rect class="box s-psy" x="186" y="10" width="164" height="44" rx="8"/>
+      <text class="t-strong" x="268" y="38" text-anchor="middle">システム2（遅い）</text>
+
+      <rect class="box" x="10" y="62" width="164" height="204" rx="8"/>
+      <text class="t-strong" x="22" y="88">自動的に働く</text>
+      <text class="t" x="22" y="112">努力がいらない</text>
+      <text class="t" x="22" y="132">意図して止められない</text>
+      <text class="t-soft" x="22" y="160">例</text>
+      <text class="t" x="22" y="180">2＋2の答え</text>
+      <text class="t" x="22" y="200">相手の表情を読む</text>
+      <text class="t-soft" x="22" y="228">弱点</text>
+      <text class="t" x="22" y="248">思い込みが入る</text>
+
+      <rect class="box" x="186" y="62" width="164" height="204" rx="8"/>
+      <text class="t-strong" x="198" y="88">意識して働かせる</text>
+      <text class="t" x="198" y="112">集中力が必要</text>
+      <text class="t" x="198" y="132">同時に多くできない</text>
+      <text class="t-soft" x="198" y="160">例</text>
+      <text class="t" x="198" y="180">17×24の暗算</text>
+      <text class="t" x="198" y="200">仕様の矛盾を探す</text>
+      <text class="t-soft" x="198" y="228">弱点</text>
+      <text class="t" x="198" y="248">疲れると手を抜く</text>
+
+      <!-- 流れ -->
+      <rect class="box" x="80" y="290" width="200" height="40" rx="8"/>
+      <text class="t" x="180" y="315" text-anchor="middle">状況・問題が来る</text>
+      <line class="ln s-psy" x1="180" y1="332" x2="180" y2="352" marker-end="url(#ap4)"/>
+      <rect class="psy" x="50" y="356" width="260" height="44" rx="8"/>
+      <text class="on-color" x="180" y="383" text-anchor="middle">システム1が直感で答えを出す</text>
+      <line class="ln s-psy" x1="180" y1="402" x2="180" y2="420" marker-end="url(#ap4)"/>
+      <rect class="box" x="50" y="424" width="260" height="44" rx="8"/>
+      <text class="t" x="180" y="451" text-anchor="middle">重要な判断？ 違和感がある？</text>
+      <line class="ln s-psy" x1="130" y1="470" x2="96" y2="500" marker-end="url(#ap4)"/>
+      <line class="ln s-psy" x1="230" y1="470" x2="264" y2="500" marker-end="url(#ap4)"/>
+      <text class="t-soft" x="96" y="484" text-anchor="end">いいえ</text>
+      <text class="t-soft" x="264" y="484">はい</text>
+      <rect class="box" x="10" y="504" width="160" height="56" rx="8"/>
+      <text class="t" x="90" y="528" text-anchor="middle">そのまま採用</text>
+      <text class="t-soft" x="90" y="548" text-anchor="middle">日常の判断の大半</text>
+      <rect class="box s-psy" x="190" y="504" width="160" height="56" rx="8"/>
+      <text class="t-strong" x="270" y="528" text-anchor="middle">システム2で点検</text>
+      <text class="t-soft" x="270" y="548" text-anchor="middle">根拠や別の見方を確認</text>
+    </svg>
+    <figcaption>図4 ふだんはシステム1が答えを出し、システム2は必要なときだけ点検に入ります。点検をすり抜けた直感の偏りが認知バイアスです</figcaption>
+  </figure>
+
+  <p>たとえば「バットとボールは合わせて1100円で、バットはボールより1000円高い。ボールはいくら？」と聞かれると、多くの人の頭に「100円」が浮かびます。これがシステム1の答えです。確かめると合計が1200円になってしまい、正解は50円です。システム1は経験則による近道（<a href="#g-heuristic">ヒューリスティック</a>）で素早く答えを出せる反面、一定の方向に偏ることがあり、その偏りを<a href="#g-bias">認知バイアス</a>と呼びます。</p>
+
+  <h3 id="bias">主な認知バイアス</h3>
+  <p>名前を知っておくと、自分や会議の判断を点検するときの手がかりになります。各カードの名前から、意味の解説に移動できます。</p>
+
+  <div class="cards">
+    <div class="card">
+      <span class="tag psy-tag">情報の集め方</span>
+      <h4><a href="#g-confirmation">確証バイアス</a></h4>
+      <p><strong>仕事での例：</strong>「原因はこのモジュールだ」と思うと、それを裏づけるログばかり探し、反対の証拠を見落とします。</p>
+      <p><strong>対策：</strong>「自分の仮説が間違っているなら何が見えるはずか」を先に書き出します。</p>
+    </div>
+    <div class="card">
+      <span class="tag psy-tag">見積もり</span>
+      <h4><a href="#g-anchoring">アンカリング</a></h4>
+      <p><strong>仕事での例：</strong>見積もり会議で最初に「2週間くらい？」と出ると、その数字を基準に全員の見積もりが寄っていきます。</p>
+      <p><strong>対策：</strong>各自が数字を書いてから同時に出します（プランニングポーカーの考え方）。</p>
+    </div>
+    <div class="card">
+      <span class="tag psy-tag">損得の感じ方</span>
+      <h4><a href="#g-lossaversion">損失回避</a></h4>
+      <p><strong>仕事での例：</strong>得られる改善よりも、移行で失う手間や既存機能が大きく感じられ、有益な刷新を見送ります。</p>
+      <p><strong>対策：</strong>得と損を同じ単位（工数や金額）に直して並べます。</p>
+    </div>
+    <div class="card">
+      <span class="tag psy-tag">変化への抵抗</span>
+      <h4><a href="#g-statusquo">現状維持バイアス</a></h4>
+      <p><strong>仕事での例：</strong>誰も理由を説明できない古い運用手順が、「今まで問題なかったから」と残り続けます。</p>
+      <p><strong>対策：</strong>「今ゼロから決めるなら、この手順を選ぶか」と問い直します。</p>
+    </div>
+    <div class="card">
+      <span class="tag psy-tag">危険の見積もり</span>
+      <h4><a href="#g-normalcy">正常性バイアス</a></h4>
+      <p><strong>仕事での例：</strong>エラー率がじわじわ上がっているのに「一時的な揺らぎだろう」と様子見を続け、障害が大きくなります。</p>
+      <p><strong>対策：</strong>「この値を超えたら対応する」という基準を事前に決めておきます。</p>
+    </div>
+    <div class="card">
+      <span class="tag psy-tag">撤退の判断</span>
+      <h4><a href="#g-sunkcost">サンクコスト効果</a></h4>
+      <p><strong>仕事での例：</strong>半年かけた自社開発のライブラリを、より良い既製品があるのに「ここまで作ったから」と使い続けます。</p>
+      <p><strong>対策：</strong>過去の投資を除き、これからかかる費用と得られる効果だけで比べます。</p>
+    </div>
+    <div class="card">
+      <span class="tag psy-tag">確率の感じ方</span>
+      <h4><a href="#g-availability">利用可能性ヒューリスティック</a></h4>
+      <p><strong>仕事での例：</strong>先月の大障害が記憶に新しいため、同じ種類の障害対策ばかりに予算を回します。</p>
+      <p><strong>対策：</strong>印象ではなく、障害記録の件数や影響度の集計で優先度を決めます。</p>
+    </div>
+    <div class="card">
+      <span class="tag psy-tag">見積もり</span>
+      <h4><a href="#g-planning">計画錯誤</a></h4>
+      <p><strong>仕事での例：</strong>毎回遅れているのに、次の案件では「今度は順調にいく」前提でスケジュールを組みます。</p>
+      <p><strong>対策：</strong>過去の似た案件の実績から見積もります。</p>
+    </div>
+    <div class="card">
+      <span class="tag psy-tag">振り返り</span>
+      <h4><a href="#g-hindsight">後知恵バイアス</a></h4>
+      <p><strong>仕事での例：</strong>障害の振り返りで「あの兆候を見れば明らかだった」と、当時の担当者を責めてしまいます。</p>
+      <p><strong>対策：</strong>当時その人が持っていた情報だけで、判断を検討します。</p>
+    </div>
+    <div class="card">
+      <span class="tag psy-tag">伝え方</span>
+      <h4><a href="#g-framing">フレーミング効果</a></h4>
+      <p><strong>仕事での例：</strong>「成功率99%」と「100回に1回失敗」は同じ内容ですが、前者のほうが承認されやすくなります。</p>
+      <p><strong>対策：</strong>重要な提案は、良い面と悪い面の両方の言い方で示します。</p>
+    </div>
+  </div>
+
+  <div class="point"><strong>再現が確認されていない研究：</strong>判断や意志をめぐる有名な研究には、大規模な追試で同じ結果が出なかったものがあります。「意志の力は使うと減る」という<a href="#g-egodepletion">自我消耗</a>、「力強い姿勢をとると自信が高まりホルモンが変わる」という<a href="#g-powerpose">パワーポーズ</a>、「高齢者に関する単語を読むと歩くのが遅くなる」といった一部の<a href="#g-priming">行動プライミング</a>研究です。本や記事で見かけても、確立した事実としては扱わないほうが安全です。</div>
+
+  <!-- 5. 記憶 -->
+  <h2 id="memory">記憶の仕組みと学び方</h2>
+  <p>記憶は、情報がいくつかの段階を通って保存されるという<a href="#g-multistore">多重貯蔵モデル</a>で説明されることが多いです。見聞きしたものは<a href="#g-sensory">感覚記憶</a>に一瞬残り、注意を向けたものだけが<a href="#g-shortterm">短期記憶</a>（考えるための作業台としては<a href="#g-working">作業記憶</a>）に入ります。覚え込まれた情報は<a href="#g-longterm">長期記憶</a>に移ります。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 470" role="img" aria-labelledby="fig5-t">
+      <title id="fig5-t">感覚記憶から短期記憶（作業記憶）、長期記憶への流れ</title>
+      <defs>
+        <marker id="ap5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+          <path class="psy" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+      <text class="t-soft" x="180" y="18" text-anchor="middle">目・耳などから入る情報</text>
+      <line class="ln s-psy" x1="180" y1="24" x2="180" y2="44" marker-end="url(#ap5)"/>
+
+      <rect class="box" x="10" y="48" width="340" height="76" rx="8"/>
+      <text class="t-strong" x="24" y="74">感覚記憶</text>
+      <text class="t" x="24" y="96">見聞きしたものをそのまま保持</text>
+      <text class="t-soft" x="24" y="114">1秒未満〜数秒で消える</text>
+
+      <line class="ln s-psy" x1="180" y1="126" x2="180" y2="160" marker-end="url(#ap5)"/>
+      <text class="t-soft" x="192" y="148">注意を向けたものだけ</text>
+
+      <rect class="box s-psy" x="10" y="164" width="340" height="76" rx="8"/>
+      <text class="t-strong" x="24" y="190">短期記憶（作業記憶）</text>
+      <text class="t" x="24" y="212">いま考えている内容を一時的に保持</text>
+      <text class="t-soft" x="24" y="230">数十秒ほど。一度に扱えるのは4つ前後のまとまり</text>
+
+      <line class="ln s-psy" x1="130" y1="242" x2="130" y2="286" marker-end="url(#ap5)"/>
+      <line class="ln s-psy" x1="230" y1="288" x2="230" y2="244" marker-end="url(#ap5)"/>
+      <text class="t-soft" x="120" y="270" text-anchor="end">覚える（符号化）</text>
+      <text class="t-soft" x="240" y="270">思い出す（検索）</text>
+
+      <rect class="box" x="10" y="290" width="340" height="170" rx="8"/>
+      <rect class="psy" x="10" y="290" width="6" height="170"/>
+      <text class="t-strong" x="26" y="316">長期記憶</text>
+      <text class="t" x="26" y="338">長く保存され、必要なときに取り出す</text>
+      <rect class="box" x="22" y="354" width="100" height="92" rx="6"/>
+      <text class="t-strong" x="72" y="380" text-anchor="middle">エピソード</text>
+      <text class="t" x="72" y="400" text-anchor="middle">記憶</text>
+      <text class="t-soft" x="72" y="428" text-anchor="middle">昨日の会議</text>
+      <rect class="box" x="130" y="354" width="100" height="92" rx="6"/>
+      <text class="t-strong" x="180" y="380" text-anchor="middle">意味</text>
+      <text class="t" x="180" y="400" text-anchor="middle">記憶</text>
+      <text class="t-soft" x="180" y="428" text-anchor="middle">TCPの意味</text>
+      <rect class="box" x="238" y="354" width="100" height="92" rx="6"/>
+      <text class="t-strong" x="288" y="380" text-anchor="middle">手続き</text>
+      <text class="t" x="288" y="400" text-anchor="middle">記憶</text>
+      <text class="t-soft" x="288" y="428" text-anchor="middle">タイピング</text>
+    </svg>
+    <figcaption>図5 記憶の3段階（多重貯蔵モデルを簡略化）。作業記憶の容量は小さいので、一度に多くの情報を詰め込むと処理が追いつかなくなります</figcaption>
+  </figure>
+
+  <p>長期記憶は、出来事の記憶（<a href="#g-episodic">エピソード記憶</a>）、知識の記憶（<a href="#g-semantic">意味記憶</a>）、体で覚えた技能（<a href="#g-procedural">手続き記憶</a>）に分けられます。覚えた直後の記憶は不安定で、時間をかけて安定していきます（<a href="#g-consolidation">記憶の固定化</a>）。睡眠はこの過程を助けると考えられています。</p>
+
+  <p>一方、覚えたことは時間とともに思い出しにくくなります。エビングハウスは自分自身を被験者に、意味のない音節の並びを覚えては時間を置いて覚え直す実験を行い、忘却は覚えた直後に急に進み、その後ゆるやかになることを示しました（<a href="#g-forgetting">忘却曲線</a>）。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 360" role="img" aria-labelledby="fig6-t">
+      <title id="fig6-t">復習しない場合と、間隔をあけて復習した場合の忘却曲線の比較</title>
+      <text class="t-soft" x="50" y="28">覚えている量</text>
+      <line class="ln-ink" x1="50" y1="36" x2="50" y2="250"/>
+      <line class="ln-ink" x1="50" y1="250" x2="344" y2="250"/>
+      <!-- 復習しない -->
+      <path class="ln-ink" d="M50,48 C78,170 130,214 340,232" stroke-dasharray="5 4"/>
+      <!-- 間隔をあけて復習 -->
+      <path class="ln s-psy" d="M50,48 C62,110 82,140 100,150 L100,58 C120,100 145,116 170,122 L170,56 C205,84 240,94 270,98 L270,54 C295,66 320,72 340,74" stroke-width="2.5"/>
+      <circle class="psy" cx="100" cy="58" r="4"/>
+      <circle class="psy" cx="170" cy="56" r="4"/>
+      <circle class="psy" cx="270" cy="54" r="4"/>
+      <line class="ln-ink" x1="100" y1="250" x2="100" y2="256"/>
+      <line class="ln-ink" x1="170" y1="250" x2="170" y2="256"/>
+      <line class="ln-ink" x1="270" y1="250" x2="270" y2="256"/>
+      <text class="t-soft" x="100" y="270" text-anchor="middle">復習1</text>
+      <text class="t-soft" x="170" y="270" text-anchor="middle">復習2</text>
+      <text class="t-soft" x="270" y="270" text-anchor="middle">復習3</text>
+      <text class="t-soft" x="344" y="288" text-anchor="end">時間の経過 →</text>
+      <!-- 凡例 -->
+      <line class="ln-ink" x1="50" y1="306" x2="84" y2="306" stroke-dasharray="5 4"/>
+      <text class="t" x="94" y="311">復習しない</text>
+      <line class="ln s-psy" x1="50" y1="332" x2="84" y2="332" stroke-width="2.5"/>
+      <text class="t" x="94" y="337">間隔を広げながら復習する</text>
+    </svg>
+    <figcaption>図6 忘却曲線と復習の効果（形を示す模式図で、数値は表していません）。復習するたびに忘れ方がゆるやかになるので、復習の間隔を少しずつ広げられます</figcaption>
+  </figure>
+
+  <p>同じ時間を使うなら、一度にまとめて学ぶより、日を分けて学ぶほうが長く記憶に残ります（<a href="#g-spacing">分散学習</a>）。また、読み返すより、何も見ずに思い出そうとするほうが定着します（<a href="#g-retrieval">想起練習</a>）。どちらも多くの実験で繰り返し確かめられている効果です。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 262" role="img" aria-labelledby="fig7-t">
+      <title id="fig7-t">同じ3時間を1日に集中する場合と、3日に分散する場合の比較</title>
+      <text class="t-soft" x="10" y="30">日目</text>
+      <text class="t-soft" x="93" y="30" text-anchor="middle">1</text>
+      <text class="t-soft" x="131" y="30" text-anchor="middle">2</text>
+      <text class="t-soft" x="169" y="30" text-anchor="middle">3</text>
+      <text class="t-soft" x="207" y="30" text-anchor="middle">4</text>
+      <text class="t-soft" x="245" y="30" text-anchor="middle">5</text>
+      <text class="t-soft" x="283" y="30" text-anchor="middle">6</text>
+      <text class="t-soft" x="321" y="30" text-anchor="middle">7</text>
+      <!-- 集中学習 -->
+      <text class="t-strong" x="10" y="66">集中</text>
+      <rect class="psy" x="76" y="42" width="34" height="34" rx="4"/><text class="on-color" x="93" y="64" text-anchor="middle">3h</text>
+      <rect class="box" x="114" y="42" width="34" height="34" rx="4"/>
+      <rect class="box" x="152" y="42" width="34" height="34" rx="4"/>
+      <rect class="box" x="190" y="42" width="34" height="34" rx="4"/>
+      <rect class="box" x="228" y="42" width="34" height="34" rx="4"/>
+      <rect class="box" x="266" y="42" width="34" height="34" rx="4"/>
+      <rect class="box" x="304" y="42" width="34" height="34" rx="4"/>
+      <text class="t-soft" x="76" y="96">1日にまとめて3時間</text>
+      <!-- 分散学習 -->
+      <text class="t-strong" x="10" y="136">分散</text>
+      <rect class="psy" x="76" y="112" width="34" height="34" rx="4"/><text class="on-color" x="93" y="134" text-anchor="middle">1h</text>
+      <rect class="box" x="114" y="112" width="34" height="34" rx="4"/>
+      <rect class="psy" x="152" y="112" width="34" height="34" rx="4"/><text class="on-color" x="169" y="134" text-anchor="middle">1h</text>
+      <rect class="box" x="190" y="112" width="34" height="34" rx="4"/>
+      <rect class="box" x="228" y="112" width="34" height="34" rx="4"/>
+      <rect class="box" x="266" y="112" width="34" height="34" rx="4"/>
+      <rect class="psy" x="304" y="112" width="34" height="34" rx="4"/><text class="on-color" x="321" y="134" text-anchor="middle">1h</text>
+      <text class="t-soft" x="76" y="166">1・3・7日目に1時間ずつ</text>
+      <!-- 結論 -->
+      <rect class="box s-psy" x="10" y="186" width="340" height="66" rx="8"/>
+      <text class="t" x="180" y="212" text-anchor="middle">合計は同じ3時間でも、</text>
+      <text class="t-strong" x="180" y="236" text-anchor="middle">後で思い出せる量は分散が多い</text>
+    </svg>
+    <figcaption>図7 分散学習の例。各回の最初に、前回の内容を何も見ずに思い出す（想起練習）と効果がさらに高まります</figcaption>
+  </figure>
+
+  <!-- 6. 動機づけ -->
+  <h2 id="motivation">動機づけ</h2>
+  <p>人を行動に向かわせる力を動機づけと呼びます。報酬・評価・罰など外からの理由で動くのが<a href="#g-extrinsic">外発的動機</a>、面白さや興味そのものから動くのが<a href="#g-intrinsic">内発的動機</a>です。どちらが良い悪いではなく、単純作業には外発的な報酬が効きやすい一方、創造性や粘り強さが要る仕事では内発的動機が支えになりやすいとされます。</p>
+  <p>デシとライアンの<a href="#g-sdt">自己決定理論</a>は、この2つを白黒ではなく連続したものとして捉えます。外から与えられた理由でも、その価値に本人が納得していれば、自分から動く動機に近づきます。その鍵として、自律性・有能感・関係性という3つの基本的な欲求を挙げました。また、もともと楽しんでいた活動に報酬を約束すると、報酬がなくなったときにやる気が下がることがあります（<a href="#g-undermining">アンダーマイニング効果</a>）。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 476" role="img" aria-labelledby="fig8-t">
+      <title id="fig8-t">自己決定理論による動機づけの段階と、3つの基本的欲求</title>
+      <defs>
+        <marker id="ap8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+          <path class="psy" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+      <text class="t-soft" x="10" y="20">外から動かされる（外発的）</text>
+      <rect class="box" x="10" y="30" width="316" height="62" rx="8"/>
+      <rect class="psy" x="10" y="30" width="8" height="62" fill-opacity="0.3"/>
+      <text class="t-strong" x="28" y="54">外的な調整</text>
+      <text class="t" x="28" y="78">「怒られるから」「報酬のため」</text>
+      <rect class="box" x="10" y="100" width="316" height="62" rx="8"/>
+      <rect class="psy" x="10" y="100" width="8" height="62" fill-opacity="0.55"/>
+      <text class="t-strong" x="28" y="124">取り入れ</text>
+      <text class="t" x="28" y="148">「やらないと気まずいから」</text>
+      <rect class="box" x="10" y="170" width="316" height="62" rx="8"/>
+      <rect class="psy" x="10" y="170" width="8" height="62" fill-opacity="0.8"/>
+      <text class="t-strong" x="28" y="194">同一化</text>
+      <text class="t" x="28" y="218">「自分に必要だと思うから」</text>
+      <rect class="box" x="10" y="240" width="316" height="62" rx="8"/>
+      <rect class="psy" x="10" y="240" width="8" height="62"/>
+      <text class="t-strong" x="28" y="264">内発的動機</text>
+      <text class="t" x="28" y="288">「面白いから」「知りたいから」</text>
+      <line class="ln s-psy" x1="342" y1="34" x2="342" y2="296" marker-end="url(#ap8)"/>
+      <text class="t-soft" x="10" y="322">自分から動く（自律的）</text>
+
+      <text class="t-strong" x="180" y="356" text-anchor="middle">自律的な動機を育てる3つの欲求</text>
+      <rect class="box" x="10" y="368" width="108" height="98" rx="8"/>
+      <rect class="psy" x="10" y="368" width="108" height="32" rx="8"/>
+      <text class="on-color" x="64" y="389" text-anchor="middle">自律性</text>
+      <text class="t-soft" x="64" y="422" text-anchor="middle">自分で選んで</text>
+      <text class="t-soft" x="64" y="440" text-anchor="middle">決めている感覚</text>
+      <rect class="box" x="126" y="368" width="108" height="98" rx="8"/>
+      <rect class="psy" x="126" y="368" width="108" height="32" rx="8"/>
+      <text class="on-color" x="180" y="389" text-anchor="middle">有能感</text>
+      <text class="t-soft" x="180" y="422" text-anchor="middle">できる・成長</text>
+      <text class="t-soft" x="180" y="440" text-anchor="middle">している感覚</text>
+      <rect class="box" x="242" y="368" width="108" height="98" rx="8"/>
+      <rect class="psy" x="242" y="368" width="108" height="32" rx="8"/>
+      <text class="on-color" x="296" y="389" text-anchor="middle">関係性</text>
+      <text class="t-soft" x="296" y="422" text-anchor="middle">人とつながり</text>
+      <text class="t-soft" x="296" y="440" text-anchor="middle">認められる感覚</text>
+    </svg>
+    <figcaption>図8 自己決定理論の動機づけの段階（一部を省いた簡略版）。下に行くほど、自分から動く動機に近づきます</figcaption>
+  </figure>
+
+  <p>もう一つよく知られているのが、マズローの<a href="#g-maslow">欲求段階説</a>です。人の欲求には階層があり、下の欲求がある程度満たされると、より上の欲求が強まると考えました。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 350" role="img" aria-labelledby="fig9-t">
+      <title id="fig9-t">マズローの欲求段階説の5つの階層</title>
+      <polygon class="psy" points="120,20 240,20 262,74 98,74"/>
+      <text class="on-color" x="180" y="52" text-anchor="middle">自己実現</text>
+      <polygon class="box" points="96,80 264,80 286,134 74,134"/>
+      <text class="t" x="180" y="112" text-anchor="middle">承認（認められたい）</text>
+      <polygon class="box" points="72,140 288,140 310,194 50,194"/>
+      <text class="t" x="180" y="172" text-anchor="middle">所属と愛（仲間がほしい）</text>
+      <polygon class="box" points="48,200 312,200 334,254 26,254"/>
+      <text class="t" x="180" y="232" text-anchor="middle">安全（危険を避けたい）</text>
+      <polygon class="box" points="24,260 336,260 358,314 2,314"/>
+      <text class="t" x="180" y="292" text-anchor="middle">生理的（食事・睡眠）</text>
+      <text class="t-soft" x="180" y="338" text-anchor="middle">下の4段は「欠乏欲求」、最上段は「成長欲求」と呼ばれます</text>
+    </svg>
+    <figcaption>図9 欲求段階説の5段階。ピラミッドの図は、マズロー本人ではなく後の解説書や研修で広まった表現です</figcaption>
+  </figure>
+
+  <p>欲求段階説は直感的で広く使われていますが、研究による裏づけは弱いと評価されています。欲求が下から順番に満たされるという証拠ははっきりせず、生活が苦しくても創作や人とのつながりを優先する人はいます。何を優先するかは文化や状況によっても変わります。人の欲求を整理する目安としては役立ちますが、「段階を順に満たせば人は動く」と単純に当てはめないほうが無難です。</p>
+
+  <!-- 7. 仕事 -->
+  <h2 id="work">仕事への活かし方</h2>
+  <div class="cards">
+    <div class="card">
+      <h4>判断ミスを減らす仕組み</h4>
+      <p>バイアスは、知っているだけでは自分では気づきにくいものです。個人の注意力に頼らず、仕組みで点検します。重要な判断の基準を事前に決める、チェックリストを使う、計画の段階で「失敗したとしたら原因は何か」を出し合う（<a href="#g-premortem">プレモーテム</a>）、判断した本人以外にレビューしてもらう、といった方法があります。</p>
+    </div>
+    <div class="card">
+      <h4>学習の効率化</h4>
+      <p>新しい技術を学ぶときは、一気に読み込むより日を分けて触れ（<a href="#g-spacing">分散学習</a>）、読み返す代わりに「何も見ずに説明できるか」を試します（<a href="#g-retrieval">想起練習</a>）。作業記憶は小さいので、一度に扱う新しい概念を絞り、図にして負荷を減らすのも有効です。</p>
+    </div>
+    <div class="card">
+      <h4>チームの心理的安全性</h4>
+      <p>「この質問をしたら無能だと思われないか」という不安がないチームほど、ミスや懸念が早く共有され、学習が進みます（<a href="#g-psysafety">心理的安全性</a>）。障害の振り返りで個人を責めず、<a href="#g-hindsight">後知恵バイアス</a>を意識して仕組みの改善に焦点を当てることが、その土台になります。</p>
+    </div>
+  </div>
+
+  <!-- 8. 用語 -->
+  <h2 id="glossary">考え方・用語の解説</h2>
+  <p>このページに出てくる理論・効果・バイアス・脳の部位を、テーマごとに1〜2文でまとめます。</p>
+
+  <h3>心理学の成り立ちと学派</h3>
+  <dl class="glossary">
+    <div id="g-psychophys"><dt>精神物理学<span class="who">フェヒナー（19世紀半ば）</span></dt><dd>ウェーバーの発見を元に、物理的な刺激の強さと、人が感じる強さの関係を数式で表そうとした研究です。たとえば、重さの違いに気づけるかどうかは、差の絶対量ではなく元の重さに対する割合で決まることを示し、心を測れることを示しました。</dd></div>
+    <div id="g-structural"><dt>構造主義（内観法）<span class="who">ヴント・ティチェナー（19世紀後半）</span></dt><dd>訓練した観察者に、刺激を受けたときの自分の意識を細かく報告させ（内観法）、意識を感覚・感情などの要素の組み合わせとして明らかにしようとした立場です。構造主義という名前は弟子のティチェナーの立場を指し、ヴント自身の立場は要素主義とも呼ばれます。</dd></div>
+    <div id="g-gestalt"><dt>ゲシュタルト心理学<span class="who">ヴェルトハイマーら（20世紀前半）</span></dt><dd>人は要素を一つずつ足し合わせるのではなく、まとまった全体として知覚するという考えです。少しずつ位置のずれた静止画を続けて見ると動いて見える（映画やアニメの原理）のは、その例です。</dd></div>
+    <div id="g-psychoanalysis"><dt>精神分析と無意識<span class="who">フロイト（1900年頃〜）</span></dt><dd>本人が意識できない欲求や記憶（無意識）が、言い間違いや夢、心の症状に表れるという理論と、それを対話で探る治療法です。現代の心理学では、検証しにくい部分が多いとして多くの主張が批判されていますが、意識されない心の働きがあるという発想自体は受け継がれています。</dd></div>
+    <div id="g-defense"><dt>防衛機制<span class="who">フロイト、娘のアンナ・フロイトが整理</span></dt><dd>不安や受け入れがたい感情から自分を守るための、無意識の心の働きです。失敗の本当の理由から目をそらしてもっともらしい理由をつける「合理化」や、怒りを関係のない相手に向ける「置き換え」などがあります。</dd></div>
+    <div id="g-jung"><dt>分析心理学<span class="who">ユング（20世紀前半）</span></dt><dd>フロイトから離れたユングの理論です。個人の無意識の奥に人類共通の無意識（集合的無意識）があるとし、関心が自分の内側に向かう内向型と外側に向かう外向型の区別を提唱しました。この類型を元にした性格検査（MBTIなど）がありますが、学術的には信頼性が低いと評価されています。</dd></div>
+    <div id="g-behaviorism"><dt>行動主義<span class="who">ワトソン（1913年に提唱）</span></dt><dd>心理学を客観的な科学にするため、内観のように確かめられない意識ではなく、観察できる刺激と行動の関係だけを研究すべきだとする立場です。学習の研究を大きく進めましたが、思考や記憶など頭の中の働きを扱えないことが限界になりました。</dd></div>
+    <div id="g-classical"><dt>古典的条件づけ<span class="who">パブロフ（20世紀初め）</span></dt><dd>もともと反応を起こさない刺激が、反応を起こす刺激と繰り返し一緒に示されることで、同じ反応を起こすようになる学習です。ベルの音の後にエサを与え続けると、犬がベルの音だけで唾液を出すようになる実験が有名です。</dd></div>
+    <div id="g-operant"><dt>オペラント条件づけ<span class="who">スキナー（20世紀半ば）</span></dt><dd>自発的な行動の直後に報酬があるとその行動が増え、罰があると減るという学習です。レバーを押すとエサが出る箱でネズミが押す回数を増やす実験が代表例で、アプリの通知やポイント制度の設計にも同じ原理が使われています。</dd></div>
+    <div id="g-humanistic"><dt>人間性心理学<span class="who">マズロー・ロジャーズ（1950〜60年代）</span></dt><dd>精神分析と行動主義に続く「第三の勢力」を名乗った流れで、人は自分の可能性を実現しようとする主体だと考えます。ロジャーズは、相談者の話を評価せずに受け止めて共感する姿勢（来談者中心療法）を重視しました。</dd></div>
+    <div id="g-cognitive"><dt>認知心理学（認知革命）<span class="who">ミラー、ナイサーら（1950〜70年代）</span></dt><dd>知覚・記憶・注意・言語・判断を、情報の入力・保存・処理として研究する分野です。行動主義が避けた頭の中の働きを、実験で確かめられるモデルとして扱えるようにしたことから「認知革命」と呼ばれます。</dd></div>
+    <div id="g-behavioral-econ"><dt>行動経済学<span class="who">カーネマン、トヴェルスキー、セイラーら（1970年代〜）</span></dt><dd>人は常に合理的に損得を計算するという経済学の前提に対し、心理学で確かめられた判断のクセを取り入れて経済行動を説明する分野です。カーネマンは2002年に、セイラーは2017年にノーベル経済学賞を受けました。</dd></div>
+    <div id="g-prospect"><dt>プロスペクト理論<span class="who">カーネマンとトヴェルスキー（1979年）</span></dt><dd>人は結果を絶対額ではなく基準点からの得と損で評価し、同じ額なら得より損を強く感じる、という意思決定の理論です。<a href="#g-lossaversion">損失回避</a>や、確率の低い出来事を実際より重く見積もる傾向などを説明します。</dd></div>
+    <div id="g-neuro"><dt>認知神経科学<span class="who">1990年代〜本格化</span></dt><dd>心の働きを、脳のどの部位がどう活動しているかと結びつけて調べる分野です。課題に取り組む人の脳の血流の変化を画像にするfMRIなどで研究が進みました。</dd></div>
+    <div id="g-positive"><dt>ポジティブ心理学<span class="who">セリグマン（1998年に提唱）</span></dt><dd>心の病気や問題の研究に偏っていた心理学を見直し、強み・幸福・充実感など、人がうまく生きるための条件を研究しようとする流れです。一部の介入法の効果は、当初の報告より小さいという指摘もあります。</dd></div>
+    <div id="g-replication"><dt>再現性の危機<span class="who">2010年代〜</span></dt><dd>有名な心理学の研究を別のチームが同じ手順で追試したところ、かなりの割合で同じ結果が出なかった問題です。都合のよいデータだけを報告するなどの慣行が原因とされ、実験計画を事前に登録する方法などが広まりました。</dd></div>
+  </dl>
+
+  <h3>脳の部位と、脳をめぐる俗説</h3>
+  <dl class="glossary">
+    <div id="g-pfc"><dt>前頭前野<span class="who">前頭葉の前部</span></dt><dd>計画を立てる、選択肢を比べて決める、衝動を抑える、作業記憶で情報を保ちながら考える、といった高度な働きに関わります。成人期の初め頃まで時間をかけて成熟していく部位です。</dd></div>
+    <div id="g-parietal"><dt>頭頂葉<span class="who">大脳の頭頂部</span></dt><dd>触覚や体の位置の感覚を受け取り、物がどこにあるか、自分の体とどういう位置関係かを把握する働きに関わります。地図を読む、手を伸ばして物をつかむといった動作を支えます。</dd></div>
+    <div id="g-occipital"><dt>後頭葉<span class="who">大脳の後部</span></dt><dd>目から入った情報を処理する視覚の中枢です。形・色・動きなどが別々の領域で処理され、組み合わされて「見える」体験になります。</dd></div>
+    <div id="g-temporal"><dt>側頭葉<span class="who">大脳の側面</span></dt><dd>音を聞き分ける聴覚、言葉の意味の理解、物や顔を見分ける働きに関わります。内側には海馬と扁桃体があります。</dd></div>
+    <div id="g-hippocampus"><dt>海馬<span class="who">側頭葉の内側</span></dt><dd>新しい出来事や知識を長期記憶にするために欠かせない部位です。てんかん治療で両側の海馬を含む部分を切除した患者（H.M.）は、昔の記憶は保ったまま新しい出来事を覚えられなくなり、一方で新しい手作業の技能は練習で上達しました。</dd></div>
+    <div id="g-amygdala"><dt>扁桃体<span class="who">海馬の前方</span></dt><dd>危険の手がかりを素早く察知し、恐怖や不安などの反応を引き起こす部位です。感情を伴う出来事がよく記憶に残るのにも関わっています。</dd></div>
+    <div id="g-cerebellum"><dt>小脳<span class="who">大脳の後ろ下</span></dt><dd>運動のタイミングや力加減を調整し、自転車の乗り方やタイピングのような、体で覚える技能の学習に関わります。小脳が傷つくと、動作がぎこちなくなります。</dd></div>
+    <div id="g-brainstem"><dt>脳幹<span class="who">大脳と脊髄をつなぐ部分</span></dt><dd>呼吸・心拍・血圧・覚醒など、意識しなくても生命を保つ働きを担います。</dd></div>
+    <div id="g-plasticity"><dt>神経可塑性<span class="who">脳の性質</span></dt><dd>経験や学習によって、神経細胞どうしのつながりの強さや配線が変わる性質です。大人になっても続き、練習による上達や、脳の損傷後のリハビリによる回復を支えています。</dd></div>
+    <div id="g-myth10"><dt>「脳の10%しか使っていない」<span class="who">俗説</span></dt><dd>脳画像の研究では、1日の間に脳のほぼすべての領域が活動しており、使われていない90%は見つかっていません。小さな損傷でも何らかの影響が出ることからも、この説は否定されています。</dd></div>
+    <div id="g-mythlr"><dt>「右脳型・左脳型」<span class="who">俗説</span></dt><dd>言語は主に左半球というように、左右の脳で得意な処理の偏りがあるのは事実です。しかし、どちらかの半球を主に使う「右脳型の人」「左脳型の人」がいるという証拠はなく、大規模な脳画像の分析でも見つかっていません。</dd></div>
+    <div id="g-mythblood"><dt>血液型性格診断<span class="who">俗説</span></dt><dd>A型は几帳面、などと血液型で性格を分ける考え方です。日本や米国の大規模な調査データの分析で、血液型と性格の間に意味のある関係は見つかっていません。</dd></div>
+  </dl>
+
+  <h3>判断と認知バイアス</h3>
+  <dl class="glossary">
+    <div id="g-dual"><dt>二重過程理論（システム1・システム2）<span class="who">スタノヴィッチら、カーネマンが普及</span></dt><dd>人の思考には、速く自動的で努力のいらない処理（システム1）と、遅く意識的で集中力を使う処理（システム2）があるという考えです。脳の中に2つの装置があるという意味ではなく、思考の特徴を2つに分けて理解するための整理です。</dd></div>
+    <div id="g-heuristic"><dt>ヒューリスティック<span class="who">トヴェルスキーとカーネマン（1970年代）</span></dt><dd>厳密に計算せず、経験則で手早く答えを出す思考の近道です。「有名なほうのブランドを選ぶ」のように、たいていはうまくいきますが、条件によっては系統的な誤りを生みます。</dd></div>
+    <div id="g-bias"><dt>認知バイアス<span class="who">判断の偏り</span></dt><dd>ランダムなばらつきではなく、多くの人が同じ方向に判断を誤る傾向のことです。知識や知能が高い人にも起こり、知っているだけでは防ぎにくいとされます。</dd></div>
+    <div id="g-confirmation"><dt>確証バイアス<span class="who">ウェイソンの実験（1960年代）など</span></dt><dd>自分の考えに合う情報ばかりを探し、重く見て、合わない情報を軽く扱う傾向です。占いが当たったときだけ印象に残るのもその一例です。</dd></div>
+    <div id="g-anchoring"><dt>アンカリング<span class="who">トヴェルスキーとカーネマン（1974年）</span></dt><dd>最初に示された数字（アンカー）に、その後の見積もりが引きずられる傾向です。値札に「通常価格1万円」と書かれていると、セール価格の6千円が安く感じられるのが典型例です。</dd></div>
+    <div id="g-lossaversion"><dt>損失回避<span class="who">プロスペクト理論の中心</span></dt><dd>同じ金額でも、得る喜びより失う痛みのほうを強く感じる傾向です。勝てば1万円、負ければ1万円を失う五分五分の賭けを、多くの人が断ります。</dd></div>
+    <div id="g-statusquo"><dt>現状維持バイアス<span class="who">サミュエルソンとゼックハウザー（1988年）</span></dt><dd>変えたほうが得な場合でも、今の状態を続けることを選びやすい傾向です。携帯電話の料金プランや保険を、条件の良い選択肢があっても見直さないのがその例です。</dd></div>
+    <div id="g-normalcy"><dt>正常性バイアス<span class="who">災害心理学の用語</span></dt><dd>異常な事態に直面しても「たいしたことはない」「いつも通りだ」と解釈し、危険を小さく見積もる傾向です。警報が出ても避難が遅れる理由の一つとして、防災の分野で注意が呼びかけられています。</dd></div>
+    <div id="g-sunkcost"><dt>サンクコスト効果<span class="who">アークスとブルーマー（1985年）など</span></dt><dd>すでに払って取り戻せない費用（埋没費用）を惜しんで、続けても損な行動をやめられない傾向です。つまらない映画でも、料金を払ったからと最後まで見てしまうのが典型例です。</dd></div>
+    <div id="g-availability"><dt>利用可能性ヒューリスティック<span class="who">トヴェルスキーとカーネマン（1973年）</span></dt><dd>思い出しやすい出来事ほど、よく起こると判断する傾向です。飛行機事故の報道を見た後は、統計上は車のほうが危険でも、飛行機を怖く感じやすくなります。</dd></div>
+    <div id="g-planning"><dt>計画錯誤<span class="who">カーネマンとトヴェルスキー（1979年）</span></dt><dd>過去に同じような作業で遅れた経験があっても、自分の計画については所要時間を短く見積もってしまう傾向です。夏休みの宿題が予定通りに終わらないのが身近な例です。</dd></div>
+    <div id="g-hindsight"><dt>後知恵バイアス<span class="who">フィッシュホフ（1975年）</span></dt><dd>結果を知った後で、「最初から予測できた」と感じてしまう傾向です。試合の結果を知ってから「やっぱりこっちが勝つと思っていた」と言うのがその例です。</dd></div>
+    <div id="g-framing"><dt>フレーミング効果<span class="who">トヴェルスキーとカーネマン（1981年）</span></dt><dd>内容は同じでも、示し方（枠組み）によって選択が変わる傾向です。「生存率90%」と「死亡率10%」の手術では、前者のほうが選ばれやすいことが知られています。</dd></div>
+  </dl>
+
+  <h3>再現が確認されていない研究</h3>
+  <dl class="glossary">
+    <div id="g-egodepletion"><dt>自我消耗<span class="who">バウマイスターら（1998年）、再現が確認されていない</span></dt><dd>意志の力は使うと減る有限の資源で、我慢を続けると後の課題で粘れなくなる、という説です。多くの研究室が同じ手順で行った大規模な追試では、効果はほぼ見られませんでした。</dd></div>
+    <div id="g-powerpose"><dt>パワーポーズ<span class="who">カーニーら（2010年）、再現が確認されていない</span></dt><dd>両手を腰に当てるなど力強い姿勢を数分とると、ホルモンが変化し、リスクをとる行動が増えるという主張です。追試ではホルモンや行動の変化は再現されず、元の論文の著者の一人も効果を信じていないと表明しました。</dd></div>
+    <div id="g-priming"><dt>行動プライミング<span class="who">1990年代の研究など、再現が確認されていないものが多い</span></dt><dd>先に見た言葉や画像が、本人の気づかないうちにその後の行動を変えるという研究群です。高齢者に関する単語を読むと歩くのが遅くなる、といった有名な結果の多くは追試で再現されていません。なお、先に見た単語が後の単語の認識を速めるといった知覚・言語のプライミングは、確かめられている現象です。</dd></div>
+  </dl>
+
+  <h3>記憶と学習</h3>
+  <dl class="glossary">
+    <div id="g-multistore"><dt>多重貯蔵モデル<span class="who">アトキンソンとシフリン（1968年）</span></dt><dd>記憶を感覚記憶・短期記憶・長期記憶という性質の異なる段階に分け、情報が順に移っていくと考えるモデルです。実際の記憶はもっと複雑ですが、全体像をつかむ基本の枠組みとして使われています。</dd></div>
+    <div id="g-sensory"><dt>感覚記憶<span class="who">記憶の第1段階</span></dt><dd>目や耳から入った情報を、加工せずにごく短い時間だけ保持する記憶です。視覚では1秒に満たない間で、話しかけられた直後に「え？」と聞き返しながら内容がわかるのは、聴覚の感覚記憶に音が残っているからです。</dd></div>
+    <div id="g-shortterm"><dt>短期記憶<span class="who">記憶の第2段階</span></dt><dd>注意を向けた情報を、繰り返さなければ数十秒ほど保持する記憶です。初めて聞いた電話番号を、かけ終わるまでだけ覚えておくのが典型例です。</dd></div>
+    <div id="g-working"><dt>作業記憶（ワーキングメモリ）<span class="who">バドリーとヒッチ（1974年）</span></dt><dd>短期記憶を、情報を保ちながら操作する「心の作業台」として捉え直した考えです。暗算で繰り上がりを覚えながら次の桁を計算するのがその働きで、一度に扱える量は4つ前後のまとまり（<a href="#g-chunk">チャンク</a>）とされます。</dd></div>
+    <div id="g-chunk"><dt>チャンク<span class="who">ミラー（1956年）が提唱</span></dt><dd>意味のあるまとまりとして一度に扱える情報の単位です。「NTTJRNHK」の8文字も「NTT・JR・NHK」と3つにまとめると覚えやすくなります。ミラーは容量を7前後としましたが、現在は4前後とする見方が有力です。</dd></div>
+    <div id="g-longterm"><dt>長期記憶<span class="who">記憶の第3段階</span></dt><dd>数分前から何十年前までの情報を保存する記憶で、容量の限界はまだ見つかっていません。思い出せないことの多くは、消えたのではなく取り出す手がかりが足りない状態だと考えられています。</dd></div>
+    <div id="g-episodic"><dt>エピソード記憶<span class="who">タルヴィング（1972年）が区別</span></dt><dd>「いつ・どこで・何があったか」という、自分が体験した出来事の記憶です。昨日の会議で誰が何を言ったかがこれにあたります。</dd></div>
+    <div id="g-semantic"><dt>意味記憶<span class="who">タルヴィング（1972年）が区別</span></dt><dd>いつ覚えたかに関係なく使える、一般的な知識の記憶です。「TCPは通信の信頼性を確保するプロトコル」という知識がこれにあたります。</dd></div>
+    <div id="g-procedural"><dt>手続き記憶<span class="who">非宣言的記憶の一種</span></dt><dd>言葉で説明しにくい、体で覚えた技能の記憶です。キーの位置を言えなくてもタイピングできるのがその例で、小脳などが関わります。</dd></div>
+    <div id="g-consolidation"><dt>記憶の固定化<span class="who">記憶研究の基本概念</span></dt><dd>覚えた直後の不安定な記憶が、時間をかけて安定した長期記憶になる過程です。睡眠中にこの過程が進むことを示す研究が多く、徹夜で詰め込むより眠ったほうが定着しやすいと考えられています。</dd></div>
+    <div id="g-forgetting"><dt>忘却曲線<span class="who">エビングハウス（1885年）</span></dt><dd>覚えたことを時間とともに忘れていく様子を示した曲線で、忘却は直後に急に進み、その後ゆるやかになります。エビングハウスは意味のない音節を使い、覚え直すのにかかる時間がどれだけ節約できたかで記憶を測りました。意味のある内容や復習した内容は、もっと忘れにくくなります。</dd></div>
+    <div id="g-spacing"><dt>分散学習（間隔効果）<span class="who">エビングハウス以来、多数の実験で確認</span></dt><dd>同じ学習時間でも、一度にまとめるより間隔をあけて複数回に分けたほうが長く記憶に残るという効果です。試験前夜の一夜漬けより、数日前から少しずつ学ぶほうが、試験後も内容を覚えています。</dd></div>
+    <div id="g-retrieval"><dt>想起練習（テスト効果）<span class="who">ローディガーとカーピックの研究（2006年）など</span></dt><dd>覚えた内容を思い出す行為そのものが、記憶を強くするという効果です。教科書を何度も読み返すより、閉じて要点を書き出したり小テストを解いたりするほうが、後の成績が良くなります。</dd></div>
+  </dl>
+
+  <h3>動機づけ</h3>
+  <dl class="glossary">
+    <div id="g-extrinsic"><dt>外発的動機<span class="who">動機づけの分類</span></dt><dd>報酬・評価・罰・締め切りなど、活動の外にある理由による動機です。ボーナスのために残業する、怒られないように報告書を出す、などがあたります。</dd></div>
+    <div id="g-intrinsic"><dt>内発的動機<span class="who">動機づけの分類</span></dt><dd>活動そのものの面白さや、知りたい・上達したいという気持ちから生まれる動機です。誰にも頼まれていないのに趣味のプログラムを書くのがその例です。</dd></div>
+    <div id="g-sdt"><dt>自己決定理論<span class="who">デシとライアン（1980年代〜）</span></dt><dd>動機を外発と内発の二択ではなく、自律の度合いによる連続した段階で捉える理論です。自分で選んでいる感覚（自律性）、できている感覚（有能感）、人とのつながり（関係性）が満たされると、自分から動く動機が育つとしています。</dd></div>
+    <div id="g-undermining"><dt>アンダーマイニング効果<span class="who">デシ（1971年）ほか</span></dt><dd>自分から楽しんでいた活動に、やったら報酬を与えると約束すると、報酬がなくなった後にその活動への意欲が下がる現象です。複数の研究をまとめた分析でも、事前に約束された物の報酬で起こりやすいことが確認されていますが、ほめ言葉のような報酬ではむしろ意欲が上がることがあります。</dd></div>
+    <div id="g-maslow"><dt>欲求段階説<span class="who">マズロー（1943年）</span></dt><dd>人の欲求は、生理的欲求・安全・所属と愛・承認・自己実現の5段階からなり、下の段階がある程度満たされると上の段階の欲求が強まるという説です。わかりやすく普及した一方、順番どおりに満たされるという実証的な裏づけは弱く、文化による違いも指摘されています。</dd></div>
+  </dl>
+
+  <h3>仕事とチーム</h3>
+  <dl class="glossary">
+    <div id="g-premortem"><dt>プレモーテム<span class="who">クライン（2007年）</span></dt><dd>計画を始める前に「このプロジェクトは1年後に失敗した」と仮定し、その原因を全員で書き出す方法です。楽観的な空気の中では言い出しにくい懸念を、出しやすくする効果があります。</dd></div>
+    <div id="g-psysafety"><dt>心理的安全性<span class="who">エドモンドソン（1999年）</span></dt><dd>チームの中で、質問・反対意見・ミスの報告をしても非難されないと、メンバーが信じられる状態です。仲が良いことや基準が甘いこととは違います。Googleの社内調査（プロジェクト・アリストテレス）でも、成果を上げるチームの最も重要な要素とされました。</dd></div>
+  </dl>
+
+  <div class="next">
+    <a href="index.html"><span>全体地図へ</span>教養の全体像を見る</a>
+    <a href="philosophy.html"><span>関連：哲学・思想史</span>心理学が独立する前の「心とは何か」の議論</a>
+    <a href="economics.html"><span>関連：経済・お金</span>行動経済学とお金の判断</a>
+    <a href="science.html"><span>関連：科学史</span>実験と検証という科学の方法</a>
+  </div>
+
+  <footer>作成: 2026-10-19 ／ 教養の図解シリーズ</footer>
+</main>
+</body>
+</html>

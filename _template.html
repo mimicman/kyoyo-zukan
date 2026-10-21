@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="favicon.svg">
+<title>{{ページ名}}｜教養の図解</title>
+<style>
+/* ===== 教養の図解 共通スタイル（全ページで同一のものを使う） ===== */
+:root {
+  --bg: #f7f5f0;
+  --surface: #ffffff;
+  --ink: #1f2328;
+  --ink-soft: #57606a;
+  --line: #d8d4ca;
+  --accent: #b5532a;        /* 見出し・強調 */
+  --c-phil: #6a4fb3;        /* 哲学 */
+  --c-hist: #b5532a;        /* 歴史 */
+  --c-econ: #1f7a5c;        /* 経済 */
+  --c-reli: #a07a12;        /* 宗教 */
+  --c-sci:  #2a63b5;        /* 科学 */
+  --c-art:  #b53a6b;        /* 芸術 */
+  --c-poli: #3d5a80;        /* 政治・法 */
+  --c-psy:  #0f7c86;        /* 心理学 */
+  --c-jp:   #a8323a;        /* 日本史 */
+  --tint: rgba(181, 83, 42, 0.08);
+  --radius: 12px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15171a; --surface: #1e2125; --ink: #e8e6e1; --ink-soft: #a3a8ae; --line: #3a3f45;
+    --accent: #e08a5f; --c-phil: #a58ee8; --c-hist: #e08a5f; --c-econ: #5cc39d;
+    --c-reli: #d9b24a; --c-sci: #6f9ee8; --c-art: #e57ba3; --c-poli: #8fa9d1; --c-psy: #4fc1c9; --c-jp: #e2767d; --tint: rgba(224, 138, 95, 0.12); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15171a; --surface: #1e2125; --ink: #e8e6e1; --ink-soft: #a3a8ae; --line: #3a3f45;
+  --accent: #e08a5f; --c-phil: #a58ee8; --c-hist: #e08a5f; --c-econ: #5cc39d;
+  --c-reli: #d9b24a; --c-sci: #6f9ee8; --c-art: #e57ba3; --c-poli: #8fa9d1; --c-psy: #4fc1c9; --c-jp: #e2767d; --tint: rgba(224, 138, 95, 0.12); color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  font-size: 16px; line-height: 1.8;
+}
+main { max-width: 860px; margin: 0 auto; padding-block: 0 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+nav.top {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg);
+  border-bottom: 1px solid var(--line); overflow-x: auto; white-space: nowrap;
+}
+nav.top ul { display: flex; gap: 4px; list-style: none; margin: 0 auto; padding-block: 8px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); max-width: 860px; }
+nav.top a {
+  display: inline-block; padding: 4px 12px; border-radius: 999px; color: var(--ink-soft);
+  text-decoration: none; font-size: 14px;
+}
+nav.top a[aria-current="page"] { background: var(--accent); color: #fff; }
+header.hero { padding: 32px 0 8px; }
+header.hero .kicker { color: var(--accent); font-weight: 700; font-size: 13px; letter-spacing: .08em; }
+h1 { font-size: 28px; line-height: 1.35; margin: 4px 0 12px; }
+h2 { font-size: 22px; line-height: 1.4; margin: 48px 0 12px; padding-left: 12px; border-left: 5px solid var(--accent); }
+h3 { font-size: 18px; margin: 28px 0 8px; }
+p { margin: 0 0 14px; }
+.lead { color: var(--ink-soft); }
+.toc { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 20px; }
+.toc ol { margin: 0; padding-left: 1.2em; }
+.toc a { color: var(--ink); }
+figure.diagram {
+  margin: 20px 0; background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 12px;
+}
+figure.diagram svg { display: block; width: 100%; height: auto; }
+figure.diagram figcaption { font-size: 13px; color: var(--ink-soft); margin-top: 8px; text-align: center; }
+/* SVG内の文字・線は必ずこのクラスで色を付ける（ダークモード対応のため直接の色指定はしない） */
+svg .t { fill: var(--ink); font-size: 14px; }
+svg .t-soft { fill: var(--ink-soft); font-size: 12px; }
+svg .t-strong { fill: var(--ink); font-size: 15px; font-weight: 700; }
+svg .ln { stroke: var(--line); stroke-width: 2; fill: none; }
+svg .ln-ink { stroke: var(--ink-soft); stroke-width: 1.5; fill: none; }
+svg .box { fill: var(--surface); stroke: var(--line); stroke-width: 1.5; }
+svg .phil { fill: var(--c-phil); } svg .hist { fill: var(--c-hist); } svg .econ { fill: var(--c-econ); }
+svg .reli { fill: var(--c-reli); } svg .sci { fill: var(--c-sci); } svg .art { fill: var(--c-art); }
+svg .poli { fill: var(--c-poli); } svg .psy { fill: var(--c-psy); } svg .jp { fill: var(--c-jp); }
+svg .s-phil { stroke: var(--c-phil); } svg .s-hist { stroke: var(--c-hist); } svg .s-econ { stroke: var(--c-econ); }
+svg .s-reli { stroke: var(--c-reli); } svg .s-sci { stroke: var(--c-sci); } svg .s-art { stroke: var(--c-art); }
+svg .s-poli { stroke: var(--c-poli); } svg .s-psy { stroke: var(--c-psy); } svg .s-jp { stroke: var(--c-jp); }
+svg .on-color { fill: #fff; font-size: 13px; font-weight: 700; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 16px 0; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; }
+.card h4 { margin: 0 0 6px; font-size: 16px; }
+.card p { margin: 0; font-size: 15px; }
+.card .tag { display: inline-block; font-size: 12px; padding: 0 8px; border-radius: 999px; background: var(--tint); color: var(--accent); margin-bottom: 6px; }
+.point { background: var(--tint); border-radius: var(--radius); padding: 12px 16px; margin: 16px 0; }
+.point strong { color: var(--accent); }
+.table-wrap { overflow-x: auto; margin: 16px 0; }
+table { border-collapse: collapse; width: 100%; min-width: 520px; background: var(--surface); font-size: 15px; }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: var(--tint); white-space: nowrap; }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 16px; margin: 10px 0; }
+details summary { cursor: pointer; font-weight: 700; }
+.next { margin-top: 48px; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.next a { display: block; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; color: var(--ink); text-decoration: none; }
+.next a span { display: block; font-size: 12px; color: var(--ink-soft); }
+footer { margin-top: 48px; font-size: 13px; color: var(--ink-soft); }
+@media (max-width: 480px) { h1 { font-size: 24px; } h2 { font-size: 20px; } }
+/* 図はスマホ幅で組んでいるので、PCで拡大しすぎないよう最大幅を抑える */
+figure.diagram svg { max-width: 520px; margin: 0 auto; }
+/* ダークでは分野色が明るくなるため、色の上の文字は暗くする */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) svg .on-color { fill: var(--bg); }
+  :root:not([data-theme="light"]) nav.top a[aria-current="page"] { color: var(--bg); }
+}
+:root[data-theme="dark"] svg .on-color { fill: var(--bg); }
+:root[data-theme="dark"] nav.top a[aria-current="page"] { color: var(--bg); }
+/* 考え方・用語の解説（dl.glossary） */
+main a { color: var(--accent); }
+.glossary { display: grid; gap: 10px; margin: 16px 0; }
+.glossary > div { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 16px; scroll-margin-top: 64px; }
+.glossary dt { font-weight: 700; }
+.glossary dt .who { font-weight: 400; font-size: 13px; color: var(--ink-soft); margin-left: 0.5em; }
+.glossary dd { margin: 4px 0 0; font-size: 15px; }
+</style>
+</head>
+<body>
+<nav class="top" aria-label="教養の図解">
+  <ul>
+    <li><a href="index.html">全体地図</a></li>
+    <li><a href="philosophy.html">哲学・思想史</a></li>
+    <li><a href="religion.html">宗教</a></li>
+    <li><a href="world-history.html">世界史</a></li>
+    <li><a href="japan.html">日本史・日本文化</a></li>
+    <li><a href="politics.html">政治・法</a></li>
+    <li><a href="economics.html">経済・お金</a></li>
+    <li><a href="science.html">科学史</a></li>
+    <li><a href="psychology.html">心理学・脳</a></li>
+    <li><a href="art.html">芸術</a></li>
+  </ul>
+</nav>
+<main>
+  <header class="hero">
+    <div class="kicker">教養の図解</div>
+    <h1>{{ページ名}}</h1>
+    <p class="lead">{{このページで分かること}}</p>
+  </header>
+  <!-- 本文 -->
+  <footer>作成: 2026-10-19 ／ 教養の図解シリーズ</footer>
+</main>
+</body>
+</html>

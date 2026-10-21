@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="favicon.svg">
+<title>科学史｜教養の図解</title>
+<style>
+/* ===== 教養の図解 共通スタイル（全ページで同一のものを使う） ===== */
+:root {
+  --bg: #f7f5f0;
+  --surface: #ffffff;
+  --ink: #1f2328;
+  --ink-soft: #57606a;
+  --line: #d8d4ca;
+  --accent: #b5532a;        /* 見出し・強調 */
+  --c-phil: #6a4fb3;        /* 哲学 */
+  --c-hist: #b5532a;        /* 歴史 */
+  --c-econ: #1f7a5c;        /* 経済 */
+  --c-reli: #a07a12;        /* 宗教 */
+  --c-sci:  #2a63b5;        /* 科学 */
+  --c-art:  #b53a6b;        /* 芸術 */
+  --c-poli: #3d5a80;        /* 政治・法 */
+  --c-psy:  #0f7c86;        /* 心理学 */
+  --c-jp:   #a8323a;        /* 日本史 */
+  --tint: rgba(181, 83, 42, 0.08);
+  --radius: 12px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15171a; --surface: #1e2125; --ink: #e8e6e1; --ink-soft: #a3a8ae; --line: #3a3f45;
+    --accent: #e08a5f; --c-phil: #a58ee8; --c-hist: #e08a5f; --c-econ: #5cc39d;
+    --c-reli: #d9b24a; --c-sci: #6f9ee8; --c-art: #e57ba3; --c-poli: #8fa9d1; --c-psy: #4fc1c9; --c-jp: #e2767d; --tint: rgba(224, 138, 95, 0.12); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15171a; --surface: #1e2125; --ink: #e8e6e1; --ink-soft: #a3a8ae; --line: #3a3f45;
+  --accent: #e08a5f; --c-phil: #a58ee8; --c-hist: #e08a5f; --c-econ: #5cc39d;
+  --c-reli: #d9b24a; --c-sci: #6f9ee8; --c-art: #e57ba3; --c-poli: #8fa9d1; --c-psy: #4fc1c9; --c-jp: #e2767d; --tint: rgba(224, 138, 95, 0.12); color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  font-size: 16px; line-height: 1.8;
+}
+main { max-width: 860px; margin: 0 auto; padding-block: 0 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+nav.top {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg);
+  border-bottom: 1px solid var(--line); overflow-x: auto; white-space: nowrap;
+}
+nav.top ul { display: flex; gap: 4px; list-style: none; margin: 0 auto; padding-block: 8px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); max-width: 860px; }
+nav.top a {
+  display: inline-block; padding: 4px 12px; border-radius: 999px; color: var(--ink-soft);
+  text-decoration: none; font-size: 14px;
+}
+nav.top a[aria-current="page"] { background: var(--accent); color: #fff; }
+header.hero { padding: 32px 0 8px; }
+header.hero .kicker { color: var(--accent); font-weight: 700; font-size: 13px; letter-spacing: .08em; }
+h1 { font-size: 28px; line-height: 1.35; margin: 4px 0 12px; }
+h2 { font-size: 22px; line-height: 1.4; margin: 48px 0 12px; padding-left: 12px; border-left: 5px solid var(--accent); }
+h3 { font-size: 18px; margin: 28px 0 8px; }
+p { margin: 0 0 14px; }
+.lead { color: var(--ink-soft); }
+.toc { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 20px; }
+.toc ol { margin: 0; padding-left: 1.2em; }
+.toc a { color: var(--ink); }
+figure.diagram {
+  margin: 20px 0; background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 12px;
+}
+figure.diagram svg { display: block; width: 100%; height: auto; }
+figure.diagram figcaption { font-size: 13px; color: var(--ink-soft); margin-top: 8px; text-align: center; }
+/* SVG内の文字・線は必ずこのクラスで色を付ける（ダークモード対応のため直接の色指定はしない） */
+svg .t { fill: var(--ink); font-size: 14px; }
+svg .t-soft { fill: var(--ink-soft); font-size: 12px; }
+svg .t-strong { fill: var(--ink); font-size: 15px; font-weight: 700; }
+svg .ln { stroke: var(--line); stroke-width: 2; fill: none; }
+svg .ln-ink { stroke: var(--ink-soft); stroke-width: 1.5; fill: none; }
+svg .box { fill: var(--surface); stroke: var(--line); stroke-width: 1.5; }
+svg .phil { fill: var(--c-phil); } svg .hist { fill: var(--c-hist); } svg .econ { fill: var(--c-econ); }
+svg .reli { fill: var(--c-reli); } svg .sci { fill: var(--c-sci); } svg .art { fill: var(--c-art); }
+svg .poli { fill: var(--c-poli); } svg .psy { fill: var(--c-psy); } svg .jp { fill: var(--c-jp); }
+svg .s-phil { stroke: var(--c-phil); } svg .s-hist { stroke: var(--c-hist); } svg .s-econ { stroke: var(--c-econ); }
+svg .s-reli { stroke: var(--c-reli); } svg .s-sci { stroke: var(--c-sci); } svg .s-art { stroke: var(--c-art); }
+svg .s-poli { stroke: var(--c-poli); } svg .s-psy { stroke: var(--c-psy); } svg .s-jp { stroke: var(--c-jp); }
+svg .on-color { fill: #fff; font-size: 13px; font-weight: 700; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 16px 0; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; }
+.card h4 { margin: 0 0 6px; font-size: 16px; }
+.card p { margin: 0; font-size: 15px; }
+.card .tag { display: inline-block; font-size: 12px; padding: 0 8px; border-radius: 999px; background: var(--tint); color: var(--accent); margin-bottom: 6px; }
+.point { background: var(--tint); border-radius: var(--radius); padding: 12px 16px; margin: 16px 0; }
+.point strong { color: var(--accent); }
+.table-wrap { overflow-x: auto; margin: 16px 0; }
+table { border-collapse: collapse; width: 100%; min-width: 520px; background: var(--surface); font-size: 15px; }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: var(--tint); white-space: nowrap; }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 16px; margin: 10px 0; }
+details summary { cursor: pointer; font-weight: 700; }
+.next { margin-top: 48px; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.next a { display: block; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; color: var(--ink); text-decoration: none; }
+.next a span { display: block; font-size: 12px; color: var(--ink-soft); }
+footer { margin-top: 48px; font-size: 13px; color: var(--ink-soft); }
+@media (max-width: 480px) { h1 { font-size: 24px; } h2 { font-size: 20px; } }
+/* 図はスマホ幅で組んでいるので、PCで拡大しすぎないよう最大幅を抑える */
+figure.diagram svg { max-width: 520px; margin: 0 auto; }
+/* ダークでは分野色が明るくなるため、色の上の文字は暗くする */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) svg .on-color { fill: var(--bg); }
+  :root:not([data-theme="light"]) nav.top a[aria-current="page"] { color: var(--bg); }
+}
+:root[data-theme="dark"] svg .on-color { fill: var(--bg); }
+:root[data-theme="dark"] nav.top a[aria-current="page"] { color: var(--bg); }
+/* 考え方・用語の解説（dl.glossary） */
+main a { color: var(--accent); }
+.glossary { display: grid; gap: 10px; margin: 16px 0; }
+.glossary > div { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 16px; scroll-margin-top: 64px; }
+.glossary dt { font-weight: 700; }
+.glossary dt .who { font-weight: 400; font-size: 13px; color: var(--ink-soft); margin-left: 0.5em; }
+.glossary dd { margin: 4px 0 0; font-size: 15px; }
+/* science固有 */
+.card .tag.sci-tag { background: rgba(42, 99, 181, 0.12); color: var(--c-sci); }
+</style>
+</head>
+<body>
+<nav class="top" aria-label="教養の図解">
+  <ul>
+    <li><a href="index.html">全体地図</a></li>
+    <li><a href="philosophy.html">哲学・思想史</a></li>
+    <li><a href="religion.html">宗教</a></li>
+    <li><a href="world-history.html">世界史</a></li>
+    <li><a href="japan.html">日本史・日本文化</a></li>
+    <li><a href="politics.html">政治・法</a></li>
+    <li><a href="economics.html">経済・お金</a></li>
+    <li><a href="science.html" aria-current="page">科学史</a></li>
+    <li><a href="psychology.html">心理学・脳</a></li>
+    <li><a href="art.html">芸術</a></li>
+  </ul>
+</nav>
+<main>
+  <header class="hero">
+    <div class="kicker">教養の図解</div>
+    <h1>科学史</h1>
+    <p class="lead">科学がどんな手続きで知識を確かめるのかを押さえたうえで、古代ギリシャから20世紀までの流れ、世界の見方を変えた3つの転換、分野別の主要な法則、そしてITの土台になった情報科学の系譜を図で整理します。</p>
+  </header>
+
+  <nav class="toc" aria-label="目次">
+    <ol>
+      <li><a href="#what">科学とは何か</a></li>
+      <li><a href="#history">科学史の大きな流れ</a></li>
+      <li><a href="#shifts">世界の見方を変えた3つの転換</a></li>
+      <li><a href="#laws">分野別・主要な法則と理論</a></li>
+      <li><a href="#info">情報科学の系譜</a></li>
+      <li><a href="#work">科学の考え方を仕事に活かす</a></li>
+      <li><a href="#glossary">考え方・用語の解説</a></li>
+    </ol>
+  </nav>
+
+  <!-- 1. 科学とは何か -->
+  <h2 id="what">科学とは何か</h2>
+  <p>科学は、自然についての主張を観察と実験で確かめながら知識を積み上げる営みです。権威や直感ではなく、誰がやっても同じ結果が出るか（<a href="#g-saigen">再現性</a>）で正しさを判断します。その手続きは、次のサイクルとしてまとめられます（<a href="#g-hoho">科学的方法</a>）。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 540" role="img" aria-labelledby="fig1-t">
+      <title id="fig1-t">観察・仮説・実験・検証のサイクルと反証可能性</title>
+      <defs>
+        <marker id="ah1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+          <path class="sci" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+      <rect class="sci" x="80" y="8" width="200" height="34" rx="8"/>
+      <text class="on-color" x="180" y="30" text-anchor="middle">科学的方法のサイクル</text>
+
+      <rect class="box" x="10" y="56" width="150" height="80" rx="8"/>
+      <rect class="sci" x="10" y="56" width="5" height="80"/>
+      <text class="t-strong" x="26" y="82">① 観察</text>
+      <text class="t" x="26" y="106">現象を見て</text>
+      <text class="t" x="26" y="126">疑問を持つ</text>
+
+      <rect class="box" x="200" y="56" width="150" height="80" rx="8"/>
+      <rect class="sci" x="200" y="56" width="5" height="80"/>
+      <text class="t-strong" x="216" y="82">② 仮説</text>
+      <text class="t" x="216" y="106">原因を推測し</text>
+      <text class="t" x="216" y="126">予測を立てる</text>
+
+      <rect class="box" x="200" y="176" width="150" height="80" rx="8"/>
+      <rect class="sci" x="200" y="176" width="5" height="80"/>
+      <text class="t-strong" x="216" y="202">③ 実験</text>
+      <text class="t" x="216" y="226">条件をそろえ</text>
+      <text class="t" x="216" y="246">結果を測る</text>
+
+      <rect class="box" x="10" y="176" width="150" height="80" rx="8"/>
+      <rect class="sci" x="10" y="176" width="5" height="80"/>
+      <text class="t-strong" x="26" y="202">④ 検証</text>
+      <text class="t" x="26" y="226">予測と比べる</text>
+      <text class="t" x="26" y="246">外れたら修正</text>
+
+      <line class="ln s-sci" x1="162" y1="96" x2="197" y2="96" marker-end="url(#ah1)"/>
+      <line class="ln s-sci" x1="275" y1="138" x2="275" y2="173" marker-end="url(#ah1)"/>
+      <line class="ln s-sci" x1="198" y1="216" x2="163" y2="216" marker-end="url(#ah1)"/>
+      <line class="ln s-sci" x1="85" y1="174" x2="85" y2="139" marker-end="url(#ah1)"/>
+      <text class="t-soft" x="180" y="160" text-anchor="middle">くり返す</text>
+
+      <line class="ln s-sci" x1="85" y1="258" x2="85" y2="283" marker-end="url(#ah1)"/>
+      <rect class="box" x="10" y="286" width="340" height="60" rx="8"/>
+      <rect class="sci" x="10" y="286" width="5" height="60"/>
+      <text class="t-strong" x="26" y="310">検証に耐え続けた仮説 → 理論</text>
+      <text class="t-soft" x="26" y="332">新しい証拠が出れば修正・撤回されうる</text>
+
+      <text class="t-strong" x="180" y="382" text-anchor="middle">反証可能性：科学かどうかの目安</text>
+      <rect class="box" x="10" y="394" width="162" height="136" rx="8"/>
+      <rect class="sci" x="10" y="394" width="5" height="136"/>
+      <text class="t-strong" x="24" y="418">反証できる</text>
+      <text class="t" x="24" y="442">例：白鳥は</text>
+      <text class="t" x="24" y="462">すべて白い</text>
+      <text class="t-soft" x="24" y="486">黒い白鳥が1羽いれば</text>
+      <text class="t-soft" x="24" y="502">否定できる</text>
+      <text class="t" x="24" y="522">→ 科学の主張</text>
+
+      <rect class="box" x="188" y="394" width="162" height="136" rx="8"/>
+      <text class="t-strong" x="202" y="418">反証できない</text>
+      <text class="t" x="202" y="442">例：結果は</text>
+      <text class="t" x="202" y="462">すべて運命</text>
+      <text class="t-soft" x="202" y="486">どんな結果が出ても</text>
+      <text class="t-soft" x="202" y="502">説明できてしまう</text>
+      <text class="t" x="202" y="522">→ 科学の外</text>
+    </svg>
+    <figcaption>図1　科学的方法のサイクルと、反証可能性による「科学かどうか」の線引き</figcaption>
+  </figure>
+
+  <p>サイクルを何度回しても、仮説は「まだ否定されていない」だけで、最終的に証明されたわけではありません。20世紀の哲学者ポパーは、この点から「実験や観察で間違いだと示せる可能性があること」（<a href="#g-hansho">反証可能性</a>）を、科学とそうでない主張を分ける目安にしました。どんな結果でも説明できてしまう主張は、外れる余地がないぶん、科学としては何も主張していないことになります。</p>
+  <div class="point"><strong>ポイント：</strong>科学の強さは「正しいと証明できること」ではなく、「間違いを見つけて直せる仕組みを持っていること」にあります。</div>
+
+  <!-- 2. 年表 -->
+  <h2 id="history">科学史の大きな流れ</h2>
+  <p>古代ギリシャで始まった「自然を理屈で説明する」試みは、イスラム世界で受け継がれて発展し、12世紀以降ラテン語への翻訳を通じてヨーロッパに戻りました。16〜17世紀の<a href="#g-kakumei">科学革命</a>で実験と数学を柱とする方法が確立し、その後は分野ごとに専門化していきます。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 856" role="img" aria-labelledby="fig2-t">
+      <title id="fig2-t">古代ギリシャから20世紀までの科学史の年表</title>
+      <rect class="sci" x="40" y="8" width="310" height="36" rx="8"/>
+      <text class="on-color" x="195" y="31" text-anchor="middle">科学史の大きな流れ</text>
+      <line class="ln" x1="20" y1="60" x2="20" y2="844"/>
+
+      <!-- 古代ギリシャ -->
+      <circle class="sci" cx="20" cy="80" r="7"/>
+      <rect class="box" x="40" y="60" width="310" height="122" rx="8"/>
+      <text class="t-strong" x="54" y="84">古代ギリシャの自然哲学</text>
+      <text class="t-soft" x="54" y="102">前4〜前3世紀</text>
+      <text class="t" x="54" y="126">アリストテレス：観察と分類</text>
+      <text class="t" x="54" y="148">ユークリッド：幾何学を公理で体系化</text>
+      <text class="t" x="54" y="170">アルキメデス：浮力・てこを数学で</text>
+
+      <!-- イスラム世界 -->
+      <circle class="sci" cx="20" cy="218" r="7"/>
+      <rect class="box" x="40" y="198" width="310" height="122" rx="8"/>
+      <text class="t-strong" x="54" y="222">イスラム世界での継承と発展</text>
+      <text class="t-soft" x="54" y="240">8〜13世紀頃</text>
+      <text class="t" x="54" y="264">ギリシャの古典を翻訳し研究</text>
+      <text class="t" x="54" y="286">アル＝フワーリズミー：代数学</text>
+      <text class="t" x="54" y="308">イブン・アル＝ハイサム：光学</text>
+
+      <!-- 科学革命 -->
+      <circle class="sci" cx="20" cy="356" r="7"/>
+      <rect class="box" x="40" y="336" width="310" height="144" rx="8"/>
+      <text class="t-strong" x="54" y="360">科学革命</text>
+      <text class="t-soft" x="54" y="378">16〜17世紀</text>
+      <text class="t" x="54" y="402">コペルニクス：地動説（1543年）</text>
+      <text class="t" x="54" y="424">ガリレイ：望遠鏡観測と実験</text>
+      <text class="t" x="54" y="446">ケプラー：惑星運動の3法則</text>
+      <text class="t" x="54" y="468">ニュートン：万有引力（1687年）</text>
+
+      <!-- 18〜19世紀 -->
+      <circle class="sci" cx="20" cy="516" r="7"/>
+      <rect class="box" x="40" y="496" width="310" height="166" rx="8"/>
+      <text class="t-strong" x="54" y="520">化学・電磁気学・進化論</text>
+      <text class="t-soft" x="54" y="538">18〜19世紀</text>
+      <text class="t" x="54" y="562">ラヴォアジエ：質量保存の法則</text>
+      <text class="t" x="54" y="584">ファラデー：電磁誘導（1831年）</text>
+      <text class="t" x="54" y="606">マクスウェル：電気と磁気を統一</text>
+      <text class="t" x="54" y="628">ダーウィン：進化論（1859年）</text>
+      <text class="t" x="54" y="650">メンデレーエフ：周期表（1869年）</text>
+
+      <!-- 20世紀 -->
+      <circle class="sci" cx="20" cy="698" r="7"/>
+      <rect class="box" x="40" y="678" width="310" height="166" rx="8"/>
+      <text class="t-strong" x="54" y="702">20世紀の現代科学</text>
+      <text class="t-soft" x="54" y="720">20世紀</text>
+      <text class="t" x="54" y="744">アインシュタイン：相対性理論</text>
+      <text class="t" x="54" y="766">量子力学（1920年代）</text>
+      <text class="t" x="54" y="788">DNAの二重らせん（1953年）</text>
+      <text class="t" x="54" y="810">プレートテクトニクス（1960年代）</text>
+      <text class="t" x="54" y="832">コンピュータ（1940年代〜）</text>
+    </svg>
+    <figcaption>図2　科学史の大きな流れ（年号は確実なものだけ記載）</figcaption>
+  </figure>
+
+  <h3>古代ギリシャ：自然を理屈で説明する</h3>
+  <p>アリストテレスは動植物を観察して分類し、自然学を体系化しました。万物は土・水・空気・火からなるという<a href="#g-yongenso">四元素説</a>や、地球を中心とする<a href="#g-tendo">天動説</a>の宇宙像は、中世まで長く権威を持ちます。ユークリッドは少数の前提から定理を導く<a href="#g-koriki">公理系</a>で幾何学をまとめ、アルキメデスは<a href="#g-archimedes">アルキメデスの原理やてこの原理</a>を数学で示しました。</p>
+  <h3>イスラム世界：受け継ぎ、発展させる</h3>
+  <p>9世紀のバグダードなどでギリシャの古典がアラビア語に翻訳され、研究が進みました。アル＝フワーリズミーは方程式の解き方を<a href="#g-daisu">代数学</a>としてまとめ、その名は「アルゴリズム」の語源になりました。イブン・アル＝ハイサムは光の性質を実験で確かめる<a href="#g-kogaku">光学</a>を築きました。インド由来の数字（ゼロを含む位取り記数法）もこの経路でヨーロッパへ伝わります。</p>
+  <h3>科学革命：実験と数学が柱になる</h3>
+  <p>コペルニクスが<a href="#g-chido">地動説</a>を唱え、ガリレイは望遠鏡で木星の衛星などを観測して地動説を支持し、斜面や落下の実験から<a href="#g-kansei">慣性</a>の考えに近づきました。ケプラーは観測データから<a href="#g-kepler">ケプラーの法則</a>を導き、ニュートンは<a href="#g-undo">運動の法則</a>と<a href="#g-banyu">万有引力の法則</a>で、地上の落下と天体の運動を同じ法則で説明しました。</p>
+  <h3>18〜19世紀：分野ごとの体系ができる</h3>
+  <p>ラヴォアジエは燃焼を酸素との結びつきとして説明し、<a href="#g-shitsuryo">質量保存の法則</a>を示して近代化学の出発点を作りました。ファラデーの<a href="#g-yudo">電磁誘導</a>は発電機の原理となり、マクスウェルは電気と磁気を<a href="#g-denji">電磁気学</a>の方程式にまとめました。熱と仕事の研究からは<a href="#g-energy">エネルギー保存の法則</a>と<a href="#g-entropy">エントロピー</a>の考えが生まれ、生物学ではダーウィンの<a href="#g-shinka">進化論</a>が登場します。</p>
+  <h3>20世紀：常識の外側へ</h3>
+  <p><a href="#g-sotai">相対性理論</a>と<a href="#g-ryoshi">量子力学</a>が、ニュートン力学では説明できない高速の世界とミクロの世界を扱えるようにしました。生物学では<a href="#g-dna">DNAの二重らせん</a>の発見で遺伝の仕組みが分子のレベルで分かり、地学では<a href="#g-plate">プレートテクトニクス</a>が地震や火山の分布を説明しました。並行して、計算そのものを扱う情報科学が生まれます（<a href="#info">後述</a>）。</p>
+
+  <!-- 3. 3つの転換 -->
+  <h2 id="shifts">世界の見方を変えた3つの転換</h2>
+  <p>科学の進歩は、事実が少しずつ積み上がるだけではありません。ときに、それまでの前提ごと考え方の枠組みが入れ替わります。科学史家クーンはこれを<a href="#g-paradigm">パラダイムシフト</a>と呼びました。代表的な3つの転換を並べます。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 640" role="img" aria-labelledby="fig3-t">
+      <title id="fig3-t">天動説から地動説、創造説から進化論、ニュートン力学から相対論・量子論への転換</title>
+      <defs>
+        <marker id="ah3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+          <path class="sci" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+
+      <!-- ① -->
+      <rect class="sci" x="10" y="10" width="340" height="30" rx="6"/>
+      <text class="on-color" x="180" y="30" text-anchor="middle">① 天動説 → 地動説</text>
+      <rect class="box" x="10" y="50" width="150" height="88" rx="8"/>
+      <text class="t-strong" x="24" y="74">天動説</text>
+      <text class="t" x="24" y="98">地球が中心で</text>
+      <text class="t" x="24" y="118">天が回る</text>
+      <line class="ln s-sci" x1="164" y1="94" x2="196" y2="94" marker-end="url(#ah3)"/>
+      <rect class="box" x="200" y="50" width="150" height="88" rx="8"/>
+      <rect class="sci" x="200" y="50" width="5" height="88"/>
+      <text class="t-strong" x="214" y="74">地動説</text>
+      <text class="t" x="214" y="98">太陽が中心で</text>
+      <text class="t" x="214" y="118">地球も回る</text>
+      <text class="t-soft" x="10" y="160">何が変わったか（16〜17世紀）</text>
+      <text class="t" x="10" y="182">地球は宇宙の中心ではなくなった</text>
+      <text class="t" x="10" y="202">天体の動きを観測と数学で説明する</text>
+
+      <!-- ② -->
+      <rect class="sci" x="10" y="220" width="340" height="30" rx="6"/>
+      <text class="on-color" x="180" y="240" text-anchor="middle">② 創造説 → 進化論</text>
+      <rect class="box" x="10" y="260" width="150" height="88" rx="8"/>
+      <text class="t-strong" x="24" y="284">創造説</text>
+      <text class="t" x="24" y="308">生物の種は</text>
+      <text class="t" x="24" y="328">最初から不変</text>
+      <line class="ln s-sci" x1="164" y1="304" x2="196" y2="304" marker-end="url(#ah3)"/>
+      <rect class="box" x="200" y="260" width="150" height="88" rx="8"/>
+      <rect class="sci" x="200" y="260" width="5" height="88"/>
+      <text class="t-strong" x="214" y="284">進化論</text>
+      <text class="t" x="214" y="308">種は自然選択で</text>
+      <text class="t" x="214" y="328">少しずつ変わる</text>
+      <text class="t-soft" x="10" y="370">何が変わったか（19世紀）</text>
+      <text class="t" x="10" y="392">人間も生物の長い系譜の一部になった</text>
+      <text class="t" x="10" y="412">設計者なしで生物の多様性を説明する</text>
+
+      <!-- ③ -->
+      <rect class="sci" x="10" y="430" width="340" height="30" rx="6"/>
+      <text class="on-color" x="180" y="450" text-anchor="middle">③ ニュートン力学 → 相対論・量子論</text>
+      <rect class="box" x="10" y="470" width="150" height="88" rx="8"/>
+      <text class="t-strong" x="24" y="494">ニュートン力学</text>
+      <text class="t" x="24" y="518">時間と空間は</text>
+      <text class="t" x="24" y="538">絶対で不変</text>
+      <line class="ln s-sci" x1="164" y1="514" x2="196" y2="514" marker-end="url(#ah3)"/>
+      <rect class="box" x="200" y="470" width="150" height="88" rx="8"/>
+      <rect class="sci" x="200" y="470" width="5" height="88"/>
+      <text class="t-strong" x="214" y="494">相対論・量子論</text>
+      <text class="t" x="214" y="518">時空は伸び縮み</text>
+      <text class="t" x="214" y="538">ミクロは確率的</text>
+      <text class="t-soft" x="10" y="580">何が変わったか（20世紀前半）</text>
+      <text class="t" x="10" y="602">時間・空間・物質の見方が根本から変化</text>
+      <text class="t" x="10" y="622">ニュートン力学は日常で使える近似に</text>
+    </svg>
+    <figcaption>図3　世界の見方を変えた3つの転換（左が旧来の見方、右が新しい見方）</figcaption>
+  </figure>
+
+  <div class="cards">
+    <div class="card">
+      <span class="tag sci-tag">16〜17世紀</span>
+      <h4>① 天動説 → 地動説</h4>
+      <p>2世紀にプトレマイオスがまとめた<a href="#g-tendo">天動説</a>は、惑星の複雑な動きを円の組み合わせで説明していました。コペルニクスの<a href="#g-chido">地動説</a>、ケプラーの楕円軌道、ニュートンの<a href="#g-banyu">万有引力</a>によって、より少ない前提で正確に予測できる宇宙像へ置き換わりました。</p>
+    </div>
+    <div class="card">
+      <span class="tag sci-tag">19世紀</span>
+      <h4>② 創造説 → 進化論</h4>
+      <p>生物の種は創造されたときから変わらないとする<a href="#g-sozo">創造説</a>に対し、ダーウィンは化石や地域ごとの生物の違いから、種は<a href="#g-shinka">自然選択</a>によって長い時間をかけて変化すると示しました。のちに<a href="#g-iden">遺伝の法則</a>やDNAの研究と結びつき、生物学の土台になりました。</p>
+    </div>
+    <div class="card">
+      <span class="tag sci-tag">20世紀前半</span>
+      <h4>③ ニュートン力学 → 相対論・量子論</h4>
+      <p>光の速さに近い世界では<a href="#g-sotai">相対性理論</a>、原子より小さな世界では<a href="#g-ryoshi">量子力学</a>が必要になりました。<a href="#g-newton">ニュートン力学</a>は捨てられたのではなく、日常の速さと大きさで成り立つ近似として今も橋や機械の設計に使われています。</p>
+    </div>
+  </div>
+  <div class="point"><strong>ポイント：</strong>3つとも、新しい理論は古い理論が説明できなかった観測を説明し、しかも古い理論が当たっていた範囲もカバーしました。単に「前が間違っていた」のではなく、より広く当てはまる枠組みへの移行です。</div>
+
+  <!-- 4. 法則カード -->
+  <h2 id="laws">分野別・主要な法則と理論</h2>
+  <p>それぞれが何を言っているかを1〜2行でまとめます。詳しい説明は「<a href="#glossary">考え方・用語の解説</a>」にあります。</p>
+
+  <h3>物理</h3>
+  <div class="cards">
+    <div class="card"><span class="tag sci-tag">17世紀・ガリレイ／ニュートン</span><h4>慣性の法則</h4><p>力が働かなければ、止まっている物は止まったまま、動いている物は同じ速さでまっすぐ動き続けます。</p><p><a href="#g-kansei">解説へ</a></p></div>
+    <div class="card"><span class="tag sci-tag">1687年・ニュートン</span><h4>運動の法則</h4><p>物体の加速度は加えた力に比例し、質量に反比例します。押せば必ず同じ大きさで押し返されます。</p><p><a href="#g-undo">解説へ</a></p></div>
+    <div class="card"><span class="tag sci-tag">1687年・ニュートン</span><h4>万有引力の法則</h4><p>質量を持つすべての物体は互いに引き合います。リンゴの落下も月の公転も同じ力で説明できます。</p><p><a href="#g-banyu">解説へ</a></p></div>
+    <div class="card"><span class="tag sci-tag">19世紀半ば</span><h4>エネルギー保存の法則</h4><p>エネルギーは熱・運動・電気などに形を変えても、全体の量は増えも減りもしません。</p><p><a href="#g-energy">解説へ</a></p></div>
+    <div class="card"><span class="tag sci-tag">19世紀半ば・クラウジウスら</span><h4>エントロピー増大（熱力学第二法則）</h4><p>放っておくと、熱は高温から低温へ流れ、物事は散らばった状態へ進みます。逆向きには自然に戻りません。</p><p><a href="#g-entropy">解説へ</a></p></div>
+    <div class="card"><span class="tag sci-tag">19世紀・ファラデー／マクスウェル</span><h4>電磁誘導と電磁気学</h4><p>磁場が変化すると電流が生まれます。電気と磁気は一体の現象で、光はその波（電磁波）です。</p><p><a href="#g-yudo">電磁誘導</a>／<a href="#g-denji">電磁気学</a></p></div>
+    <div class="card"><span class="tag sci-tag">1905・1915年・アインシュタイン</span><h4>相対性理論</h4><p>光の速さは誰から見ても同じで、そのぶん時間と空間の測り方が観測者によって変わります。重力は時空のゆがみです。</p><p><a href="#g-sotai">解説へ</a></p></div>
+    <div class="card"><span class="tag sci-tag">1920年代・ハイゼンベルクら</span><h4>量子力学</h4><p>原子や電子の世界では、エネルギーはとびとびの値をとり、粒子の位置などは確率でしか予言できません。</p><p><a href="#g-ryoshi">解説へ</a></p></div>
+  </div>
+
+  <h3>化学</h3>
+  <div class="cards">
+    <div class="card"><span class="tag sci-tag">18世紀後半・ラヴォアジエ</span><h4>質量保存の法則</h4><p>化学反応の前後で、物質全体の質量は変わりません。燃えて消えたように見えても、気体などに形を変えただけです。</p><p><a href="#g-shitsuryo">解説へ</a></p></div>
+    <div class="card"><span class="tag sci-tag">19世紀初め・ドルトン</span><h4>原子説</h4><p>物質はそれ以上分けられない粒（原子）でできており、元素ごとに原子の種類と重さが決まっています。</p><p><a href="#g-genshi">解説へ</a></p></div>
+    <div class="card"><span class="tag sci-tag">1869年・メンデレーエフ</span><h4>元素の周期律</h4><p>元素を順に並べると、似た性質が周期的に現れます。これを表にしたものが周期表です。</p><p><a href="#g-shuki">解説へ</a></p></div>
+  </div>
+
+  <h3>生物</h3>
+  <div class="cards">
+    <div class="card"><span class="tag sci-tag">19世紀前半</span><h4>細胞説</h4><p>すべての生物は細胞からできており、細胞が生命の基本単位です。</p><p><a href="#g-saibo">解説へ</a></p></div>
+    <div class="card"><span class="tag sci-tag">1859年・ダーウィン</span><h4>進化論（自然選択）</h4><p>生き残りやすい性質を持つ個体がより多くの子を残し、その性質が世代を重ねて集団に広がることで、種が変化します。</p><p><a href="#g-shinka">解説へ</a></p></div>
+    <div class="card"><span class="tag sci-tag">19世紀後半・メンデル</span><h4>遺伝の法則</h4><p>親の形質は、混ざり合うのではなく、粒のような単位（のちの遺伝子）で子に受け継がれます。</p><p><a href="#g-iden">解説へ</a></p></div>
+    <div class="card"><span class="tag sci-tag">1953年・ワトソン／クリックら</span><h4>DNAの二重らせん</h4><p>遺伝情報を担うDNAは2本の鎖がらせん状に組み合った構造で、片方の鎖を型にして正確に複製されます。</p><p><a href="#g-dna">解説へ</a></p></div>
+  </div>
+
+  <h3>地学・宇宙</h3>
+  <div class="cards">
+    <div class="card"><span class="tag sci-tag">17世紀初め・ケプラー</span><h4>ケプラーの法則</h4><p>惑星は太陽を焦点とする楕円軌道を回り、太陽に近いほど速く動きます。</p><p><a href="#g-kepler">解説へ</a></p></div>
+    <div class="card"><span class="tag sci-tag">1960年代</span><h4>プレートテクトニクス</h4><p>地球の表面は十数枚の硬い板（プレート）に分かれて動いており、その境界で地震・火山・山脈ができます。</p><p><a href="#g-plate">解説へ</a>（前段の<a href="#g-tairiku">大陸移動説</a>も）</p></div>
+    <div class="card"><span class="tag sci-tag">20世紀</span><h4>ビッグバン宇宙論</h4><p>宇宙は高温・高密度の状態から始まり、今も膨張し続けています。</p><p><a href="#g-bigbang">解説へ</a></p></div>
+  </div>
+
+  <!-- 5. 情報科学 -->
+  <h2 id="info">情報科学の系譜</h2>
+  <p>ITエンジニアが毎日使っている道具は、数学と物理の成果を積み重ねた結果です。if文の条件式から生成AIまで、今の仕事の土台がどこから来たかを順にたどります。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 612" role="img" aria-labelledby="fig4-t">
+      <title id="fig4-t">ブール代数からAIまでの情報科学の系譜</title>
+      <defs>
+        <marker id="ah4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+          <path class="sci" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+      <rect class="box" x="10" y="10" width="340" height="80" rx="8"/>
+      <rect class="sci" x="10" y="10" width="6" height="80"/>
+      <text class="t-strong" x="26" y="36">ブール代数（19世紀半ば）</text>
+      <text class="t" x="26" y="60">論理（真・偽）を0と1の計算にした</text>
+      <text class="t-soft" x="26" y="80">→ 論理回路、if文の条件、検索のAND/OR</text>
+      <line class="ln s-sci" x1="180" y1="92" x2="180" y2="109" marker-end="url(#ah4)"/>
+
+      <rect class="box" x="10" y="112" width="340" height="80" rx="8"/>
+      <rect class="sci" x="10" y="112" width="6" height="80"/>
+      <text class="t-strong" x="26" y="138">チューリングマシン（1936年）</text>
+      <text class="t" x="26" y="162">「計算できる」とは何かを定義した</text>
+      <text class="t-soft" x="26" y="182">→ アルゴリズム、計算可能性の理論</text>
+      <line class="ln s-sci" x1="180" y1="194" x2="180" y2="211" marker-end="url(#ah4)"/>
+
+      <rect class="box" x="10" y="214" width="340" height="80" rx="8"/>
+      <rect class="sci" x="10" y="214" width="6" height="80"/>
+      <text class="t-strong" x="26" y="240">フォン・ノイマン型（1945年）</text>
+      <text class="t" x="26" y="264">プログラムもデータとしてメモリに置く</text>
+      <text class="t-soft" x="26" y="284">→ 今のPC・スマホ・サーバの基本構造</text>
+      <line class="ln s-sci" x1="180" y1="296" x2="180" y2="313" marker-end="url(#ah4)"/>
+
+      <rect class="box" x="10" y="316" width="340" height="80" rx="8"/>
+      <rect class="sci" x="10" y="316" width="6" height="80"/>
+      <text class="t-strong" x="26" y="342">情報理論（1948年）</text>
+      <text class="t" x="26" y="366">シャノンが情報の量をビットで測った</text>
+      <text class="t-soft" x="26" y="386">→ データ圧縮、誤り訂正、通信</text>
+      <line class="ln s-sci" x1="180" y1="398" x2="180" y2="415" marker-end="url(#ah4)"/>
+
+      <rect class="box" x="10" y="418" width="340" height="80" rx="8"/>
+      <rect class="sci" x="10" y="418" width="6" height="80"/>
+      <text class="t-strong" x="26" y="444">インターネット（1969年〜）</text>
+      <text class="t" x="26" y="468">パケットで分散したネットワークをつなぐ</text>
+      <text class="t-soft" x="26" y="488">→ TCP/IP、Web（1990年代初め〜）</text>
+      <line class="ln s-sci" x1="180" y1="500" x2="180" y2="517" marker-end="url(#ah4)"/>
+
+      <rect class="box" x="10" y="520" width="340" height="80" rx="8"/>
+      <rect class="sci" x="10" y="520" width="6" height="80"/>
+      <text class="t-strong" x="26" y="546">人工知能（1956年〜）</text>
+      <text class="t" x="26" y="570">人の知的な働きを機械で再現する</text>
+      <text class="t-soft" x="26" y="590">→ 機械学習、深層学習、生成AI</text>
+    </svg>
+    <figcaption>図4　情報科学の系譜（下の段ほど新しい。各段の小さい行は今の仕事とのつながり）</figcaption>
+  </figure>
+
+  <div class="cards">
+    <div class="card"><span class="tag sci-tag">19世紀半ば・ブール</span><h4>論理を計算にする</h4><p>ブールは「かつ・または・でない」の論理を代数の計算として扱いました（<a href="#g-boole">ブール代数</a>）。1930年代にシャノンがこれをスイッチの回路に応用し、論理回路の設計理論になりました。</p></div>
+    <div class="card"><span class="tag sci-tag">1936年・チューリング</span><h4>計算とは何か</h4><p>テープと読み書きヘッドだけの仮想機械（<a href="#g-turing">チューリングマシン</a>）で「手順に従って計算できること」を定義し、どんな手順でも解けない問題があることも示しました（<a href="#g-keisan">計算可能性</a>）。</p></div>
+    <div class="card"><span class="tag sci-tag">1945年・フォン・ノイマン</span><h4>プログラムをメモリに置く</h4><p>命令もデータと同じくメモリに置き、順に読み出して実行する方式（<a href="#g-neumann">フォン・ノイマン型</a>）を報告書にまとめました。ソフトウェアを入れ替えれば別の仕事ができる、という今のコンピュータの前提です。</p></div>
+    <div class="card"><span class="tag sci-tag">1948年・シャノン</span><h4>情報を量で測る</h4><p>情報の量をビットという単位で定義し、雑音のある通信路でも工夫すれば誤りなく送れる限界を示しました（<a href="#g-joho">情報理論</a>）。ZIP圧縮や通信の誤り訂正はこの理論の上にあります。</p></div>
+    <div class="card"><span class="tag sci-tag">1969年〜</span><h4>ネットワークをつなぐ</h4><p>米国のARPANETから始まり、データを小包に分けて送る<a href="#g-packet">パケット通信</a>とTCP/IPで異なるネットワークを相互につなぎました。1990年代初めに<a href="#g-www">WWW</a>が公開され、一般に広がります。</p></div>
+    <div class="card"><span class="tag sci-tag">1956年〜</span><h4>知能を機械で</h4><p>1956年のダートマス会議で「人工知能」という言葉が使われ、研究分野として始まりました（<a href="#g-ai">人工知能</a>）。2010年代に<a href="#g-dl">深層学習</a>が大きく進み、今の生成AIにつながっています。</p></div>
+  </div>
+  <div class="point"><strong>ポイント：</strong>物理学ともつながっています。<a href="#g-ryoshi">量子力学</a>が半導体の性質を説明し、1947年のトランジスタの発明を経て、集積回路とCPUが生まれました。ソフトウェアは数学（論理と計算理論）に、ハードウェアは物理学に根を持ちます。</div>
+
+  <!-- 6. 仕事 -->
+  <h2 id="work">科学の考え方を仕事に活かす</h2>
+  <div class="cards">
+    <div class="card"><span class="tag sci-tag">仮説検証</span><h4>先に予測を書く</h4><p>障害調査や施策の前に「原因はXのはず、ならYを変えればZが起きる」と予測を書き出し、外れたら仮説を捨てます。外れ方が決まっていない仮説は、<a href="#g-hansho">反証</a>できないので検証になりません。</p></div>
+    <div class="card"><span class="tag sci-tag">再現性</span><h4>誰がやっても同じ結果か</h4><p>「自分の環境では動いた」は1回の観察にすぎません。手順・環境・データを固定して<a href="#g-saigen">再現</a>できるかを確かめるのは、バグ報告やベンチマークでも同じです。</p></div>
+    <div class="card"><span class="tag sci-tag">相関と因果</span><h4>一緒に動く ≠ 原因</h4><p>2つの数値が連動していても、片方が原因とは限りません。共通の原因（<a href="#g-koran">交絡因子</a>）を疑い、可能なら<a href="#g-taisho">対照実験</a>（A/Bテスト）で確かめます（<a href="#g-sokan">相関と因果</a>）。</p></div>
+  </div>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 280" role="img" aria-labelledby="fig5-t">
+      <title id="fig5-t">交絡因子による見かけの相関の例</title>
+      <defs>
+        <marker id="ah5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+          <path class="sci" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+      <text class="t-strong" x="180" y="24" text-anchor="middle">共通の原因（交絡因子）</text>
+      <rect class="sci" x="105" y="40" width="150" height="48" rx="8"/>
+      <text class="on-color" x="180" y="69" text-anchor="middle">気温が高い</text>
+      <line class="ln s-sci" x1="150" y1="90" x2="94" y2="166" marker-end="url(#ah5)"/>
+      <line class="ln s-sci" x1="210" y1="90" x2="266" y2="166" marker-end="url(#ah5)"/>
+      <text class="t-soft" x="62" y="132" text-anchor="middle">原因</text>
+      <text class="t-soft" x="298" y="132" text-anchor="middle">原因</text>
+      <rect class="box" x="10" y="170" width="155" height="56" rx="8"/>
+      <text class="t" x="87" y="203" text-anchor="middle">アイスが売れる</text>
+      <rect class="box" x="195" y="170" width="155" height="56" rx="8"/>
+      <text class="t" x="272" y="203" text-anchor="middle">水難事故が増える</text>
+      <line class="ln-ink" x1="167" y1="198" x2="193" y2="198" stroke-dasharray="4 3"/>
+      <text class="t" x="180" y="254" text-anchor="middle">一緒に増えるが、直接の因果はない</text>
+      <text class="t-soft" x="180" y="272" text-anchor="middle">点線＝相関だけ</text>
+    </svg>
+    <figcaption>図5　相関と因果の区別。アイスの売上を止めても水難事故は減りません</figcaption>
+  </figure>
+
+  <!-- 7. 用語 -->
+  <h2 id="glossary">考え方・用語の解説</h2>
+  <p>本文・図・カードに出てくる考え方を、分野ごとに1〜2文でまとめます。</p>
+
+  <h3>科学の方法</h3>
+  <dl class="glossary">
+    <div id="g-hoho"><dt>科学的方法<span class="who">17世紀に確立</span></dt><dd>観察から仮説を立て、仮説から予測を導き、実験や観測で予測と結果を比べて仮説を直していく手続きです。結論は常に暫定的で、新しい証拠で改められます。</dd></div>
+    <div id="g-hansho"><dt>反証可能性<span class="who">ポパー（20世紀）</span></dt><dd>ある主張が、観察や実験によって「間違いだ」と示される可能性を持っていることです。ポパーはこれを科学と非科学を分ける目安とし、どんな結果でも説明できる主張は科学ではないとしました。</dd></div>
+    <div id="g-saigen"><dt>再現性<span class="who">科学全般</span></dt><dd>同じ手順と条件で行えば、別の人・別の場所でも同じ結果が得られることです。1回だけの結果は偶然や誤りの可能性があるため、再現できて初めて信頼されます。</dd></div>
+    <div id="g-paradigm"><dt>パラダイムシフト<span class="who">クーン（1962年）</span></dt><dd>ある時代の科学者が共有している問いの立て方や答え方の枠組み（パラダイム）が、説明できない事実の蓄積をきっかけに、別の枠組みへ入れ替わることです。</dd></div>
+    <div id="g-kakumei"><dt>科学革命<span class="who">16〜17世紀</span></dt><dd>コペルニクスからニュートンまでの時期に、権威ある書物ではなく、観測・実験と数学で自然を説明する方法が確立したことを指します。</dd></div>
+  </dl>
+
+  <h3>古代〜科学革命</h3>
+  <dl class="glossary">
+    <div id="g-yongenso"><dt>四元素説<span class="who">古代ギリシャ・アリストテレスら</span></dt><dd>地上の物はすべて土・水・空気・火の4つの元素の組み合わせでできているという考えです。近代化学が元素を実験で確かめるようになるまで、長く受け入れられました。</dd></div>
+    <div id="g-koriki"><dt>公理系（ユークリッドの『原論』）<span class="who">ユークリッド（前3世紀頃）</span></dt><dd>少数の自明とされる前提（公理）から出発し、論理だけで多くの定理を導いて体系を組み立てる方法です。数学の証明のお手本となりました。</dd></div>
+    <div id="g-archimedes"><dt>アルキメデスの原理・てこの原理<span class="who">アルキメデス（前3世紀）</span></dt><dd>液体の中の物体は、押しのけた液体の重さと同じ大きさの浮力を受けるという法則です。てこの原理は、支点からの距離と力の積が左右で等しいときにつり合うというもので、小さな力で重い物を動かせる理由を説明します。</dd></div>
+    <div id="g-daisu"><dt>代数学<span class="who">アル＝フワーリズミー（9世紀）</span></dt><dd>未知数を含む方程式を、決まった手順で解く数学の分野です。英語のalgebraは彼の著書の題名の一語に由来します。</dd></div>
+    <div id="g-kogaku"><dt>光学（イブン・アル＝ハイサム）<span class="who">11世紀初め</span></dt><dd>ものが見えるのは物体からの光が目に入るからだと論じ、光の直進や反射・屈折を実験で確かめました。仮説を実験で検証する姿勢の先駆けとされます。</dd></div>
+    <div id="g-tendo"><dt>天動説<span class="who">プトレマイオス（2世紀）が体系化</span></dt><dd>静止した地球の周りを、太陽・月・惑星・星が回っているとする宇宙像です。惑星の逆行は、円の上をさらに小さな円で回る仕組みで説明しました。</dd></div>
+    <div id="g-chido"><dt>地動説<span class="who">コペルニクス（1543年）</span></dt><dd>宇宙の中心近くにあるのは太陽で、地球は自転しながら他の惑星と同じように太陽の周りを回っているとする考えです。惑星の逆行は、地球が惑星を追い越すときの見かけの動きとして説明できます。</dd></div>
+    <div id="g-kepler"><dt>ケプラーの法則<span class="who">ケプラー（17世紀初め）</span></dt><dd>惑星は太陽を焦点の1つとする楕円軌道を回る、太陽に近いほど速く動く、公転周期の2乗は軌道の大きさ（長半径）の3乗に比例する、の3つです。ティコ・ブラーエの精密な観測記録から導かれました。</dd></div>
+    <div id="g-kansei"><dt>慣性（慣性の法則）<span class="who">ガリレイ・ニュートン（17世紀）</span></dt><dd>外から力が働かなければ、物体は静止を続けるか、同じ速さで一直線に動き続けるという性質です。「動き続けるには力が必要」というアリストテレス以来の考えを覆しました。</dd></div>
+    <div id="g-undo"><dt>運動の法則<span class="who">ニュートン（1687年）</span></dt><dd>慣性の法則、力＝質量×加速度、作用と反作用は等しく逆向き、の3つからなります。物体にどんな力が働くか分かれば、その後の動きを計算できるようになりました。</dd></div>
+    <div id="g-banyu"><dt>万有引力の法則<span class="who">ニュートン（1687年）</span></dt><dd>質量を持つすべての物体は互いに引き合い、その力は両者の質量の積に比例し、距離の2乗に反比例するという法則です。地上の落下と天体の運動を初めて同じ法則で説明し、ケプラーの法則も導けました。</dd></div>
+    <div id="g-newton"><dt>ニュートン力学（古典力学）<span class="who">17世紀〜</span></dt><dd>運動の法則と万有引力を土台にした力学の体系です。時間と空間はどこでも誰にとっても同じ「絶対的なもの」と前提しています。</dd></div>
+  </dl>
+
+  <h3>物理（18世紀以降）</h3>
+  <dl class="glossary">
+    <div id="g-energy"><dt>エネルギー保存の法則<span class="who">マイヤー、ジュール、ヘルムホルツら（19世紀半ば）</span></dt><dd>エネルギーは運動・熱・電気・化学などの間で形を変えるが、外とやりとりしない系の中では総量が一定に保たれるという法則です。熱が仕事に変わることを確かめる研究から生まれました。</dd></div>
+    <div id="g-entropy"><dt>エントロピー（熱力学第二法則）<span class="who">クラウジウス（19世紀半ば）</span></dt><dd>エントロピーは状態の散らばり具合を表す量で、外とやりとりしない系ではこれが減ることはありません。熱が自然に低温から高温へ流れないことや、熱を100%仕事に変えられないことを表します。</dd></div>
+    <div id="g-yudo"><dt>電磁誘導<span class="who">ファラデー（1831年）</span></dt><dd>コイルを通る磁場が変化すると、コイルに電流が流れる現象です。発電機や変圧器、IH調理器の原理です。</dd></div>
+    <div id="g-denji"><dt>電磁気学（マクスウェルの方程式）<span class="who">マクスウェル（1860年代）</span></dt><dd>電気と磁気のふるまいを4つの方程式にまとめた理論です。電場と磁場が互いを生みながら空間を伝わる電磁波を予言し、光もその一種だと示しました。電波による通信はこの延長にあります。</dd></div>
+    <div id="g-sotai"><dt>相対性理論<span class="who">アインシュタイン（特殊1905年・一般1915年）</span></dt><dd>特殊相対性理論は、光の速さが誰から見ても同じであることから、時間の進み方や長さが観測者の速さによって変わり、質量とエネルギーが同等（E=mc²）であることを示しました。一般相対性理論は、重力を質量による時空のゆがみとして説明します。GPSはこの両方の補正をして位置を計算しています。</dd></div>
+    <div id="g-ryoshi"><dt>量子力学<span class="who">プランク、ボーア、ハイゼンベルク、シュレーディンガーら（20世紀前半）</span></dt><dd>原子や電子など極めて小さな世界を扱う理論です。エネルギーはとびとびの値しかとらず、粒子は波の性質も持ち、測定結果は確率でしか予言できません。半導体やレーザーの仕組みを説明します。</dd></div>
+  </dl>
+
+  <h3>化学</h3>
+  <dl class="glossary">
+    <div id="g-shitsuryo"><dt>質量保存の法則<span class="who">ラヴォアジエ（18世紀後半）</span></dt><dd>化学反応の前後で、関わった物質の質量の合計は変わらないという法則です。ラヴォアジエは密閉容器で精密に重さを量り、燃焼が酸素と結びつく反応であることを示しました。</dd></div>
+    <div id="g-genshi"><dt>原子説<span class="who">ドルトン（19世紀初め）</span></dt><dd>物質は元素ごとに決まった重さを持つ小さな粒（原子）からなり、化学反応は原子の組み合わせが変わることだとする考えです。のちに原子は電子や原子核からなることが分かりました。</dd></div>
+    <div id="g-shuki"><dt>元素の周期律<span class="who">メンデレーエフ（1869年）</span></dt><dd>元素を原子の重さ（現在は原子番号）の順に並べると、性質のよく似た元素が一定の間隔で現れるという規則です。メンデレーエフは表の空欄から未発見の元素の性質を予言し、のちに的中しました。</dd></div>
+  </dl>
+
+  <h3>生物</h3>
+  <dl class="glossary">
+    <div id="g-saibo"><dt>細胞説<span class="who">シュライデン、シュワンら（19世紀前半）</span></dt><dd>植物も動物も細胞からできており、細胞は既存の細胞が分裂して生じるという考えです。顕微鏡観察の積み重ねから確立しました。</dd></div>
+    <div id="g-sozo"><dt>創造説<span class="who">進化論以前の通念</span></dt><dd>生物の種は神によって今の姿で創られ、それ以来変わっていないとする考えです。生物が目的に合った巧みな作りをしていることは、設計者がいる証拠とされました。</dd></div>
+    <div id="g-shinka"><dt>進化論・自然選択<span class="who">ダーウィン、ウォレス（1859年『種の起源』）</span></dt><dd>同じ種の中にも個体ごとの違いがあり、環境の中で生き残って子を残しやすい性質ほど次の世代に多く伝わります。この選別（自然選択）が長い時間積み重なることで、種は変化し枝分かれしていくという考えです。</dd></div>
+    <div id="g-iden"><dt>遺伝の法則<span class="who">メンデル（19世紀後半）</span></dt><dd>エンドウの交配実験から、形質は親から子へ混ざらない単位（のちの遺伝子）で伝わり、組み合わせに一定の比率があることを示しました。発表当時は注目されず、1900年に再発見されました。</dd></div>
+    <div id="g-dna"><dt>DNAの二重らせん<span class="who">ワトソン、クリック（1953年）。フランクリンらのX線写真が手がかり</span></dt><dd>DNAは2本の鎖がらせん状に向き合い、A–T、G–Cの決まった組で結びついています。片方の鎖が分かればもう片方が決まるため、遺伝情報を正確にコピーできる仕組みが説明できました。</dd></div>
+  </dl>
+
+  <h3>地学・宇宙</h3>
+  <dl class="glossary">
+    <div id="g-tairiku"><dt>大陸移動説<span class="who">ウェゲナー（20世紀初め）</span></dt><dd>大陸はかつて1つにつながっており、長い時間をかけて移動して今の配置になったとする説です。大西洋両岸の海岸線や化石の一致を根拠にしましたが、動く仕組みを示せず、当時は受け入れられませんでした。</dd></div>
+    <div id="g-plate"><dt>プレートテクトニクス<span class="who">1960年代に確立</span></dt><dd>地球の表面は十数枚の硬い岩盤（プレート）に覆われ、それぞれが年に数cm程度ずつ動いているとする理論です。海底の調査で裏付けられ、大陸の移動、地震や火山が帯状に分布する理由、山脈のでき方をまとめて説明しました。</dd></div>
+    <div id="g-bigbang"><dt>ビッグバン宇宙論<span class="who">20世紀</span></dt><dd>宇宙は非常に高温・高密度の状態から始まり、膨張しながら冷えてきたとする理論です。遠くの銀河ほど速く遠ざかっていることや、宇宙のどの方向からも届く弱い電波（宇宙マイクロ波背景放射）が根拠です。</dd></div>
+  </dl>
+
+  <h3>情報科学</h3>
+  <dl class="glossary">
+    <div id="g-boole"><dt>ブール代数<span class="who">ブール（19世紀半ば）</span></dt><dd>真を1、偽を0として、「かつ（AND）」「または（OR）」「でない（NOT）」を計算として扱う代数です。デジタル回路やプログラムの条件式は、すべてこの計算で組み立てられています。</dd></div>
+    <div id="g-turing"><dt>チューリングマシン<span class="who">チューリング（1936年）</span></dt><dd>無限に長いテープと、記号を1つずつ読み書きするヘッド、有限個の規則だけからなる仮想の計算機です。これで実行できる手順が「計算できること」の定義とされ、今のコンピュータもできることの範囲は同じです。</dd></div>
+    <div id="g-keisan"><dt>計算可能性<span class="who">チューリングら（1930年代）</span></dt><dd>ある問題が、手順（アルゴリズム）で必ず答えを出せるかどうかという性質です。任意のプログラムが止まるかどうかを判定する一般的な手順は存在しない（停止問題）ことが示されています。</dd></div>
+    <div id="g-neumann"><dt>フォン・ノイマン型コンピュータ<span class="who">フォン・ノイマンら（1945年）</span></dt><dd>プログラム（命令）をデータと同じメモリに格納し、CPUが1つずつ読み出して実行する方式です（プログラム内蔵方式）。配線を変えずにソフトウェアの入れ替えで別の処理ができます。</dd></div>
+    <div id="g-joho"><dt>情報理論<span class="who">シャノン（1948年）</span></dt><dd>情報の量を「どれだけ不確かさが減るか」として測り、ビットを単位にした理論です。データをどこまで圧縮できるか、雑音のある通信路でどこまで確実に送れるかの限界を示しました。</dd></div>
+    <div id="g-packet"><dt>パケット通信・TCP/IP<span class="who">1960〜70年代</span></dt><dd>データを小さな塊（パケット）に分け、それぞれが空いている経路を通って届き、受け手で組み立て直す通信方式です。TCP/IPは、異なるネットワーク同士をこの方式で相互につなぐための共通の約束事です。</dd></div>
+    <div id="g-www"><dt>WWW（ワールド・ワイド・ウェブ）<span class="who">バーナーズ＝リー（1990年代初め公開）</span></dt><dd>インターネット上の文書をURLで指し示し、ハイパーリンクでたどれるようにした仕組みです。HTMLとHTTPもこのとき作られました。</dd></div>
+    <div id="g-ai"><dt>人工知能（AI）<span class="who">1956年ダートマス会議〜</span></dt><dd>推論・学習・認識など、人間の知的な働きを機械で実現しようとする研究分野です。規則を人が書き込む方式から、データから規則を学ぶ機械学習へと中心が移ってきました。</dd></div>
+    <div id="g-dl"><dt>ニューラルネットワーク・深層学習<span class="who">2010年代に急進展</span></dt><dd>脳の神経細胞のつながりを単純化したモデル（ニューラルネットワーク）を何層にも重ね、大量のデータから特徴を自動で学ばせる手法です。画像認識や翻訳、生成AIの基盤になっています。</dd></div>
+  </dl>
+
+  <h3>仕事に活かす考え方</h3>
+  <dl class="glossary">
+    <div id="g-sokan"><dt>相関と因果<span class="who">統計学</span></dt><dd>相関は2つの量が一緒に増減する関係、因果は一方を変えるともう一方が変わる関係です。相関があっても、偶然・逆向きの因果・共通の原因の可能性があるため、因果とは限りません。</dd></div>
+    <div id="g-koran"><dt>交絡因子<span class="who">統計学</span></dt><dd>調べたい2つの量の両方に影響を与えて、見かけの相関を生む第3の要因です。気温がアイスの売上と水難事故の両方を増やす例がよく使われます。</dd></div>
+    <div id="g-taisho"><dt>対照実験（A/Bテスト）<span class="who">科学全般</span></dt><dd>調べたい条件だけを変えたグループと変えないグループを用意し、ほかの条件をそろえて結果を比べる方法です。対象をランダムに振り分ければ交絡因子の影響を抑えられます。Webサービスでの A/Bテストはこの応用です。</dd></div>
+  </dl>
+
+  <div class="next">
+    <a href="index.html"><span>全体地図へ</span>教養の全体像を見る</a>
+    <a href="philosophy.html"><span>関連：哲学・思想史</span>アリストテレスやデカルト、科学の前身としての哲学</a>
+    <a href="world-history.html"><span>関連：世界史</span>イスラム世界・ルネサンス・産業革命の背景</a>
+    <a href="religion.html"><span>関連：宗教</span>創造説と進化論、信仰と科学の関係</a>
+    <a href="psychology.html"><span>関連：心理学・脳</span>科学的方法を心と脳に当てはめる</a>
+  </div>
+
+  <footer>作成: 2026-10-19 ／ 教養の図解シリーズ</footer>
+</main>
+</body>
+</html>

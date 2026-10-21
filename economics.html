@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="favicon.svg">
+<title>経済・お金｜教養の図解</title>
+<style>
+/* ===== 教養の図解 共通スタイル（全ページで同一のものを使う） ===== */
+:root {
+  --bg: #f7f5f0;
+  --surface: #ffffff;
+  --ink: #1f2328;
+  --ink-soft: #57606a;
+  --line: #d8d4ca;
+  --accent: #b5532a;        /* 見出し・強調 */
+  --c-phil: #6a4fb3;        /* 哲学 */
+  --c-hist: #b5532a;        /* 歴史 */
+  --c-econ: #1f7a5c;        /* 経済 */
+  --c-reli: #a07a12;        /* 宗教 */
+  --c-sci:  #2a63b5;        /* 科学 */
+  --c-art:  #b53a6b;        /* 芸術 */
+  --c-poli: #3d5a80;        /* 政治・法 */
+  --c-psy:  #0f7c86;        /* 心理学 */
+  --c-jp:   #a8323a;        /* 日本史 */
+  --tint: rgba(181, 83, 42, 0.08);
+  --radius: 12px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15171a; --surface: #1e2125; --ink: #e8e6e1; --ink-soft: #a3a8ae; --line: #3a3f45;
+    --accent: #e08a5f; --c-phil: #a58ee8; --c-hist: #e08a5f; --c-econ: #5cc39d;
+    --c-reli: #d9b24a; --c-sci: #6f9ee8; --c-art: #e57ba3; --c-poli: #8fa9d1; --c-psy: #4fc1c9; --c-jp: #e2767d; --tint: rgba(224, 138, 95, 0.12); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15171a; --surface: #1e2125; --ink: #e8e6e1; --ink-soft: #a3a8ae; --line: #3a3f45;
+  --accent: #e08a5f; --c-phil: #a58ee8; --c-hist: #e08a5f; --c-econ: #5cc39d;
+  --c-reli: #d9b24a; --c-sci: #6f9ee8; --c-art: #e57ba3; --c-poli: #8fa9d1; --c-psy: #4fc1c9; --c-jp: #e2767d; --tint: rgba(224, 138, 95, 0.12); color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  font-size: 16px; line-height: 1.8;
+}
+main { max-width: 860px; margin: 0 auto; padding-block: 0 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+nav.top {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg);
+  border-bottom: 1px solid var(--line); overflow-x: auto; white-space: nowrap;
+}
+nav.top ul { display: flex; gap: 4px; list-style: none; margin: 0 auto; padding-block: 8px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); max-width: 860px; }
+nav.top a {
+  display: inline-block; padding: 4px 12px; border-radius: 999px; color: var(--ink-soft);
+  text-decoration: none; font-size: 14px;
+}
+nav.top a[aria-current="page"] { background: var(--accent); color: #fff; }
+header.hero { padding: 32px 0 8px; }
+header.hero .kicker { color: var(--accent); font-weight: 700; font-size: 13px; letter-spacing: .08em; }
+h1 { font-size: 28px; line-height: 1.35; margin: 4px 0 12px; }
+h2 { font-size: 22px; line-height: 1.4; margin: 48px 0 12px; padding-left: 12px; border-left: 5px solid var(--accent); }
+h3 { font-size: 18px; margin: 28px 0 8px; }
+p { margin: 0 0 14px; }
+.lead { color: var(--ink-soft); }
+.toc { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 20px; }
+.toc ol { margin: 0; padding-left: 1.2em; }
+.toc a { color: var(--ink); }
+figure.diagram {
+  margin: 20px 0; background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 12px;
+}
+figure.diagram svg { display: block; width: 100%; height: auto; }
+figure.diagram figcaption { font-size: 13px; color: var(--ink-soft); margin-top: 8px; text-align: center; }
+/* SVG内の文字・線は必ずこのクラスで色を付ける（ダークモード対応のため直接の色指定はしない） */
+svg .t { fill: var(--ink); font-size: 14px; }
+svg .t-soft { fill: var(--ink-soft); font-size: 12px; }
+svg .t-strong { fill: var(--ink); font-size: 15px; font-weight: 700; }
+svg .ln { stroke: var(--line); stroke-width: 2; fill: none; }
+svg .ln-ink { stroke: var(--ink-soft); stroke-width: 1.5; fill: none; }
+svg .box { fill: var(--surface); stroke: var(--line); stroke-width: 1.5; }
+svg .phil { fill: var(--c-phil); } svg .hist { fill: var(--c-hist); } svg .econ { fill: var(--c-econ); }
+svg .reli { fill: var(--c-reli); } svg .sci { fill: var(--c-sci); } svg .art { fill: var(--c-art); }
+svg .poli { fill: var(--c-poli); } svg .psy { fill: var(--c-psy); } svg .jp { fill: var(--c-jp); }
+svg .s-phil { stroke: var(--c-phil); } svg .s-hist { stroke: var(--c-hist); } svg .s-econ { stroke: var(--c-econ); }
+svg .s-reli { stroke: var(--c-reli); } svg .s-sci { stroke: var(--c-sci); } svg .s-art { stroke: var(--c-art); }
+svg .s-poli { stroke: var(--c-poli); } svg .s-psy { stroke: var(--c-psy); } svg .s-jp { stroke: var(--c-jp); }
+svg .on-color { fill: #fff; font-size: 13px; font-weight: 700; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 16px 0; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; }
+.card h4 { margin: 0 0 6px; font-size: 16px; }
+.card p { margin: 0; font-size: 15px; }
+.card .tag { display: inline-block; font-size: 12px; padding: 0 8px; border-radius: 999px; background: var(--tint); color: var(--accent); margin-bottom: 6px; }
+.point { background: var(--tint); border-radius: var(--radius); padding: 12px 16px; margin: 16px 0; }
+.point strong { color: var(--accent); }
+.table-wrap { overflow-x: auto; margin: 16px 0; }
+table { border-collapse: collapse; width: 100%; min-width: 520px; background: var(--surface); font-size: 15px; }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: var(--tint); white-space: nowrap; }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 16px; margin: 10px 0; }
+details summary { cursor: pointer; font-weight: 700; }
+.next { margin-top: 48px; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.next a { display: block; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; color: var(--ink); text-decoration: none; }
+.next a span { display: block; font-size: 12px; color: var(--ink-soft); }
+footer { margin-top: 48px; font-size: 13px; color: var(--ink-soft); }
+@media (max-width: 480px) { h1 { font-size: 24px; } h2 { font-size: 20px; } }
+/* 図はスマホ幅で組んでいるので、PCで拡大しすぎないよう最大幅を抑える */
+figure.diagram svg { max-width: 520px; margin: 0 auto; }
+/* ダークでは分野色が明るくなるため、色の上の文字は暗くする */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) svg .on-color { fill: var(--bg); }
+  :root:not([data-theme="light"]) nav.top a[aria-current="page"] { color: var(--bg); }
+}
+:root[data-theme="dark"] svg .on-color { fill: var(--bg); }
+:root[data-theme="dark"] nav.top a[aria-current="page"] { color: var(--bg); }
+/* 考え方・用語の解説（dl.glossary） */
+main a { color: var(--accent); }
+.glossary { display: grid; gap: 10px; margin: 16px 0; }
+.glossary > div { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 16px; scroll-margin-top: 64px; }
+.glossary dt { font-weight: 700; }
+.glossary dt .who { font-weight: 400; font-size: 13px; color: var(--ink-soft); margin-left: 0.5em; }
+.glossary dd { margin: 4px 0 0; font-size: 15px; }
+/* economics固有 */
+:root, :root:not([data-theme="light"]), :root[data-theme="dark"] { --accent: var(--c-econ); }
+:root { --tint: rgba(31, 122, 92, 0.08); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --tint: rgba(92, 195, 157, 0.12); }
+  :root:not([data-theme="light"]) svg .on-color, :root:not([data-theme="light"]) nav.top a[aria-current="page"] { fill: #15171a; color: #15171a; }
+}
+:root[data-theme="dark"] { --tint: rgba(92, 195, 157, 0.12); }
+:root[data-theme="dark"] svg .on-color, :root[data-theme="dark"] nav.top a[aria-current="page"] { fill: #15171a; color: #15171a; }
+svg .mk-ink { fill: var(--ink-soft); }
+svg .dash { stroke-dasharray: 5 4; }
+svg .tint-econ { fill: var(--tint); stroke-width: 1.5; }
+</style>
+</head>
+<body>
+<nav class="top" aria-label="教養の図解">
+  <ul>
+    <li><a href="index.html">全体地図</a></li>
+    <li><a href="philosophy.html">哲学・思想史</a></li>
+    <li><a href="religion.html">宗教</a></li>
+    <li><a href="world-history.html">世界史</a></li>
+    <li><a href="japan.html">日本史・日本文化</a></li>
+    <li><a href="politics.html">政治・法</a></li>
+    <li><a href="economics.html" aria-current="page">経済・お金</a></li>
+    <li><a href="science.html">科学史</a></li>
+    <li><a href="psychology.html">心理学・脳</a></li>
+    <li><a href="art.html">芸術</a></li>
+  </ul>
+</nav>
+<main>
+  <header class="hero">
+    <div class="kicker">教養の図解</div>
+    <h1>経済・お金</h1>
+    <p class="lead">お金はどこからどこへ流れ、価格や金利や為替はどう決まるのか。ニュースを読むのに必要な経済の仕組みを、図でひと通りたどります。</p>
+  </header>
+  <nav class="toc" aria-label="目次">
+    <ol>
+      <li><a href="#q">経済学が扱う問い</a></li>
+      <li><a href="#flow">経済の循環図</a></li>
+      <li><a href="#price">需要と供給</a></li>
+      <li><a href="#thought">経済思想の系譜</a></li>
+      <li><a href="#policy">金融政策と財政政策</a></li>
+      <li><a href="#japan">戦後日本経済の流れ</a></li>
+      <li><a href="#personal">個人のお金の基本</a></li>
+      <li><a href="#words">ニュース頻出の用語10</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="q">1. 経済学が扱う問い</h2>
+  <p>人の欲しいものは際限がありませんが、働く人・土地・設備・時間には限りがあります。この「希少性」があるので、何を作り、どうやって作り、誰に分けるかを選ばなければなりません。経済学はこの<strong>資源の配分</strong>を研究する学問です。</p>
+  <p>何かを選ぶと、別の何かをあきらめることになります。あきらめた選択肢のうち最も価値の高いものを<strong>機会費用</strong>と呼びます。勉強に使った1時間の機会費用は、その1時間で稼げたはずの賃金や休息です。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 380 340" role="img" aria-label="限られた資源をどう配分するかという問いと、ミクロ経済学とマクロ経済学の違い">
+      <defs>
+        <marker id="m1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-ink"/></marker>
+      </defs>
+      <rect x="20" y="10" width="340" height="56" rx="10" class="box"/>
+      <text x="190" y="34" text-anchor="middle" class="t-strong">限られた資源</text>
+      <text x="190" y="54" text-anchor="middle" class="t-soft">労働・土地・資本（設備）・時間</text>
+      <line x1="190" y1="66" x2="190" y2="88" class="ln-ink" marker-end="url(#m1)"/>
+      <rect x="20" y="92" width="340" height="76" rx="10" class="tint-econ s-econ"/>
+      <text x="190" y="116" text-anchor="middle" class="t-strong">どう配分するか</text>
+      <text x="190" y="138" text-anchor="middle" class="t">何を・どれだけ・どうやって作り</text>
+      <text x="190" y="158" text-anchor="middle" class="t">誰に分けるか</text>
+      <line x1="150" y1="168" x2="104" y2="196" class="ln-ink" marker-end="url(#m1)"/>
+      <line x1="230" y1="168" x2="276" y2="196" class="ln-ink" marker-end="url(#m1)"/>
+      <rect x="20" y="200" width="160" height="130" rx="10" class="box"/>
+      <rect x="20" y="200" width="160" height="34" rx="10" class="econ"/>
+      <text x="100" y="222" text-anchor="middle" class="on-color">ミクロ経済学</text>
+      <text x="100" y="258" text-anchor="middle" class="t">家計・企業・</text>
+      <text x="100" y="278" text-anchor="middle" class="t">個々の市場を見る</text>
+      <text x="100" y="302" text-anchor="middle" class="t-soft">例：商品の値段、賃金、</text>
+      <text x="100" y="319" text-anchor="middle" class="t-soft">企業の値付け</text>
+      <rect x="200" y="200" width="160" height="130" rx="10" class="box"/>
+      <rect x="200" y="200" width="160" height="34" rx="10" class="econ"/>
+      <text x="280" y="222" text-anchor="middle" class="on-color">マクロ経済学</text>
+      <text x="280" y="258" text-anchor="middle" class="t">国全体の</text>
+      <text x="280" y="278" text-anchor="middle" class="t">経済の動きを見る</text>
+      <text x="280" y="302" text-anchor="middle" class="t-soft">例：GDP、物価、</text>
+      <text x="280" y="319" text-anchor="middle" class="t-soft">失業率、景気</text>
+    </svg>
+    <figcaption>図1　経済学の出発点と、ミクロ／マクロの見る範囲</figcaption>
+  </figure>
+  <p>ミクロとマクロは対象の大きさの違いです。ITにたとえると、ミクロは1つのサービスの挙動を、マクロはシステム全体のスループットや負荷を見る視点に近いものです。ニュースの「景気」「物価」「金利」の多くはマクロの話題です。</p>
+
+  <h2 id="flow">2. 経済の循環図</h2>
+  <p>経済は、お金とモノ・サービス・労働が逆向きに流れる循環として描けます。家計は労働を提供して賃金を受け取り、そのお金で企業の商品を買います。企業はその売上から賃金を払います。この基本の輪に、銀行・政府・中央銀行・海外が加わります。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 380 580" role="img" aria-label="家計・企業・政府・銀行・中央銀行・海外の間のお金とモノの流れ">
+      <defs>
+        <marker id="m2e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="econ"/></marker>
+        <marker id="m2i" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-ink"/></marker>
+      </defs>
+      <!-- 凡例 -->
+      <line x1="20" y1="18" x2="50" y2="18" class="ln s-econ" marker-end="url(#m2e)"/>
+      <text x="58" y="22" class="t-soft">お金</text>
+      <line x1="150" y1="18" x2="180" y2="18" class="ln-ink dash" marker-end="url(#m2i)"/>
+      <text x="188" y="22" class="t-soft">モノ・サービス・労働</text>
+      <!-- 中央銀行 → 銀行 -->
+      <rect x="125" y="40" width="130" height="52" rx="10" class="box s-econ"/>
+      <text x="190" y="63" text-anchor="middle" class="t-strong">中央銀行</text>
+      <text x="190" y="82" text-anchor="middle" class="t-soft">お金を発行する</text>
+      <line x1="190" y1="92" x2="190" y2="128" class="ln s-econ" marker-end="url(#m2e)"/>
+      <text x="198" y="115" class="t-soft">金利の誘導・資金供給</text>
+      <rect x="125" y="132" width="130" height="44" rx="10" class="box"/>
+      <text x="190" y="159" text-anchor="middle" class="t">銀行（金融機関）</text>
+      <!-- 家計・企業 -->
+      <rect x="20" y="228" width="110" height="132" rx="10" class="box"/>
+      <text x="75" y="290" text-anchor="middle" class="t-strong">家計</text>
+      <text x="75" y="310" text-anchor="middle" class="t-soft">個人・世帯</text>
+      <rect x="250" y="228" width="110" height="132" rx="10" class="box"/>
+      <text x="305" y="290" text-anchor="middle" class="t-strong">企業</text>
+      <text x="305" y="310" text-anchor="middle" class="t-soft">会社・お店</text>
+      <!-- 家計と企業の間の4本の流れ -->
+      <line x1="130" y1="262" x2="246" y2="262" class="ln s-econ" marker-end="url(#m2e)"/>
+      <text x="190" y="254" text-anchor="middle" class="t-soft">代金（消費）</text>
+      <line x1="250" y1="292" x2="134" y2="292" class="ln-ink dash" marker-end="url(#m2i)"/>
+      <text x="190" y="284" text-anchor="middle" class="t-soft">モノ・サービス</text>
+      <line x1="130" y1="322" x2="246" y2="322" class="ln-ink dash" marker-end="url(#m2i)"/>
+      <text x="190" y="314" text-anchor="middle" class="t-soft">労働</text>
+      <line x1="250" y1="350" x2="134" y2="350" class="ln s-econ" marker-end="url(#m2e)"/>
+      <text x="190" y="343" text-anchor="middle" class="t-soft">賃金・配当</text>
+      <!-- 銀行との流れ -->
+      <path d="M75,228 V154 H121" class="ln s-econ" marker-end="url(#m2e)"/>
+      <text x="83" y="200" class="t-soft">預金</text>
+      <path d="M255,154 H305 V224" class="ln s-econ" marker-end="url(#m2e)"/>
+      <text x="313" y="200" class="t-soft">融資</text>
+      <!-- 政府 -->
+      <rect x="125" y="410" width="130" height="52" rx="10" class="box"/>
+      <text x="190" y="433" text-anchor="middle" class="t-strong">政府</text>
+      <text x="190" y="452" text-anchor="middle" class="t-soft">国・自治体</text>
+      <path d="M45,360 V436 H121" class="ln s-econ" marker-end="url(#m2e)"/>
+      <text x="53" y="400" class="t-soft">税</text>
+      <path d="M125,418 H100 V364" class="ln s-econ" marker-end="url(#m2e)"/>
+      <text x="106" y="386" class="t-soft">社会保障・</text>
+      <text x="106" y="402" class="t-soft">公共サービス</text>
+      <path d="M335,360 V436 H259" class="ln s-econ" marker-end="url(#m2e)"/>
+      <text x="327" y="400" text-anchor="end" class="t-soft">税</text>
+      <path d="M255,418 H280 V364" class="ln s-econ" marker-end="url(#m2e)"/>
+      <text x="274" y="386" text-anchor="end" class="t-soft">公共事業の</text>
+      <text x="274" y="402" text-anchor="end" class="t-soft">発注など</text>
+      <!-- 海外 -->
+      <rect x="125" y="506" width="130" height="56" rx="10" class="box"/>
+      <text x="190" y="529" text-anchor="middle" class="t-strong">海外</text>
+      <text x="190" y="548" text-anchor="middle" class="t-soft">外国の家計・企業</text>
+      <path d="M355,364 V534 H259" class="ln-ink dash" marker-start="url(#m2i)" marker-end="url(#m2i)"/>
+      <text x="307" y="526" text-anchor="middle" class="t-soft">輸出・輸入</text>
+    </svg>
+    <figcaption>図2　経済の循環。お金（実線）とモノ・サービス・労働（点線）は逆向きに流れる</figcaption>
+  </figure>
+  <ul>
+    <li><strong>銀行</strong>は家計の預金を企業や個人に貸し出し、利子の差で収益を得ます。貸し出しが増えると、世の中に出回るお金も増えます。</li>
+    <li><strong>政府</strong>は税を集めて公共サービスや社会保障に使います。足りない分は<strong>国債</strong>を発行して借り、その国債は銀行などが買います。</li>
+    <li><strong>中央銀行</strong>（日本では日本銀行）はお金を発行し、銀行どうしが資金を貸し借りする金利を誘導します。家計や企業と直接は取引しません。</li>
+    <li><strong>海外</strong>との取引では、円と外貨を交換する必要があります。その交換比率が為替レートです。</li>
+  </ul>
+
+  <h2 id="price">3. 需要と供給：価格が決まる仕組み</h2>
+  <p>買いたい量（<strong>需要</strong>）は価格が高いほど減り、売りたい量（<strong>供給</strong>）は価格が高いほど増えます。2本の線が交わる点（<strong>均衡点</strong>）で、売り手と買い手の量が一致し、価格が落ち着きます。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 380 640" role="img" aria-label="需要曲線と供給曲線の交点で価格が決まる図と、需要が増えて価格が上がる図">
+      <defs>
+        <marker id="m3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-ink"/></marker>
+      </defs>
+      <!-- ① 均衡 -->
+      <text x="20" y="22" class="t-strong">① 価格は2本の線の交点で決まる</text>
+      <line x1="70" y1="50" x2="70" y2="280" class="ln-ink"/>
+      <line x1="70" y1="280" x2="356" y2="280" class="ln-ink"/>
+      <text x="76" y="48" class="t-soft">価格</text>
+      <text x="356" y="298" text-anchor="end" class="t-soft">数量</text>
+      <line x1="100" y1="80" x2="340" y2="260" class="ln s-econ"/>
+      <line x1="100" y1="260" x2="340" y2="80" class="ln s-hist"/>
+      <text x="100" y="72" class="t">需要曲線</text>
+      <text x="340" y="72" text-anchor="end" class="t">供給曲線</text>
+      <line x1="70" y1="170" x2="214" y2="170" class="ln-ink dash"/>
+      <circle cx="220" cy="170" r="6" class="econ"/>
+      <text x="232" y="175" class="t-strong">均衡点</text>
+      <text x="64" y="174" text-anchor="end" class="t-soft">均衡価格</text>
+      <line x1="142" y1="110" x2="298" y2="110" class="ln-ink" marker-start="url(#m3)" marker-end="url(#m3)"/>
+      <text x="220" y="103" text-anchor="middle" class="t-soft">高いと売れ残る</text>
+      <line x1="142" y1="230" x2="298" y2="230" class="ln-ink" marker-start="url(#m3)" marker-end="url(#m3)"/>
+      <text x="220" y="250" text-anchor="middle" class="t-soft">安いと品不足</text>
+      <!-- ② 需要増 -->
+      <text x="20" y="362" class="t-strong">② 需要が増えると価格が上がる</text>
+      <line x1="70" y1="390" x2="70" y2="620" class="ln-ink"/>
+      <line x1="70" y1="620" x2="356" y2="620" class="ln-ink"/>
+      <text x="76" y="392" class="t-soft">価格</text>
+      <text x="356" y="638" text-anchor="end" class="t-soft">数量</text>
+      <line x1="100" y1="420" x2="300" y2="570" class="ln s-econ dash"/>
+      <line x1="200" y1="420" x2="360" y2="540" class="ln s-econ"/>
+      <line x1="100" y1="600" x2="340" y2="420" class="ln s-hist"/>
+      <text x="100" y="412" class="t">需要（前）</text>
+      <text x="206" y="412" class="t">需要（後）</text>
+      <text x="346" y="426" class="t">供給</text>
+      <line x1="142" y1="445" x2="222" y2="445" class="ln-ink" marker-end="url(#m3)"/>
+      <text x="182" y="438" text-anchor="middle" class="t-soft">需要増</text>
+      <line x1="70" y1="510" x2="214" y2="510" class="ln-ink dash"/>
+      <line x1="70" y1="472.5" x2="264" y2="472.5" class="ln-ink dash"/>
+      <circle cx="220" cy="510" r="5" class="econ"/>
+      <circle cx="270" cy="472.5" r="6" class="econ"/>
+      <text x="64" y="514" text-anchor="end" class="t-soft">元の価格</text>
+      <text x="64" y="477" text-anchor="end" class="t-strong">上昇後</text>
+      <text x="282" y="477" class="t-soft">新しい均衡</text>
+    </svg>
+    <figcaption>図3　需要と供給。需要の線が右へずれると、交点は右上へ動き価格が上がる</figcaption>
+  </figure>
+  <p>②の例として、猛暑でエアコンを買う人が増える場面を考えます。同じ価格でも買いたい人が増えるので需要の線が右へずれ、価格が上がり、売られる台数も増えます。逆に、原材料が高くなって作るコストが上がると、今度は供給の線が左へずれ、やはり価格が上がります（こちらは売られる量が減ります）。物価上昇には「需要が強いから」と「コストが上がったから」の2種類がある、という見方はニュースを読むときに役立ちます。</p>
+
+  <h2 id="thought">4. 経済思想の系譜</h2>
+  <p>経済思想の大きな争点は「市場に任せるか、政府が関わるか」です。時代の問題に応じて、振り子のように考え方が移ってきました。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 380 692" role="img" aria-label="アダム・スミスから現代までの経済思想の系譜と、市場と政府の役割の考え方">
+      <text x="190" y="20" text-anchor="middle" class="t-soft">各カード下の目盛り＝市場重視か政府重視かの大まかな位置</text>
+      <line x1="24" y1="62" x2="24" y2="590" class="ln"/>
+      <!-- 1 スミス -->
+      <circle cx="24" cy="62" r="7" class="econ"/>
+      <line x1="31" y1="62" x2="50" y2="62" class="ln"/>
+      <rect x="50" y="34" width="316" height="120" rx="10" class="box"/>
+      <text x="64" y="60" class="t-strong">アダム・スミス</text>
+      <text x="354" y="60" text-anchor="end" class="t-soft">1723–1790</text>
+      <text x="64" y="80" class="t-soft">古典派／『国富論』（1776年）</text>
+      <text x="64" y="102" class="t">各自の利益追求が市場を通じて</text>
+      <text x="64" y="121" class="t">社会全体を豊かにする。政府は小さく</text>
+      <text x="64" y="143" class="t-soft">市場</text>
+      <line x1="98" y1="139" x2="226" y2="139" class="ln"/>
+      <text x="232" y="143" class="t-soft">政府・計画</text>
+      <circle cx="111" cy="139" r="6" class="econ"/>
+      <!-- 2 マルクス -->
+      <circle cx="24" cy="194" r="7" class="econ"/>
+      <line x1="31" y1="194" x2="50" y2="194" class="ln"/>
+      <rect x="50" y="166" width="316" height="120" rx="10" class="box"/>
+      <text x="64" y="192" class="t-strong">カール・マルクス</text>
+      <text x="354" y="192" text-anchor="end" class="t-soft">1818–1883</text>
+      <text x="64" y="212" class="t-soft">『資本論』第1巻（1867年）</text>
+      <text x="64" y="234" class="t">資本主義は格差と恐慌を生む。</text>
+      <text x="64" y="253" class="t">市場ではなく社会が生産を管理すべき</text>
+      <text x="64" y="275" class="t-soft">市場</text>
+      <line x1="98" y1="271" x2="226" y2="271" class="ln"/>
+      <text x="232" y="275" class="t-soft">政府・計画</text>
+      <circle cx="220" cy="271" r="6" class="econ"/>
+      <!-- 3 ケインズ -->
+      <circle cx="24" cy="326" r="7" class="econ"/>
+      <line x1="31" y1="326" x2="50" y2="326" class="ln"/>
+      <rect x="50" y="298" width="316" height="120" rx="10" class="box"/>
+      <text x="64" y="324" class="t-strong">ジョン・M・ケインズ</text>
+      <text x="354" y="324" text-anchor="end" class="t-soft">1883–1946</text>
+      <text x="64" y="344" class="t-soft">『一般理論』（1936年）</text>
+      <text x="64" y="366" class="t">不況は需要不足で起こる。政府が</text>
+      <text x="64" y="385" class="t">支出を増やして雇用を支えるべき</text>
+      <text x="64" y="407" class="t-soft">市場</text>
+      <line x1="98" y1="403" x2="226" y2="403" class="ln"/>
+      <text x="232" y="407" class="t-soft">政府・計画</text>
+      <circle cx="181" cy="403" r="6" class="econ"/>
+      <!-- 4 フリードマン -->
+      <circle cx="24" cy="458" r="7" class="econ"/>
+      <line x1="31" y1="458" x2="50" y2="458" class="ln"/>
+      <rect x="50" y="430" width="316" height="120" rx="10" class="box"/>
+      <text x="64" y="456" class="t-strong">ミルトン・フリードマン</text>
+      <text x="354" y="456" text-anchor="end" class="t-soft">1912–2006</text>
+      <text x="64" y="476" class="t-soft">マネタリズム／新自由主義</text>
+      <text x="64" y="498" class="t">政府の裁量はかえって経済を乱す。</text>
+      <text x="64" y="517" class="t">通貨量を安定させ、あとは市場に</text>
+      <text x="64" y="539" class="t-soft">市場</text>
+      <line x1="98" y1="535" x2="226" y2="535" class="ln"/>
+      <text x="232" y="539" class="t-soft">政府・計画</text>
+      <circle cx="117" cy="535" r="6" class="econ"/>
+      <!-- 5 現代 -->
+      <circle cx="24" cy="590" r="7" class="econ"/>
+      <line x1="31" y1="590" x2="50" y2="590" class="ln"/>
+      <rect x="50" y="562" width="316" height="120" rx="10" class="box"/>
+      <text x="64" y="588" class="t-strong">現代の経済学</text>
+      <text x="354" y="588" text-anchor="end" class="t-soft">20世紀後半〜</text>
+      <text x="64" y="608" class="t-soft">行動経済学（カーネマン、セイラー）など</text>
+      <text x="64" y="630" class="t">人は常に合理的とは限らない。</text>
+      <text x="64" y="649" class="t">制度の工夫で選択を助ける（ナッジ）</text>
+      <text x="64" y="671" class="t-soft">市場</text>
+      <line x1="98" y1="667" x2="226" y2="667" class="ln"/>
+      <text x="232" y="671" class="t-soft">政府・計画</text>
+      <circle cx="162" cy="667" r="6" class="econ"/>
+    </svg>
+    <figcaption>図4　経済思想の系譜。市場重視と政府重視の間を行き来してきた</figcaption>
+  </figure>
+  <ul>
+    <li><strong>スミス</strong>の「見えざる手」は、個人が自分の利益を追っても、競争のある市場では結果的に社会に役立つという考えです。18世紀後半のイギリスで、重商主義の規制や特権的な独占への批判として書かれました。</li>
+    <li><strong>マルクス</strong>は、労働者が生んだ価値を資本家が利潤として得る仕組みを分析しました。この考えは20世紀の社会主義国家の思想的な柱になりました。</li>
+    <li><strong>ケインズ</strong>は1930年代の世界恐慌を受け、市場が自然に完全雇用に戻るとは限らないと主張しました。戦後の先進国の経済政策の土台になりました。</li>
+    <li><strong>フリードマン</strong>は1970年代のインフレと停滞（スタグフレーション）を背景に影響力を強め、1980年代の英サッチャー政権・米レーガン政権の規制緩和・民営化の流れとつながりました。</li>
+    <li><strong>現代</strong>は一つの学派が支配するというより、市場の働きを基本にしつつ、市場が失敗する場面（環境問題、情報の偏り、金融危機）で政府の役割を議論する形です。人の判断の癖を扱う行動経済学では、カーネマン（2002年）とセイラー（2017年）がノーベル経済学賞を受けています。</li>
+  </ul>
+
+  <h3>系譜に出てくる考え方</h3>
+  <p>図4と上の説明に出てくる考え方・用語を、1〜2文でまとめます。</p>
+  <dl class="glossary">
+    <div id="g-jushou"><dt>重商主義<span class="who">16〜18世紀</span></dt><dd>国の富は金銀の量だと考え、輸出を増やして輸入を抑え、金銀を国内にためようとした考え方と政策です。スミスが批判の対象にしました。</dd></div>
+    <div id="g-koten"><dt>古典派経済学<span class="who">スミス・リカード・J.S.ミル</span></dt><dd>市場の自由な競争が資源を効率よく配分すると考えた学派です。商品の価値はそれを作るのに使われた労働から生まれる、という考え（労働価値説）を土台にしました。</dd></div>
+    <div id="g-mienai"><dt>見えざる手<span class="who">スミス</span></dt><dd>各自が自分の利益を追求しても、市場の競争を通じて、意図しないまま社会全体の利益が促されるというたとえです。</dd></div>
+    <div id="g-joyo"><dt>剰余価値<span class="who">マルクス</span></dt><dd>労働者は自分の賃金以上の価値を生み出しますが、その差額を資本家が利潤として受け取る、という分析です。資本主義の格差の源泉はここにあると考えました。</dd></div>
+    <div id="g-yuko"><dt>有効需要<span class="who">ケインズ</span></dt><dd>お金を払う裏付けのある実際の需要のことです。社会全体の有効需要の大きさが生産と雇用の水準を決めるので、不況のときは政府の支出で需要を補うべきだとしました。</dd></div>
+    <div id="g-monetarism"><dt>マネタリズム<span class="who">フリードマン</span></dt><dd>物価の動きは主に世の中に出回るお金の量で決まると考え、中央銀行は景気に合わせて裁量で動くより、お金の量を一定のペースで増やすべきだとする立場です。</dd></div>
+    <div id="g-shinjiyu"><dt>新自由主義<span class="who">1980年代〜</span></dt><dd>規制緩和・民営化・減税などで政府の役割を小さくし、市場の競争に任せる範囲を広げようとする考え方と政策の流れです。</dd></div>
+    <div id="g-stag"><dt>スタグフレーション<span class="who">1970年代</span></dt><dd>景気の停滞（スタグネーション）と物価の上昇（インフレーション）が同時に起きることです。需要を増やすケインズ型の政策では物価がさらに上がってしまうため、その限界が議論されました。</dd></div>
+    <div id="g-kodo"><dt>行動経済学<span class="who">カーネマン・セイラー</span></dt><dd>人は常に合理的に判断するという前提を置かず、実際の判断の癖（同じ額なら得より損を重く感じる、目先の利益を優先する、など）を心理学の知見から分析する分野です。</dd></div>
+    <div id="g-nudge"><dt>ナッジ<span class="who">セイラー</span></dt><dd>選ぶ自由は残したまま、選択肢の示し方を工夫して、望ましい行動をそっと後押しすることです。たとえば、積立制度を「最初から加入、やめたい人は手続き」の形にすると加入率が上がります。</dd></div>
+  </dl>
+
+  <h2 id="policy">5. 金融政策と財政政策</h2>
+  <p>景気の波をならす道具は2つあります。中央銀行が金利やお金の量を調整する<strong>金融政策</strong>と、政府が税と支出を調整する<strong>財政政策</strong>です。日本では金融政策は日本銀行が、財政政策は政府が予算案を作り国会が議決して決めます。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 380 530" role="img" aria-label="景気が悪いときと良すぎるときの金融政策と財政政策">
+      <defs>
+        <marker id="m5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-ink"/></marker>
+      </defs>
+      <!-- 景気が悪いとき -->
+      <rect x="20" y="10" width="340" height="36" rx="8" class="econ"/>
+      <text x="190" y="33" text-anchor="middle" class="on-color">景気が悪いとき（需要が足りない）</text>
+      <rect x="20" y="58" width="165" height="110" rx="10" class="box"/>
+      <text x="102" y="82" text-anchor="middle" class="t-strong">金融政策</text>
+      <text x="102" y="100" text-anchor="middle" class="t-soft">中央銀行</text>
+      <text x="102" y="126" text-anchor="middle" class="t">金利を下げる</text>
+      <text x="102" y="148" text-anchor="middle" class="t">お金を多く供給</text>
+      <rect x="195" y="58" width="165" height="110" rx="10" class="box"/>
+      <text x="277" y="82" text-anchor="middle" class="t-strong">財政政策</text>
+      <text x="277" y="100" text-anchor="middle" class="t-soft">政府・国会</text>
+      <text x="277" y="126" text-anchor="middle" class="t">公共事業を増やす</text>
+      <text x="277" y="148" text-anchor="middle" class="t">減税する</text>
+      <line x1="102" y1="168" x2="102" y2="186" class="ln-ink" marker-end="url(#m5)"/>
+      <line x1="277" y1="168" x2="277" y2="186" class="ln-ink" marker-end="url(#m5)"/>
+      <rect x="20" y="190" width="340" height="58" rx="10" class="tint-econ s-econ"/>
+      <text x="190" y="214" text-anchor="middle" class="t">お金を借りやすく・使いやすくなる</text>
+      <text x="190" y="236" text-anchor="middle" class="t-soft">→ 消費と投資が増え、景気を下支え</text>
+      <!-- 景気が良すぎるとき -->
+      <rect x="20" y="280" width="340" height="36" rx="8" class="econ"/>
+      <text x="190" y="303" text-anchor="middle" class="on-color">景気が良すぎるとき（物価が上がりすぎる）</text>
+      <rect x="20" y="328" width="165" height="110" rx="10" class="box"/>
+      <text x="102" y="352" text-anchor="middle" class="t-strong">金融政策</text>
+      <text x="102" y="370" text-anchor="middle" class="t-soft">中央銀行</text>
+      <text x="102" y="396" text-anchor="middle" class="t">金利を上げる</text>
+      <text x="102" y="418" text-anchor="middle" class="t">お金の供給を絞る</text>
+      <rect x="195" y="328" width="165" height="110" rx="10" class="box"/>
+      <text x="277" y="352" text-anchor="middle" class="t-strong">財政政策</text>
+      <text x="277" y="370" text-anchor="middle" class="t-soft">政府・国会</text>
+      <text x="277" y="396" text-anchor="middle" class="t">支出を抑える</text>
+      <text x="277" y="418" text-anchor="middle" class="t">増税する</text>
+      <line x1="102" y1="438" x2="102" y2="456" class="ln-ink" marker-end="url(#m5)"/>
+      <line x1="277" y1="438" x2="277" y2="456" class="ln-ink" marker-end="url(#m5)"/>
+      <rect x="20" y="460" width="340" height="58" rx="10" class="tint-econ s-econ"/>
+      <text x="190" y="484" text-anchor="middle" class="t">お金を借りにくく・使いにくくなる</text>
+      <text x="190" y="506" text-anchor="middle" class="t-soft">→ 過熱を抑え、物価上昇を和らげる</text>
+    </svg>
+    <figcaption>図5　景気の局面ごとの金融政策と財政政策</figcaption>
+  </figure>
+
+  <h3>インフレ・デフレと金利</h3>
+  <p><strong>インフレ</strong>は物価が上がり続けること、<strong>デフレ</strong>は下がり続けることです。物価が上がると、同じ1万円で買える量が減るので、お金の価値が下がったとも言えます。デフレは一見ありがたく見えますが、「待てばもっと安くなる」と買い控えが起き、企業の売上と賃金が伸びない悪循環に陥りやすくなります。多くの中央銀行は、物価が緩やかに上がる状態を目標にしています（日本銀行は2013年から「前年比2%」の物価安定目標を掲げています）。</p>
+  <p>金利を上げるとお金を借りるコストが上がり、住宅や設備への支出が減るので、物価上昇が抑えられます。金利を下げると逆に働きます。</p>
+
+  <h3>金利と為替（円高・円安）</h3>
+  <p><strong>円安</strong>は円の価値が下がること、<strong>円高</strong>は上がることです。1ドル＝100円が120円になると、1ドルを買うのに多くの円が必要になるので円安です。為替を動かす要因はたくさんありますが、国どうしの金利差は大きな要因の一つです。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 380 356" role="img" aria-label="日本の金利が海外より低いと円安になり、輸入物価と輸出企業に影響する流れ">
+      <defs>
+        <marker id="m6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-ink"/></marker>
+      </defs>
+      <rect x="40" y="16" width="300" height="56" rx="10" class="box"/>
+      <text x="190" y="40" text-anchor="middle" class="t">日本の金利が低く</text>
+      <text x="190" y="60" text-anchor="middle" class="t">海外の金利が高い</text>
+      <line x1="190" y1="72" x2="190" y2="92" class="ln-ink" marker-end="url(#m6)"/>
+      <rect x="40" y="96" width="300" height="56" rx="10" class="box"/>
+      <text x="190" y="120" text-anchor="middle" class="t">円を売って外貨を買う</text>
+      <text x="190" y="140" text-anchor="middle" class="t">（外貨で運用する）動きが増える</text>
+      <line x1="190" y1="152" x2="190" y2="172" class="ln-ink" marker-end="url(#m6)"/>
+      <rect x="40" y="176" width="300" height="56" rx="10" class="econ"/>
+      <text x="190" y="199" text-anchor="middle" class="on-color">円安</text>
+      <text x="190" y="219" text-anchor="middle" class="on-color">1ドルと交換する円が増える</text>
+      <path d="M190,232 V246 H102 V256" class="ln-ink" marker-end="url(#m6)"/>
+      <path d="M190,246 H277 V256" class="ln-ink" marker-end="url(#m6)"/>
+      <rect x="20" y="260" width="165" height="84" rx="10" class="box"/>
+      <text x="102" y="284" text-anchor="middle" class="t">輸入品・燃料が</text>
+      <text x="102" y="304" text-anchor="middle" class="t">円建てで値上がり</text>
+      <text x="102" y="326" text-anchor="middle" class="t-strong">→ 物価上昇</text>
+      <rect x="195" y="260" width="165" height="84" rx="10" class="box"/>
+      <text x="277" y="284" text-anchor="middle" class="t">輸出企業の</text>
+      <text x="277" y="304" text-anchor="middle" class="t">円での売上が増える</text>
+      <text x="277" y="326" text-anchor="middle" class="t-strong">→ 利益の押し上げ</text>
+    </svg>
+    <figcaption>図6　金利差から円安、そして物価へ。逆向き（日本の金利が上がる）なら円高方向に働く</figcaption>
+  </figure>
+  <p>円安は輸出企業や海外からの旅行者には追い風ですが、食料やエネルギーを輸入に頼る日本では生活費の上昇につながります。円高はその逆です。どちらが良いかは立場によって変わります。</p>
+
+  <h2 id="japan">6. 戦後日本経済の流れ</h2>
+  <p>戦後の日本経済は、急成長、2度の石油危機、バブルとその崩壊、長い低成長、大規模な金融緩和という順に進んできました。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 380 876" role="img" aria-label="戦後日本経済の年表">
+      <line x1="70" y1="45" x2="70" y2="853" class="ln"/>
+      <!-- 戦後復興 -->
+      <rect x="20" y="2" width="340" height="28" rx="6" class="econ"/>
+      <text x="34" y="21" class="on-color">戦後復興</text>
+      <circle cx="70" cy="45" r="4" class="econ"/><text x="58" y="50" text-anchor="end" class="t-strong">1949</text><text x="86" y="50" class="t">1ドル＝360円の固定レート</text>
+      <circle cx="70" cy="73" r="4" class="econ"/><text x="58" y="78" text-anchor="end" class="t-strong">1950</text><text x="86" y="78" class="t">朝鮮戦争の特需</text>
+      <!-- 高度経済成長 -->
+      <rect x="20" y="104" width="340" height="28" rx="6" class="econ"/>
+      <text x="34" y="123" class="on-color">高度経済成長（1955年頃〜1973年）</text>
+      <circle cx="70" cy="147" r="4" class="econ"/><text x="58" y="152" text-anchor="end" class="t-strong">1964</text><text x="86" y="152" class="t">東京五輪・東海道新幹線の開業</text>
+      <circle cx="70" cy="175" r="4" class="econ"/><text x="58" y="180" text-anchor="end" class="t-strong">1968</text><text x="86" y="180" class="t">GNPが資本主義国で2位に</text>
+      <!-- 石油危機 -->
+      <rect x="20" y="206" width="340" height="28" rx="6" class="econ"/>
+      <text x="34" y="225" class="on-color">石油危機と安定成長</text>
+      <circle cx="70" cy="249" r="4" class="econ"/><text x="58" y="254" text-anchor="end" class="t-strong">1971</text><text x="86" y="254" class="t">ニクソン・ショック</text>
+      <circle cx="70" cy="277" r="4" class="econ"/><text x="58" y="282" text-anchor="end" class="t-strong">1973</text><text x="86" y="282" class="t">変動相場制へ／第1次石油危機</text>
+      <circle cx="70" cy="305" r="4" class="econ"/><text x="58" y="310" text-anchor="end" class="t-strong">1979</text><text x="86" y="310" class="t">第2次石油危機</text>
+      <!-- バブル -->
+      <rect x="20" y="336" width="340" height="28" rx="6" class="econ"/>
+      <text x="34" y="355" class="on-color">バブル経済（1986年末〜1991年初頃）</text>
+      <circle cx="70" cy="379" r="4" class="econ"/><text x="58" y="384" text-anchor="end" class="t-strong">1985</text><text x="86" y="384" class="t">プラザ合意 → 急速な円高</text>
+      <circle cx="70" cy="407" r="4" class="econ"/><text x="58" y="412" text-anchor="end" class="t-strong">1989</text><text x="86" y="412" class="t">日経平均株価が当時の最高値に</text>
+      <!-- バブル崩壊 -->
+      <rect x="20" y="438" width="340" height="28" rx="6" class="econ"/>
+      <text x="34" y="457" class="on-color">バブル崩壊・「失われた」時代</text>
+      <circle cx="70" cy="481" r="4" class="econ"/><text x="58" y="486" text-anchor="end" class="t-strong">1990</text><text x="86" y="486" class="t">株価が下落に転じる</text>
+      <circle cx="70" cy="509" r="4" class="econ"/><text x="58" y="514" text-anchor="end" class="t-strong">1997</text><text x="86" y="514" class="t">大手金融機関の破綻が相次ぐ</text>
+      <circle cx="70" cy="537" r="4" class="econ"/><text x="58" y="542" text-anchor="end" class="t-strong">1999</text><text x="86" y="542" class="t">日銀がゼロ金利政策</text>
+      <circle cx="70" cy="565" r="4" class="econ"/><text x="58" y="570" text-anchor="end" class="t-strong">2001</text><text x="86" y="570" class="t">日銀が量的緩和政策</text>
+      <circle cx="70" cy="593" r="4" class="econ"/><text x="58" y="598" text-anchor="end" class="t-strong">2008</text><text x="86" y="598" class="t">リーマン・ショック</text>
+      <circle cx="70" cy="621" r="4" class="econ"/><text x="58" y="626" text-anchor="end" class="t-strong">2011</text><text x="86" y="626" class="t">東日本大震災</text>
+      <!-- 金融緩和 -->
+      <rect x="20" y="652" width="340" height="28" rx="6" class="econ"/>
+      <text x="34" y="671" class="on-color">大規模な金融緩和</text>
+      <circle cx="70" cy="695" r="4" class="econ"/><text x="58" y="700" text-anchor="end" class="t-strong">2013</text><text x="86" y="700" class="t">量的・質的金融緩和を開始</text>
+      <circle cx="70" cy="723" r="4" class="econ"/><text x="58" y="728" text-anchor="end" class="t-strong">2016</text><text x="86" y="728" class="t">マイナス金利政策を導入</text>
+      <!-- 現在 -->
+      <rect x="20" y="754" width="340" height="28" rx="6" class="econ"/>
+      <text x="34" y="773" class="on-color">現在：物価と金利が動き出す</text>
+      <circle cx="70" cy="797" r="4" class="econ"/><text x="58" y="802" text-anchor="end" class="t-strong">2020</text><text x="86" y="802" class="t">新型コロナウイルスの流行</text>
+      <circle cx="70" cy="825" r="4" class="econ"/><text x="58" y="830" text-anchor="end" class="t-strong">2022</text><text x="86" y="830" class="t">円安と物価上昇が進む</text>
+      <circle cx="70" cy="853" r="4" class="econ"/><text x="58" y="858" text-anchor="end" class="t-strong">2024</text><text x="86" y="858" class="t">日銀がマイナス金利を解除</text>
+    </svg>
+    <figcaption>図7　戦後日本経済の年表（時代区分の年は目安）</figcaption>
+  </figure>
+  <details>
+    <summary>各時代のポイント</summary>
+    <p><strong>高度経済成長</strong>：実質で年平均およそ9%の成長が続き、家電や自動車が家庭に広がりました。固定相場の1ドル＝360円は、輸出に有利な水準でした。</p>
+    <p><strong>石油危機</strong>：1971年に米国がドルと金の交換を停止し（ニクソン・ショック）、1973年に主要国は変動相場制へ移りました。同じ年の石油危機で物価が急騰し、1974年に戦後初のマイナス成長となって高度成長が終わります。</p>
+    <p><strong>バブル経済</strong>：1985年のプラザ合意で円高が進み、景気対策の金融緩和で余ったお金が株と土地に流れ込みました。価格が実態から離れて上がり続け、1989年末に日経平均株価は当時の最高値をつけました。</p>
+    <p><strong>バブル崩壊後</strong>：株価と地価が下がり、銀行は返ってこない貸し出し（不良債権）を抱えました。1990年代後半には金融機関の破綻が続き、物価が下がるデフレが長引きました。この低成長期を「失われた10年」（のちに20年、30年）と呼びます。</p>
+    <p><strong>金融緩和</strong>：日銀は金利をゼロ近くまで下げ、さらに国債などを大量に買ってお金を供給しました。2024年3月にマイナス金利を解除し、金利を上げる局面に入りました。</p>
+  </details>
+
+  <h2 id="personal">7. 個人のお金の基本</h2>
+  <p>ここでは、個人のお金を考えるときの土台になる3つの仕組みを説明します。特定の金融商品や行動を勧めるものではありません。</p>
+
+  <h3>複利：利息が利息を生む</h3>
+  <p>得た利息を元本に足して、次は増えた額に利息がつくのが<strong>複利</strong>です。利息を受け取って元本に足さないのが<strong>単利</strong>です。差は最初は小さく、期間が長いほど大きく開きます。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 380 330" role="img" aria-label="100万円を年5%で運用したときの単利と複利の比較">
+      <rect x="110" y="13" width="14" height="14" class="box"/>
+      <text x="130" y="25" class="t-soft">単利</text>
+      <rect x="210" y="13" width="14" height="14" class="econ"/>
+      <text x="230" y="25" class="t-soft">複利</text>
+      <line x1="40" y1="300" x2="370" y2="300" class="ln-ink"/>
+      <!-- 開始 -->
+      <rect x="67" y="250" width="26" height="50" class="box"/>
+      <rect x="97" y="250" width="26" height="50" class="econ"/>
+      <text x="80" y="244" text-anchor="middle" class="t-soft">100</text>
+      <text x="110" y="244" text-anchor="middle" class="t-soft">100</text>
+      <text x="95" y="320" text-anchor="middle" class="t-soft">開始</text>
+      <!-- 10年後 -->
+      <rect x="147" y="225" width="26" height="75" class="box"/>
+      <rect x="177" y="218.6" width="26" height="81.4" class="econ"/>
+      <text x="160" y="219" text-anchor="middle" class="t-soft">150</text>
+      <text x="190" y="212" text-anchor="middle" class="t-soft">163</text>
+      <text x="175" y="320" text-anchor="middle" class="t-soft">10年後</text>
+      <!-- 20年後 -->
+      <rect x="227" y="200" width="26" height="100" class="box"/>
+      <rect x="257" y="167.3" width="26" height="132.7" class="econ"/>
+      <text x="240" y="194" text-anchor="middle" class="t-soft">200</text>
+      <text x="270" y="161" text-anchor="middle" class="t-soft">265</text>
+      <text x="255" y="320" text-anchor="middle" class="t-soft">20年後</text>
+      <!-- 30年後 -->
+      <rect x="307" y="175" width="26" height="125" class="box"/>
+      <rect x="337" y="83.9" width="26" height="216.1" class="econ"/>
+      <text x="320" y="169" text-anchor="middle" class="t-soft">250</text>
+      <text x="350" y="78" text-anchor="middle" class="t-soft">432</text>
+      <text x="335" y="320" text-anchor="middle" class="t-soft">30年後</text>
+      <text x="326" y="122" text-anchor="end" class="t-strong">差は約182万円</text>
+      <text x="40" y="60" class="t-soft">単位：万円</text>
+      <text x="40" y="78" class="t-soft">税・手数料は考えない</text>
+    </svg>
+    <figcaption>図8　100万円を年5%で運用した場合の単利と複利（複利は1年ごとに利息を元本に加える計算）</figcaption>
+  </figure>
+  <p>計算は、単利が「100万円×（1＋0.05×年数）」、複利が「100万円×1.05<sup>年数</sup>」です。1.05を10回掛けると約1.63、30回掛けると約4.32になります。目安として「72÷年利（%）」でお金が2倍になるおおよその年数が分かり（72の法則）、年5%なら約14年です。同じ仕組みは借金にも働くので、高い金利の借入は放置すると急速に膨らみます。</p>
+
+  <h3>インフレと現金の価値</h3>
+  <p>物価が上がると、同じ額のお金で買えるモノが減ります。金額は変わらなくても、実質的な価値は目減りしていきます。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 380 232" role="img" aria-label="物価が年2%上がると100万円で買える量が減っていく図">
+      <text x="190" y="20" text-anchor="middle" class="t-soft">お札の額面は100万円のまま。買える量が減っていく</text>
+      <text x="70" y="57" text-anchor="end" class="t">今</text>
+      <rect x="80" y="36" width="260" height="32" rx="4" class="econ"/>
+      <text x="332" y="57" text-anchor="end" class="on-color">100万円分</text>
+      <text x="70" y="107" text-anchor="end" class="t">10年後</text>
+      <rect x="80" y="86" width="213.3" height="32" rx="4" class="econ"/>
+      <text x="285" y="107" text-anchor="end" class="on-color">約82万円分</text>
+      <text x="70" y="157" text-anchor="end" class="t">20年後</text>
+      <rect x="80" y="136" width="175" height="32" rx="4" class="econ"/>
+      <text x="247" y="157" text-anchor="end" class="on-color">約67万円分</text>
+      <text x="70" y="207" text-anchor="end" class="t">30年後</text>
+      <rect x="80" y="186" width="143.5" height="32" rx="4" class="econ"/>
+      <text x="215" y="207" text-anchor="end" class="on-color">約55万円分</text>
+    </svg>
+    <figcaption>図9　物価が毎年2%上がる場合、100万円で買える量を今の価値に直したもの（100万円÷1.02<sup>年数</sup>）</figcaption>
+  </figure>
+  <p>このため経済では、表示される金額（名目）と、物価の変化を差し引いた価値（実質）を分けて考えます。「名目賃金は上がったが実質賃金は下がった」というニュースは、給料の伸びが物価の伸びに追いついていないという意味です。</p>
+
+  <h3>リスクとリターン</h3>
+  <p>金融でいう<strong>リスク</strong>は「危険」ではなく、結果の<strong>ぶれ幅</strong>のことです。<strong>リターン</strong>は得られる収益です。一般に、大きなリターンが期待できるものほど、結果のぶれも大きくなります。リスクが小さくリターンだけが大きい、という都合のよいものは基本的にありません。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 380 300" role="img" aria-label="リスクとリターンの関係の概念図">
+      <line x1="60" y1="40" x2="60" y2="260" class="ln-ink"/>
+      <line x1="60" y1="260" x2="356" y2="260" class="ln-ink"/>
+      <text x="66" y="36" class="t-soft">期待リターン</text>
+      <text x="356" y="282" text-anchor="end" class="t-soft">リスク（結果のぶれ幅）</text>
+      <text x="80" y="66" class="t-soft">縦線は起こりうる結果の</text>
+      <text x="80" y="84" class="t-soft">範囲のイメージ（概念図）</text>
+      <!-- 預貯金 -->
+      <line x1="95" y1="231" x2="95" y2="241" class="ln s-econ"/>
+      <circle cx="95" cy="236" r="6" class="econ"/>
+      <text x="107" y="241" class="t">預貯金</text>
+      <!-- 債券 -->
+      <line x1="175" y1="160" x2="175" y2="220" class="ln s-econ"/>
+      <circle cx="175" cy="190" r="6" class="econ"/>
+      <text x="187" y="195" class="t">債券</text>
+      <!-- 株式 -->
+      <line x1="290" y1="44" x2="290" y2="184" class="ln s-econ"/>
+      <circle cx="290" cy="114" r="6" class="econ"/>
+      <text x="302" y="119" class="t">株式</text>
+    </svg>
+    <figcaption>図10　リスクとリターンの一般的な関係。右上ほど期待される収益も、ぶれも大きい</figcaption>
+  </figure>
+  <p>ぶれを小さくする基本の考え方が<strong>分散</strong>です。値動きの異なるものを組み合わせたり、時期を分けたりすると、全体のぶれは個々のぶれより小さくなります。ただし、どれを選ぶべきかは目的・期間・状況で変わるため、ここでは仕組みの説明にとどめます。</p>
+
+  <h2 id="words">8. ニュースによく出る用語10</h2>
+  <div class="cards">
+    <div class="card"><span class="tag">景気</span><h4>GDP（国内総生産）</h4><p>一定期間に国内で新たに生み出された価値の合計です。その伸び率が「経済成長率」で、物価の影響を除いたものを実質GDPと呼びます。</p></div>
+    <div class="card"><span class="tag">物価</span><h4>消費者物価指数・インフレ率</h4><p>家計が買うモノ・サービスの値段の動きを表す指数（CPI）です。前年と比べた上昇率がインフレ率として報じられます。</p></div>
+    <div class="card"><span class="tag">金融政策</span><h4>政策金利</h4><p>中央銀行が金融政策の目標にする短期の金利です。日本では銀行どうしが翌日まで資金を貸し借りする金利が使われます。</p></div>
+    <div class="card"><span class="tag">財政</span><h4>国債</h4><p>国が資金を借りるために発行する債券です。税収で足りない支出をまかなうために発行され、満期になると返済されます。</p></div>
+    <div class="card"><span class="tag">金利</span><h4>長期金利</h4><p>主に新しく発行された10年物国債の利回りを指します。住宅ローンの固定金利や企業の借入コストに影響します。</p></div>
+    <div class="card"><span class="tag">為替</span><h4>為替レート（円高・円安）</h4><p>円と外貨の交換比率です。1ドル＝100円が120円になれば円安、80円になれば円高です。</p></div>
+    <div class="card"><span class="tag">市場</span><h4>株価指数</h4><p>多くの銘柄の株価をまとめて市場全体の動きを示す数値です。日本では日経平均株価（225銘柄）とTOPIX（東証の幅広い銘柄）が代表です。</p></div>
+    <div class="card"><span class="tag">雇用</span><h4>失業率</h4><p>働く意思と能力があり仕事を探している人のうち、仕事に就けていない人の割合です。日本では総務省が毎月公表します。</p></div>
+    <div class="card"><span class="tag">海外取引</span><h4>貿易収支・経常収支</h4><p>貿易収支はモノの輸出から輸入を引いた差です。経常収支はそれにサービスや海外投資の利子・配当なども含めた、海外との取引全体の収支です。</p></div>
+    <div class="card"><span class="tag">景気</span><h4>日銀短観</h4><p>日本銀行が四半期ごとに企業へアンケートして景況感を調べる統計です。「良い」と答えた割合から「悪い」を引いた数値が注目されます。</p></div>
+  </div>
+
+  <div class="point"><strong>読み方のコツ：</strong>ニュースの数字は「前と比べて上がったか下がったか」と「名目か実質か」を確かめると、意味を取り違えにくくなります。</div>
+
+  <div class="next">
+    <a href="index.html"><span>全体の地図へ</span>教養の全体地図</a>
+    <a href="philosophy.html"><span>市場や国家の考え方の源流</span>哲学・思想史</a>
+    <a href="world-history.html"><span>産業革命・世界恐慌の背景</span>世界史</a>
+  </div>
+  <footer>作成: 2026-10-19 ／ 教養の図解シリーズ</footer>
+</main>
+</body>
+</html>

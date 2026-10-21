@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="favicon.svg">
+<title>芸術｜教養の図解</title>
+<style>
+/* ===== 教養の図解 共通スタイル（全ページで同一のものを使う） ===== */
+:root {
+  --bg: #f7f5f0;
+  --surface: #ffffff;
+  --ink: #1f2328;
+  --ink-soft: #57606a;
+  --line: #d8d4ca;
+  --accent: #b5532a;        /* 見出し・強調 */
+  --c-phil: #6a4fb3;        /* 哲学 */
+  --c-hist: #b5532a;        /* 歴史 */
+  --c-econ: #1f7a5c;        /* 経済 */
+  --c-reli: #a07a12;        /* 宗教 */
+  --c-sci:  #2a63b5;        /* 科学 */
+  --c-art:  #b53a6b;        /* 芸術 */
+  --c-poli: #3d5a80;        /* 政治・法 */
+  --c-psy:  #0f7c86;        /* 心理学 */
+  --c-jp:   #a8323a;        /* 日本史 */
+  --tint: rgba(181, 83, 42, 0.08);
+  --radius: 12px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15171a; --surface: #1e2125; --ink: #e8e6e1; --ink-soft: #a3a8ae; --line: #3a3f45;
+    --accent: #e08a5f; --c-phil: #a58ee8; --c-hist: #e08a5f; --c-econ: #5cc39d;
+    --c-reli: #d9b24a; --c-sci: #6f9ee8; --c-art: #e57ba3; --c-poli: #8fa9d1; --c-psy: #4fc1c9; --c-jp: #e2767d; --tint: rgba(224, 138, 95, 0.12); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15171a; --surface: #1e2125; --ink: #e8e6e1; --ink-soft: #a3a8ae; --line: #3a3f45;
+  --accent: #e08a5f; --c-phil: #a58ee8; --c-hist: #e08a5f; --c-econ: #5cc39d;
+  --c-reli: #d9b24a; --c-sci: #6f9ee8; --c-art: #e57ba3; --c-poli: #8fa9d1; --c-psy: #4fc1c9; --c-jp: #e2767d; --tint: rgba(224, 138, 95, 0.12); color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  font-size: 16px; line-height: 1.8;
+}
+main { max-width: 860px; margin: 0 auto; padding-block: 0 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+nav.top {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg);
+  border-bottom: 1px solid var(--line); overflow-x: auto; white-space: nowrap;
+}
+nav.top ul { display: flex; gap: 4px; list-style: none; margin: 0 auto; padding-block: 8px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); max-width: 860px; }
+nav.top a {
+  display: inline-block; padding: 4px 12px; border-radius: 999px; color: var(--ink-soft);
+  text-decoration: none; font-size: 14px;
+}
+nav.top a[aria-current="page"] { background: var(--accent); color: #fff; }
+header.hero { padding: 32px 0 8px; }
+header.hero .kicker { color: var(--accent); font-weight: 700; font-size: 13px; letter-spacing: .08em; }
+h1 { font-size: 28px; line-height: 1.35; margin: 4px 0 12px; }
+h2 { font-size: 22px; line-height: 1.4; margin: 48px 0 12px; padding-left: 12px; border-left: 5px solid var(--accent); }
+h3 { font-size: 18px; margin: 28px 0 8px; }
+p { margin: 0 0 14px; }
+.lead { color: var(--ink-soft); }
+.toc { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 20px; }
+.toc ol { margin: 0; padding-left: 1.2em; }
+.toc a { color: var(--ink); }
+figure.diagram {
+  margin: 20px 0; background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 12px;
+}
+figure.diagram svg { display: block; width: 100%; height: auto; }
+figure.diagram figcaption { font-size: 13px; color: var(--ink-soft); margin-top: 8px; text-align: center; }
+/* SVG内の文字・線は必ずこのクラスで色を付ける（ダークモード対応のため直接の色指定はしない） */
+svg .t { fill: var(--ink); font-size: 14px; }
+svg .t-soft { fill: var(--ink-soft); font-size: 12px; }
+svg .t-strong { fill: var(--ink); font-size: 15px; font-weight: 700; }
+svg .ln { stroke: var(--line); stroke-width: 2; fill: none; }
+svg .ln-ink { stroke: var(--ink-soft); stroke-width: 1.5; fill: none; }
+svg .box { fill: var(--surface); stroke: var(--line); stroke-width: 1.5; }
+svg .phil { fill: var(--c-phil); } svg .hist { fill: var(--c-hist); } svg .econ { fill: var(--c-econ); }
+svg .reli { fill: var(--c-reli); } svg .sci { fill: var(--c-sci); } svg .art { fill: var(--c-art); }
+svg .poli { fill: var(--c-poli); } svg .psy { fill: var(--c-psy); } svg .jp { fill: var(--c-jp); }
+svg .s-phil { stroke: var(--c-phil); } svg .s-hist { stroke: var(--c-hist); } svg .s-econ { stroke: var(--c-econ); }
+svg .s-reli { stroke: var(--c-reli); } svg .s-sci { stroke: var(--c-sci); } svg .s-art { stroke: var(--c-art); }
+svg .s-poli { stroke: var(--c-poli); } svg .s-psy { stroke: var(--c-psy); } svg .s-jp { stroke: var(--c-jp); }
+svg .on-color { fill: #fff; font-size: 13px; font-weight: 700; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 16px 0; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; }
+.card h4 { margin: 0 0 6px; font-size: 16px; }
+.card p { margin: 0; font-size: 15px; }
+.card .tag { display: inline-block; font-size: 12px; padding: 0 8px; border-radius: 999px; background: var(--tint); color: var(--accent); margin-bottom: 6px; }
+.point { background: var(--tint); border-radius: var(--radius); padding: 12px 16px; margin: 16px 0; }
+.point strong { color: var(--accent); }
+.table-wrap { overflow-x: auto; margin: 16px 0; }
+table { border-collapse: collapse; width: 100%; min-width: 520px; background: var(--surface); font-size: 15px; }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: var(--tint); white-space: nowrap; }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 16px; margin: 10px 0; }
+details summary { cursor: pointer; font-weight: 700; }
+.next { margin-top: 48px; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.next a { display: block; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; color: var(--ink); text-decoration: none; }
+.next a span { display: block; font-size: 12px; color: var(--ink-soft); }
+footer { margin-top: 48px; font-size: 13px; color: var(--ink-soft); }
+@media (max-width: 480px) { h1 { font-size: 24px; } h2 { font-size: 20px; } }
+/* 図はスマホ幅で組んでいるので、PCで拡大しすぎないよう最大幅を抑える */
+figure.diagram svg { max-width: 520px; margin: 0 auto; }
+/* ダークでは分野色が明るくなるため、色の上の文字は暗くする */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) svg .on-color { fill: var(--bg); }
+  :root:not([data-theme="light"]) nav.top a[aria-current="page"] { color: var(--bg); }
+}
+:root[data-theme="dark"] svg .on-color { fill: var(--bg); }
+:root[data-theme="dark"] nav.top a[aria-current="page"] { color: var(--bg); }
+/* 考え方・用語の解説（dl.glossary） */
+main a { color: var(--accent); }
+.glossary { display: grid; gap: 10px; margin: 16px 0; }
+.glossary > div { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 16px; scroll-margin-top: 64px; }
+.glossary dt { font-weight: 700; }
+.glossary dt .who { font-weight: 400; font-size: 13px; color: var(--ink-soft); margin-left: 0.5em; }
+.glossary dd { margin: 4px 0 0; font-size: 15px; }
+/* art固有 */
+header.hero .kicker { color: var(--c-art); }
+h2 { border-left-color: var(--c-art); }
+.card .tag.art-tag { background: rgba(181, 58, 107, 0.12); color: var(--c-art); }
+/* 図の中の様式名はリンク（押すと用語解説へ） */
+svg a text { text-decoration: underline; }
+/* 比較表の様式名は折り返さない */
+#compare + p + .table-wrap td:first-child { white-space: nowrap; }
+</style>
+</head>
+<body>
+<nav class="top" aria-label="教養の図解">
+  <ul>
+    <li><a href="index.html">全体地図</a></li>
+    <li><a href="philosophy.html">哲学・思想史</a></li>
+    <li><a href="religion.html">宗教</a></li>
+    <li><a href="world-history.html">世界史</a></li>
+    <li><a href="japan.html">日本史・日本文化</a></li>
+    <li><a href="politics.html">政治・法</a></li>
+    <li><a href="economics.html">経済・お金</a></li>
+    <li><a href="science.html">科学史</a></li>
+    <li><a href="psychology.html">心理学・脳</a></li>
+    <li><a href="art.html" aria-current="page">芸術</a></li>
+  </ul>
+</nav>
+<main>
+  <header class="hero">
+    <div class="kicker">教養の図解</div>
+    <h1>芸術</h1>
+    <p class="lead">絵を見る3つの視点を押さえたうえで、西洋美術の様式の流れ、写真の登場で絵画が「写実」から「表現」へ移った理由、日本美術と音楽史の概観、美術館での見方の手順を図で整理します。</p>
+  </header>
+  <nav class="toc" aria-label="目次">
+    <ol>
+      <li><a href="#view">芸術を見る3つの視点</a></li>
+      <li><a href="#west">西洋美術史の流れ</a></li>
+      <li><a href="#photo">「写実」から「表現」へ</a></li>
+      <li><a href="#compare">主要な様式の比較</a></li>
+      <li><a href="#japan">日本美術の流れ</a></li>
+      <li><a href="#music">音楽史の概観</a></li>
+      <li><a href="#museum">美術館での見方のコツ</a></li>
+      <li><a href="#glossary">考え方・用語の解説</a></li>
+    </ol>
+  </nav>
+
+  <!-- 1. 3つの視点 -->
+  <h2 id="view">芸術を見る3つの視点</h2>
+  <p>名画を前にして「何がすごいのか分からない」と感じるのは、見る手がかりがないからです。次の3つの問いを順に当てると、1枚の絵から読み取れることが一気に増えます。</p>
+  <figure class="diagram">
+    <svg viewBox="0 0 360 384" role="img" aria-labelledby="fig1-t">
+      <title id="fig1-t">絵を見る3つの視点（主題・表現・背景）と最後の晩餐での例</title>
+      <defs><marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path class="art" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+      <text class="t-strong" x="180" y="24" text-anchor="middle">例：レオナルド『最後の晩餐』</text>
+      <rect class="box" x="10" y="40" width="340" height="100" rx="8"/>
+      <circle class="art" cx="36" cy="70" r="16"/>
+      <text class="on-color" x="36" y="75" text-anchor="middle">1</text>
+      <text class="t-strong" x="62" y="75">何が描かれているか（主題）</text>
+      <text class="t" x="62" y="102">人物・物語・持ち物から読む</text>
+      <text class="t-soft" x="62" y="126">例：イエスと12人の弟子の最後の食事</text>
+      <line class="ln s-art" x1="180" y1="140" x2="180" y2="158" marker-end="url(#a1)"/>
+      <rect class="box" x="10" y="160" width="340" height="100" rx="8"/>
+      <circle class="art" cx="36" cy="190" r="16"/>
+      <text class="on-color" x="36" y="195" text-anchor="middle">2</text>
+      <text class="t-strong" x="62" y="195">どう描かれているか（表現）</text>
+      <text class="t" x="62" y="222">構図・光・色・筆の跡を見る</text>
+      <text class="t-soft" x="62" y="246">例：奥へ向かう線がイエスの頭に集まる</text>
+      <line class="ln s-art" x1="180" y1="260" x2="180" y2="278" marker-end="url(#a1)"/>
+      <rect class="box" x="10" y="280" width="340" height="100" rx="8"/>
+      <circle class="art" cx="36" cy="310" r="16"/>
+      <text class="on-color" x="36" y="315" text-anchor="middle">3</text>
+      <text class="t-strong" x="62" y="315">なぜそう描かれたか（背景）</text>
+      <text class="t" x="62" y="342">時代・注文主・技術を知る</text>
+      <text class="t-soft" x="62" y="366">例：ルネサンスで遠近法が広まった</text>
+    </svg>
+    <figcaption>図1　「何を」「どう」「なぜ」の順に見ると、1枚の絵から読み取れることが増えます</figcaption>
+  </figure>
+  <p>1つ目の「何が」は、<a href="#g-zuzo">図像学</a>の考え方です。西洋の宗教画では、人物が誰かを<a href="#g-attr">アトリビュート（持物）</a>で示す約束事があり、知っていれば物語が読めます。2つ目の「どう」は、<a href="#g-enkin">遠近法</a>や<a href="#g-meian">明暗法</a>など描き方の工夫です。3つ目の「なぜ」は、誰が注文し、どんな技術や考え方があった時代かという背景です。</p>
+  <div class="point"><strong>ポイント：</strong>西洋美術はおおむね「宗教や権力のために、物語を分かりやすく描く」ことから始まり、近代になるほど「画家が自分の見方や感情を表す」ものへ変わっていきます。この大きな流れを頭に置くと、様式の違いが理解しやすくなります。</div>
+
+  <!-- 2. 年表 -->
+  <h2 id="west">西洋美術史の流れ</h2>
+  <p>古代から20世紀までの主な様式を、時代順に並べます。図の様式名を押すと、下の解説に移動します。</p>
+  <figure class="diagram">
+    <svg viewBox="0 0 380 1188" role="img" aria-labelledby="fig2-t">
+      <title id="fig2-t">古代から20世紀までの西洋美術の様式の流れと代表的な作家</title>
+      <defs><marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path class="art" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+      <text class="t-soft" x="86" y="22" text-anchor="end">時代</text>
+      <text class="t-soft" x="110" y="22">様式（名前を押すと解説へ）</text>
+      <line class="ln s-art" x1="96" y1="36" x2="96" y2="1182" marker-end="url(#a2)"/>
+      <rect class="box" x="108" y="36" width="264" height="64" rx="8"/>
+      <rect class="art" x="108" y="36" width="5" height="64"/>
+      <a href="#g-classic"><text class="t-strong" x="122" y="57">古代ギリシャ・ローマ</text></a>
+      <text class="t" x="122" y="77">パルテノン神殿の彫刻など</text>
+      <text class="t-soft" x="122" y="94">理想の人体の比例と調和</text>
+      <text class="t-soft" x="86" y="72" text-anchor="end">古代</text>
+      <rect class="box" x="108" y="110" width="264" height="64" rx="8"/>
+      <rect class="art" x="108" y="110" width="5" height="64"/>
+      <a href="#g-romanesque"><text class="t-strong" x="122" y="131">ロマネスク</text></a>
+      <text class="t" x="122" y="151">作者の多くは無名の職人</text>
+      <text class="t-soft" x="122" y="168">厚い壁と半円アーチの教会</text>
+      <text class="t-soft" x="86" y="146" text-anchor="end">11〜12世紀</text>
+      <rect class="box" x="108" y="184" width="264" height="64" rx="8"/>
+      <rect class="art" x="108" y="184" width="5" height="64"/>
+      <a href="#g-gothic"><text class="t-strong" x="122" y="205">ゴシック</text></a>
+      <text class="t" x="122" y="225">シャルトル大聖堂など</text>
+      <text class="t-soft" x="122" y="242">尖ったアーチと大きなステンドグラス</text>
+      <text class="t-soft" x="86" y="220" text-anchor="end">12〜15世紀</text>
+      <rect class="box" x="108" y="258" width="264" height="64" rx="8"/>
+      <rect class="art" x="108" y="258" width="5" height="64"/>
+      <a href="#g-renaissance"><text class="t-strong" x="122" y="279">ルネサンス</text></a>
+      <text class="t" x="122" y="299">レオナルド、ミケランジェロ</text>
+      <text class="t-soft" x="122" y="316">遠近法と解剖学で現実らしく</text>
+      <text class="t-soft" x="86" y="294" text-anchor="end">14〜16世紀</text>
+      <rect class="box" x="108" y="332" width="264" height="64" rx="8"/>
+      <rect class="art" x="108" y="332" width="5" height="64"/>
+      <a href="#g-baroque"><text class="t-strong" x="122" y="353">バロック</text></a>
+      <text class="t" x="122" y="373">カラヴァッジョ、レンブラント</text>
+      <text class="t-soft" x="122" y="390">強い明暗と劇的な動き</text>
+      <text class="t-soft" x="86" y="368" text-anchor="end">17世紀</text>
+      <rect class="box" x="108" y="406" width="264" height="64" rx="8"/>
+      <rect class="art" x="108" y="406" width="5" height="64"/>
+      <a href="#g-rococo"><text class="t-strong" x="122" y="427">ロココ</text></a>
+      <text class="t" x="122" y="447">ヴァトー、フラゴナール</text>
+      <text class="t-soft" x="122" y="464">淡い色と貴族の優雅な遊び</text>
+      <text class="t-soft" x="86" y="442" text-anchor="end">18世紀</text>
+      <rect class="box" x="108" y="480" width="264" height="64" rx="8"/>
+      <rect class="art" x="108" y="480" width="5" height="64"/>
+      <a href="#g-neoclassic"><text class="t-strong" x="122" y="501">新古典主義</text></a>
+      <text class="t" x="122" y="521">ダヴィッド、アングル</text>
+      <text class="t-soft" x="122" y="538">古代風の端正な線と安定した構図</text>
+      <text class="t-soft" x="86" y="509" text-anchor="end"><tspan x="86" dy="0">18世紀後半</tspan><tspan x="86" dy="15">〜19世紀初め</tspan></text>
+      <rect class="box" x="108" y="554" width="264" height="64" rx="8"/>
+      <rect class="art" x="108" y="554" width="5" height="64"/>
+      <a href="#g-romantic"><text class="t-strong" x="122" y="575">ロマン主義</text></a>
+      <text class="t" x="122" y="595">ドラクロワ、ジェリコー</text>
+      <text class="t-soft" x="122" y="612">激しい感情・色彩・異国への憧れ</text>
+      <text class="t-soft" x="86" y="590" text-anchor="end">19世紀前半</text>
+      <line class="ln-ink" x1="10" y1="642" x2="104" y2="642" stroke-dasharray="4 4"/>
+      <rect class="art" x="108" y="629" width="264" height="26" rx="13"/>
+      <text class="on-color" x="240" y="647" text-anchor="middle">1839年 写真技術が発表される</text>
+      <rect class="box" x="108" y="666" width="264" height="64" rx="8"/>
+      <rect class="art" x="108" y="666" width="5" height="64"/>
+      <a href="#g-realism"><text class="t-strong" x="122" y="687">写実主義</text></a>
+      <text class="t" x="122" y="707">クールベ、ミレー</text>
+      <text class="t-soft" x="122" y="724">農民や労働者をありのままに</text>
+      <text class="t-soft" x="86" y="702" text-anchor="end">19世紀半ば</text>
+      <rect class="box" x="108" y="740" width="264" height="64" rx="8"/>
+      <rect class="art" x="108" y="740" width="5" height="64"/>
+      <a href="#g-impression"><text class="t-strong" x="122" y="761">印象派</text></a>
+      <text class="t" x="122" y="781">モネ、ルノワール</text>
+      <text class="t-soft" x="122" y="798">移ろう光を明るい色と筆の跡で</text>
+      <text class="t-soft" x="86" y="776" text-anchor="end">19世紀後半</text>
+      <rect class="box" x="108" y="814" width="264" height="64" rx="8"/>
+      <rect class="art" x="108" y="814" width="5" height="64"/>
+      <a href="#g-postimp"><text class="t-strong" x="122" y="835">ポスト印象派</text></a>
+      <text class="t" x="122" y="855">セザンヌ、ゴッホ</text>
+      <text class="t-soft" x="122" y="872">形の構造や内面の感情へ</text>
+      <text class="t-soft" x="86" y="850" text-anchor="end">19世紀末</text>
+      <rect class="box" x="108" y="888" width="264" height="64" rx="8"/>
+      <rect class="art" x="108" y="888" width="5" height="64"/>
+      <a href="#g-cubism"><text class="t-strong" x="122" y="909">キュビスム</text></a>
+      <text class="t" x="122" y="929">ピカソ、ブラック</text>
+      <text class="t-soft" x="122" y="946">複数の視点から形を分解して再構成</text>
+      <text class="t-soft" x="86" y="924" text-anchor="end">20世紀初め</text>
+      <rect class="box" x="108" y="962" width="264" height="64" rx="8"/>
+      <rect class="art" x="108" y="962" width="5" height="64"/>
+      <a href="#g-abstract"><text class="t-strong" x="122" y="983">抽象絵画</text></a>
+      <text class="t" x="122" y="1003">カンディンスキー、モンドリアン</text>
+      <text class="t-soft" x="122" y="1020">具体的な物を描かず色と形だけで</text>
+      <text class="t-soft" x="86" y="998" text-anchor="end">20世紀初め</text>
+      <rect class="box" x="108" y="1036" width="264" height="64" rx="8"/>
+      <rect class="art" x="108" y="1036" width="5" height="64"/>
+      <a href="#g-surreal"><text class="t-strong" x="122" y="1057">シュルレアリスム</text></a>
+      <text class="t" x="122" y="1077">ダリ、マグリット</text>
+      <text class="t-soft" x="122" y="1094">夢や無意識の世界を描く</text>
+      <text class="t-soft" x="86" y="1072" text-anchor="end">1920年代〜</text>
+      <rect class="box" x="108" y="1110" width="264" height="64" rx="8"/>
+      <rect class="art" x="108" y="1110" width="5" height="64"/>
+      <a href="#g-pop"><text class="t-strong" x="122" y="1131">ポップアート</text></a>
+      <text class="t" x="122" y="1151">ウォーホル、リキテンスタイン</text>
+      <text class="t-soft" x="122" y="1168">広告や大量生産品を題材に</text>
+      <text class="t-soft" x="86" y="1139" text-anchor="end"><tspan x="86" dy="0">1950〜</tspan><tspan x="86" dy="15">60年代</tspan></text>
+      <circle class="art" cx="96" cy="68" r="5"/>
+      <circle class="art" cx="96" cy="142" r="5"/>
+      <circle class="art" cx="96" cy="216" r="5"/>
+      <circle class="art" cx="96" cy="290" r="5"/>
+      <circle class="art" cx="96" cy="364" r="5"/>
+      <circle class="art" cx="96" cy="438" r="5"/>
+      <circle class="art" cx="96" cy="512" r="5"/>
+      <circle class="art" cx="96" cy="586" r="5"/>
+      <circle class="art" cx="96" cy="698" r="5"/>
+      <circle class="art" cx="96" cy="772" r="5"/>
+      <circle class="art" cx="96" cy="846" r="5"/>
+      <circle class="art" cx="96" cy="920" r="5"/>
+      <circle class="art" cx="96" cy="994" r="5"/>
+      <circle class="art" cx="96" cy="1068" r="5"/>
+      <circle class="art" cx="96" cy="1142" r="5"/>
+    </svg>
+    <figcaption>図2　西洋美術史の流れ。上から下へ時代が進みます。年代はおおよその目安で、前後の様式は重なり合っています</figcaption>
+  </figure>
+  <p>流れを見るときは、「整った理性」と「動きと感情」が交互に現れる、という見方が手がかりになります。均整を重んじる<a href="#g-renaissance">ルネサンス</a>の後に劇的な<a href="#g-baroque">バロック</a>が、端正な<a href="#g-neoclassic">新古典主義</a>の後に情熱的な<a href="#g-romantic">ロマン主義</a>が来ます。どの様式も、前の時代への反発や手直しとして生まれています。</p>
+
+  <!-- 3. 写真と絵画 -->
+  <h2 id="photo">「写実」から「表現」へ：写真が変えた絵画の役割</h2>
+  <p>ルネサンス以来、西洋の画家は目に見える世界をいかに本物らしく描くかを磨いてきました。ところが19世紀に<a href="#g-photo">写真</a>が登場すると、正確な記録は機械でもできるようになります。そこで画家たちは「絵にしかできないこと」を探し始めました。</p>
+  <figure class="diagram">
+    <svg viewBox="0 0 360 672" role="img" aria-labelledby="fig3-t">
+      <title id="fig3-t">写真の登場で絵画の役割が記録から表現へ移った流れ</title>
+      <defs><marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path class="art" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+      <rect class="box" x="10" y="10" width="340" height="74" rx="8"/>
+      <text class="t-strong" x="180" y="34" text-anchor="middle">19世紀前半までの絵画の大きな役割</text>
+      <text class="t" x="180" y="56" text-anchor="middle">見たものを正確に写して残す</text>
+      <text class="t-soft" x="180" y="74" text-anchor="middle">肖像・歴史の場面・風景の記録</text>
+      <line class="ln s-art" x1="180" y1="84" x2="180" y2="102" marker-end="url(#a3)"/>
+      <rect class="art" x="10" y="104" width="340" height="54" rx="8"/>
+      <text class="on-color" x="180" y="126" text-anchor="middle">1839年 写真技術が発表される</text>
+      <text class="on-color" x="180" y="147" text-anchor="middle">肖像や記録を写真が安く速く担うように</text>
+      <line class="ln s-art" x1="180" y1="158" x2="180" y2="176" marker-end="url(#a3)"/>
+      <rect class="box" x="10" y="178" width="340" height="60" rx="8"/>
+      <text class="t-strong" x="180" y="202" text-anchor="middle">画家の問い直し</text>
+      <text class="t" x="180" y="226" text-anchor="middle">絵にしかできないことは何か</text>
+      <text class="t-soft" x="10" y="262">同じころ後押しした変化</text>
+      <rect class="box" x="10" y="270" width="160" height="56" rx="8"/>
+      <text class="t" x="22" y="292">チューブ入り絵の具</text>
+      <text class="t-soft" x="22" y="314">屋外ですぐに描ける</text>
+      <rect class="box" x="190" y="270" width="160" height="56" rx="8"/>
+      <a href="#g-ukiyoe"><text class="t" x="202" y="292">浮世絵の流入</text></a>
+      <text class="t-soft" x="202" y="314">平らな色面と大胆な構図</text>
+      <line class="ln s-art" x1="180" y1="238" x2="180" y2="352" marker-end="url(#a3)"/>
+      <text class="t-strong" x="180" y="374" text-anchor="middle">画家が描くようになったもの</text>
+      <rect class="box" x="10" y="388" width="160" height="76" rx="8"/>
+      <rect class="art" x="10" y="388" width="5" height="76"/>
+      <text class="t-strong" x="24" y="412">光と色</text>
+      <text class="t" x="24" y="434">移ろう一瞬の印象</text>
+      <a href="#g-impression"><text class="t-soft" x="24" y="454">印象派（モネ）</text></a>
+      <rect class="box" x="190" y="388" width="160" height="76" rx="8"/>
+      <rect class="art" x="190" y="388" width="5" height="76"/>
+      <text class="t-strong" x="204" y="412">形の構造</text>
+      <text class="t" x="204" y="434">物を単純な形でみる</text>
+      <a href="#g-cubism"><text class="t-soft" x="204" y="454">セザンヌ→キュビスム</text></a>
+      <rect class="box" x="10" y="474" width="160" height="76" rx="8"/>
+      <rect class="art" x="10" y="474" width="5" height="76"/>
+      <text class="t-strong" x="24" y="498">感情</text>
+      <text class="t" x="24" y="520">色と筆で心を表す</text>
+      <a href="#g-expression"><text class="t-soft" x="24" y="540">ゴッホ→表現主義</text></a>
+      <rect class="box" x="190" y="474" width="160" height="76" rx="8"/>
+      <rect class="art" x="190" y="474" width="5" height="76"/>
+      <text class="t-strong" x="204" y="498">形と色そのもの</text>
+      <text class="t" x="204" y="520">何も写さない絵</text>
+      <a href="#g-abstract"><text class="t-soft" x="204" y="540">抽象絵画</text></a>
+      <text class="t-strong" x="180" y="584" text-anchor="middle">「見たまま」から「表現」へ</text>
+      <text class="t-soft" x="20" y="608">見たまま</text>
+      <text class="t-soft" x="340" y="608" text-anchor="end">形・色そのもの</text>
+      <line class="ln s-art" x1="20" y1="620" x2="344" y2="620" marker-end="url(#a3)"/>
+      <circle class="art" cx="36" cy="620" r="6"/>
+      <text class="t-soft" x="36" y="644" text-anchor="middle">写実主義</text>
+      <circle class="art" cx="102" cy="620" r="6"/>
+      <text class="t-soft" x="102" y="644" text-anchor="middle">印象派</text>
+      <circle class="art" cx="172" cy="620" r="6"/>
+      <text class="t-soft" x="172" y="644" text-anchor="middle"><tspan x="172" dy="0">ポスト</tspan><tspan x="172" dy="15">印象派</tspan></text>
+      <circle class="art" cx="250" cy="620" r="6"/>
+      <text class="t-soft" x="250" y="644" text-anchor="middle">キュビスム</text>
+      <circle class="art" cx="322" cy="620" r="6"/>
+      <text class="t-soft" x="322" y="644" text-anchor="middle">抽象</text>
+    </svg>
+    <figcaption>図3　写真が「正確に写す」仕事を担うようになったことは、画家が光・形・感情・色そのものへ向かった要因の一つです</figcaption>
+  </figure>
+  <p><a href="#g-impression">印象派</a>は、物の形より、その上で刻々と変わる光と色を<a href="#g-hissyoku">筆触分割</a>で描きました。続く<a href="#g-postimp">ポスト印象派</a>は、光だけでは失われた形の確かさや内面を取り戻そうとし、そこから<a href="#g-cubism">キュビスム</a>、<a href="#g-expression">表現主義</a>、<a href="#g-abstract">抽象絵画</a>が生まれます。<a href="#g-surreal">シュルレアリスム</a>は、目に見えない夢や無意識にまで題材を広げました。</p>
+  <div class="point"><strong>ITに置き換えると：</strong>定型の作業が自動化されると、人は「機械にはできない判断や設計」に重心を移します。写真の登場で画家が記録係から表現者へ移ったのは、それに似た変化です（あくまで理解のための比喩です）。</div>
+
+  <!-- 4. 比較表 -->
+  <h2 id="compare">主要な様式の比較</h2>
+  <p>題材・描き方・時代背景の3つで比べると、それぞれの様式が何に応えて生まれたかが見えてきます。表は横にスクロールできます。</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>様式</th><th>主な題材</th><th>描き方</th><th>時代背景</th></tr></thead>
+      <tbody>
+        <tr><td><a href="#g-renaissance">ルネサンス</a></td><td>聖書・神話・肖像</td><td>遠近法、解剖学に基づく人体、均整のとれた構図</td><td>イタリアの都市の繁栄と、古代文化の再評価</td></tr>
+        <tr><td><a href="#g-baroque">バロック</a></td><td>聖人の殉教、王の栄光、市民の日常</td><td>強い明暗、斜めの構図、劇的な一瞬</td><td><a href="#g-counter">対抗宗教改革</a>、王の権力の強まり、オランダの豊かな市民層</td></tr>
+        <tr><td><a href="#g-rococo">ロココ</a></td><td>恋愛、貴族の野外の遊び</td><td>淡い色、曲線、軽やかな筆づかい</td><td>18世紀フランスの宮廷・貴族の社交文化</td></tr>
+        <tr><td><a href="#g-neoclassic">新古典主義</a></td><td>古代の英雄、歴史の場面</td><td>明確な輪郭線、滑らかな仕上げ、安定した構図</td><td>古代遺跡の発掘、フランス革命とナポレオンの時代</td></tr>
+        <tr><td><a href="#g-romantic">ロマン主義</a></td><td>同時代の事件、嵐や山などの自然、異国</td><td>激しい色彩、動きのある筆づかい</td><td>革命と戦争による社会の激変、個人の感情の重視</td></tr>
+        <tr><td><a href="#g-realism">写実主義</a></td><td>農民・労働者の暮らし</td><td>美化せず、ありのままに</td><td>産業化と都市の労働者の増加</td></tr>
+        <tr><td><a href="#g-impression">印象派</a></td><td>郊外の風景、都市の娯楽</td><td>戸外で描く、明るい色、<a href="#g-hissyoku">筆触分割</a></td><td>写真の普及、チューブ入り絵の具、鉄道、<a href="#g-salon">サロン</a>への反発</td></tr>
+        <tr><td><a href="#g-postimp">ポスト印象派</a></td><td>静物、風景、自画像</td><td>単純化した形、主観的な色</td><td>印象派の光の表現だけでは満たされない探究</td></tr>
+        <tr><td><a href="#g-cubism">キュビスム</a></td><td>静物、人物</td><td>幾何学的な形への分解、複数の視点</td><td>セザンヌの影響、20世紀初めの新しい空間の探究</td></tr>
+        <tr><td><a href="#g-surreal">シュルレアリスム</a></td><td>夢、ありえない組み合わせ</td><td>写実的な細密描写で非現実を描く</td><td>第一次世界大戦後、<a href="#g-psycho">精神分析</a>の広まり</td></tr>
+        <tr><td><a href="#g-pop">ポップアート</a></td><td>広告、漫画、有名人、商品</td><td>版画による反復、平らな色</td><td>大量生産・大量消費の社会</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 5. 日本美術 -->
+  <h2 id="japan">日本美術の流れ</h2>
+  <p>日本の美術は、大陸から伝わったものを学び、日本の風土や好みに合わせて作り変えることを繰り返してきました。19世紀には逆に、浮世絵が西洋の画家に大きな影響を与えます。</p>
+  <figure class="diagram">
+    <svg viewBox="0 0 360 668" role="img" aria-labelledby="fig4-t">
+      <title id="fig4-t">仏教美術から浮世絵、ジャポニスムによる西洋への影響までの日本美術の流れ</title>
+      <defs><marker id="a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path class="art" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+      <rect class="box" x="88" y="10" width="262" height="64" rx="8"/>
+      <rect class="art" x="88" y="10" width="5" height="64"/>
+      <a href="#g-butsu"><text class="t-strong" x="102" y="31">仏教美術</text></a>
+      <text class="t" x="102" y="51">仏像と寺院（法隆寺・東大寺）</text>
+      <text class="t-soft" x="102" y="68">大陸の様式に学ぶ</text>
+      <text class="t-soft" x="78" y="39" text-anchor="end"><tspan x="78" dy="0">飛鳥・奈良</tspan><tspan x="78" dy="15">6〜8世紀</tspan></text>
+      <line class="ln s-art" x1="219" y1="74" x2="219" y2="92" marker-end="url(#a4)"/>
+      <rect class="box" x="88" y="94" width="262" height="64" rx="8"/>
+      <rect class="art" x="88" y="94" width="5" height="64"/>
+      <a href="#g-yamato"><text class="t-strong" x="102" y="115">やまと絵・絵巻物</text></a>
+      <text class="t" x="102" y="135">日本の風景や物語を描く</text>
+      <text class="t-soft" x="102" y="152">『源氏物語絵巻』</text>
+      <text class="t-soft" x="78" y="123" text-anchor="end"><tspan x="78" dy="0">平安</tspan><tspan x="78" dy="15">9〜12世紀</tspan></text>
+      <line class="ln s-art" x1="219" y1="158" x2="219" y2="176" marker-end="url(#a4)"/>
+      <rect class="box" x="88" y="178" width="262" height="64" rx="8"/>
+      <rect class="art" x="88" y="178" width="5" height="64"/>
+      <a href="#g-butsu"><text class="t-strong" x="102" y="199">仏教彫刻</text></a>
+      <text class="t" x="102" y="219">写実的で力強い仏像</text>
+      <text class="t-soft" x="102" y="236">運慶・快慶</text>
+      <text class="t-soft" x="78" y="207" text-anchor="end"><tspan x="78" dy="0">鎌倉</tspan><tspan x="78" dy="15">12〜14世紀</tspan></text>
+      <line class="ln s-art" x1="219" y1="242" x2="219" y2="260" marker-end="url(#a4)"/>
+      <rect class="box" x="88" y="262" width="262" height="64" rx="8"/>
+      <rect class="art" x="88" y="262" width="5" height="64"/>
+      <a href="#g-suiboku"><text class="t-strong" x="102" y="283">水墨画</text></a>
+      <text class="t" x="102" y="303">墨の濃淡だけで描く</text>
+      <text class="t-soft" x="102" y="320">雪舟</text>
+      <text class="t-soft" x="78" y="291" text-anchor="end"><tspan x="78" dy="0">室町</tspan><tspan x="78" dy="15">14〜16世紀</tspan></text>
+      <line class="ln s-art" x1="219" y1="326" x2="219" y2="344" marker-end="url(#a4)"/>
+      <rect class="box" x="88" y="346" width="262" height="64" rx="8"/>
+      <rect class="art" x="88" y="346" width="5" height="64"/>
+      <a href="#g-rinpa"><text class="t-strong" x="102" y="367">琳派</text></a>
+      <text class="t" x="102" y="387">金地に草花や波を大胆に</text>
+      <text class="t-soft" x="102" y="404">俵屋宗達・尾形光琳</text>
+      <text class="t-soft" x="78" y="375" text-anchor="end"><tspan x="78" dy="0">江戸前期</tspan><tspan x="78" dy="15">17〜18世紀</tspan></text>
+      <line class="ln s-art" x1="219" y1="410" x2="219" y2="428" marker-end="url(#a4)"/>
+      <rect class="box" x="88" y="430" width="262" height="64" rx="8"/>
+      <rect class="art" x="88" y="430" width="5" height="64"/>
+      <a href="#g-ukiyoe"><text class="t-strong" x="102" y="451">浮世絵</text></a>
+      <text class="t" x="102" y="471">庶民向けの版画（役者・風景）</text>
+      <text class="t-soft" x="102" y="488">北斎・広重・歌麿</text>
+      <text class="t-soft" x="78" y="459" text-anchor="end"><tspan x="78" dy="0">江戸</tspan><tspan x="78" dy="15">17〜19世紀</tspan></text>
+      <line class="ln s-art" x1="219" y1="494" x2="219" y2="520" marker-end="url(#a4)"/>
+      <rect class="art" x="10" y="522" width="340" height="56" rx="8"/>
+      <a href="#g-japonisme"><text class="on-color" x="180" y="545" text-anchor="middle">19世紀後半 ジャポニスム（欧州）</text></a>
+      <text class="on-color" x="180" y="567" text-anchor="middle">浮世絵や工芸品がパリなどで流行</text>
+      <line class="ln s-art" x1="180" y1="578" x2="180" y2="600" marker-end="url(#a4)"/>
+      <rect class="box" x="10" y="602" width="340" height="56" rx="8"/>
+      <text class="t" x="180" y="625" text-anchor="middle">モネ・ゴッホ・ドガらの構図や色に影響</text>
+      <text class="t-soft" x="180" y="647" text-anchor="middle">印象派・ポスト印象派へ（図2）</text>
+    </svg>
+    <figcaption>図4　日本美術の流れ。外から学んだものを日本風に変え、最後は浮世絵が逆に西洋の画家へ影響を与えました</figcaption>
+  </figure>
+  <h3>西洋の画家が浮世絵から取り入れたもの</h3>
+  <div class="cards">
+    <div class="card"><span class="tag art-tag">平らな色面と輪郭線</span><h4>陰影に頼らない形</h4><p>陰影で立体感を出す西洋の描き方とは逆に、輪郭線で囲んだ平らな色で形を表します。ゴッホは広重の版画を油絵で模写しています。</p><p><strong>用語：</strong><a href="#g-nishiki">錦絵</a>／<a href="#g-japonisme">ジャポニスム</a></p></div>
+    <div class="card"><span class="tag art-tag">大胆な切り取り</span><h4>端で切れる構図</h4><p>近くの物を画面の端で大きく切り、遠くを小さく見せる構図です。人物が画面からはみ出すドガの構図などに通じます。</p><p><strong>用語：</strong><a href="#g-ukiyoe">浮世絵</a>／<a href="#g-impression">印象派</a></p></div>
+    <div class="card"><span class="tag art-tag">日常の題材</span><h4>身近な暮らしと風景</h4><p>庶民の暮らしや名所の風景を主題にする姿勢は、印象派が都市の娯楽や身近な郊外を描いたことと響き合いました。</p><p><strong>用語：</strong><a href="#g-ukiyoe">浮世絵</a>／<a href="#g-genre">ジャンル</a></p></div>
+  </div>
+
+  <!-- 6. 音楽 -->
+  <h2 id="music">音楽史の概観</h2>
+  <p>西洋音楽の時代区分は、美術の様式とほぼ同じ時期に移り変わります。美術と並べると覚えやすくなります。</p>
+  <figure class="diagram">
+    <svg viewBox="0 0 380 550" role="img" aria-labelledby="fig5-t">
+      <title id="fig5-t">同じ時代の美術の様式と音楽の時代区分の対応</title>
+      <text class="t-strong" x="70" y="22" text-anchor="middle">美術</text>
+      <text class="t-strong" x="255" y="22" text-anchor="middle">音楽</text>
+      <text class="t-soft" x="10" y="50">17世紀〜18世紀前半</text>
+      <rect class="box" x="10" y="58" width="120" height="70" rx="8"/>
+      <a href="#g-baroque"><text class="t-strong" x="70" y="99" text-anchor="middle">バロック</text></a>
+      <line class="ln-ink" x1="130" y1="93" x2="140" y2="93"/>
+      <rect class="box" x="140" y="58" width="230" height="70" rx="8"/>
+      <rect class="art" x="140" y="58" width="5" height="70"/>
+      <a href="#g-m-baroque"><text class="t-strong" x="154" y="80">バロック音楽</text></a>
+      <text class="t" x="154" y="101">バッハ、ヘンデル</text>
+      <text class="t-soft" x="154" y="119">複数の旋律を重ねる（対位法）</text>
+      <text class="t-soft" x="10" y="152">18世紀後半〜19世紀初め</text>
+      <rect class="box" x="10" y="160" width="120" height="70" rx="8"/>
+      <a href="#g-neoclassic"><text class="t-strong" x="70" y="201" text-anchor="middle">新古典主義</text></a>
+      <line class="ln-ink" x1="130" y1="195" x2="140" y2="195"/>
+      <rect class="box" x="140" y="160" width="230" height="70" rx="8"/>
+      <rect class="art" x="140" y="160" width="5" height="70"/>
+      <a href="#g-m-classic"><text class="t-strong" x="154" y="182">古典派</text></a>
+      <text class="t" x="154" y="203">モーツァルト、ベートーヴェン</text>
+      <text class="t-soft" x="154" y="221">形の整った交響曲やソナタ</text>
+      <text class="t-soft" x="10" y="254">19世紀</text>
+      <rect class="box" x="10" y="262" width="120" height="70" rx="8"/>
+      <a href="#g-romantic"><text class="t-strong" x="70" y="303" text-anchor="middle">ロマン主義</text></a>
+      <line class="ln-ink" x1="130" y1="297" x2="140" y2="297"/>
+      <rect class="box" x="140" y="262" width="230" height="70" rx="8"/>
+      <rect class="art" x="140" y="262" width="5" height="70"/>
+      <a href="#g-m-romantic"><text class="t-strong" x="154" y="284">ロマン派</text></a>
+      <text class="t" x="154" y="305">ショパン、ワーグナー</text>
+      <text class="t-soft" x="154" y="323">感情や物語を自由に表す</text>
+      <text class="t-soft" x="10" y="356">19世紀末〜20世紀初め</text>
+      <rect class="box" x="10" y="364" width="120" height="70" rx="8"/>
+      <a href="#g-impression"><text class="t-strong" x="70" y="405" text-anchor="middle">印象派</text></a>
+      <line class="ln-ink" x1="130" y1="399" x2="140" y2="399"/>
+      <rect class="box" x="140" y="364" width="230" height="70" rx="8"/>
+      <rect class="art" x="140" y="364" width="5" height="70"/>
+      <a href="#g-m-impression"><text class="t-strong" x="154" y="386">印象主義</text></a>
+      <text class="t" x="154" y="407">ドビュッシー</text>
+      <text class="t-soft" x="154" y="425">響きと音色で光や空気を描く</text>
+      <text class="t-soft" x="10" y="458">20世紀</text>
+      <rect class="box" x="10" y="466" width="120" height="70" rx="8"/>
+      <a href="#g-abstract"><text class="t-strong" x="70" y="507" text-anchor="middle">抽象絵画</text></a>
+      <line class="ln-ink" x1="130" y1="501" x2="140" y2="501"/>
+      <rect class="box" x="140" y="466" width="230" height="70" rx="8"/>
+      <rect class="art" x="140" y="466" width="5" height="70"/>
+      <a href="#g-12"><text class="t-strong" x="154" y="488">近現代</text></a>
+      <text class="t" x="154" y="509">シェーンベルク</text>
+      <text class="t-soft" x="154" y="527">調性を離れる（十二音技法）</text>
+    </svg>
+    <figcaption>図5　音楽の時代区分は美術とほぼ同じ時期に移り変わります。名前が共通するものも多くあります</figcaption>
+  </figure>
+  <div class="cards">
+    <div class="card"><span class="tag art-tag">17世紀〜18世紀前半</span><h4>バロック</h4><p>複数の旋律が絡み合う緻密な音楽です。バッハのフーガ、ヘンデルのオラトリオ、ヴィヴァルディの協奏曲が代表です。</p><p><strong>用語：</strong><a href="#g-m-baroque">バロック音楽</a>／<a href="#g-taii">対位法</a></p></div>
+    <div class="card"><span class="tag art-tag">18世紀後半〜19世紀初め</span><h4>古典派</h4><p>主旋律と伴奏がはっきりし、形式の整った音楽です。ハイドン、モーツァルト、ベートーヴェンが交響曲を完成させました。</p><p><strong>用語：</strong><a href="#g-m-classic">古典派</a>／<a href="#g-sonata">ソナタ形式</a></p></div>
+    <div class="card"><span class="tag art-tag">19世紀</span><h4>ロマン派</h4><p>感情や物語を自由に表し、編成も大きくなりました。ショパン、シューマン、ワーグナー、チャイコフスキーなどが活躍しました。</p><p><strong>用語：</strong><a href="#g-m-romantic">ロマン派</a>／<a href="#g-hyodai">標題音楽</a></p></div>
+    <div class="card"><span class="tag art-tag">19世紀末〜20世紀</span><h4>近現代</h4><p>ドビュッシーは響きそのものを、シェーンベルクは調性を離れた音の並びを、ストラヴィンスキーは強烈なリズムを追求しました。</p><p><strong>用語：</strong><a href="#g-m-impression">印象主義</a>／<a href="#g-12">十二音技法</a></p></div>
+  </div>
+
+  <!-- 7. 美術館 -->
+  <h2 id="museum">美術館での見方のコツ</h2>
+  <p>全部の作品を同じように見ると、すぐに疲れて何も残りません。気になった数点だけを、次の手順でじっくり見るほうが記憶に残ります。</p>
+  <figure class="diagram">
+    <svg viewBox="0 0 360 420" role="img" aria-labelledby="fig6-t">
+      <title id="fig6-t">美術館で1枚の絵を見る5つの手順</title>
+      <defs><marker id="a6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path class="art" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+      <rect class="box" x="10" y="10" width="340" height="64" rx="8"/>
+      <circle class="art" cx="36" cy="42" r="15"/>
+      <text class="on-color" x="36" y="47" text-anchor="middle">1</text>
+      <text class="t-strong" x="62" y="37">まず1分、解説を読まずに見る</text>
+      <text class="t-soft" x="62" y="60">第一印象と、目が止まった所を覚える</text>
+      <line class="ln s-art" x1="36" y1="74" x2="36" y2="92" marker-end="url(#a6)"/>
+      <rect class="box" x="10" y="94" width="340" height="64" rx="8"/>
+      <circle class="art" cx="36" cy="126" r="15"/>
+      <text class="on-color" x="36" y="131" text-anchor="middle">2</text>
+      <text class="t-strong" x="62" y="121">何が描かれているか</text>
+      <text class="t-soft" x="62" y="144">人物・持ち物・場所。題名で確かめる</text>
+      <line class="ln s-art" x1="36" y1="158" x2="36" y2="176" marker-end="url(#a6)"/>
+      <rect class="box" x="10" y="178" width="340" height="64" rx="8"/>
+      <circle class="art" cx="36" cy="210" r="15"/>
+      <text class="on-color" x="36" y="215" text-anchor="middle">3</text>
+      <text class="t-strong" x="62" y="205">どう描かれているか</text>
+      <text class="t-soft" x="62" y="228">構図・光・色。近づいて筆の跡も見る</text>
+      <line class="ln s-art" x1="36" y1="242" x2="36" y2="260" marker-end="url(#a6)"/>
+      <rect class="box" x="10" y="262" width="340" height="64" rx="8"/>
+      <circle class="art" cx="36" cy="294" r="15"/>
+      <text class="on-color" x="36" y="299" text-anchor="middle">4</text>
+      <text class="t-strong" x="62" y="289">なぜそう描かれたか</text>
+      <text class="t-soft" x="62" y="312">制作年と解説で時代背景を知る</text>
+      <line class="ln s-art" x1="36" y1="326" x2="36" y2="344" marker-end="url(#a6)"/>
+      <rect class="box" x="10" y="346" width="340" height="64" rx="8"/>
+      <circle class="art" cx="36" cy="378" r="15"/>
+      <text class="on-color" x="36" y="383" text-anchor="middle">5</text>
+      <text class="t-strong" x="62" y="373">自分の言葉で一言にまとめる</text>
+      <text class="t-soft" x="62" y="396">好き嫌いとその理由でかまわない</text>
+    </svg>
+    <figcaption>図6　2〜4は図1の3つの視点と同じです。先に自分の目で見てから解説を読むのがコツです</figcaption>
+  </figure>
+  <div class="point"><strong>ポイント：</strong>作品の横の小さな札（キャプション）には、作者・題名・制作年・技法が書かれています。制作年を見て図2のどこに当たるかを考えると、その作品が何に反発し、何を目指したかの見当がつきます。</div>
+
+  <!-- 8. 用語解説 -->
+  <h2 id="glossary">考え方・用語の解説</h2>
+  <p>このページの図・表・カードに出てくる様式や技法を、1〜2文でまとめます。各所の名前からここへ移動できます。</p>
+  <h3>見方と技法</h3>
+  <dl class="glossary">
+    <div id="g-zuzo"><dt>図像学（イコノグラフィー）<span class="who">美術史の方法</span></dt><dd>絵に描かれた人物や物が何を意味するかを、当時の約束事から読み解く方法です。宗教画や神話画は、誰が見ても分かるように決まった描き方で描かれています。</dd></div>
+    <div id="g-attr"><dt>アトリビュート（持物）<span class="who">図像学</span></dt><dd>人物が誰かを示すために一緒に描かれる持ち物や動物です。聖ペテロなら天国の鍵、ヘラクレスなら棍棒と獅子の毛皮、というように決まっています。</dd></div>
+    <div id="g-genre"><dt>ジャンル（主題の種類）<span class="who">西洋のアカデミー</span></dt><dd>歴史画（神話・聖書・歴史の場面）、肖像画、風俗画（日常の暮らし）、風景画、静物画などの区分です。17〜19世紀の美術アカデミーでは歴史画が最も格が高いとされました。</dd></div>
+    <div id="g-enkin"><dt>遠近法（線遠近法）<span class="who">15世紀・フィレンツェ</span></dt><dd>奥へ向かう平行な線が画面の1点（消失点）に集まるように描き、平らな画面に奥行きのある空間をつくる技法です。ルネサンス期に理論としてまとめられました。</dd></div>
+    <div id="g-meian"><dt>明暗法（キアロスクーロ）<span class="who">ルネサンス〜バロック</span></dt><dd>光の当たる部分と影の対比で、立体感や劇的な雰囲気を出す技法です。バロックのカラヴァッジョは、暗闇から人物が浮かび上がる強い明暗で知られます。</dd></div>
+    <div id="g-hissyoku"><dt>筆触分割<span class="who">印象派</span></dt><dd>絵の具をパレットで混ぜずに純粋な色を小さな筆の跡として並べ、見る人の目の中で混ざって見えるようにする描き方です。混ぜると暗くなる色を、明るいまま光として表せます。</dd></div>
+  </dl>
+  <h3>西洋美術の様式と背景</h3>
+  <dl class="glossary">
+    <div id="g-classic"><dt>古代ギリシャ・ローマ美術<span class="who">前5世紀ごろ〜</span></dt><dd>ギリシャでは人体の理想的な比例と調和を追求した彫刻や神殿が作られ、ローマがそれを受け継ぎました。後の時代が何度も立ち返る「古典」の基準になりました。</dd></div>
+    <div id="g-romanesque"><dt>ロマネスク<span class="who">11〜12世紀</span></dt><dd>西ヨーロッパに広がった教会建築を中心とする様式です。厚い石の壁と半円アーチが特徴で、壁画や柱の彫刻は文字の読めない人々に聖書の教えを伝えました。</dd></div>
+    <div id="g-gothic"><dt>ゴシック<span class="who">12世紀フランス北部〜</span></dt><dd>尖ったアーチと、外側から壁を支える構造によって教会を高くし、壁に開けた大きなステンドグラスから光を取り込んだ様式です。光を神の存在の表れとして重んじました。</dd></div>
+    <div id="g-renaissance"><dt>ルネサンス<span class="who">14〜16世紀・イタリア中心</span></dt><dd>「再生」の意味で、古代ギリシャ・ローマの文化を手本に学問や芸術を復興した動きです。美術では遠近法や解剖学に基づく人体表現で、現実らしい空間と人間を描きました。</dd></div>
+    <div id="g-baroque"><dt>バロック<span class="who">17世紀中心</span></dt><dd>強い明暗、斜めの構図、ねじれるような動きで見る人の感情を揺さぶる様式です。カトリック教会や王の権威を示すために、絵画・彫刻・建築が一体で使われました。</dd></div>
+    <div id="g-counter"><dt>対抗宗教改革<span class="who">16世紀〜</span></dt><dd>宗教改革でプロテスタントが広がったのに対し、カトリック教会が内部を改めて勢力を立て直した動きです。信者の心に直接訴える劇的な宗教美術を重んじ、バロックを後押ししました。</dd></div>
+    <div id="g-rococo"><dt>ロココ<span class="who">18世紀フランス</span></dt><dd>宮廷や貴族のサロン（社交の場）で好まれた様式です。淡い色、曲線の装飾、恋愛や野外の遊びといった軽やかな題材が特徴です。</dd></div>
+    <div id="g-neoclassic"><dt>新古典主義<span class="who">18世紀後半〜19世紀初め</span></dt><dd>ロココの甘さへの反発と、ポンペイなど古代遺跡の発掘による関心から、古代の端正さに立ち返ろうとした様式です。明確な輪郭線と安定した構図で、英雄的・道徳的な場面を描きました。</dd></div>
+    <div id="g-romantic"><dt>ロマン主義<span class="who">18世紀末〜19世紀前半</span></dt><dd>理性と規則を重んじる新古典主義に対し、個人の感情や想像力、自然の脅威、異国や過去への憧れを重視した動きです。激しい色彩と動きのある筆づかいが特徴です。</dd></div>
+    <div id="g-realism"><dt>写実主義（リアリズム）<span class="who">19世紀半ば・フランス</span></dt><dd>神話や英雄ではなく、同時代の農民や労働者の暮らしを美化せずに描こうとした動きです。クールベは、目の前にある現実だけを描くべきだと主張しました。</dd></div>
+    <div id="g-photo"><dt>写真技術（ダゲレオタイプ）<span class="who">1839年発表・フランス</span></dt><dd>初期の実用的な写真技術です。人の手を介さずに正確な像を残せるようになり、肖像や記録という絵画の仕事の一部を担うようになりました。</dd></div>
+    <div id="g-salon"><dt>サロン（官展）<span class="who">フランスの公式展覧会</span></dt><dd>美術アカデミーの流れをくむ公式の展覧会で、入選が画家の評価を左右しました。歴史画や、筆の跡を残さない滑らかな仕上げが好まれました。</dd></div>
+    <div id="g-impression"><dt>印象派<span class="who">19世紀後半・フランス</span></dt><dd>戸外で移ろう光や空気の一瞬の印象を、明るい色と素早い筆の跡で描いた画家たちです。サロンとは別に、1874年に自分たちの展覧会を開きました。名前はモネの『印象・日の出』に由来します。</dd></div>
+    <div id="g-postimp"><dt>ポスト印象派（後期印象派）<span class="who">19世紀末</span></dt><dd>印象派を経たうえで、それぞれ別の方向へ進んだ画家たちをまとめた呼び名です。セザンヌは形の構造、ゴッホは感情、ゴーガンは象徴的な色面を追い求め、20世紀美術の出発点になりました。</dd></div>
+    <div id="g-expression"><dt>表現主義<span class="who">20世紀初め・ドイツなど</span></dt><dd>目に見える姿より画家の内面の感情を、ゆがめた形や強烈な色で表そうとした動きです。ゴッホやムンクが先駆けとされます。</dd></div>
+    <div id="g-cubism"><dt>キュビスム<span class="who">20世紀初め・ピカソとブラック</span></dt><dd>対象を幾何学的な形に分解し、複数の視点から見た姿を1つの画面に組み合わせた様式です。ルネサンス以来の「1つの視点から見た空間」という前提を崩しました。</dd></div>
+    <div id="g-abstract"><dt>抽象絵画<span class="who">20世紀初め〜</span></dt><dd>人や物など具体的な対象を描かず、色・線・形の組み合わせそのもので成り立つ絵画です。カンディンスキーは色と形で音楽のように感情を表そうとし、モンドリアンは垂直・水平の線と三原色に絞りました。</dd></div>
+    <div id="g-surreal"><dt>シュルレアリスム（超現実主義）<span class="who">1924年の宣言〜・ブルトンら</span></dt><dd>精神分析の影響を受け、夢や無意識の世界を表そうとした運動です。ありえない組み合わせを、かえって写実的に細かく描くことで、現実を超えた不思議さを生みました。</dd></div>
+    <div id="g-psycho"><dt>精神分析<span class="who">フロイト・19世紀末〜</span></dt><dd>人の行動や夢の背後に、本人が自覚していない無意識の働きがあるとする理論と治療法です。20世紀の芸術や文学に広く影響しました。</dd></div>
+    <div id="g-pop"><dt>ポップアート<span class="who">1950〜60年代・英米</span></dt><dd>広告、漫画、大量生産の商品など、大衆文化のイメージを題材にした美術です。ウォーホルは同じ図柄を版画（シルクスクリーン）で繰り返し刷り、芸術と量産品の境目を問いました。</dd></div>
+  </dl>
+  <h3>日本美術</h3>
+  <dl class="glossary">
+    <div id="g-butsu"><dt>仏教美術<span class="who">6世紀〜</span></dt><dd>仏教とともに大陸から伝わった仏像・仏画・寺院建築などの美術です。飛鳥・奈良時代は大陸の様式に学び、鎌倉時代には運慶らが写実的で力強い彫刻を生みました。</dd></div>
+    <div id="g-yamato"><dt>やまと絵<span class="who">平安時代〜</span></dt><dd>中国風の絵（唐絵）に対して、日本の風景・四季・暮らしを描いた絵です。柔らかな線と鮮やかな色が特徴です。</dd></div>
+    <div id="g-emaki"><dt>絵巻物<span class="who">平安〜鎌倉時代</span></dt><dd>横に長い紙に、物語を絵と文で右から左へ順に展開する形式です。『源氏物語絵巻』では、屋根を取り去って室内を斜め上から見下ろす描き方（吹抜屋台）が使われました。</dd></div>
+    <div id="g-suiboku"><dt>水墨画<span class="who">鎌倉〜室町時代</span></dt><dd>墨の濃淡やにじみだけで描く絵で、中国から伝わりました。室町時代の雪舟が、中国で学んだうえで日本独自の画風を確立しました。</dd></div>
+    <div id="g-rinpa"><dt>琳派<span class="who">江戸時代・宗達、光琳</span></dt><dd>俵屋宗達に始まり、尾形光琳が受け継いだ装飾的な画風です。金銀の地に草花や波を大胆に単純化した形で描きました。直接の師弟ではなく、作品を通じて慕われ受け継がれたのが特徴です。</dd></div>
+    <div id="g-ukiyoe"><dt>浮世絵<span class="who">江戸時代</span></dt><dd>役者、美人、名所の風景など、庶民に人気の題材を描いた絵です。多くは木版画で、安く大量に刷られて広く出回りました。</dd></div>
+    <div id="g-nishiki"><dt>錦絵（多色刷り木版画）<span class="who">18世紀半ば〜</span></dt><dd>多数の版木で色を重ねて刷るカラーの浮世絵です。絵師・彫師・摺師の分業で作られ、北斎や広重の風景画もこの形で広まりました。</dd></div>
+    <div id="g-japonisme"><dt>ジャポニスム<span class="who">19世紀後半・ヨーロッパ</span></dt><dd>浮世絵や工芸品など日本の美術がヨーロッパで流行し、画家たちに影響を与えた現象です。平らな色面、画面の大胆な切り取り、日常的な題材などが取り入れられました。</dd></div>
+  </dl>
+  <h3>音楽</h3>
+  <dl class="glossary">
+    <div id="g-m-baroque"><dt>バロック音楽<span class="who">17世紀〜18世紀前半</span></dt><dd>複数の旋律を重ねる対位法と、低音の伴奏を絶えず鳴らし続ける通奏低音が特徴の音楽です。バッハ、ヘンデル、ヴィヴァルディが代表です。</dd></div>
+    <div id="g-taii"><dt>対位法<span class="who">バロック音楽で発達</span></dt><dd>独立した複数の旋律を同時に重ね、調和させる作曲技法です。同じ旋律を次々に追いかけるように重ねるフーガは、その代表的な形式です。</dd></div>
+    <div id="g-m-classic"><dt>古典派<span class="who">18世紀後半〜19世紀初め・ウィーン</span></dt><dd>ソナタ形式などの整った構成と、明快な旋律が特徴の音楽です。ハイドン、モーツァルト、ベートーヴェンの時代で、交響曲や弦楽四重奏が発達しました。</dd></div>
+    <div id="g-sonata"><dt>ソナタ形式<span class="who">古典派</span></dt><dd>2つの主題を示す提示部、それを変形させる展開部、もう一度示す再現部から成る構成です。交響曲などの第1楽章の多くで使われました。</dd></div>
+    <div id="g-m-romantic"><dt>ロマン派<span class="who">19世紀</span></dt><dd>整った形式より、個人の感情や物語、民族の伝統を重んじた音楽です。ショパンのピアノ曲やワーグナーの楽劇が代表で、オーケストラの規模も大きくなりました。</dd></div>
+    <div id="g-hyodai"><dt>標題音楽<span class="who">ロマン派で発達</span></dt><dd>物語や情景、詩などの内容を音で表そうとする作品です。ベルリオーズの『幻想交響曲』が代表例です。</dd></div>
+    <div id="g-m-impression"><dt>印象主義（音楽）<span class="who">19世紀末〜20世紀初め</span></dt><dd>ドビュッシーらの音楽で、はっきりした旋律の展開より、和音の響きや音色で光や水、空気の感じを表しました。名前は美術の印象派から取られています。</dd></div>
+    <div id="g-12"><dt>十二音技法<span class="who">20世紀・シェーンベルク</span></dt><dd>1オクターブ内の12の音を1回ずつ使う並び（音列）を基に作曲する方法です。ドやラなど特定の音を中心にする調性から離れるために考え出されました。</dd></div>
+  </dl>
+
+  <div class="next">
+    <a href="index.html"><span>全体地図へ</span>教養の全体像を見る</a>
+    <a href="world-history.html"><span>関連：世界史</span>各様式が生まれた時代背景を知る</a>
+    <a href="religion.html"><span>関連：宗教</span>宗教画の物語と対抗宗教改革を知る</a>
+    <a href="japan.html"><span>関連：日本史・日本文化</span>日本美術が生まれた時代を知る</a>
+    <a href="psychology.html"><span>関連：心理学・脳</span>シュルレアリスムに影響した精神分析を知る</a>
+  </div>
+
+  <footer>作成: 2026-10-19 ／ 教養の図解シリーズ</footer>
+</main>
+</body>
+</html>

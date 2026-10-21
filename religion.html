@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="favicon.svg">
+<title>宗教｜教養の図解</title>
+<style>
+/* ===== 教養の図解 共通スタイル（全ページで同一のものを使う） ===== */
+:root {
+  --bg: #f7f5f0;
+  --surface: #ffffff;
+  --ink: #1f2328;
+  --ink-soft: #57606a;
+  --line: #d8d4ca;
+  --accent: #b5532a;        /* 見出し・強調 */
+  --c-phil: #6a4fb3;        /* 哲学 */
+  --c-hist: #b5532a;        /* 歴史 */
+  --c-econ: #1f7a5c;        /* 経済 */
+  --c-reli: #a07a12;        /* 宗教 */
+  --c-sci:  #2a63b5;        /* 科学 */
+  --c-art:  #b53a6b;        /* 芸術 */
+  --c-poli: #3d5a80;        /* 政治・法 */
+  --c-psy:  #0f7c86;        /* 心理学 */
+  --c-jp:   #a8323a;        /* 日本史 */
+  --tint: rgba(181, 83, 42, 0.08);
+  --radius: 12px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15171a; --surface: #1e2125; --ink: #e8e6e1; --ink-soft: #a3a8ae; --line: #3a3f45;
+    --accent: #e08a5f; --c-phil: #a58ee8; --c-hist: #e08a5f; --c-econ: #5cc39d;
+    --c-reli: #d9b24a; --c-sci: #6f9ee8; --c-art: #e57ba3; --c-poli: #8fa9d1; --c-psy: #4fc1c9; --c-jp: #e2767d; --tint: rgba(224, 138, 95, 0.12); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15171a; --surface: #1e2125; --ink: #e8e6e1; --ink-soft: #a3a8ae; --line: #3a3f45;
+  --accent: #e08a5f; --c-phil: #a58ee8; --c-hist: #e08a5f; --c-econ: #5cc39d;
+  --c-reli: #d9b24a; --c-sci: #6f9ee8; --c-art: #e57ba3; --c-poli: #8fa9d1; --c-psy: #4fc1c9; --c-jp: #e2767d; --tint: rgba(224, 138, 95, 0.12); color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  font-size: 16px; line-height: 1.8;
+}
+main { max-width: 860px; margin: 0 auto; padding-block: 0 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+nav.top {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg);
+  border-bottom: 1px solid var(--line); overflow-x: auto; white-space: nowrap;
+}
+nav.top ul { display: flex; gap: 4px; list-style: none; margin: 0 auto; padding-block: 8px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); max-width: 860px; }
+nav.top a {
+  display: inline-block; padding: 4px 12px; border-radius: 999px; color: var(--ink-soft);
+  text-decoration: none; font-size: 14px;
+}
+nav.top a[aria-current="page"] { background: var(--accent); color: #fff; }
+header.hero { padding: 32px 0 8px; }
+header.hero .kicker { color: var(--accent); font-weight: 700; font-size: 13px; letter-spacing: .08em; }
+h1 { font-size: 28px; line-height: 1.35; margin: 4px 0 12px; }
+h2 { font-size: 22px; line-height: 1.4; margin: 48px 0 12px; padding-left: 12px; border-left: 5px solid var(--accent); }
+h3 { font-size: 18px; margin: 28px 0 8px; }
+p { margin: 0 0 14px; }
+.lead { color: var(--ink-soft); }
+.toc { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 20px; }
+.toc ol { margin: 0; padding-left: 1.2em; }
+.toc a { color: var(--ink); }
+figure.diagram {
+  margin: 20px 0; background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 12px;
+}
+figure.diagram svg { display: block; width: 100%; height: auto; }
+figure.diagram figcaption { font-size: 13px; color: var(--ink-soft); margin-top: 8px; text-align: center; }
+/* SVG内の文字・線は必ずこのクラスで色を付ける（ダークモード対応のため直接の色指定はしない） */
+svg .t { fill: var(--ink); font-size: 14px; }
+svg .t-soft { fill: var(--ink-soft); font-size: 12px; }
+svg .t-strong { fill: var(--ink); font-size: 15px; font-weight: 700; }
+svg .ln { stroke: var(--line); stroke-width: 2; fill: none; }
+svg .ln-ink { stroke: var(--ink-soft); stroke-width: 1.5; fill: none; }
+svg .box { fill: var(--surface); stroke: var(--line); stroke-width: 1.5; }
+svg .phil { fill: var(--c-phil); } svg .hist { fill: var(--c-hist); } svg .econ { fill: var(--c-econ); }
+svg .reli { fill: var(--c-reli); } svg .sci { fill: var(--c-sci); } svg .art { fill: var(--c-art); }
+svg .poli { fill: var(--c-poli); } svg .psy { fill: var(--c-psy); } svg .jp { fill: var(--c-jp); }
+svg .s-phil { stroke: var(--c-phil); } svg .s-hist { stroke: var(--c-hist); } svg .s-econ { stroke: var(--c-econ); }
+svg .s-reli { stroke: var(--c-reli); } svg .s-sci { stroke: var(--c-sci); } svg .s-art { stroke: var(--c-art); }
+svg .s-poli { stroke: var(--c-poli); } svg .s-psy { stroke: var(--c-psy); } svg .s-jp { stroke: var(--c-jp); }
+svg .on-color { fill: #fff; font-size: 13px; font-weight: 700; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 16px 0; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; }
+.card h4 { margin: 0 0 6px; font-size: 16px; }
+.card p { margin: 0; font-size: 15px; }
+.card .tag { display: inline-block; font-size: 12px; padding: 0 8px; border-radius: 999px; background: var(--tint); color: var(--accent); margin-bottom: 6px; }
+.point { background: var(--tint); border-radius: var(--radius); padding: 12px 16px; margin: 16px 0; }
+.point strong { color: var(--accent); }
+.table-wrap { overflow-x: auto; margin: 16px 0; }
+table { border-collapse: collapse; width: 100%; min-width: 520px; background: var(--surface); font-size: 15px; }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: var(--tint); white-space: nowrap; }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 16px; margin: 10px 0; }
+details summary { cursor: pointer; font-weight: 700; }
+.next { margin-top: 48px; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.next a { display: block; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; color: var(--ink); text-decoration: none; }
+.next a span { display: block; font-size: 12px; color: var(--ink-soft); }
+footer { margin-top: 48px; font-size: 13px; color: var(--ink-soft); }
+@media (max-width: 480px) { h1 { font-size: 24px; } h2 { font-size: 20px; } }
+/* 図はスマホ幅で組んでいるので、PCで拡大しすぎないよう最大幅を抑える */
+figure.diagram svg { max-width: 520px; margin: 0 auto; }
+/* ダークでは分野色が明るくなるため、色の上の文字は暗くする */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) svg .on-color { fill: var(--bg); }
+  :root:not([data-theme="light"]) nav.top a[aria-current="page"] { color: var(--bg); }
+}
+:root[data-theme="dark"] svg .on-color { fill: var(--bg); }
+:root[data-theme="dark"] nav.top a[aria-current="page"] { color: var(--bg); }
+/* 考え方・用語の解説（dl.glossary） */
+main a { color: var(--accent); }
+.glossary { display: grid; gap: 10px; margin: 16px 0; }
+.glossary > div { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 16px; scroll-margin-top: 64px; }
+.glossary dt { font-weight: 700; }
+.glossary dt .who { font-weight: 400; font-size: 13px; color: var(--ink-soft); margin-left: 0.5em; }
+.glossary dd { margin: 4px 0 0; font-size: 15px; }
+/* religion固有 */
+.card .tag.reli-tag { background: rgba(160, 122, 18, 0.12); color: var(--c-reli); }
+</style>
+</head>
+<body>
+<nav class="top" aria-label="教養の図解">
+  <ul>
+    <li><a href="index.html">全体地図</a></li>
+    <li><a href="philosophy.html">哲学・思想史</a></li>
+    <li><a href="religion.html" aria-current="page">宗教</a></li>
+    <li><a href="world-history.html">世界史</a></li>
+    <li><a href="japan.html">日本史・日本文化</a></li>
+    <li><a href="politics.html">政治・法</a></li>
+    <li><a href="economics.html">経済・お金</a></li>
+    <li><a href="science.html">科学史</a></li>
+    <li><a href="psychology.html">心理学・脳</a></li>
+    <li><a href="art.html">芸術</a></li>
+  </ul>
+</nav>
+<main>
+  <header class="hero">
+    <div class="kicker">教養の図解</div>
+    <h1>宗教</h1>
+    <p class="lead">宗教を形づくる要素と神の立て方の違いを押さえたうえで、世界の主要宗教の系統、三大宗教の比較、キリスト教とイスラム教の分派、日本人と宗教の関わり、国際ニュースに出てくる宗教の背景を図で整理します。</p>
+  </header>
+
+  <nav class="toc" aria-label="目次">
+    <ol>
+      <li><a href="#what">宗教とは何か</a></li>
+      <li><a href="#tree">世界の主要宗教の系統図</a></li>
+      <li><a href="#big3">三大宗教の比較</a></li>
+      <li><a href="#split">キリスト教とイスラム教の分かれ方</a></li>
+      <li><a href="#japan">日本人と宗教</a></li>
+      <li><a href="#news">ニュースの背景にある宗教</a></li>
+      <li><a href="#glossary">考え方・用語の解説</a></li>
+      <li><a href="#nextstep">次の一歩</a></li>
+    </ol>
+  </nav>
+
+  <!-- 1. 宗教とは何か -->
+  <h2 id="what">宗教とは何か</h2>
+  <p>宗教の定義は研究者の間でも一つに定まっていませんが、多くの宗教に共通する要素として、何を信じどう生きるかを示す「教え」、祈りや祭りなど繰り返し行う「儀礼」、信者が集まる「共同体」の3つが挙げられます。教えだけでなく、行いと人の集まりがそろって一つの宗教になる、と捉えると全体像がつかみやすくなります。</p>
+  <p>もう一つの見方は、神をどう立てるかです。唯一の神だけを信じる<a href="#g-ichishin">一神教</a>、多くの神々を認める<a href="#g-tashin">多神教</a>、そして人格をもつ神ではなく宇宙の法則や生き方の道を中心に置く宗教に分けられます。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 462" role="img" aria-labelledby="fig1-t">
+      <title id="fig1-t">宗教の3要素と、神の立て方による3つの区別</title>
+      <rect class="reli" x="120" y="10" width="120" height="40" rx="20"/>
+      <text class="on-color" x="180" y="35" text-anchor="middle">宗教</text>
+      <line class="ln" x1="180" y1="50" x2="180" y2="64"/>
+      <line class="ln" x1="63" y1="64" x2="297" y2="64"/>
+      <line class="ln" x1="63" y1="64" x2="63" y2="80"/>
+      <line class="ln" x1="180" y1="64" x2="180" y2="80"/>
+      <line class="ln" x1="297" y1="64" x2="297" y2="80"/>
+
+      <rect class="box" x="10" y="80" width="106" height="96" rx="8"/>
+      <text class="t-strong" x="63" y="104" text-anchor="middle">教え</text>
+      <text class="t" x="63" y="128" text-anchor="middle">何を信じ</text>
+      <text class="t" x="63" y="146" text-anchor="middle">どう生きるか</text>
+      <text class="t-soft" x="63" y="166" text-anchor="middle">聖典・教義</text>
+
+      <rect class="box" x="127" y="80" width="106" height="96" rx="8"/>
+      <text class="t-strong" x="180" y="104" text-anchor="middle">儀礼</text>
+      <text class="t" x="180" y="128" text-anchor="middle">祈り・祭り</text>
+      <text class="t" x="180" y="146" text-anchor="middle">巡礼・葬儀</text>
+      <text class="t-soft" x="180" y="166" text-anchor="middle">繰り返す行い</text>
+
+      <rect class="box" x="244" y="80" width="106" height="96" rx="8"/>
+      <text class="t-strong" x="297" y="104" text-anchor="middle">共同体</text>
+      <text class="t" x="297" y="128" text-anchor="middle">信者の集まり</text>
+      <text class="t" x="297" y="146" text-anchor="middle">と組織</text>
+      <text class="t-soft" x="297" y="166" text-anchor="middle">教会・寺院・教団</text>
+
+      <text class="t-strong" x="10" y="212">神をどう立てるか</text>
+      <line class="ln" x1="10" y1="222" x2="350" y2="222" stroke-dasharray="4 4"/>
+
+      <rect class="box" x="10" y="236" width="340" height="64" rx="8"/>
+      <rect class="reli" x="10" y="236" width="96" height="64" rx="8"/>
+      <text class="on-color" x="58" y="273" text-anchor="middle">一神教</text>
+      <text class="t" x="118" y="262">唯一の神だけを信じる</text>
+      <text class="t-soft" x="118" y="284">ユダヤ教・キリスト教・イスラム教</text>
+
+      <rect class="box" x="10" y="312" width="340" height="64" rx="8"/>
+      <rect class="reli" x="10" y="312" width="96" height="64" rx="8"/>
+      <text class="on-color" x="58" y="349" text-anchor="middle">多神教</text>
+      <text class="t" x="118" y="338">多くの神々を認める</text>
+      <text class="t-soft" x="118" y="360">ヒンドゥー教・神道・古代ギリシャ</text>
+
+      <rect class="box" x="10" y="388" width="340" height="64" rx="8"/>
+      <rect class="reli" x="10" y="388" width="96" height="64" rx="8"/>
+      <text class="on-color" x="58" y="425" text-anchor="middle">神を立てない</text>
+      <text class="t" x="118" y="414">法則や生き方の道を重んじる</text>
+      <text class="t-soft" x="118" y="436">初期の仏教・儒教（宗教かは議論あり）</text>
+    </svg>
+    <figcaption>図1　宗教の3要素（上）と、神の立て方による区別（下）。境界ははっきりしたものではなく、大まかな分け方です</figcaption>
+  </figure>
+
+  <div class="point"><strong>見分けのコツ：</strong>一神教どうし（ユダヤ教・キリスト教・イスラム教）は同じ神を信じる兄弟のような関係にあり、仏教とヒンドゥー教はインドの同じ土壌から生まれました。系統で押さえると、個々の宗教の違いが整理しやすくなります。</div>
+
+  <!-- 2. 系統図 -->
+  <h2 id="tree">世界の主要宗教の系統図</h2>
+  <p>世界の主要宗教は、大きく3つの流れにまとめられます。中東で生まれた<a href="#g-abraham">アブラハムの宗教</a>、インドで生まれた宗教、そして中国と日本の宗教です。年代は成立のおおよその目安です。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 930" role="img" aria-labelledby="fig2-t">
+      <title id="fig2-t">世界の主要宗教の系統図（アブラハムの宗教、インドの宗教、中国と日本の宗教）</title>
+      <defs>
+        <marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+          <path class="reli" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+
+      <!-- ===== アブラハムの宗教 ===== -->
+      <text x="10" y="22"><tspan class="t-strong">アブラハムの宗教</tspan><tspan class="t-soft" dx="8">中東・一神教</tspan></text>
+      <line class="ln" x1="10" y1="32" x2="350" y2="32" stroke-dasharray="4 4"/>
+
+      <rect class="reli" x="100" y="44" width="160" height="52" rx="8"/>
+      <text class="on-color" x="180" y="66" text-anchor="middle">ユダヤ教</text>
+      <text class="on-color" x="180" y="86" text-anchor="middle">前6世紀頃に教えが確立</text>
+
+      <line class="ln s-reli" x1="150" y1="96" x2="95" y2="122" marker-end="url(#ah2)"/>
+      <line class="ln s-reli" x1="210" y1="96" x2="265" y2="122" marker-end="url(#ah2)"/>
+
+      <rect class="box" x="10" y="124" width="170" height="52" rx="8"/>
+      <text class="t-strong" x="95" y="146" text-anchor="middle">キリスト教</text>
+      <text class="t-soft" x="95" y="166" text-anchor="middle">1世紀　イエス</text>
+
+      <rect class="box" x="190" y="124" width="160" height="52" rx="8"/>
+      <text class="t-strong" x="270" y="146" text-anchor="middle">イスラム教</text>
+      <text class="t-soft" x="270" y="166" text-anchor="middle">7世紀　ムハンマド</text>
+
+      <!-- キリスト教の枝 -->
+      <line class="ln" x1="26" y1="176" x2="26" y2="332"/>
+      <line class="ln s-reli" x1="26" y1="220" x2="38" y2="220" marker-end="url(#ah2)"/>
+      <line class="ln s-reli" x1="26" y1="276" x2="38" y2="276" marker-end="url(#ah2)"/>
+      <line class="ln s-reli" x1="26" y1="332" x2="38" y2="332" marker-end="url(#ah2)"/>
+
+      <rect class="box" x="40" y="196" width="140" height="48" rx="8"/>
+      <text class="t-strong" x="52" y="216">カトリック</text>
+      <text class="t-soft" x="52" y="236">ローマ教皇が首位</text>
+      <rect class="box" x="40" y="252" width="140" height="48" rx="8"/>
+      <text class="t-strong" x="52" y="272">正教会</text>
+      <text class="t-soft" x="52" y="292">1054年に東西分裂</text>
+      <rect class="box" x="40" y="308" width="140" height="48" rx="8"/>
+      <text class="t-strong" x="52" y="328">プロテスタント</text>
+      <text class="t-soft" x="52" y="348">16世紀の宗教改革</text>
+
+      <!-- イスラム教の枝 -->
+      <line class="ln" x1="206" y1="176" x2="206" y2="276"/>
+      <line class="ln s-reli" x1="206" y1="220" x2="218" y2="220" marker-end="url(#ah2)"/>
+      <line class="ln s-reli" x1="206" y1="276" x2="218" y2="276" marker-end="url(#ah2)"/>
+
+      <rect class="box" x="220" y="196" width="130" height="48" rx="8"/>
+      <text class="t-strong" x="232" y="216">スンナ派</text>
+      <text class="t-soft" x="232" y="236">慣行と共同体を重視</text>
+      <rect class="box" x="220" y="252" width="130" height="48" rx="8"/>
+      <text class="t-strong" x="232" y="272">シーア派</text>
+      <text class="t-soft" x="232" y="292">アリーの子孫を重視</text>
+      <text class="t-soft" x="220" y="326">どちらも7世紀の</text>
+      <text class="t-soft" x="220" y="344">後継者問題から分岐</text>
+
+      <!-- ===== インドの宗教 ===== -->
+      <text x="10" y="390"><tspan class="t-strong">インドで生まれた宗教</tspan><tspan class="t-soft" dx="8">輪廻と解脱</tspan></text>
+      <line class="ln" x1="10" y1="400" x2="350" y2="400" stroke-dasharray="4 4"/>
+
+      <rect class="reli" x="100" y="412" width="160" height="52" rx="8"/>
+      <text class="on-color" x="180" y="434" text-anchor="middle">バラモン教</text>
+      <text class="on-color" x="180" y="454" text-anchor="middle">前2千年紀後半〜</text>
+
+      <line class="ln s-reli" x1="150" y1="464" x2="95" y2="490" marker-end="url(#ah2)"/>
+      <line class="ln s-reli" x1="210" y1="464" x2="265" y2="490" marker-end="url(#ah2)"/>
+
+      <rect class="box" x="10" y="492" width="170" height="52" rx="8"/>
+      <text class="t-strong" x="95" y="514" text-anchor="middle">仏教</text>
+      <text class="t-soft" x="95" y="534" text-anchor="middle">前5世紀頃　釈迦</text>
+
+      <rect class="box" x="190" y="492" width="160" height="52" rx="8"/>
+      <text class="t-strong" x="270" y="514" text-anchor="middle">ヒンドゥー教</text>
+      <text class="t-soft" x="270" y="534" text-anchor="middle">4世紀頃までに形成</text>
+
+      <line class="ln" x1="26" y1="544" x2="26" y2="652"/>
+      <line class="ln s-reli" x1="26" y1="596" x2="38" y2="596" marker-end="url(#ah2)"/>
+      <line class="ln s-reli" x1="26" y1="652" x2="38" y2="652" marker-end="url(#ah2)"/>
+
+      <rect class="box" x="40" y="572" width="140" height="48" rx="8"/>
+      <text class="t-strong" x="52" y="592">上座部仏教</text>
+      <text class="t-soft" x="52" y="612">東南アジアへ</text>
+      <rect class="box" x="40" y="628" width="140" height="48" rx="8"/>
+      <text class="t-strong" x="52" y="648">大乗仏教</text>
+      <text class="t-soft" x="52" y="668">中国・朝鮮・日本へ</text>
+
+      <text class="t-soft" x="200" y="580">バラモン教に</text>
+      <text class="t-soft" x="200" y="598">民間の神々への信仰が</text>
+      <text class="t-soft" x="200" y="616">融け合って成立</text>
+      <text class="t-soft" x="200" y="642">インドで最も</text>
+      <text class="t-soft" x="200" y="660">信者が多い宗教</text>
+
+      <!-- ===== 中国と日本 ===== -->
+      <text x="10" y="716"><tspan class="t-strong">中国と日本の宗教</tspan><tspan class="t-soft" dx="8">土地に根ざす</tspan></text>
+      <line class="ln" x1="10" y1="726" x2="350" y2="726" stroke-dasharray="4 4"/>
+
+      <rect class="box" x="10" y="740" width="160" height="60" rx="8"/>
+      <text class="t-strong" x="90" y="764" text-anchor="middle">儒教</text>
+      <text class="t-soft" x="90" y="786" text-anchor="middle">前6〜前5世紀　孔子</text>
+
+      <rect class="box" x="190" y="740" width="160" height="60" rx="8"/>
+      <text class="t-strong" x="270" y="764" text-anchor="middle">道教</text>
+      <text class="t-soft" x="270" y="786" text-anchor="middle">2世紀頃に教団化</text>
+
+      <rect class="box" x="10" y="830" width="150" height="60" rx="8"/>
+      <text class="t-strong" x="85" y="854" text-anchor="middle">大乗仏教</text>
+      <text class="t-soft" x="85" y="876" text-anchor="middle">6世紀に日本へ伝来</text>
+
+      <rect class="reli" x="200" y="830" width="150" height="60" rx="8"/>
+      <text class="on-color" x="275" y="854" text-anchor="middle">神道</text>
+      <text class="on-color" x="275" y="876" text-anchor="middle">古来の神々への信仰</text>
+
+      <line class="ln s-reli" x1="162" y1="860" x2="196" y2="860" marker-end="url(#ah2)"/>
+      <text class="t-soft" x="180" y="914" text-anchor="middle">日本では仏教と神道が混ざり合った（神仏習合）</text>
+    </svg>
+    <figcaption>図2　世界の主要宗教の系統図。色付きの箱は各流れの源流（日本では神道）です。年代は成立のおおよその目安</figcaption>
+  </figure>
+
+  <div class="cards">
+    <div class="card"><span class="tag reli-tag">中東・前6世紀頃</span><h4>ユダヤ教</h4><p>唯一神ヤハウェとイスラエルの民との契約を中心に置く宗教です。<a href="#g-messiah">救世主（メシア）</a>の到来を待ち、律法を守って生きることを重んじます。</p><p><strong>聖典：</strong>ヘブライ語聖書（キリスト教でいう旧約聖書）　<strong>用語：</strong><a href="#g-ichishin">一神教</a>、<a href="#g-ritsuho">律法</a></p></div>
+    <div class="card"><span class="tag reli-tag">中東・1世紀</span><h4>キリスト教</h4><p>ユダヤ教を母体に、イエスを救世主（キリスト）と信じる人々から生まれました。ローマ帝国の国教となり、ヨーロッパを経て世界に広がりました。</p><p><strong>用語：</strong><a href="#g-sanmi">三位一体</a>、<a href="#g-genzai">原罪</a>、<a href="#g-fukuin">福音</a></p></div>
+    <div class="card"><span class="tag reli-tag">アラビア半島・7世紀</span><h4>イスラム教</h4><p>ムハンマドが唯一神アッラーの啓示を受けたとして広めた宗教です。ユダヤ教・キリスト教と同じ神を信じ、ムハンマドを最後の<a href="#g-yogen">預言者</a>とします。</p><p><strong>用語：</strong><a href="#g-keiten">啓典</a>、<a href="#g-rokushin">六信五行</a>、<a href="#g-sharia">イスラム法</a></p></div>
+    <div class="card"><span class="tag reli-tag">インド・前2千年紀後半〜</span><h4>バラモン教</h4><p>聖典ヴェーダにもとづき、祭官（バラモン）が行う祭祀を中心とした宗教です。身分の区別と結びつき、後に<a href="#g-bonga">梵我一如</a>を説く哲学も生みました。</p><p><strong>用語：</strong><a href="#g-veda">ヴェーダ</a>、<a href="#g-varna">ヴァルナ（カースト）</a>、<a href="#g-rinne">輪廻</a></p></div>
+    <div class="card"><span class="tag reli-tag">インド・4世紀頃までに形成</span><h4>ヒンドゥー教</h4><p>バラモン教に各地の民間信仰が融け合ってできた宗教です。特定の開祖はなく、ヴィシュヌやシヴァなど多くの神を信仰します。</p><p><strong>用語：</strong><a href="#g-tashin">多神教</a>、<a href="#g-karma">カルマ</a>、<a href="#g-gedatsu">解脱</a></p></div>
+    <div class="card"><span class="tag reli-tag">インド・前5世紀頃</span><h4>仏教</h4><p>釈迦が、苦しみの原因は執着にあると説き、修行による解放の道を示しました。インドでは後に衰えましたが、アジア各地に広がりました。</p><p><strong>用語：</strong><a href="#g-shitai">四諦・八正道</a>、<a href="#g-engi">縁起</a>、<a href="#g-nehan">涅槃</a>、<a href="#g-joza">上座部仏教</a>、<a href="#g-daijo">大乗仏教</a></p></div>
+    <div class="card"><span class="tag reli-tag">中国・前6〜前5世紀</span><h4>儒教</h4><p>孔子の教えをもとに、家族から国家までの人間関係を正しく整えることを説きます。祖先を祀る儀礼をもつため、宗教とも倫理思想とも捉えられます。</p><p><strong>用語：</strong><a href="#g-jinrei">仁と礼</a>、<a href="#g-sosen">祖先崇拝</a></p></div>
+    <div class="card"><span class="tag reli-tag">中国・2世紀頃に教団化</span><h4>道教</h4><p>老子・荘子の思想に、不老長生を願う神仙思想や民間信仰が結びついた宗教です。</p><p><strong>用語：</strong><a href="#g-mui">道（タオ）と無為自然</a>、<a href="#g-shinsen">神仙思想</a></p></div>
+    <div class="card"><span class="tag reli-tag">日本・古来</span><h4>神道</h4><p>山や岩、祖先などに神を見いだす日本古来の信仰です。開祖や体系的な教義をもたず、祭りと神社を中心に受け継がれてきました。8世紀の『古事記』『日本書紀』に神話がまとめられています。</p><p><strong>用語：</strong><a href="#g-yaoyorozu">八百万の神</a>、<a href="#g-shinbutsu">神仏習合</a></p></div>
+  </div>
+
+  <!-- 3. 三大宗教 -->
+  <h2 id="big3">三大宗教の比較</h2>
+  <p>仏教・キリスト教・イスラム教は、民族や国の枠を超えて広がったことから「世界宗教」と呼ばれ、日本では三大宗教としてまとめて紹介されることが多い宗教です。成り立ちや救いの考え方を並べると、違いがはっきりします。</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>観点</th><th>仏教</th><th>キリスト教</th><th>イスラム教</th></tr></thead>
+      <tbody>
+        <tr><td>開祖</td><td>釈迦（ゴータマ・シッダールタ）</td><td>イエス</td><td>ムハンマド（信者は開祖ではなく最後の<a href="#g-yogen">預言者</a>と考える）</td></tr>
+        <tr><td>成立</td><td>前5世紀頃・インド北部</td><td>1世紀・パレスチナ</td><td>7世紀・アラビア半島（メッカ）</td></tr>
+        <tr><td>聖典</td><td>多数の経典（仏典）。上座部はパーリ語の経典、大乗は般若経・法華経など</td><td>旧約聖書と新約聖書</td><td>クルアーン（コーラン）</td></tr>
+        <tr><td>神の位置づけ</td><td>救いの前提として神を立てない。大乗では多くの仏・菩薩を信仰</td><td>唯一の神（<a href="#g-sanmi">三位一体</a>）</td><td>唯一神アッラー。偶像は認めない（<a href="#g-guzo">偶像崇拝の禁止</a>）</td></tr>
+        <tr><td>救いの考え方</td><td>執着を断って<a href="#g-rinne">輪廻</a>から<a href="#g-gedatsu">解脱</a>し、<a href="#g-nehan">涅槃</a>に至る</td><td>イエスの十字架と復活を信じることで<a href="#g-genzai">罪</a>が赦される</td><td>神に帰依し<a href="#g-rokushin">六信五行</a>を守る。<a href="#g-shinpan">最後の審判</a>で裁かれる</td></tr>
+        <tr><td>主な地域</td><td>東アジア・東南アジア・チベットなど</td><td>ヨーロッパ・南北アメリカ・アフリカ南部・オセアニアなど</td><td>中東・北アフリカ・中央アジア・南アジア・東南アジアなど</td></tr>
+        <tr><td>主な分派</td><td><a href="#g-joza">上座部</a>／<a href="#g-daijo">大乗</a></td><td>カトリック／正教会／プロテスタント</td><td>スンナ派／シーア派</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 420" role="img" aria-labelledby="fig3-t">
+      <title id="fig3-t">三大宗教の、拠り所・実践・目指す先の比較</title>
+      <defs>
+        <marker id="ah3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+          <path class="reli" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+      <text class="t-soft" x="60" y="20" text-anchor="middle">拠り所</text>
+      <text class="t-soft" x="180" y="20" text-anchor="middle">実践</text>
+      <text class="t-soft" x="300" y="20" text-anchor="middle">目指す先</text>
+
+      <!-- 仏教 -->
+      <rect class="reli" x="10" y="32" width="340" height="30" rx="6"/>
+      <text class="on-color" x="20" y="52">仏教　前5世紀頃・インド</text>
+      <rect class="box" x="10" y="70" width="100" height="78" rx="8"/>
+      <rect class="box" x="130" y="70" width="100" height="78" rx="8"/>
+      <rect class="box" x="250" y="70" width="100" height="78" rx="8"/>
+      <line class="ln s-reli" x1="111" y1="109" x2="128" y2="109" marker-end="url(#ah3)"/>
+      <line class="ln s-reli" x1="231" y1="109" x2="248" y2="109" marker-end="url(#ah3)"/>
+      <text class="t" x="60" y="104" text-anchor="middle">仏の教え</text>
+      <text class="t" x="60" y="124" text-anchor="middle">（法）</text>
+      <text class="t" x="180" y="104" text-anchor="middle">修行で</text>
+      <text class="t" x="180" y="124" text-anchor="middle">執着を断つ</text>
+      <text class="t" x="300" y="104" text-anchor="middle">輪廻からの</text>
+      <text class="t" x="300" y="124" text-anchor="middle">解脱・涅槃</text>
+
+      <!-- キリスト教 -->
+      <rect class="reli" x="10" y="160" width="340" height="30" rx="6"/>
+      <text class="on-color" x="20" y="180">キリスト教　1世紀・パレスチナ</text>
+      <rect class="box" x="10" y="198" width="100" height="78" rx="8"/>
+      <rect class="box" x="130" y="198" width="100" height="78" rx="8"/>
+      <rect class="box" x="250" y="198" width="100" height="78" rx="8"/>
+      <line class="ln s-reli" x1="111" y1="237" x2="128" y2="237" marker-end="url(#ah3)"/>
+      <line class="ln s-reli" x1="231" y1="237" x2="248" y2="237" marker-end="url(#ah3)"/>
+      <text class="t" x="60" y="232" text-anchor="middle">三位一体の</text>
+      <text class="t" x="60" y="252" text-anchor="middle">神</text>
+      <text class="t" x="180" y="222" text-anchor="middle">イエスを</text>
+      <text class="t" x="180" y="242" text-anchor="middle">救い主と</text>
+      <text class="t" x="180" y="262" text-anchor="middle">信じる</text>
+      <text class="t" x="300" y="232" text-anchor="middle">罪の赦し</text>
+      <text class="t" x="300" y="252" text-anchor="middle">永遠の命</text>
+
+      <!-- イスラム教 -->
+      <rect class="reli" x="10" y="288" width="340" height="30" rx="6"/>
+      <text class="on-color" x="20" y="308">イスラム教　7世紀・アラビア半島</text>
+      <rect class="box" x="10" y="326" width="100" height="78" rx="8"/>
+      <rect class="box" x="130" y="326" width="100" height="78" rx="8"/>
+      <rect class="box" x="250" y="326" width="100" height="78" rx="8"/>
+      <line class="ln s-reli" x1="111" y1="365" x2="128" y2="365" marker-end="url(#ah3)"/>
+      <line class="ln s-reli" x1="231" y1="365" x2="248" y2="365" marker-end="url(#ah3)"/>
+      <text class="t" x="60" y="360" text-anchor="middle">唯一神</text>
+      <text class="t" x="60" y="380" text-anchor="middle">アッラー</text>
+      <text class="t" x="180" y="350" text-anchor="middle">六信五行を</text>
+      <text class="t" x="180" y="370" text-anchor="middle">守り、神に</text>
+      <text class="t" x="180" y="390" text-anchor="middle">帰依する</text>
+      <text class="t" x="300" y="360" text-anchor="middle">最後の審判</text>
+      <text class="t" x="300" y="380" text-anchor="middle">を経て楽園へ</text>
+    </svg>
+    <figcaption>図3　三大宗教の救いの道筋。仏教は自分の修行で苦しみから抜け出す道、キリスト教とイスラム教は唯一の神との関係の中で救われる道を説きます</figcaption>
+  </figure>
+
+  <div class="point"><strong>違いの核心：</strong>仏教の救いは「この世の苦しみの仕組みを見抜き、そこから抜け出すこと」、キリスト教とイスラム教の救いは「唯一の神との正しい関係を結ぶこと」です。また仏教の中でも、自分の修行で悟る<a href="#g-jiriki">自力</a>と、仏の力にすがる<a href="#g-jiriki">他力</a>という異なる考え方があります。</div>
+
+  <!-- 4. 分派 -->
+  <h2 id="split">キリスト教とイスラム教の分かれ方</h2>
+  <h3>キリスト教：東西の分裂と宗教改革</h3>
+  <p>キリスト教はローマ帝国で公認・国教化された後、帝国の東西で教会のあり方が分かれていきました。1054年に西のローマ教会と東のコンスタンティノープル教会が互いを破門し、西方のカトリックと東方の正教会に分かれます。さらに16世紀、ルターが教会の<a href="#g-shokuyu">贖宥状（免罪符）</a>販売を批判して<a href="#g-kaikaku">宗教改革</a>が始まり、カトリックから離れたプロテスタントが生まれました。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 540" role="img" aria-labelledby="fig4-t">
+      <title id="fig4-t">キリスト教がカトリック、プロテスタント、正教会に分かれるまで</title>
+      <defs>
+        <marker id="ah4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+          <path class="reli" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+      <rect class="box" x="80" y="10" width="200" height="56" rx="8"/>
+      <text class="t-strong" x="180" y="34" text-anchor="middle">初期のキリスト教</text>
+      <text class="t-soft" x="180" y="54" text-anchor="middle">1世紀　パレスチナ</text>
+      <line class="ln s-reli" x1="180" y1="66" x2="180" y2="88" marker-end="url(#ah4)"/>
+
+      <rect class="box" x="30" y="90" width="300" height="56" rx="8"/>
+      <text class="t-strong" x="180" y="114" text-anchor="middle">ローマ帝国の宗教へ</text>
+      <text class="t-soft" x="180" y="134" text-anchor="middle">313年 公認 → 392年 国教化</text>
+      <line class="ln s-reli" x1="180" y1="146" x2="180" y2="158" marker-end="url(#ah4)"/>
+
+      <rect class="reli" x="60" y="160" width="240" height="30" rx="6"/>
+      <text class="on-color" x="180" y="180" text-anchor="middle">1054年　東西教会の分裂</text>
+      <line class="ln s-reli" x1="95" y1="190" x2="95" y2="212" marker-end="url(#ah4)"/>
+      <line class="ln s-reli" x1="270" y1="190" x2="270" y2="212" marker-end="url(#ah4)"/>
+
+      <rect class="box" x="10" y="214" width="170" height="56" rx="8"/>
+      <text class="t-strong" x="95" y="238" text-anchor="middle">西方教会</text>
+      <text class="t-soft" x="95" y="258" text-anchor="middle">ローマ教皇が首位</text>
+      <rect class="box" x="190" y="214" width="160" height="56" rx="8"/>
+      <text class="t-strong" x="270" y="238" text-anchor="middle">東方教会</text>
+      <text class="t-soft" x="270" y="258" text-anchor="middle">ビザンツ帝国で発展</text>
+
+      <line class="ln s-reli" x1="95" y1="270" x2="95" y2="292" marker-end="url(#ah4)"/>
+      <rect class="reli" x="10" y="294" width="170" height="56" rx="8"/>
+      <text class="on-color" x="95" y="317" text-anchor="middle">1517年　宗教改革</text>
+      <text class="on-color" x="95" y="337" text-anchor="middle">ルターが教会を批判</text>
+
+      <line class="ln s-reli" x1="70" y1="350" x2="62" y2="398" marker-end="url(#ah4)"/>
+      <line class="ln s-reli" x1="125" y1="350" x2="176" y2="398" marker-end="url(#ah4)"/>
+      <line class="ln s-reli" x1="300" y1="270" x2="300" y2="398" marker-end="url(#ah4)"/>
+
+      <rect class="box" x="10" y="400" width="104" height="84" rx="8"/>
+      <text class="t-strong" x="62" y="424" text-anchor="middle">カトリック</text>
+      <text class="t-soft" x="62" y="448" text-anchor="middle">南欧・中南米</text>
+      <text class="t-soft" x="62" y="466" text-anchor="middle">など</text>
+      <rect class="box" x="120" y="400" width="124" height="84" rx="8"/>
+      <text class="t-strong" x="182" y="424" text-anchor="middle">プロテスタント</text>
+      <text class="t-soft" x="182" y="448" text-anchor="middle">北西欧・北米</text>
+      <text class="t-soft" x="182" y="466" text-anchor="middle">など</text>
+      <rect class="box" x="250" y="400" width="100" height="84" rx="8"/>
+      <text class="t-strong" x="300" y="424" text-anchor="middle">正教会</text>
+      <text class="t-soft" x="300" y="448" text-anchor="middle">東欧・ロシア</text>
+      <text class="t-soft" x="300" y="466" text-anchor="middle">など</text>
+
+      <text class="t-soft" x="180" y="510" text-anchor="middle">カトリックも対抗宗教改革で立て直しを図り、</text>
+      <text class="t-soft" x="180" y="528" text-anchor="middle">16世紀にはイギリス国教会も独立</text>
+    </svg>
+    <figcaption>図4　キリスト教の分かれ方。1054年の東西分裂と、1517年に始まる宗教改革が2つの大きな分かれ目です</figcaption>
+  </figure>
+
+  <div class="cards">
+    <div class="card"><span class="tag reli-tag">西方・ローマ</span><h4>カトリック</h4><p>ローマ教皇を頂点とする世界規模の教会組織をもちます。聖書に加えて教会が受け継いできた伝統を重んじ、7つの<a href="#g-hiseki">秘跡</a>を通じて神の恵みが与えられると考えます。</p></div>
+    <div class="card"><span class="tag reli-tag">東方・ビザンツ</span><h4>正教会</h4><p>ギリシャ正教会、ロシア正教会など、国や地域ごとの教会が並び立つ形をとります。教皇のような全体の頂点は置かず、古代からの典礼と<a href="#g-icon">イコン</a>を大切にします。</p></div>
+    <div class="card"><span class="tag reli-tag">16世紀・宗教改革</span><h4>プロテスタント</h4><p>ルター派、カルヴァン派（長老派など）、イギリス国教会など多くの教派の総称です。<a href="#g-shingi">信仰義認</a>と<a href="#g-seisho">聖書主義</a>を共通の原則とし、カルヴァン派は<a href="#g-yotei">予定説</a>を唱えました。</p></div>
+  </div>
+
+  <h3>イスラム教：スンナ派とシーア派</h3>
+  <p>632年にムハンマドが亡くなると、誰が共同体を率いるかが問題になりました。話し合いで選ばれた4人の<a href="#g-caliph">カリフ</a>を正統とする人々がスンナ派、ムハンマドのいとこで娘婿のアリーとその子孫だけが正統な指導者（<a href="#g-imam">イマーム</a>）だとする人々がシーア派になりました。両派は神・<a href="#g-keiten">啓典</a>・<a href="#g-rokushin">六信五行</a>の基本を共有しており、違いの中心は指導者の正統性にあります。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 510" role="img" aria-labelledby="fig5-t">
+      <title id="fig5-t">ムハンマドの後継者問題からスンナ派とシーア派に分かれるまで</title>
+      <defs>
+        <marker id="ah5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+          <path class="reli" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+      <rect class="box" x="50" y="10" width="260" height="56" rx="8"/>
+      <text class="t-strong" x="180" y="34" text-anchor="middle">632年　ムハンマドの死</text>
+      <text class="t-soft" x="180" y="54" text-anchor="middle">誰が共同体を率いるか</text>
+      <line class="ln s-reli" x1="130" y1="66" x2="92" y2="98" marker-end="url(#ah5)"/>
+      <line class="ln s-reli" x1="230" y1="66" x2="268" y2="98" marker-end="url(#ah5)"/>
+
+      <rect class="box" x="10" y="100" width="160" height="64" rx="8"/>
+      <text class="t" x="90" y="126" text-anchor="middle">話し合いで</text>
+      <text class="t" x="90" y="146" text-anchor="middle">適任者を選ぶ</text>
+      <rect class="box" x="190" y="100" width="160" height="64" rx="8"/>
+      <text class="t" x="270" y="126" text-anchor="middle">ムハンマドの血筋</text>
+      <text class="t" x="270" y="146" text-anchor="middle">アリーを後継に</text>
+      <line class="ln s-reli" x1="90" y1="164" x2="90" y2="186" marker-end="url(#ah5)"/>
+      <line class="ln s-reli" x1="270" y1="164" x2="270" y2="186" marker-end="url(#ah5)"/>
+
+      <rect class="box" x="10" y="188" width="160" height="118" rx="8"/>
+      <text class="t-strong" x="90" y="212" text-anchor="middle">正統カリフ4代</text>
+      <text class="t" x="24" y="236">①アブー・バクル</text>
+      <text class="t" x="24" y="256">②ウマル</text>
+      <text class="t" x="24" y="276">③ウスマーン</text>
+      <text class="t" x="24" y="296">④アリー</text>
+      <rect class="box" x="190" y="188" width="160" height="118" rx="8"/>
+      <text class="t-strong" x="270" y="212" text-anchor="middle">アリーの支持派</text>
+      <text class="t" x="270" y="238" text-anchor="middle">アリーと子孫を</text>
+      <text class="t" x="270" y="258" text-anchor="middle">指導者と仰ぐ</text>
+      <text class="t-soft" x="270" y="284" text-anchor="middle">シーア＝「党派」の意</text>
+      <line class="ln s-reli" x1="90" y1="306" x2="90" y2="326" marker-end="url(#ah5)"/>
+      <line class="ln s-reli" x1="270" y1="306" x2="270" y2="326" marker-end="url(#ah5)"/>
+
+      <rect class="reli" x="10" y="328" width="340" height="56" rx="8"/>
+      <text class="on-color" x="180" y="351" text-anchor="middle">661年　ウマイヤ朝が成立</text>
+      <text class="on-color" x="180" y="372" text-anchor="middle">680年　アリーの子フサインが戦死</text>
+      <line class="ln s-reli" x1="90" y1="384" x2="90" y2="410" marker-end="url(#ah5)"/>
+      <line class="ln s-reli" x1="270" y1="384" x2="270" y2="410" marker-end="url(#ah5)"/>
+
+      <rect class="box" x="10" y="412" width="160" height="88" rx="8"/>
+      <text class="t-strong" x="90" y="438" text-anchor="middle">スンナ派</text>
+      <text class="t-soft" x="90" y="462" text-anchor="middle">慣行と共同体を重視</text>
+      <text class="t-soft" x="90" y="482" text-anchor="middle">ムスリムの多数派</text>
+      <rect class="box" x="190" y="412" width="160" height="88" rx="8"/>
+      <text class="t-strong" x="270" y="438" text-anchor="middle">シーア派</text>
+      <text class="t-soft" x="270" y="462" text-anchor="middle">イマームを重視</text>
+      <text class="t-soft" x="270" y="482" text-anchor="middle">イラン・イラクで多数</text>
+    </svg>
+    <figcaption>図5　スンナ派とシーア派の分かれ方。指導者を誰とするかの違いが、680年のカルバラーの戦い（フサインの戦死）を経て決定的になりました</figcaption>
+  </figure>
+
+  <!-- 5. 日本 -->
+  <h2 id="japan">日本人と宗教</h2>
+  <p>日本では、一人の人が神社にも寺にも行き、ときにキリスト教式の行事にも参加します。これは、ある宗教を選んで他を捨てるのではなく、場面ごとに異なる宗教が役割を分け合ってきた歴史によるものです。6世紀に仏教が伝わってから、神と仏は長く<a href="#g-shinbutsu">神仏習合</a>の形で一体に祀られ、江戸時代の<a href="#g-terauke">寺請制度</a>で寺が葬儀を担う仕組みが広まりました。これが今の<a href="#g-soshiki">葬式仏教</a>の土台です。1868年の<a href="#g-bunri">神仏分離令</a>で神社と寺は制度上分けられましたが、暮らしの中の重なりは今も続いています。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 358" role="img" aria-labelledby="fig6-t">
+      <title id="fig6-t">日本で神道と仏教が重なり合ってきた歴史の4段階</title>
+      <defs>
+        <marker id="ah6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+          <path class="reli" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+      <rect class="box" x="10" y="10" width="340" height="74" rx="8"/>
+      <rect class="reli" x="10" y="10" width="76" height="74" rx="8"/>
+      <text class="on-color" x="48" y="52" text-anchor="middle">6世紀</text>
+      <text class="t-strong" x="98" y="36">仏教が伝来</text>
+      <text class="t-soft" x="98" y="58">古来の神々への信仰と出会い、</text>
+      <text class="t-soft" x="98" y="76">受け入れをめぐる対立も起きる</text>
+      <line class="ln s-reli" x1="48" y1="84" x2="48" y2="96" marker-end="url(#ah6)"/>
+
+      <rect class="box" x="10" y="98" width="340" height="74" rx="8"/>
+      <rect class="reli" x="10" y="98" width="76" height="74" rx="8"/>
+      <text class="on-color" x="48" y="140" text-anchor="middle">奈良・平安</text>
+      <text class="t-strong" x="98" y="124">神仏習合が進む</text>
+      <text class="t-soft" x="98" y="146">神は仏が姿を変えて現れたもの</text>
+      <text class="t-soft" x="98" y="164">とする本地垂迹説が広まる</text>
+      <line class="ln s-reli" x1="48" y1="172" x2="48" y2="184" marker-end="url(#ah6)"/>
+
+      <rect class="box" x="10" y="186" width="340" height="74" rx="8"/>
+      <rect class="reli" x="10" y="186" width="76" height="74" rx="8"/>
+      <text class="on-color" x="48" y="228" text-anchor="middle">江戸</text>
+      <text class="t-strong" x="98" y="212">寺請制度</text>
+      <text class="t-soft" x="98" y="234">誰もがどこかの寺の檀家になり、</text>
+      <text class="t-soft" x="98" y="252">葬儀や法事を寺が担う形に</text>
+      <line class="ln s-reli" x1="48" y1="260" x2="48" y2="272" marker-end="url(#ah6)"/>
+
+      <rect class="box" x="10" y="274" width="340" height="74" rx="8"/>
+      <rect class="reli" x="10" y="274" width="76" height="74" rx="8"/>
+      <text class="on-color" x="48" y="316" text-anchor="middle">1868年</text>
+      <text class="t-strong" x="98" y="300">神仏分離令</text>
+      <text class="t-soft" x="98" y="322">神社と寺を制度の上で分ける。</text>
+      <text class="t-soft" x="98" y="340">暮らしの中の重なりは続く</text>
+    </svg>
+    <figcaption>図6　日本で神道と仏教が重なり合ってきた流れ</figcaption>
+  </figure>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 364" role="img" aria-labelledby="fig7-t">
+      <title id="fig7-t">人生の節目と1年の行事で、神道・仏教・キリスト教由来の行事が分担している様子</title>
+      <rect class="jp" x="10" y="12" width="14" height="14" rx="3"/>
+      <text class="t" x="30" y="24">神道</text>
+      <rect class="reli" x="90" y="12" width="14" height="14" rx="3"/>
+      <text class="t" x="110" y="24">仏教</text>
+      <rect class="sci" x="170" y="12" width="14" height="14" rx="3"/>
+      <text class="t" x="190" y="24">キリスト教由来</text>
+
+      <text class="t-strong" x="10" y="62">人生の節目</text>
+      <text class="t-strong" x="185" y="62">1年の行事</text>
+
+      <!-- 人生の節目 -->
+      <rect class="box" x="10" y="74" width="165" height="50" rx="8"/><rect class="jp" x="10" y="74" width="6" height="50"/>
+      <text class="t" x="24" y="96">お宮参り</text><text class="t-soft" x="24" y="115">誕生・神道</text>
+      <rect class="box" x="10" y="130" width="165" height="50" rx="8"/><rect class="jp" x="10" y="130" width="6" height="50"/>
+      <text class="t" x="24" y="152">七五三</text><text class="t-soft" x="24" y="171">成長・神道</text>
+      <rect class="box" x="10" y="186" width="165" height="50" rx="8"/><rect class="jp" x="10" y="186" width="6" height="50"/>
+      <text class="t" x="24" y="208">神前式の結婚式</text><text class="t-soft" x="24" y="227">結婚・神道</text>
+      <rect class="box" x="10" y="242" width="165" height="50" rx="8"/><rect class="sci" x="10" y="242" width="6" height="50"/>
+      <text class="t" x="24" y="264">教会式の結婚式</text><text class="t-soft" x="24" y="283">結婚・キリスト教由来</text>
+      <rect class="box" x="10" y="298" width="165" height="50" rx="8"/><rect class="reli" x="10" y="298" width="6" height="50"/>
+      <text class="t" x="24" y="320">葬式・法事</text><text class="t-soft" x="24" y="339">死・仏教</text>
+
+      <!-- 1年の行事 -->
+      <rect class="box" x="185" y="74" width="165" height="50" rx="8"/><rect class="jp" x="185" y="74" width="6" height="50"/>
+      <text class="t" x="199" y="96">初詣</text><text class="t-soft" x="199" y="115">正月・神道</text>
+      <rect class="box" x="185" y="130" width="165" height="50" rx="8"/><rect class="reli" x="185" y="130" width="6" height="50"/>
+      <text class="t" x="199" y="152">お彼岸</text><text class="t-soft" x="199" y="171">春分・秋分の頃・仏教</text>
+      <rect class="box" x="185" y="186" width="165" height="50" rx="8"/><rect class="reli" x="185" y="186" width="6" height="50"/>
+      <text class="t" x="199" y="208">お盆</text><text class="t-soft" x="199" y="227">夏・仏教</text>
+      <rect class="box" x="185" y="242" width="165" height="50" rx="8"/><rect class="sci" x="185" y="242" width="6" height="50"/>
+      <text class="t" x="199" y="264">クリスマス</text><text class="t-soft" x="199" y="283">12月・キリスト教由来</text>
+      <rect class="box" x="185" y="298" width="165" height="50" rx="8"/><rect class="reli" x="185" y="298" width="6" height="50"/>
+      <text class="t" x="199" y="320">除夜の鐘</text><text class="t-soft" x="199" y="339">大晦日・仏教</text>
+    </svg>
+    <figcaption>図7　人生の節目と1年の行事の分担。生まれたときや正月は神道、死と先祖の供養は仏教、という役割分担が目立ちます</figcaption>
+  </figure>
+
+  <div class="point"><strong>捉え方：</strong>自分を「無宗教」と考える日本人は多いとされますが、行事への参加や先祖の供養は広く続いています。特定の教団への所属よりも、地域や家の慣習として宗教に関わる形が中心だと捉えると理解しやすくなります。</div>
+
+  <!-- 6. ニュース -->
+  <h2 id="news">ニュースの背景にある宗教</h2>
+  <p>国際ニュースでは、宗教の違いが対立の構図として語られることがあります。ただし多くの場合、宗教そのものより、領土・民族・植民地支配の歴史・政治権力などの要因が重なっています。ここでは、ニュースを読むときに知っておくと役立つ歴史的な背景をまとめます。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 392" role="img" aria-labelledby="fig8-t">
+      <title id="fig8-t">エルサレム旧市街にある3つの宗教の聖地</title>
+      <rect class="reli" x="70" y="10" width="220" height="40" rx="20"/>
+      <text class="on-color" x="180" y="35" text-anchor="middle">エルサレム旧市街</text>
+      <line class="ln" x1="180" y1="50" x2="180" y2="62"/>
+
+      <rect class="box" x="10" y="62" width="340" height="86" rx="8"/>
+      <rect class="reli" x="10" y="62" width="90" height="86" rx="8"/>
+      <text class="on-color" x="55" y="110" text-anchor="middle">ユダヤ教</text>
+      <text class="t-strong" x="112" y="88">嘆きの壁</text>
+      <text class="t" x="112" y="112">古代のエルサレム神殿の</text>
+      <text class="t" x="112" y="132">外壁の一部が残る</text>
+
+      <rect class="box" x="10" y="158" width="340" height="86" rx="8"/>
+      <rect class="reli" x="10" y="158" width="90" height="86" rx="8"/>
+      <text class="on-color" x="55" y="206" text-anchor="middle">キリスト教</text>
+      <text class="t-strong" x="112" y="184">聖墳墓教会</text>
+      <text class="t" x="112" y="208">イエスが十字架にかけられ</text>
+      <text class="t" x="112" y="228">葬られたとされる場所</text>
+
+      <rect class="box" x="10" y="254" width="340" height="86" rx="8"/>
+      <rect class="reli" x="10" y="254" width="90" height="86" rx="8"/>
+      <text class="on-color" x="55" y="302" text-anchor="middle">イスラム教</text>
+      <text class="t-strong" x="112" y="280">岩のドーム</text>
+      <text class="t" x="112" y="304">ムハンマドが天に昇った</text>
+      <text class="t" x="112" y="324">とされる岩の上に建つ</text>
+
+      <text class="t-soft" x="180" y="364" text-anchor="middle">嘆きの壁と岩のドームは、同じ丘（神殿の丘）の</text>
+      <text class="t-soft" x="180" y="382" text-anchor="middle">西壁と頂上にあり、聖地が重なっている</text>
+    </svg>
+    <figcaption>図8　エルサレム旧市街の3つの聖地。同じ神を信じる3つの宗教にとって、それぞれ特別な場所が狭い範囲に集まっています</figcaption>
+  </figure>
+
+  <div class="cards">
+    <div class="card"><span class="tag reli-tag">11世紀末〜13世紀</span><h4>十字軍</h4><p>西ヨーロッパのキリスト教勢力が、イスラム勢力の支配する聖地エルサレムの奪回を掲げて繰り返し遠征しました。宗教だけでなく、領土や交易の利害も動機になっていました。</p><p><strong>用語：</strong><a href="#g-jujigun">十字軍</a></p></div>
+    <div class="card"><span class="tag reli-tag">19世紀末〜</span><h4>パレスチナ問題の背景</h4><p>19世紀末から、ユダヤ人の国家をパレスチナに築こうとする<a href="#g-zion">シオニズム</a>が広がりました。1948年のイスラエル建国と、それに続く中東戦争で多くのアラブ系住民が故郷を離れ、土地と聖地をめぐる対立が続いています。</p></div>
+    <div class="card"><span class="tag reli-tag">中東</span><h4>宗派と国家</h4><p>イランはシーア派が多数を占め、1979年のイラン革命で宗教指導者が政治の頂点に立つ体制ができました。中東の国家間の対立が、スンナ派とシーア派の違いと重ねて報じられることがありますが、実際には政治・民族・資源の利害が絡み合っています。</p><p><strong>用語：</strong><a href="#g-sharia">イスラム法</a></p></div>
+    <div class="card"><span class="tag reli-tag">1947年</span><h4>インドとパキスタンの分離独立</h4><p>イギリスからの独立の際、ヒンドゥー教徒が多数のインドと、ムスリムが多数のパキスタンに分かれて独立しました。大規模な住民の移動と衝突が起き、カシミール地方の帰属問題が残りました。</p></div>
+    <div class="card"><span class="tag reli-tag">16〜17世紀</span><h4>宗教戦争と主権国家</h4><p>宗教改革の後、ヨーロッパではカトリックとプロテスタントの対立が戦争に発展しました。三十年戦争を終えた1648年の<a href="#g-westphalia">ウェストファリア条約</a>は、国ごとに主権をもつ近代の国際秩序の出発点とされます。</p></div>
+    <div class="card"><span class="tag reli-tag">近代〜現代</span><h4>宗教と政治の距離</h4><p>宗教と国家の関係は国によって異なります。<a href="#g-seikyo">政教分離</a>を掲げる国が多い一方、国教を定める国やイスラム法を法の基礎に置く国もあります。北アイルランドのように、宗派の違いが政治的な帰属の対立と重なった地域もありました。</p></div>
+  </div>
+
+  <!-- 7. 用語 -->
+  <h2 id="glossary">考え方・用語の解説</h2>
+  <p>本文・図・カードに出てくる考え方と用語を、分野ごとに1〜2文で説明します。</p>
+
+  <h3>宗教の分け方</h3>
+  <dl class="glossary">
+    <div id="g-ichishin"><dt>一神教<span class="who">ユダヤ教・キリスト教・イスラム教</span></dt><dd>宇宙を創造し支配する唯一の神だけを信じる宗教のあり方です。ほかの神々を認めず、神と人との間にはっきりした区別を置きます。</dd></div>
+    <div id="g-tashin"><dt>多神教<span class="who">ヒンドゥー教・神道・古代ギリシャなど</span></dt><dd>役割や性格の異なる多くの神々を同時に信仰するあり方です。自然や土地、祖先など、さまざまなものに神を見いだします。</dd></div>
+    <div id="g-abraham"><dt>アブラハムの宗教<span class="who">ユダヤ教・キリスト教・イスラム教</span></dt><dd>旧約聖書に登場する人物アブラハムを信仰の祖とあおぐ、3つの一神教の総称です。同じ唯一神を信じ、預言者や聖典の考え方を共有しています。</dd></div>
+    <div id="g-guzo"><dt>偶像崇拝の禁止<span class="who">ユダヤ教・イスラム教など</span></dt><dd>神を像や絵で表して拝むことを禁じる考えです。神は人の作った形に収まらないとされるため、イスラム教のモスクには神の像がなく、幾何学模様や文字で装飾されます。</dd></div>
+  </dl>
+
+  <h3>ユダヤ教・キリスト教・イスラム教</h3>
+  <dl class="glossary">
+    <div id="g-keiten"><dt>啓典<span class="who">イスラム教</span></dt><dd>神が預言者を通して人間に示した教えを記した書物です。イスラム教は、ユダヤ教とキリスト教の聖典も同じ神の啓典とみなし、その信者を「啓典の民」と呼びました。</dd></div>
+    <div id="g-yogen"><dt>預言者<span class="who">3つの一神教に共通</span></dt><dd>未来を予言する人ではなく、神の言葉を預かって人々に伝える人のことです。イスラム教では、モーセやイエスも預言者とし、ムハンマドを最後の預言者とします。</dd></div>
+    <div id="g-ritsuho"><dt>律法<span class="who">ユダヤ教</span></dt><dd>神がモーセを通して与えたとされる、信仰と生活の決まりです。食べ物や安息日の守り方など、日々の暮らしの細部にまで及びます。</dd></div>
+    <div id="g-messiah"><dt>救世主（メシア）<span class="who">ユダヤ教・キリスト教</span></dt><dd>神に選ばれ、人々を救うために現れるとされる存在です。キリスト教はイエスをその救世主（ギリシャ語でキリスト）と信じ、ユダヤ教はまだ現れていないと考えます。</dd></div>
+    <div id="g-sanmi"><dt>三位一体<span class="who">キリスト教</span></dt><dd>神は唯一でありながら、父なる神・子なるイエス・聖霊という3つのあり方をもつという教えです。キリスト教が一神教でありながらイエスを神とする根拠になっています。</dd></div>
+    <div id="g-genzai"><dt>原罪<span class="who">キリスト教</span></dt><dd>最初の人間アダムが神に背いたことで、すべての人間が生まれながらに背負っているとされる罪です。人は自力ではこの罪から逃れられず、神の救いが必要だと考えます。</dd></div>
+    <div id="g-fukuin"><dt>福音<span class="who">キリスト教</span></dt><dd>「良い知らせ」という意味で、イエスによって人類に救いがもたらされたという知らせを指します。イエスの言行を記した新約聖書の4つの書を福音書と呼びます。</dd></div>
+    <div id="g-hiseki"><dt>秘跡<span class="who">カトリック・正教会</span></dt><dd>洗礼や聖体（ミサでパンを受ける儀式）など、目に見える儀式を通じて神の恵みが与えられるとされる行いです。カトリックでは7つを定めています。</dd></div>
+    <div id="g-icon"><dt>イコン<span class="who">正教会</span></dt><dd>キリストや聖人を描いた聖画像です。絵そのものを拝むのではなく、描かれた存在への敬いを表すものとして、礼拝で大切に扱われます。</dd></div>
+    <div id="g-shokuyu"><dt>贖宥状（免罪符）<span class="who">中世末のカトリック</span></dt><dd>罪の償いを軽くするとして教会が発行した証書です。16世紀初めにその販売が大規模に行われたことが、ルターの批判のきっかけになりました。</dd></div>
+    <div id="g-kaikaku"><dt>宗教改革<span class="who">ルター、カルヴァンら（16世紀）</span></dt><dd>カトリック教会の権威や慣行を批判し、聖書に立ち返ろうとした運動です。1517年のルターの「95か条の論題」に始まり、プロテスタント諸教会が生まれました。これに対してカトリック側が行った立て直しを対抗宗教改革と呼び、イエズス会の海外布教もその一環です。</dd></div>
+    <div id="g-shingi"><dt>信仰義認<span class="who">ルター</span></dt><dd>人が神に正しい者と認められるのは、善い行いや儀式によってではなく、ただ信仰によってだという考えです。教会の仲介を重視するカトリックとの大きな違いになりました。</dd></div>
+    <div id="g-seisho"><dt>聖書主義<span class="who">プロテスタント</span></dt><dd>信仰のよりどころは教会の伝統ではなく聖書だけにあるとする考えです。ルターは聖書をドイツ語に訳し、誰もが自分で読めるようにしました。</dd></div>
+    <div id="g-yotei"><dt>予定説<span class="who">カルヴァン</span></dt><dd>誰が救われるかは神によってあらかじめ決められており、人の努力では変えられないという考えです。救いの確信を求めて職業にはげむ態度が、のちの資本主義の精神と結びつけて論じられました。</dd></div>
+    <div id="g-rokushin"><dt>六信五行<span class="who">イスラム教</span></dt><dd>信者が信じるべき6つ（神・天使・啓典・預言者・来世・神の定め）と、行うべき5つ（信仰告白・礼拝・断食・喜捨・メッカ巡礼）のことです。信じることと行うことの両方を重んじるイスラム教の基本を表します。</dd></div>
+    <div id="g-shinpan"><dt>最後の審判<span class="who">キリスト教・イスラム教など</span></dt><dd>世界の終わりに神がすべての人を裁き、天国（楽園）に入る者と地獄に落ちる者を分けるという考えです。この世での生き方が来世の行き先を決めるとされます。</dd></div>
+    <div id="g-caliph"><dt>カリフ<span class="who">イスラム教</span></dt><dd>ムハンマドの死後、イスラム共同体を率いた「後継者」の称号です。最初の4人を正統カリフと呼び、その後はウマイヤ朝・アッバース朝などの王朝の君主が名乗りました。</dd></div>
+    <div id="g-imam"><dt>イマーム<span class="who">イスラム教（特にシーア派）</span></dt><dd>一般には礼拝を先導する人を指しますが、シーア派ではアリーとその子孫で、共同体を正しく導く資格をもつ最高指導者を指します。</dd></div>
+    <div id="g-sharia"><dt>イスラム法（シャリーア）<span class="who">イスラム教</span></dt><dd>クルアーンとムハンマドの言行（スンナ）をもとにした、信仰・家族・商取引・刑罰などにわたる規範の体系です。どこまで国の法に取り入れるかは国によって大きく異なります。</dd></div>
+  </dl>
+
+  <h3>インドの宗教・仏教</h3>
+  <dl class="glossary">
+    <div id="g-veda"><dt>ヴェーダ<span class="who">バラモン教</span></dt><dd>古代インドで神々への賛歌や祭祀の作法をまとめた聖典群です。のちのヒンドゥー教でも最も権威ある聖典とされます。</dd></div>
+    <div id="g-varna"><dt>ヴァルナ（カースト）<span class="who">古代インド〜</span></dt><dd>祭官（バラモン）・王侯と武人・庶民・隷属民の4つに人々を分ける身分の枠組みです。のちに職業や地縁と結びついた多数の集団（ジャーティ）と重なり、カースト制度と呼ばれるようになりました。</dd></div>
+    <div id="g-bonga"><dt>梵我一如<span class="who">ウパニシャッド哲学（バラモン教）</span></dt><dd>宇宙の根本原理ブラフマン（梵）と、個人の本体アートマン（我）は本来同じものだという考えです。これを悟ることが輪廻からの解放につながるとされました。</dd></div>
+    <div id="g-karma"><dt>カルマ（業）<span class="who">インドの宗教に共通</span></dt><dd>行いは必ず結果を生み、善い行いは善い結果を、悪い行いは悪い結果をもたらすという考えです。その結果は来世の生まれ方にまで及ぶとされます。</dd></div>
+    <div id="g-rinne"><dt>輪廻<span class="who">インドの宗教に共通</span></dt><dd>生き物は死んでも、カルマに応じて別の生を受け、生と死を際限なく繰り返すという考えです。インドの宗教では、この繰り返し自体が苦しみだと捉えられます。</dd></div>
+    <div id="g-gedatsu"><dt>解脱<span class="who">インドの宗教に共通</span></dt><dd>輪廻の繰り返しから抜け出し、二度と生まれ変わらない自由な境地に至ることです。ヒンドゥー教でも仏教でも、宗教的な最終目標とされます。</dd></div>
+    <div id="g-nehan"><dt>涅槃（ニルヴァーナ）<span class="who">仏教</span></dt><dd>「火が吹き消された状態」という意味で、煩悩（心を乱す欲望や怒り）が消え、苦しみから完全に解放された安らぎの境地です。仏教における解脱の到達点です。</dd></div>
+    <div id="g-shitai"><dt>四諦・八正道<span class="who">釈迦</span></dt><dd>四諦は「人生は苦である」「苦の原因は執着である」「執着を断てば苦は消える」「そのための道がある」という4つの真理です。その道として、正しい見方・考え・言葉・行い・生活・努力・心の向け方・精神統一の8つの実践（八正道）を示しました。</dd></div>
+    <div id="g-engi"><dt>縁起<span class="who">釈迦</span></dt><dd>すべての物事は、ほかの物事との関係や条件によって成り立っており、それだけで独立して存在するものはないという考えです。仏教の世界観の土台になっています。</dd></div>
+    <div id="g-joza"><dt>上座部仏教<span class="who">スリランカ・東南アジア</span></dt><dd>古い経典と戒律を重んじ、出家者が自ら修行して悟りを目指す仏教です。かつて大乗の側からは「小乗」と呼ばれましたが、これは見下した呼び名のため今は使いません。</dd></div>
+    <div id="g-daijo"><dt>大乗仏教<span class="who">紀元前後〜・東アジア・チベット</span></dt><dd>自分だけでなく、すべての人々の救済を目指す仏教です。出家者に限らず在家の人も救われると説き、多くの仏や<a href="#g-bosatsu">菩薩</a>への信仰や、<a href="#g-ku">空</a>の思想を発展させました。</dd></div>
+    <div id="g-bosatsu"><dt>菩薩<span class="who">大乗仏教</span></dt><dd>悟りを求めて修行しながら、自分より先に他の人々を救おうとする存在です。観音菩薩や地蔵菩薩のように、信仰の対象にもなりました。</dd></div>
+    <div id="g-ku"><dt>空<span class="who">ナーガールジュナ（竜樹）ら・2〜3世紀頃</span></dt><dd>すべての物事は縁起によって成り立つため、固定した実体をもたない（空である）という考えです。物事を実体あるものとして執着することから離れる根拠とされ、大乗仏教の中心思想になりました。</dd></div>
+    <div id="g-jiriki"><dt>自力と他力<span class="who">日本の仏教（鎌倉時代〜）</span></dt><dd>自力は、座禅などの自分の修行によって悟りを目指す立場で、禅宗が代表です。他力は、自分の力ではなく阿弥陀仏の救いの力にすべてを任せる立場で、念仏を唱えて極楽浄土に生まれることを願う法然の浄土宗や親鸞の浄土真宗が代表です。</dd></div>
+  </dl>
+
+  <h3>中国・日本の宗教</h3>
+  <dl class="glossary">
+    <div id="g-jinrei"><dt>仁と礼<span class="who">孔子</span></dt><dd>仁は人を思いやる心、礼はそれを形に表した社会の規範や作法です。親への孝を出発点に、この2つを身につけた人が治めれば社会は安定すると説きました。</dd></div>
+    <div id="g-sosen"><dt>祖先崇拝<span class="who">儒教・東アジアの民間信仰</span></dt><dd>亡くなった祖先を祀り、子孫を見守る存在として敬う信仰です。日本のお盆や法事にも、仏教と結びついた形で受け継がれています。</dd></div>
+    <div id="g-mui"><dt>道（タオ）と無為自然<span class="who">老子・荘子</span></dt><dd>道は万物を生み出す根源で、言葉では言い尽くせないものとされます。人為的なはからいを捨て、道に従って自然のままに生きることを無為自然と呼びます。</dd></div>
+    <div id="g-shinsen"><dt>神仙思想<span class="who">古代中国</span></dt><dd>修行や薬によって不老不死の仙人になれるという考えです。道教に取り入れられ、長寿を願う信仰として広まりました。</dd></div>
+    <div id="g-yaoyorozu"><dt>八百万の神<span class="who">神道</span></dt><dd>「数えきれないほど多くの神々」という意味です。山・川・岩・木などの自然や、祖先、優れた人物など、あらゆるものに神が宿りうるという神道の考え方を表します。</dd></div>
+    <div id="g-shinbutsu"><dt>神仏習合<span class="who">奈良時代〜江戸時代</span></dt><dd>日本の神々への信仰と仏教が融け合い、一つの信仰の体系として受け入れられた状態です。神社の中に寺が建てられ、神前で経が読まれました。その理屈として、神は仏が人々を救うために姿を変えて現れたものだとする本地垂迹説が説かれました。</dd></div>
+    <div id="g-terauke"><dt>寺請制度（檀家制度）<span class="who">江戸幕府</span></dt><dd>キリスト教の禁止を徹底するため、すべての人をどこかの寺に所属させ、寺がキリシタンでないことを証明した制度です。人々は寺の檀家となり、葬儀や供養を寺に任せる関係が定着しました。</dd></div>
+    <div id="g-soshiki"><dt>葬式仏教<span class="who">江戸時代〜現代</span></dt><dd>日本の仏教が、教えを説くことよりも葬儀や法事を主な役割としている状態を指す言葉です。寺請制度でできた寺と檀家の関係がその土台になりました。</dd></div>
+    <div id="g-bunri"><dt>神仏分離令<span class="who">明治政府（1868年）</span></dt><dd>神道を国の中心に据えるため、神社から仏像や仏教的な要素を取り除くよう命じた一連の布告です。各地で寺や仏像が壊される廃仏毀釈の動きも起きました。</dd></div>
+  </dl>
+
+  <h3>宗教と社会・政治</h3>
+  <dl class="glossary">
+    <div id="g-jujigun"><dt>十字軍<span class="who">11世紀末〜13世紀</span></dt><dd>ローマ教皇の呼びかけで始まった、西ヨーロッパのキリスト教勢力による聖地エルサレム方面への遠征です。何度も行われ、ヨーロッパとイスラム世界の交流と対立の両方を深めました。</dd></div>
+    <div id="g-zion"><dt>シオニズム<span class="who">19世紀末〜</span></dt><dd>迫害を受けてきたユダヤ人が、祖先の地とされるパレスチナに自分たちの国家を築こうとした運動です。1948年のイスラエル建国につながりました。</dd></div>
+    <div id="g-westphalia"><dt>ウェストファリア条約<span class="who">1648年</span></dt><dd>ドイツを中心とした宗教戦争である三十年戦争を終わらせた講和条約です。各国が自国の宗教や政治を自ら決める主権をもつ、という近代の国際秩序の考え方の出発点とされます。</dd></div>
+    <div id="g-seikyo"><dt>政教分離<span class="who">近代以降</span></dt><dd>国家が特定の宗教を優遇したり、宗教団体が政治権力を握ったりしないよう、国家と宗教を切り離す原則です。信教の自由を守る仕組みとして多くの国が採用していますが、その厳しさは国によって異なります。</dd></div>
+  </dl>
+
+  <!-- 8. 次の一歩 -->
+  <h2 id="nextstep">次の一歩</h2>
+  <p>宗教は、思想・歴史・政治・芸術のどれとも深くつながっています。関連するページから、別の角度で同じ出来事を見直すと理解が立体的になります。</p>
+  <div class="next">
+    <a href="index.html"><span>全体地図へ</span>教養の全体像を見る</a>
+    <a href="philosophy.html"><span>関連：哲学・思想史</span>儒教・道家・仏教の思想と、スコラ哲学</a>
+    <a href="world-history.html"><span>関連：世界史</span>宗教が広がった帝国と時代背景</a>
+    <a href="japan.html"><span>関連：日本史・日本文化</span>仏教伝来から神仏分離までの流れ</a>
+    <a href="politics.html"><span>関連：政治・法</span>政教分離と主権国家の成り立ち</a>
+    <a href="art.html"><span>関連：芸術</span>宗教美術と聖堂・寺院の建築</a>
+  </div>
+
+  <footer>作成: 2026-10-19 ／ 教養の図解シリーズ</footer>
+</main>
+</body>
+</html>

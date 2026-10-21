@@ -1,0 +1,1045 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="favicon.svg">
+<title>政治・法・国際関係｜教養の図解</title>
+<style>
+/* ===== 教養の図解 共通スタイル（全ページで同一のものを使う） ===== */
+:root {
+  --bg: #f7f5f0;
+  --surface: #ffffff;
+  --ink: #1f2328;
+  --ink-soft: #57606a;
+  --line: #d8d4ca;
+  --accent: #b5532a;        /* 見出し・強調 */
+  --c-phil: #6a4fb3;        /* 哲学 */
+  --c-hist: #b5532a;        /* 歴史 */
+  --c-econ: #1f7a5c;        /* 経済 */
+  --c-reli: #a07a12;        /* 宗教 */
+  --c-sci:  #2a63b5;        /* 科学 */
+  --c-art:  #b53a6b;        /* 芸術 */
+  --c-poli: #3d5a80;        /* 政治・法 */
+  --c-psy:  #0f7c86;        /* 心理学 */
+  --c-jp:   #a8323a;        /* 日本史 */
+  --tint: rgba(181, 83, 42, 0.08);
+  --radius: 12px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15171a; --surface: #1e2125; --ink: #e8e6e1; --ink-soft: #a3a8ae; --line: #3a3f45;
+    --accent: #e08a5f; --c-phil: #a58ee8; --c-hist: #e08a5f; --c-econ: #5cc39d;
+    --c-reli: #d9b24a; --c-sci: #6f9ee8; --c-art: #e57ba3; --c-poli: #8fa9d1; --c-psy: #4fc1c9; --c-jp: #e2767d; --tint: rgba(224, 138, 95, 0.12); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15171a; --surface: #1e2125; --ink: #e8e6e1; --ink-soft: #a3a8ae; --line: #3a3f45;
+  --accent: #e08a5f; --c-phil: #a58ee8; --c-hist: #e08a5f; --c-econ: #5cc39d;
+  --c-reli: #d9b24a; --c-sci: #6f9ee8; --c-art: #e57ba3; --c-poli: #8fa9d1; --c-psy: #4fc1c9; --c-jp: #e2767d; --tint: rgba(224, 138, 95, 0.12); color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  font-size: 16px; line-height: 1.8;
+}
+main { max-width: 860px; margin: 0 auto; padding-block: 0 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+nav.top {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg);
+  border-bottom: 1px solid var(--line); overflow-x: auto; white-space: nowrap;
+}
+nav.top ul { display: flex; gap: 4px; list-style: none; margin: 0 auto; padding-block: 8px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); max-width: 860px; }
+nav.top a {
+  display: inline-block; padding: 4px 12px; border-radius: 999px; color: var(--ink-soft);
+  text-decoration: none; font-size: 14px;
+}
+nav.top a[aria-current="page"] { background: var(--accent); color: #fff; }
+header.hero { padding: 32px 0 8px; }
+header.hero .kicker { color: var(--accent); font-weight: 700; font-size: 13px; letter-spacing: .08em; }
+h1 { font-size: 28px; line-height: 1.35; margin: 4px 0 12px; }
+h2 { font-size: 22px; line-height: 1.4; margin: 48px 0 12px; padding-left: 12px; border-left: 5px solid var(--accent); }
+h3 { font-size: 18px; margin: 28px 0 8px; }
+p { margin: 0 0 14px; }
+.lead { color: var(--ink-soft); }
+.toc { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 20px; }
+.toc ol { margin: 0; padding-left: 1.2em; }
+.toc a { color: var(--ink); }
+figure.diagram {
+  margin: 20px 0; background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 12px;
+}
+figure.diagram svg { display: block; width: 100%; height: auto; }
+figure.diagram figcaption { font-size: 13px; color: var(--ink-soft); margin-top: 8px; text-align: center; }
+/* SVG内の文字・線は必ずこのクラスで色を付ける（ダークモード対応のため直接の色指定はしない） */
+svg .t { fill: var(--ink); font-size: 14px; }
+svg .t-soft { fill: var(--ink-soft); font-size: 12px; }
+svg .t-strong { fill: var(--ink); font-size: 15px; font-weight: 700; }
+svg .ln { stroke: var(--line); stroke-width: 2; fill: none; }
+svg .ln-ink { stroke: var(--ink-soft); stroke-width: 1.5; fill: none; }
+svg .box { fill: var(--surface); stroke: var(--line); stroke-width: 1.5; }
+svg .phil { fill: var(--c-phil); } svg .hist { fill: var(--c-hist); } svg .econ { fill: var(--c-econ); }
+svg .reli { fill: var(--c-reli); } svg .sci { fill: var(--c-sci); } svg .art { fill: var(--c-art); }
+svg .poli { fill: var(--c-poli); } svg .psy { fill: var(--c-psy); } svg .jp { fill: var(--c-jp); }
+svg .s-phil { stroke: var(--c-phil); } svg .s-hist { stroke: var(--c-hist); } svg .s-econ { stroke: var(--c-econ); }
+svg .s-reli { stroke: var(--c-reli); } svg .s-sci { stroke: var(--c-sci); } svg .s-art { stroke: var(--c-art); }
+svg .s-poli { stroke: var(--c-poli); } svg .s-psy { stroke: var(--c-psy); } svg .s-jp { stroke: var(--c-jp); }
+svg .on-color { fill: #fff; font-size: 13px; font-weight: 700; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 16px 0; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; }
+.card h4 { margin: 0 0 6px; font-size: 16px; }
+.card p { margin: 0; font-size: 15px; }
+.card .tag { display: inline-block; font-size: 12px; padding: 0 8px; border-radius: 999px; background: var(--tint); color: var(--accent); margin-bottom: 6px; }
+.point { background: var(--tint); border-radius: var(--radius); padding: 12px 16px; margin: 16px 0; }
+.point strong { color: var(--accent); }
+.table-wrap { overflow-x: auto; margin: 16px 0; }
+table { border-collapse: collapse; width: 100%; min-width: 520px; background: var(--surface); font-size: 15px; }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: var(--tint); white-space: nowrap; }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 16px; margin: 10px 0; }
+details summary { cursor: pointer; font-weight: 700; }
+.next { margin-top: 48px; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.next a { display: block; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; color: var(--ink); text-decoration: none; }
+.next a span { display: block; font-size: 12px; color: var(--ink-soft); }
+footer { margin-top: 48px; font-size: 13px; color: var(--ink-soft); }
+@media (max-width: 480px) { h1 { font-size: 24px; } h2 { font-size: 20px; } }
+/* 図はスマホ幅で組んでいるので、PCで拡大しすぎないよう最大幅を抑える */
+figure.diagram svg { max-width: 520px; margin: 0 auto; }
+/* ダークでは分野色が明るくなるため、色の上の文字は暗くする */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) svg .on-color { fill: var(--bg); }
+  :root:not([data-theme="light"]) nav.top a[aria-current="page"] { color: var(--bg); }
+}
+:root[data-theme="dark"] svg .on-color { fill: var(--bg); }
+:root[data-theme="dark"] nav.top a[aria-current="page"] { color: var(--bg); }
+/* 考え方・用語の解説（dl.glossary） */
+main a { color: var(--accent); }
+.glossary { display: grid; gap: 10px; margin: 16px 0; }
+.glossary > div { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 16px; scroll-margin-top: 64px; }
+.glossary dt { font-weight: 700; }
+.glossary dt .who { font-weight: 400; font-size: 13px; color: var(--ink-soft); margin-left: 0.5em; }
+.glossary dd { margin: 4px 0 0; font-size: 15px; }
+/* politics固有 */
+.card .tag.poli-tag { background: rgba(61, 90, 128, 0.12); color: var(--c-poli); }
+</style>
+</head>
+<body>
+<nav class="top" aria-label="教養の図解">
+  <ul>
+    <li><a href="index.html">全体地図</a></li>
+    <li><a href="philosophy.html">哲学・思想史</a></li>
+    <li><a href="religion.html">宗教</a></li>
+    <li><a href="world-history.html">世界史</a></li>
+    <li><a href="japan.html">日本史・日本文化</a></li>
+    <li><a href="politics.html" aria-current="page">政治・法</a></li>
+    <li><a href="economics.html">経済・お金</a></li>
+    <li><a href="science.html">科学史</a></li>
+    <li><a href="psychology.html">心理学・脳</a></li>
+    <li><a href="art.html">芸術</a></li>
+  </ul>
+</nav>
+<main>
+  <header class="hero">
+    <div class="kicker">教養の図解</div>
+    <h1>政治・法・国際関係</h1>
+    <p class="lead">社会の決めごとを誰がどう決めるのかという政治の基本から、近代政治思想の系譜、政治的立場の地図、日本の統治と法の仕組み、国際関係の見方までを図で整理します。ニュースに出てくる制度や言葉の意味が分かることを目指します。</p>
+  </header>
+  <nav class="toc" aria-label="目次">
+    <ol>
+      <li><a href="#what">政治とは何か：権力と正統性</a></li>
+      <li><a href="#thought">近代政治思想の系譜</a></li>
+      <li><a href="#map">政治的立場の地図</a></li>
+      <li><a href="#gov">日本の統治の仕組み</a></li>
+      <li><a href="#law">法の基本と日本国憲法</a></li>
+      <li><a href="#world">国際関係の基本</a></li>
+      <li><a href="#news">ニュースの読み方</a></li>
+      <li><a href="#glossary">考え方・用語の解説</a></li>
+    </ol>
+  </nav>
+
+  <!-- 1. 政治とは何か -->
+  <h2 id="what">政治とは何か：権力と正統性</h2>
+  <p>社会には、税をいくら集めて何に使うか、何を禁止してどう罰するか、といった全員に関わる決めごとがあります。政治とは、こうした決めごとを<strong>誰が、どんな手続きで決め、どうやって守らせるか</strong>をめぐる営みです。</p>
+  <p>決めたことを守らせる力が<a href="#g-kenryoku">権力</a>です。ただし力だけでは長続きしません。人々が「この決定には従うべきだ」と認める理由、つまり<a href="#g-seitosei">正統性</a>があって初めて、権力は安定して働きます。ドイツの社会学者ウェーバーは、正統性の源を3つに分けました（<a href="#g-shihai">支配の3類型</a>）。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 476" role="img" aria-labelledby="fig1-t">
+      <title id="fig1-t">社会の課題から決定、権力と正統性までの流れ</title>
+      <defs>
+        <marker id="ah1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+          <path class="poli" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+      <rect class="box" x="30" y="10" width="300" height="84" rx="8"/>
+      <text class="t-strong" x="180" y="34" text-anchor="middle">社会の課題</text>
+      <text class="t-soft" x="180" y="56" text-anchor="middle">税をいくら集め、何に使うか</text>
+      <text class="t-soft" x="180" y="76" text-anchor="middle">何を禁止し、どう罰するか</text>
+      <line class="ln s-poli" x1="180" y1="94" x2="180" y2="117" marker-end="url(#ah1)"/>
+
+      <rect class="box" x="30" y="118" width="300" height="80" rx="8"/>
+      <text class="t-strong" x="180" y="142" text-anchor="middle">誰が・どんな手続きで決めるか</text>
+      <text class="t" x="180" y="164" text-anchor="middle">君主・一部の人・国民全体</text>
+      <text class="t-soft" x="180" y="184" text-anchor="middle">国民全体が決める仕組み＝民主主義</text>
+      <line class="ln s-poli" x1="180" y1="198" x2="180" y2="221" marker-end="url(#ah1)"/>
+
+      <rect class="poli" x="30" y="222" width="300" height="40" rx="8"/>
+      <text class="on-color" x="180" y="247" text-anchor="middle">決定：法律・予算・条約など</text>
+      <line class="ln s-poli" x1="140" y1="262" x2="95" y2="289" marker-end="url(#ah1)"/>
+      <line class="ln s-poli" x1="220" y1="262" x2="265" y2="289" marker-end="url(#ah1)"/>
+
+      <rect class="box" x="10" y="290" width="160" height="84" rx="8"/>
+      <rect class="poli" x="10" y="290" width="5" height="84"/>
+      <text class="t-strong" x="24" y="314">権力</text>
+      <text class="t" x="24" y="336">決定に従わせる力</text>
+      <text class="t-soft" x="24" y="358">警察・裁判・課税など</text>
+
+      <rect class="box" x="190" y="290" width="160" height="84" rx="8"/>
+      <rect class="poli" x="190" y="290" width="5" height="84"/>
+      <text class="t-strong" x="204" y="314">正統性</text>
+      <text class="t" x="204" y="336">従ってよいと</text>
+      <text class="t" x="204" y="356">人々が認める理由</text>
+
+      <text class="t-soft" x="180" y="398" text-anchor="middle">正統性の3つの源（ウェーバー）</text>
+      <rect class="box" x="10" y="408" width="108" height="60" rx="8"/>
+      <text class="t-strong" x="64" y="432" text-anchor="middle">伝統</text>
+      <text class="t-soft" x="64" y="454" text-anchor="middle">昔からの慣習</text>
+      <rect class="box" x="126" y="408" width="108" height="60" rx="8"/>
+      <text class="t-strong" x="180" y="432" text-anchor="middle">カリスマ</text>
+      <text class="t-soft" x="180" y="454" text-anchor="middle">指導者の非凡さ</text>
+      <rect class="box" x="242" y="408" width="108" height="60" rx="8"/>
+      <text class="t-strong" x="296" y="432" text-anchor="middle">合法性</text>
+      <text class="t-soft" x="296" y="454" text-anchor="middle">正しい手続き</text>
+    </svg>
+    <figcaption>図1 政治の基本構造。近代国家では、選挙や法律に基づく「合法性」が正統性の中心になっています</figcaption>
+  </figure>
+
+  <div class="point"><strong>ポイント：</strong>近代の民主国家は、<a href="#g-shuken">主権</a>（国の最終的な決定権）は国民にあるとし、国民が選んだ代表が決める<a href="#g-minshu">民主主義</a>をとっています。同時に、多数派でも憲法を破ってはならないという<a href="#g-rikken">立憲主義</a>や<a href="#g-hounoshihai">法の支配</a>で権力を縛ります。「多数で決める」と「多数でも越えられない線を引く」の2つがセットになっているのが特徴です。</div>
+
+  <!-- 2. 系譜 -->
+  <h2 id="thought">近代政治思想の系譜</h2>
+  <p>「国家はなぜあるのか」「権力はどう縛るべきか」という問いに、17〜18世紀の思想家たちは、国家は人々の合意（契約）でつくられたという<a href="#g-shakai">社会契約説</a>で答えました。その考えは市民革命と近代憲法の土台になり、19世紀以降は自由と平等のどちらをどう重んじるかで立場が分かれていきます。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 812" role="img" aria-labelledby="fig2-t">
+      <title id="fig2-t">社会契約説から現代のリベラルとリバタリアンまでの近代政治思想の系譜図</title>
+      <defs>
+        <marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+          <path class="poli" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+      <text class="t-strong poli" x="10" y="22">社会契約説（17〜18世紀）</text>
+      <text class="t-soft" x="10" y="40">色の枠＝社会契約説の思想家</text>
+
+      <!-- ホッブズ・ロック -->
+      <rect class="box s-poli" x="10" y="52" width="160" height="100" rx="8"/>
+      <text class="t-strong" x="22" y="76">ホッブズ</text>
+      <text class="t-soft" x="22" y="96">『リヴァイアサン』1651</text>
+      <text class="t" x="22" y="120">自然状態＝争い</text>
+      <text class="t" x="22" y="140">→強い国家に委ねる</text>
+
+      <rect class="box s-poli" x="190" y="52" width="160" height="100" rx="8"/>
+      <text class="t-strong" x="202" y="76">ロック</text>
+      <text class="t-soft" x="202" y="96">『統治二論』1690</text>
+      <text class="t" x="202" y="120">自然権を守る政府</text>
+      <text class="t" x="202" y="140">→抵抗権を認める</text>
+
+      <line class="ln s-poli" x1="170" y1="102" x2="189" y2="102" marker-end="url(#ah2)"/>
+
+      <!-- モンテスキュー・ルソー -->
+      <rect class="box" x="10" y="206" width="160" height="100" rx="8"/>
+      <text class="t-strong" x="22" y="230">モンテスキュー</text>
+      <text class="t-soft" x="22" y="250">『法の精神』1748</text>
+      <text class="t" x="22" y="274">立法・行政・司法</text>
+      <text class="t" x="22" y="294">→三権分立</text>
+
+      <rect class="box s-poli" x="190" y="206" width="160" height="100" rx="8"/>
+      <text class="t-strong" x="202" y="230">ルソー</text>
+      <text class="t-soft" x="202" y="250">『社会契約論』1762</text>
+      <text class="t" x="202" y="274">一般意志に従う</text>
+      <text class="t" x="202" y="294">→人民主権</text>
+
+      <line class="ln s-poli" x1="220" y1="152" x2="142" y2="205" marker-end="url(#ah2)"/>
+      <line class="ln s-poli" x1="300" y1="152" x2="300" y2="205" marker-end="url(#ah2)"/>
+
+      <!-- 市民革命 -->
+      <rect class="box" x="10" y="330" width="340" height="50" rx="8"/>
+      <text class="t-strong" x="180" y="352" text-anchor="middle">市民革命と近代憲法</text>
+      <text class="t-soft" x="180" y="370" text-anchor="middle">アメリカ独立（1776）・フランス革命（1789）</text>
+      <line class="ln s-poli" x1="90" y1="306" x2="115" y2="329" marker-end="url(#ah2)"/>
+      <line class="ln s-poli" x1="270" y1="306" x2="245" y2="329" marker-end="url(#ah2)"/>
+
+      <!-- 19世紀の3つの流れ -->
+      <line class="ln s-poli" x1="100" y1="380" x2="66" y2="429" marker-end="url(#ah2)"/>
+      <line class="ln s-poli" x1="180" y1="380" x2="180" y2="429" marker-end="url(#ah2)"/>
+      <line class="ln s-poli" x1="260" y1="380" x2="294" y2="429" marker-end="url(#ah2)"/>
+
+      <rect class="box" x="10" y="430" width="108" height="102" rx="8"/>
+      <text class="t-strong" x="20" y="452">自由主義</text>
+      <text class="t-soft" x="20" y="474">ミル 1859</text>
+      <text class="t" x="20" y="498">個人の自由と</text>
+      <text class="t" x="20" y="518">権力の制限</text>
+
+      <rect class="box" x="126" y="430" width="108" height="102" rx="8"/>
+      <text class="t-strong" x="136" y="452">保守主義</text>
+      <text class="t-soft" x="136" y="474">バーク 1790</text>
+      <text class="t" x="136" y="498">急な変革より</text>
+      <text class="t" x="136" y="518">段階的改革</text>
+
+      <rect class="box" x="242" y="430" width="108" height="102" rx="8"/>
+      <text class="t-strong" x="252" y="452">社会主義</text>
+      <text class="t-soft" x="252" y="474">マルクスら 1848</text>
+      <text class="t" x="252" y="498">生産手段の</text>
+      <text class="t" x="252" y="518">共有を目指す</text>
+
+      <line class="ln s-poli" x1="50" y1="532" x2="70" y2="579" marker-end="url(#ah2)"/>
+      <line class="ln s-poli" x1="100" y1="532" x2="232" y2="579" marker-end="url(#ah2)"/>
+
+      <!-- 20世紀後半 -->
+      <rect class="box" x="10" y="580" width="160" height="136" rx="8"/>
+      <text class="t-strong poli" x="22" y="602">リベラリズム</text>
+      <text class="t" x="22" y="624">ロールズ</text>
+      <text class="t-soft" x="22" y="644">『正義論』1971</text>
+      <text class="t" x="22" y="684">格差は最も不遇な</text>
+      <text class="t" x="22" y="704">人の利益になる時だけ</text>
+
+      <rect class="box" x="190" y="580" width="160" height="136" rx="8"/>
+      <text class="t-strong poli" x="202" y="602">リバタリアニズム</text>
+      <text class="t" x="202" y="624">ノージック</text>
+      <text class="t-soft" x="202" y="644">『アナーキー・国家・</text>
+      <text class="t-soft" x="202" y="660">ユートピア』1974</text>
+      <text class="t" x="202" y="684">課税による再分配は</text>
+      <text class="t" x="202" y="704">自由の侵害と批判</text>
+
+      <line class="ln s-poli" x1="190" y1="664" x2="171" y2="664" marker-end="url(#ah2)"/>
+
+      <!-- 共同体主義 -->
+      <rect class="box" x="10" y="740" width="340" height="62" rx="8"/>
+      <text class="t-strong" x="180" y="764" text-anchor="middle">共同体主義（サンデルら）</text>
+      <text class="t-soft" x="180" y="786" text-anchor="middle">「何にも縛られない個人」という前提を批判</text>
+      <line class="ln s-poli" x1="90" y1="716" x2="130" y2="739" marker-end="url(#ah2)"/>
+      <line class="ln s-poli" x1="270" y1="716" x2="230" y2="739" marker-end="url(#ah2)"/>
+    </svg>
+    <figcaption>図2 近代政治思想の系譜。矢印は主な影響・継承（批判を含む）。19世紀の3つの流れは市民革命後の社会をどう進めるかをめぐって分かれ、ノージックからロールズへの短い矢印は批判を表します</figcaption>
+  </figure>
+
+  <div class="cards">
+    <div class="card"><span class="tag poli-tag">17世紀・イギリス</span><h4>ホッブズ</h4><p>国家がない<a href="#g-shizenjotai">自然状態</a>では、人々は自分を守るために互いに争い合うと考えました。平和のために、人々は契約によって強い主権者に権利を委ねるべきだとしました。</p><p><strong>考え方：</strong><a href="#g-shakai">社会契約説</a>／<a href="#g-shizenjotai">自然状態</a></p></div>
+    <div class="card"><span class="tag poli-tag">17世紀・イギリス</span><h4>ロック</h4><p>人は生まれながらに生命・自由・財産の権利を持ち、政府はそれを守るために人々の信託でつくられると考えました。政府が権利を侵せば、人民は政府をつくり替えてよいとしました。</p><p><strong>考え方：</strong><a href="#g-shizenken">自然権</a>／<a href="#g-teikoken">抵抗権</a></p></div>
+    <div class="card"><span class="tag poli-tag">18世紀・フランス</span><h4>モンテスキュー</h4><p>権力を1か所に集めると必ず濫用されると考え、立法・行政・司法を別の機関に分けて互いに抑えさせる仕組みを説きました。アメリカ合衆国憲法などに大きな影響を与えました。</p><p><strong>考え方：</strong><a href="#g-sanken">三権分立</a></p></div>
+    <div class="card"><span class="tag poli-tag">18世紀・フランス</span><h4>ルソー</h4><p>人々が全員で契約を結び、共同体全体の利益をめざす意志に従うことで、真の自由が得られると考えました。主権は人民にあり、代表に譲り渡せないとしました。</p><p><strong>考え方：</strong><a href="#g-ippan">一般意志</a>／<a href="#g-jinmin">人民主権</a></p></div>
+    <div class="card"><span class="tag poli-tag">18世紀・イギリス</span><h4>バーク</h4><p>フランス革命が理性の設計図だけで社会を一気に作り替えようとしたことを批判しました。長い時間をかけて受け継がれた制度や慣習には知恵が含まれているとして、少しずつ改める道を説きました。</p><p><strong>考え方：</strong><a href="#g-hoshu">保守主義</a></p></div>
+    <div class="card"><span class="tag poli-tag">19世紀・イギリス</span><h4>J.S.ミル</h4><p>『自由論』（1859）で、他人に危害を加えない限り個人の言論や生き方に社会は干渉すべきでないと論じました。多数派の意見が少数派を押しつぶす危険にも注意を促しました。</p><p><strong>考え方：</strong><a href="#g-jiyu">自由主義</a>／<a href="#g-kigai">危害原理</a></p></div>
+    <div class="card"><span class="tag poli-tag">19世紀・ドイツ</span><h4>マルクス</h4><p>エンゲルスとの『共産党宣言』（1848）などで、資本主義では工場や土地を持つ側と労働者の間に構造的な格差が生まれると分析しました。生産手段を社会全体で持つ社会を構想しました。</p><p><strong>考え方：</strong><a href="#g-shakaishugi">社会主義</a>／<a href="#g-shamin">社会民主主義</a>（議会を通じた改革の流れ）</p></div>
+    <div class="card"><span class="tag poli-tag">20世紀・アメリカ</span><h4>ロールズ</h4><p>自分がどんな立場に生まれるか分からないとしたら、人はどんな社会のルールを選ぶかを考えました。その答えとして、基本的な自由の平等と、格差は最も恵まれない人の利益になる場合に限り認める原理を示しました。</p><p><strong>考え方：</strong><a href="#g-seigi">正義論（無知のヴェール・格差原理）</a>／<a href="#g-liberal">リベラリズム</a></p></div>
+    <div class="card"><span class="tag poli-tag">20世紀・アメリカ</span><h4>ノージック</h4><p>正当に手に入れた財産は本人のもので、再分配のための課税はその権利を侵すとしてロールズを批判しました。国家の役割は治安・国防・契約の保護などに限るべきだとしました。</p><p><strong>考え方：</strong><a href="#g-libertarian">リバタリアニズム</a>／<a href="#g-saisho">最小国家</a></p></div>
+    <div class="card"><span class="tag poli-tag">20世紀後半〜・アメリカ</span><h4>サンデルら</h4><p>人は家族や地域、国といった共同体の中で育ち、そこで価値観を身につけると指摘しました。ロールズらの議論は、共同体から切り離された個人を前提にしすぎていると批判しました。</p><p><strong>考え方：</strong><a href="#g-kyodotai">共同体主義</a></p></div>
+  </div>
+
+  <!-- 3. 立場の地図 -->
+  <h2 id="map">政治的立場の地図</h2>
+  <p>政治的な立場は「右・左」の1本の線で語られがちですが、経済の問題と社会の問題を分けて2本の軸で見ると整理しやすくなります。横軸は、経済をできるだけ市場に任せるか、税や社会保障による<a href="#g-saibunpai">再分配</a>を重視するか。縦軸は、伝統や共同体の秩序を重視するか、個人の生き方の自由を重視するかです。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 396" role="img" aria-labelledby="fig3-t">
+      <title id="fig3-t">経済の軸と社会の軸で見た主な政治的立場の位置</title>
+      <defs>
+        <marker id="ah3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+          <path class="poli" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+      <text class="t-strong" x="180" y="24" text-anchor="middle">伝統・秩序を重視</text>
+      <rect class="box" x="20" y="36" width="320" height="300" rx="8"/>
+      <line class="ln s-poli" x1="180" y1="40" x2="180" y2="332" marker-start="url(#ah3)" marker-end="url(#ah3)"/>
+      <line class="ln s-poli" x1="24" y1="186" x2="336" y2="186" marker-start="url(#ah3)" marker-end="url(#ah3)"/>
+      <text class="t-strong" x="180" y="358" text-anchor="middle">個人の自由を重視</text>
+      <text class="t-strong" x="20" y="386">← 市場を重視</text>
+      <text class="t-strong" x="340" y="386" text-anchor="end">再分配を重視 →</text>
+
+      <!-- 左上 -->
+      <circle class="poli" cx="56" cy="80" r="7"/>
+      <text class="t" x="70" y="85">保守主義</text>
+      <text class="t-soft" x="70" y="104">伝統・秩序と市場</text>
+      <!-- 右上 -->
+      <circle class="poli" cx="214" cy="80" r="7"/>
+      <text class="t" x="228" y="85">共同体主義</text>
+      <text class="t-soft" x="228" y="104">共同体の絆</text>
+      <!-- 右・中ほど -->
+      <circle class="poli" cx="316" cy="146" r="7"/>
+      <text class="t" x="302" y="151" text-anchor="end">社会主義</text>
+      <text class="t-soft" x="302" y="170" text-anchor="end">生産手段の共有</text>
+      <!-- 右下 -->
+      <circle class="poli" cx="300" cy="224" r="7"/>
+      <text class="t" x="286" y="229" text-anchor="end">社会民主主義</text>
+      <circle class="poli" cx="250" cy="270" r="7"/>
+      <text class="t" x="264" y="275">リベラル</text>
+      <text class="t-soft" x="330" y="296" text-anchor="end">再分配＋個人の自由</text>
+      <!-- 左下 -->
+      <circle class="poli" cx="44" cy="276" r="7"/>
+      <text class="t" x="36" y="302">リバタリアニズム</text>
+      <text class="t-soft" x="36" y="321">市場＋個人の自由</text>
+    </svg>
+    <figcaption>図3 2つの軸で見た立場の位置（目安）。国・時代・争点によって位置は変わり、図はどれが正しいかを示すものではありません</figcaption>
+  </figure>
+
+  <div class="cards">
+    <div class="card"><h4>保守主義（左上）</h4><p>受け継がれてきた制度・家族観・慣習を重んじ、変化は少しずつ進めるべきだと考えます。経済では市場や自助を重視する立場と結びつくことが多くあります。</p><p><a href="#g-hoshu">保守主義の解説へ</a></p></div>
+    <div class="card"><h4>リバタリアニズム（左下）</h4><p>経済でも生き方でも、国家の介入をできるだけ小さくすべきだと考えます。税や規制を減らし、個人の選択に委ねることを重視します。</p><p><a href="#g-libertarian">リバタリアニズムの解説へ</a></p></div>
+    <div class="card"><h4>リベラル・社会民主主義（右下）</h4><p>個人の多様な生き方を尊重しつつ、教育・医療・社会保障などを通じた再分配で、実際に選べる機会を広げるべきだと考えます。</p><p><a href="#g-liberal">リベラリズムの解説へ</a>／<a href="#g-shamin">社会民主主義の解説へ</a></p></div>
+    <div class="card"><h4>共同体主義・社会主義（右上〜右）</h4><p>共同体の絆や連帯を重んじ、市場だけに任せると共同体や生活が壊れると考えます。社会主義はさらに、生産の仕組みそのものを変えることを目指します。</p><p><a href="#g-kyodotai">共同体主義の解説へ</a>／<a href="#g-shakaishugi">社会主義の解説へ</a></p></div>
+  </div>
+
+  <div class="point"><strong>言葉の使われ方に注意：</strong>「リベラル」「保守」の意味は国によって違います。アメリカで「リベラル」といえば再分配と個人の自由を重視する立場を指し、ヨーロッパでは市場重視の立場を「リベラル」と呼ぶこともあります。日本では、経済政策よりも憲法・安全保障・外交への考え方で「保守」「リベラル」が分けられることが多く、この2軸に収まらない第3の軸として見るとニュースを整理しやすくなります。</div>
+
+  <!-- 4. 日本の統治 -->
+  <h2 id="gov">日本の統治の仕組み</h2>
+  <p>日本国憲法は、国会（立法）・内閣（行政）・裁判所（司法）の<a href="#g-sanken">三権分立</a>をとり、3つの機関が互いに抑え合う仕組みを定めています。そして主権者である国民が、選挙・世論・国民審査を通じて3つの機関に関わります。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 654" role="img" aria-labelledby="fig4-t">
+      <title id="fig4-t">日本の三権分立と国民の関係</title>
+      <defs>
+        <marker id="ah4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+          <path class="poli" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+      <!-- 機関 -->
+      <rect class="box s-poli" x="100" y="10" width="160" height="80" rx="8"/>
+      <text class="t-strong" x="180" y="36" text-anchor="middle">国会（立法）</text>
+      <text class="t" x="180" y="58" text-anchor="middle">衆議院・参議院</text>
+      <text class="t-soft" x="180" y="78" text-anchor="middle">国権の最高機関</text>
+
+      <rect class="poli" x="115" y="200" width="130" height="50" rx="8"/>
+      <text class="on-color" x="180" y="222" text-anchor="middle">国民</text>
+      <text class="on-color" x="180" y="240" text-anchor="middle">（主権者）</text>
+
+      <rect class="box s-poli" x="10" y="330" width="140" height="80" rx="8"/>
+      <text class="t-strong" x="80" y="356" text-anchor="middle">内閣（行政）</text>
+      <text class="t" x="80" y="378" text-anchor="middle">首相と</text>
+      <text class="t" x="80" y="398" text-anchor="middle">国務大臣</text>
+
+      <rect class="box s-poli" x="210" y="330" width="140" height="80" rx="8"/>
+      <text class="t-strong" x="280" y="356" text-anchor="middle">裁判所（司法）</text>
+      <text class="t" x="280" y="378" text-anchor="middle">最高裁判所と</text>
+      <text class="t" x="280" y="398" text-anchor="middle">下級裁判所</text>
+
+      <!-- 矢印 -->
+      <line class="ln s-poli" x1="110" y1="90" x2="31" y2="328" marker-end="url(#ah4)"/>
+      <line class="ln s-poli" x1="55" y1="330" x2="129" y2="92" marker-end="url(#ah4)"/>
+      <line class="ln s-poli" x1="250" y1="90" x2="329" y2="328" marker-end="url(#ah4)"/>
+      <line class="ln s-poli" x1="305" y1="330" x2="231" y2="92" marker-end="url(#ah4)"/>
+      <line class="ln s-poli" x1="150" y1="355" x2="208" y2="355" marker-end="url(#ah4)"/>
+      <line class="ln s-poli" x1="210" y1="385" x2="152" y2="385" marker-end="url(#ah4)"/>
+      <line class="ln s-poli" x1="180" y1="200" x2="180" y2="92" marker-end="url(#ah4)"/>
+      <line class="ln s-poli" x1="140" y1="250" x2="101" y2="328" marker-end="url(#ah4)"/>
+      <line class="ln s-poli" x1="220" y1="250" x2="259" y2="328" marker-end="url(#ah4)"/>
+
+      <!-- 番号 -->
+      <g>
+        <circle class="poli" cx="86" cy="162" r="10"/><text class="on-color" x="86" y="167" text-anchor="middle">1</text>
+        <circle class="poli" cx="78" cy="258" r="10"/><text class="on-color" x="78" y="263" text-anchor="middle">2</text>
+        <circle class="poli" cx="274" cy="162" r="10"/><text class="on-color" x="274" y="167" text-anchor="middle">3</text>
+        <circle class="poli" cx="282" cy="258" r="10"/><text class="on-color" x="282" y="263" text-anchor="middle">4</text>
+        <circle class="poli" cx="180" cy="355" r="10"/><text class="on-color" x="180" y="360" text-anchor="middle">5</text>
+        <circle class="poli" cx="180" cy="385" r="10"/><text class="on-color" x="180" y="390" text-anchor="middle">6</text>
+        <circle class="poli" cx="180" cy="146" r="10"/><text class="on-color" x="180" y="151" text-anchor="middle">7</text>
+        <circle class="poli" cx="120" cy="290" r="10"/><text class="on-color" x="120" y="295" text-anchor="middle">8</text>
+        <circle class="poli" cx="240" cy="290" r="10"/><text class="on-color" x="240" y="295" text-anchor="middle">9</text>
+      </g>
+
+      <!-- 凡例 -->
+      <line class="ln" x1="10" y1="430" x2="350" y2="430"/>
+      <g>
+        <circle class="poli" cx="22" cy="451" r="9"/><text class="on-color" x="22" y="456" text-anchor="middle">1</text>
+        <text class="t" x="40" y="456">国会→内閣：首相を指名／不信任決議</text>
+        <circle class="poli" cx="22" cy="475" r="9"/><text class="on-color" x="22" y="480" text-anchor="middle">2</text>
+        <text class="t" x="40" y="480">内閣→国会：衆議院の解散</text>
+        <circle class="poli" cx="22" cy="499" r="9"/><text class="on-color" x="22" y="504" text-anchor="middle">3</text>
+        <text class="t" x="40" y="504">国会→裁判所：弾劾裁判</text>
+        <circle class="poli" cx="22" cy="523" r="9"/><text class="on-color" x="22" y="528" text-anchor="middle">4</text>
+        <text class="t" x="40" y="528">裁判所→国会：違憲立法審査</text>
+        <circle class="poli" cx="22" cy="547" r="9"/><text class="on-color" x="22" y="552" text-anchor="middle">5</text>
+        <text class="t" x="40" y="552">内閣→裁判所：裁判官の指名・任命</text>
+        <circle class="poli" cx="22" cy="571" r="9"/><text class="on-color" x="22" y="576" text-anchor="middle">6</text>
+        <text class="t" x="40" y="576">裁判所→内閣：行政の違憲・違法審査</text>
+        <circle class="poli" cx="22" cy="595" r="9"/><text class="on-color" x="22" y="600" text-anchor="middle">7</text>
+        <text class="t" x="40" y="600">国民→国会：選挙</text>
+        <circle class="poli" cx="22" cy="619" r="9"/><text class="on-color" x="22" y="624" text-anchor="middle">8</text>
+        <text class="t" x="40" y="624">国民→内閣：世論（支持・不支持）</text>
+        <circle class="poli" cx="22" cy="643" r="9"/><text class="on-color" x="22" y="648" text-anchor="middle">9</text>
+        <text class="t" x="40" y="648">国民→裁判所：最高裁裁判官の国民審査</text>
+      </g>
+    </svg>
+    <figcaption>図4 日本の三権分立。番号の矢印が、ほかの機関を抑える働きを表します</figcaption>
+  </figure>
+
+  <p>図の働きにはそれぞれ名前があります。国会による<a href="#g-fushinnin">内閣不信任決議</a>と内閣による<a href="#g-kaisan">衆議院の解散</a>、国会が裁判官を裁く<a href="#g-dangai">弾劾裁判</a>、裁判所が法律や行政の行為を憲法に照らして判断する<a href="#g-iken">違憲審査権</a>、国民が最高裁判所の裁判官を辞めさせるかを投票する<a href="#g-kokuminshinsa">国民審査</a>です。</p>
+
+  <h3>議院内閣制・大統領制・地方自治</h3>
+  <p>日本の国の政治は、国会の信任の上に内閣が成り立つ<a href="#g-giin">議院内閣制</a>です。アメリカの<a href="#g-daitoryo">大統領制</a>とは、行政のトップの選ばれ方が違います。一方、都道府県や市町村の<a href="#g-chiho">地方自治</a>は、首長と議会を住民が別々に選ぶ<a href="#g-nigen">二元代表制</a>で、大統領制に近い形です。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 560" role="img" aria-labelledby="fig5-t">
+      <title id="fig5-t">議院内閣制、大統領制、地方自治の二元代表制の比較</title>
+      <defs>
+        <marker id="ah5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+          <path class="poli" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+      <!-- 議院内閣制 -->
+      <text class="t-strong poli" x="10" y="24">議院内閣制（日本・イギリスなど）</text>
+      <rect class="poli" x="10" y="54" width="84" height="44" rx="8"/>
+      <text class="on-color" x="52" y="81" text-anchor="middle">国民</text>
+      <rect class="box s-poli" x="138" y="54" width="84" height="44" rx="8"/>
+      <text class="t-strong" x="180" y="81" text-anchor="middle">議会</text>
+      <rect class="box s-poli" x="266" y="54" width="84" height="44" rx="8"/>
+      <text class="t-strong" x="308" y="81" text-anchor="middle">内閣</text>
+      <text class="t-soft" x="116" y="48" text-anchor="middle">選挙</text>
+      <line class="ln s-poli" x1="94" y1="68" x2="136" y2="68" marker-end="url(#ah5)"/>
+      <text class="t-soft" x="244" y="48" text-anchor="middle">首相指名</text>
+      <line class="ln s-poli" x1="222" y1="68" x2="264" y2="68" marker-end="url(#ah5)"/>
+      <line class="ln s-poli" x1="266" y1="88" x2="224" y2="88" stroke-dasharray="4 3" marker-end="url(#ah5)"/>
+      <text class="t-soft" x="244" y="116" text-anchor="middle">解散</text>
+      <text class="t" x="10" y="146">内閣は議会の信任で成り立ち、</text>
+      <text class="t" x="10" y="166">議会の多数派（与党）と一体になりやすい</text>
+
+      <line class="ln" x1="10" y1="186" x2="350" y2="186"/>
+
+      <!-- 大統領制 -->
+      <text class="t-strong poli" x="10" y="212">大統領制（アメリカなど）</text>
+      <rect class="poli" x="10" y="250" width="84" height="56" rx="8"/>
+      <text class="on-color" x="52" y="283" text-anchor="middle">国民</text>
+      <rect class="box s-poli" x="200" y="228" width="150" height="40" rx="8"/>
+      <text class="t-strong" x="275" y="253" text-anchor="middle">議会</text>
+      <rect class="box s-poli" x="200" y="288" width="150" height="40" rx="8"/>
+      <text class="t-strong" x="275" y="313" text-anchor="middle">大統領</text>
+      <line class="ln s-poli" x1="94" y1="264" x2="198" y2="248" marker-end="url(#ah5)"/>
+      <line class="ln s-poli" x1="94" y1="292" x2="198" y2="308" marker-end="url(#ah5)"/>
+      <text class="t-soft" x="146" y="284" text-anchor="middle">別々に選挙</text>
+      <text class="t" x="10" y="356">大統領は議会を解散できず、議会も</text>
+      <text class="t" x="10" y="376">原則として大統領を不信任できない</text>
+
+      <line class="ln" x1="10" y1="396" x2="350" y2="396"/>
+
+      <!-- 地方自治 -->
+      <text class="t-strong poli" x="10" y="422">地方自治（二元代表制）</text>
+      <rect class="poli" x="10" y="460" width="84" height="56" rx="8"/>
+      <text class="on-color" x="52" y="493" text-anchor="middle">住民</text>
+      <rect class="box s-poli" x="200" y="438" width="150" height="40" rx="8"/>
+      <text class="t-strong" x="275" y="463" text-anchor="middle">地方議会</text>
+      <rect class="box s-poli" x="200" y="498" width="150" height="40" rx="8"/>
+      <text x="275" y="523" text-anchor="middle"><tspan class="t-strong">首長</tspan><tspan class="t-soft" dx="6">知事・市長など</tspan></text>
+      <line class="ln s-poli" x1="94" y1="474" x2="198" y2="458" marker-end="url(#ah5)"/>
+      <line class="ln s-poli" x1="94" y1="502" x2="198" y2="518" marker-end="url(#ah5)"/>
+      <text class="t-soft" x="146" y="494" text-anchor="middle">別々に選挙</text>
+      <text class="t-soft" x="10" y="554">議会は首長の不信任、首長は議会の解散ができる</text>
+    </svg>
+    <figcaption>図5 行政のトップの選ばれ方の違い。日本の国政は議院内閣制、地方自治は大統領制に近い二元代表制です</figcaption>
+  </figure>
+
+  <h3>衆議院と参議院の違い</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>項目</th><th>衆議院</th><th>参議院</th></tr></thead>
+      <tbody>
+        <tr><td>任期</td><td>4年（解散があれば途中で終わる）</td><td>6年（3年ごとに半数を改選）</td></tr>
+        <tr><td>解散</td><td>ある</td><td>ない</td></tr>
+        <tr><td>立候補できる年齢</td><td>25歳以上</td><td>30歳以上</td></tr>
+        <tr><td>選挙の仕組み</td><td>小選挙区比例代表並立制</td><td>選挙区と比例代表</td></tr>
+        <tr><td>権限</td><td>予算・条約・首相指名・法律で優越する</td><td>慎重な審議で衆議院を補う</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>衆議院は任期が短く解散もあるため、そのときの民意をより反映するとされ、議決が両院で食い違った場合に衆議院の議決を優先する<a href="#g-yuetsu">衆議院の優越</a>が定められています。選挙権は18歳以上の国民が持ちます。</p>
+
+  <!-- 5. 法の基本 -->
+  <h2 id="law">法の基本と日本国憲法</h2>
+  <p>法にはランクがあり、上位の法に反する下位の法は効力を持ちません。頂点にある憲法は<a href="#g-saikohoki">最高法規</a>で、その下に国会がつくる<a href="#g-horitsu">法律</a>、内閣や大臣が法律を実施するために定める<a href="#g-meirei">命令</a>（政令・省令）が続きます。地方公共団体は法律の範囲内で<a href="#g-jorei">条例</a>をつくれます。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 330" role="img" aria-labelledby="fig6-t">
+      <title id="fig6-t">憲法・法律・命令・条例の階層</title>
+      <defs>
+        <marker id="ah6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+          <path class="poli" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+      <polygon class="poli" points="100,20 160,20 180,80 80,80"/>
+      <text class="on-color" x="130" y="55" text-anchor="middle">憲法</text>
+
+      <polygon class="box s-poli" points="78,84 182,84 202,144 58,144"/>
+      <text class="t-strong" x="130" y="110" text-anchor="middle">法律</text>
+      <text class="t-soft" x="130" y="130" text-anchor="middle">国会が制定</text>
+
+      <polygon class="box s-poli" points="56,148 204,148 224,208 36,208"/>
+      <text class="t-strong" x="130" y="174" text-anchor="middle">命令</text>
+      <text class="t-soft" x="130" y="194" text-anchor="middle">政令（内閣）・省令（大臣）</text>
+
+      <polygon class="box s-poli" points="34,212 226,212 246,272 14,272"/>
+      <text class="t-strong" x="130" y="238" text-anchor="middle">条例</text>
+      <text class="t-soft" x="130" y="258" text-anchor="middle">地方議会が法律の範囲内で</text>
+
+      <line class="ln s-poli" x1="262" y1="30" x2="262" y2="262" marker-end="url(#ah6)"/>
+      <text class="t-soft" x="270" y="40">上位</text>
+      <text class="t-soft" x="270" y="270">下位</text>
+      <text class="t-soft" x="272" y="122">上の法に</text>
+      <text class="t-soft" x="272" y="140">反する下の</text>
+      <text class="t-soft" x="272" y="158">法は効力を</text>
+      <text class="t-soft" x="272" y="176">持たない</text>
+
+      <text class="t-soft" x="14" y="300">条約は一般に、憲法より下で法律より上と</text>
+      <text class="t-soft" x="14" y="318">解されています</text>
+    </svg>
+    <figcaption>図6 日本の法の階層。違憲審査によって、憲法に反する法律や命令は裁判所が無効と判断できます</figcaption>
+  </figure>
+
+  <h3>公法と私法、刑事と民事</h3>
+  <p>法は、国と個人の関係を定める<a href="#g-koho">公法</a>と、個人どうしの関係を定める<a href="#g-koho">私法</a>に分けられます。裁判も、国が犯罪を裁く<a href="#g-keiji">刑事裁判</a>と、個人や会社どうしの争いを解決する<a href="#g-minji">民事裁判</a>で手続きがまったく違います。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 430" role="img" aria-labelledby="fig7-t">
+      <title id="fig7-t">公法と私法、刑事裁判と民事裁判の違い</title>
+      <defs>
+        <marker id="ah7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+          <path class="poli" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+      <rect class="box" x="10" y="10" width="160" height="90" rx="8"/>
+      <rect class="poli" x="10" y="10" width="5" height="90"/>
+      <text class="t-strong" x="24" y="34">公法</text>
+      <text class="t" x="24" y="58">国と個人の関係</text>
+      <text class="t-soft" x="24" y="82">憲法・刑法・行政法</text>
+      <rect class="box" x="190" y="10" width="160" height="90" rx="8"/>
+      <rect class="poli" x="190" y="10" width="5" height="90"/>
+      <text class="t-strong" x="204" y="34">私法</text>
+      <text class="t" x="204" y="58">個人どうしの関係</text>
+      <text class="t-soft" x="204" y="82">民法・商法</text>
+
+      <text class="t-soft" x="180" y="128" text-anchor="middle">例：同じ交通事故から2つの裁判が起こりうる</text>
+      <rect class="poli" x="50" y="140" width="260" height="40" rx="8"/>
+      <text class="on-color" x="180" y="165" text-anchor="middle">運転中の事故で人にけがをさせた</text>
+      <line class="ln s-poli" x1="130" y1="180" x2="95" y2="217" marker-end="url(#ah7)"/>
+      <line class="ln s-poli" x1="230" y1="180" x2="265" y2="217" marker-end="url(#ah7)"/>
+
+      <rect class="box s-poli" x="10" y="218" width="160" height="140" rx="8"/>
+      <text class="t-strong" x="24" y="242">刑事裁判</text>
+      <text class="t" x="24" y="268">訴える：検察官</text>
+      <text class="t" x="24" y="290">相手：被告人</text>
+      <text class="t" x="24" y="312">争点：罪と刑罰</text>
+      <text class="t-soft" x="24" y="338">根拠：刑法など</text>
+
+      <rect class="box s-poli" x="190" y="218" width="160" height="140" rx="8"/>
+      <text class="t-strong" x="204" y="242">民事裁判</text>
+      <text class="t" x="204" y="268">訴える：原告</text>
+      <text class="t" x="204" y="290">相手：被告</text>
+      <text class="t" x="204" y="312">争点：損害賠償など</text>
+      <text class="t-soft" x="204" y="338">根拠：民法など</text>
+
+      <text class="t-soft" x="180" y="388" text-anchor="middle">刑事＝国が罰を科すかを決める手続き</text>
+      <text class="t-soft" x="180" y="408" text-anchor="middle">民事＝当事者どうしの争いを解決する手続き</text>
+    </svg>
+    <figcaption>図7 公法・私法と、刑事・民事の違い。刑事で無罪でも、民事で賠償を命じられることがあります</figcaption>
+  </figure>
+
+  <p>刑事裁判には、何が犯罪でどんな刑になるかを前もって法律で決めておく<a href="#g-zaikei">罪刑法定主義</a>や、有罪が確定するまで無罪として扱う<a href="#g-suitei">推定無罪</a>の原則があります。国が強い力で個人を罰する場面だからこそ、手続きで縛っています。</p>
+
+  <h3>日本国憲法の三大原則</h3>
+  <p>日本国憲法は1946年11月3日に公布、1947年5月3日に施行されました。次の3つが基本原則とされます。</p>
+  <div class="cards">
+    <div class="card"><span class="tag poli-tag">前文・第1条</span><h4>国民主権</h4><p>国の政治のあり方を最終的に決めるのは国民です。天皇は日本国と日本国民統合の「象徴」とされ、政治の権限を持ちません。</p><p><a href="#g-kokuminshuken">国民主権の解説へ</a></p></div>
+    <div class="card"><span class="tag poli-tag">第3章</span><h4>基本的人権の尊重</h4><p>表現の自由・信教の自由などの自由権、生存権などの社会権、選挙権などの参政権を、侵すことのできない永久の権利として保障しています。</p><p><a href="#g-jinken">基本的人権の尊重の解説へ</a></p></div>
+    <div class="card"><span class="tag poli-tag">前文・第9条</span><h4>平和主義</h4><p>戦争の放棄、戦力を持たないこと、交戦権を認めないことを定めています。自衛隊や安全保障政策との関係については、解釈をめぐる議論が続いてきました。</p><p><a href="#g-heiwa">平和主義の解説へ</a></p></div>
+  </div>
+
+  <!-- 6. 国際関係 -->
+  <h2 id="world">国際関係の基本</h2>
+  <p>国内には法律を守らせる政府がありますが、国際社会には各国の上に立って強制する世界政府がありません。17世紀のヨーロッパで成立した<a href="#g-shukenkokka">主権国家体制</a>のもとでは、国どうしは対等で、互いの国内問題に口を出さないのが原則です（<a href="#g-naiseifukansho">内政不干渉</a>）。そのうえで、ルールや協力の場として<a href="#g-kokuren">国際連合</a>などの<a href="#g-kokusaikikan">国際機関</a>がつくられてきました。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 548" role="img" aria-labelledby="fig8-t">
+      <title id="fig8-t">主権国家体制と国際連合の総会・安全保障理事会の仕組み</title>
+      <rect class="poli" x="10" y="10" width="340" height="40" rx="8"/>
+      <text class="on-color" x="180" y="35" text-anchor="middle">主権国家体制（1648年のウェストファリア条約から）</text>
+      <text class="t-soft" x="180" y="72" text-anchor="middle">国の上に強制力を持つ世界政府はない</text>
+
+      <rect class="box s-poli" x="10" y="88" width="160" height="100" rx="8"/>
+      <text class="t-strong" x="90" y="112" text-anchor="middle">国連総会</text>
+      <text class="t" x="90" y="136" text-anchor="middle">全加盟国が参加</text>
+      <text class="t" x="90" y="156" text-anchor="middle">1国1票</text>
+      <text class="t-soft" x="90" y="178" text-anchor="middle">決議は主に勧告</text>
+
+      <rect class="box s-poli" x="190" y="88" width="160" height="100" rx="8"/>
+      <text class="t-strong" x="270" y="112" text-anchor="middle">安全保障理事会</text>
+      <text class="t" x="270" y="136" text-anchor="middle">15か国</text>
+      <text class="t" x="270" y="156" text-anchor="middle">平和と安全を担当</text>
+      <text class="t-soft" x="270" y="178" text-anchor="middle">決定は加盟国を拘束</text>
+
+      <text class="t-strong" x="180" y="220" text-anchor="middle">安保理の15か国</text>
+      <circle class="poli" cx="52" cy="256" r="22"/><text class="on-color" x="52" y="261" text-anchor="middle">米</text>
+      <circle class="poli" cx="116" cy="256" r="22"/><text class="on-color" x="116" y="261" text-anchor="middle">英</text>
+      <circle class="poli" cx="180" cy="256" r="22"/><text class="on-color" x="180" y="261" text-anchor="middle">仏</text>
+      <circle class="poli" cx="244" cy="256" r="22"/><text class="on-color" x="244" y="261" text-anchor="middle">露</text>
+      <circle class="poli" cx="308" cy="256" r="22"/><text class="on-color" x="308" y="261" text-anchor="middle">中</text>
+      <text class="t" x="180" y="300" text-anchor="middle">常任理事国5か国（拒否権を持つ）</text>
+
+      <circle class="box s-poli" cx="36" cy="328" r="11"/>
+      <circle class="box s-poli" cx="68" cy="328" r="11"/>
+      <circle class="box s-poli" cx="100" cy="328" r="11"/>
+      <circle class="box s-poli" cx="132" cy="328" r="11"/>
+      <circle class="box s-poli" cx="164" cy="328" r="11"/>
+      <circle class="box s-poli" cx="196" cy="328" r="11"/>
+      <circle class="box s-poli" cx="228" cy="328" r="11"/>
+      <circle class="box s-poli" cx="260" cy="328" r="11"/>
+      <circle class="box s-poli" cx="292" cy="328" r="11"/>
+      <circle class="box s-poli" cx="324" cy="328" r="11"/>
+      <text class="t" x="180" y="364" text-anchor="middle">非常任理事国10か国（任期2年）</text>
+
+      <rect class="box" x="10" y="382" width="340" height="88" rx="8"/>
+      <text class="t-strong" x="180" y="406" text-anchor="middle">重要な問題の決め方</text>
+      <text class="t" x="180" y="430" text-anchor="middle">15か国のうち9か国以上が賛成</text>
+      <text class="t" x="180" y="452" text-anchor="middle">＋常任理事国が1か国も反対しない</text>
+
+      <text class="t-soft" x="180" y="496" text-anchor="middle">1か国でも反対すれば決まらない＝拒否権</text>
+      <text class="t-soft" x="180" y="526" text-anchor="middle">ほかに国際司法裁判所・WHO・IMFなど</text>
+    </svg>
+    <figcaption>図8 主権国家体制と国連の中心機関。国連は1945年に発足し、常任理事国は第二次世界大戦の主な戦勝国です</figcaption>
+  </figure>
+
+  <p>安保理の決定には常任理事国の<a href="#g-kyohi">拒否権</a>があるため、常任理事国自身やその友好国が関わる紛争では、安保理が動けなくなることがあります。これが国連の<a href="#g-anpori">安全保障理事会</a>の限界としてよく指摘される点です。国連の仕組みの柱は、侵略した国に加盟国全体で対処する<a href="#g-shudananzen">集団安全保障</a>です。これとは別に、特定の国どうしが組んで共通の脅威に備えるのが<a href="#g-domei">同盟</a>で、その根拠の1つが<a href="#g-shudanjiei">集団的自衛権</a>です。</p>
+
+  <h3>リアリズムとリベラリズム：国際関係の2つの見方</h3>
+  <p>同じ出来事でも、国際関係をどう見るかによって解釈が変わります。代表的なのが<a href="#g-realism">リアリズム</a>と<a href="#g-ir-liberal">リベラリズム</a>です。ここでのリベラリズムは、前の章の政治的立場の「リベラル」とは別の意味で使われる、国際関係論の用語です。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 372" role="img" aria-labelledby="fig9-t">
+      <title id="fig9-t">国際関係のリアリズムとリベラリズムの見方の比較</title>
+      <rect class="poli" x="10" y="10" width="160" height="40" rx="8"/>
+      <text class="on-color" x="90" y="35" text-anchor="middle">リアリズム</text>
+      <rect class="poli" x="190" y="10" width="160" height="40" rx="8"/>
+      <text class="on-color" x="270" y="35" text-anchor="middle">リベラリズム</text>
+
+      <text class="t-soft" x="180" y="76" text-anchor="middle">国際社会をどう見るか</text>
+      <rect class="box" x="10" y="86" width="160" height="60" rx="8"/>
+      <text class="t" x="90" y="110" text-anchor="middle">世界政府がない中で</text>
+      <text class="t" x="90" y="130" text-anchor="middle">各国は自力で身を守る</text>
+      <rect class="box" x="190" y="86" width="160" height="60" rx="8"/>
+      <text class="t" x="270" y="110" text-anchor="middle">相互依存が深まり</text>
+      <text class="t" x="270" y="130" text-anchor="middle">協力で利益を得られる</text>
+
+      <text class="t-soft" x="180" y="172" text-anchor="middle">平和を保つ鍵</text>
+      <rect class="box" x="10" y="182" width="160" height="60" rx="8"/>
+      <text class="t" x="90" y="206" text-anchor="middle">勢力均衡</text>
+      <text class="t" x="90" y="226" text-anchor="middle">軍事力・同盟</text>
+      <rect class="box" x="190" y="182" width="160" height="60" rx="8"/>
+      <text class="t" x="270" y="206" text-anchor="middle">国際機関・条約</text>
+      <text class="t" x="270" y="226" text-anchor="middle">貿易・民主主義</text>
+
+      <text class="t-soft" x="180" y="268" text-anchor="middle">重視する主体</text>
+      <rect class="box" x="10" y="278" width="160" height="60" rx="8"/>
+      <text class="t" x="90" y="302" text-anchor="middle">国家</text>
+      <text class="t" x="90" y="322" text-anchor="middle">（特に大国）</text>
+      <rect class="box" x="190" y="278" width="160" height="60" rx="8"/>
+      <text class="t" x="270" y="302" text-anchor="middle">国家に加え</text>
+      <text class="t" x="270" y="322" text-anchor="middle">国際機関・企業・NGO</text>
+
+      <text class="t-soft" x="180" y="362" text-anchor="middle">実際の分析では両方の見方を組み合わせます</text>
+    </svg>
+    <figcaption>図9 国際関係を見る2つの代表的な理論。ニュースの解説がどちらの見方に立っているかを意識すると、論点が整理できます</figcaption>
+  </figure>
+
+  <div class="cards">
+    <div class="card"><span class="tag poli-tag">リアリズムの考え方</span><h4>勢力均衡と安全保障のジレンマ</h4><p>力の釣り合いが平和を保つと考える<a href="#g-seiryoku">勢力均衡</a>や、自国の防衛強化が相手には脅威に見えて軍拡が続く<a href="#g-dilemma">安全保障のジレンマ</a>は、リアリズムの中心的な概念です。</p></div>
+    <div class="card"><span class="tag poli-tag">リベラリズムの考え方</span><h4>相互依存と制度</h4><p>貿易や投資で結びついた国どうしは、争うと互いに損をします（<a href="#g-sogo">相互依存</a>）。国際機関や条約が約束を守らせる場になり、協力を続けやすくすると考えます。</p></div>
+  </div>
+
+  <h3>地政学の基本</h3>
+  <p><a href="#g-chiseigaku">地政学</a>は、国の位置・地形・海や資源へのアクセスといった地理的条件が、国の戦略や国際関係にどう影響するかを考える見方です。古典的には、大陸に根を張る<a href="#g-landsea">ランドパワー</a>と海を通じて力を伸ばす<a href="#g-landsea">シーパワー</a>という区別や、物流が狭い海峡に集中する<a href="#g-choke">チョークポイント</a>の考えが使われます。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 480" role="img" aria-labelledby="fig10-t">
+      <title id="fig10-t">ランドパワーとシーパワー、中東から東アジアへの海上輸送路のチョークポイント</title>
+      <defs>
+        <marker id="ah10" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+          <path class="poli" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+      <rect class="box" x="10" y="10" width="160" height="112" rx="8"/>
+      <rect class="poli" x="10" y="10" width="5" height="112"/>
+      <text class="t-strong" x="24" y="34">ランドパワー</text>
+      <text class="t" x="24" y="58">大陸国家</text>
+      <text class="t" x="24" y="78">陸軍・鉄道網</text>
+      <text class="t-soft" x="24" y="102">古典的な例：ロシア</text>
+      <rect class="box" x="190" y="10" width="160" height="112" rx="8"/>
+      <rect class="poli" x="190" y="10" width="5" height="112"/>
+      <text class="t-strong" x="204" y="34">シーパワー</text>
+      <text class="t" x="204" y="58">海洋国家</text>
+      <text class="t" x="204" y="78">海軍・海上交易</text>
+      <text class="t-soft" x="204" y="102">古典的な例：イギリス</text>
+
+      <text class="t-strong" x="180" y="156" text-anchor="middle">チョークポイントの例</text>
+      <text class="t-soft" x="180" y="176" text-anchor="middle">中東の原油が東アジアへ運ばれる海の道</text>
+
+      <rect class="box" x="70" y="190" width="220" height="40" rx="8"/>
+      <text class="t" x="180" y="215" text-anchor="middle">ペルシャ湾岸の産油国</text>
+      <line class="ln s-poli" x1="180" y1="230" x2="180" y2="249" marker-end="url(#ah10)"/>
+      <rect class="poli" x="70" y="250" width="220" height="40" rx="8"/>
+      <text class="on-color" x="180" y="275" text-anchor="middle">ホルムズ海峡</text>
+      <line class="ln s-poli" x1="180" y1="290" x2="180" y2="309" marker-end="url(#ah10)"/>
+      <rect class="box" x="70" y="310" width="220" height="40" rx="8"/>
+      <text class="t" x="180" y="335" text-anchor="middle">アラビア海・インド洋</text>
+      <line class="ln s-poli" x1="180" y1="350" x2="180" y2="369" marker-end="url(#ah10)"/>
+      <rect class="poli" x="70" y="370" width="220" height="40" rx="8"/>
+      <text class="on-color" x="180" y="395" text-anchor="middle">マラッカ海峡</text>
+      <line class="ln s-poli" x1="180" y1="410" x2="180" y2="429" marker-end="url(#ah10)"/>
+      <rect class="box" x="70" y="430" width="220" height="40" rx="8"/>
+      <text class="t" x="180" y="455" text-anchor="middle">日本など東アジア</text>
+    </svg>
+    <figcaption>図10 地政学の基本的な見方。色付きの海峡が塞がると、代わりの経路は大きく遠回りになります。システムでいう単一障害点に近い発想です</figcaption>
+  </figure>
+
+  <!-- 7. ニュースの読み方 -->
+  <h2 id="news">ニュースの読み方</h2>
+  <h3>法案が成立するまで</h3>
+  <p>法律案は、内閣が出す<a href="#g-kakuho">閣法</a>と、国会議員が出す<a href="#g-kakuho">議員立法</a>があり、成立する法律の多くは閣法です。ニュースで「委員会で可決」「本会議で可決・成立」と言うのは、次の流れのどこまで進んだかを表しています。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 470" role="img" aria-labelledby="fig11-t">
+      <title id="fig11-t">法律案の提出から成立・公布までの流れと、衆議院の再可決</title>
+      <defs>
+        <marker id="ah11" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+          <path class="poli" d="M0,0 L10,5 L0,10 z"/>
+        </marker>
+      </defs>
+      <rect class="box" x="10" y="10" width="220" height="56" rx="8"/>
+      <text class="t-strong" x="22" y="32">① 法律案を提出</text>
+      <text class="t-soft" x="22" y="54">内閣（閣法）か国会議員</text>
+      <line class="ln s-poli" x1="120" y1="66" x2="120" y2="83" marker-end="url(#ah11)"/>
+
+      <rect class="box s-poli" x="10" y="84" width="220" height="76" rx="8"/>
+      <text class="t-strong" x="22" y="106">② 衆議院</text>
+      <text class="t" x="22" y="128">委員会で審査</text>
+      <text class="t" x="22" y="148">→ 本会議で採決</text>
+      <line class="ln s-poli" x1="120" y1="160" x2="120" y2="177" marker-end="url(#ah11)"/>
+      <text class="t-soft" x="130" y="174">可決</text>
+
+      <rect class="box s-poli" x="10" y="178" width="220" height="76" rx="8"/>
+      <text class="t-strong" x="22" y="200">③ 参議院</text>
+      <text class="t" x="22" y="222">委員会で審査</text>
+      <text class="t" x="22" y="242">→ 本会議で採決</text>
+      <line class="ln s-poli" x1="120" y1="254" x2="120" y2="271" marker-end="url(#ah11)"/>
+      <text class="t-soft" x="130" y="268">可決</text>
+
+      <rect class="poli" x="10" y="272" width="220" height="40" rx="8"/>
+      <text class="on-color" x="120" y="297" text-anchor="middle">④ 法律として成立</text>
+      <line class="ln s-poli" x1="120" y1="312" x2="120" y2="329" marker-end="url(#ah11)"/>
+
+      <rect class="box" x="10" y="330" width="220" height="56" rx="8"/>
+      <text class="t-strong" x="22" y="352">⑤ 公布・施行</text>
+      <text class="t-soft" x="22" y="374">天皇が公布し、定めた日から効力</text>
+
+      <!-- 否決ルート -->
+      <line class="ln s-poli" x1="230" y1="216" x2="243" y2="216" marker-end="url(#ah11)"/>
+      <rect class="box" x="244" y="170" width="106" height="92" rx="8"/>
+      <text class="t-strong" x="252" y="192">否決なら</text>
+      <text class="t-soft" x="252" y="212">衆議院の出席</text>
+      <text class="t-soft" x="252" y="230">議員の3分の2</text>
+      <text class="t-soft" x="252" y="248">以上で再可決</text>
+      <path class="ln s-poli" d="M297,262 V292 H232" marker-end="url(#ah11)"/>
+
+      <text class="t-soft" x="10" y="414">参議院が60日以内に議決しないときも、</text>
+      <text class="t-soft" x="10" y="432">衆議院は否決とみなして再可決できます。</text>
+      <text class="t-soft" x="10" y="456">先にどちらの院で審議してもよい（予算は衆議院が先）</text>
+    </svg>
+    <figcaption>図11 法案成立の流れ。実質的な審議は委員会で行われ、本会議では委員会の結果をもとに採決します</figcaption>
+  </figure>
+
+  <h3>選挙制度の違い：小選挙区と比例代表</h3>
+  <p>同じ得票でも、選挙制度によって議席の配分は大きく変わります。1つの選挙区から1人だけ当選する<a href="#g-shosenkyo">小選挙区制</a>と、政党の得票率に応じて議席を配る<a href="#g-hirei">比例代表制</a>を、仮の数字で比べます。</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 360 430" role="img" aria-labelledby="fig12-t">
+      <title id="fig12-t">同じ得票率で小選挙区制と比例代表制の議席配分を比べた仮の例</title>
+      <text class="t-strong" x="180" y="24" text-anchor="middle">仮の例：A党50%・B党30%・C党20%</text>
+      <text class="t-soft" x="180" y="44" text-anchor="middle">どの地域でも同じ得票率だったとする</text>
+
+      <text class="t-strong poli" x="10" y="82">小選挙区制（10区で10議席）</text>
+      <g>
+        <circle class="poli" cx="36" cy="112" r="13"/><text class="on-color" x="36" y="117" text-anchor="middle">A</text>
+        <circle class="poli" cx="68" cy="112" r="13"/><text class="on-color" x="68" y="117" text-anchor="middle">A</text>
+        <circle class="poli" cx="100" cy="112" r="13"/><text class="on-color" x="100" y="117" text-anchor="middle">A</text>
+        <circle class="poli" cx="132" cy="112" r="13"/><text class="on-color" x="132" y="117" text-anchor="middle">A</text>
+        <circle class="poli" cx="164" cy="112" r="13"/><text class="on-color" x="164" y="117" text-anchor="middle">A</text>
+        <circle class="poli" cx="196" cy="112" r="13"/><text class="on-color" x="196" y="117" text-anchor="middle">A</text>
+        <circle class="poli" cx="228" cy="112" r="13"/><text class="on-color" x="228" y="117" text-anchor="middle">A</text>
+        <circle class="poli" cx="260" cy="112" r="13"/><text class="on-color" x="260" y="117" text-anchor="middle">A</text>
+        <circle class="poli" cx="292" cy="112" r="13"/><text class="on-color" x="292" y="117" text-anchor="middle">A</text>
+        <circle class="poli" cx="324" cy="112" r="13"/><text class="on-color" x="324" y="117" text-anchor="middle">A</text>
+      </g>
+      <text class="t" x="10" y="152">A党10・B党0・C党0</text>
+      <text class="t-soft" x="10" y="172">各区で1位だけが当選。B・Cへの票は死票に</text>
+
+      <line class="ln" x1="10" y1="190" x2="350" y2="190"/>
+
+      <text class="t-strong poli" x="10" y="220">比例代表制（10議席を得票率で配分）</text>
+      <g>
+        <circle class="poli" cx="36" cy="250" r="13"/><text class="on-color" x="36" y="255" text-anchor="middle">A</text>
+        <circle class="poli" cx="68" cy="250" r="13"/><text class="on-color" x="68" y="255" text-anchor="middle">A</text>
+        <circle class="poli" cx="100" cy="250" r="13"/><text class="on-color" x="100" y="255" text-anchor="middle">A</text>
+        <circle class="poli" cx="132" cy="250" r="13"/><text class="on-color" x="132" y="255" text-anchor="middle">A</text>
+        <circle class="poli" cx="164" cy="250" r="13"/><text class="on-color" x="164" y="255" text-anchor="middle">A</text>
+        <circle class="box s-poli" cx="196" cy="250" r="13"/><text class="t" x="196" y="255" text-anchor="middle">B</text>
+        <circle class="box s-poli" cx="228" cy="250" r="13"/><text class="t" x="228" y="255" text-anchor="middle">B</text>
+        <circle class="box s-poli" cx="260" cy="250" r="13"/><text class="t" x="260" y="255" text-anchor="middle">B</text>
+        <circle class="box" cx="292" cy="250" r="13" stroke-dasharray="3 2"/><text class="t" x="292" y="255" text-anchor="middle">C</text>
+        <circle class="box" cx="324" cy="250" r="13" stroke-dasharray="3 2"/><text class="t" x="324" y="255" text-anchor="middle">C</text>
+      </g>
+      <text class="t" x="10" y="290">A党5・B党3・C党2</text>
+      <text class="t-soft" x="10" y="310">得票率に近い議席。多党になり連立が増えやすい</text>
+
+      <rect class="box s-poli" x="10" y="330" width="340" height="90" rx="8"/>
+      <text class="t-strong" x="24" y="354">日本の国政選挙</text>
+      <text class="t" x="24" y="378">衆議院：小選挙区比例代表並立制</text>
+      <text class="t" x="24" y="402">参議院：選挙区＋比例代表</text>
+    </svg>
+    <figcaption>図12 選挙制度による議席の違い（仮の数字）。実際には地域ごとに得票率が違うため、ここまで極端にはなりません</figcaption>
+  </figure>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>観点</th><th>小選挙区制</th><th>比例代表制</th></tr></thead>
+      <tbody>
+        <tr><td>議席の決まり方</td><td>各区の1位だけが当選</td><td>得票率に応じて配分</td></tr>
+        <tr><td>死票</td><td>多い</td><td>少ない</td></tr>
+        <tr><td>政党の数</td><td>二大政党に集まりやすい</td><td>多党になりやすい</td></tr>
+        <tr><td>長所とされる点</td><td>政権が安定し、責任の所在が明確</td><td>少数意見も議席に反映される</td></tr>
+        <tr><td>短所とされる点</td><td>得票と議席の差が大きくなりうる</td><td>連立交渉が長引き、政権が不安定になりうる</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>小選挙区制では議席に結びつかない<a href="#g-shihyo">死票</a>が多くなり、<a href="#g-duverger">デュヴェルジェの法則</a>として知られるように<a href="#g-nidai">二大政党制</a>に向かいやすくなります。比例代表制では多党制になりやすく、単独で過半数を取る党がないと<a href="#g-renritsu">連立政権</a>になります。日本の衆議院は両者を組み合わせた<a href="#g-heiritsu">小選挙区比例代表並立制</a>です。どちらの制度が優れているかは、何を重視するかによって評価が分かれます。</p>
+
+  <h3>ニュースでよく出る言葉</h3>
+  <div class="cards">
+    <div class="card"><h4>与党・野党</h4><p>内閣を支える政党が与党、それ以外が野党です。議院内閣制では、与党が国会の多数を持つことで法案や予算が通りやすくなります。</p><p><a href="#g-yoto">与党と野党の解説へ</a>／<a href="#g-giin">議院内閣制</a></p></div>
+    <div class="card"><h4>解散総選挙</h4><p>内閣が衆議院を解散すると、40日以内に総選挙が行われます。いつ解散するかは、首相の重要な政治判断とされます。</p><p><a href="#g-kaisan">衆議院の解散の解説へ</a></p></div>
+    <div class="card"><h4>ねじれ国会</h4><p>衆議院と参議院で多数派が異なる状態です。衆議院で可決した法案が参議院で否決されやすくなり、再可決や与野党の協議が焦点になります。</p><p><a href="#g-nejire">ねじれ国会の解説へ</a>／<a href="#g-yuetsu">衆議院の優越</a></p></div>
+    <div class="card"><h4>内閣不信任決議</h4><p>衆議院で可決されると、内閣は10日以内に衆議院を解散するか、総辞職しなければなりません。野党が提出することが多い決議です。</p><p><a href="#g-fushinnin">内閣不信任決議の解説へ</a></p></div>
+  </div>
+
+  <div class="point"><strong>ニュースを読むときの確認ポイント：</strong>①いまどの機関（国会・内閣・裁判所・国連など）の話か、②法案ならどの段階か（提出・委員会・本会議・成立）、③賛成・反対それぞれの立場がどんな価値（市場か再分配か、伝統か個人の自由か、安全保障はリアリズムかリベラリズムか）を重んじているか。この3点を押さえると、立場の違う意見も整理して読めます。</div>
+
+  <!-- 8. 用語解説 -->
+  <h2 id="glossary">考え方・用語の解説</h2>
+  <p>このページに出てくる考え方・仕組みを、テーマごとに1〜2文でまとめます。本文やカードのリンクからここへ移動できます。</p>
+
+  <h3>政治の基本</h3>
+  <dl class="glossary">
+    <div id="g-kenryoku"><dt>権力<span class="who">政治学の基本概念</span></dt><dd>相手が望まなくても、決定に従わせることができる力です。国家の場合は、警察・裁判・課税といった強制力として現れます。</dd></div>
+    <div id="g-seitosei"><dt>正統性<span class="who">政治学の基本概念</span></dt><dd>人々が「この権力や決定には従うべきだ」と認める理由のことです。正統性を失った権力は、強制力に頼るしかなくなり不安定になります。</dd></div>
+    <div id="g-shihai"><dt>支配の3類型<span class="who">ウェーバー（20世紀初め）</span></dt><dd>正統性の源を、昔からの慣習に基づく伝統的支配、指導者個人の非凡な資質に基づくカリスマ的支配、正しい手続きで定められた規則に基づく合法的支配の3つに分けた整理です。</dd></div>
+    <div id="g-shuken"><dt>主権<span class="who">近代国家の基本概念</span></dt><dd>国のあり方を最終的に決める最高の権力のことです。国内では最高、対外的にはほかの国から独立していることを意味します。</dd></div>
+    <div id="g-minshu"><dt>民主主義（直接民主制・間接民主制）<span class="who">古代ギリシャに起源</span></dt><dd>国民（市民）が政治の決定に参加し、最終的な決定権を持つ仕組みです。全員が直接決める直接民主制と、選挙で選んだ代表が決める間接民主制（代議制）があり、現代の国家の多くは間接民主制です。</dd></div>
+    <div id="g-rikken"><dt>立憲主義<span class="who">近代憲法の原理</span></dt><dd>憲法によって国家権力を制限し、国民の権利を守るという考えです。多数派の決定であっても、憲法が保障する権利は侵せないとします。</dd></div>
+    <div id="g-hounoshihai"><dt>法の支配<span class="who">中世イギリスに起源</span></dt><dd>権力を持つ人も含めて、すべての人が法に従うべきだという原理です。ここでの法は、内容も正しく人権を守るものでなければならないとされ、「法律に従えば何でもよい」という考えとは区別されます。</dd></div>
+    <div id="g-saibunpai"><dt>再分配<span class="who">経済政策の基本概念</span></dt><dd>税や社会保険料を集め、社会保障・公共サービス・給付として配り直すことで、所得や機会の格差を小さくする働きです。どこまで行うべきかが、政治的立場を分ける大きな軸になっています。</dd></div>
+  </dl>
+
+  <h3>近代政治思想</h3>
+  <dl class="glossary">
+    <div id="g-shakai"><dt>社会契約説<span class="who">ホッブズ・ロック・ルソー（17〜18世紀）</span></dt><dd>国家は神や王の血筋ではなく、自由で平等な個人どうしの合意（契約）によってつくられたとする考えです。だから国家の正しさは、人々の権利や利益を守っているかで測られることになります。</dd></div>
+    <div id="g-shizenjotai"><dt>自然状態<span class="who">社会契約説の出発点</span></dt><dd>国家や法律がない状態を思考実験として考えたものです。ホッブズは「万人の万人に対する闘争」になると考え、ロックはおおむね平和だが権利の保護が不確実な状態と考えました。</dd></div>
+    <div id="g-shizenken"><dt>自然権<span class="who">ロックら</span></dt><dd>国家や法律より前から、人が生まれながらに持っている権利です。ロックは生命・自由・財産を挙げ、これが近代の人権思想の土台になりました。</dd></div>
+    <div id="g-teikoken"><dt>抵抗権（革命権）<span class="who">ロック</span></dt><dd>政府が人々の信託に背いて自然権を侵したとき、人民はその政府に抵抗し、つくり替えてよいという権利です。アメリカ独立宣言にも反映されました。</dd></div>
+    <div id="g-ippan"><dt>一般意志<span class="who">ルソー</span></dt><dd>個人がそれぞれの私的な利益を求める意志（特殊意志）や、その単純な合計（全体意志）とは区別される、共同体全体の利益をめざす意志です。人々がこれに従うことで、自分で決めたルールに従う自由が実現するとされました。</dd></div>
+    <div id="g-jinmin"><dt>人民主権<span class="who">ルソー</span></dt><dd>主権は人民全体にあり、他人に譲り渡したり代表させたりできないという考えです。直接民主制を理想とする考えにつながりました。</dd></div>
+    <div id="g-sanken"><dt>三権分立<span class="who">モンテスキュー『法の精神』1748</span></dt><dd>国家の権力を、法をつくる立法、法を実行する行政、法に基づいて争いを裁く司法に分け、別々の機関に担わせて互いに抑え合わせる仕組みです。権力の集中と濫用を防ぐことが目的です。</dd></div>
+    <div id="g-jiyu"><dt>自由主義<span class="who">ロック・ミルら（17世紀〜）</span></dt><dd>個人の自由と権利を最も重く見て、国家権力はそれを守るために必要な範囲に限るべきだとする考えです。言論の自由、議会政治、市場経済の擁護などと結びついて発展しました。</dd></div>
+    <div id="g-kigai"><dt>危害原理<span class="who">J.S.ミル『自由論』1859</span></dt><dd>個人の行動を社会が強制的に制限してよいのは、他人に危害を加える場合だけだという原理です。本人だけに関わることは、本人の判断に任せるべきだとします。</dd></div>
+    <div id="g-hoshu"><dt>保守主義<span class="who">バーク（18世紀）</span></dt><dd>社会は長い歴史の中で育ってきたもので、人間の理性だけで一から設計し直すのは危険だとする考えです。受け継がれた制度や慣習を尊重し、改革は必要な部分から少しずつ行うべきだとします。</dd></div>
+    <div id="g-shakaishugi"><dt>社会主義<span class="who">マルクスら（19世紀）</span></dt><dd>工場や土地などの生産手段を一部の人が私有することが格差や貧困を生むとして、生産手段を社会全体で持ち、計画的に運営することを目指す考えです。20世紀にはソ連などでこれを掲げる国家がつくられました。</dd></div>
+    <div id="g-shamin"><dt>社会民主主義<span class="who">19世紀末〜のヨーロッパ</span></dt><dd>革命ではなく選挙と議会を通じて、市場経済を残したまま、累進課税や社会保障で格差を是正しようとする考えです。北欧などの福祉国家の形成に影響しました。</dd></div>
+    <div id="g-liberal"><dt>リベラリズム（現代のリベラル）<span class="who">ロールズら（20世紀後半）</span></dt><dd>個人の自由を尊重する自由主義を受け継ぎつつ、貧困や格差があると自由は実際には使えないとして、国家による再分配や機会の保障を重視する考えです。</dd></div>
+    <div id="g-seigi"><dt>正義論（無知のヴェール・格差原理）<span class="who">ロールズ『正義論』1971</span></dt><dd>自分の能力・家柄・性別などが分からない状態（無知のヴェール）で社会のルールを選ぶなら、人は誰もが受け入れられる公正なルールを選ぶはずだと考えました。そこから、基本的自由の平等と、格差は最も不遇な人の利益になる場合に限り認めるという格差原理を導きました。</dd></div>
+    <div id="g-libertarian"><dt>リバタリアニズム<span class="who">ノージックら（20世紀後半）</span></dt><dd>自分の身体と、正当に手に入れた財産を自由に扱う権利を最も重視する考えです。経済的な規制や再分配にも、個人の生き方への干渉にも反対します。</dd></div>
+    <div id="g-saisho"><dt>最小国家<span class="who">ノージック</span></dt><dd>国家の役割を、暴力や盗み・詐欺から人々を守ることと、契約を守らせることに限る国家です。これを超える国家は、個人の権利を侵すとされます。</dd></div>
+    <div id="g-kyodotai"><dt>共同体主義（コミュニタリアニズム）<span class="who">サンデル・マッキンタイアら（20世紀後半）</span></dt><dd>人は家族・地域・国などの共同体の中で育ち、そこで価値観を身につける存在だとする考えです。共同体から切り離された個人を前提にした正義論を批判し、共通の善や市民の徳を重視します。</dd></div>
+  </dl>
+
+  <h3>日本の統治</h3>
+  <dl class="glossary">
+    <div id="g-giin"><dt>議院内閣制<span class="who">イギリスで発達</span></dt><dd>内閣が議会（日本では国会）の信任に基づいて成り立ち、議会に対して責任を負う仕組みです。日本では首相を国会が国会議員の中から指名し、国務大臣の過半数も国会議員でなければなりません。</dd></div>
+    <div id="g-daitoryo"><dt>大統領制<span class="who">アメリカ合衆国憲法（18世紀）</span></dt><dd>行政のトップである大統領と議会の議員を、国民が別々の選挙で選ぶ仕組みです。大統領と議会は互いに独立しており、大統領は議会を解散できず、議会は原則として大統領を不信任できません。</dd></div>
+    <div id="g-chiho"><dt>地方自治<span class="who">日本国憲法 第8章</span></dt><dd>地域の問題を、その地域の住民と地方公共団体（都道府県・市町村）が自分たちで決める仕組みです。住民が条例の制定や首長の解職などを求める直接請求の制度もあります。</dd></div>
+    <div id="g-nigen"><dt>二元代表制<span class="who">日本の地方自治</span></dt><dd>首長（知事・市町村長）と議会の議員を、住民がそれぞれ直接選挙で選ぶ仕組みです。議会は首長の不信任を議決でき、首長はそれに対して議会を解散できます。</dd></div>
+    <div id="g-yuetsu"><dt>衆議院の優越<span class="who">日本国憲法</span></dt><dd>予算・条約の承認・首相の指名・法律案で、両院の議決が異なる場合に衆議院の議決を優先する仕組みです。予算は衆議院が先に審議することも定められています。</dd></div>
+    <div id="g-fushinnin"><dt>内閣不信任決議<span class="who">日本国憲法 第69条</span></dt><dd>衆議院が内閣を信任しないと議決することです。可決されると、内閣は10日以内に衆議院を解散するか、総辞職しなければなりません。</dd></div>
+    <div id="g-kaisan"><dt>衆議院の解散<span class="who">日本国憲法</span></dt><dd>衆議院議員全員の任期を途中で終わらせ、総選挙で民意を問い直すことです。内閣が決め、解散から40日以内に総選挙が行われます。参議院には解散がありません。</dd></div>
+    <div id="g-iken"><dt>違憲審査権<span class="who">日本国憲法 第81条</span></dt><dd>法律や命令、行政の行為が憲法に違反していないかを、裁判所が判断する権限です。日本では具体的な裁判の中で判断する仕組みで、最高裁判所が最終的な判断をするため「憲法の番人」と呼ばれます。</dd></div>
+    <div id="g-dangai"><dt>弾劾裁判<span class="who">国会が設置する弾劾裁判所</span></dt><dd>職務上の重大な義務違反などがあった裁判官を辞めさせるかどうかを、国会議員で構成する弾劾裁判所が裁く制度です。裁判官の身分を守りつつ、国民の代表が監督する仕組みです。</dd></div>
+    <div id="g-kokuminshinsa"><dt>国民審査<span class="who">最高裁判所の裁判官が対象</span></dt><dd>衆議院の総選挙のときに、最高裁判所の裁判官を辞めさせるべきかを国民が投票で判断する制度です。辞めさせたい裁判官に×を付ける方式で、×が過半数になると罷免されます。</dd></div>
+  </dl>
+
+  <h3>法と憲法</h3>
+  <dl class="glossary">
+    <div id="g-saikohoki"><dt>最高法規<span class="who">日本国憲法 第98条</span></dt><dd>憲法が国の法の中で最も強い効力を持ち、これに反する法律・命令などは効力を持たないということです。</dd></div>
+    <div id="g-horitsu"><dt>法律<span class="who">国会が制定</span></dt><dd>国会の両院の議決を経て成立する法です。国民の権利を制限したり義務を課したりするには、原則として法律の根拠が必要です。</dd></div>
+    <div id="g-meirei"><dt>命令（政令・省令）<span class="who">内閣・各省</span></dt><dd>法律を実施するための細かいルールを、行政機関が定めたものです。内閣が定めるのが政令、各省の大臣が定めるのが省令で、法律の委任の範囲を超えることはできません。</dd></div>
+    <div id="g-jorei"><dt>条例<span class="who">地方公共団体の議会</span></dt><dd>都道府県や市町村の議会が、法律の範囲内で定めるその地域のルールです。</dd></div>
+    <div id="g-koho"><dt>公法と私法<span class="who">法の分類</span></dt><dd>国や地方公共団体と個人の関係を定めるのが公法（憲法・刑法・行政法など）、個人や会社どうしの関係を定めるのが私法（民法・商法など）です。私法では、当事者が自由に契約を結べることが原則になります。</dd></div>
+    <div id="g-keiji"><dt>刑事裁判<span class="who">刑法・刑事訴訟法</span></dt><dd>犯罪の疑いがある人を検察官が起訴し、裁判所が有罪か無罪か、有罪ならどんな刑罰かを決める裁判です。重大な事件の一部では、国民が裁判員として参加します。</dd></div>
+    <div id="g-minji"><dt>民事裁判<span class="who">民法・民事訴訟法</span></dt><dd>お金の貸し借りや損害賠償など、個人や会社どうしの争いを解決する裁判です。訴えた側を原告、訴えられた側を被告と呼び、途中で和解して終わることも多くあります。</dd></div>
+    <div id="g-zaikei"><dt>罪刑法定主義<span class="who">近代刑法の原則</span></dt><dd>どんな行為が犯罪で、どんな刑罰が科されるかは、あらかじめ法律で定めておかなければならないという原則です。後からつくった法律で過去の行為を罰することもできません。</dd></div>
+    <div id="g-suitei"><dt>推定無罪<span class="who">刑事手続きの原則</span></dt><dd>裁判で有罪が確定するまでは、疑われている人を無罪として扱うという原則です。有罪を証明する責任は検察官の側にあります。</dd></div>
+    <div id="g-kokuminshuken"><dt>国民主権<span class="who">日本国憲法の三大原則</span></dt><dd>国の政治のあり方を最終的に決める力（主権）が国民にあるという原則です。明治憲法では主権は天皇にありましたが、日本国憲法では天皇は国と国民統合の象徴とされました。</dd></div>
+    <div id="g-jinken"><dt>基本的人権の尊重<span class="who">日本国憲法の三大原則</span></dt><dd>人が生まれながらに持つ権利を、国家も侵すことのできない永久の権利として保障する原則です。自由権・平等権・社会権・参政権などが含まれ、公共の福祉による調整を受けます。</dd></div>
+    <div id="g-heiwa"><dt>平和主義<span class="who">日本国憲法の三大原則</span></dt><dd>前文で国際協調による平和を掲げ、第9条で戦争の放棄・戦力の不保持・交戦権の否認を定めた原則です。</dd></div>
+  </dl>
+
+  <h3>国際関係</h3>
+  <dl class="glossary">
+    <div id="g-shukenkokka"><dt>主権国家体制<span class="who">ウェストファリア条約 1648</span></dt><dd>それぞれの国が自国の領域で最高の権力（主権）を持ち、国どうしは大小にかかわらず対等だとする国際秩序です。三十年戦争を終わらせた講和をきっかけにヨーロッパで成立し、のちに世界に広がりました。</dd></div>
+    <div id="g-naiseifukansho"><dt>内政不干渉<span class="who">主権国家体制の原則</span></dt><dd>ほかの国の国内の問題に、外から介入してはならないという原則です。大規模な人権侵害が起きたときにこの原則をどこまで貫くかは、国際社会で議論が続いています。</dd></div>
+    <div id="g-kokuren"><dt>国際連合<span class="who">1945年発足</span></dt><dd>第二次世界大戦を防げなかった国際連盟の反省からつくられた、世界のほぼすべての国が加盟する国際機関です。平和と安全の維持、人権の保護、経済・社会の協力を目的とします。</dd></div>
+    <div id="g-anpori"><dt>安全保障理事会<span class="who">国連の機関</span></dt><dd>国際の平和と安全に主な責任を持つ国連の機関です。常任理事国5か国と、総会で選ばれる任期2年の非常任理事国10か国で構成され、その決定は加盟国を法的に拘束します。</dd></div>
+    <div id="g-kyohi"><dt>拒否権<span class="who">国連安保理の常任理事国</span></dt><dd>手続き以外の重要な問題について、常任理事国が1か国でも反対すれば決議が成立しない仕組みです。大国の協調を前提にした制度ですが、大国どうしが対立すると安保理が機能しにくくなります。</dd></div>
+    <div id="g-shudananzen"><dt>集団安全保障<span class="who">国際連盟・国際連合の考え方</span></dt><dd>加盟国が互いに武力を使わないと約束し、それを破って侵略した国には、残りの加盟国全体で制裁を加えて平和を守るという考えです。外の敵に備える同盟とは違い、仕組みの内側の違反者に対処します。</dd></div>
+    <div id="g-domei"><dt>同盟<span class="who">国際関係の基本概念</span></dt><dd>複数の国が条約などで結びつき、一方が攻撃されたときに共同で対処すると約束する関係です。北大西洋条約機構（NATO）や日米安全保障条約がその例です。</dd></div>
+    <div id="g-shudanjiei"><dt>集団的自衛権<span class="who">国連憲章 第51条</span></dt><dd>自国が直接攻撃されていなくても、密接な関係にある国が攻撃されたときに、共同で反撃する権利です。国連憲章は、自国を守る個別的自衛権とともにこれを認めています。日本ではその行使をどこまで認めるかが長く議論されてきました。</dd></div>
+    <div id="g-kokusaikikan"><dt>国際機関<span class="who">国連の専門機関など</span></dt><dd>国どうしの条約に基づいてつくられ、特定の分野で協力を進める組織です。保健のWHO、通貨・金融のIMF、開発の世界銀行、労働のILOなどがあります。</dd></div>
+    <div id="g-realism"><dt>リアリズム（現実主義）<span class="who">モーゲンソー・ウォルツら（20世紀）</span></dt><dd>国際社会には上位の政府がない（アナーキー）ため、各国は自国の生存と安全を最優先に、力によって身を守るしかないと考える見方です。道徳や理想よりも、国力と国益の計算で国際関係を説明します。</dd></div>
+    <div id="g-seiryoku"><dt>勢力均衡（バランス・オブ・パワー）<span class="who">リアリズムの中心概念</span></dt><dd>特定の国が強くなりすぎないよう、ほかの国々が軍備や同盟で釣り合いを取ることで、戦争を防ぐという考えです。</dd></div>
+    <div id="g-dilemma"><dt>安全保障のジレンマ<span class="who">リアリズムの概念</span></dt><dd>ある国が自衛のために軍備を強化すると、相手国はそれを脅威と受け取って軍備を強化し、結果として双方の安全がかえって損なわれるという状況です。</dd></div>
+    <div id="g-ir-liberal"><dt>リベラリズム（国際関係論）<span class="who">カントの平和論などに起源</span></dt><dd>国家どうしでも、貿易による結びつき、国際機関や国際法、民主主義の広がりによって、協力と平和を実現できると考える見方です。国家だけでなく、国際機関・企業・NGOの役割も重視します。</dd></div>
+    <div id="g-sogo"><dt>相互依存<span class="who">リベラリズムの中心概念</span></dt><dd>貿易・投資・エネルギーなどで国どうしが深く結びつき、互いに相手なしでは成り立たない状態です。争いのコストが高くなるため協力が促されるとされる一方、依存が圧力の手段に使われることもあります。</dd></div>
+    <div id="g-chiseigaku"><dt>地政学<span class="who">19世紀末〜20世紀初めに発展</span></dt><dd>国の位置・地形・海や資源への近さなどの地理的条件が、国の安全保障や外交戦略をどう方向づけるかを考える学問・見方です。</dd></div>
+    <div id="g-landsea"><dt>ランドパワーとシーパワー<span class="who">マッキンダー・マハン</span></dt><dd>大陸の広い国土と陸軍・鉄道で力を持つ国をランドパワー、海軍と海上交易で力を持つ国をシーパワーと呼ぶ区別です。マハンは海を制することの重要性を説き、マッキンダーはユーラシア大陸の中心部（ハートランド）の重要性を説きました。</dd></div>
+    <div id="g-choke"><dt>チョークポイント<span class="who">地政学の概念</span></dt><dd>海上輸送路のうち、海峡や運河など幅が狭く、多くの船が必ず通る要所です。ホルムズ海峡・マラッカ海峡・スエズ運河・パナマ運河などがあり、ここが封鎖されると世界の物流やエネルギー供給に大きな影響が出ます。</dd></div>
+  </dl>
+
+  <h3>選挙と国会</h3>
+  <dl class="glossary">
+    <div id="g-kakuho"><dt>閣法と議員立法<span class="who">日本の国会</span></dt><dd>内閣が提出する法律案を閣法、国会議員が提出する法律案を議員立法と呼びます。閣法は各省庁が準備し、与党内の調整を経て提出されるため、成立する割合が高くなります。</dd></div>
+    <div id="g-yoto"><dt>与党と野党<span class="who">議会政治の基本</span></dt><dd>内閣を組織し、または支える政党が与党、それ以外の政党が野党です。野党は政府の政策を国会で追及し、別の選択肢を示す役割を持ちます。</dd></div>
+    <div id="g-renritsu"><dt>連立政権<span class="who">議院内閣制で多い形</span></dt><dd>単独で議会の過半数を持つ政党がないときなどに、複数の政党が政策を合意して共同で内閣をつくる政権です。</dd></div>
+    <div id="g-nejire"><dt>ねじれ国会<span class="who">日本の国会</span></dt><dd>衆議院では与党が多数でも、参議院では野党が多数になっている状態です。法案が参議院で否決されやすくなるため、与野党の協議や衆議院での再可決が焦点になります。</dd></div>
+    <div id="g-shosenkyo"><dt>小選挙区制<span class="who">イギリス・アメリカなど</span></dt><dd>1つの選挙区から最も多く得票した1人だけが当選する制度です。政権が安定しやすい一方、得票率と議席の割合の差が大きくなりやすくなります。</dd></div>
+    <div id="g-hirei"><dt>比例代表制<span class="who">ヨーロッパ大陸の多くの国など</span></dt><dd>政党の得票率に応じて議席を配分する制度です。民意が議席に反映されやすい一方、小さな政党が多く生まれ、連立政権になりやすくなります。</dd></div>
+    <div id="g-shihyo"><dt>死票<span class="who">選挙制度の用語</span></dt><dd>落選した候補者に投じられ、議席に結びつかなかった票です。小選挙区制で特に多くなります。</dd></div>
+    <div id="g-duverger"><dt>デュヴェルジェの法則<span class="who">デュヴェルジェ（20世紀・フランス）</span></dt><dd>小選挙区制は二大政党制を生みやすく、比例代表制は多党制を生みやすいという経験則です。小選挙区では有権者が死票を避けて勝ちそうな有力候補に投票しやすいことが理由とされます。</dd></div>
+    <div id="g-nidai"><dt>二大政党制と多党制<span class="who">政党システムの分類</span></dt><dd>2つの大きな政党が選挙ごとに政権を争う形が二大政党制、3つ以上の政党が議席を分け合い、連立で政権をつくることが多い形が多党制です。</dd></div>
+    <div id="g-heiritsu"><dt>小選挙区比例代表並立制<span class="who">日本の衆議院（1996年の総選挙から）</span></dt><dd>小選挙区制と比例代表制を組み合わせ、それぞれ別に議席を決める制度です。小選挙区の候補者が比例代表の名簿にも同時に登録でき、小選挙区で落選しても比例で当選する（復活当選）ことがあります。</dd></div>
+  </dl>
+
+  <div class="next">
+    <a href="index.html"><span>全体地図へ</span>教養の全体像を見る</a>
+    <a href="philosophy.html"><span>関連：哲学・思想史</span>社会契約説や功利主義の哲学的な背景</a>
+    <a href="world-history.html"><span>関連：世界史</span>市民革命や二つの世界大戦と国際秩序</a>
+    <a href="economics.html"><span>関連：経済・お金</span>市場と再分配をめぐる経済の考え方</a>
+    <a href="japan.html"><span>関連：日本史・日本文化</span>明治憲法から日本国憲法への流れ</a>
+  </div>
+
+  <footer>作成: 2026-10-19 ／ 教養の図解シリーズ</footer>
+</main>
+</body>
+</html>

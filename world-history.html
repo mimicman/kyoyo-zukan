@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="favicon.svg">
+<title>世界史｜教養の図解</title>
+<style>
+/* ===== 教養の図解 共通スタイル（全ページで同一のものを使う） ===== */
+:root {
+  --bg: #f7f5f0;
+  --surface: #ffffff;
+  --ink: #1f2328;
+  --ink-soft: #57606a;
+  --line: #d8d4ca;
+  --accent: #b5532a;        /* 見出し・強調 */
+  --c-phil: #6a4fb3;        /* 哲学 */
+  --c-hist: #b5532a;        /* 歴史 */
+  --c-econ: #1f7a5c;        /* 経済 */
+  --c-reli: #a07a12;        /* 宗教 */
+  --c-sci:  #2a63b5;        /* 科学 */
+  --c-art:  #b53a6b;        /* 芸術 */
+  --c-poli: #3d5a80;        /* 政治・法 */
+  --c-psy:  #0f7c86;        /* 心理学 */
+  --c-jp:   #a8323a;        /* 日本史 */
+  --tint: rgba(181, 83, 42, 0.08);
+  --radius: 12px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15171a; --surface: #1e2125; --ink: #e8e6e1; --ink-soft: #a3a8ae; --line: #3a3f45;
+    --accent: #e08a5f; --c-phil: #a58ee8; --c-hist: #e08a5f; --c-econ: #5cc39d;
+    --c-reli: #d9b24a; --c-sci: #6f9ee8; --c-art: #e57ba3; --c-poli: #8fa9d1; --c-psy: #4fc1c9; --c-jp: #e2767d; --tint: rgba(224, 138, 95, 0.12); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15171a; --surface: #1e2125; --ink: #e8e6e1; --ink-soft: #a3a8ae; --line: #3a3f45;
+  --accent: #e08a5f; --c-phil: #a58ee8; --c-hist: #e08a5f; --c-econ: #5cc39d;
+  --c-reli: #d9b24a; --c-sci: #6f9ee8; --c-art: #e57ba3; --c-poli: #8fa9d1; --c-psy: #4fc1c9; --c-jp: #e2767d; --tint: rgba(224, 138, 95, 0.12); color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  font-size: 16px; line-height: 1.8;
+}
+main { max-width: 860px; margin: 0 auto; padding-block: 0 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+nav.top {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg);
+  border-bottom: 1px solid var(--line); overflow-x: auto; white-space: nowrap;
+}
+nav.top ul { display: flex; gap: 4px; list-style: none; margin: 0 auto; padding-block: 8px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); max-width: 860px; }
+nav.top a {
+  display: inline-block; padding: 4px 12px; border-radius: 999px; color: var(--ink-soft);
+  text-decoration: none; font-size: 14px;
+}
+nav.top a[aria-current="page"] { background: var(--accent); color: #fff; }
+header.hero { padding: 32px 0 8px; }
+header.hero .kicker { color: var(--accent); font-weight: 700; font-size: 13px; letter-spacing: .08em; }
+h1 { font-size: 28px; line-height: 1.35; margin: 4px 0 12px; }
+h2 { font-size: 22px; line-height: 1.4; margin: 48px 0 12px; padding-left: 12px; border-left: 5px solid var(--accent); }
+h3 { font-size: 18px; margin: 28px 0 8px; }
+p { margin: 0 0 14px; }
+.lead { color: var(--ink-soft); }
+.toc { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 20px; }
+.toc ol { margin: 0; padding-left: 1.2em; }
+.toc a { color: var(--ink); }
+figure.diagram {
+  margin: 20px 0; background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 12px;
+}
+figure.diagram svg { display: block; width: 100%; height: auto; }
+figure.diagram figcaption { font-size: 13px; color: var(--ink-soft); margin-top: 8px; text-align: center; }
+/* SVG内の文字・線は必ずこのクラスで色を付ける（ダークモード対応のため直接の色指定はしない） */
+svg .t { fill: var(--ink); font-size: 14px; }
+svg .t-soft { fill: var(--ink-soft); font-size: 12px; }
+svg .t-strong { fill: var(--ink); font-size: 15px; font-weight: 700; }
+svg .ln { stroke: var(--line); stroke-width: 2; fill: none; }
+svg .ln-ink { stroke: var(--ink-soft); stroke-width: 1.5; fill: none; }
+svg .box { fill: var(--surface); stroke: var(--line); stroke-width: 1.5; }
+svg .phil { fill: var(--c-phil); } svg .hist { fill: var(--c-hist); } svg .econ { fill: var(--c-econ); }
+svg .reli { fill: var(--c-reli); } svg .sci { fill: var(--c-sci); } svg .art { fill: var(--c-art); }
+svg .poli { fill: var(--c-poli); } svg .psy { fill: var(--c-psy); } svg .jp { fill: var(--c-jp); }
+svg .s-phil { stroke: var(--c-phil); } svg .s-hist { stroke: var(--c-hist); } svg .s-econ { stroke: var(--c-econ); }
+svg .s-reli { stroke: var(--c-reli); } svg .s-sci { stroke: var(--c-sci); } svg .s-art { stroke: var(--c-art); }
+svg .s-poli { stroke: var(--c-poli); } svg .s-psy { stroke: var(--c-psy); } svg .s-jp { stroke: var(--c-jp); }
+svg .on-color { fill: #fff; font-size: 13px; font-weight: 700; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 16px 0; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; }
+.card h4 { margin: 0 0 6px; font-size: 16px; }
+.card p { margin: 0; font-size: 15px; }
+.card .tag { display: inline-block; font-size: 12px; padding: 0 8px; border-radius: 999px; background: var(--tint); color: var(--accent); margin-bottom: 6px; }
+.point { background: var(--tint); border-radius: var(--radius); padding: 12px 16px; margin: 16px 0; }
+.point strong { color: var(--accent); }
+.table-wrap { overflow-x: auto; margin: 16px 0; }
+table { border-collapse: collapse; width: 100%; min-width: 520px; background: var(--surface); font-size: 15px; }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: var(--tint); white-space: nowrap; }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 16px; margin: 10px 0; }
+details summary { cursor: pointer; font-weight: 700; }
+.next { margin-top: 48px; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.next a { display: block; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; color: var(--ink); text-decoration: none; }
+.next a span { display: block; font-size: 12px; color: var(--ink-soft); }
+footer { margin-top: 48px; font-size: 13px; color: var(--ink-soft); }
+@media (max-width: 480px) { h1 { font-size: 24px; } h2 { font-size: 20px; } }
+/* 図はスマホ幅で組んでいるので、PCで拡大しすぎないよう最大幅を抑える */
+figure.diagram svg { max-width: 520px; margin: 0 auto; }
+/* ダークでは分野色が明るくなるため、色の上の文字は暗くする */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) svg .on-color { fill: var(--bg); }
+  :root:not([data-theme="light"]) nav.top a[aria-current="page"] { color: var(--bg); }
+}
+:root[data-theme="dark"] svg .on-color { fill: var(--bg); }
+:root[data-theme="dark"] nav.top a[aria-current="page"] { color: var(--bg); }
+/* 考え方・用語の解説（dl.glossary） */
+main a { color: var(--accent); }
+.glossary { display: grid; gap: 10px; margin: 16px 0; }
+.glossary > div { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 16px; scroll-margin-top: 64px; }
+.glossary dt { font-weight: 700; }
+.glossary dt .who { font-weight: 400; font-size: 13px; color: var(--ink-soft); margin-left: 0.5em; }
+.glossary dd { margin: 4px 0 0; font-size: 15px; }
+/* world-history固有 */
+svg .tint { fill: var(--tint); }
+</style>
+</head>
+<body>
+<nav class="top" aria-label="教養の図解">
+  <ul>
+    <li><a href="index.html">全体地図</a></li>
+    <li><a href="philosophy.html">哲学・思想史</a></li>
+    <li><a href="religion.html">宗教</a></li>
+    <li><a href="world-history.html" aria-current="page">世界史</a></li>
+    <li><a href="japan.html">日本史・日本文化</a></li>
+    <li><a href="politics.html">政治・法</a></li>
+    <li><a href="economics.html">経済・お金</a></li>
+    <li><a href="science.html">科学史</a></li>
+    <li><a href="psychology.html">心理学・脳</a></li>
+    <li><a href="art.html">芸術</a></li>
+  </ul>
+</nav>
+<main>
+  <header class="hero">
+    <div class="kicker">教養の図解</div>
+    <h1>世界史を「流れと因果」でつかむ</h1>
+    <p class="lead">5000年の流れを、時代区分・地域の横並び・出来事どうしの因果の3つの軸で整理します。暗記ではなく「なぜそうなったか」で読み直すためのページです。</p>
+  </header>
+
+  <nav class="toc" aria-label="目次">
+    <ol>
+      <li><a href="#tips">世界史を流れでつかむコツ</a></li>
+      <li><a href="#timeline">5000年の大きな流れ</a></li>
+      <li><a href="#chain">因果の連鎖で読む</a></li>
+      <li><a href="#wars">二度の世界大戦と冷戦の構図</a></li>
+      <li><a href="#terms">図に出てくる用語の解説</a></li>
+      <li><a href="#japan">そのころ日本は</a></li>
+      <li><a href="#turning">世界史を動かした10の転換点</a></li>
+      <li><a href="#news">今のニュースにつながる背景</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="tips">世界史を流れでつかむコツ</h2>
+  <p>年号と人名を覚え直す必要はありません。押さえるのは「いつ社会の仕組みが変わったか」と「なぜ変わったか」の2点です。</p>
+  <div class="cards">
+    <div class="card"><span class="tag">コツ1</span><h4>時代区分を骨格にする</h4><p>古代・古典古代・中世・近世・近代・現代の6区分に出来事をぶら下げます。区分の境目は、支配の仕組みや経済の形が変わった地点です。</p></div>
+    <div class="card"><span class="tag">コツ2</span><h4>「なぜ」を矢印でつなぐ</h4><p>出来事は単独では起きません。前の出来事が条件をつくり、次の出来事を呼びます。システムの障害を原因から追うのと同じ読み方です。</p></div>
+    <div class="card"><span class="tag">コツ3</span><h4>同じ時代を横に見る</h4><p>ヨーロッパで十字軍が起きていたころ、中東ではイスラム世界が、東ではモンゴルが台頭しつつありました。縦（時代）と横（地域）の両方で見ると位置関係がつかめます。</p></div>
+    <div class="card"><span class="tag">コツ4</span><h4>お金と技術を追う</h4><p>銀の流れ、蒸気機関、石油。経済と技術の変化は、政治や戦争の変化に先行することが多い要素です。</p></div>
+  </div>
+  <div class="point"><strong>ひとことで言うと</strong>：世界史は「各地で別々に育った文明が、交易と戦争を通じて一つの世界につながっていく過程」として読むと、ばらばらの知識が一本の線になります。</div>
+
+  <h2 id="timeline">5000年の大きな流れ</h2>
+  <p>縦が時代、横が地域です。同じ高さにある出来事は、おおむね同じ時代に起きています。帯の色が付いた箱は、複数の地域にまたがる動きです。</p>
+  <figure class="diagram">
+<svg viewBox="0 0 360 1452" role="img" aria-label="古代文明から現代までの5000年を、ヨーロッパ・中東・アジアの3列に分けて並べた年表" xmlns="http://www.w3.org/2000/svg">
+<text class="t-strong" x="62" y="21" text-anchor="middle">ヨーロッパ</text>
+<text class="t-soft" x="62" y="39" text-anchor="middle">地中海〜西欧</text>
+<text class="t-strong" x="180" y="21" text-anchor="middle">中東</text>
+<text class="t-soft" x="180" y="39" text-anchor="middle">西アジア・北アフリカ</text>
+<text class="t-strong" x="298" y="21" text-anchor="middle">アジア</text>
+<text class="t-soft" x="298" y="39" text-anchor="middle">インド・中国</text>
+<line class="ln" stroke-dasharray="3 5" x1="121" y1="50" x2="121" y2="1452"/>
+<line class="ln" stroke-dasharray="3 5" x1="239" y1="50" x2="239" y2="1452"/>
+<rect class="hist" x="0" y="50" width="360" height="28" rx="6"/>
+<text class="on-color" x="10" y="69" text-anchor="start">古代文明</text>
+<text class="on-color" x="350" y="69" text-anchor="end">前3000年頃〜</text>
+<rect class="box" x="6" y="86" width="112" height="49" rx="8"/>
+<text class="t" x="62" y="107" text-anchor="middle">エーゲ文明</text>
+<text class="t-soft" x="62" y="124" text-anchor="middle">クレタ・ミケーネ</text>
+<rect class="box" x="124" y="86" width="112" height="49" rx="8"/>
+<text class="t" x="180" y="107" text-anchor="middle">メソポタミア</text>
+<text class="t-soft" x="180" y="124" text-anchor="middle">楔形文字・法典</text>
+<rect class="box" x="124" y="141" width="112" height="49" rx="8"/>
+<text class="t" x="180" y="162" text-anchor="middle">エジプト</text>
+<text class="t-soft" x="180" y="179" text-anchor="middle">ナイル川と王朝</text>
+<rect class="box" x="242" y="86" width="112" height="49" rx="8"/>
+<text class="t" x="298" y="107" text-anchor="middle">インダス文明</text>
+<text class="t-soft" x="298" y="124" text-anchor="middle">計画的な都市</text>
+<rect class="box" x="242" y="141" width="112" height="49" rx="8"/>
+<text class="t" x="298" y="162" text-anchor="middle">中国文明</text>
+<text class="t-soft" x="298" y="179" text-anchor="middle">黄河流域・殷</text>
+<rect class="hist" x="0" y="204" width="360" height="28" rx="6"/>
+<text class="on-color" x="10" y="223" text-anchor="start">古典古代</text>
+<text class="on-color" x="350" y="223" text-anchor="end">前8世紀頃〜5世紀</text>
+<rect class="box" x="6" y="240" width="112" height="49" rx="8"/>
+<text class="t" x="62" y="261" text-anchor="middle">ギリシャ</text>
+<text class="t-soft" x="62" y="278" text-anchor="middle">ポリス・民主政</text>
+<rect class="box" x="6" y="295" width="112" height="49" rx="8"/>
+<text class="t" x="62" y="316" text-anchor="middle">ローマ帝国</text>
+<text class="t-soft" x="62" y="333" text-anchor="middle">地中海を統一</text>
+<rect class="box" x="124" y="240" width="112" height="49" rx="8"/>
+<text class="t" x="180" y="261" text-anchor="middle">ペルシア帝国</text>
+<text class="t-soft" x="180" y="278" text-anchor="middle">アケメネス朝</text>
+<rect class="box" x="242" y="240" width="112" height="49" rx="8"/>
+<text class="t" x="298" y="261" text-anchor="middle">秦・漢</text>
+<text class="t-soft" x="298" y="278" text-anchor="middle">中国の統一</text>
+<rect class="box" x="242" y="295" width="112" height="49" rx="8"/>
+<text class="t" x="298" y="316" text-anchor="middle">マウリヤ朝</text>
+<text class="t-soft" x="298" y="333" text-anchor="middle">インドの統一</text>
+<rect class="hist" x="0" y="358" width="360" height="28" rx="6"/>
+<text class="on-color" x="10" y="377" text-anchor="start">中世</text>
+<text class="on-color" x="350" y="377" text-anchor="end">5世紀〜15世紀</text>
+<rect class="box" x="6" y="394" width="112" height="49" rx="8"/>
+<text class="t" x="62" y="415" text-anchor="middle">封建制</text>
+<text class="t-soft" x="62" y="432" text-anchor="middle">領主と騎士</text>
+<rect class="box" x="6" y="449" width="112" height="49" rx="8"/>
+<text class="t" x="62" y="470" text-anchor="middle">教会の権威</text>
+<text class="t-soft" x="62" y="487" text-anchor="middle">ローマ教皇</text>
+<rect class="box" x="6" y="504" width="112" height="49" rx="8"/>
+<text class="t" x="62" y="525" text-anchor="middle">十字軍</text>
+<text class="t-soft" x="62" y="542" text-anchor="middle">11〜13世紀</text>
+<rect class="box" x="124" y="394" width="112" height="49" rx="8"/>
+<text class="t" x="180" y="415" text-anchor="middle">イスラム教</text>
+<text class="t-soft" x="180" y="432" text-anchor="middle">7世紀に成立</text>
+<rect class="box" x="124" y="449" width="112" height="69" rx="8"/>
+<text class="t" x="180" y="470" text-anchor="middle">イスラム世界</text>
+<text class="t" x="180" y="490" text-anchor="middle">の拡大</text>
+<text class="t-soft" x="180" y="507" text-anchor="middle">交易と学問</text>
+<rect class="box" x="242" y="394" width="112" height="49" rx="8"/>
+<text class="t" x="298" y="415" text-anchor="middle">唐・宋</text>
+<text class="t-soft" x="298" y="432" text-anchor="middle">官僚制と交易</text>
+<rect class="box s-hist tint" x="124" y="561" width="230" height="50" rx="8"/>
+<text class="t-strong" x="239" y="583" text-anchor="middle">モンゴル帝国（13世紀）</text>
+<text class="t-soft" x="239" y="600" text-anchor="middle">ユーラシアの東西がつながる</text>
+<rect class="hist" x="0" y="625" width="360" height="28" rx="6"/>
+<text class="on-color" x="10" y="644" text-anchor="start">近世</text>
+<text class="on-color" x="350" y="644" text-anchor="end">16世紀〜18世紀</text>
+<rect class="box" x="6" y="661" width="112" height="49" rx="8"/>
+<text class="t" x="62" y="682" text-anchor="middle">大航海時代</text>
+<text class="t-soft" x="62" y="699" text-anchor="middle">1492 コロンブス</text>
+<rect class="box" x="6" y="716" width="112" height="49" rx="8"/>
+<text class="t" x="62" y="737" text-anchor="middle">宗教改革</text>
+<text class="t-soft" x="62" y="754" text-anchor="middle">1517 ルター</text>
+<rect class="box" x="6" y="771" width="112" height="49" rx="8"/>
+<text class="t" x="62" y="792" text-anchor="middle">絶対王政</text>
+<text class="t-soft" x="62" y="809" text-anchor="middle">主権国家の形成</text>
+<rect class="box" x="124" y="661" width="112" height="49" rx="8"/>
+<text class="t" x="180" y="682" text-anchor="middle">オスマン帝国</text>
+<text class="t-soft" x="180" y="699" text-anchor="middle">東地中海を支配</text>
+<rect class="box" x="124" y="716" width="112" height="49" rx="8"/>
+<text class="t" x="180" y="737" text-anchor="middle">サファヴィー朝</text>
+<text class="t-soft" x="180" y="754" text-anchor="middle">イラン</text>
+<rect class="box" x="242" y="661" width="112" height="49" rx="8"/>
+<text class="t" x="298" y="682" text-anchor="middle">明・清</text>
+<text class="t-soft" x="298" y="699" text-anchor="middle">中国</text>
+<rect class="box" x="242" y="716" width="112" height="49" rx="8"/>
+<text class="t" x="298" y="737" text-anchor="middle">ムガル帝国</text>
+<text class="t-soft" x="298" y="754" text-anchor="middle">インド</text>
+<rect class="box s-hist tint" x="6" y="828" width="348" height="50" rx="8"/>
+<text class="t-strong" x="180" y="850" text-anchor="middle">世界の一体化</text>
+<text class="t-soft" x="180" y="867" text-anchor="middle">銀と商品が海を越えて地球を回る</text>
+<rect class="hist" x="0" y="892" width="360" height="28" rx="6"/>
+<text class="on-color" x="10" y="911" text-anchor="start">近代</text>
+<text class="on-color" x="350" y="911" text-anchor="end">18世紀後半〜19世紀</text>
+<rect class="box" x="6" y="928" width="112" height="49" rx="8"/>
+<text class="t" x="62" y="949" text-anchor="middle">産業革命</text>
+<text class="t-soft" x="62" y="966" text-anchor="middle">イギリスから</text>
+<rect class="box" x="6" y="983" width="112" height="49" rx="8"/>
+<text class="t" x="62" y="1004" text-anchor="middle">市民革命</text>
+<text class="t-soft" x="62" y="1021" text-anchor="middle">1789 フランス</text>
+<rect class="box" x="6" y="1038" width="112" height="49" rx="8"/>
+<text class="t" x="62" y="1059" text-anchor="middle">国民国家</text>
+<text class="t-soft" x="62" y="1076" text-anchor="middle">ナショナリズム</text>
+<rect class="box" x="124" y="928" width="112" height="52" rx="8"/>
+<text class="t" x="180" y="949" text-anchor="middle">オスマン帝国</text>
+<text class="t" x="180" y="969" text-anchor="middle">の衰退</text>
+<rect class="box" x="242" y="928" width="112" height="49" rx="8"/>
+<text class="t" x="298" y="949" text-anchor="middle">アヘン戦争</text>
+<text class="t-soft" x="298" y="966" text-anchor="middle">清の開国</text>
+<rect class="box" x="242" y="983" width="112" height="52" rx="8"/>
+<text class="t" x="298" y="1004" text-anchor="middle">インドの</text>
+<text class="t" x="298" y="1024" text-anchor="middle">植民地化</text>
+<rect class="box s-hist tint" x="6" y="1095" width="348" height="50" rx="8"/>
+<text class="t-strong" x="180" y="1117" text-anchor="middle">帝国主義（19世紀後半）</text>
+<text class="t-soft" x="180" y="1134" text-anchor="middle">列強がアジア・アフリカを分割</text>
+<rect class="hist" x="0" y="1159" width="360" height="28" rx="6"/>
+<text class="on-color" x="10" y="1178" text-anchor="start">現代</text>
+<text class="on-color" x="350" y="1178" text-anchor="end">20世紀〜</text>
+<rect class="box s-hist tint" x="6" y="1195" width="348" height="50" rx="8"/>
+<text class="t-strong" x="180" y="1217" text-anchor="middle">二度の世界大戦</text>
+<text class="t-soft" x="180" y="1234" text-anchor="middle">1914〜1918 ／ 1939〜1945</text>
+<rect class="box s-hist tint" x="6" y="1253" width="348" height="50" rx="8"/>
+<text class="t-strong" x="180" y="1275" text-anchor="middle">冷戦（アメリカ対ソ連）</text>
+<text class="t-soft" x="180" y="1292" text-anchor="middle">1989 ベルリンの壁崩壊</text>
+<rect class="box" x="6" y="1311" width="112" height="49" rx="8"/>
+<text class="t" x="62" y="1332" text-anchor="middle">欧州統合</text>
+<text class="t-soft" x="62" y="1349" text-anchor="middle">ECからEUへ</text>
+<rect class="box" x="124" y="1311" width="112" height="69" rx="8"/>
+<text class="t" x="180" y="1332" text-anchor="middle">中東の国家</text>
+<text class="t" x="180" y="1352" text-anchor="middle">と紛争</text>
+<text class="t-soft" x="180" y="1369" text-anchor="middle">石油と国境線</text>
+<rect class="box" x="242" y="1311" width="112" height="52" rx="8"/>
+<text class="t" x="298" y="1332" text-anchor="middle">アジアの</text>
+<text class="t" x="298" y="1352" text-anchor="middle">独立と成長</text>
+<rect class="box s-hist tint" x="6" y="1388" width="348" height="50" rx="8"/>
+<text class="t-strong" x="180" y="1410" text-anchor="middle">グローバル化</text>
+<text class="t-soft" x="180" y="1427" text-anchor="middle">冷戦後、世界経済が一体に</text>
+</svg>
+    <figcaption>図1　ヨーロッパ・中東・アジアの3列で見る5000年の年表（区分の年代はおおよそ）</figcaption>
+  </figure>
+  <p>中世まで、技術や学問の先進地域はむしろ中東とアジアでした。ヨーロッパが世界の中心に躍り出るのは、大航海時代以降のことです。この「逆転」がなぜ起きたかを追うのが、次の因果の連鎖です。</p>
+
+  <h2 id="chain">因果の連鎖で読む</h2>
+  <h3>大航海時代から市民革命へ</h3>
+  <p>海の道が開いたことが、数百年かけて王の支配そのものを揺るがす流れです。</p>
+  <figure class="diagram">
+<svg viewBox="0 0 360 484" role="img" aria-label="大航海時代から市民革命までの因果の連鎖" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="hist" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<rect class="hist" x="40" y="4" width="280" height="54" rx="8"/>
+<text class="on-color" x="180" y="26" text-anchor="middle">大航海時代</text>
+<text class="on-color" x="180" y="45" text-anchor="middle">15世紀末〜</text>
+<line class="ln-ink s-hist" x1="70" y1="60" x2="70" y2="100" marker-end="url(#ah-a)"/>
+<text class="t-soft" x="86" y="78" text-anchor="start">新航路と「新大陸」への到達</text>
+<rect class="box" x="40" y="104" width="280" height="57" rx="8"/>
+<text class="t-strong" x="180" y="128" text-anchor="middle">世界の一体化</text>
+<text class="t" x="180" y="148" text-anchor="middle">アメリカ大陸の銀が流入</text>
+<line class="ln-ink s-hist" x1="70" y1="163" x2="70" y2="203" marker-end="url(#ah-a)"/>
+<text class="t-soft" x="86" y="181" text-anchor="start">物価が大きく上がる（価格革命）</text>
+<text class="t-soft" x="86" y="197" text-anchor="start">遠隔地との取引が増える</text>
+<rect class="box" x="40" y="207" width="280" height="54" rx="8"/>
+<text class="t-strong" x="180" y="231" text-anchor="middle">商業の発達</text>
+<text class="t-soft" x="180" y="248" text-anchor="middle">貿易・金融・手工業が伸びる</text>
+<line class="ln-ink s-hist" x1="70" y1="263" x2="70" y2="303" marker-end="url(#ah-a)"/>
+<text class="t-soft" x="86" y="281" text-anchor="start">土地でなく商売で</text>
+<text class="t-soft" x="86" y="297" text-anchor="start">富を蓄える層が生まれる</text>
+<rect class="box" x="40" y="307" width="280" height="54" rx="8"/>
+<text class="t-strong" x="180" y="331" text-anchor="middle">市民階級の台頭</text>
+<text class="t-soft" x="180" y="348" text-anchor="middle">商工業者（ブルジョワジー）</text>
+<line class="ln-ink s-hist" x1="70" y1="363" x2="70" y2="403" marker-end="url(#ah-a)"/>
+<text class="t-soft" x="86" y="381" text-anchor="start">王の課税や身分特権への不満</text>
+<text class="t-soft" x="86" y="397" text-anchor="start">啓蒙思想が後押し</text>
+<rect class="hist" x="40" y="407" width="280" height="73" rx="8"/>
+<text class="on-color" x="180" y="429" text-anchor="middle">市民革命</text>
+<text class="on-color" x="180" y="448" text-anchor="middle">イギリス革命・アメリカ独立・</text>
+<text class="on-color" x="180" y="467" text-anchor="middle">フランス革命（1789）</text>
+</svg>
+    <figcaption>図2　大航海時代 → 世界の一体化 → 商業の発達 → 市民階級の台頭 → 市民革命</figcaption>
+  </figure>
+
+  <h3>産業革命から第一次世界大戦へ</h3>
+  <p>生産力の急拡大が、原料と市場をめぐる国家間の競争に変わり、最後は総力戦に行き着きます。</p>
+  <figure class="diagram">
+<svg viewBox="0 0 360 443" role="img" aria-label="産業革命から第一次世界大戦までの因果の連鎖" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="hist" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<rect class="hist" x="40" y="4" width="280" height="54" rx="8"/>
+<text class="on-color" x="180" y="26" text-anchor="middle">産業革命</text>
+<text class="on-color" x="180" y="45" text-anchor="middle">18世紀後半、イギリスから</text>
+<line class="ln-ink s-hist" x1="70" y1="60" x2="70" y2="100" marker-end="url(#ah-b)"/>
+<text class="t-soft" x="86" y="78" text-anchor="start">機械で大量に作れるようになり</text>
+<text class="t-soft" x="86" y="94" text-anchor="start">原料と売り先が足りなくなる</text>
+<rect class="box" x="40" y="104" width="280" height="54" rx="8"/>
+<text class="t-strong" x="180" y="128" text-anchor="middle">原料と市場の争奪</text>
+<text class="t-soft" x="180" y="145" text-anchor="middle">綿花・ゴム・石油、製品の販路</text>
+<line class="ln-ink s-hist" x1="70" y1="160" x2="70" y2="200" marker-end="url(#ah-b)"/>
+<text class="t-soft" x="86" y="178" text-anchor="start">軍事力で植民地を広げる</text>
+<rect class="box" x="40" y="204" width="280" height="54" rx="8"/>
+<text class="t-strong" x="180" y="228" text-anchor="middle">帝国主義</text>
+<text class="t-soft" x="180" y="245" text-anchor="middle">19世紀後半、アジア・アフリカの分割</text>
+<line class="ln-ink s-hist" x1="70" y1="260" x2="70" y2="300" marker-end="url(#ah-b)"/>
+<text class="t-soft" x="86" y="278" text-anchor="start">遅れて工業化したドイツが</text>
+<text class="t-soft" x="86" y="294" text-anchor="start">英仏の勢力圏に割り込む</text>
+<rect class="box" x="40" y="304" width="280" height="54" rx="8"/>
+<text class="t-strong" x="180" y="328" text-anchor="middle">列強が二つの陣営に</text>
+<text class="t-soft" x="180" y="345" text-anchor="middle">三国同盟 対 三国協商</text>
+<line class="ln-ink s-hist" x1="70" y1="360" x2="70" y2="400" marker-end="url(#ah-b)"/>
+<text class="t-soft" x="86" y="378" text-anchor="start">バルカン半島の民族対立と</text>
+<text class="t-soft" x="86" y="394" text-anchor="start">サラエボ事件が引き金</text>
+<rect class="hist" x="40" y="404" width="280" height="35" rx="8"/>
+<text class="on-color" x="180" y="426" text-anchor="middle">第一次世界大戦（1914）</text>
+</svg>
+    <figcaption>図3　産業革命 → 原料と市場の争奪 → 帝国主義 → 第一次世界大戦</figcaption>
+  </figure>
+
+  <h3>第一次世界大戦から第二次世界大戦へ</h3>
+  <p>原因は一つではありません。戦後処理の不満と経済危機という2つの流れが合流しています。</p>
+  <figure class="diagram">
+<svg viewBox="0 0 360 357" role="img" aria-label="第一次世界大戦の戦後処理と世界恐慌が第二次世界大戦につながる流れ" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah-c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="hist" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<rect class="hist" x="40" y="4" width="280" height="35" rx="8"/>
+<text class="on-color" x="180" y="26" text-anchor="middle">第一次世界大戦の終結</text>
+<line class="ln-ink s-hist" x1="70" y1="41" x2="70" y2="81" marker-end="url(#ah-c)"/>
+<text class="t-soft" x="86" y="59" text-anchor="start">講和条約で敗戦国に</text>
+<text class="t-soft" x="86" y="75" text-anchor="start">重い賠償と領土の削減</text>
+<rect class="box" x="6" y="85" width="168" height="54" rx="8"/>
+<text class="t-strong" x="90" y="109" text-anchor="middle">ヴェルサイユ体制</text>
+<text class="t-soft" x="90" y="126" text-anchor="middle">ドイツへの重い賠償</text>
+<rect class="box s-hist" x="186" y="85" width="168" height="54" rx="8"/>
+<text class="t-strong" x="270" y="109" text-anchor="middle">世界恐慌（1929）</text>
+<text class="t-soft" x="270" y="126" text-anchor="middle">アメリカ発の大不況</text>
+<text class="t-soft" x="90" y="157" text-anchor="middle">敗戦国に不満が残る</text>
+<text class="t-soft" x="270" y="157" text-anchor="middle">各国が自国経済を囲い込む</text>
+<line class="ln-ink s-hist" x1="90" y1="165" x2="150" y2="197" marker-end="url(#ah-c)"/>
+<line class="ln-ink s-hist" x1="270" y1="165" x2="210" y2="197" marker-end="url(#ah-c)"/>
+<rect class="box" x="40" y="201" width="280" height="71" rx="8"/>
+<text class="t-strong" x="180" y="225" text-anchor="middle">ファシズム・軍国主義</text>
+<text class="t-soft" x="180" y="242" text-anchor="middle">独裁と対外膨張を掲げる勢力が</text>
+<text class="t-soft" x="180" y="259" text-anchor="middle">ドイツ・イタリア・日本で台頭</text>
+<line class="ln-ink s-hist" x1="70" y1="274" x2="70" y2="314" marker-end="url(#ah-c)"/>
+<text class="t-soft" x="86" y="298" text-anchor="start">国際協調が崩れる</text>
+<rect class="hist" x="40" y="318" width="280" height="35" rx="8"/>
+<text class="on-color" x="180" y="340" text-anchor="middle">第二次世界大戦（1939〜1945）</text>
+</svg>
+    <figcaption>図4　戦後処理の不満と世界恐慌が合流して第二次世界大戦に至る</figcaption>
+  </figure>
+  <div class="point"><strong>読み方のポイント</strong>：矢印は「必ずそうなる」という意味ではなく、「次の出来事が起きる条件をつくった」という意味です。歴史家の間でも、どの要因を重く見るかには幅があります。</div>
+
+  <h2 id="wars">二度の世界大戦と冷戦の構図</h2>
+  <p>20世紀の大きな対立を、陣営・対立軸・結果の3点で並べます。ひとつの対立の結果が、次の対立の出発点になっていることが分かります。</p>
+  <figure class="diagram">
+<svg viewBox="0 0 360 1083" role="img" aria-label="第一次世界大戦・第二次世界大戦・冷戦の陣営、対立軸、結果" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah-war" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="hist" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<rect class="hist" x="0" y="4" width="360" height="30" rx="6"/>
+<text class="on-color" x="10" y="24" text-anchor="start">第一次世界大戦</text>
+<text class="on-color" x="350" y="24" text-anchor="end">1914〜1918</text>
+<rect class="box" x="6" y="42" width="150" height="97" rx="8"/>
+<text class="t-strong" x="81" y="66" text-anchor="middle">同盟国</text>
+<text class="t" x="81" y="86" text-anchor="middle">ドイツ</text>
+<text class="t" x="81" y="106" text-anchor="middle">オーストリア</text>
+<text class="t" x="81" y="126" text-anchor="middle">オスマン帝国</text>
+<rect class="box" x="204" y="42" width="150" height="97" rx="8"/>
+<text class="t-strong" x="279" y="66" text-anchor="middle">連合国（協商国）</text>
+<text class="t" x="279" y="86" text-anchor="middle">イギリス・フランス</text>
+<text class="t" x="279" y="106" text-anchor="middle">ロシア（途中で離脱）</text>
+<text class="t" x="279" y="126" text-anchor="middle">アメリカ・日本 ほか</text>
+<circle class="hist" cx="180" cy="90" r="17"/>
+<text class="on-color" x="180" y="96" text-anchor="middle">対</text>
+<rect class="box s-hist tint" x="6" y="147" width="348" height="53" rx="8"/>
+<text class="t-soft" x="180" y="167" text-anchor="middle">対立軸</text>
+<text class="t" x="180" y="187" text-anchor="middle">列強どうしの植民地・勢力圏争い</text>
+<rect class="box" x="6" y="208" width="348" height="93" rx="8"/>
+<text class="t-soft" x="180" y="228" text-anchor="middle">結果</text>
+<text class="t" x="180" y="248" text-anchor="middle">帝国の崩壊（ドイツ・ロシア・</text>
+<text class="t" x="180" y="268" text-anchor="middle">オーストリア・オスマン）</text>
+<text class="t" x="180" y="288" text-anchor="middle">国際連盟の発足</text>
+<line class="ln-ink s-hist" x1="30" y1="305" x2="30" y2="355" marker-end="url(#ah-war)"/>
+<text class="t-soft" x="46" y="325" text-anchor="start">敗戦国への重い負担と</text>
+<text class="t-soft" x="46" y="343" text-anchor="start">世界恐慌が次の戦争の土台に</text>
+<rect class="hist" x="0" y="363" width="360" height="30" rx="6"/>
+<text class="on-color" x="10" y="383" text-anchor="start">第二次世界大戦</text>
+<text class="on-color" x="350" y="383" text-anchor="end">1939〜1945</text>
+<rect class="box" x="6" y="401" width="150" height="97" rx="8"/>
+<text class="t-strong" x="81" y="425" text-anchor="middle">枢軸国</text>
+<text class="t" x="81" y="445" text-anchor="middle">ドイツ</text>
+<text class="t" x="81" y="465" text-anchor="middle">イタリア</text>
+<text class="t" x="81" y="485" text-anchor="middle">日本</text>
+<rect class="box" x="204" y="401" width="150" height="97" rx="8"/>
+<text class="t-strong" x="279" y="425" text-anchor="middle">連合国</text>
+<text class="t" x="279" y="445" text-anchor="middle">アメリカ・イギリス</text>
+<text class="t" x="279" y="465" text-anchor="middle">ソ連・中国</text>
+<text class="t" x="279" y="485" text-anchor="middle">フランス ほか</text>
+<circle class="hist" cx="180" cy="450" r="17"/>
+<text class="on-color" x="180" y="454" text-anchor="middle">対</text>
+<rect class="box s-hist tint" x="6" y="506" width="348" height="73" rx="8"/>
+<text class="t-soft" x="180" y="526" text-anchor="middle">対立軸</text>
+<text class="t" x="180" y="546" text-anchor="middle">戦後体制の打破を狙う国々と</text>
+<text class="t" x="180" y="566" text-anchor="middle">それを阻む国々</text>
+<rect class="box" x="6" y="587" width="348" height="93" rx="8"/>
+<text class="t-soft" x="180" y="607" text-anchor="middle">結果</text>
+<text class="t" x="180" y="627" text-anchor="middle">国際連合の発足</text>
+<text class="t" x="180" y="647" text-anchor="middle">アメリカとソ連が超大国に</text>
+<text class="t" x="180" y="667" text-anchor="middle">アジア・アフリカの独立へ</text>
+<line class="ln-ink s-hist" x1="30" y1="684" x2="30" y2="734" marker-end="url(#ah-war)"/>
+<text class="t-soft" x="46" y="704" text-anchor="start">勝者のアメリカとソ連が</text>
+<text class="t-soft" x="46" y="722" text-anchor="start">戦後の主導権を争う</text>
+<rect class="hist" x="0" y="742" width="360" height="30" rx="6"/>
+<text class="on-color" x="10" y="762" text-anchor="start">冷戦</text>
+<text class="on-color" x="350" y="762" text-anchor="end">1945〜1989</text>
+<rect class="box" x="6" y="780" width="150" height="97" rx="8"/>
+<text class="t-strong" x="81" y="804" text-anchor="middle">西側（資本主義）</text>
+<text class="t" x="81" y="824" text-anchor="middle">アメリカ</text>
+<text class="t" x="81" y="844" text-anchor="middle">西ヨーロッパ</text>
+<text class="t" x="81" y="864" text-anchor="middle">日本 ほか</text>
+<rect class="box" x="204" y="780" width="150" height="97" rx="8"/>
+<text class="t-strong" x="279" y="804" text-anchor="middle">東側（社会主義）</text>
+<text class="t" x="279" y="824" text-anchor="middle">ソ連</text>
+<text class="t" x="279" y="844" text-anchor="middle">東ヨーロッパ</text>
+<text class="t" x="279" y="864" text-anchor="middle">中国（のち対立）</text>
+<circle class="hist" cx="180" cy="828" r="17"/>
+<text class="on-color" x="180" y="834" text-anchor="middle">対</text>
+<rect class="box s-hist tint" x="6" y="885" width="348" height="93" rx="8"/>
+<text class="t-soft" x="180" y="905" text-anchor="middle">対立軸</text>
+<text class="t" x="180" y="925" text-anchor="middle">経済体制と思想の対立</text>
+<text class="t" x="180" y="945" text-anchor="middle">直接戦わず、核開発競争と</text>
+<text class="t" x="180" y="965" text-anchor="middle">代理戦争（朝鮮・ベトナム）</text>
+<rect class="box" x="6" y="986" width="348" height="93" rx="8"/>
+<text class="t-soft" x="180" y="1006" text-anchor="middle">結果</text>
+<text class="t" x="180" y="1026" text-anchor="middle">1989 ベルリンの壁崩壊</text>
+<text class="t" x="180" y="1046" text-anchor="middle">1991 ソ連の解体</text>
+<text class="t" x="180" y="1066" text-anchor="middle">冷戦後のグローバル化へ</text>
+</svg>
+    <figcaption>図5　第一次世界大戦・第二次世界大戦・冷戦の陣営と対立軸、その結果（主要国のみ）</figcaption>
+  </figure>
+
+  <h2 id="terms">図に出てくる用語の解説</h2>
+  <p>年表と因果の図に出てくる、仕組みや考え方を表す用語を1〜2文でまとめます。</p>
+  <dl class="glossary">
+    <div id="g-hoken"><dt>封建制<span class="who">中世ヨーロッパ</span></dt><dd>王や領主が家臣に土地を与えて保護し、家臣は軍事の奉仕で応える、土地と主従関係を結びつけた仕組みです。農民は荘園で領主に支配され、地代や労働を納めました。</dd></div>
+    <div id="g-zettai"><dt>絶対王政<span class="who">16〜18世紀のヨーロッパ</span></dt><dd>王が貴族や教会を抑え、官僚と常備軍で国を直接治めた体制です。王の権力は神から授けられたとする王権神授説が支えました。</dd></div>
+    <div id="g-shuken"><dt>主権国家<span class="who">近世〜</span></dt><dd>一定の領土を持ち、その内側では最高の権力（主権）を持ち、外に対しては他国と対等な国家です。今の国際社会の基本単位です。</dd></div>
+    <div id="g-kakaku"><dt>価格革命<span class="who">16世紀</span></dt><dd>アメリカ大陸から大量の銀がヨーロッパに流れ込み、物価が長期にわたって上がり続けたことです。決まった地代で暮らす領主が苦しくなり、商工業者が力を伸ばしました。</dd></div>
+    <div id="g-keimo"><dt>啓蒙思想<span class="who">18世紀</span></dt><dd>理性によって迷信や古い権威を批判し、人間の自由や権利を土台に社会を作り直そうとした思想です（ロック、モンテスキュー、ルソーら）。市民革命を後押ししました。</dd></div>
+    <div id="g-shimin"><dt>市民革命<span class="who">17〜18世紀</span></dt><dd>商工業者などの市民階級が中心になって、王の専制や身分制を倒し、議会政治や基本的人権の考えを打ち立てた革命です。</dd></div>
+    <div id="g-nation"><dt>ナショナリズム・国民国家<span class="who">フランス革命以降</span></dt><dd>言語・歴史・文化を共有する「国民」が一つの国家をつくるべきだという考えと、それに基づく国家です。統一運動や独立運動の原動力になりました。</dd></div>
+    <div id="g-teikoku"><dt>帝国主義<span class="who">19世紀後半〜</span></dt><dd>工業化した列強が、原料・市場・投資先を求めて、軍事力でアジア・アフリカを植民地や勢力圏として分割した動きです。</dd></div>
+    <div id="g-versailles"><dt>ヴェルサイユ体制<span class="who">第一次世界大戦後</span></dt><dd>ヴェルサイユ条約を中心にした戦後の国際秩序です。ドイツに巨額の賠償と領土の削減を課し、国際連盟がつくられました。</dd></div>
+    <div id="g-fascism"><dt>ファシズム<span class="who">1920〜1940年代</span></dt><dd>個人より国家や民族を優先し、独裁的な指導者のもとで議会政治や言論の自由を否定して、対外膨張を目指す政治体制・運動です。</dd></div>
+    <div id="g-reisen"><dt>冷戦<span class="who">1945〜1989年</span></dt><dd>アメリカを中心とする資本主義の陣営と、ソ連を中心とする社会主義の陣営が、直接の全面戦争をせずに対立し続けた状態です。</dd></div>
+    <div id="g-dairi"><dt>代理戦争<span class="who">冷戦期</span></dt><dd>大国どうしが直接戦わず、対立する側をそれぞれ支援して、別の地域で戦わせる形の戦争です（朝鮮戦争、ベトナム戦争など）。</dd></div>
+  </dl>
+
+  <h2 id="japan">そのころ日本は</h2>
+  <p>知っている日本史に重ねると、世界史の時代感覚がつかみやすくなります。対応は代表的なものに絞っています。</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>世界の出来事</th><th>時期</th><th>そのころの日本</th></tr></thead>
+      <tbody>
+        <tr><td>メソポタミア・エジプト文明</td><td>前3000年頃</td><td>縄文時代</td></tr>
+        <tr><td>ローマ帝国・漢</td><td>前1世紀〜2世紀頃</td><td>弥生時代（倭の国々が漢に使いを送る）</td></tr>
+        <tr><td>西ローマ帝国の滅亡</td><td>476年</td><td>古墳時代</td></tr>
+        <tr><td>イスラム教の成立・唐</td><td>7世紀</td><td>飛鳥時代（遣隋使・遣唐使）</td></tr>
+        <tr><td>モンゴル帝国</td><td>13世紀</td><td>鎌倉時代（元寇）</td></tr>
+        <tr><td>大航海時代・宗教改革</td><td>15世紀末〜16世紀</td><td>戦国時代（鉄砲とキリスト教の伝来）</td></tr>
+        <tr><td>フランス革命</td><td>1789年</td><td>江戸時代後期</td></tr>
+        <tr><td>アヘン戦争</td><td>1840年代</td><td>江戸時代後期（幕府が情報を受けて対外政策を見直す）</td></tr>
+        <tr><td>帝国主義の時代</td><td>19世紀後半</td><td>明治時代（日清・日露戦争）</td></tr>
+        <tr><td>第一次世界大戦</td><td>1914〜1918年</td><td>大正時代</td></tr>
+        <tr><td>第二次世界大戦</td><td>1939〜1945年</td><td>昭和時代（前期）</td></tr>
+        <tr><td>ベルリンの壁崩壊</td><td>1989年</td><td>平成元年</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="turning">世界史を動かした10の転換点</h2>
+  <div class="cards">
+    <div class="card"><span class="tag">前3000年頃</span><h4>1. 都市と文字の誕生</h4><p>農耕で余剰が生まれ、メソポタミアやエジプトに都市・王・文字が現れました。記録と徴税ができる「国家」の始まりです。</p></div>
+    <div class="card"><span class="tag">前1世紀〜</span><h4>2. ローマ帝国</h4><p>地中海全体を一つの法と道路網でまとめました。ローマ法とラテン語は、その後のヨーロッパの共通基盤になります。</p></div>
+    <div class="card"><span class="tag">4世紀</span><h4>3. キリスト教の公認と国教化</h4><p>迫害された宗教がローマ帝国の国教になりました。中世ヨーロッパでは教会が政治・学問・日常生活の中心を担います。</p></div>
+    <div class="card"><span class="tag">7世紀</span><h4>4. イスラム教の成立と拡大</h4><p>アラビア半島から短期間で広大な地域に広がりました。交易と学問が栄え、古代ギリシャの知識もここで受け継がれます。</p></div>
+    <div class="card"><span class="tag">13世紀</span><h4>5. モンゴル帝国</h4><p>ユーラシアの大半を一つの勢力がまとめ、東西の交易路が安定しました。人・物・情報の行き来が一気に増えます。</p></div>
+    <div class="card"><span class="tag">1492年〜</span><h4>6. 大航海時代</h4><p>ヨーロッパが大西洋とインド洋の航路を開き、世界の各地域が初めて一つの交易網でつながりました。</p></div>
+    <div class="card"><span class="tag">1517年〜</span><h4>7. 宗教改革</h4><p>ルターの教会批判から、カトリックとプロテスタントに分裂しました。教皇の権威が弱まり、国王が力を強める流れにつながります。</p></div>
+    <div class="card"><span class="tag">1789年</span><h4>8. フランス革命</h4><p>身分制を否定し、国の主権は国民にあるという考えを打ち出しました。今の民主主義と国民国家の出発点の一つです。</p></div>
+    <div class="card"><span class="tag">18世紀後半〜</span><h4>9. 産業革命</h4><p>蒸気機関と工場制で生産力が桁違いに伸びました。都市化、労働問題、資本主義と社会主義の対立もここから生まれます。</p></div>
+    <div class="card"><span class="tag">1914〜1989年</span><h4>10. 世界大戦と冷戦</h4><p>二度の総力戦と米ソの対立が20世紀を形づくりました。国際連合や今の国境線の多くも、この時代に決まっています。</p></div>
+  </div>
+
+  <h2 id="news">今のニュースにつながる背景</h2>
+  <p>ここでは現在の情勢の評価はせず、ニュースの前提になっている歴史だけを短く整理します。</p>
+  <details open>
+    <summary>中東の情勢</summary>
+    <p>第一次世界大戦でオスマン帝国が解体され、その領域の多くはイギリスとフランスの委任統治領になりました。今の国境線の多くはこのとき引かれたもので、民族や宗派の分布とは必ずしも一致していません。そこに20世紀の石油の重要性と、冷戦期の大国の関与が重なっています。</p>
+  </details>
+  <details>
+    <summary>ヨーロッパ統合（EU）</summary>
+    <p>二度の大戦がいずれもヨーロッパで始まったことへの反省が出発点です。戦争に欠かせない石炭と鉄鋼を独仏などで共同管理する仕組みから始まり、経済統合を広げてEUに至りました。統合をどこまで進めるかは、今も各国で議論が分かれています。</p>
+  </details>
+  <details>
+    <summary>アメリカと中国</summary>
+    <p>中国ではアヘン戦争以降、列強に領土や権益を奪われた経験が近代史の基調として語られます。冷戦期の1970年代に米中は接近し、その後の改革開放で中国は世界経済に深く組み込まれました。経済的な結びつきと、安全保障上の競争が並行していることが今の関係の前提です。</p>
+  </details>
+  <details>
+    <summary>ロシアとヨーロッパ</summary>
+    <p>1991年のソ連解体で、旧ソ連の国々と東欧諸国はそれぞれ独立した進路を選ぶことになりました。冷戦後の安全保障の枠組みをどう見るかについて、ロシアと欧米の間では認識が大きく異なります。</p>
+  </details>
+
+  <div class="next">
+    <a href="index.html"><span>全体地図</span>教養の全体像に戻る</a>
+    <a href="philosophy.html"><span>哲学・思想史</span>革命や宗教改革を動かした考え方</a>
+    <a href="economics.html"><span>経済・お金</span>銀の流入や世界恐慌をお金の仕組みから</a>
+  </div>
+  <footer>作成: 2026-10-19 ／ 教養の図解シリーズ</footer>
+</main>
+</body>
+</html>
