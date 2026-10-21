@@ -1,0 +1,43 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 本地垂迹：仏が本体、神は仮の姿 -->
+  <circle cx="62" cy="50" r="26" class="fl"/>
+  <text x="62" y="58" class="t-xl mid on">仏</text>
+  <text x="100" y="46" class="t-s ink">本地＝本体</text>
+  <text x="100" y="62" class="t-xs soft">如来や菩薩</text>
+  <path d="M62 80 V120" class="st-f dash" stroke-width="2" marker-end="url(#a-religion)"/>
+  <text x="74" y="104" class="t-xs fl">仮の姿で現れる</text>
+  <circle cx="62" cy="150" r="26" class="tint st-f" stroke-width="2"/>
+  <text x="62" y="158" class="t-xl mid fl">神</text>
+  <text x="100" y="146" class="t-s ink">垂迹＝現れた姿</text>
+  <text x="100" y="162" class="t-xs soft">日本の神々</text>
+
+  <!-- 同じ境内に寺と神社 -->
+  <rect x="212" y="14" width="136" height="160" rx="14" class="bgc"/>
+  <!-- 塔 -->
+  <path d="M232 60 H276 L262 52 H246Z M234 86 H274 L262 78 H246Z M236 112 H272 L262 104 H246Z" class="ink"/>
+  <path d="M254 36 V52" class="st" stroke-width="2"/>
+  <rect x="244" y="60" width="20" height="18" class="soft"/>
+  <rect x="244" y="86" width="20" height="18" class="soft"/>
+  <rect x="244" y="112" width="20" height="24" class="soft"/>
+  <!-- 鳥居 -->
+  <path d="M290 92 Q312 98 334 92" class="st-f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M294 104 H330 M300 96 V136 M324 96 V136" class="st-f" stroke-width="3"/>
+  <path d="M222 136 H340" class="st-soft" stroke-width="1.5"/>
+  <text x="280" y="154" class="t-xs mid ink">寺と神社が一体</text>
+  <text x="280" y="168" class="t-xs mid soft">（神宮寺など）</text>
+
+  <!-- 年表 -->
+  <text x="165" y="212" class="t-xs mid fl">神と仏がいっしょに拝まれた時代</text>
+  <rect x="30" y="220" width="270" height="10" rx="5" class="fl"/>
+  <path d="M300 225 L344 214 M300 225 L344 236" class="st-f" stroke-width="2"/>
+  <path d="M16 250 H344" class="st-soft" stroke-width="1.5"/>
+  <path d="M30 246 V254 M100 246 V254 M170 246 V254 M300 246 V254" class="st-soft" stroke-width="1.5"/>
+  <text x="30" y="268" class="t-xs mid ink">6世紀</text>
+  <text x="100" y="268" class="t-xs mid ink">8世紀</text>
+  <text x="170" y="268" class="t-xs mid ink">10世紀〜</text>
+  <text x="300" y="268" class="t-xs mid ink">1868年</text>
+  <text x="30" y="286" class="t-xs mid soft">仏教伝来</text>
+  <text x="100" y="286" class="t-xs mid soft">神宮寺</text>
+  <text x="170" y="286" class="t-xs mid soft">本地垂迹説</text>
+  <text x="300" y="286" class="t-xs mid fl">神仏分離</text>
+</svg>

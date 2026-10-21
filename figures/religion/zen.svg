@@ -1,0 +1,38 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 伝わった道 -->
+  <path d="M64 50 H164" class="st-f" stroke-width="2.5" marker-end="url(#a-religion)"/>
+  <path d="M196 50 H294" class="st-f" stroke-width="2.5" marker-end="url(#a-religion)"/>
+  <text x="114" y="40" class="t-xs mid soft">5〜6世紀ごろ</text>
+  <text x="245" y="40" class="t-xs mid soft">12〜13世紀</text>
+  <circle cx="50" cy="50" r="10" class="soft"/>
+  <circle cx="180" cy="50" r="10" class="fl"/>
+  <circle cx="310" cy="50" r="10" class="fl"/>
+  <text x="50" y="80" class="t-m mid ink">インド</text>
+  <text x="180" y="80" class="t-m mid ink">中国</text>
+  <text x="310" y="80" class="t-m mid ink">日本</text>
+  <text x="50" y="98" class="t-xs mid soft">ブッダの瞑想</text>
+  <text x="180" y="98" class="t-xs mid soft">達磨が伝えたとされる</text>
+  <text x="310" y="98" class="t-xs mid soft">鎌倉時代</text>
+
+  <path d="M16 112 H344" class="st-line" stroke-width="1.5"/>
+
+  <!-- 坐禅 -->
+  <circle cx="80" cy="186" r="46" class="tint"/>
+  <circle cx="80" cy="152" r="11" class="ink"/>
+  <path d="M60 204 C60 176 68 166 80 166 C92 166 100 176 100 204Z" class="ink"/>
+  <path d="M48 212 Q80 196 112 212 Q80 222 48 212Z" class="ink"/>
+  <ellipse cx="80" cy="200" rx="9" ry="5" class="paper"/>
+  <text x="80" y="254" class="t-l mid ink">坐禅</text>
+  <text x="80" y="272" class="t-xs mid soft">姿勢と呼吸を整える</text>
+
+  <!-- 日本の二つの宗派 -->
+  <rect x="166" y="124" width="178" height="72" rx="12" class="tint st-f" stroke-width="1.5"/>
+  <text x="180" y="150" class="t-m fl">臨済宗</text>
+  <text x="232" y="150" class="t-xs soft">栄西が伝えた</text>
+  <text x="180" y="174" class="t-s ink">公案（問い）に取り組む</text>
+  <rect x="166" y="204" width="178" height="72" rx="12" class="bgc st-f" stroke-width="1.5"/>
+  <text x="180" y="230" class="t-m fl">曹洞宗</text>
+  <text x="232" y="230" class="t-xs soft">道元が伝えた</text>
+  <text x="180" y="254" class="t-s ink">ただひたすら坐る</text>
+  <text x="180" y="270" class="t-xs soft">（只管打坐）</text>
+</svg>

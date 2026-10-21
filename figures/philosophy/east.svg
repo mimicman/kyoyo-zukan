@@ -1,0 +1,33 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <path d="M180 14 V270" class="st-line" stroke-width="1.5"/>
+
+  <!-- 左：孔子（儒家） -->
+  <text x="90" y="30" class="t-l mid ink">孔子</text>
+  <text x="90" y="46" class="t-xs mid fl">儒家</text>
+  <circle cx="90" cy="136" r="64" class="tint"/>
+  <circle cx="90" cy="136" r="64" class="st-f" stroke-width="1.5"/>
+  <circle cx="90" cy="136" r="46" class="st-f" stroke-width="1.5"/>
+  <circle cx="90" cy="136" r="28" class="st-f" stroke-width="1.5"/>
+  <circle cx="90" cy="136" r="12" class="fl"/>
+  <text x="90" y="140" class="t-xs mid on">私</text>
+  <text x="90" y="120" class="t-xs mid ink">家族</text>
+  <text x="90" y="102" class="t-xs mid ink">国</text>
+  <text x="90" y="84" class="t-xs mid ink">天下</text>
+  <path d="M106 150 L148 186" class="st-f" stroke-width="2" marker-end="url(#a-philosophy)"/>
+  <text x="152" y="200" class="t-xs end fl">広げる</text>
+  <text x="90" y="226" class="t-s mid ink">仁（思いやり）</text>
+  <text x="90" y="244" class="t-s mid ink">礼（礼儀作法）</text>
+  <text x="90" y="264" class="t-xs mid soft">人の努力で社会を整える</text>
+
+  <!-- 右：老子（道家） -->
+  <text x="270" y="30" class="t-l mid ink">老子</text>
+  <text x="270" y="46" class="t-xs mid fl">道家</text>
+  <path d="M196 180 L250 78 L310 180Z" class="soft" opacity="0.35"/>
+  <path d="M252 86 C238 110 270 124 256 146 C246 162 280 172 306 186" class="st-f" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="306" cy="192" rx="40" ry="9" class="tint st-f" stroke-width="1.5"/>
+  <text x="344" y="88" class="t-xs end soft">水は争わず</text>
+  <text x="344" y="102" class="t-xs end soft">低い所へ</text>
+  <text x="270" y="226" class="t-s mid ink">道（タオ）に従う</text>
+  <text x="270" y="244" class="t-s mid ink">無為自然</text>
+  <text x="270" y="264" class="t-xs mid soft">作為をやめ自然に任せる</text>
+</svg>

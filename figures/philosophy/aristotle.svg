@@ -1,0 +1,46 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 中庸：両極端の間 -->
+  <text x="20" y="22" class="t-xs soft">勇気なら</text>
+  <text x="180" y="36" class="t-m mid fl">中庸</text>
+  <path d="M40 60 H320" class="st-soft" stroke-width="3"/>
+  <path d="M54 60 H158" class="st-f" stroke-width="2.5" marker-end="url(#a-philosophy)"/>
+  <path d="M306 60 H202" class="st-f" stroke-width="2.5" marker-end="url(#a-philosophy)"/>
+  <circle cx="40" cy="60" r="9" class="soft"/>
+  <circle cx="320" cy="60" r="9" class="soft"/>
+  <circle cx="180" cy="60" r="14" class="fl"/>
+  <text x="40" y="90" class="t-m mid ink">臆病</text>
+  <text x="180" y="90" class="t-m mid ink">勇気</text>
+  <text x="320" y="90" class="t-m mid ink">無謀</text>
+  <text x="40" y="106" class="t-xs mid soft">足りない</text>
+  <text x="180" y="106" class="t-xs mid fl">ちょうどよい</text>
+  <text x="320" y="106" class="t-xs mid soft">行き過ぎ</text>
+
+  <!-- もう一つの例：お金 -->
+  <text x="20" y="124" class="t-xs soft">お金なら</text>
+  <path d="M40 134 H320" class="st-line" stroke-width="2"/>
+  <circle cx="40" cy="134" r="5" class="soft"/>
+  <circle cx="320" cy="134" r="5" class="soft"/>
+  <circle cx="180" cy="134" r="7" class="fl"/>
+  <text x="40" y="154" class="t-s mid soft">けち</text>
+  <text x="180" y="154" class="t-s mid ink">気前のよさ</text>
+  <text x="320" y="154" class="t-s mid soft">浪費</text>
+
+  <!-- 目的：どんぐり→大木 -->
+  <path d="M16 170 H344" class="st-line" stroke-width="1.5"/>
+  <text x="20" y="192" class="t-s ink">目的：どんぐりは大木を目指す</text>
+  <path d="M16 250 H344" class="st-soft" stroke-width="1.5"/>
+  <ellipse cx="60" cy="240" rx="8" ry="10" class="soft"/>
+  <path d="M50 237 Q60 222 70 237Z" class="ink"/>
+  <path d="M86 236 H138" class="st-f" stroke-width="2" marker-end="url(#a-philosophy)"/>
+  <path d="M170 250 V220" class="st-f" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="162" cy="224" rx="9" ry="5" class="fl"/>
+  <ellipse cx="179" cy="218" rx="9" ry="5" class="fl"/>
+  <path d="M198 232 H250" class="st-f" stroke-width="2" marker-end="url(#a-philosophy)"/>
+  <rect x="284" y="216" width="12" height="34" class="soft"/>
+  <circle cx="272" cy="214" r="15" class="fl"/>
+  <circle cx="308" cy="214" r="15" class="fl"/>
+  <circle cx="290" cy="200" r="21" class="fl"/>
+  <text x="60" y="268" class="t-xs mid soft">どんぐり</text>
+  <text x="170" y="268" class="t-xs mid soft">若木</text>
+  <text x="290" y="268" class="t-xs mid fl">大木＝目的</text>
+</svg>

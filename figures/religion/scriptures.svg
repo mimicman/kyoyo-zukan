@@ -1,0 +1,54 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 1 ヘブライ語聖書：多くの巻物 -->
+  <rect x="12" y="12" width="336" height="58" rx="12" class="bgc"/>
+  <g class="tint st-f" stroke-width="1.5">
+    <rect x="22" y="24" width="10" height="36" rx="5"/>
+    <rect x="34" y="28" width="10" height="32" rx="5"/>
+    <rect x="46" y="22" width="10" height="38" rx="5"/>
+    <rect x="58" y="30" width="10" height="30" rx="5"/>
+  </g>
+  <text x="82" y="36" class="t-m ink">ヘブライ語聖書</text>
+  <text x="82" y="56" class="t-xs soft">言語：ヘブライ語</text>
+  <text x="200" y="36" class="t-xs ink">長い時代の文書集</text>
+  <text x="200" y="54" class="t-xs soft">律法・歴史・預言・詩</text>
+
+  <!-- 2 新約聖書：数十の文書 -->
+  <rect x="12" y="78" width="336" height="58" rx="12" class="bgc"/>
+  <g class="fl">
+    <rect x="22" y="92" width="7" height="34" rx="1"/>
+    <rect x="31" y="92" width="7" height="34" rx="1"/>
+    <rect x="40" y="92" width="7" height="34" rx="1"/>
+    <rect x="49" y="92" width="7" height="34" rx="1"/>
+  </g>
+  <g class="tint st-f" stroke-width="1">
+    <rect x="58" y="100" width="5" height="26" rx="1"/>
+    <rect x="64" y="100" width="5" height="26" rx="1"/>
+  </g>
+  <text x="82" y="102" class="t-m ink">新約聖書</text>
+  <text x="82" y="122" class="t-xs soft">言語：ギリシャ語</text>
+  <text x="200" y="102" class="t-xs ink">1〜2世紀の27の文書</text>
+  <text x="200" y="120" class="t-xs soft">4つの福音書と手紙など</text>
+
+  <!-- 3 クルアーン：一冊の本 -->
+  <rect x="12" y="144" width="336" height="58" rx="12" class="bgc"/>
+  <rect x="28" y="154" width="36" height="40" rx="3" class="fl"/>
+  <path d="M36 166 H56 M36 174 H56 M36 182 H50" class="st-line" stroke-width="2"/>
+  <text x="82" y="168" class="t-m ink">クルアーン</text>
+  <text x="82" y="188" class="t-xs soft">言語：アラビア語</text>
+  <text x="200" y="168" class="t-xs ink">ムハンマドへの啓示</text>
+  <text x="200" y="186" class="t-xs soft">7世紀に一冊にまとめた</text>
+
+  <!-- 4 仏典：口伝から膨大な経典へ -->
+  <rect x="12" y="210" width="336" height="58" rx="12" class="bgc"/>
+  <g class="soft">
+    <rect x="22" y="250" width="34" height="6" rx="3"/>
+    <rect x="24" y="242" width="34" height="6" rx="3"/>
+    <rect x="22" y="234" width="34" height="6" rx="3"/>
+    <rect x="25" y="226" width="34" height="6" rx="3"/>
+  </g>
+  <path d="M60 222 q8 -6 10 2 M62 230 q8 -4 10 4" class="st-f" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="82" y="234" class="t-m ink">仏典</text>
+  <text x="82" y="254" class="t-xs soft">言語：パーリ語など</text>
+  <text x="200" y="234" class="t-xs ink">暗唱で伝えた教え</text>
+  <text x="200" y="252" class="t-xs soft">のちに文字に。膨大な数</text>
+</svg>

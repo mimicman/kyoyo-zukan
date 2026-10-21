@@ -1,0 +1,51 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：八百万の神（自然に宿る） -->
+  <text x="20" y="26" class="t-m fl">八百万の神</text>
+  <text x="112" y="26" class="t-xs soft">自然のあらゆるものに神が宿る</text>
+  <path d="M28 92 L70 42 L112 92Z" class="soft" opacity="0.5"/>
+  <path d="M136 72 q10 -10 20 0 t20 0 t20 0 M136 86 q10 -10 20 0 t20 0 t20 0" class="st-f" stroke-width="2.5" stroke-linecap="round"/>
+  <rect x="235" y="60" width="10" height="32" class="soft"/>
+  <circle cx="240" cy="54" r="18" class="soft" opacity="0.6"/>
+  <path d="M233 70 Q240 74 247 70" class="st-f" stroke-width="2.5"/>
+  <path d="M282 92 Q284 66 304 64 Q326 66 328 92Z" class="soft"/>
+  <path d="M286 78 Q305 84 324 78" class="st-f" stroke-width="2.5"/>
+  <text x="70" y="108" class="t-xs mid ink">山</text>
+  <text x="166" y="108" class="t-xs mid ink">海</text>
+  <text x="240" y="108" class="t-xs mid ink">大木</text>
+  <text x="305" y="108" class="t-xs mid ink">岩</text>
+
+  <!-- 神をまつる -->
+  <path d="M332 116 V176" class="st-f" stroke-width="2" marker-end="url(#a-religion)"/>
+  <text x="326" y="146" class="t-xs end fl">神をまつる</text>
+
+  <!-- 参道 -->
+  <path d="M66 158 H262" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="160" y="150" class="t-xs mid soft">参道を奥へ進む</text>
+
+  <!-- 下：神社の配置（横から見た図） -->
+  <path d="M10 250 H350" class="st" stroke-width="2"/>
+  <!-- 鳥居 -->
+  <path d="M14 186 Q40 194 66 186" class="st-f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M20 202 H60 M28 190 V250 M52 190 V250" class="st-f" stroke-width="4"/>
+  <!-- 手水舎 -->
+  <path d="M98 216 L120 202 L142 216Z" class="ink"/>
+  <path d="M104 216 V250 M136 216 V250" class="st" stroke-width="2"/>
+  <rect x="110" y="236" width="20" height="8" rx="2" class="st-f" stroke-width="2"/>
+  <!-- 拝殿 -->
+  <path d="M168 206 L186 186 H234 L252 206Z" class="fl"/>
+  <rect x="176" y="206" width="68" height="44" class="tint st-f" stroke-width="1.5"/>
+  <!-- 本殿 -->
+  <path d="M268 214 L300 186 L332 214Z" class="ink"/>
+  <path d="M292 178 L308 194 M308 178 L292 194" class="st" stroke-width="2.5"/>
+  <rect x="278" y="214" width="44" height="28" class="tint st-f" stroke-width="1.5"/>
+  <path d="M276 242 H324 V250 H276Z" class="soft"/>
+
+  <text x="40" y="268" class="t-s mid ink">鳥居</text>
+  <text x="120" y="268" class="t-s mid ink">手水舎</text>
+  <text x="210" y="268" class="t-s mid ink">拝殿</text>
+  <text x="300" y="268" class="t-s mid ink">本殿</text>
+  <text x="40" y="286" class="t-xs mid soft">神域の入口</text>
+  <text x="120" y="286" class="t-xs mid soft">手と口を清める</text>
+  <text x="210" y="286" class="t-xs mid soft">お参りする</text>
+  <text x="300" y="286" class="t-xs mid fl">神が宿る</text>
+</svg>

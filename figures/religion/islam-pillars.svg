@@ -1,0 +1,52 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 屋根 -->
+  <path d="M14 72 L180 18 L346 72Z" class="fl"/>
+  <text x="180" y="62" class="t-m mid on">五行＝5つの務め</text>
+
+  <!-- 5本の柱 -->
+  <g class="tint st-f" stroke-width="1.5">
+    <rect x="18" y="78" width="56" height="140" rx="4"/>
+    <rect x="85" y="78" width="56" height="140" rx="4"/>
+    <rect x="152" y="78" width="56" height="140" rx="4"/>
+    <rect x="219" y="78" width="56" height="140" rx="4"/>
+    <rect x="286" y="78" width="56" height="140" rx="4"/>
+  </g>
+  <text x="46" y="104" class="t-m mid fl">1</text>
+  <text x="113" y="104" class="t-m mid fl">2</text>
+  <text x="180" y="104" class="t-m mid fl">3</text>
+  <text x="247" y="104" class="t-m mid fl">4</text>
+  <text x="314" y="104" class="t-m mid fl">5</text>
+  <text x="46" y="140" class="t-s mid ink">信仰告白</text>
+  <text x="113" y="140" class="t-s mid ink">礼拝</text>
+  <text x="180" y="140" class="t-s mid ink">喜捨</text>
+  <text x="247" y="140" class="t-s mid ink">断食</text>
+  <text x="314" y="140" class="t-s mid ink">巡礼</text>
+  <text x="46" y="166" class="t-xs mid soft">神は唯一</text>
+  <text x="46" y="182" class="t-xs mid soft">と唱える</text>
+  <text x="113" y="166" class="t-xs mid soft">1日5回</text>
+  <text x="113" y="182" class="t-xs mid soft">聖地の方へ</text>
+  <text x="180" y="166" class="t-xs mid soft">財産の一部</text>
+  <text x="180" y="182" class="t-xs mid soft">を困る人へ</text>
+  <text x="247" y="166" class="t-xs mid soft">ラマダーン</text>
+  <text x="247" y="182" class="t-xs mid soft">月の日中</text>
+  <text x="314" y="166" class="t-xs mid soft">一生に一度</text>
+  <text x="314" y="182" class="t-xs mid soft">メッカへ</text>
+
+  <!-- 土台：六信 -->
+  <rect x="10" y="222" width="340" height="24" rx="4" class="fl"/>
+  <text x="180" y="239" class="t-s mid on">六信＝6つを信じる（土台）</text>
+  <g class="paper st-f" stroke-width="1.5">
+    <rect x="14" y="250" width="52" height="34" rx="4"/>
+    <rect x="70" y="250" width="52" height="34" rx="4"/>
+    <rect x="126" y="250" width="52" height="34" rx="4"/>
+    <rect x="182" y="250" width="52" height="34" rx="4"/>
+    <rect x="238" y="250" width="52" height="34" rx="4"/>
+    <rect x="294" y="250" width="52" height="34" rx="4"/>
+  </g>
+  <text x="40" y="272" class="t-s mid ink">神</text>
+  <text x="96" y="272" class="t-s mid ink">天使</text>
+  <text x="152" y="272" class="t-s mid ink">啓典</text>
+  <text x="208" y="272" class="t-s mid ink">預言者</text>
+  <text x="264" y="272" class="t-s mid ink">来世</text>
+  <text x="320" y="272" class="t-s mid ink">定命</text>
+</svg>

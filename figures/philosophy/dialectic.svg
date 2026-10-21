@@ -1,0 +1,47 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 1段目：正と反がぶつかり、合へ -->
+  <path d="M80 196 H172" class="st-soft dash" stroke-width="1.5" marker-start="url(#a-soft)" marker-end="url(#a-soft)"/>
+  <text x="126" y="214" class="t-xs mid soft">ぶつかる</text>
+  <path d="M70.3 182.1 L110.2 143.3" class="st-f" stroke-width="2.5" marker-end="url(#a-philosophy)"/>
+  <path d="M181.7 182.1 L141.8 143.3" class="st-f" stroke-width="2.5" marker-end="url(#a-philosophy)"/>
+  <circle cx="56" cy="196" r="20" class="paper st-f" stroke-width="2"/>
+  <text x="56" y="202" class="t-l mid ink">正</text>
+  <circle cx="196" cy="196" r="20" class="paper st-soft" stroke-width="2"/>
+  <text x="196" y="202" class="t-l mid ink">反</text>
+  <text x="56" y="232" class="t-xs mid soft">ある考え</text>
+  <text x="196" y="232" class="t-xs mid soft">対立する考え</text>
+
+  <!-- 2段目：合が次の正になる -->
+  <path d="M148 128 H244" class="st-soft dash" stroke-width="1.5" marker-start="url(#a-soft)" marker-end="url(#a-soft)"/>
+  <text x="196" y="146" class="t-xs mid soft">ぶつかる</text>
+  <path d="M140.3 114.1 L180.2 75.3" class="st-f" stroke-width="2.5" marker-end="url(#a-philosophy)"/>
+  <path d="M251.7 114.1 L211.8 75.3" class="st-f" stroke-width="2.5" marker-end="url(#a-philosophy)"/>
+  <circle cx="126" cy="128" r="22" class="fl"/>
+  <text x="126" y="134" class="t-l mid on">合</text>
+  <text x="94" y="124" class="t-s end fl">止揚</text>
+  <text x="94" y="140" class="t-xs end soft">よい所を残す</text>
+  <text x="94" y="156" class="t-xs end soft">＝次の正に</text>
+  <circle cx="266" cy="128" r="20" class="paper st-soft" stroke-width="2"/>
+  <text x="266" y="134" class="t-l mid ink">反</text>
+  <text x="266" y="166" class="t-xs mid soft">新たな対立</text>
+
+  <!-- 3段目 -->
+  <circle cx="196" cy="60" r="22" class="fl"/>
+  <text x="196" y="66" class="t-l mid on">合</text>
+  <text x="166" y="64" class="t-xs end soft">より高い考え</text>
+  <path d="M214 46 L246 24" class="st-f dash" stroke-width="2" marker-end="url(#a-philosophy)"/>
+  <text x="254" y="28" class="t-xs fl">くり返し発展</text>
+
+  <!-- ヘーゲル自身のたとえ -->
+  <rect x="12" y="242" width="336" height="54" rx="12" class="bgc"/>
+  <text x="26" y="259" class="t-xs soft">たとえ：前の段階を否定しながら育つ</text>
+  <ellipse cx="34" cy="280" rx="5" ry="8" class="fl"/>
+  <text x="46" y="285" class="t-s ink">つぼみ</text>
+  <path d="M90 280 H118" class="st-f" stroke-width="2" marker-end="url(#a-philosophy)"/>
+  <circle cx="136" cy="274" r="4" class="fl"/><circle cx="130" cy="282" r="4" class="fl"/><circle cx="142" cy="282" r="4" class="fl"/>
+  <circle cx="136" cy="280" r="3" class="paper"/>
+  <text x="152" y="285" class="t-s ink">花</text>
+  <path d="M170 280 H198" class="st-f" stroke-width="2" marker-end="url(#a-philosophy)"/>
+  <circle cx="214" cy="280" r="8" class="fl"/>
+  <text x="228" y="285" class="t-s ink">実</text>
+</svg>

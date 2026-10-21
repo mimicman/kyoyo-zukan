@@ -1,0 +1,36 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左：合理論 -->
+  <rect x="16" y="12" width="156" height="46" rx="12" class="tint st-f" stroke-width="1.5"/>
+  <text x="94" y="34" class="t-l mid fl">合理論</text>
+  <text x="94" y="50" class="t-xs mid soft">大陸（仏・蘭・独）</text>
+  <circle cx="94" cy="94" r="24" class="tint st-f" stroke-width="2"/>
+  <circle cx="94" cy="92" r="8" class="fl"/>
+  <path d="M94 74 V78 M94 106 V110 M76 92 H80 M108 92 H112 M81 79 L84 82 M107 79 L104 82" class="st-f" stroke-width="2" stroke-linecap="round"/>
+  <text x="94" y="136" class="t-s mid ink">生まれつきの観念</text>
+  <path d="M94 144 V168" class="st-f" stroke-width="2.5" marker-end="url(#a-philosophy)"/>
+  <text x="104" y="160" class="t-xs fl">演繹</text>
+  <text x="94" y="188" class="t-s mid ink">確かな原理から</text>
+  <text x="94" y="204" class="t-s mid ink">推論して知る</text>
+  <text x="94" y="220" class="t-xs mid soft">デカルト・ライプニッツ</text>
+
+  <!-- 右：経験論 -->
+  <rect x="188" y="12" width="156" height="46" rx="12" class="bgc st-soft" stroke-width="1.5"/>
+  <text x="266" y="34" class="t-l mid ink">経験論</text>
+  <text x="266" y="50" class="t-xs mid soft">イギリス</text>
+  <circle cx="266" cy="94" r="24" class="bgc st-soft" stroke-width="2"/>
+  <rect x="254" y="80" width="24" height="28" rx="2" class="paper st-soft" stroke-width="1.5"/>
+  <path d="M214 84 H238 M214 104 H238" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <text x="208" y="98" class="t-xs end soft">感覚</text>
+  <text x="266" y="136" class="t-s mid ink">心は白紙</text>
+  <path d="M266 144 V168" class="st-soft" stroke-width="2.5" marker-end="url(#a-soft)"/>
+  <text x="276" y="160" class="t-xs soft">帰納</text>
+  <text x="266" y="188" class="t-s mid ink">観察を積み重ね</text>
+  <text x="266" y="204" class="t-s mid ink">法則を見つける</text>
+  <text x="266" y="220" class="t-xs mid soft">ロック・ヒューム</text>
+
+  <!-- 下：カントがまとめる -->
+  <path d="M120 226 L150 238" class="st-f" stroke-width="2" marker-end="url(#a-philosophy)"/>
+  <path d="M240 226 L210 238" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <rect x="40" y="240" width="280" height="34" rx="12" class="fl"/>
+  <text x="180" y="262" class="t-s mid on">カント：材料は経験、整理する枠は心</text>
+</svg>
