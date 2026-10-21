@@ -1,0 +1,39 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 子どもを囲む輪 -->
+  <circle cx="118" cy="146" r="112" class="bgc"/>
+  <circle cx="118" cy="146" r="112" class="st-line" stroke-width="1.5"/>
+  <circle cx="118" cy="146" r="86" class="tint st-f" stroke-width="1" opacity="0.6"/>
+  <circle cx="118" cy="146" r="58" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="118" cy="146" r="30" class="fl"/>
+  <!-- 子ども -->
+  <circle cx="118" cy="136" r="7" class="paper"/>
+  <path d="M106 162 C106 150 111 146 118 146 C125 146 130 150 130 162 Z" class="paper"/>
+  <g class="t-xs mid ink" font-weight="700">
+    <text x="118" y="104">家族</text>
+    <text x="118" y="76">友だち・学校</text>
+    <text x="118" y="48">職場・メディア</text>
+  </g>
+  <!-- 外から内へ：身につける -->
+  <g class="st-f" stroke-width="2">
+    <path d="M34 210 L82 176" marker-end="url(#a-sociology)"/>
+    <path d="M202 210 L154 176" marker-end="url(#a-sociology)"/>
+    <path d="M22 146 H82" marker-end="url(#a-sociology)"/>
+  </g>
+  <!-- 内から外へ：働きかける -->
+  <path d="M150 140 H212" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="118" y="276" class="t-xs mid fl" font-weight="700">ことば・ルール・役割を身につける</text>
+
+  <!-- ミードの考え -->
+  <text x="296" y="18" class="t-xs mid soft">ミードの考え</text>
+  <rect x="242" y="28" width="108" height="56" rx="10" class="paper st-soft" stroke-width="1.5"/>
+  <text x="296" y="50" class="t-s mid ink" font-weight="700">ごっこ遊び</text>
+  <text x="296" y="70" class="t-xs mid soft">1人の役をまねる</text>
+  <path d="M296 84 V104" class="st-f" stroke-width="2" marker-end="url(#a-sociology)"/>
+  <rect x="242" y="108" width="108" height="56" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="296" y="130" class="t-s mid ink" font-weight="700">ゲーム</text>
+  <text x="296" y="150" class="t-xs mid soft">全員の役を知る</text>
+  <path d="M296 164 V184" class="st-f" stroke-width="2" marker-end="url(#a-sociology)"/>
+  <rect x="242" y="188" width="108" height="56" rx="10" class="fl"/>
+  <text x="296" y="210" class="t-s mid on" font-weight="700">一般化された他者</text>
+  <text x="296" y="230" class="t-xs mid on">社会の目を心に持つ</text>
+</svg>

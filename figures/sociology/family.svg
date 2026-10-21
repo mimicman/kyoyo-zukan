@@ -1,0 +1,47 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 家の形 -->
+  <g class="paper st-soft" stroke-width="1.8" stroke-linejoin="round">
+    <path d="M14 56 L64 20 L114 56 V128 H14 Z"/>
+    <path d="M130 56 L180 20 L230 56 V128 H130 Z"/>
+  </g>
+  <!-- 拡大家族：祖父母・親・子 -->
+  <g class="soft">
+    <circle cx="34" cy="62" r="6"/><circle cx="94" cy="62" r="6"/>
+  </g>
+  <g class="fl">
+    <circle cx="34" cy="86" r="6"/><circle cx="94" cy="86" r="6"/>
+    <circle cx="52" cy="110" r="5"/><circle cx="76" cy="110" r="5"/>
+  </g>
+  <g class="t-xs soft" font-size="9"><text x="64" y="65" class="mid">祖父母</text><text x="64" y="89" class="mid">親</text><text x="64" y="113" class="mid">子</text></g>
+  <!-- 核家族：夫婦と子 -->
+  <g class="fl">
+    <circle cx="160" cy="76" r="7"/><circle cx="200" cy="76" r="7"/>
+    <circle cx="168" cy="106" r="5"/><circle cx="192" cy="106" r="5"/>
+  </g>
+  <path d="M167 76 H193" class="st-f" stroke-width="2"/>
+  <!-- いろいろな形：単身・夫婦のみ・ひとり親 -->
+  <g class="paper st-soft" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M248 46 L266 32 L284 46 V76 H248 Z"/>
+    <path d="M298 46 L318 32 L338 46 V76 H298 Z"/>
+    <path d="M272 96 L292 82 L312 96 V128 H272 Z"/>
+  </g>
+  <circle cx="266" cy="62" r="6" class="fl"/>
+  <circle cx="310" cy="62" r="6" class="fl"/><circle cx="326" cy="62" r="6" class="fl"/>
+  <circle cx="284" cy="112" r="6" class="fl"/><circle cx="300" cy="116" r="4.5" class="fl"/>
+
+  <g class="t-s mid ink" font-weight="700"><text x="64" y="150">拡大家族</text><text x="180" y="150">核家族</text><text x="294" y="150">多様な形</text></g>
+  <g class="t-xs mid soft"><text x="64" y="166">三世代が同居</text><text x="180" y="166">夫婦と子ども</text><text x="294" y="166">単身・夫婦のみなど</text></g>
+
+  <!-- 時の流れ -->
+  <path d="M14 182 H346" class="st-f" stroke-width="2.5" marker-end="url(#a-sociology)"/>
+  <g class="t-xs mid fl" font-weight="700"><text x="64" y="198">農業中心の社会</text><text x="180" y="198">工業化・都市化</text><text x="294" y="198">現代</text></g>
+
+  <!-- 外へ移った家族の仕事 -->
+  <rect x="8" y="210" width="344" height="76" rx="12" class="bgc"/>
+  <text x="180" y="228" class="t-xs mid soft">家族が担っていた仕事の一部が、外へ移った</text>
+  <g class="t-s mid ink" font-weight="700"><text x="64" y="248">生産</text><text x="180" y="248">教育</text><text x="294" y="248">介護</text></g>
+  <g class="st-f" stroke-width="2">
+    <path d="M64 254 V264" marker-end="url(#a-sociology)"/><path d="M180 254 V264" marker-end="url(#a-sociology)"/><path d="M294 254 V264" marker-end="url(#a-sociology)"/>
+  </g>
+  <g class="t-xs mid fl" font-weight="700"><text x="64" y="280">会社・工場</text><text x="180" y="280">学校</text><text x="294" y="280">施設・サービス</text></g>
+</svg>

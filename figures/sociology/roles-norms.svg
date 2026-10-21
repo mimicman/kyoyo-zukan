@@ -1,0 +1,31 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 1人の人と2つの役割 -->
+  <circle cx="180" cy="78" r="12" class="fl"/>
+  <path d="M160 132 C160 108 168 96 180 96 C192 96 200 108 200 132 Z" class="fl"/>
+  <rect x="14" y="46" width="112" height="60" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="70" y="70" class="t-m mid ink">親</text>
+  <text x="70" y="92" class="t-xs mid soft">子のそばにいて</text>
+  <rect x="234" y="46" width="112" height="60" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="290" y="70" class="t-m mid ink">会社員</text>
+  <text x="290" y="92" class="t-xs mid soft">会議に出て</text>
+  <path d="M126 82 H158 M202 82 H234" class="st-f" stroke-width="2"/>
+  <!-- 役割葛藤 -->
+  <path d="M70 46 V30 H140 L150 20 L160 36 L170 20 L180 36 L190 20 L200 36 L210 20 L220 30 H290 V46" class="st" stroke-width="1.8" stroke-linejoin="round"/>
+  <text x="180" y="14" class="t-xs mid ink halo" font-weight="700">役割葛藤</text>
+  <text x="180" y="150" class="t-xs mid soft">立場ごとに、周りが期待するふるまい＝役割</text>
+
+  <!-- 規範の強さ -->
+  <text x="180" y="176" class="t-xs mid soft">規範：守るべきルール。破ると制裁がある</text>
+  <rect x="14" y="216" width="104" height="48" rx="8" class="tint"/>
+  <rect x="128" y="200" width="104" height="64" rx="8" class="tint st-f" stroke-width="1.5"/>
+  <rect x="242" y="184" width="104" height="80" rx="8" class="fl"/>
+  <text x="66" y="236" class="t-s mid ink" font-weight="700">習わし</text>
+  <text x="66" y="254" class="t-xs mid soft">箸の持ち方</text>
+  <text x="180" y="222" class="t-s mid ink" font-weight="700">道徳</text>
+  <text x="180" y="240" class="t-xs mid soft">うそをつかない</text>
+  <text x="294" y="206" class="t-s mid on" font-weight="700">法</text>
+  <text x="294" y="224" class="t-xs mid on">盗まない</text>
+  <g class="t-xs mid fl" font-weight="700">
+    <text x="66" y="282">変な目で見られる</text><text x="180" y="282">強く責められる</text><text x="294" y="282">罰を受ける</text>
+  </g>
+</svg>

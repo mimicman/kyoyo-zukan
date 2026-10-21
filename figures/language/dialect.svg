@@ -1,0 +1,35 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 方言周圏論：京都を中心にした同心円 -->
+  <circle cx="112" cy="132" r="104" class="tint"/>
+  <circle cx="112" cy="132" r="104" class="st-f" stroke-width="1.5"/>
+  <circle cx="112" cy="132" r="84" class="paper st-f" stroke-width="1.5"/>
+  <circle cx="112" cy="132" r="64" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="112" cy="132" r="44" class="paper st-f" stroke-width="1.5"/>
+  <circle cx="112" cy="132" r="24" class="fl"/>
+  <text x="112" y="131" class="t-xs mid on" font-weight="700">デデムシ</text>
+  <text x="112" y="144" class="mid on" font-size="9">京都</text>
+  <g class="t-xs mid ink">
+    <text x="112" y="102">マイマイ</text>
+    <text x="112" y="82">カタツムリ</text>
+    <text x="112" y="62">ツブリ</text>
+    <text x="112" y="42" font-weight="700">ナメクジ</text>
+  </g>
+  <text x="18" y="136" class="t-xs ink" font-weight="700">九州</text>
+  <text x="206" y="136" class="t-xs end ink" font-weight="700">東北</text>
+  <text x="112" y="254" class="t-xs mid soft">カタツムリの呼び名（柳田国男『蝸牛考』）</text>
+  <text x="112" y="272" class="t-xs mid fl" font-weight="700">古い言い方ほど、都から遠くに残る</text>
+
+  <!-- 標準語（共通語） -->
+  <text x="288" y="20" class="t-s mid ink" font-weight="700">標準語（共通語）</text>
+  <rect x="230" y="30" width="116" height="52" rx="10" class="fl"/>
+  <text x="288" y="52" class="t-xs mid on">東京のことばを基に</text>
+  <text x="288" y="68" class="t-xs mid on">明治以降に整える</text>
+  <path d="M288 82 V102" class="st-f" stroke-width="2.5" marker-end="url(#a-language)"/>
+  <rect x="230" y="106" width="116" height="52" rx="10" class="paper st-f" stroke-width="1.5"/>
+  <text x="288" y="128" class="t-xs mid ink">学校・新聞・ラジオ</text>
+  <text x="288" y="144" class="t-xs mid ink">テレビで全国へ</text>
+  <path d="M288 158 V178" class="st-f" stroke-width="2.5" marker-end="url(#a-language)"/>
+  <rect x="230" y="182" width="116" height="52" rx="10" class="bgc"/>
+  <text x="288" y="204" class="t-xs mid ink">いまは方言と</text>
+  <text x="288" y="220" class="t-xs mid ink">場面で使い分け</text>
+</svg>

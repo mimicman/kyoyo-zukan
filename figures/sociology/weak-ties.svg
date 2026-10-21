@@ -1,0 +1,26 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="88" cy="118" r="66" class="bgc"/>
+  <circle cx="272" cy="118" r="66" class="bgc"/>
+  <text x="88" y="40" class="t-xs mid soft">いつもの仲間</text>
+  <text x="272" y="40" class="t-xs mid soft">別のグループ</text>
+  <!-- 強い紐帯（太い線） -->
+  <path d="M136.0 118.0 L102.8 72.3 M136.0 118.0 L49.2 89.8 M136.0 118.0 L49.2 146.2 M136.0 118.0 L102.8 163.7 M102.8 72.3 L49.2 89.8 M102.8 72.3 L49.2 146.2 M102.8 72.3 L102.8 163.7 M49.2 89.8 L49.2 146.2 M49.2 89.8 L102.8 163.7 M49.2 146.2 L102.8 163.7" class="st" stroke-width="3"/>
+  <path d="M224.0 118.0 L257.2 163.7 M224.0 118.0 L310.8 146.2 M224.0 118.0 L310.8 89.8 M224.0 118.0 L257.2 72.3 M257.2 163.7 L310.8 146.2 M257.2 163.7 L310.8 89.8 M257.2 163.7 L257.2 72.3 M310.8 146.2 L310.8 89.8 M310.8 146.2 L257.2 72.3 M310.8 89.8 L257.2 72.3" class="st" stroke-width="3"/>
+  <circle cx="102.8" cy="72.3" r="8" class="soft"/><circle cx="49.2" cy="89.8" r="8" class="soft"/><circle cx="49.2" cy="146.2" r="8" class="soft"/><circle cx="102.8" cy="163.7" r="8" class="soft"/>
+  <circle cx="257.2" cy="163.7" r="8" class="soft"/><circle cx="310.8" cy="146.2" r="8" class="soft"/><circle cx="310.8" cy="89.8" r="8" class="soft"/><circle cx="257.2" cy="72.3" r="8" class="soft"/>
+  <!-- 弱い紐帯（ブリッジ） -->
+  <path d="M146 118 H214" class="st-f dash" stroke-width="2"/>
+  <path d="M214 132 H148" class="st-f" stroke-width="2" marker-end="url(#a-sociology)"/>
+  <text x="180" y="110" class="t-xs mid fl halo" font-weight="700">弱い紐帯</text>
+  <text x="180" y="150" class="t-xs mid fl halo">新しい情報</text>
+  <circle cx="136.0" cy="118.0" r="11" class="fl"/>
+  <circle cx="224.0" cy="118.0" r="11" class="paper st-f" stroke-width="2.5"/>
+  <text x="136.0" y="146" class="t-xs mid ink halo" font-weight="700">あなた</text>
+  <text x="224.0" y="146" class="t-xs mid ink halo" font-weight="700">知人</text>
+
+  <!-- 凡例 -->
+  <path d="M18 230 H54" class="st" stroke-width="3"/>
+  <text x="64" y="234" class="t-xs ink"><tspan font-weight="700">強い紐帯</tspan>＝家族・親友。同じ情報が回りやすい</text>
+  <path d="M18 258 H54" class="st-f dash" stroke-width="2"/>
+  <text x="64" y="262" class="t-xs ink"><tspan class="fl" font-weight="700">弱い紐帯</tspan>＝たまに会う知人。別の世界の情報を運ぶ</text>
+</svg>

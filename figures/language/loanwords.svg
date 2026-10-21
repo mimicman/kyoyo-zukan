@@ -1,0 +1,36 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 入ってきたことば -->
+  <text x="14" y="16" class="t-xs soft">日本語に入ってきたことば</text>
+  <g class="t-s mid ink" font-weight="700">
+    <text x="50" y="38">中国語</text><text x="140" y="38">ポルトガル語</text><text x="226" y="38">オランダ語</text><text x="312" y="38">英語など</text>
+  </g>
+  <g class="t-xs mid ink">
+    <text x="50" y="58">茶</text><text x="50" y="74">菊</text><text x="50" y="90">経</text>
+    <text x="140" y="58">パン</text><text x="140" y="74">カステラ</text><text x="140" y="90">タバコ</text>
+    <text x="226" y="58">ガラス</text><text x="226" y="74">コーヒー</text><text x="226" y="90">ランドセル</text>
+    <text x="312" y="58">ニュース</text><text x="312" y="74">スポーツ</text><text x="312" y="90">コンピューター</text>
+  </g>
+  <g class="st-f" stroke-width="2.5">
+    <path d="M50 98 V132" marker-end="url(#a-language)"/><path d="M140 98 V132" marker-end="url(#a-language)"/>
+    <path d="M226 98 V132" marker-end="url(#a-language)"/><path d="M312 98 V132" marker-end="url(#a-language)"/>
+  </g>
+
+  <!-- 日本語の時間軸 -->
+  <rect x="8" y="138" width="344" height="26" rx="8" class="fl"/>
+  <g class="t-xs mid on" font-weight="700">
+    <text x="50" y="156">古代〜</text><text x="140" y="156">16世紀〜</text><text x="226" y="156">江戸時代</text><text x="312" y="156">明治〜</text>
+  </g>
+
+  <!-- 出ていったことば -->
+  <g class="st-soft" stroke-width="2">
+    <path d="M95 166 V192" marker-end="url(#a-soft)"/><path d="M265 166 V192" marker-end="url(#a-soft)"/>
+  </g>
+  <rect x="14" y="198" width="162" height="74" rx="12" class="bgc"/>
+  <text x="95" y="220" class="t-s mid ink" font-weight="700">明治の訳語が中国へ</text>
+  <text x="95" y="242" class="t-xs mid ink">経済・社会・哲学</text>
+  <text x="95" y="260" class="t-xs mid soft">西洋の考えを漢字で訳した</text>
+  <rect x="184" y="198" width="162" height="74" rx="12" class="tint"/>
+  <text x="265" y="220" class="t-s mid fl" font-weight="700">日本語が世界へ</text>
+  <text x="265" y="242" class="t-s mid ink">tsunami・karaoke</text>
+  <text x="265" y="260" class="t-xs mid soft">emoji・sushi など</text>
+</svg>

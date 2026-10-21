@@ -1,0 +1,28 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左：ゲマインシャフト（全員が互いに結びつく） -->
+  <circle cx="88" cy="100" r="72" class="tint"/>
+  <path d="M88.0 52.0 L46.4 76.0 M88.0 52.0 L46.4 124.0 M88.0 52.0 L88.0 148.0 M88.0 52.0 L129.6 124.0 M88.0 52.0 L129.6 76.0 M46.4 76.0 L46.4 124.0 M46.4 76.0 L88.0 148.0 M46.4 76.0 L129.6 124.0 M46.4 76.0 L129.6 76.0 M46.4 124.0 L88.0 148.0 M46.4 124.0 L129.6 124.0 M46.4 124.0 L129.6 76.0 M88.0 148.0 L129.6 124.0 M88.0 148.0 L129.6 76.0 M129.6 124.0 L129.6 76.0" class="st-f" stroke-width="2"/>
+  <circle cx="88.0" cy="52.0" r="8" class="fl"/><circle cx="46.4" cy="76.0" r="8" class="fl"/><circle cx="46.4" cy="124.0" r="8" class="fl"/><circle cx="88.0" cy="148.0" r="8" class="fl"/><circle cx="129.6" cy="124.0" r="8" class="fl"/><circle cx="129.6" cy="76.0" r="8" class="fl"/>
+  <!-- 近代化 -->
+  <path d="M166 100 H196" class="st" stroke-width="2.5" marker-end="url(#a-ink)"/>
+  <text x="181" y="88" class="t-xs mid ink" font-weight="700">近代化</text>
+  <!-- 右：ゲゼルシャフト（契約を通じて必要なときだけ） -->
+  <rect x="204" y="28" width="148" height="144" rx="10" class="bgc"/>
+  <path d="M222 52 L248 88 M322 52 L296 88 M222 148 L248 112 M322 148 L296 112" class="st-soft dash" stroke-width="1.5"/>
+  <rect x="248" y="86" width="48" height="28" rx="5" class="paper st" stroke-width="1.5"/>
+  <text x="272" y="105" class="t-xs mid ink" font-weight="700">契約</text>
+  <g class="paper st" stroke-width="2">
+    <circle cx="222" cy="52" r="8"/><circle cx="322" cy="52" r="8"/><circle cx="222" cy="148" r="8"/><circle cx="322" cy="148" r="8"/>
+  </g>
+  <text x="272" y="46" class="t-xs mid soft">会社・店</text>
+
+  <!-- 説明 -->
+  <text x="88" y="200" class="t-m mid fl">ゲマインシャフト</text>
+  <text x="272" y="200" class="t-m mid ink">ゲゼルシャフト</text>
+  <g class="t-xs mid soft"><text x="88" y="218">共同体</text><text x="272" y="218">利益社会</text></g>
+  <g class="t-xs mid ink">
+    <text x="88" y="240">家族・村・なかま</text><text x="272" y="240">会社・都市・市場</text>
+    <text x="88" y="256">まるごとの付き合い</text><text x="272" y="256">目的ごとの付き合い</text>
+    <text x="88" y="272">気持ちで結ばれる</text><text x="272" y="272">契約で結ばれる</text>
+  </g>
+</svg>

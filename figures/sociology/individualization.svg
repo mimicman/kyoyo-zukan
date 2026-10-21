@@ -1,0 +1,33 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左：伝統的な社会 -->
+  <text x="89" y="18" class="t-s mid ink" font-weight="700">伝統的な社会</text>
+  <rect x="24" y="28" width="130" height="158" rx="16" class="tint"/>
+  <rect x="24" y="28" width="130" height="158" rx="16" class="st-f dash" stroke-width="2"/>
+  <text x="89" y="46" class="t-xs mid fl" font-weight="700">家・村・身分の囲い</text>
+  <path d="M89 162 V66" class="st" stroke-width="3" marker-end="url(#a-ink)"/>
+  <circle cx="89" cy="168" r="7" class="fl"/>
+  <g class="t-xs ink halo">
+    <text x="98" y="140">親の仕事</text><text x="98" y="104">決まった道</text>
+  </g>
+
+  <!-- 近代化 -->
+  <path d="M158 106 H190" class="st-f" stroke-width="2.5" marker-end="url(#a-sociology)"/>
+  <text x="174" y="96" class="t-xs mid fl" font-weight="700">近代化</text>
+
+  <!-- 右：近代の社会 -->
+  <text x="271" y="18" class="t-s mid ink" font-weight="700">近代の社会</text>
+  <path d="M271 162 V136 M271 136 L232 104 M271 136 L310 104 M232 104 L212 70 M232 104 L252 70 M310 104 L290 70 M310 104 L330 70" class="st-f" stroke-width="2.5" stroke-linecap="round"/>
+  <g class="paper st-f" stroke-width="2"><circle cx="212" cy="64" r="6"/><circle cx="252" cy="64" r="6"/><circle cx="290" cy="64" r="6"/><circle cx="330" cy="64" r="6"/></g>
+  <g class="t-xs mid ink"><text x="212" y="46">学ぶ</text><text x="252" y="46">働く</text><text x="290" y="46">結婚</text><text x="330" y="46">住む所</text></g>
+  <circle cx="271" cy="168" r="7" class="fl"/>
+  <text x="290" y="124" class="t-xs soft halo">？</text>
+
+  <!-- 表と裏 -->
+  <rect x="14" y="204" width="150" height="56" rx="10" class="bgc"/>
+  <text x="89" y="226" class="t-xs mid ink">守られるが</text>
+  <text x="89" y="244" class="t-xs mid ink">選べることは少ない</text>
+  <rect x="196" y="204" width="150" height="56" rx="10" class="tint"/>
+  <text x="271" y="226" class="t-xs mid ink">自由に選べるが</text>
+  <text x="271" y="244" class="t-xs mid fl" font-weight="700">結果も自分で背負う</text>
+  <text x="180" y="282" class="t-xs mid soft">デュルケーム・ベック・ギデンズらが論じた</text>
+</svg>

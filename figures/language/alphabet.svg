@@ -1,0 +1,46 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 見出し -->
+  <g class="t-s mid ink" font-weight="700">
+    <text x="45" y="20">もとは絵</text><text x="135" y="20">フェニキア</text><text x="225" y="20">ギリシャ</text><text x="315" y="20">ラテン</text>
+  </g>
+  <g class="t-xs mid soft">
+    <text x="45" y="36">エジプトの影響</text><text x="135" y="36">前11世紀ごろ</text><text x="225" y="36">前8世紀ごろ</text><text x="315" y="36">ローマ</text>
+  </g>
+  <rect x="270" y="46" width="90" height="146" rx="12" class="tint"/>
+
+  <!-- Aの行：牛の頭 → アレフ → アルファ → A -->
+  <path d="M33 66 L45 96 L57 66 Z M33 66 C25 62 25 54 30 50 M57 66 C65 62 65 54 60 50" class="st" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M147 64 L123 80 L147 96 M129 62 L137 98" class="st" stroke-width="3" stroke-linecap="round"/>
+  <path d="M211 98 L225 62 L239 98 M216 86 H234" class="st" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M301 98 L315 62 L329 98 M306 86 H324" class="st-f" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g class="t-xs mid soft">
+    <text x="45" y="114">牛の頭</text><text x="135" y="114">アレフ</text><text x="225" y="114">アルファ</text><text x="315" y="114">A</text>
+  </g>
+
+  <!-- Bの行：家 → ベート → ベータ → B -->
+  <path d="M31 160 V136 L45 124 L59 136 V160 Z M41 160 V148 H49 V160" class="st" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M127 128 H143 V142 H127 Z M143 142 V162" class="st" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M215 126 V162 M215 126 H226 C236 126 236 143 226 143 H215 M226 143 C238 143 238 162 226 162 H215" class="st" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M305 126 V162 M305 126 H316 C326 126 326 143 316 143 H305 M316 143 C328 143 328 162 316 162 H305" class="st-f" stroke-width="3.5" stroke-linejoin="round"/>
+  <g class="t-xs mid soft">
+    <text x="45" y="178">家</text><text x="135" y="178">ベート</text><text x="225" y="178">ベータ</text><text x="315" y="178">B</text>
+  </g>
+
+  <!-- 流れの矢印 -->
+  <g class="st-f" stroke-width="2">
+    <path d="M72 80 H104" marker-end="url(#a-language)"/><path d="M162 80 H198" marker-end="url(#a-language)"/><path d="M252 80 H288" marker-end="url(#a-language)"/>
+    <path d="M72 144 H104" marker-end="url(#a-language)"/><path d="M162 144 H198" marker-end="url(#a-language)"/><path d="M252 144 H288" marker-end="url(#a-language)"/>
+  </g>
+
+  <!-- 何が変わったか -->
+  <text x="135" y="204" class="t-xs mid fl" font-weight="700">子音だけ22字</text>
+  <text x="225" y="204" class="t-xs mid fl" font-weight="700">母音の字を足す</text>
+
+  <!-- 枝分かれ -->
+  <path d="M135 212 V232 M225 212 V232 M315 198 V232" class="st-soft dash" stroke-width="1.5"/>
+  <g class="t-xs mid ink">
+    <text x="118" y="248">アラム文字を経て</text><text x="118" y="264">ヘブライ・アラビア文字</text>
+    <text x="225" y="248">キリル文字</text><text x="225" y="264">（ロシア語など）</text>
+    <text x="315" y="248">英語・フランス語</text><text x="315" y="264">日本のローマ字</text>
+  </g>
+</svg>

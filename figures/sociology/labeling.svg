@@ -1,0 +1,35 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 始まり：小さな違反 -->
+  <rect x="8" y="8" width="104" height="38" rx="8" class="paper st-soft dash" stroke-width="1.5"/>
+  <text x="60" y="24" class="t-xs mid ink" font-weight="700">最初の小さな違反</text>
+  <text x="60" y="39" class="t-xs mid soft">（一次的逸脱）</text>
+  <path d="M112 34 L128 52" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+
+  <!-- 輪 -->
+  <rect x="130" y="54" width="120" height="42" rx="10" class="fl"/>
+  <text x="190" y="72" class="t-s mid on" font-weight="700">ラベルを貼る</text>
+  <text x="190" y="88" class="t-xs mid on">「あいつは不良だ」</text>
+
+  <rect x="224" y="130" width="124" height="42" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="286" y="148" class="t-s mid ink" font-weight="700">扱いが変わる</text>
+  <text x="286" y="164" class="t-xs mid soft">疑われ、避けられる</text>
+
+  <rect x="130" y="206" width="120" height="42" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="190" y="224" class="t-s mid ink" font-weight="700">自己像が変わる</text>
+  <text x="190" y="240" class="t-xs mid soft">「どうせ自分は」</text>
+
+  <rect x="12" y="130" width="124" height="42" rx="10" class="paper st" stroke-width="1.5"/>
+  <text x="74" y="148" class="t-s mid ink" font-weight="700">違反がくり返す</text>
+  <text x="74" y="164" class="t-xs mid soft">（二次的逸脱）</text>
+
+  <g class="st-f" stroke-width="2.5" fill="none">
+    <path d="M252 76 Q286 82 286 126" marker-end="url(#a-sociology)"/>
+    <path d="M286 174 Q286 222 254 226" marker-end="url(#a-sociology)"/>
+    <path d="M128 226 Q74 222 74 176" marker-end="url(#a-sociology)"/>
+    <path d="M74 128 Q74 80 126 76" marker-end="url(#a-sociology)"/>
+  </g>
+  <text x="180" y="146" class="t-xs mid soft">ラベルが</text>
+  <text x="180" y="162" class="t-xs mid soft">さらに強まる</text>
+
+  <text x="180" y="276" class="t-xs mid fl" font-weight="700">逸脱は、行為より周りの反応でつくられる面がある</text>
+</svg>

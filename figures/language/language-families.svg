@@ -1,0 +1,37 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 祖先の言語（根） -->
+  <rect x="70" y="8" width="220" height="44" rx="10" class="fl"/>
+  <text x="180" y="28" class="t-s mid on" font-weight="700">インド・ヨーロッパ祖語</text>
+  <text x="180" y="44" class="t-xs mid on">記録はなく、比べて復元した祖先</text>
+
+  <!-- 枝分かれ -->
+  <path d="M180 52 V66 M40 66 H320 M40 66 V80 M110 66 V80 M180 66 V80 M250 66 V80 M320 66 V80" class="st-f" stroke-width="2.5"/>
+  <g class="t-xs mid fl" font-weight="700">
+    <text x="40" y="94">ゲルマン</text><text x="110" y="94">イタリック</text><text x="180" y="94">ギリシャ</text>
+    <text x="250" y="94">スラブ</text><text x="320" y="94">インド・イラン</text>
+  </g>
+  <path d="M40 100 V112 M110 100 V112 M180 100 V112 M250 100 V112 M320 100 V112" class="st-soft" stroke-width="1.5"/>
+
+  <!-- 子孫の言語 -->
+  <g class="t-xs mid ink">
+    <text x="40" y="126">英語</text><text x="40" y="142">ドイツ語</text><text x="40" y="158">オランダ語</text>
+    <text x="110" y="126" font-weight="700">ラテン語</text>
+    <text x="110" y="160">フランス語</text><text x="110" y="176">スペイン語</text><text x="110" y="192">イタリア語</text>
+    <text x="180" y="126">ギリシャ語</text>
+    <text x="250" y="126">ロシア語</text><text x="250" y="142">ポーランド語</text>
+    <text x="320" y="126">ヒンディー語</text><text x="320" y="142">ペルシア語</text>
+  </g>
+  <path d="M110 132 V146" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+
+  <!-- 証拠：「3」を表す語 -->
+  <rect x="8" y="204" width="344" height="70" rx="12" class="bgc"/>
+  <text x="180" y="222" class="t-xs mid soft">「3」を表す語が規則的に似ている＝同じ祖先</text>
+  <g class="t-m mid ink">
+    <text x="40" y="248">three</text><text x="110" y="248">trēs</text><text x="180" y="248">treis</text>
+    <text x="250" y="248">tri</text><text x="320" y="248">trayaḥ</text>
+  </g>
+  <g class="t-xs mid soft">
+    <text x="40" y="266">英語</text><text x="110" y="266">ラテン語</text><text x="180" y="266">ギリシャ語</text>
+    <text x="250" y="266">ロシア語</text><text x="320" y="266">古代インド</text>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 階層のピラミッド -->
+  <path d="M106 48 V66 M66 66 H146 M66 66 V84 M146 66 V84 M66 108 V126 M34 126 H82 M34 126 V144 M82 126 V144 M146 108 V126 M130 126 H178 M130 126 V144 M178 126 V144" class="st-soft" stroke-width="1.5"/>
+  <rect x="80" y="24" width="52" height="24" rx="5" class="fl"/>
+  <text x="106" y="41" class="t-xs mid on" font-weight="700">部長</text>
+  <rect x="42" y="84" width="48" height="24" rx="5" class="tint st-f" stroke-width="1.5"/>
+  <rect x="122" y="84" width="48" height="24" rx="5" class="tint st-f" stroke-width="1.5"/>
+  <text x="66" y="101" class="t-xs mid ink">課長</text><text x="146" y="101" class="t-xs mid ink">課長</text>
+  <g class="paper st-soft" stroke-width="1.5">
+    <rect x="14" y="144" width="40" height="24" rx="5"/><rect x="62" y="144" width="40" height="24" rx="5"/>
+    <rect x="110" y="144" width="40" height="24" rx="5"/><rect x="158" y="144" width="40" height="24" rx="5"/>
+  </g>
+  <g class="t-xs mid ink"><text x="34" y="161">係</text><text x="82" y="161">係</text><text x="130" y="161">係</text><text x="178" y="161">係</text></g>
+  <!-- 命令と報告 -->
+  <path d="M8 30 V160" class="st-f" stroke-width="2" marker-end="url(#a-sociology)"/>
+  <path d="M206 160 V30" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <text x="8" y="182" class="t-xs fl" font-weight="700">命令↓</text>
+  <text x="214" y="182" class="t-xs end soft">報告↑</text>
+
+  <!-- 4つの特徴 -->
+  <g class="t-s ink" font-weight="700">
+    <text x="232" y="34">規則どおり</text><text x="232" y="74">文書で残す</text><text x="232" y="114">専門で分業</text><text x="232" y="154">上下の階層</text>
+  </g>
+  <g class="t-xs soft">
+    <text x="232" y="50">人によらず同じ扱い</text><text x="232" y="90">記録して引き継ぐ</text><text x="232" y="130">持ち場がはっきり</text><text x="232" y="170">命令と報告の筋道</text>
+  </g>
+  <g class="fl"><rect x="222" y="24" width="4" height="30"/><rect x="222" y="64" width="4" height="30"/><rect x="222" y="104" width="4" height="30"/><rect x="222" y="144" width="4" height="30"/></g>
+
+  <!-- 長所と行きすぎ -->
+  <rect x="14" y="198" width="162" height="80" rx="12" class="tint"/>
+  <text x="95" y="222" class="t-s mid fl" font-weight="700">うまく働くと</text>
+  <text x="95" y="244" class="t-xs mid ink">大きな組織を</text>
+  <text x="95" y="262" class="t-xs mid ink">正確・公平に動かせる</text>
+  <rect x="184" y="198" width="162" height="80" rx="12" class="bgc"/>
+  <text x="265" y="222" class="t-s mid ink" font-weight="700">行きすぎると</text>
+  <text x="265" y="244" class="t-xs mid ink">規則を守ること自体が</text>
+  <text x="265" y="262" class="t-xs mid ink">目的になる（逆機能）</text>
+</svg>

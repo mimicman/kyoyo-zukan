@@ -1,0 +1,41 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <text x="112" y="16" class="t-xs soft">「やま」を書くと…</text>
+  <text x="346" y="16" class="t-xs end soft">字の数</text>
+
+  <!-- 表語文字 -->
+  <text x="14" y="44" class="t-m ink">表語文字</text>
+  <text x="14" y="60" class="t-xs soft">漢字など</text>
+  <rect x="112" y="24" width="40" height="40" rx="6" class="fl"/>
+  <text x="132" y="52" class="t-xl mid on">山</text>
+  <text x="112" y="84" class="t-xs ink">1字＝1つの語（意味と読み）</text>
+  <text x="346" y="50" class="t-m end fl">数千</text>
+
+  <path d="M14 98 H346" class="st-line" stroke-width="1.5"/>
+
+  <!-- 音節文字 -->
+  <text x="14" y="128" class="t-m ink">音節文字</text>
+  <text x="14" y="144" class="t-xs soft">かななど</text>
+  <rect x="112" y="108" width="40" height="40" rx="6" class="tint st-f" stroke-width="1.5"/>
+  <rect x="158" y="108" width="40" height="40" rx="6" class="tint st-f" stroke-width="1.5"/>
+  <text x="132" y="135" class="t-l mid ink">や</text>
+  <text x="178" y="135" class="t-l mid ink">ま</text>
+  <text x="112" y="168" class="t-xs ink">1字＝1つの音節（ya / ma）</text>
+  <text x="346" y="134" class="t-m end fl">約50</text>
+
+  <path d="M14 182 H346" class="st-line" stroke-width="1.5"/>
+
+  <!-- 音素文字 -->
+  <text x="14" y="212" class="t-m ink">音素文字</text>
+  <text x="14" y="228" class="t-xs soft">アルファベット</text>
+  <g class="paper st-soft" stroke-width="1.5">
+    <rect x="112" y="192" width="34" height="40" rx="6"/><rect x="150" y="192" width="34" height="40" rx="6"/>
+    <rect x="188" y="192" width="34" height="40" rx="6"/><rect x="226" y="192" width="34" height="40" rx="6"/>
+  </g>
+  <g class="t-l mid ink">
+    <text x="129" y="218">y</text><text x="167" y="218">a</text><text x="205" y="218">m</text><text x="243" y="218">a</text>
+  </g>
+  <text x="112" y="252" class="t-xs ink">1字＝1つの音（子音か母音）</text>
+  <text x="346" y="218" class="t-m end fl">26前後</text>
+
+  <text x="180" y="274" class="t-xs mid soft">上から下へ：字は小さな単位に、種類は少なく</text>
+</svg>

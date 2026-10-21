@@ -1,0 +1,48 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 凡例 -->
+  <rect x="14" y="8" width="16" height="16" rx="3" class="paper st" stroke-width="1.5"/>
+  <text x="36" y="21" class="t-xs ink">S 主語（だれが）</text>
+  <rect x="130" y="8" width="16" height="16" rx="3" class="tint st-f" stroke-width="1.5"/>
+  <text x="152" y="21" class="t-xs ink">O 目的語（何を）</text>
+  <rect x="250" y="8" width="16" height="16" rx="3" class="fl"/>
+  <text x="272" y="21" class="t-xs ink">V 動詞（する）</text>
+
+  <!-- SOV -->
+  <text x="14" y="56" class="t-m fl">SOV</text>
+  <text x="14" y="72" class="t-xs soft">日本語など</text>
+  <rect x="96" y="40" width="76" height="34" rx="6" class="paper st" stroke-width="1.5"/>
+  <rect x="178" y="40" width="76" height="34" rx="6" class="tint st-f" stroke-width="1.5"/>
+  <rect x="260" y="40" width="76" height="34" rx="6" class="fl"/>
+  <text x="134" y="62" class="t-s mid ink">私は</text><text x="216" y="62" class="t-s mid ink">りんごを</text><text x="298" y="62" class="t-s mid on" font-weight="700">食べる</text>
+
+  <!-- SVO -->
+  <text x="14" y="104" class="t-m fl">SVO</text>
+  <text x="14" y="120" class="t-xs soft">英語・中国語</text>
+  <rect x="96" y="88" width="76" height="34" rx="6" class="paper st" stroke-width="1.5"/>
+  <rect x="178" y="88" width="76" height="34" rx="6" class="fl"/>
+  <rect x="260" y="88" width="76" height="34" rx="6" class="tint st-f" stroke-width="1.5"/>
+  <text x="134" y="110" class="t-s mid ink">私は</text><text x="216" y="110" class="t-s mid on" font-weight="700">食べる</text><text x="298" y="110" class="t-s mid ink">りんごを</text>
+
+  <!-- VSO -->
+  <text x="14" y="152" class="t-m fl">VSO</text>
+  <text x="14" y="168" class="t-xs soft">アイルランド語</text>
+  <rect x="96" y="136" width="76" height="34" rx="6" class="fl"/>
+  <rect x="178" y="136" width="76" height="34" rx="6" class="paper st" stroke-width="1.5"/>
+  <rect x="260" y="136" width="76" height="34" rx="6" class="tint st-f" stroke-width="1.5"/>
+  <text x="134" y="158" class="t-s mid on" font-weight="700">食べる</text><text x="216" y="158" class="t-s mid ink">私は</text><text x="298" y="158" class="t-s mid ink">りんごを</text>
+
+  <!-- 連動する並び：後置詞と前置詞 -->
+  <rect x="8" y="186" width="344" height="88" rx="12" class="bgc"/>
+  <text x="180" y="204" class="t-xs mid soft">「に」と in も、名詞に対して逆の位置に置く</text>
+  <text x="30" y="236" class="t-xs soft">日本語</text>
+  <rect x="68" y="216" width="56" height="30" rx="6" class="paper st-soft" stroke-width="1.2"/>
+  <rect x="128" y="216" width="34" height="30" rx="6" class="fl"/>
+  <text x="96" y="236" class="t-s mid ink">東京</text><text x="145" y="236" class="t-s mid on" font-weight="700">に</text>
+  <text x="115" y="264" class="t-xs mid ink">後ろに置く（後置詞）</text>
+
+  <text x="200" y="236" class="t-xs soft">英語</text>
+  <rect x="228" y="216" width="34" height="30" rx="6" class="fl"/>
+  <rect x="266" y="216" width="64" height="30" rx="6" class="paper st-soft" stroke-width="1.2"/>
+  <text x="245" y="236" class="t-s mid on" font-weight="700">in</text><text x="298" y="236" class="t-s mid ink">Tokyo</text>
+  <text x="279" y="264" class="t-xs mid ink">前に置く（前置詞）</text>
+</svg>

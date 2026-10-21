@@ -1,0 +1,60 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 頭の断面（左向き） -->
+  <g transform="translate(16 0)">
+  <path d="M74 20 C116 14 152 34 156 74 C159 102 150 120 140 132 V178" class="st-soft" stroke-width="2" stroke-linecap="round"/>
+  <path d="M74 20 C50 22 38 40 38 56 L26 74 L38 80 L36 90 L30 96 L36 104 C34 114 44 122 60 122 L82 124 V178" class="st-soft" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- 舌 -->
+  <path d="M46 108 C58 96 86 88 104 98 C112 106 112 120 104 128 L60 122 Z" class="tint st-f" stroke-width="1.5"/>
+  <text x="80" y="116" class="t-xs mid fl" font-weight="700">舌</text>
+
+  <!-- 息の通り道：肺 → 声帯 → 口・鼻 -->
+  <path d="M112 214 V96 C112 88 104 86 96 86 H-6" class="st-f" stroke-width="3" stroke-linecap="round" marker-end="url(#a-language)"/>
+  <path d="M112 100 V72 C112 62 104 58 94 58 H-6" class="st-f dash" stroke-width="2" marker-end="url(#a-language)"/>
+  <text x="-14" y="50" class="t-xs ink">鼻へ</text>
+  <text x="-14" y="78" class="t-xs ink">口へ</text>
+
+  <!-- 声帯 -->
+  <path d="M100 158 L110 162 M124 158 L114 162" class="st" stroke-width="3" stroke-linecap="round"/>
+  <path d="M78 160 H98" class="st-soft" stroke-width="1"/>
+  <text x="76" y="164" class="t-s end ink" font-weight="700">声帯</text>
+  <text x="76" y="180" class="t-xs end soft">ふるえる</text>
+
+  <!-- 肺 -->
+  <ellipse cx="90" cy="244" rx="20" ry="30" class="tint st-soft" stroke-width="1.5"/>
+  <ellipse cx="134" cy="244" rx="20" ry="30" class="tint st-soft" stroke-width="1.5"/>
+  <path d="M112 214 L98 226 M112 214 L126 226" class="st-f" stroke-width="3" stroke-linecap="round"/>
+  <text x="112" y="286" class="t-xs mid ink">肺から息を送る</text>
+
+  <!-- 子音をつくる場所の目印 -->
+  <circle cx="34" cy="98" r="6" class="fl"/><text x="34" y="102" class="mid on" font-size="9" font-weight="700">1</text>
+  <circle cx="50" cy="90" r="6" class="fl"/><text x="50" y="94" class="mid on" font-size="9" font-weight="700">2</text>
+  <circle cx="98" cy="94" r="6" class="fl"/><text x="98" y="98" class="mid on" font-size="9" font-weight="700">3</text>
+
+  </g>
+
+  <!-- 母音 -->
+  <rect x="196" y="8" width="156" height="130" rx="12" class="bgc"/>
+  <text x="206" y="28" class="t-s fl" font-weight="700">母音：さえぎらない</text>
+  <path d="M222 56 L238 86 L270 116 L302 86 L318 56" class="st-soft dash" stroke-width="1.5"/>
+  <g class="t-m mid ink">
+    <text x="222" y="61">い</text><text x="238" y="91">え</text><text x="270" y="121">あ</text><text x="302" y="91">お</text><text x="318" y="61">う</text>
+  </g>
+  <text x="208" y="44" class="t-xs soft">舌が前</text>
+  <text x="342" y="44" class="t-xs end soft">舌が奥</text>
+  <text x="274" y="134" class="t-xs mid soft">下ほど口を大きく開く</text>
+
+  <!-- 子音 -->
+  <rect x="196" y="150" width="156" height="130" rx="12" class="bgc"/>
+  <text x="206" y="170" class="t-s fl" font-weight="700">子音：どこかで止める</text>
+  <g class="t-xs ink">
+    <text x="224" y="196">くちびる</text><text x="224" y="220">歯ぐき</text><text x="224" y="244">舌の奥</text>
+  </g>
+  <circle cx="212" cy="192" r="6" class="fl"/><text x="212" y="196" class="mid on" font-size="9" font-weight="700">1</text>
+  <circle cx="212" cy="216" r="6" class="fl"/><text x="212" y="220" class="mid on" font-size="9" font-weight="700">2</text>
+  <circle cx="212" cy="240" r="6" class="fl"/><text x="212" y="244" class="mid on" font-size="9" font-weight="700">3</text>
+  <g class="t-s end ink" font-weight="700">
+    <text x="342" y="197">ぱ・ば・ま</text><text x="342" y="221">た・だ・な</text><text x="342" y="245">か・が</text>
+  </g>
+  <text x="274" y="270" class="t-xs mid soft">声帯がふるえると濁音</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 報道の量 -->
+  <text x="14" y="20" class="t-s ink" font-weight="700">報道の量</text>
+  <text x="346" y="20" class="t-s end ink" font-weight="700">人々が重要だと思う順</text>
+  <g class="t-xs ink"><text x="14" y="52">話題A</text><text x="14" y="90">話題B</text><text x="14" y="128">話題C</text></g>
+  <rect x="60" y="36" width="140" height="22" rx="4" class="fl"/>
+  <rect x="60" y="74" width="92" height="22" rx="4" class="fl" opacity="0.65"/>
+  <rect x="60" y="112" width="46" height="22" rx="4" class="fl" opacity="0.35"/>
+  <!-- 順位 -->
+  <g class="st-soft dash" stroke-width="1.5">
+    <path d="M206 47 H252" marker-end="url(#a-soft)"/><path d="M158 85 H252" marker-end="url(#a-soft)"/><path d="M112 123 H252" marker-end="url(#a-soft)"/>
+  </g>
+  <g class="t-s ink"><text x="262" y="52"><tspan class="fl" font-weight="700">1位</tspan> 話題A</text><text x="262" y="90"><tspan class="fl" font-weight="700">2位</tspan> 話題B</text><text x="262" y="128"><tspan class="fl" font-weight="700">3位</tspan> 話題C</text></g>
+  <text x="180" y="160" class="t-xs mid fl" font-weight="700">「何について考えるか」が報道に似てくる（議題設定）</text>
+
+  <!-- 二段階の流れ -->
+  <rect x="8" y="176" width="344" height="98" rx="12" class="bgc"/>
+  <text x="180" y="194" class="t-xs mid soft">二段階の流れ（ラザースフェルドら）</text>
+  <rect x="22" y="208" width="68" height="44" rx="6" class="paper st" stroke-width="1.5"/>
+  <path d="M40 252 L34 262 M72 252 L78 262" class="st" stroke-width="1.5"/>
+  <text x="56" y="235" class="t-xs mid ink" font-weight="700">メディア</text>
+  <path d="M96 230 H146" class="st-f" stroke-width="2" marker-end="url(#a-sociology)"/>
+  <circle cx="170" cy="218" r="8" class="fl"/>
+  <path d="M156 246 C156 234 162 228 170 228 C178 228 184 234 184 246 Z" class="fl"/>
+  <text x="170" y="266" class="t-xs mid ink">詳しい人</text>
+  <g class="st-f" stroke-width="2">
+    <path d="M192 226 L250 210" marker-end="url(#a-sociology)"/><path d="M192 232 L250 232" marker-end="url(#a-sociology)"/><path d="M192 238 L250 254" marker-end="url(#a-sociology)"/>
+  </g>
+  <g class="soft"><circle cx="266" cy="208" r="7"/><circle cx="266" cy="232" r="7"/><circle cx="266" cy="256" r="7"/></g>
+  <text x="284" y="236" class="t-xs ink">まわりの人</text>
+</svg>

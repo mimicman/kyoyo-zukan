@@ -1,0 +1,43 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 層（上ほど収入・職業的地位などが高い） -->
+  <text x="34" y="16" class="t-xs soft">収入・職業・学歴などの層</text>
+  <rect x="34" y="24" width="180" height="40" rx="4" class="fl"/>
+  <rect x="34" y="66" width="180" height="40" rx="4" class="fl" opacity="0.6"/>
+  <rect x="34" y="108" width="180" height="40" rx="4" class="fl" opacity="0.35"/>
+  <rect x="34" y="150" width="180" height="40" rx="4" class="tint"/>
+  <path d="M20 190 V28" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="14" y="206" class="t-xs soft">低</text>
+  <text x="14" y="22" class="t-xs soft">高</text>
+
+  <!-- 世代間移動：親（下の層）→子（上の層） -->
+  <circle cx="70" cy="122" r="6" class="paper st" stroke-width="1.5"/>
+  <path d="M62 142 C62 133 66 130 70 130 C74 130 78 133 78 142 Z" class="paper st" stroke-width="1.5"/>
+  <circle cx="110" cy="80" r="5" class="paper st" stroke-width="1.5"/>
+  <path d="M103 98 C103 91 106 88 110 88 C114 88 117 91 117 98 Z" class="paper st" stroke-width="1.5"/>
+  <path d="M80 122 C92 116 100 106 104 102" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <text x="60" y="100" class="t-xs mid ink halo">親→子</text>
+
+  <!-- 世代内移動：一人が転職などで移る -->
+  <circle cx="160" cy="164" r="5" class="paper st" stroke-width="1.5"/>
+  <path d="M153 182 C153 175 156 172 160 172 C164 172 167 175 167 182 Z" class="paper st" stroke-width="1.5"/>
+  <path d="M170 168 C184 160 190 140 192 124" class="st" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#a-ink)"/>
+  <circle cx="192" cy="118" r="5" class="paper st" stroke-width="1.5"/>
+  <text x="152" y="140" class="t-xs mid ink halo">転職など</text>
+  <text x="40" y="208" class="t-xs fl" font-weight="700">実線＝世代間移動　点線＝世代内移動</text>
+
+  <!-- 閉じた社会と開いた社会 -->
+  <rect x="228" y="24" width="122" height="78" rx="10" class="bgc"/>
+  <text x="289" y="44" class="t-s mid ink" font-weight="700">閉じた社会</text>
+  <path d="M244 56 H334 M244 70 H334 M244 84 H334" class="st" stroke-width="3"/>
+  <text x="289" y="98" class="t-xs mid soft">身分で生まれが決まる</text>
+  <rect x="228" y="112" width="122" height="78" rx="10" class="tint"/>
+  <text x="289" y="132" class="t-s mid fl" font-weight="700">開いた社会</text>
+  <path d="M244 144 H334 M244 158 H334 M244 172 H334" class="st-soft dash" stroke-width="1.5"/>
+  <path d="M276 172 V148 M302 146 V168" class="st-f" stroke-width="2" marker-end="url(#a-sociology)"/>
+  <text x="289" y="186" class="t-xs mid soft">上下に移りやすい</text>
+
+  <!-- 何が層を分けるか -->
+  <rect x="8" y="218" width="344" height="68" rx="10" class="bgc"/>
+  <g class="t-xs fl" font-weight="700"><text x="18" y="238">マルクス</text><text x="18" y="256">ウェーバー</text><text x="18" y="274">ブルデュー</text></g>
+  <g class="t-xs ink"><text x="88" y="238">工場などの生産手段を持つかどうか</text><text x="88" y="256">お金・名誉・権力など複数の軸</text><text x="88" y="274">教養や作法など「文化資本」も</text></g>
+</svg>
