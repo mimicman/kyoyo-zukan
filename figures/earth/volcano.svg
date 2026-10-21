@@ -1,0 +1,31 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 地下 -->
+  <rect x="0" y="230" width="360" height="50" class="bgc"/>
+  <path d="M0 230 H360" class="st-line" stroke-width="1.5"/>
+  <!-- 山体（溶岩と火山灰の層） -->
+  <path d="M40 230 L150 92 H190 L300 230 Z" class="soft" opacity="0.3"/>
+  <path d="M72 190 L160 112 M100 216 L164 152 M268 190 L180 112 M240 216 L176 152" class="st-line" stroke-width="1.5"/>
+  <path d="M40 230 L150 92 L162 104 H178 L190 92 L300 230" class="st" stroke-width="2" stroke-linejoin="round"/>
+  <!-- マグマだまりと火道 -->
+  <rect x="163" y="104" width="14" height="150" class="fl"/>
+  <ellipse cx="170" cy="256" rx="48" ry="14" class="fl"/>
+  <circle cx="170" cy="230" r="2.5" class="paper"/>
+  <circle cx="168" cy="196" r="3" class="paper"/>
+  <circle cx="172" cy="160" r="3.5" class="paper"/>
+  <circle cx="169" cy="124" r="4" class="paper"/>
+  <!-- 噴煙と溶岩 -->
+  <circle cx="170" cy="74" r="14" class="soft" opacity="0.5"/>
+  <circle cx="158" cy="52" r="16" class="soft" opacity="0.45"/>
+  <circle cx="184" cy="40" r="18" class="soft" opacity="0.4"/>
+  <circle cx="166" cy="24" r="14" class="soft" opacity="0.35"/>
+  <path d="M188 98 C204 124 222 150 248 186" class="st-f" stroke-width="5" stroke-linecap="round"/>
+  <!-- ラベル -->
+  <text x="210" y="34" class="t-xs ink">噴煙（火山灰・ガス）</text>
+  <text x="144" y="98" class="t-xs end ink">火口</text>
+  <text x="256" y="186" class="t-xs fl">溶岩</text>
+  <text x="156" y="184" class="t-xs end ink halo">火道</text>
+  <text x="66" y="222" class="t-xs ink">噴出物が積もった山</text>
+  <text x="226" y="256" class="t-s ink">マグマだまり</text>
+  <text x="226" y="272" class="t-xs soft">とけた岩とガス</text>
+  <text x="184" y="222" class="t-xs fl halo">ガスの泡がふくらむ</text>
+</svg>

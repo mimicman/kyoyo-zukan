@@ -1,0 +1,29 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 海と地下 -->
+  <rect x="0" y="72" width="270" height="44" class="bgc"/>
+  <path d="M0 72 H262" class="st-soft" stroke-width="1.5"/>
+  <text x="40" y="92" class="t-s soft">海</text>
+  <!-- 大陸プレート -->
+  <path d="M256 110 L272 60 H360 V152 C330 142 296 128 256 110 Z" class="soft" opacity="0.35"/>
+  <path d="M256 110 L272 60 H360" class="st" stroke-width="1.5"/>
+  <path d="M298 60 L310 42 L322 60" class="st" stroke-width="2" stroke-linejoin="round"/>
+  <text x="310" y="34" class="t-xs mid ink">火山</text>
+  <text x="316" y="96" class="t-xs mid ink">大陸プレート</text>
+  <!-- 海のプレート（左右に分かれる） -->
+  <path d="M0 116 L100 102 L100 120 L0 134 Z" class="tint"/>
+  <path d="M100 102 L250 114 C270 118 290 140 340 220 L322 232 C282 164 262 140 245 132 L100 120 Z" class="tint"/>
+  <path d="M0 116 L100 102 L250 114 C270 118 290 140 340 220 M322 232 C282 164 262 140 245 132 L100 120 L0 134" class="st-f" stroke-width="2"/>
+  <text x="178" y="125" class="t-xs mid ink">海のプレート</text>
+  <!-- 動き -->
+  <path d="M100 236 V134" class="st-f" stroke-width="3" marker-end="url(#a-earth)"/>
+  <path d="M120 152 H200" class="st-f" stroke-width="2.5" marker-end="url(#a-earth)"/>
+  <path d="M80 152 H24" class="st-f" stroke-width="2.5" marker-end="url(#a-earth)"/>
+  <path d="M274 152 L304 196" class="st-f" stroke-width="2.5" marker-end="url(#a-earth)"/>
+  <text x="100" y="94" class="t-s mid fl halo">海嶺</text>
+  <text x="100" y="254" class="t-xs mid soft">マグマがわき</text>
+  <text x="100" y="268" class="t-xs mid soft">プレートが生まれる</text>
+  <text x="246" y="64" class="t-s mid fl">海溝</text>
+  <text x="290" y="262" class="t-xs mid soft">沈み込んで</text>
+  <text x="290" y="276" class="t-xs mid soft">マントルへ</text>
+  <text x="190" y="200" class="t-s mid soft">マントル</text>
+</svg>

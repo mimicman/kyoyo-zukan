@@ -1,0 +1,49 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="140" cy="140" r="88" class="tint"/>
+  <path d="M140 52 A88 88 0 0 1 140 228 Z" class="soft" opacity="0.35"/>
+  <path d="M140 140 L228.0 140.0" class="st-line" stroke-width="1"/>
+  <path d="M140 140 L225.0 162.8" class="st-line" stroke-width="1"/>
+  <path d="M140 140 L216.2 184.0" class="st-line" stroke-width="1"/>
+  <path d="M140 140 L202.2 202.2" class="st-line" stroke-width="1"/>
+  <path d="M140 140 L184.0 216.2" class="st-line" stroke-width="1"/>
+  <path d="M140 140 L162.8 225.0" class="st-line" stroke-width="1"/>
+  <path d="M140 140 L140.0 228.0" class="st-line" stroke-width="1"/>
+  <path d="M140 140 L117.2 225.0" class="st-line" stroke-width="1"/>
+  <path d="M140 140 L96.0 216.2" class="st-line" stroke-width="1"/>
+  <path d="M140 140 L77.8 202.2" class="st-line" stroke-width="1"/>
+  <path d="M140 140 L63.8 184.0" class="st-line" stroke-width="1"/>
+  <path d="M140 140 L55.0 162.8" class="st-line" stroke-width="1"/>
+  <path d="M140 140 L52.0 140.0" class="st-line" stroke-width="1"/>
+  <path d="M140 140 L55.0 117.2" class="st-line" stroke-width="1"/>
+  <path d="M140 140 L63.8 96.0" class="st-line" stroke-width="1"/>
+  <path d="M140 140 L77.8 77.8" class="st-line" stroke-width="1"/>
+  <path d="M140 140 L96.0 63.8" class="st-line" stroke-width="1"/>
+  <path d="M140 140 L117.2 55.0" class="st-line" stroke-width="1"/>
+  <path d="M140 140 L140.0 52.0" class="st-line" stroke-width="1"/>
+  <path d="M140 140 L162.8 55.0" class="st-line" stroke-width="1"/>
+  <path d="M140 140 L184.0 63.8" class="st-line" stroke-width="1"/>
+  <path d="M140 140 L202.2 77.8" class="st-line" stroke-width="1"/>
+  <path d="M140 140 L216.2 96.0" class="st-line" stroke-width="1"/>
+  <path d="M140 140 L225.0 117.2" class="st-line" stroke-width="1"/>
+  <circle cx="140" cy="140" r="88" class="st" stroke-width="1.5"/>
+  <circle cx="140" cy="140" r="4" class="ink"/>
+  <circle cx="22" cy="140" r="14" class="fl"/>
+  <path d="M22 118 V108 M22 162 V172 M8 126 L4 122 M8 154 L4 158 M36 126 L40 122 M36 154 L40 158" class="st-f" stroke-width="2"/>
+  <text x="22" y="194" class="t-xs mid fl">太陽</text>
+  <path d="M226.6 90.0 A100 100 0 0 0 157.4 41.5" class="st-f" stroke-width="2.5" marker-end="url(#a-geography)"/>
+  <text x="214" y="34" class="t-xs fl">自転</text>
+  <text x="90" y="122" class="t-m mid ink halo">昼</text>
+  <text x="190" y="122" class="t-m mid ink halo">夜</text>
+  <text x="60" y="158" class="t-xs ink halo">正午</text>
+  <text x="220" y="158" class="t-xs end ink halo">真夜中</text>
+  <text x="140" y="70" class="t-xs mid ink halo">日の出</text>
+  <text x="140" y="218" class="t-xs mid ink halo">日の入り</text>
+  <text x="140" y="250" class="t-xs mid soft">北極の上から見た地球（24本＝1時間ごと）</text>
+  <text x="246" y="80" class="t-s ink">360° ÷ 24時間</text>
+  <text x="246" y="112" class="t-xl fl">＝ 15°</text>
+  <text x="246" y="146" class="t-s ink">経度15°ごとに</text>
+  <text x="246" y="164" class="t-s ink">1時間ずれる</text>
+  <text x="246" y="198" class="t-xs soft">東にある所ほど</text>
+  <text x="246" y="214" class="t-xs soft">先に朝が来る</text>
+  <text x="140" y="270" class="t-xs mid soft">ぐるりと1周したところで日付を切りかえる＝日付変更線</text>
+</svg>

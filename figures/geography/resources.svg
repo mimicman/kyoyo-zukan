@@ -1,0 +1,30 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- ① 海の生物が積もる -->
+  <rect x="10" y="26" width="160" height="64" class="tint"/>
+  <path d="M10 26 q10 -6 20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0" class="st-f" stroke-width="1.5"/>
+  <circle cx="34" cy="44" r="2.5" class="fl"/><circle cx="70" cy="52" r="2.5" class="fl"/><circle cx="110" cy="40" r="2.5" class="fl"/><circle cx="146" cy="56" r="2.5" class="fl"/><circle cx="52" cy="66" r="2.5" class="fl"/><circle cx="128" cy="70" r="2.5" class="fl"/>
+  <path d="M90 50 V80" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <rect x="10" y="90" width="160" height="12" class="soft" opacity="0.6"/>
+  <text x="14" y="120" class="t-xs ink">① 大昔の海の生物が</text>
+  <text x="14" y="134" class="t-xs ink">海底に積もる</text>
+  <!-- ② 埋まって変わる -->
+  <rect x="190" y="26" width="160" height="16" class="soft" opacity="0.2"/>
+  <rect x="190" y="42" width="160" height="16" class="soft" opacity="0.3"/>
+  <rect x="190" y="58" width="160" height="16" class="soft" opacity="0.4"/>
+  <rect x="190" y="74" width="160" height="28" class="fl" opacity="0.6"/>
+  <path d="M180 64 H190" class="st-line" stroke-width="1"/>
+  <path d="M338 30 V70" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <text x="330" y="52" class="t-xs end ink">重み</text>
+  <text x="270" y="93" class="t-xs mid ink">熱と圧力</text>
+  <text x="194" y="120" class="t-xs ink">② 深く埋まり、長い時間</text>
+  <text x="194" y="134" class="t-xs ink">をかけて石油に変わる</text>
+  <!-- ③ ドーム状の地層にたまる -->
+  <path d="M10 280 C120 216 240 216 350 280 V246 C240 182 120 182 10 246 Z" class="tint"/>
+  <path d="M10 246 C120 182 240 182 350 246 V232 C240 168 120 168 10 232 Z" class="soft" opacity="0.7"/>
+  <path d="M10 232 C120 168 240 168 350 232 V214 C240 150 120 150 10 214 Z" class="soft" opacity="0.25"/>
+  <path d="M81 214 Q180 182 279 214 Z" class="fl"/>
+  <text x="180" y="211" class="t-s mid on">石油</text>
+  <text x="180" y="232" class="t-xs mid soft">水</text>
+  <text x="34" y="236" class="t-xs ink halo">通さない岩</text>
+  <text x="14" y="160" class="t-xs ink">③ ドーム状の地層の下にたまる</text>
+</svg>

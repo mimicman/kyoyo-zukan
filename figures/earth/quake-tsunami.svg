@@ -1,0 +1,30 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <path d="M180 4 V124" class="st-line" stroke-width="1.5"/>
+  <path d="M8 136 H352" class="st-line" stroke-width="1.5"/>
+  <!-- ① ひずみがたまる -->
+  <text x="14" y="14" class="t-s ink">① ひずみがたまる</text>
+  <path d="M10 30 H174" class="st-soft" stroke-width="1.5"/>
+  <path d="M14 64 H96 L170 112" class="st-f" stroke-width="9" stroke-linecap="round"/>
+  <path d="M172 44 H126 C116 44 110 52 106 62" class="st" stroke-width="9" stroke-linecap="round"/>
+  <path d="M24 48 H70" class="st-f" stroke-width="2" marker-end="url(#a-earth)"/>
+  <text x="14" y="94" class="t-xs soft">海のプレートが</text>
+  <text x="14" y="108" class="t-xs soft">陸の端を引き込む</text>
+  <!-- ② はね返る＝地震 -->
+  <text x="190" y="14" class="t-s fl">② はね返る＝地震</text>
+  <path d="M186 30 H250 C262 30 268 21 282 21 C296 21 302 30 314 30 H350" class="st-soft" stroke-width="1.5"/>
+  <path d="M190 64 H272 L346 112" class="st-f" stroke-width="9" stroke-linecap="round"/>
+  <path d="M348 46 H300 C292 46 286 44 280 37" class="st" stroke-width="9" stroke-linecap="round"/>
+  <path d="M284 50 L287 58 L295 55 L290 62 L297 68 L288 67 L286 75 L282 68 L274 70 L279 63 L272 57 L281 58 Z" class="fl"/>
+  <text x="316" y="72" class="t-s fl">地震</text>
+  <text x="190" y="94" class="t-xs soft">はね返りで海底と</text>
+  <text x="190" y="108" class="t-xs soft">海面が持ち上がる</text>
+  <!-- ③ 津波が海岸へ -->
+  <text x="14" y="156" class="t-s ink">③ 津波が海岸へ</text>
+  <path d="M10 206 H60 C78 206 86 192 104 192 C122 192 130 206 148 206 H214 C232 206 240 174 258 174 C276 174 284 206 300 206 H310 L310 280 H10 Z" class="bgc"/>
+  <path d="M10 206 H60 C78 206 86 192 104 192 C122 192 130 206 148 206 H214 C232 206 240 174 258 174 C276 174 284 206 300 206 H310" class="st-f" stroke-width="2.5"/>
+  <path d="M10 262 H200 C240 254 280 232 310 206 L360 196 V280 H10 Z" class="soft" opacity="0.35"/>
+  <text x="338" y="234" class="t-s mid ink">陸</text>
+  <path d="M130 178 H204" class="st-f" stroke-width="2" marker-end="url(#a-earth)"/>
+  <text x="104" y="236" class="t-xs mid soft">沖：速くて低い</text>
+  <text x="258" y="164" class="t-xs mid fl">浅瀬：遅く高い</text>
+</svg>

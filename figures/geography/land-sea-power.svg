@@ -1,0 +1,25 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 海の交通路 -->
+  <ellipse cx="180" cy="118" rx="160" ry="100" class="st-f dash" stroke-width="2"/>
+  <path d="M332 150 A160 100 0 0 1 260 205" class="st-f" stroke-width="2.5" marker-end="url(#a-geography)"/>
+  <path d="M28 86 A160 100 0 0 1 100 31" class="st-f" stroke-width="2.5" marker-end="url(#a-geography)"/>
+  <text x="310" y="28" class="t-xs mid fl">海の交通路</text>
+  <path d="M10 112 H30 L26 120 H14 Z M20 112 V100 L28 108 H20" class="fl"/>
+  <path d="M330 112 H350 L346 120 H334 Z M340 112 V100 L348 108 H340" class="fl"/>
+  <!-- 大陸 -->
+  <ellipse cx="180" cy="118" rx="124" ry="78" class="tint"/>
+  <ellipse cx="180" cy="118" rx="124" ry="78" class="st-soft" stroke-width="1.5"/>
+  <ellipse cx="180" cy="118" rx="58" ry="36" class="soft" opacity="0.4"/>
+  <text x="180" y="116" class="t-s mid ink">ハートランド</text>
+  <text x="180" y="132" class="t-xs mid soft">大陸の内陸部</text>
+  <path d="M180 80 V56" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <path d="M120 118 H84" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <path d="M240 118 H276" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <text x="180" y="180" class="t-xs mid ink">リムランド（沿岸部）</text>
+  <!-- 2つの見方 -->
+  <path d="M8 236 H352" class="st-line" stroke-width="1"/>
+  <text x="14" y="256" class="t-s ink">ランドパワー（マッキンダー）</text>
+  <text x="14" y="272" class="t-xs soft">陸続きの広さ・鉄道・陸軍</text>
+  <text x="200" y="256" class="t-s fl">シーパワー（マハン）</text>
+  <text x="200" y="272" class="t-xs soft">海軍・港・海の交通路</text>
+</svg>

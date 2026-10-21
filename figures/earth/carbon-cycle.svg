@@ -1,0 +1,28 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 大気 -->
+  <ellipse cx="180" cy="44" rx="96" ry="26" class="tint"/>
+  <text x="180" y="44" class="t-s mid ink">大気中の二酸化炭素</text>
+  <text x="180" y="60" class="t-xs mid soft">（CO2）</text>
+  <!-- 植物・動物 -->
+  <rect x="58" y="148" width="8" height="36" class="soft"/>
+  <circle cx="62" cy="140" r="20" class="fl"/>
+  <text x="62" y="200" class="t-xs mid ink">植物・動物</text>
+  <path d="M110 64 C80 80 64 100 62 116" class="st-f" stroke-width="2.5" marker-end="url(#a-earth)"/>
+  <text x="68" y="82" class="t-xs end fl">光合成で吸う</text>
+  <path d="M88 128 C104 100 122 84 146 74" class="st-soft dash" stroke-width="2" marker-end="url(#a-soft)"/>
+  <text x="120" y="110" class="t-xs soft">呼吸・分解</text>
+  <!-- 海 -->
+  <rect x="262" y="160" width="90" height="48" rx="10" class="tint"/>
+  <path d="M270 176 q8 -6 16 0 t16 0 t16 0 t16 0 t8 0" class="st-f" stroke-width="1.5"/>
+  <text x="307" y="198" class="t-m mid fl">海</text>
+  <path d="M262 62 C290 82 304 110 306 152" class="st-f" stroke-width="2.5" marker-start="url(#a-earth)" marker-end="url(#a-earth)"/>
+  <text x="290" y="112" class="t-xs end soft">出入りする</text>
+  <!-- 化石燃料 -->
+  <rect x="120" y="232" width="180" height="40" rx="8" class="soft" opacity="0.35"/>
+  <text x="210" y="256" class="t-xs mid ink">化石燃料（石炭・石油）</text>
+  <path d="M62 208 C64 236 88 250 114 252" class="st-soft dash" stroke-width="2" marker-end="url(#a-soft)"/>
+  <text x="8" y="276" class="t-xs soft">大昔の生物が埋まる</text>
+  <!-- 燃やす -->
+  <path d="M196 228 C204 180 200 120 188 76" class="st-f" stroke-width="4.5" marker-end="url(#a-earth)"/>
+  <text x="208" y="150" class="t-s fl">燃やすと出る</text>
+</svg>

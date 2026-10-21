@@ -1,0 +1,34 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <text x="180" y="18" class="t-xs mid soft">地軸が約23.4°傾いたまま、太陽のまわりを回る</text>
+  <ellipse cx="180" cy="95" rx="130" ry="36" class="st-soft dash" stroke-width="1.5"/>
+  <circle cx="180" cy="95" r="22" class="fl"/>
+  <text x="180" y="99" class="t-xs mid on">太陽</text>
+  <circle cx="50" cy="95" r="26" class="tint"/>
+  <path d="M50 69 A26 26 0 0 0 50 121 Z" class="soft" opacity="0.45"/>
+  <circle cx="50" cy="95" r="26" class="st" stroke-width="1.5"/>
+  <path d="M26.1 84.7 L73.9 105.3" class="st-line" stroke-width="1.5"/>
+  <path d="M34.9 129.9 L65.1 60.1" class="st" stroke-width="2"/>
+  <text x="69.1" y="62.1" class="t-xs ink">北</text>
+  <circle cx="310" cy="95" r="26" class="tint"/>
+  <path d="M310 69 A26 26 0 0 1 310 121 Z" class="soft" opacity="0.45"/>
+  <circle cx="310" cy="95" r="26" class="st" stroke-width="1.5"/>
+  <path d="M286.1 84.7 L333.9 105.3" class="st-line" stroke-width="1.5"/>
+  <path d="M294.9 129.9 L325.1 60.1" class="st" stroke-width="2"/>
+  <text x="329.1" y="62.1" class="t-xs ink">北</text>
+  <text x="50" y="150" class="t-s mid fl">北半球は夏</text>
+  <text x="50" y="166" class="t-xs mid soft">昼が長い</text>
+  <text x="310" y="150" class="t-s mid ink">北半球は冬</text>
+  <text x="310" y="166" class="t-xs mid soft">昼が短い</text>
+  <path d="M8 178 H352" class="st-line" stroke-width="1"/>
+  <!-- 光の当たり方 -->
+  <text x="90" y="192" class="t-xs mid ink">太陽が高い（夏）</text>
+  <path d="M70 198 V246" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/><path d="M90 198 V246" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/><path d="M110 198 V246" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/>
+  <path d="M30 250 H150" class="st-soft" stroke-width="1.5"/>
+  <path d="M70 250 H110" class="st-f" stroke-width="5"/>
+  <text x="90" y="270" class="t-xs mid ink">せまい面に集中→暑い</text>
+  <text x="300" y="210" class="t-xs mid ink">太陽が低い（冬）</text>
+  <path d="M173 220 L223 249" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/><path d="M213 220 L263 249" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/><path d="M253 220 L303 249" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/>
+  <path d="M200 250 H350" class="st-soft" stroke-width="1.5"/>
+  <path d="M225 250 H305" class="st-f" stroke-width="5"/>
+  <text x="275" y="270" class="t-xs mid ink">広い面に分散→寒い</text>
+</svg>

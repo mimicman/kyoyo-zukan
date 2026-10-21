@@ -1,0 +1,59 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <path d="M138 10 V272 M246 10 V272" class="st-line" stroke-width="1.5"/>
+  <!-- 暑く湿った地域：高床 -->
+  <path d="M30 104 H116" class="st-soft" stroke-width="1.5"/>
+  <path d="M60 104 V80 M100 104 V80" class="st" stroke-width="2.5"/>
+  <rect x="52" y="74" width="56" height="6" class="ink"/>
+  <rect x="58" y="54" width="44" height="20" class="paper"/>
+  <rect x="58" y="54" width="44" height="20" class="st" stroke-width="1.5"/>
+  <path d="M46 58 L80 26 L114 58 Z" class="fl"/>
+  <path d="M66 86 C72 90 76 90 82 86 M76 94 C82 98 86 98 92 94" class="st-soft" stroke-width="1.5"/>
+  <!-- 乾いた地域：厚い土の壁 -->
+  <circle cx="226" cy="30" r="9" class="fl"/>
+  <path d="M150 104 H240" class="st-soft" stroke-width="1.5"/>
+  <rect x="160" y="52" width="62" height="52" class="soft" opacity="0.4"/>
+  <rect x="160" y="52" width="62" height="52" class="st" stroke-width="1.5"/>
+  <path d="M156 52 H226" class="st" stroke-width="3"/>
+  <rect x="172" y="66" width="7" height="7" class="ink"/>
+  <rect x="200" y="66" width="7" height="7" class="ink"/>
+  <rect x="184" y="84" width="12" height="20" class="ink"/>
+  <!-- 寒い地域：二重窓・断熱 -->
+  <path d="M256 104 H350" class="st-soft" stroke-width="1.5"/>
+  <rect x="274" y="62" width="52" height="42" class="paper"/>
+  <rect x="274" y="62" width="52" height="42" class="st" stroke-width="3"/>
+  <path d="M266 64 L300 30 L334 64 Z" class="soft" opacity="0.5"/>
+  <path d="M266 64 L300 30 L334 64" class="st" stroke-width="1.5"/>
+  <path d="M276 54 L300 32 L324 54" class="st-line" stroke-width="4"/>
+  <rect x="286" y="72" width="16" height="14" class="st" stroke-width="1.5"/>
+  <rect x="289" y="75" width="10" height="8" class="st-f" stroke-width="1.2"/>
+  <circle cx="262" cy="24" r="2" class="soft"/><circle cx="344" cy="40" r="2" class="soft"/><circle cx="340" cy="18" r="2" class="soft"/>
+  <!-- 見出し -->
+  <text x="80" y="128" class="t-s mid fl">暑く湿った所</text>
+  <text x="192" y="128" class="t-s mid fl">乾いた所</text>
+  <text x="300" y="128" class="t-s mid fl">寒い所</text>
+  <!-- 住・衣・食 -->
+  <rect x="4" y="142" width="22" height="22" rx="11" class="ink"/>
+  <text x="15" y="158" class="t-xs mid paper">住</text>
+  <rect x="4" y="190" width="22" height="22" rx="11" class="ink"/>
+  <text x="15" y="206" class="t-xs mid paper">衣</text>
+  <rect x="4" y="238" width="22" height="22" rx="11" class="ink"/>
+  <text x="15" y="254" class="t-xs mid paper">食</text>
+  <text x="84" y="152" class="t-xs mid ink">高床で湿気を</text>
+  <text x="84" y="166" class="t-xs mid ink">逃し風を通す</text>
+  <text x="192" y="152" class="t-xs mid ink">厚い土の壁と</text>
+  <text x="192" y="166" class="t-xs mid ink">小さな窓</text>
+  <text x="300" y="152" class="t-xs mid ink">二重窓と</text>
+  <text x="300" y="166" class="t-xs mid ink">厚い断熱</text>
+  <text x="84" y="200" class="t-xs mid ink">うすく</text>
+  <text x="84" y="214" class="t-xs mid ink">風通しのよい服</text>
+  <text x="192" y="200" class="t-xs mid ink">全身をおおう服</text>
+  <text x="192" y="214" class="t-xs mid ink">（日ざし・砂よけ）</text>
+  <text x="300" y="200" class="t-xs mid ink">毛皮や</text>
+  <text x="300" y="214" class="t-xs mid ink">重ね着</text>
+  <text x="84" y="248" class="t-xs mid ink">米・いも・果物</text>
+  <text x="84" y="262" class="t-xs mid soft">（よく育つもの）</text>
+  <text x="192" y="248" class="t-xs mid ink">麦・なつめやし</text>
+  <text x="192" y="262" class="t-xs mid soft">家畜の乳や肉</text>
+  <text x="300" y="248" class="t-xs mid ink">肉・魚</text>
+  <text x="300" y="262" class="t-xs mid soft">干す・こおらせる</text>
+</svg>

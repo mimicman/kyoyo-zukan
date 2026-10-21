@@ -1,0 +1,43 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <path d="M180 10 V270" class="st-line" stroke-width="1.5"/>
+  <circle cx="24" cy="34" r="11" class="fl"/>
+  <rect x="10" y="80" width="158" height="40" rx="8" class="tint"/>
+  <circle cx="34" cy="92" r="3.5" class="fl"/>
+  <circle cx="74" cy="104" r="3.5" class="fl"/>
+  <circle cx="114" cy="90" r="3.5" class="fl"/>
+  <circle cx="152" cy="106" r="3.5" class="fl"/>
+  <rect x="10" y="212" width="158" height="28" rx="6" class="soft" opacity="0.3"/>
+  <path d="M34 50 L60 206" class="st-f" stroke-width="2.5" marker-end="url(#a-earth)"/>
+  <text x="16" y="170" class="t-xs fl">日光</text>
+  <path d="M100 208 q6 -10 0 -20 q-6 -10 0 -20 q6 -10 0 -20 q-6 -10 0 -20 q6 -10 0 -20 q-6 -10 0 -20 q6 -10 0 -20 q-6 -10 0 -20 " class="st-soft" stroke-width="2.2" marker-end="url(#a-soft)"/>
+  <text x="110" y="48" class="t-xs soft">宇宙へ</text>
+  <text x="104" y="172" class="t-xs soft halo">熱</text>
+  <path d="M132 124 V206" class="st-f" stroke-width="1.8" marker-end="url(#a-earth)"/>
+  <text x="138" y="150" class="t-xs fl">戻る</text>
+  <text x="89" y="231" class="t-xs mid ink">地面が暖まる</text>
+  <text x="89" y="264" class="t-s mid ink">温室効果ガスが少ない</text>
+  <circle cx="206" cy="34" r="11" class="fl"/>
+  <rect x="192" y="80" width="158" height="40" rx="8" class="tint"/>
+  <circle cx="206" cy="90" r="3.5" class="fl"/>
+  <circle cx="226" cy="106" r="3.5" class="fl"/>
+  <circle cx="244" cy="88" r="3.5" class="fl"/>
+  <circle cx="264" cy="100" r="3.5" class="fl"/>
+  <circle cx="282" cy="110" r="3.5" class="fl"/>
+  <circle cx="298" cy="88" r="3.5" class="fl"/>
+  <circle cx="316" cy="102" r="3.5" class="fl"/>
+  <circle cx="336" cy="90" r="3.5" class="fl"/>
+  <circle cx="210" cy="112" r="3.5" class="fl"/>
+  <circle cx="338" cy="112" r="3.5" class="fl"/>
+  <circle cx="252" cy="112" r="3.5" class="fl"/>
+  <circle cx="290" cy="98" r="3.5" class="fl"/>
+  <rect x="192" y="212" width="158" height="28" rx="6" class="soft" opacity="0.3"/>
+  <path d="M216 50 L242 206" class="st-f" stroke-width="2.5" marker-end="url(#a-earth)"/>
+  <text x="198" y="170" class="t-xs fl">日光</text>
+  <path d="M282 208 q6 -10 0 -20 q-6 -10 0 -20 q6 -10 0 -20 q-6 -10 0 -20 q6 -10 0 -20 q-6 -10 0 -20 q6 -10 0 -20 q-6 -10 0 -20 " class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
+  <text x="292" y="48" class="t-xs soft">宇宙へ</text>
+  <text x="286" y="172" class="t-xs soft halo">熱</text>
+  <path d="M314 124 V206" class="st-f" stroke-width="4.5" marker-end="url(#a-earth)"/>
+  <text x="320" y="150" class="t-xs fl">戻る</text>
+  <text x="271" y="231" class="t-xs mid ink">もっと暖まる</text>
+  <text x="271" y="264" class="t-s mid fl">温室効果ガスが多い</text>
+</svg>

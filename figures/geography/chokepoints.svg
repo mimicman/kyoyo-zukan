@@ -1,0 +1,35 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 海と陸（模式図） -->
+  <rect x="10" y="14" width="340" height="156" rx="10" class="tint"/>
+  <path d="M10 14 H350 V60 C300 62 240 70 210 86 C198 92 190 94 180 94 C170 94 162 92 150 86 C120 70 60 62 10 60 Z" class="soft" opacity="0.45"/>
+  <path d="M10 170 V152 C60 152 120 142 150 124 C162 118 170 116 180 116 C190 116 198 118 210 124 C240 142 300 152 350 152 V170 Z" class="soft" opacity="0.45"/>
+  <!-- 船の通り道が1か所に集まる -->
+  <path d="M20 78 C90 80 130 104 160 105 M20 105 H160 M20 132 C90 130 130 106 160 105" class="st-f" stroke-width="2"/>
+  <path d="M160 105 H200" class="st-f" stroke-width="5"/>
+  <path d="M200 105 C230 104 270 80 336 78" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/>
+  <path d="M200 105 H336" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/>
+  <path d="M200 105 C230 106 270 130 336 132" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/>
+  <text x="180" y="40" class="t-s mid ink">海峡（せまい水路）</text>
+  <path d="M180 46 V88" class="st-soft" stroke-width="1"/>
+  <text x="180" y="142" class="t-xs mid ink">多くの船がここに集中</text>
+  <text x="180" y="158" class="t-xs mid soft">ふさがると物流全体に響く</text>
+  <path d="M8 178 H352" class="st-line" stroke-width="1"/>
+  <circle cx="18" cy="196" r="4" class="fl"/>
+  <text x="28" y="200" class="t-s ink">ホルムズ海峡</text>
+  <text x="28" y="213" class="t-xs soft">ペルシャ湾の出入口</text>
+  <circle cx="194" cy="196" r="4" class="fl"/>
+  <text x="204" y="200" class="t-s ink">マラッカ海峡</text>
+  <text x="204" y="213" class="t-xs soft">インド洋と南シナ海</text>
+  <circle cx="18" cy="226" r="4" class="fl"/>
+  <text x="28" y="230" class="t-s ink">スエズ運河</text>
+  <text x="28" y="243" class="t-xs soft">地中海と紅海</text>
+  <circle cx="194" cy="226" r="4" class="fl"/>
+  <text x="204" y="230" class="t-s ink">パナマ運河</text>
+  <text x="204" y="243" class="t-xs soft">太平洋と大西洋</text>
+  <circle cx="18" cy="256" r="4" class="fl"/>
+  <text x="28" y="260" class="t-s ink">ジブラルタル海峡</text>
+  <text x="28" y="273" class="t-xs soft">地中海と大西洋</text>
+  <circle cx="194" cy="256" r="4" class="fl"/>
+  <text x="204" y="260" class="t-s ink">ボスポラス海峡</text>
+  <text x="204" y="273" class="t-xs soft">黒海の出入口</text>
+</svg>

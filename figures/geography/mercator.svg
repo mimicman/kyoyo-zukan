@@ -1,0 +1,31 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <text x="90" y="24" class="t-m mid ink">地球儀</text>
+  <circle cx="90" cy="130" r="76" class="tint"/>
+  <circle cx="90" cy="130" r="76" class="st" stroke-width="1.5"/>
+  <ellipse cx="90" cy="130" rx="30" ry="76" class="st-line" stroke-width="1"/>
+  <path d="M14 130 H166" class="st-line" stroke-width="1"/>
+  <ellipse cx="90" cy="92.0" rx="65.8" ry="5" class="st-line" stroke-width="1"/>
+  <ellipse cx="90" cy="64.2" rx="38.0" ry="5" class="st-line" stroke-width="1"/>
+  <circle cx="90" cy="130.0" r="7" class="fl" opacity="0.85"/>
+  <circle cx="90" cy="92.0" r="7" class="fl" opacity="0.85"/>
+  <circle cx="90" cy="64.2" r="7" class="fl" opacity="0.85"/>
+  <text x="90" y="230" class="t-xs mid soft">どこでも同じ大きさの円</text>
+  <path d="M170 130 H194" class="st-f" stroke-width="2.5" marker-end="url(#a-geography)"/>
+  <text x="270" y="24" class="t-m mid fl">メルカトル図法</text>
+  <rect x="200" y="36" width="140" height="178" class="tint"/>
+  <path d="M230 36 V214" class="st-line" stroke-width="1"/>
+  <path d="M270 36 V214" class="st-line" stroke-width="1"/>
+  <path d="M310 36 V214" class="st-line" stroke-width="1"/>
+  <path d="M200 200.0 H340" class="st-line" stroke-width="1"/>
+  <text x="336" y="196.0" class="t-xs end soft">赤道</text>
+  <circle cx="250" cy="200.0" r="7.0" class="fl" opacity="0.85"/>
+  <path d="M200 150.6 H340" class="st-line" stroke-width="1"/>
+  <text x="336" y="146.6" class="t-xs end soft">30°</text>
+  <circle cx="250" cy="150.6" r="8.1" class="fl" opacity="0.85"/>
+  <path d="M200 81.5 H340" class="st-line" stroke-width="1"/>
+  <text x="336" y="77.5" class="t-xs end soft">60°</text>
+  <circle cx="250" cy="81.5" r="14.0" class="fl" opacity="0.85"/>
+  <rect x="200" y="36" width="140" height="178" class="st" stroke-width="1.5"/>
+  <text x="270" y="230" class="t-xs mid soft">北ほど円が大きくなる</text>
+  <text x="180" y="262" class="t-s mid ink">そのかわり角度が正しく、航海に便利</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 太陽 -->
+  <circle cx="34" cy="36" r="16" class="fl"/>
+  <text x="58" y="40" class="t-xs soft">太陽の熱</text>
+  <!-- 海と陸 -->
+  <path d="M0 196 H178 L150 280 H0 Z" class="tint"/>
+  <path d="M150 280 L176 200 C210 186 236 150 266 116 L300 90 L336 124 L360 132 V280 Z" class="soft" opacity="0.3"/>
+  <text x="56" y="250" class="t-l mid fl">海</text>
+  <!-- 雲 -->
+  <circle cx="94" cy="88" r="11" class="soft" opacity="0.45"/>
+  <circle cx="110" cy="80" r="14" class="soft" opacity="0.45"/>
+  <circle cx="126" cy="88" r="11" class="soft" opacity="0.45"/>
+  <circle cx="110" cy="91" r="11" class="soft" opacity="0.45"/>
+  <circle cx="240" cy="55" r="14" class="soft" opacity="0.45"/>
+  <circle cx="262" cy="45" r="19" class="soft" opacity="0.45"/>
+  <circle cx="284" cy="55" r="14" class="soft" opacity="0.45"/>
+  <circle cx="262" cy="60" r="14" class="soft" opacity="0.45"/>
+  <text x="304" y="40" class="t-s ink">雲</text>
+  <!-- 蒸発 -->
+  <path d="M50 186 q6 -10 0 -20 q-6 -10 0 -20 q6 -10 0 -20" class="st-f" stroke-width="2" marker-end="url(#a-earth)"/>
+  <path d="M120 186 q6 -10 0 -20 q-6 -10 0 -20 q6 -10 0 -20" class="st-f" stroke-width="2" marker-end="url(#a-earth)"/>
+  <text x="85" y="158" class="t-s mid fl">蒸発</text>
+  <!-- 風で運ばれる -->
+  <path d="M138 74 C170 62 196 58 226 56" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <text x="182" y="86" class="t-xs mid soft">風で運ばれる</text>
+  <!-- 雨・雪 -->
+  <path d="M248 78 L242 98 M264 78 L258 98 M280 78 L274 98" class="st-f dash" stroke-width="2"/>
+  <text x="290" y="96" class="t-xs ink">雨・雪</text>
+  <!-- 川 -->
+  <path d="M276 112 C262 130 250 128 236 150 C222 172 204 172 186 196" class="st-f" stroke-width="3" stroke-linecap="round" marker-end="url(#a-earth)"/>
+  <text x="248" y="164" class="t-s fl">川</text>
+  <!-- 地下水 -->
+  <path d="M310 214 C270 236 220 246 176 248" class="st-soft dash" stroke-width="2" marker-end="url(#a-soft)"/>
+  <text x="264" y="266" class="t-xs mid soft">しみこんで地下水に</text>
+</svg>

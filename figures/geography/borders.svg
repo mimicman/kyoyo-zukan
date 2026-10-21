@@ -1,0 +1,27 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <text x="90" y="20" class="t-m mid ink">自然国境</text>
+  <text x="270" y="20" class="t-m mid fl">人為国境</text>
+  <!-- 自然国境：山脈に沿う -->
+  <rect x="10" y="30" width="160" height="170" rx="10" class="tint"/>
+  <path d="M92 30 C80 60 104 90 88 120 C76 150 98 176 86 200 H160 Q170 200 170 190 V40 Q170 30 160 30 Z" class="bgc"/>
+  <path d="M92 30 C80 60 104 90 88 120 C76 150 98 176 86 200" class="st" stroke-width="2"/>
+  <path d="M84 58 L92 44 L100 58 Z" class="soft"/><path d="M80 92 L88 78 L96 92 Z" class="soft"/><path d="M84 126 L92 112 L100 126 Z" class="soft"/><path d="M76 160 L84 146 L92 160 Z" class="soft"/><path d="M80 192 L88 178 L96 192 Z" class="soft"/>
+  <text x="46" y="120" class="t-m mid ink">A国</text>
+  <text x="134" y="120" class="t-m mid ink">B国</text>
+  <!-- 人為国境：直線 -->
+  <rect x="190" y="30" width="160" height="170" rx="10" class="tint"/>
+  <path d="M190 70 H350 M190 150 H350 M230 30 V200 M310 30 V200" class="st-line dash" stroke-width="1"/>
+  <path d="M190 110 H350 M270 110 V200" class="st" stroke-width="3"/>
+  <text x="270" y="80" class="t-m mid ink">C国</text>
+  <text x="230" y="166" class="t-m mid ink">D国</text>
+  <text x="310" y="166" class="t-m mid ink">E国</text>
+  <text x="346" y="104" class="t-xs end fl">緯線に沿う</text>
+  <text x="276" y="194" class="t-xs fl">経線に沿う</text>
+  <!-- 説明 -->
+  <text x="90" y="222" class="t-xs mid ink">山脈・川・海など</text>
+  <text x="90" y="238" class="t-xs mid ink">地形に沿って引く</text>
+  <text x="270" y="222" class="t-xs mid ink">緯線・経線などの</text>
+  <text x="270" y="238" class="t-xs mid ink">直線で引く</text>
+  <text x="90" y="266" class="t-xs mid soft">例：ピレネー山脈</text>
+  <text x="270" y="266" class="t-xs mid soft">例：北緯49度の線</text>
+</svg>

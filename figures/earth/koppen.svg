@@ -1,0 +1,42 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 北半球のおおよその並び（実際は海流や山で入り組む） -->
+  <path d="M28 22 V262" class="st-soft" stroke-width="2" marker-start="url(#a-soft)"/>
+  <text x="28" y="14" class="t-xs mid soft">極</text>
+  <text x="28" y="276" class="t-xs mid soft">赤道</text>
+  <rect x="44" y="22" width="308" height="46" rx="8" class="tint"/>
+  <circle cx="68" cy="45" r="14" class="fl"/>
+  <text x="68" y="51" class="t-m mid on">E</text>
+  <text x="92" y="42" class="t-m ink">寒帯</text>
+  <text x="92" y="59" class="t-xs soft">夏でも寒く、木が育たない</text>
+  <path d="M300 62 H344 M306 62 L314 50 L322 56 L332 46 L340 62" class="st" stroke-width="1.5" stroke-linejoin="round"/>
+  <rect x="44" y="70" width="308" height="46" rx="8" class="paper"/>
+  <circle cx="68" cy="93" r="14" class="fl"/>
+  <text x="68" y="99" class="t-m mid on">D</text>
+  <text x="92" y="90" class="t-m ink">冷帯（亜寒帯）</text>
+  <text x="92" y="107" class="t-xs soft">冬が長く厳しい。針葉樹の森</text>
+  <path d="M310 80 L319 106 H301 Z" class="fl" opacity="0.8"/>
+  <path d="M310 106 V110" class="st" stroke-width="2"/>
+  <path d="M330 80 L339 106 H321 Z" class="fl" opacity="0.8"/>
+  <path d="M330 106 V110" class="st" stroke-width="2"/>
+  <rect x="44" y="118" width="308" height="46" rx="8" class="tint"/>
+  <circle cx="68" cy="141" r="14" class="fl"/>
+  <text x="68" y="147" class="t-m mid on">C</text>
+  <text x="92" y="138" class="t-m ink">温帯</text>
+  <text x="92" y="155" class="t-xs soft">季節の変化がはっきりしている</text>
+  <path d="M322 146 V158" class="st" stroke-width="2.5"/>
+  <circle cx="322" cy="138" r="12" class="fl" opacity="0.8"/>
+  <rect x="44" y="166" width="308" height="46" rx="8" class="paper"/>
+  <circle cx="68" cy="189" r="14" class="fl"/>
+  <text x="68" y="195" class="t-m mid on">B</text>
+  <text x="92" y="186" class="t-m ink">乾燥帯</text>
+  <text x="92" y="203" class="t-xs soft">雨が少なく、砂漠や草原</text>
+  <path d="M322 206 V176 M322 192 H313 V184 M322 188 H331 V180" class="st-f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M300 206 H344" class="st-soft" stroke-width="1.5"/>
+  <rect x="44" y="214" width="308" height="46" rx="8" class="tint"/>
+  <circle cx="68" cy="237" r="14" class="fl"/>
+  <text x="68" y="243" class="t-m mid on">A</text>
+  <text x="92" y="234" class="t-m ink">熱帯</text>
+  <text x="92" y="251" class="t-xs soft">一年中暑い。雨の多い森も</text>
+  <path d="M322 254 C320 240 324 232 322 222" class="st" stroke-width="2.5"/>
+  <path d="M322 222 C314 218 308 224 306 230 M322 222 C330 218 336 224 338 230 M322 222 C318 216 312 216 310 218 M322 222 C326 216 332 216 334 218" class="st-f" stroke-width="3" stroke-linecap="round"/>
+</svg>
