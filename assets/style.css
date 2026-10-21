@@ -17,6 +17,19 @@
   --c-science: #2a63b5;
   --c-psychology: #0f7c86;
   --c-art: #b53a6b;
+  --c-math: #4a4fb5;
+  --c-statistics: #5b6b1e;
+  --c-biology: #3a7d2c;
+  --c-space: #2b3f8c;
+  --c-earth: #6b5a2e;
+  --c-medicine: #b03a48;
+  --c-sociology: #6e5a9c;
+  --c-geography: #a05a2c;
+  --c-technology: #3b4a5e;
+  --c-architecture: #5e5e5e;
+  --c-music: #9c2f86;
+  --c-literature: #8a3f6e;
+  --c-language: #1d6f8f;
   --on-field: #ffffff;   /* 分野色の上に載せる文字 */
   --shadow: 0 1px 2px rgba(30, 25, 15, 0.06), 0 6px 20px rgba(30, 25, 15, 0.06);
   --radius: 16px;
@@ -30,6 +43,7 @@
     --bg: #131518; --surface: #1c1f23; --ink: #ebe8e2; --ink-soft: #a2a8af; --line: #353a41;
     --accent: #e3906a; --c-philosophy: #a993ec; --c-economics: #5cc6a0; --c-history: #e3906a;
     --c-religion: #d9b24a; --c-japan: #e2767d; --c-politics: #8fa9d1; --c-science: #6f9ee8; --c-psychology: #4fc1c9; --c-art: #e57ba3;
+    --c-math: #9a9ef0; --c-statistics: #b4c66a; --c-biology: #7fcf6e; --c-space: #8a9ff0; --c-earth: #c9b27a; --c-medicine: #ef8a96; --c-sociology: #b6a3e6; --c-geography: #e5a274; --c-technology: #9fb1c8; --c-architecture: #b8b8b8; --c-music: #e08ad0; --c-literature: #d98bbd; --c-language: #6cc0e0;
     --on-field: #15171a; --shadow: none; color-scheme: dark;
   }
 }
@@ -37,6 +51,7 @@
   --bg: #131518; --surface: #1c1f23; --ink: #ebe8e2; --ink-soft: #a2a8af; --line: #353a41;
   --accent: #e3906a; --c-philosophy: #a993ec; --c-economics: #5cc6a0; --c-history: #e3906a;
     --c-religion: #d9b24a; --c-japan: #e2767d; --c-politics: #8fa9d1; --c-science: #6f9ee8; --c-psychology: #4fc1c9; --c-art: #e57ba3;
+    --c-math: #9a9ef0; --c-statistics: #b4c66a; --c-biology: #7fcf6e; --c-space: #8a9ff0; --c-earth: #c9b27a; --c-medicine: #ef8a96; --c-sociology: #b6a3e6; --c-geography: #e5a274; --c-technology: #9fb1c8; --c-architecture: #b8b8b8; --c-music: #e08ad0; --c-literature: #d98bbd; --c-language: #6cc0e0;
   --on-field: #15171a; --shadow: none; color-scheme: dark;
 }
 
@@ -50,6 +65,19 @@
 [data-field="science"]    { --f: var(--c-science); }
 [data-field="psychology"] { --f: var(--c-psychology); }
 [data-field="art"]        { --f: var(--c-art); }
+[data-field="math"] { --f: var(--c-math); }
+[data-field="statistics"] { --f: var(--c-statistics); }
+[data-field="biology"] { --f: var(--c-biology); }
+[data-field="space"] { --f: var(--c-space); }
+[data-field="earth"] { --f: var(--c-earth); }
+[data-field="medicine"] { --f: var(--c-medicine); }
+[data-field="sociology"] { --f: var(--c-sociology); }
+[data-field="geography"] { --f: var(--c-geography); }
+[data-field="technology"] { --f: var(--c-technology); }
+[data-field="architecture"] { --f: var(--c-architecture); }
+[data-field="music"] { --f: var(--c-music); }
+[data-field="literature"] { --f: var(--c-literature); }
+[data-field="language"] { --f: var(--c-language); }
 [data-field] { --f-tint: color-mix(in srgb, var(--f) 12%, var(--surface)); }
 
 /* ---- 土台 ---- */
@@ -196,6 +224,32 @@ button.banner { cursor: zoom-in; }
 .fig svg { display: block; width: 100%; height: auto; }
 .line { margin: 4px 16px 0; font-size: 18px; font-weight: 800; line-height: 1.5; }
 .line::before { content: ""; display: block; width: 28px; height: 4px; border-radius: 2px; background: var(--f); margin-bottom: 8px; }
+
+/* 要点①②③ */
+.points { list-style: none; counter-reset: pt; margin: 14px 16px 0; padding: 0; display: grid; gap: 8px; }
+.points li { counter-increment: pt; position: relative; padding-left: 32px; font-size: 15px; line-height: 1.6; }
+.points li::before {
+  content: counter(pt); position: absolute; left: 0; top: 1px;
+  width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--f); color: var(--on-field); font-size: 12px; font-weight: 800;
+}
+/* 例・なぜ大事 */
+.facts { margin: 14px 16px 0; display: grid; gap: 8px; }
+.facts > div { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: start; padding: 10px 12px; border-radius: 10px; background: var(--bg); }
+.facts dt { font-size: 12px; font-weight: 800; color: var(--f); padding-top: 2px; white-space: nowrap; }
+.facts dd { margin: 0; font-size: 14px; line-height: 1.6; }
+.facts .why { background: var(--f-tint); }
+/* もっと詳しく */
+.more { margin: 14px 16px 0; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.more summary {
+  list-style: none; cursor: pointer; min-height: 44px; padding: 10px 14px;
+  display: flex; align-items: center; justify-content: space-between;
+  font-weight: 700; font-size: 14px; color: var(--f);
+}
+.more summary::-webkit-details-marker { display: none; }
+.more summary::after { content: "＋"; font-weight: 800; }
+.more[open] summary::after { content: "－"; }
+.more p { margin: 0; padding: 0 14px 14px; font-size: 14px; line-height: 1.85; }
 
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 16px 0; }
 .chip {

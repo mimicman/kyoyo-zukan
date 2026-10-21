@@ -16,4 +16,4 @@ def load() -> dict:
         if field_cards:
             fields.append(f)
         cards.extend({**c, "field": f["id"]} for c in field_cards)
-    return {"hero": index["hero"], "fields": fields, "all_fields": index["fields"], "cards": cards}
+    return {"hero": index["hero"], "groups": index.get("groups", []), "fields": fields, "all_fields": index["fields"], "cards": cards}

@@ -69,7 +69,11 @@ def main() -> int:
                 ctx = browser.new_context(viewport={"width": w, "height": h}, color_scheme=scheme)
                 page = ctx.new_page()
                 errors: list[str] = []
-                page.on("console", lambda m, e=errors: e.append(m.text) if m.type == "error" else None)
+                # 読み込み失敗は URL で判定する（カードがまだない分野の data/fields/*.json は対象外）
+                page.on("console", lambda m, e=errors: e.append(m.text)
+                        if m.type == "error" and not m.text.startswith("Failed to load resource") else None)
+                page.on("response", lambda r, e=errors: e.append(f"{r.status} {r.url}")
+                        if r.status >= 400 and "/data/fields/" not in r.url else None)
                 page.on("pageerror", lambda ex, e=errors: e.append(str(ex)))
                 for r in routes(args.cards):
                     label = f"#/{r} {vp_name} {scheme}"
@@ -86,7 +90,23 @@ def main() -> int:
                         problems.append(f"{label}: 横スクロールあり（scrollWidth={scroll_w}）")
                     problems.extend(f"{label}: コンソールエラー {e}" for e in errors)
                     name = (r or "home").replace("/", "_")
-                    page.screenshot(path=out / f"{name}_{vp_name}_{scheme}.png", full_page=r.count("/") == 0)
+                    shot = out / f"{name}_{vp_name}_{scheme}.png"
+                    if r.count("/") == 1:
+                        # カードは縦に長いので、そのカードだけを残して縦に広げ、全体を1枚に撮る
+                        page.evaluate("""(key) => {
+                          document.body.classList.remove("deck-mode");
+                          document.querySelector(".pager").style.display = "none";
+                          document.querySelector(".top").style.display = "none";
+                          const deck = document.querySelector(".deck");
+                          deck.style.height = "auto"; deck.style.overflow = "visible";
+                          deck.querySelectorAll(".slide").forEach((s) => {
+                            s.style.display = s.dataset.key === key ? "block" : "none";
+                            s.style.overflow = "visible";
+                          });
+                        }""", r)
+                        slide.locator(".card").screenshot(path=shot)
+                    else:
+                        page.screenshot(path=shot, full_page=True)
                 ctx.close()
         browser.close()
     server.shutdown()

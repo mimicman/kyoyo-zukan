@@ -2,12 +2,14 @@
 
 検査すること:
     - 文字数の上限（見出し15字・ひとこと30字・キーワード説明40字・キーワード3つまで・つながり2件まで）
+    - 説明の項目（要点3つ各60字・例60字・なぜ大事50字・もっと詳しく150〜400字）があるか
     - 図（figures/<分野>/<id>.svg）と画像（images/<id>.jpg）があるか、画像の出典が credits.json にあるか
     - つながり先のカードが存在するか、カードの id が重複していないか
     - 図に色の直接指定や id 属性がないか（ダークモード対応と、埋め込んだときの id 衝突を防ぐため）
 
 使い方:
-    python3 tools/validate.py
+    python3 tools/validate.py                      # 全分野
+    python3 tools/validate.py --fields math,music  # 指定した分野だけ
 """
 
 import json
@@ -17,7 +19,8 @@ from pathlib import Path
 
 from kyoyo_data import ROOT, load
 
-LIMITS = {"title": 15, "line": 30, "note": 40, "keywords": 3, "links": 2}
+LIMITS = {"title": 15, "line": 30, "note": 40, "keywords": 3, "links": 2, "point": 60, "example": 60, "why": 50}
+MORE_RANGE = (150, 400)
 COLOR_ATTR = re.compile(r'\b(fill|stroke|stop-color)="(#|rgb|hsl)|style="[^"]*(fill|stroke|color)\s*:', re.I)
 
 
@@ -36,6 +39,9 @@ def check_svg(path: Path) -> list[str]:
 
 def main() -> int:
     """全カードを検査して結果を表示する"""
+    only = None
+    if "--fields" in sys.argv:
+        only = set(sys.argv[sys.argv.index("--fields") + 1].split(","))
     data = load()
     credits_path = ROOT / "images" / "credits.json"
     credits = json.loads(credits_path.read_text(encoding="utf-8")) if credits_path.exists() else {}
@@ -49,6 +55,22 @@ def main() -> int:
 
     for c in data["cards"]:
         key = f"{c['field']}/{c['id']}"
+        if only and c["field"] not in only:
+            continue
+        points = c.get("points", [])
+        if len(points) != 3:
+            errors.append(f"{key}: 要点 points は3つ")
+        for i, pt in enumerate(points, 1):
+            if len(pt) > LIMITS["point"]:
+                errors.append(f"{key}: 要点{i}が{LIMITS['point']}字を超えている（{len(pt)}字）")
+        for name in ("example", "why"):
+            if not c.get(name):
+                errors.append(f"{key}: {name} がない")
+            elif len(c[name]) > LIMITS[name]:
+                errors.append(f"{key}: {name} が{LIMITS[name]}字を超えている（{len(c[name])}字）")
+        more = c.get("more", "")
+        if not MORE_RANGE[0] <= len(more) <= MORE_RANGE[1]:
+            errors.append(f"{key}: more は{MORE_RANGE[0]}〜{MORE_RANGE[1]}字（{len(more)}字）")
         for name in ("title", "line"):
             if len(c[name]) > LIMITS[name]:
                 errors.append(f"{key}: {name} が{LIMITS[name]}字を超えている（{len(c[name])}字）")
@@ -77,7 +99,8 @@ def main() -> int:
 
     for e in errors:
         print("NG", e)
-    print(f"検査完了: カード {len(keys)} 枚 / 問題 {len(errors)} 件")
+    checked = sum(1 for c in data["cards"] if not only or c["field"] in only)
+    print(f"検査完了: カード {checked} 枚 / 問題 {len(errors)} 件")
     return 1 if errors else 0
 
 

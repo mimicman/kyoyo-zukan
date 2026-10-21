@@ -8,55 +8,177 @@
       "id": "philosophy",
       "name": "哲学",
       "desc": "考え方そのものを考える",
-      "icon": "<circle cx=\"24\" cy=\"24\" r=\"17\"/><path d=\"M19 19.5a5 5 0 1 1 7 4.6c-1.4.7-2 1.6-2 3.4\"/><path d=\"M24 33.5v.5\"/>"
+      "icon": "<circle cx=\"24\" cy=\"24\" r=\"17\"/><path d=\"M19 19.5a5 5 0 1 1 7 4.6c-1.4.7-2 1.6-2 3.4\"/><path d=\"M24 33.5v.5\"/>",
+      "group": "think"
     },
     {
       "id": "religion",
       "name": "宗教",
       "desc": "人が信じてきたものの形",
-      "icon": "<path d=\"M20 40V22h8v18\"/><path d=\"M14 40h20\"/><path d=\"M24 18c-3-3-3-6 0-10 3 4 3 7 0 10z\"/>"
-    },
-    {
-      "id": "history",
-      "name": "世界史",
-      "desc": "人類の歩みを流れで見る",
-      "icon": "<path d=\"M8 17l16-9 16 9\"/><path d=\"M9 18h30\"/><path d=\"M14 22v11M21 22v11M27 22v11M34 22v11\"/><path d=\"M8 38h32\"/>"
-    },
-    {
-      "id": "japan",
-      "name": "日本史",
-      "desc": "この国の歩みと文化",
-      "icon": "<path d=\"M8 12c10 2 22 2 32 0\"/><path d=\"M11 19h26\"/><path d=\"M15 13v27M33 13v27\"/><path d=\"M24 14v5\"/>"
-    },
-    {
-      "id": "politics",
-      "name": "政治・法",
-      "desc": "社会のルールの決め方",
-      "icon": "<path d=\"M24 8v32\"/><path d=\"M14 40h20\"/><path d=\"M10 14h28\"/><path d=\"M10 14l-5 11h10z\"/><path d=\"M38 14l-5 11h10z\"/>"
-    },
-    {
-      "id": "economics",
-      "name": "経済",
-      "desc": "限られたものの分け方",
-      "icon": "<path d=\"M8 38h32\"/><path d=\"M10 32l9-9 6 6 13-14\"/><path d=\"M31 15h7v7\"/>"
-    },
-    {
-      "id": "science",
-      "name": "科学史",
-      "desc": "自然の見方が変わった瞬間",
-      "icon": "<circle cx=\"24\" cy=\"24\" r=\"3\"/><ellipse cx=\"24\" cy=\"24\" rx=\"18\" ry=\"7\"/><ellipse cx=\"24\" cy=\"24\" rx=\"18\" ry=\"7\" transform=\"rotate(60 24 24)\"/><ellipse cx=\"24\" cy=\"24\" rx=\"18\" ry=\"7\" transform=\"rotate(120 24 24)\"/>"
+      "icon": "<path d=\"M20 40V22h8v18\"/><path d=\"M14 40h20\"/><path d=\"M24 18c-3-3-3-6 0-10 3 4 3 7 0 10z\"/>",
+      "group": "think"
     },
     {
       "id": "psychology",
       "name": "心理学・脳",
       "desc": "心の仕組みとクセ",
-      "icon": "<path d=\"M30 40v-7h4a3 3 0 0 0 3-3v-4l3-2-3-5c0-8-6-13-14-13S9 11 9 19c0 5 2 8 5 11v10\"/><path d=\"M20 18a4 4 0 0 1 8 0\"/>"
+      "icon": "<path d=\"M30 40v-7h4a3 3 0 0 0 3-3v-4l3-2-3-5c0-8-6-13-14-13S9 11 9 19c0 5 2 8 5 11v10\"/><path d=\"M20 18a4 4 0 0 1 8 0\"/>",
+      "group": "think"
+    },
+    {
+      "id": "math",
+      "name": "数学・論理",
+      "desc": "形と数と、正しい推論",
+      "icon": "<path d=\"M10 14h12M16 8v12M28 14h10M10 34l8 8M18 34l-8 8M28 34h10M28 40h10\"/>",
+      "group": "think"
+    },
+    {
+      "id": "history",
+      "name": "世界史",
+      "desc": "人類の歩みを流れで見る",
+      "icon": "<path d=\"M8 17l16-9 16 9\"/><path d=\"M9 18h30\"/><path d=\"M14 22v11M21 22v11M27 22v11M34 22v11\"/><path d=\"M8 38h32\"/>",
+      "group": "history"
+    },
+    {
+      "id": "japan",
+      "name": "日本史",
+      "desc": "この国の歩みと文化",
+      "icon": "<path d=\"M8 12c10 2 22 2 32 0\"/><path d=\"M11 19h26\"/><path d=\"M15 13v27M33 13v27\"/><path d=\"M24 14v5\"/>",
+      "group": "history"
+    },
+    {
+      "id": "politics",
+      "name": "政治・法",
+      "desc": "社会のルールの決め方",
+      "icon": "<path d=\"M24 8v32\"/><path d=\"M14 40h20\"/><path d=\"M10 14h28\"/><path d=\"M10 14l-5 11h10z\"/><path d=\"M38 14l-5 11h10z\"/>",
+      "group": "society"
+    },
+    {
+      "id": "economics",
+      "name": "経済",
+      "desc": "限られたものの分け方",
+      "icon": "<path d=\"M8 38h32\"/><path d=\"M10 32l9-9 6 6 13-14\"/><path d=\"M31 15h7v7\"/>",
+      "group": "society"
+    },
+    {
+      "id": "sociology",
+      "name": "社会学",
+      "desc": "人が集まると起きること",
+      "icon": "<circle cx=\"16\" cy=\"16\" r=\"5\"/><circle cx=\"32\" cy=\"16\" r=\"5\"/><path d=\"M6 38c0-7 4-12 10-12s10 5 10 12\"/><path d=\"M22 38c0-7 4-12 10-12s10 5 10 12\"/>",
+      "group": "society"
+    },
+    {
+      "id": "geography",
+      "name": "地理・地政学",
+      "desc": "場所が決める暮らしと力",
+      "icon": "<path d=\"M24 42s-12-12-12-21a12 12 0 0 1 24 0c0 9-12 21-12 21z\"/><circle cx=\"24\" cy=\"21\" r=\"4\"/>",
+      "group": "society"
+    },
+    {
+      "id": "technology",
+      "name": "IT・AI",
+      "desc": "計算機とネットの仕組み",
+      "icon": "<rect x=\"14\" y=\"14\" width=\"20\" height=\"20\" rx=\"3\"/><path d=\"M19 8v6M24 8v6M29 8v6M19 34v6M24 34v6M29 34v6M8 19h6M8 24h6M8 29h6M34 19h6M34 24h6M34 29h6\"/>",
+      "group": "society"
+    },
+    {
+      "id": "science",
+      "name": "科学史",
+      "desc": "自然の見方が変わった瞬間",
+      "icon": "<circle cx=\"24\" cy=\"24\" r=\"3\"/><ellipse cx=\"24\" cy=\"24\" rx=\"18\" ry=\"7\"/><ellipse cx=\"24\" cy=\"24\" rx=\"18\" ry=\"7\" transform=\"rotate(60 24 24)\"/><ellipse cx=\"24\" cy=\"24\" rx=\"18\" ry=\"7\" transform=\"rotate(120 24 24)\"/>",
+      "group": "nature"
+    },
+    {
+      "id": "statistics",
+      "name": "統計・確率",
+      "desc": "データと偶然の読み方",
+      "icon": "<path d=\"M6 38h36\"/><path d=\"M8 37c6 0 8-24 16-24s10 24 16 24\"/><path d=\"M24 13v25\" stroke-dasharray=\"3 3\"/>",
+      "group": "nature"
+    },
+    {
+      "id": "biology",
+      "name": "生物・生命",
+      "desc": "生きものの仕組み",
+      "icon": "<path d=\"M16 6c0 12 16 12 16 24s-16 12-16 12\"/><path d=\"M32 6c0 12-16 12-16 24s16 12 16 12\"/><path d=\"M19 12h10M18 24h12M19 36h10\"/>",
+      "group": "nature"
+    },
+    {
+      "id": "space",
+      "name": "宇宙・天文",
+      "desc": "星と宇宙の成り立ち",
+      "icon": "<circle cx=\"24\" cy=\"24\" r=\"9\"/><ellipse cx=\"24\" cy=\"24\" rx=\"19\" ry=\"6\" transform=\"rotate(-20 24 24)\"/><path d=\"M38 6v6M35 9h6\"/>",
+      "group": "nature"
+    },
+    {
+      "id": "earth",
+      "name": "地球・環境",
+      "desc": "足もとの星の動き",
+      "icon": "<circle cx=\"24\" cy=\"24\" r=\"16\"/><path d=\"M8 24h32\"/><path d=\"M24 8c-6 5-6 27 0 32M24 8c6 5 6 27 0 32\"/>",
+      "group": "nature"
+    },
+    {
+      "id": "medicine",
+      "name": "医学・健康",
+      "desc": "体を守る仕組み",
+      "icon": "<path d=\"M24 40S8 30 8 18a8 8 0 0 1 16-3 8 8 0 0 1 16 3c0 12-16 22-16 22z\"/><path d=\"M12 24h7l3-5 4 9 3-4h7\"/>",
+      "group": "nature"
     },
     {
       "id": "art",
       "name": "芸術",
       "desc": "美しさの表し方の変化",
-      "icon": "<path d=\"M24 8C14 8 7 15 7 24s7 16 15 16c3 0 4-2 3-4-1-3 1-5 4-5h4c5 0 8-3 8-8C41 14 33 8 24 8z\"/><circle cx=\"16\" cy=\"22\" r=\"2\"/><circle cx=\"22\" cy=\"15\" r=\"2\"/><circle cx=\"31\" cy=\"16\" r=\"2\"/>"
+      "icon": "<path d=\"M24 8C14 8 7 15 7 24s7 16 15 16c3 0 4-2 3-4-1-3 1-5 4-5h4c5 0 8-3 8-8C41 14 33 8 24 8z\"/><circle cx=\"16\" cy=\"22\" r=\"2\"/><circle cx=\"22\" cy=\"15\" r=\"2\"/><circle cx=\"31\" cy=\"16\" r=\"2\"/>",
+      "group": "culture"
+    },
+    {
+      "id": "architecture",
+      "name": "建築",
+      "desc": "空間と様式の歴史",
+      "icon": "<path d=\"M8 40h32\"/><path d=\"M12 40V20l12-10 12 10v20\"/><path d=\"M20 40v-9a4 4 0 0 1 8 0v9\"/>",
+      "group": "culture"
+    },
+    {
+      "id": "music",
+      "name": "音楽",
+      "desc": "音の並べ方と歴史",
+      "icon": "<path d=\"M18 36V10l18-4v26\"/><circle cx=\"14\" cy=\"36\" r=\"4\"/><circle cx=\"32\" cy=\"32\" r=\"4\"/>",
+      "group": "culture"
+    },
+    {
+      "id": "literature",
+      "name": "文学",
+      "desc": "物語と言葉の名作",
+      "icon": "<path d=\"M8 12c6-2 12-2 16 2 4-4 10-4 16-2v26c-6-2-12-2-16 2-4-4-10-4-16-2z\"/><path d=\"M24 14v26\"/>",
+      "group": "culture"
+    },
+    {
+      "id": "language",
+      "name": "言語",
+      "desc": "ことばの仕組みと系統",
+      "icon": "<path d=\"M8 10h22v14H18l-6 5v-5H8z\"/><path d=\"M34 18h6v14h-4v5l-6-5h-8v-4\"/>",
+      "group": "culture"
+    }
+  ],
+  "groups": [
+    {
+      "id": "think",
+      "name": "考える"
+    },
+    {
+      "id": "history",
+      "name": "歴史"
+    },
+    {
+      "id": "society",
+      "name": "社会"
+    },
+    {
+      "id": "nature",
+      "name": "自然と科学"
+    },
+    {
+      "id": "culture",
+      "name": "文化と芸術"
     }
   ]
 }

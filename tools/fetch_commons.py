@@ -9,9 +9,11 @@ Commons 側で長辺1000px程度に縮小された版を取得し、images/<id>.
     python3 tools/fetch_commons.py <id> "File:ファイル名.jpg" "表示名"  # 取得して記録
 """
 
+import fcntl
 import html
 import json
 import re
+import subprocess
 import sys
 import time
 import urllib.parse
@@ -94,11 +96,18 @@ def main() -> None:
     if not is_pd(i["license"]):
         raise SystemExit(f"パブリックドメインではないため保存しません: {i['license']}")
     IMAGES.mkdir(exist_ok=True)
-    (IMAGES / f"{key}.jpg").write_bytes(get(i["thumb"]))
-    credits = json.loads(CREDITS_JSON.read_text(encoding="utf-8")) if CREDITS_JSON.exists() else {}
-    credits[key] = {"name": name, "artist": i["artist"], "license": i["license"], "source": i["source"]}
-    CREDITS_JSON.write_text(json.dumps(credits, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    write_credits_md(credits)
+    out = IMAGES / f"{key}.jpg"
+    out.write_bytes(get(i["thumb"]))
+    # 長辺800pxに縮小して軽くする（macOS の sips を使う）
+    subprocess.run(["sips", "-Z", "800", "-s", "format", "jpeg", "-s", "formatOptions", "75", str(out)],
+                   check=False, capture_output=True)
+    # 複数の作業が同時に書いても壊れないよう、ロックを取ってから読み書きする
+    with open(IMAGES / ".credits.lock", "w") as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        credits = json.loads(CREDITS_JSON.read_text(encoding="utf-8")) if CREDITS_JSON.exists() else {}
+        credits[key] = {"name": name, "artist": i["artist"], "license": i["license"], "source": i["source"]}
+        CREDITS_JSON.write_text(json.dumps(credits, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        write_credits_md(credits)
     print(f"保存: images/{key}.jpg（{i['license']} / {i['artist']}）")
 
 

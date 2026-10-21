@@ -69,6 +69,18 @@ function shortCredit(imgId) {
 }
 
 /* ---------- ホーム ---------- */
+
+/** ホームの分野タイル（既読数つき） */
+function fieldTile(f, read) {
+  const cs = cardsOf(f.id);
+  const done = cs.filter((c) => read.has(cardKey(c))).length;
+  return `<a class="field-tile" data-field="${f.id}" href="#/${f.id}">
+    <span class="prog">${done}/${cs.length}</span>
+    <svg class="ico" viewBox="0 0 48 48">${f.icon}</svg>
+    <div><h3>${esc(f.name)}</h3><p>${esc(f.desc)}</p></div>
+  </a>`;
+}
+
 function renderHome() {
   const read = readStore.all();
   const t = todayCard();
@@ -89,19 +101,13 @@ function renderHome() {
         <div><div class="k">${esc(tf.name)} ${no(t)}</div><h3>${esc(t.title)}</h3><p>${esc(t.line)}</p></div>
       </a>
 
-      <h2 class="sec-h">分野</h2>
-      <div class="fields">
-        ${data.fields.map((f) => {
-          const cs = cardsOf(f.id);
-          const done = cs.filter((c) => read.has(cardKey(c))).length;
-          return `<a class="field-tile" data-field="${f.id}" href="#/${f.id}">
-            <span class="prog">${done}/${cs.length}</span>
-            <svg class="ico" viewBox="0 0 48 48">${f.icon}</svg>
-            <div><h3>${esc(f.name)}</h3><p>${esc(f.desc)}</p></div>
-          </a>`;
-        }).join("")}
-      </div>
-      <p class="soon">分野は少しずつ増やします</p>
+      ${data.groups.map((g) => {
+        const fs = data.fields.filter((f) => f.group === g.id);
+        if (!fs.length) return "";
+        return `<h2 class="sec-h">${esc(g.name)}</h2>
+          <div class="fields">${fs.map((f) => fieldTile(f, read)).join("")}</div>`;
+      }).join("")}
+      <p class="soon">全${data.fields.length}分野</p>
     </main>`;
   fillSvgs(app);
 }
@@ -152,10 +158,16 @@ function cardHtml(c) {
       ${banner}
       <div class="fig" data-svg="${cardKey(c)}" role="img" aria-label="${esc(c.title)}の図"></div>
       <p class="line">${esc(c.line)}</p>
+      ${c.points ? `<ol class="points">${c.points.map((pt) => `<li>${esc(pt)}</li>`).join("")}</ol>` : ""}
+      ${c.example || c.why ? `<dl class="facts">
+        ${c.example ? `<div class="example"><dt>例</dt><dd>${esc(c.example)}</dd></div>` : ""}
+        ${c.why ? `<div class="why"><dt>なぜ大事</dt><dd>${esc(c.why)}</dd></div>` : ""}
+      </dl>` : ""}
       <div class="chips">
         ${c.keywords.map((k, i) => `<button class="chip" type="button" aria-expanded="false" data-kw="${i}">${esc(k.word)}</button>`).join("")}
       </div>
       <div class="note" hidden></div>
+      ${c.more ? `<details class="more"><summary>もっと詳しく</summary><p>${esc(c.more)}</p></details>` : ""}
       ${links.length ? `<nav class="links"><span>つながり</span>
         ${links.map((l) => `<a href="#/${cardKey(l)}" data-field="${l.field}"><i>${esc(fieldOf(l.field).name)}</i>${esc(l.title)}</a>`).join("")}
       </nav>` : ""}
@@ -303,6 +315,7 @@ async function start() {
         .then((j) => j.cards.map((c) => ({ ...c, field: f.id })))));
     data = {
       hero: index.hero,
+      groups: index.groups || [{ id: "", name: "分野" }],
       fields: index.fields.filter((_, i) => perField[i].length > 0),
       cards: perField.flat(),
     };
