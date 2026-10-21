@@ -1,0 +1,44 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左：石やれんがの壁で支える建物 -->
+  <rect x="40" y="96" width="100" height="124" class="soft" opacity="0.35"/>
+  <rect x="40" y="96" width="100" height="124" class="no-fill st" stroke-width="2"/>
+  <g class="paper">
+    <rect x="56" y="108" width="12" height="16"/><rect x="84" y="108" width="12" height="16"/><rect x="112" y="108" width="12" height="16"/>
+    <rect x="56" y="138" width="12" height="16"/><rect x="84" y="138" width="12" height="16"/><rect x="112" y="138" width="12" height="16"/>
+    <rect x="58" y="168" width="8" height="14"/><rect x="86" y="168" width="8" height="14"/><rect x="114" y="168" width="8" height="14"/>
+    <rect x="59" y="196" width="6" height="12"/><rect x="87" y="196" width="6" height="12"/><rect x="115" y="196" width="6" height="12"/>
+  </g>
+  <g class="st-soft" stroke-width="1">
+    <rect x="56" y="108" width="12" height="16"/><rect x="84" y="108" width="12" height="16"/><rect x="112" y="108" width="12" height="16"/>
+    <rect x="56" y="138" width="12" height="16"/><rect x="84" y="138" width="12" height="16"/><rect x="112" y="138" width="12" height="16"/>
+    <rect x="58" y="168" width="8" height="14"/><rect x="86" y="168" width="8" height="14"/><rect x="114" y="168" width="8" height="14"/>
+    <rect x="59" y="196" width="6" height="12"/><rect x="87" y="196" width="6" height="12"/><rect x="115" y="196" width="6" height="12"/>
+  </g>
+  <!-- 壁の厚さ（断面）：下ほど厚い -->
+  <path d="M16 96 H22 L30 220 H16Z" class="ink"/>
+  <path d="M10 108 V208" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="96" y="88" class="t-xs mid ink" font-weight="700">石・れんが</text>
+  <text x="8" y="88" class="t-xs soft">壁の厚さ</text>
+
+  <!-- 右：鉄の骨組み＋ガラス -->
+  <rect x="210" y="30" width="120" height="190" class="tint"/>
+  <path d="M210 30 V220 M250 30 V220 M290 30 V220 M330 30 V220" class="st" stroke-width="3.5"/>
+  <path d="M210 30 H330 M210 52 H330 M210 74 H330 M210 96 H330 M210 118 H330 M210 140 H330 M210 162 H330 M210 184 H330 M210 206 H330" class="st" stroke-width="1.8"/>
+  <!-- エレベーター -->
+  <rect x="262" y="36" width="16" height="180" class="paper"/>
+  <rect x="262" y="36" width="16" height="180" class="st-f" stroke-width="1.5"/>
+  <rect x="264" y="130" width="12" height="16" class="fl"/>
+  <path d="M270 124 V60" class="st-f" stroke-width="2" marker-end="url(#a-architecture)"/>
+  <text x="270" y="22" class="t-xs mid ink" font-weight="700">鉄骨＋ガラス</text>
+
+  <path d="M8 222 H352" class="st-soft" stroke-width="2"/>
+
+  <!-- 比較の言葉 -->
+  <text x="90" y="242" class="t-s mid ink" font-weight="700">壁が重さを支える</text>
+  <text x="90" y="258" class="t-xs mid soft">高くすると下の壁が厚く、</text>
+  <text x="90" y="272" class="t-xs mid soft">窓は小さくなる</text>
+  <text x="270" y="242" class="t-s mid fl" font-weight="700">骨組みが重さを支える</text>
+  <text x="270" y="258" class="t-xs mid soft">壁は薄いガラスでもよい</text>
+  <text x="270" y="272" class="t-xs mid soft">エレベーターで上の階へ</text>
+  <text x="180" y="294" class="t-xs mid fl" font-weight="700">1851 水晶宮（ロンドン）→ 1880年代 シカゴに鉄骨の高層ビル</text>
+</svg>

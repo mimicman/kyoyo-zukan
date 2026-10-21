@@ -1,0 +1,54 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- ルネサンスの邸宅の正面（パラーディオ風）。点線＝割り付けの正方形と対称の軸 -->
+  <!-- ドーム -->
+  <path d="M150 108 A30 30 0 0 1 210 108Z" class="tint"/>
+  <path d="M150 108 A30 30 0 0 1 210 108Z" class="st" stroke-width="2"/>
+  <rect x="176" y="70" width="8" height="10" class="soft"/>
+  <!-- 本体 -->
+  <rect x="60" y="130" width="240" height="120" class="paper"/>
+  <rect x="60" y="130" width="240" height="120" class="st" stroke-width="2"/>
+  <!-- 正面の柱廊とペディメント -->
+  <path d="M112 150 L180 106 L248 150Z" class="tint"/>
+  <path d="M112 150 L180 106 L248 150Z" class="st" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M112 150 H248 V156 H112Z" class="soft"/>
+  <g class="paper">
+    <rect x="126" y="156" width="10" height="94"/><rect x="154" y="156" width="10" height="94"/>
+    <rect x="196" y="156" width="10" height="94"/><rect x="224" y="156" width="10" height="94"/>
+  </g>
+  <g class="st" stroke-width="1.8">
+    <rect x="126" y="156" width="10" height="94"/><rect x="154" y="156" width="10" height="94"/>
+    <rect x="196" y="156" width="10" height="94"/><rect x="224" y="156" width="10" height="94"/>
+  </g>
+  <path d="M170 250 V214 A10 10 0 0 1 190 214 V250" class="soft"/>
+  <!-- 窓（左右で同じ） -->
+  <g class="tint">
+    <rect x="78" y="160" width="20" height="30"/><rect x="78" y="206" width="20" height="30"/>
+    <rect x="262" y="160" width="20" height="30"/><rect x="262" y="206" width="20" height="30"/>
+  </g>
+  <g class="st-soft" stroke-width="1.5">
+    <rect x="78" y="160" width="20" height="30"/><rect x="78" y="206" width="20" height="30"/>
+    <rect x="262" y="160" width="20" height="30"/><rect x="262" y="206" width="20" height="30"/>
+  </g>
+  <path d="M74 156 L88 148 L102 156 M258 156 L272 148 L286 156" class="st-soft" stroke-width="1.5"/>
+  <path d="M50 250 H310" class="st" stroke-width="3"/>
+
+  <!-- 割り付け：正方形2つ（幅2：高さ1） -->
+  <rect x="60" y="130" width="120" height="120" class="no-fill st-f dash" stroke-width="2"/>
+  <rect x="180" y="130" width="120" height="120" class="no-fill st-f dash" stroke-width="2"/>
+  <!-- 対称の軸 -->
+  <path d="M180 40 V268" class="st dash" stroke-width="1.5"/>
+  <text x="180" y="32" class="t-xs mid ink halo" font-weight="700">対称の軸（左右が同じ）</text>
+  <path d="M172 44 H140" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M188 44 H220" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="120" y="48" class="t-xs end soft">左</text>
+  <text x="240" y="48" class="t-xs soft">右</text>
+
+  <!-- 注記 -->
+  <text x="20" y="102" class="t-xs ink" font-weight="700">ペディメント</text>
+  <text x="20" y="116" class="t-xs soft">古代神殿の三角屋根</text>
+  <path d="M118 112 L134 140" class="st-soft" stroke-width="1"/>
+  <text x="340" y="102" class="t-xs end ink" font-weight="700">ドーム</text>
+  <text x="340" y="116" class="t-xs end soft">古代ローマに学ぶ</text>
+  <path d="M252 108 L212 102" class="st-soft" stroke-width="1"/>
+  <text x="180" y="284" class="t-xs mid fl" font-weight="700">幅：高さ ＝ 2：1（正方形が2つ）</text>
+</svg>

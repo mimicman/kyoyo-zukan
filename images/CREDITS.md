@@ -7,7 +7,6 @@
 | adam-smith | アダム・スミスの肖像（ミュア肖像） | 作者不明 | Public domain | https://commons.wikimedia.org/wiki/File:Adam_Smith_The_Muir_portrait.jpg |
 | architecture-crystal-palace | 水晶宮（ジョン・アブソロン、1851年ごろの石版画） | John Absolon (1815-1895) | Public domain | https://commons.wikimedia.org/wiki/File:John_Absolon,_Crystal_Palace,_General_View,_lithograph,_coloured_by_hand.jpg |
 | architecture-himeji | 明治時代の姫路城（古写真） | unknown 不明 | Public domain | https://commons.wikimedia.org/wiki/File:Himejicastle-meiji.jpg |
-| architecture-horyuji-pagoda | 法隆寺五重塔の実測断面図（池田谷久吉） | 池田谷久吉 | Public domain | https://commons.wikimedia.org/wiki/File:%E6%B3%95%E9%9A%86%E5%AF%BA%E4%BA%94%E9%87%8D%E5%A1%94%E7%A9%BA%E6%B4%9E%E5%AE%9F%E6%B8%AC%E6%96%AD%E9%9D%A2%E5%9B%B3.jpg |
 | architecture-notre-dame | ノートルダム大聖堂（フォトクローム、1890〜1900年ごろ） | Unknown authorUnknown author | Public domain | https://commons.wikimedia.org/wiki/File:Notre_Dame,_Paris,_France,_ca._1890-1900.jpg |
 | architecture-pantheon | パンテオンの内部（パニーニ、18世紀） | Giovanni Paolo Panini | Public domain | https://commons.wikimedia.org/wiki/File:Giovanni_Paolo_Panini_-_Interior_of_the_Pantheon,_Rome_-_Google_Art_Project.jpg |
 | architecture-parthenon | パルテノン神殿（フォトクローム、19世紀末ごろ） | Photoglob Co., publisher | Public domain | https://commons.wikimedia.org/wiki/File:Ath%C3%A8nes._Parthenon_LCCN2017658100.jpg |

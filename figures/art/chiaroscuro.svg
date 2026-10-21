@@ -2,14 +2,18 @@
   <!-- 左：ふつうの光（どこも同じ明るさ） -->
   <rect x="14" y="14" width="106" height="252" rx="16" class="bgc"/>
   <text x="67" y="40" class="t-xs mid soft">ふつうの光</text>
-  <path d="M47 70 V98 M67 64 V98 M87 70 V98" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
-  <circle cx="67" cy="150" r="30" class="tint st-soft" stroke-width="1.5"/>
+  <path d="M47 70 V98" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M67 64 V98" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M87 70 V98" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <circle cx="67" cy="150" r="30" class="tint"/>
+  <circle cx="67" cy="150" r="30" class="st-soft" stroke-width="1.5"/>
   <path d="M33 194 H101" class="st-line" stroke-width="2"/>
   <text x="67" y="232" class="t-xs mid soft">影が少なく</text>
   <text x="67" y="248" class="t-xs mid soft">平らに見える</text>
 
   <!-- 右：明暗法。斜線＝暗い所 -->
-  <rect x="130" y="14" width="216" height="252" rx="16" class="paper st-soft" stroke-width="1.5"/>
+  <rect x="130" y="14" width="216" height="252" rx="16" class="paper"/>
+  <rect x="130" y="14" width="216" height="252" rx="16" class="st-soft" stroke-width="1.5"/>
   <path d="M138.0 252.0 L144.0 258.0 M138.0 242.0 L154.0 258.0 M138.0 232.0 L164.0 258.0 M138.0 222.0 L174.0 258.0 M138.0 212.0 L184.0 258.0 M138.0 202.0 L194.0 258.0 M138.0 192.0 L204.0 258.0 M138.0 182.0 L214.0 258.0 M138.0 172.0 L224.0 258.0 M138.0 162.0 L234.0 258.0 M138.0 152.0 L244.0 258.0 M138.0 142.0 L254.0 258.0 M138.0 132.0 L264.0 258.0 M138.0 122.0 L274.0 258.0 M138.0 112.0 L284.0 258.0 M138.0 102.0 L294.0 258.0 M138.0 92.0 L304.0 258.0 M138.0 82.0 L314.0 258.0 M138.0 72.0 L324.0 258.0 M138.0 62.0 L334.0 258.0 M138.0 52.0 L338.0 252.0 M138.0 42.0 L338.0 242.0 M138.0 32.0 L338.0 232.0 M138.0 22.0 L338.0 222.0 M148.0 22.0 L338.0 212.0 M158.0 22.0 L338.0 202.0 M168.0 22.0 L338.0 192.0 M178.0 22.0 L338.0 182.0 M188.0 22.0 L338.0 172.0 M198.0 22.0 L338.0 162.0 M208.0 22.0 L338.0 152.0 M218.0 22.0 L338.0 142.0 M228.0 22.0 L338.0 132.0 M238.0 22.0 L338.0 122.0 M248.0 22.0 L338.0 112.0 M258.0 22.0 L338.0 102.0 M268.0 22.0 L338.0 92.0 M278.0 22.0 L338.0 82.0 M288.0 22.0 L338.0 72.0 M298.0 22.0 L338.0 62.0 M308.0 22.0 L338.0 52.0 M318.0 22.0 L338.0 42.0 M328.0 22.0 L338.0 32.0 M338.0 22.0 L338.0 22.0" class="st-soft" stroke-width="1" opacity="0.55"/>
   <!-- 窓から差す一筋の光 -->
   <path d="M304 22 L342 34 L262 200 L176 140Z" class="tint"/>

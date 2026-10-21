@@ -1,0 +1,61 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 3つの架け方。上からの重さ（矢印）をどう地面へ流すか -->
+  <text x="62" y="22" class="t-m mid ink">柱と梁</text>
+  <text x="180" y="22" class="t-m mid fl">アーチ</text>
+  <text x="298" y="22" class="t-m mid ink">トラス</text>
+
+  <!-- 柱と梁 -->
+  <path d="M62 34 V58" class="st" stroke-width="2.5" marker-end="url(#a-ink)"/>
+  <text x="70" y="48" class="t-xs ink">重さ</text>
+  <rect x="14" y="62" width="96" height="14" class="tint"/>
+  <rect x="14" y="62" width="96" height="14" class="st-soft" stroke-width="1.5"/>
+  <path d="M18 80 Q62 104 106 80" class="st-f dash" stroke-width="1.5"/>
+  <text x="62" y="108" class="t-xs mid fl">真ん中が</text>
+  <text x="62" y="122" class="t-xs mid fl">たわむ</text>
+  <rect x="20" y="76" width="14" height="98" class="paper"/>
+  <rect x="20" y="76" width="14" height="98" class="st" stroke-width="2"/>
+  <rect x="90" y="76" width="14" height="98" class="paper"/>
+  <rect x="90" y="76" width="14" height="98" class="st" stroke-width="2"/>
+
+  <!-- アーチ：石が押し合い、重さを両脚へ -->
+  <path d="M180 34 V52" class="st" stroke-width="2.5" marker-end="url(#a-ink)"/>
+  <path d="M132 174 V112 A48 48 0 0 1 228 112 V174 H214 V112 A34 34 0 0 0 146 112 V174Z" class="tint"/>
+  <path d="M132 174 V112 A48 48 0 0 1 228 112 V174 H214 V112 A34 34 0 0 0 146 112 V174Z" class="st" stroke-width="2"/>
+  <g class="st-soft" stroke-width="1.2">
+    <path d="M132 112 H146 M136 88 L148 95 M150 70 L157 82 M180 64 V78 M210 70 L203 82 M224 88 L212 95 M228 112 H214"/>
+  </g>
+  <path d="M176 60 C150 64 138 84 139 120 V168" class="st-f" stroke-width="2" marker-end="url(#a-architecture)" fill="none"/>
+  <path d="M184 60 C210 64 222 84 221 120 V168" class="st-f" stroke-width="2" marker-end="url(#a-architecture)" fill="none"/>
+  <path d="M130 160 H116" class="st" stroke-width="2.5" marker-end="url(#a-ink)"/>
+  <path d="M230 160 H244" class="st" stroke-width="2.5" marker-end="url(#a-ink)"/>
+  <text x="180" y="196" class="t-xs mid ink">脚を横へ押し出す</text>
+  <text x="180" y="210" class="t-xs mid ink">→ 外から支えが必要</text>
+
+  <!-- トラス：三角形は形が崩れない -->
+  <path d="M250 150 H346 L330 110 H266Z" class="no-fill st" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M250 150 L266 110 L282 150 L298 110 L314 150 L330 110 L346 150" class="st-f" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M298 76 V102" class="st" stroke-width="2.5" marker-end="url(#a-ink)"/>
+  <path d="M256 152 V174 M340 152 V174" class="st" stroke-width="4"/>
+  <path d="M262 58 L278 34 L294 58Z" class="tint"/>
+  <path d="M262 58 L278 34 L294 58Z" class="st-f" stroke-width="2"/>
+  <path d="M312 58 V34 H340 V58Z" class="no-fill st-soft dash" stroke-width="2"/>
+  <path d="M312 58 L320 34 H348 L340 58Z" class="no-fill st-soft" stroke-width="2"/>
+  <text x="278" y="72" class="t-xs mid fl">崩れない</text>
+  <text x="330" y="72" class="t-xs mid soft">ゆがむ</text>
+
+  <!-- 地面 -->
+  <path d="M8 176 H352" class="st-soft" stroke-width="2"/>
+
+  <!-- 下：特徴のまとめ -->
+  <g class="t-xs mid">
+    <text x="62" y="232" class="ink" font-weight="700">いちばん単純</text>
+    <text x="62" y="248" class="soft">柱の間を</text>
+    <text x="62" y="262" class="soft">広げにくい</text>
+    <text x="180" y="232" class="fl" font-weight="700">石でも広く</text>
+    <text x="180" y="248" class="soft">押す力だけで</text>
+    <text x="180" y="262" class="soft">支え合う</text>
+    <text x="298" y="232" class="ink" font-weight="700">細い部材で長く</text>
+    <text x="298" y="248" class="soft">鉄橋・屋根・</text>
+    <text x="298" y="262" class="soft">東京タワー</text>
+  </g>
+</svg>

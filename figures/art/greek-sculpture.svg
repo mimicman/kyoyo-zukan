@@ -1,0 +1,48 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 3つの時代の立ち方。点線＝肩の線と腰の線 -->
+  <!-- 1. アルカイック：直立、左右対称 -->
+  <circle cx="60" cy="36" r="10" class="soft"/>
+  <path d="M42 54 H78 L72 110 H48Z" class="soft"/>
+  <path d="M42 56 L38 108 M78 56 L82 108" class="st-soft" stroke-width="5" stroke-linecap="round"/>
+  <path d="M52 110 L50 184 M68 110 L72 184" class="st-soft" stroke-width="7" stroke-linecap="round"/>
+  <path d="M28 54 H92 M28 110 H92" class="st-f dash" stroke-width="1.5"/>
+  <rect x="30" y="186" width="60" height="8" class="st-line" stroke-width="1.5"/>
+
+  <!-- 2. クラシック：片足に重心（コントラポスト） -->
+  <circle cx="182" cy="34" r="10" class="fl"/>
+  <path d="M163 58 L199 50 L196 114 L168 106Z" class="fl"/>
+  <path d="M163 60 L158 108 M199 52 L208 80 L200 100" class="st-f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M172 106 L170 184" class="st-f" stroke-width="7" stroke-linecap="round"/>
+  <path d="M192 113 L198 150 L192 180" class="st-f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M146 66 L216 50 M150 100 L216 118" class="st dash" stroke-width="1.5"/>
+  <rect x="150" y="186" width="60" height="8" class="st-line" stroke-width="1.5"/>
+  <path d="M170 140 V180" class="st" stroke-width="1.5" marker-end="url(#a-ink)"/>
+  <text x="164" y="160" class="t-xs end ink">重心</text>
+
+  <!-- 3. ヘレニズム：体をねじり、激しく動く -->
+  <circle cx="290" cy="46" r="10" class="soft"/>
+  <path d="M276 62 L312 56 L304 112 L280 108Z" class="soft"/>
+  <path d="M312 58 L328 34 L336 14 M276 64 L260 84 L248 76" class="st-soft" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M284 108 L264 146 L258 184 M302 112 L316 150 L332 182" class="st-soft" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M262 132 C252 102 268 70 296 66 C326 62 340 90 330 116" class="st-f" stroke-width="2" marker-end="url(#a-art)"/>
+  <rect x="266" y="186" width="60" height="8" class="st-line" stroke-width="1.5"/>
+
+  <!-- 名前・時代・特徴 -->
+  <text x="60" y="214" class="t-s mid ink" font-weight="700">アルカイック</text>
+  <text x="180" y="214" class="t-s mid fl" font-weight="700">クラシック</text>
+  <text x="296" y="214" class="t-s mid ink" font-weight="700">ヘレニズム</text>
+  <g class="mid soft" font-size="9.5">
+    <text x="60" y="228">前6世紀ごろ</text><text x="180" y="228">前5〜前4世紀</text><text x="296" y="228">前3〜前1世紀</text>
+  </g>
+  <g class="t-xs mid ink">
+    <text x="60" y="244">まっすぐ・硬い</text><text x="180" y="244">肩と腰が逆に傾く</text><text x="296" y="244">ねじれと感情</text>
+  </g>
+
+  <!-- ローマ -->
+  <rect x="8" y="256" width="344" height="38" rx="10" class="bgc"/>
+  <circle cx="32" cy="270" r="7" class="soft"/>
+  <path d="M22 288 Q32 274 42 288Z" class="soft"/>
+  <rect x="24" y="288" width="16" height="3" class="soft"/>
+  <text x="54" y="272" class="t-xs ink" font-weight="700">ローマ：ギリシャの像を大理石で写して広め、</text>
+  <text x="54" y="287" class="t-xs ink" font-weight="700">しわまで写した本物そっくりの肖像も作った</text>
+</svg>

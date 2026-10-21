@@ -1,15 +1,18 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
   <!-- 1本の木が、だんだん抽象になる -->
   <!-- 1. 写実 -->
-  <rect x="12" y="16" width="74" height="92" rx="6" class="paper st-soft" stroke-width="1.2"/>
+  <rect x="12" y="16" width="74" height="92" rx="6" class="paper"/>
+  <rect x="12" y="16" width="74" height="92" rx="6" class="st-soft" stroke-width="1.2"/>
   <path d="M46 100 V70 M46 78 L36 66 M46 74 L57 62" class="st-soft" stroke-width="3" stroke-linecap="round"/>
   <path d="M28 64 C18 58 22 40 34 40 C34 28 52 24 58 34 C70 30 78 44 70 52 C76 62 64 70 56 66 C50 72 36 72 28 64Z" class="fl" opacity="0.8"/>
   <path d="M20 100 H78" class="st-soft" stroke-width="1.5"/>
   <!-- 2. 単純化 -->
-  <rect x="100" y="16" width="74" height="92" rx="6" class="paper st-soft" stroke-width="1.2"/>
+  <rect x="100" y="16" width="74" height="92" rx="6" class="paper"/>
+  <rect x="100" y="16" width="74" height="92" rx="6" class="st-soft" stroke-width="1.2"/>
   <path d="M137 100 V72 M137 72 C126 64 118 54 116 40 M137 72 C148 64 156 54 158 40 M137 72 V36 M126 58 C120 56 112 56 108 50 M148 58 C154 56 162 56 166 50" class="st-f" stroke-width="2.5" stroke-linecap="round" fill="none"/>
   <!-- 3. 線と面 -->
-  <rect x="188" y="16" width="74" height="92" rx="6" class="paper st-soft" stroke-width="1.2"/>
+  <rect x="188" y="16" width="74" height="92" rx="6" class="paper"/>
+  <rect x="188" y="16" width="74" height="92" rx="6" class="st-soft" stroke-width="1.2"/>
   <path d="M196 56 Q225 30 254 56 M196 76 Q225 50 254 76 M204 92 Q225 68 246 92 M212 30 V98 M225 24 V100 M238 30 V98" class="st-f" stroke-width="2" stroke-linecap="round"/>
   <!-- 4. 抽象 -->
   <rect x="276" y="16" width="74" height="92" rx="6" class="paper"/>

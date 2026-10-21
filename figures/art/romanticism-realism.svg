@@ -1,0 +1,67 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <text x="64" y="24" class="t-s mid ink" font-weight="700">新古典主義</text>
+  <text x="180" y="24" class="t-s mid fl" font-weight="700">ロマン主義</text>
+  <text x="296" y="24" class="t-s mid ink" font-weight="700">写実主義</text>
+
+  <!-- 新古典主義：横一列に並ぶ人物、柱、くっきりした線 -->
+  <rect x="12" y="34" width="104" height="110" rx="6" class="paper"/>
+  <rect x="12" y="34" width="104" height="110" rx="6" class="st-soft" stroke-width="1.2"/>
+  <rect x="26" y="48" width="10" height="78" class="tint"/>
+  <rect x="26" y="48" width="10" height="78" class="st-soft" stroke-width="1"/>
+  <rect x="22" y="44" width="18" height="5" class="soft"/>
+  <g class="st" stroke-width="2">
+    <circle cx="58" cy="76" r="6"/><path d="M58 82 V112 M52 126 L58 112 L64 126 M50 92 H66"/>
+    <circle cx="78" cy="76" r="6"/><path d="M78 82 V112 M72 126 L78 112 L84 126 M78 90 L92 80"/>
+    <circle cx="100" cy="76" r="6"/><path d="M100 82 V112 M94 126 L100 112 L106 126 M92 92 H108"/>
+  </g>
+  <path d="M18 128 H110" class="st" stroke-width="2.5"/>
+
+  <!-- ロマン主義：三角形の構図、旗、斜めの動き -->
+  <rect x="128" y="34" width="104" height="110" rx="6" class="tint"/>
+  <path d="M144 70 C156 52 174 66 186 54 C198 44 214 56 224 48" class="st-soft" stroke-width="2" stroke-linecap="round"/>
+  <path d="M138 134 L180 62 L222 134" class="st-f dash" stroke-width="1.5"/>
+  <path d="M180 60 V96" class="st" stroke-width="2"/>
+  <path d="M180 60 L204 66 L182 74Z" class="fl"/>
+  <g class="st-f" stroke-width="3" stroke-linecap="round">
+    <path d="M180 98 L170 134 M180 98 L194 134 M180 98 L180 80"/>
+    <path d="M152 134 L160 108 L168 104 M206 134 L204 112 L214 104"/>
+  </g>
+  <circle cx="180" cy="78" r="5" class="fl"/>
+  <circle cx="166" cy="102" r="4.5" class="fl"/>
+  <circle cx="214" cy="100" r="4.5" class="fl"/>
+
+  <!-- 写実主義：低い地平線、かがんで働く人 -->
+  <rect x="244" y="34" width="104" height="110" rx="6" class="paper"/>
+  <rect x="244" y="34" width="104" height="110" rx="6" class="st-soft" stroke-width="1.2"/>
+  <path d="M246 104 H346" class="st-soft" stroke-width="1.5"/>
+  <rect x="245" y="104" width="102" height="39" class="soft" opacity="0.25"/>
+  <g class="st" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M262 132 L266 116 C272 108 280 108 286 114 M266 132 L274 118 M286 114 L288 126"/>
+    <path d="M300 134 L304 118 C310 110 318 110 324 116 M306 134 L312 120 M324 116 L326 128"/>
+  </g>
+  <circle cx="289" cy="116" r="4.5" class="ink"/>
+  <circle cx="327" cy="118" r="4.5" class="ink"/>
+
+  <!-- 特徴 -->
+  <g class="t-xs mid">
+    <text x="64" y="164" class="ink" font-weight="700">理性・線</text>
+    <text x="64" y="180" class="soft">古代の英雄を</text>
+    <text x="64" y="196" class="soft">整然と</text>
+    <text x="180" y="164" class="fl" font-weight="700">感情・色</text>
+    <text x="180" y="180" class="soft">嵐・革命・異国を</text>
+    <text x="180" y="196" class="soft">劇的に</text>
+    <text x="296" y="164" class="ink" font-weight="700">いまの現実</text>
+    <text x="296" y="180" class="soft">働く人や田舎を</text>
+    <text x="296" y="196" class="soft">ありのまま</text>
+  </g>
+  <g class="t-xs mid ink">
+    <text x="64" y="216">ダヴィッド</text><text x="180" y="216">ドラクロワ</text><text x="296" y="216">クールベ・ミレー</text>
+  </g>
+
+  <!-- 時代の流れ -->
+  <path d="M14 238 H346" class="st-f" stroke-width="2.5" marker-end="url(#a-art)"/>
+  <g class="mid soft" font-size="9.5">
+    <text x="64" y="256">18世紀後半〜</text><text x="180" y="256">19世紀前半</text><text x="296" y="256">19世紀半ば</text>
+  </g>
+  <text x="180" y="274" class="t-xs mid fl">理想 → 心の動き → 目の前の現実</text>
+</svg>

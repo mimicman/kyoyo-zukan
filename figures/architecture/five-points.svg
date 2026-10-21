@@ -1,0 +1,52 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左：サヴォア邸風の住宅（正面）。番号は下の5原則 -->
+  <!-- 屋上庭園 -->
+  <path d="M130 100 V82 C130 66 152 62 162 72 C170 60 196 64 196 82 V100" class="paper"/>
+  <path d="M130 100 V82 C130 66 152 62 162 72 C170 60 196 64 196 82 V100" class="st" stroke-width="2"/>
+  <g class="fl"><circle cx="66" cy="92" r="7"/><circle cx="80" cy="88" r="9"/><circle cx="96" cy="93" r="6"/></g>
+  <path d="M60 100 V96 M80 100 V96 M96 100 V98" class="st-soft" stroke-width="2"/>
+  <!-- 持ち上げられた箱と横長の窓 -->
+  <rect x="40" y="100" width="190" height="50" class="paper"/>
+  <rect x="40" y="100" width="190" height="50" class="st" stroke-width="2"/>
+  <rect x="48" y="114" width="174" height="18" class="tint"/>
+  <rect x="48" y="114" width="174" height="18" class="st-soft" stroke-width="1.5"/>
+  <path d="M77 114 V132 M106 114 V132 M135 114 V132 M164 114 V132 M193 114 V132" class="st-soft" stroke-width="1"/>
+  <!-- ピロティ（細い柱）と1階のガラス -->
+  <path d="M84 156 H186 V200 H84Z" class="tint" opacity="0.6"/>
+  <path d="M60 150 V200 M110 150 V200 M160 150 V200 M210 150 V200" class="st" stroke-width="3.5"/>
+  <path d="M10 200 H250" class="st-soft" stroke-width="2"/>
+  <path d="M22 186 H52" class="st-f dash" stroke-width="1.5" marker-end="url(#a-architecture)"/>
+  <text x="14" y="180" class="t-xs soft">通れる</text>
+
+  <!-- 番号 -->
+  <g class="fl">
+    <circle cx="135" cy="176" r="8"/><circle cx="112" cy="76" r="8"/><circle cx="242" cy="123" r="8"/><circle cx="236" cy="96" r="8"/>
+  </g>
+  <g class="t-xs mid on" font-weight="700">
+    <text x="135" y="180">1</text><text x="112" y="80">2</text><text x="242" y="127">4</text><text x="236" y="100">5</text>
+  </g>
+
+  <!-- 右：平面（上から見た図） -->
+  <rect x="268" y="34" width="84" height="100" rx="4" class="bgc"/>
+  <circle cx="310" cy="26" r="8" class="fl"/>
+  <text x="310" y="30" class="t-xs mid on" font-weight="700">3</text>
+  <g class="ink">
+    <circle cx="282" cy="50" r="3"/><circle cx="310" cy="50" r="3"/><circle cx="338" cy="50" r="3"/>
+    <circle cx="282" cy="84" r="3"/><circle cx="310" cy="84" r="3"/><circle cx="338" cy="84" r="3"/>
+    <circle cx="282" cy="118" r="3"/><circle cx="310" cy="118" r="3"/><circle cx="338" cy="118" r="3"/>
+  </g>
+  <path d="M276 66 H300 C312 66 314 80 326 80 M296 100 C296 92 318 92 318 104 V128 M330 60 V74" class="st-f" stroke-width="3" stroke-linecap="round"/>
+  <text x="310" y="150" class="t-xs mid soft">柱は点だけ、</text>
+  <text x="310" y="164" class="t-xs mid soft">壁はどこでも</text>
+
+  <!-- 下：5つの原則 -->
+  <rect x="8" y="214" width="344" height="72" rx="10" class="bgc"/>
+  <g class="t-xs ink">
+    <text x="18" y="234"><tspan class="fl" font-weight="700">1 ピロティ</tspan>：柱で持ち上げる</text>
+    <text x="18" y="254"><tspan class="fl" font-weight="700">2 屋上庭園</tspan>：屋根を庭に</text>
+    <text x="18" y="274"><tspan class="fl" font-weight="700">3 自由な平面</tspan>：壁を自由に</text>
+    <text x="190" y="234"><tspan class="fl" font-weight="700">4 水平連続窓</tspan>：横長の窓</text>
+    <text x="190" y="254"><tspan class="fl" font-weight="700">5 自由な立面</tspan>：外観が自由</text>
+    <text x="190" y="274" class="soft">柱と床が支えるからできる</text>
+  </g>
+</svg>

@@ -1,0 +1,52 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左：2畳の茶室の間取り（上から見た図） -->
+  <text x="80" y="14" class="t-xs mid soft">上から見た図</text>
+  <rect x="20" y="22" width="60" height="22" class="tint"/>
+  <rect x="20" y="22" width="60" height="22" class="st-soft" stroke-width="1.5"/>
+  <text x="50" y="37" class="t-xs mid ink" font-weight="700">床の間</text>
+  <rect x="20" y="44" width="60" height="120" class="paper"/>
+  <rect x="20" y="44" width="60" height="120" class="st-soft" stroke-width="1.2"/>
+  <rect x="80" y="44" width="60" height="120" class="paper"/>
+  <rect x="80" y="44" width="60" height="120" class="st-soft" stroke-width="1.2"/>
+  <path d="M20 44 H140 V124 M140 152 V164 H66 M36 164 H20 V44" class="st" stroke-width="3"/>
+  <rect x="110" y="54" width="16" height="16" class="fl"/>
+  <text x="118" y="86" class="t-xs mid fl" font-weight="700">炉</text>
+  <text x="80" y="112" class="t-l mid soft">2畳</text>
+  <!-- 入口 -->
+  <path d="M51 196 V172" class="st-f" stroke-width="2.5" marker-end="url(#a-architecture)"/>
+  <text x="51" y="212" class="t-xs mid fl" font-weight="700">にじり口</text>
+  <text x="51" y="226" class="t-xs mid soft">（客）</text>
+  <path d="M166 138 H148" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <text x="152" y="160" class="t-xs soft">亭主</text>
+
+  <!-- 右：にじり口（横から見た大きさ） -->
+  <rect x="188" y="30" width="160" height="134" class="paper"/>
+  <rect x="188" y="30" width="160" height="134" class="st-soft" stroke-width="1.5"/>
+  <rect x="202" y="120" width="36" height="44" class="bgc"/>
+  <rect x="202" y="120" width="36" height="44" class="st" stroke-width="2"/>
+  <rect x="294" y="58" width="40" height="106" class="no-fill st-soft dash" stroke-width="1.5"/>
+  <text x="314" y="52" class="t-xs mid soft">ふつうの戸</text>
+  <!-- かがんで入る人 -->
+  <circle cx="256" cy="130" r="7" class="ink"/>
+  <path d="M250 136 Q262 140 272 132 L284 162 M272 132 L266 164 M252 140 L242 150" class="st" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M188 164 H348" class="st" stroke-width="2"/>
+  <text x="268" y="184" class="t-xs mid ink" font-weight="700">身をかがめないと入れない</text>
+  <text x="268" y="198" class="t-xs mid fl" font-weight="700">→ だれもが同じ姿勢になる</text>
+
+  <!-- 下：数寄屋の素材 -->
+  <text x="250" y="226" class="t-s mid ink" font-weight="700">数寄屋：素朴な素材を見せる</text>
+  <rect x="8" y="238" width="344" height="48" rx="10" class="bgc"/>
+  <rect x="20" y="246" width="10" height="34" rx="5" class="soft"/>
+  <path d="M23 256 Q25 258 27 256 M22 270 Q25 272 28 270" class="st-line" stroke-width="1.2"/>
+  <text x="38" y="260" class="t-xs ink" font-weight="700">丸太の柱</text>
+  <text x="38" y="274" class="t-xs soft">皮つきも</text>
+  <rect x="120" y="246" width="30" height="34" class="tint"/>
+  <g class="soft"><circle cx="126" cy="252" r="1.3"/><circle cx="138" cy="258" r="1.3"/><circle cx="130" cy="268" r="1.3"/><circle cx="144" cy="274" r="1.3"/><circle cx="144" cy="250" r="1.3"/><circle cx="124" cy="276" r="1.3"/></g>
+  <text x="158" y="260" class="t-xs ink" font-weight="700">土壁</text>
+  <text x="158" y="274" class="t-xs soft">わらが見える</text>
+  <rect x="240" y="248" width="28" height="30" class="paper"/>
+  <rect x="240" y="248" width="28" height="30" class="st-soft" stroke-width="1.2"/>
+  <path d="M247 248 V278 M254 248 V278 M261 248 V278 M240 256 H268 M240 264 H268 M240 272 H268" class="st-soft" stroke-width="1"/>
+  <text x="276" y="260" class="t-xs ink" font-weight="700">竹の格子窓</text>
+  <text x="276" y="274" class="t-xs soft">光を絞る</text>
+</svg>

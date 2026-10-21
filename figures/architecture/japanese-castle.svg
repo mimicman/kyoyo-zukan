@@ -1,0 +1,61 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 城の天守と石垣・堀（模式図）。下から順に、近づけない・登らせない・上から守る -->
+  <!-- 堀 -->
+  <rect x="8" y="236" width="344" height="22" class="tint"/>
+  <path d="M290 246 q6 -4 12 0 t12 0 t12 0 M300 253 q6 -4 12 0 t12 0" class="st-f" stroke-width="1.2"/>
+  <text x="14" y="251" class="t-xs ink" font-weight="700">堀：水で近づけない</text>
+  <!-- 石垣：下はゆるく、上ほど急（扇の勾配） -->
+  <path d="M90 236 Q128 230 134 168 H226 Q232 230 270 236Z" class="soft"/>
+  <path d="M112 226 H248 M124 210 H236 M130 194 H230 M133 180 H227" class="st-line" stroke-width="1.2"/>
+  <!-- 天守 -->
+  <rect x="140" y="144" width="80" height="24" class="paper"/>
+  <rect x="140" y="144" width="80" height="24" class="st" stroke-width="1.5"/>
+  <path d="M128 144 L232 144 L216 132 H144Z" class="ink"/>
+  <rect x="150" y="112" width="60" height="20" class="paper"/>
+  <rect x="150" y="112" width="60" height="20" class="st" stroke-width="1.5"/>
+  <path d="M168 132 L180 121 L192 132Z" class="paper"/>
+  <path d="M168 132 L180 121 L192 132Z" class="st" stroke-width="1.5"/>
+  <path d="M138 112 L222 112 L206 100 H154Z" class="ink"/>
+  <rect x="160" y="80" width="40" height="20" class="paper"/>
+  <rect x="160" y="80" width="40" height="20" class="st" stroke-width="1.5"/>
+  <path d="M148 80 L212 80 L198 68 H162Z" class="ink"/>
+  <rect x="166" y="52" width="28" height="16" class="paper"/>
+  <rect x="166" y="52" width="28" height="16" class="st" stroke-width="1.5"/>
+  <path d="M156 52 L204 52 L180 34Z" class="ink"/>
+  <circle cx="158" cy="48" r="3" class="fl"/><circle cx="202" cy="48" r="3" class="fl"/>
+  <g class="soft">
+    <rect x="172" y="56" width="5" height="7"/><rect x="183" y="56" width="5" height="7"/>
+    <rect x="168" y="85" width="6" height="9"/><rect x="186" y="85" width="6" height="9"/>
+    <rect x="158" y="117" width="6" height="9"/><rect x="196" y="117" width="6" height="9"/>
+  </g>
+  <!-- 狭間（三角・丸・四角の穴）と石落とし -->
+  <path d="M156 160 L160 152 L164 160Z" class="ink"/>
+  <circle cx="180" cy="156" r="3.5" class="ink"/>
+  <rect x="193" y="152" width="7" height="7" class="ink"/>
+  <path d="M136 152 H144 V168 H132Z M216 152 H224 L228 168 H216Z" class="paper"/>
+  <path d="M136 152 H144 V168 H132Z M216 152 H224 L228 168 H216Z" class="st" stroke-width="1.5"/>
+
+  <!-- 左の注記 -->
+  <path d="M122 60 L162 70" class="st-soft" stroke-width="1"/>
+  <text x="14" y="56" class="t-xs fl" font-weight="700">天守</text>
+  <text x="14" y="70" class="t-xs soft">見張りと、力の象徴</text>
+  <path d="M110 116 L150 120" class="st-soft" stroke-width="1"/>
+  <text x="14" y="112" class="t-xs ink" font-weight="700">白い壁</text>
+  <text x="14" y="126" class="t-xs soft">土と漆喰で火に強く</text>
+  <path d="M84 196 L128 200" class="st-soft" stroke-width="1"/>
+  <text x="14" y="192" class="t-xs ink" font-weight="700">石垣</text>
+  <text x="14" y="206" class="t-xs soft">上ほど急で</text>
+  <text x="14" y="220" class="t-xs soft">登りにくい</text>
+
+  <!-- 右の注記 -->
+  <path d="M202 156 L254 118" class="st-soft" stroke-width="1"/>
+  <text x="258" y="112" class="t-xs ink" font-weight="700">狭間</text>
+  <text x="258" y="126" class="t-xs soft">鉄砲・弓を</text>
+  <text x="258" y="140" class="t-xs soft">撃つ小窓</text>
+  <path d="M228 164 L254 176" class="st-soft" stroke-width="1"/>
+  <text x="258" y="176" class="t-xs ink" font-weight="700">石落とし</text>
+  <text x="258" y="190" class="t-xs soft">真下の敵に</text>
+  <text x="258" y="204" class="t-xs soft">石や鉄砲で</text>
+
+  <text x="180" y="280" class="t-xs mid fl" font-weight="700">近づけない（堀）→ 登らせない（石垣）→ 上から守る（天守）</text>
+</svg>

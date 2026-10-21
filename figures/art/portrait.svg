@@ -1,0 +1,63 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：顔の向き -->
+  <!-- 横顔 -->
+  <path d="M34 104 Q60 84 86 104" class="soft"/>
+  <circle cx="60" cy="56" r="24" class="paper"/>
+  <circle cx="60" cy="56" r="24" class="st" stroke-width="2"/>
+  <path d="M83 52 L91 64 L82 68" class="paper"/>
+  <path d="M83 52 L91 64 L82 68" class="st" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M82 57 L84 58" class="st" stroke-width="2"/>
+  <circle cx="74" cy="50" r="2.5" class="ink"/>
+  <path d="M74 74 H80" class="st" stroke-width="1.5"/>
+  <ellipse cx="54" cy="58" rx="4" ry="6" class="st-soft" stroke-width="1.5"/>
+  <!-- 斜め（4分の3） -->
+  <path d="M154 104 Q180 84 206 104" class="fl"/>
+  <ellipse cx="180" cy="56" rx="22" ry="26" class="tint"/>
+  <ellipse cx="180" cy="56" rx="22" ry="26" class="st-f" stroke-width="2"/>
+  <circle cx="174" cy="52" r="2.5" class="ink"/>
+  <circle cx="192" cy="52" r="2" class="ink"/>
+  <path d="M188 52 L192 64 L186 66" class="st" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M180 74 H190" class="st" stroke-width="1.5"/>
+  <!-- 正面 -->
+  <path d="M274 104 Q300 84 326 104" class="soft"/>
+  <ellipse cx="300" cy="56" rx="22" ry="26" class="paper"/>
+  <ellipse cx="300" cy="56" rx="22" ry="26" class="st" stroke-width="2"/>
+  <circle cx="291" cy="52" r="2.5" class="ink"/>
+  <circle cx="309" cy="52" r="2.5" class="ink"/>
+  <path d="M300 52 V64 M296 66 H304 M295 74 H305" class="st" stroke-width="1.5"/>
+
+  <text x="60" y="124" class="t-s mid ink" font-weight="700">横顔</text>
+  <text x="180" y="124" class="t-s mid fl" font-weight="700">斜め（4分の3）</text>
+  <text x="300" y="124" class="t-s mid ink" font-weight="700">正面</text>
+  <g class="t-xs mid soft">
+    <text x="60" y="140">目が合わない</text><text x="180" y="140">表情と立体感</text><text x="300" y="140">まっすぐ目が合う</text>
+  </g>
+
+  <!-- 下：鏡を見て描くと左右が逆になる -->
+  <path d="M8 158 H352" class="st-line" stroke-width="1.5"/>
+  <text x="180" y="180" class="t-s mid ink" font-weight="700">自画像は鏡を見て描く</text>
+
+  <rect x="20" y="192" width="110" height="68" rx="8" class="bgc"/>
+  <circle cx="75" cy="208" r="9" class="paper"/>
+  <circle cx="75" cy="208" r="9" class="st" stroke-width="2"/>
+  <path d="M75 217 V244 M75 224 L56 232 M75 224 L92 236" class="st" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M56 232 L46 214" class="st-f" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="46" cy="212" r="3" class="fl"/>
+
+  <rect x="166" y="194" width="8" height="64" class="tint"/>
+  <rect x="166" y="194" width="8" height="64" class="st-soft" stroke-width="1"/>
+  <text x="170" y="274" class="t-xs mid soft">鏡</text>
+  <path d="M136 226 H160" class="st-f" stroke-width="2" marker-end="url(#a-art)"/>
+  <path d="M180 226 H206" class="st-f" stroke-width="2" marker-end="url(#a-art)"/>
+
+  <rect x="214" y="192" width="126" height="68" rx="4" class="paper"/>
+  <rect x="214" y="192" width="126" height="68" rx="4" class="st" stroke-width="2"/>
+  <circle cx="277" cy="208" r="9" class="tint"/>
+  <circle cx="277" cy="208" r="9" class="st" stroke-width="2"/>
+  <path d="M277 217 V244 M277 224 L260 236 M277 224 L296 232" class="st" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M296 232 L306 214" class="st-f" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="306" cy="212" r="3" class="fl"/>
+
+  <text x="75" y="278" class="t-xs mid ink">本人：右手に筆</text>
+  <text x="277" y="278" class="t-xs mid fl">絵では左手に筆</text>
+</svg>

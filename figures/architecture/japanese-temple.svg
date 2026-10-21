@@ -1,0 +1,57 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 寺の建物の正面（模式図）。重い瓦屋根を、組物が深い軒まで支える -->
+  <!-- 屋根 -->
+  <path d="M14 112 Q110 100 180 38 Q250 100 346 112 L346 120 Q250 110 180 52 Q110 110 14 120Z" class="soft"/>
+  <path d="M160 40 H200" class="st" stroke-width="5" stroke-linecap="round"/>
+  <!-- 垂木（軒の裏の細い材） -->
+  <path d="M30 122 V128 M44 121 V127 M58 120 V126 M72 119 V125 M288 119 V125 M302 120 V126 M316 121 V127 M330 122 V128" class="st-soft" stroke-width="2"/>
+  <!-- 組物（斗栱）：柱の上で段々に外へ張り出す -->
+  <g class="fl">
+    <rect x="98" y="142" width="36" height="8"/>
+    <rect x="82" y="132" width="44" height="8"/>
+    <rect x="68" y="122" width="44" height="8"/>
+    <rect x="226" y="142" width="36" height="8"/>
+    <rect x="234" y="132" width="44" height="8"/>
+    <rect x="248" y="122" width="44" height="8"/>
+  </g>
+  <!-- 柱と壁 -->
+  <rect x="110" y="150" width="12" height="82" class="paper"/>
+  <rect x="110" y="150" width="12" height="82" class="st" stroke-width="2"/>
+  <rect x="238" y="150" width="12" height="82" class="paper"/>
+  <rect x="238" y="150" width="12" height="82" class="st" stroke-width="2"/>
+  <rect x="122" y="156" width="116" height="76" class="tint"/>
+  <path d="M151 156 V232 M180 156 V232 M209 156 V232" class="st-soft" stroke-width="1.2"/>
+  <!-- 礎石と基壇 -->
+  <rect x="106" y="232" width="20" height="6" class="soft"/>
+  <rect x="234" y="232" width="20" height="6" class="soft"/>
+  <rect x="80" y="238" width="200" height="14" class="paper"/>
+  <rect x="80" y="238" width="200" height="14" class="st-soft" stroke-width="1.5"/>
+  <path d="M8 252 H352" class="st-soft" stroke-width="2"/>
+
+  <!-- 雨は深い軒の先から落ち、柱や壁をぬらさない -->
+  <path d="M18 132 V146 M18 156 V170 M18 180 V194 M18 204 V218 M18 228 V242" class="st-f" stroke-width="2" stroke-linecap="round"/>
+  <path d="M26 138 H104" class="st" stroke-width="1.5" marker-start="url(#a-ink)" marker-end="url(#a-ink)"/>
+  <text x="34" y="160" class="t-xs ink" font-weight="700">深い軒</text>
+  <text x="34" y="174" class="t-xs soft">雨と日差しから</text>
+  <text x="34" y="188" class="t-xs soft">木を守る</text>
+
+  <!-- 注記 -->
+  <text x="236" y="38" class="t-xs ink" font-weight="700">重い瓦屋根</text>
+  <text x="236" y="52" class="t-xs soft">反りのある形</text>
+  <path d="M276 154 L296 154" class="st-soft" stroke-width="1"/>
+  <text x="300" y="146" class="t-xs fl" font-weight="700">組物</text>
+  <text x="300" y="160" class="t-xs soft">（斗栱）</text>
+  <path d="M254 200 L296 200" class="st-soft" stroke-width="1"/>
+  <text x="300" y="204" class="t-xs ink" font-weight="700">柱</text>
+  <path d="M258 236 L296 228" class="st-soft" stroke-width="1"/>
+  <text x="300" y="232" class="t-xs ink" font-weight="700">礎石</text>
+
+  <!-- 下：木の組み方（継手） -->
+  <rect x="8" y="262" width="344" height="34" rx="10" class="bgc"/>
+  <rect x="60" y="270" width="36" height="20" class="tint"/>
+  <rect x="60" y="270" width="36" height="20" class="st-soft" stroke-width="1.2"/>
+  <path d="M22 270 H60 V277 L72 273 V287 L60 283 V290 H22Z" class="soft"/>
+  <path d="M60 277 L72 273 V287 L60 283" class="st" stroke-width="1.5"/>
+  <text x="108" y="278" class="t-xs ink" font-weight="700">木を刻んで組む（継手・仕口）</text>
+  <text x="108" y="292" class="t-xs soft">傷んだ部材だけ取り替えて、長く使える</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：アーチから広い屋根へ -->
+  <!-- 1. アーチ -->
+  <path d="M24 92 V60 A21 21 0 0 1 66 60 V92 H58 V60 A13 13 0 0 0 32 60 V92Z" class="tint"/>
+  <path d="M24 92 V60 A21 21 0 0 1 66 60 V92 H58 V60 A13 13 0 0 0 32 60 V92Z" class="st" stroke-width="1.8"/>
+  <!-- 2. 並べる（水道橋） -->
+  <path d="M104 92 V64 A10 10 0 0 1 124 64 V92 M124 92 V64 A10 10 0 0 1 144 64 V92 M144 92 V64 A10 10 0 0 1 164 64 V92" class="st" stroke-width="1.8"/>
+  <path d="M100 52 H168 M100 56 H168" class="st" stroke-width="1.8"/>
+  <path d="M102 54 V92 H166 V54" class="st" stroke-width="1.8"/>
+  <!-- 3. 奥へ伸ばす（ボールト） -->
+  <path d="M206 92 V66 A19 19 0 0 1 244 66 V92" class="st" stroke-width="2"/>
+  <path d="M218 82 V58 A19 19 0 0 1 256 58 V82" class="st-soft dash" stroke-width="1.5"/>
+  <path d="M206 66 L218 58 M225 47 L237 39 M244 66 L256 58 M244 92 L256 82" class="st-soft" stroke-width="1.5"/>
+  <!-- 4. 回す（ドーム） -->
+  <path d="M290 84 A26 26 0 0 1 342 84" class="tint"/>
+  <path d="M290 84 A26 26 0 0 1 342 84" class="st-f" stroke-width="2"/>
+  <ellipse cx="316" cy="84" rx="26" ry="7" class="no-fill st-f" stroke-width="1.5"/>
+  <path d="M300 96 A20 6 0 0 0 334 96" class="st" stroke-width="1.5" marker-end="url(#a-ink)"/>
+
+  <path d="M74 72 H92" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M174 72 H194" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M262 72 H280" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <g class="t-xs mid ink" font-weight="700">
+    <text x="45" y="118">アーチ</text><text x="134" y="118">並べる</text><text x="231" y="118">奥へ伸ばす</text><text x="316" y="118">回す</text>
+  </g>
+  <g class="mid soft" font-size="9.5">
+    <text x="134" y="132">水道橋</text><text x="231" y="132">トンネル形の天井</text><text x="316" y="132">ドーム</text>
+  </g>
+  <text x="180" y="24" class="t-xs mid soft">アーチの形を応用すると、柱のない広い空間ができる</text>
+
+  <!-- 下：パンテオンの断面 -->
+  <path d="M8 146 H352" class="st-line" stroke-width="1.5"/>
+  <path d="M122 172 L104 270 M138 172 L156 270" class="st-f dash" stroke-width="1.2"/>
+  <path d="M122 172 L156 270 L104 270Z" class="tint" opacity="0.6"/>
+  <circle cx="130" cy="220" r="48" class="no-fill st-soft dash" stroke-width="1.2"/>
+  <path d="M82 220 A48 48 0 0 1 124 172.4" class="st" stroke-width="5"/>
+  <path d="M136 172.4 A48 48 0 0 1 178 220" class="st" stroke-width="5"/>
+  <rect x="74" y="218" width="10" height="52" class="soft"/>
+  <rect x="176" y="218" width="10" height="52" class="soft"/>
+  <path d="M60 270 H200" class="st" stroke-width="2.5"/>
+
+  <!-- 注記 -->
+  <path d="M140 168 L206 164" class="st-soft" stroke-width="1"/>
+  <text x="210" y="168" class="t-xs ink" font-weight="700">天窓（オクルス）</text>
+  <text x="210" y="182" class="t-xs soft">頂上の丸い穴から光</text>
+  <path d="M172 196 L206 206" class="st-soft" stroke-width="1"/>
+  <text x="210" y="210" class="t-xs ink" font-weight="700">コンクリートのドーム</text>
+  <text x="210" y="224" class="t-xs soft">上ほど薄く軽く</text>
+  <path d="M152 240 L206 248" class="st-soft" stroke-width="1"/>
+  <text x="210" y="252" class="t-xs fl" font-weight="700">高さ＝直径</text>
+  <text x="210" y="266" class="t-xs soft">球がすっぽり入る</text>
+  <text x="130" y="286" class="t-xs mid soft">パンテオン（ローマ、2世紀）の断面</text>
+</svg>

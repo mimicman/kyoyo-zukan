@@ -9,7 +9,11 @@
   </g>
 
   <!-- 時代ごとの描き方の目印 -->
-  <g class="paper st-soft" stroke-width="1.5">
+  <g class="paper">
+    <circle cx="34" cy="150" r="22"/><circle cx="92" cy="150" r="22"/><circle cx="150" cy="150" r="22"/>
+    <circle cx="208" cy="150" r="22"/><circle cx="266" cy="150" r="22"/><circle cx="324" cy="150" r="22"/>
+  </g>
+  <g class="st-soft" stroke-width="1.5">
     <circle cx="34" cy="150" r="22"/><circle cx="92" cy="150" r="22"/><circle cx="150" cy="150" r="22"/>
     <circle cx="208" cy="150" r="22"/><circle cx="266" cy="150" r="22"/><circle cx="324" cy="150" r="22"/>
   </g>

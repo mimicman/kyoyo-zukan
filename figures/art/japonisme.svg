@@ -1,6 +1,7 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
   <!-- 浮世絵（日本） -->
-  <rect x="16" y="22" width="114" height="82" rx="4" class="paper st-soft" stroke-width="1.5"/>
+  <rect x="16" y="22" width="114" height="82" rx="4" class="paper"/>
+  <rect x="16" y="22" width="114" height="82" rx="4" class="st-soft" stroke-width="1.5"/>
   <path d="M74 86 L90 66 L106 86Z" class="soft"/>
   <path d="M18 102 C30 60 64 36 94 44 C78 46 70 58 76 66 C66 64 58 72 60 84 C50 76 40 86 44 102Z" class="fl"/>
   <path d="M94 44 L98 40 M90 46 L92 41 M85 47 L86 42" class="st-f" stroke-width="2" stroke-linecap="round"/>
@@ -12,28 +13,32 @@
   <text x="179" y="82" class="t-xs mid soft">万博などで</text>
 
   <!-- 西洋の絵（影響を受けた絵の例：枝が画面を横切る） -->
-  <rect x="230" y="22" width="114" height="82" rx="4" class="tint st-soft" stroke-width="1.5"/>
+  <rect x="230" y="22" width="114" height="82" rx="4" class="tint"/>
+  <rect x="230" y="22" width="114" height="82" rx="4" class="st-soft" stroke-width="1.5"/>
   <path d="M231 92 C262 82 286 66 300 40 M276 72 C292 72 310 80 322 92 M300 40 L314 23" class="st-soft" stroke-width="4" stroke-linecap="round"/>
   <circle cx="298" cy="50" r="4" class="fl"/><circle cx="312" cy="78" r="4" class="fl"/><circle cx="268" cy="72" r="4" class="fl"/><circle cx="286" cy="60" r="3.5" class="fl"/>
   <text x="287" y="122" class="t-xs mid soft">モネ・ゴッホら</text>
 
   <!-- 影響した3つ -->
   <rect x="14" y="140" width="102" height="130" rx="12" class="bgc"/>
-  <rect x="34" y="154" width="62" height="48" rx="3" class="paper st-soft" stroke-width="1.2"/>
+  <rect x="34" y="154" width="62" height="48" rx="3" class="paper"/>
+  <rect x="34" y="154" width="62" height="48" rx="3" class="st-soft" stroke-width="1.2"/>
   <rect x="34" y="154" width="62" height="18" class="tint"/>
   <path d="M34 202 L60 176 L82 188 L96 178 V202Z" class="fl"/>
   <text x="65" y="232" class="t-s mid ink">平らな色面</text>
   <text x="65" y="250" class="t-xs mid soft">陰影をつけない</text>
 
   <rect x="129" y="140" width="102" height="130" rx="12" class="bgc"/>
-  <rect x="149" y="154" width="62" height="48" rx="3" class="paper st-soft" stroke-width="1.2"/>
+  <rect x="149" y="154" width="62" height="48" rx="3" class="paper"/>
+  <rect x="149" y="154" width="62" height="48" rx="3" class="st-soft" stroke-width="1.2"/>
   <path d="M149 202 V170 C166 170 178 182 182 202Z" class="fl"/>
   <path d="M195 178 L200 170 L205 178Z" class="soft"/>
   <text x="180" y="232" class="t-s mid ink">大胆な構図</text>
   <text x="180" y="250" class="t-xs mid soft">手前を大きく切る</text>
 
   <rect x="244" y="140" width="102" height="130" rx="12" class="bgc"/>
-  <rect x="264" y="154" width="62" height="48" rx="3" class="paper st-soft" stroke-width="1.2"/>
+  <rect x="264" y="154" width="62" height="48" rx="3" class="paper"/>
+  <rect x="264" y="154" width="62" height="48" rx="3" class="st-soft" stroke-width="1.2"/>
   <path d="M312 162 Q318 166 322 162 M306 170 Q312 174 316 170" class="st-soft" stroke-width="1.5" stroke-linecap="round"/>
   <path d="M264 196 Q276 190 284 200" class="st-f" stroke-width="2.5" stroke-linecap="round"/>
   <text x="295" y="232" class="t-s mid ink">余白</text>

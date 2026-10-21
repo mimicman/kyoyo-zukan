@@ -1,0 +1,65 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 3つの柱の様式。いちばんの違いは柱頭（柱のてっぺん） -->
+  <!-- ドーリス式：太く、台座なし、皿のような柱頭 -->
+  <rect x="30" y="34" width="64" height="12" class="soft"/>
+  <rect x="34" y="46" width="56" height="8" class="paper"/>
+  <rect x="34" y="46" width="56" height="8" class="st" stroke-width="2"/>
+  <path d="M38 54 Q62 72 86 54Z" class="fl"/>
+  <path d="M44 64 H80 L77 200 H47Z" class="paper"/>
+  <path d="M44 64 H80 L77 200 H47Z" class="st" stroke-width="2"/>
+  <path d="M53 66 L54 198 M62 66 V198 M71 66 L70 198" class="st-soft" stroke-width="1.2"/>
+  <!-- イオニア式：渦巻き、台座あり -->
+  <rect x="148" y="34" width="64" height="12" class="soft"/>
+  <path d="M152 50 H208" class="st" stroke-width="2"/>
+  <path d="M152 52 H208 V58 H152Z" class="fl"/>
+  <circle cx="155" cy="62" r="9" class="paper"/>
+  <circle cx="155" cy="62" r="9" class="st-f" stroke-width="2.5"/>
+  <circle cx="155" cy="62" r="3.5" class="fl"/>
+  <circle cx="205" cy="62" r="9" class="paper"/>
+  <circle cx="205" cy="62" r="9" class="st-f" stroke-width="2.5"/>
+  <circle cx="205" cy="62" r="3.5" class="fl"/>
+  <path d="M167 64 H193 L191 190 H169Z" class="paper"/>
+  <path d="M167 64 H193 L191 190 H169Z" class="st" stroke-width="2"/>
+  <path d="M174 66 V188 M180 66 V188 M186 66 V188" class="st-soft" stroke-width="1.2"/>
+  <rect x="162" y="190" width="36" height="5" class="paper"/>
+  <rect x="162" y="190" width="36" height="5" class="st" stroke-width="1.5"/>
+  <rect x="158" y="195" width="44" height="6" class="paper"/>
+  <rect x="158" y="195" width="44" height="6" class="st" stroke-width="1.5"/>
+  <!-- コリント式：葉で飾った柱頭、細く華やか -->
+  <rect x="266" y="34" width="64" height="12" class="soft"/>
+  <path d="M276 46 H320 L314 52 H282Z" class="paper"/>
+  <path d="M276 46 H320 L314 52 H282Z" class="st" stroke-width="2"/>
+  <path d="M284 52 L288 82 H308 L312 52" class="paper"/>
+  <path d="M284 52 L288 82 H308 L312 52" class="st" stroke-width="1.5"/>
+  <g class="fl">
+    <path d="M284 82 C282 72 286 64 290 60 C292 70 294 76 292 82Z"/>
+    <path d="M296 82 C294 70 296 62 298 56 C300 62 302 70 300 82Z"/>
+    <path d="M304 82 C302 76 304 70 306 60 C310 64 314 72 312 82Z"/>
+  </g>
+  <path d="M284 58 C278 56 278 50 284 50 M312 58 C318 56 318 50 312 50" class="st-f" stroke-width="2"/>
+  <path d="M288 84 H308 L307 190 H289Z" class="paper"/>
+  <path d="M288 84 H308 L307 190 H289Z" class="st" stroke-width="2"/>
+  <path d="M294 86 V188 M298 86 V188 M302 86 V188" class="st-soft" stroke-width="1.2"/>
+  <rect x="283" y="190" width="30" height="5" class="paper"/>
+  <rect x="283" y="190" width="30" height="5" class="st" stroke-width="1.5"/>
+  <rect x="279" y="195" width="38" height="6" class="paper"/>
+  <rect x="279" y="195" width="38" height="6" class="st" stroke-width="1.5"/>
+
+  <path d="M12 202 H348" class="st-soft" stroke-width="2"/>
+  <text x="180" y="22" class="t-xs mid soft">上の横材を、柱がならんで支える</text>
+
+  <!-- 名前と特徴 -->
+  <text x="62" y="224" class="t-m mid ink">ドーリス式</text>
+  <text x="180" y="224" class="t-m mid ink">イオニア式</text>
+  <text x="298" y="224" class="t-m mid ink">コリント式</text>
+  <g class="t-xs mid">
+    <text x="62" y="242" class="fl" font-weight="700">太く簡素・台座なし</text>
+    <text x="180" y="242" class="fl" font-weight="700">渦巻きの柱頭</text>
+    <text x="298" y="242" class="fl" font-weight="700">葉で飾った柱頭</text>
+    <text x="62" y="258" class="soft">力強い</text>
+    <text x="180" y="258" class="soft">細身で優美</text>
+    <text x="298" y="258" class="soft">いちばん華やか</text>
+    <text x="62" y="274" class="soft">例：パルテノン神殿</text>
+    <text x="298" y="274" class="soft">ローマで好まれた</text>
+  </g>
+</svg>

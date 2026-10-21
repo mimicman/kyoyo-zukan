@@ -1,0 +1,71 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 2つの段：上＝海外から取り入れる、下＝日本風に作り変える -->
+  <rect x="8" y="70" width="344" height="44" rx="22" class="tint"/>
+  <rect x="8" y="150" width="344" height="44" rx="22" class="bgc"/>
+  <text x="239" y="90" class="t-xs mid fl" font-weight="700">海外から</text>
+  <text x="239" y="104" class="t-xs mid fl" font-weight="700">取り入れる</text>
+  <text x="152" y="170" class="t-xs mid ink" font-weight="700">日本風に</text>
+  <text x="152" y="184" class="t-xs mid ink" font-weight="700">作り変える</text>
+
+  <!-- 流れ（くり返し） -->
+  <path d="M36 92 L94 172 L152 92 L210 172 L268 172 L326 92" class="st-f" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- 飛鳥・奈良：仏像 -->
+  <circle cx="36" cy="92" r="20" class="paper"/>
+  <circle cx="36" cy="92" r="20" class="st-f" stroke-width="2"/>
+  <circle cx="36" cy="84" r="9" class="st-f" stroke-width="1.5"/>
+  <circle cx="36" cy="84" r="4.5" class="fl"/>
+  <path d="M26 104 Q36 88 46 104Z" class="fl"/>
+  <!-- 平安：絵巻物 -->
+  <circle cx="94" cy="172" r="20" class="paper"/>
+  <circle cx="94" cy="172" r="20" class="st-soft" stroke-width="2"/>
+  <rect x="80" y="165" width="28" height="15" class="tint"/>
+  <rect x="80" y="165" width="28" height="15" class="st-soft" stroke-width="1"/>
+  <rect x="77" y="163" width="5" height="19" rx="2" class="soft"/>
+  <rect x="106" y="163" width="5" height="19" rx="2" class="soft"/>
+  <path d="M86 176 L92 169 L98 176" class="st-f" stroke-width="1.5"/>
+  <!-- 室町：水墨画 -->
+  <circle cx="152" cy="92" r="20" class="paper"/>
+  <circle cx="152" cy="92" r="20" class="st-f" stroke-width="2"/>
+  <path d="M138 102 L148 82 L155 94 L161 86 L168 102" class="st" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M140 98 H164" class="st-soft dash" stroke-width="1"/>
+  <!-- 桃山：金の障壁画（びょうぶ） -->
+  <circle cx="210" cy="172" r="20" class="paper"/>
+  <circle cx="210" cy="172" r="20" class="st-soft" stroke-width="2"/>
+  <path d="M196 162 L203 166 L210 162 L217 166 L224 162 V182 L217 186 L210 182 L203 186 L196 182Z" class="fl"/>
+  <!-- 江戸：浮世絵（波） -->
+  <circle cx="268" cy="172" r="20" class="paper"/>
+  <circle cx="268" cy="172" r="20" class="st-soft" stroke-width="2"/>
+  <path d="M254 182 C258 166 270 160 282 166 C274 166 270 172 272 178 C266 176 262 180 262 184" class="fl"/>
+  <!-- 明治：油絵（額縁） -->
+  <circle cx="326" cy="92" r="20" class="paper"/>
+  <circle cx="326" cy="92" r="20" class="st-f" stroke-width="2"/>
+  <rect x="314" y="80" width="24" height="18" class="st" stroke-width="2"/>
+  <path d="M318 104 L326 98 L334 104" class="st" stroke-width="1.5"/>
+  <circle cx="331" cy="86" r="3" class="fl"/>
+
+  <!-- 説明（上の段は上に、下の段は下に） -->
+  <text x="36" y="44" class="t-xs mid ink" font-weight="700">仏教と仏像</text>
+  <text x="36" y="58" class="t-xs mid soft">大陸から</text>
+  <text x="152" y="44" class="t-xs mid ink" font-weight="700">水墨画</text>
+  <text x="152" y="58" class="t-xs mid soft">中国から</text>
+  <text x="326" y="44" class="t-xs mid ink" font-weight="700">油絵</text>
+  <text x="326" y="58" class="t-xs mid soft">西洋から</text>
+  <text x="94" y="212" class="t-xs mid ink" font-weight="700">大和絵</text>
+  <text x="94" y="226" class="t-xs mid soft">絵巻物</text>
+  <text x="210" y="212" class="t-xs mid ink" font-weight="700">金の</text>
+  <text x="210" y="226" class="t-xs mid ink" font-weight="700">障壁画</text>
+  <text x="268" y="212" class="t-xs mid ink" font-weight="700">琳派</text>
+  <text x="268" y="226" class="t-xs mid ink" font-weight="700">浮世絵</text>
+
+  <!-- 時代 -->
+  <path d="M8 240 H352" class="st-line" stroke-width="1.5"/>
+  <g class="t-xs mid ink" font-weight="700">
+    <text x="36" y="258">飛鳥・奈良</text><text x="94" y="258">平安</text><text x="152" y="258">室町</text>
+    <text x="210" y="258">桃山</text><text x="268" y="258">江戸</text><text x="326" y="258">明治</text>
+  </g>
+  <g class="mid soft" font-size="9.5">
+    <text x="36" y="274">7〜8世紀</text><text x="94" y="274">9〜12世紀</text><text x="152" y="274">14〜16世紀</text>
+    <text x="210" y="274">16世紀後半</text><text x="268" y="274">17〜19世紀</text><text x="326" y="274">19世紀後半</text>
+  </g>
+</svg>
