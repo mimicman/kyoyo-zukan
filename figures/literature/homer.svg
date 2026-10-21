@@ -1,0 +1,26 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 海 -->
+  <rect x="6" y="20" width="348" height="254" rx="14" class="tint"/>
+  <text x="222" y="160" class="t-xs mid soft">エーゲ海</text>
+  <!-- ギリシャ本土（左）と小アジア（右） -->
+  <path d="M84 20 H170 L176 70 L156 104 L172 138 L146 160 L156 196 L126 226 L104 196 L84 166 L98 136 L72 104 Z" class="paper st-soft" stroke-width="1.5"/>
+  <path d="M290 20 H354 V274 H322 L302 236 L288 192 L298 150 L282 108 L292 70 Z" class="paper st-soft" stroke-width="1.5"/>
+  <ellipse cx="52" cy="140" rx="9" ry="13" class="paper st-soft" stroke-width="1.5"/>
+  <text x="122" y="64" class="t-m mid ink">ギリシャ</text>
+  <text x="324" y="210" class="t-xs mid soft">小アジア</text>
+
+  <!-- トロイア -->
+  <circle cx="294" cy="80" r="7" class="fl"/>
+  <text x="324" y="112" class="t-m mid fl">トロイア</text>
+
+  <!-- イリアス：海を渡って攻める -->
+  <path d="M170 98 Q228 66 282 78" class="st-f" stroke-width="3" marker-end="url(#a-literature)"/>
+  <text x="226" y="58" class="t-s mid fl halo">『イリアス』</text>
+  <text x="226" y="106" class="t-xs mid ink halo">10年の戦争</text>
+
+  <!-- オデュッセイア：さまよって故郷へ -->
+  <path d="M292 94 C286 190 236 258 160 258 C92 258 30 222 46 160" class="st-f dash" stroke-width="2.5" marker-end="url(#a-literature)"/>
+  <text x="220" y="214" class="t-s mid fl halo">『オデュッセイア』</text>
+  <text x="220" y="232" class="t-xs mid ink halo">10年さまよって帰郷</text>
+  <text x="52" y="118" class="t-xs mid ink halo">イタケ（故郷）</text>
+</svg>

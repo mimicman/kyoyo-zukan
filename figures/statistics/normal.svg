@@ -1,0 +1,18 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+<text x="16" y="22" class="t-s ink">平均を中心に左右対称の山</text>
+  <text x="16" y="40" class="t-xs soft">（測定の誤差・テストの点数など）</text>
+  <path d="M80 220 L80 197.8 L85 193 L90 187.5 L95 181.3 L100 174.4 L105 166.8 L110 158.4 L115 149.6 L120 140.2 L125 130.4 L130 120.5 L135 110.6 L140 100.9 L145 91.6 L150 83 L155 75.3 L160 68.6 L165 63.2 L170 59.2 L175 56.8 L180 56 L185 56.8 L190 59.2 L195 63.2 L200 68.6 L205 75.3 L210 83 L215 91.6 L220 100.9 L225 110.6 L230 120.5 L235 130.4 L240 140.2 L245 149.6 L250 158.4 L255 166.8 L260 174.4 L265 181.3 L270 187.5 L275 193 L280 197.8 L280 220 Z" class="tint"/>
+  <path d="M130 220 L130 120.5 L132.5 115.6 L135 110.6 L137.5 105.7 L140 100.9 L142.5 96.2 L145 91.6 L147.5 87.2 L150 83 L152.5 79 L155 75.3 L157.5 71.8 L160 68.6 L162.5 65.7 L165 63.2 L167.5 61 L170 59.2 L172.5 57.8 L175 56.8 L177.5 56.2 L180 56 L182.5 56.2 L185 56.8 L187.5 57.8 L190 59.2 L192.5 61 L195 63.2 L197.5 65.7 L200 68.6 L202.5 71.8 L205 75.3 L207.5 79 L210 83 L212.5 87.2 L215 91.6 L217.5 96.2 L220 100.9 L222.5 105.7 L225 110.6 L227.5 115.6 L230 120.5 L230 220 Z" class="fl" opacity="0.55"/>
+  <path d="M20 219 L24 218.7 L28 218.4 L32 217.9 L36 217.4 L40 216.7 L44 215.9 L48 215 L52 213.8 L56 212.4 L60 210.8 L64 208.9 L68 206.7 L72 204.1 L76 201.1 L80 197.8 L84 194 L88 189.8 L92 185.1 L96 180 L100 174.4 L104 168.3 L108 161.8 L112 155 L116 147.7 L120 140.2 L124 132.4 L128 124.5 L132 116.6 L136 108.7 L140 100.9 L144 93.4 L148 86.4 L152 79.8 L156 73.8 L160 68.6 L164 64.2 L168 60.7 L172 58.1 L176 56.5 L180 56 L184 56.5 L188 58.1 L192 60.7 L196 64.2 L200 68.6 L204 73.8 L208 79.8 L212 86.4 L216 93.4 L220 100.9 L224 108.7 L228 116.6 L232 124.5 L236 132.4 L240 140.2 L244 147.7 L248 155 L252 161.8 L256 168.3 L260 174.4 L264 180 L268 185.1 L272 189.8 L276 194 L280 197.8 L284 201.1 L288 204.1 L292 206.7 L296 208.9 L300 210.8 L304 212.4 L308 213.8 L312 215 L316 215.9 L320 216.7 L324 217.4 L328 217.9 L332 218.4 L336 218.7 L340 219" class="st-f" stroke-width="3"/>
+  <path d="M180 220 V56" class="st dash" stroke-width="1.5"/>
+  <text x="180" y="170" class="t-xl mid ink halo">68%</text>
+  <text x="105.0" y="206" class="t-xs mid fl">+13.5%</text>
+  <text x="255.0" y="206" class="t-xs mid fl">+13.5%</text>
+  <path d="M16 220 H344" class="st" stroke-width="1.5"/>
+  <path d="M80 220 v5" class="st" stroke-width="1.5"/><text x="80" y="238" class="t-xs mid soft">−2σ</text><path d="M130 220 v5" class="st" stroke-width="1.5"/><text x="130" y="238" class="t-xs mid soft">−1σ</text><path d="M180 220 v5" class="st" stroke-width="1.5"/><text x="180" y="238" class="t-xs mid soft">平均</text><path d="M230 220 v5" class="st" stroke-width="1.5"/><text x="230" y="238" class="t-xs mid soft">+1σ</text><path d="M280 220 v5" class="st" stroke-width="1.5"/><text x="280" y="238" class="t-xs mid soft">+2σ</text>
+  <path d="M130 252 H230" class="st-f" stroke-width="2" marker-end="url(#a-statistics)" marker-start="url(#a-statistics)"/>
+  <text x="180" y="256" class="t-xs mid fl halo">±1σに約68%</text>
+  <path d="M80 280 H280" class="st-soft" stroke-width="2" marker-end="url(#a-soft)" marker-start="url(#a-soft)"/>
+  <text x="180" y="284" class="t-xs mid ink halo">±2σに約95%</text>
+  <text x="344" y="40" class="t-xs end soft">σ＝標準偏差</text>
+</svg>

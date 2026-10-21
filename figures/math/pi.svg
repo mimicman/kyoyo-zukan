@@ -1,0 +1,26 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<text x="180" y="22" class="t-s mid soft">円周 ÷ 直径 ＝ π（どんな大きさの円でも同じ）</text>
+  <!-- 外側の正方形・円・内側の六角形 -->
+  <rect x="36" y="56" width="112" height="112" class="st-soft" stroke-width="2"/>
+  <circle cx="92" cy="112" r="56" class="tint"/><circle cx="92" cy="112" r="56" class="st-f" stroke-width="3"/>
+  <polygon points="148 112 120 63.5 64 63.5 36 112 64 160.5 120 160.5" class="st" stroke-width="1.5"/>
+  <path d="M36 112 H148" class="st-soft dash" stroke-width="1.5"/>
+  <text x="92" y="106" class="t-xs mid ink halo">直径 1</text>
+
+  <path d="M172 58 h14" class="st" stroke-width="1.5"/>
+  <text x="192" y="62" class="t-s ink">六角形（内側）の周 ＝ 3</text>
+  <path d="M172 84 h14" class="st-f" stroke-width="3"/>
+  <text x="192" y="88" class="t-s fl">円周 ＝ π</text>
+  <path d="M172 110 h14" class="st-soft" stroke-width="2"/>
+  <text x="192" y="114" class="t-s ink">正方形（外側）の周 ＝ 4</text>
+  <text x="180" y="146" class="t-l ink">3 ＜ <tspan class="fl">π</tspan> ＜ 4</text>
+  <text x="172" y="168" class="t-xs soft">アルキメデスは96角形で3.14まで</text>
+
+  <!-- 円周を伸ばすと -->
+  <text x="30" y="206" class="t-s ink">円周をまっすぐ伸ばすと、直径の約3.14倍</text>
+  <path d="M30 232 H281.3" class="st-f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M30 222 V242 M110 222 V242 M190 222 V242 M270 222 V242" class="st" stroke-width="1.5"/>
+  <path d="M281.3 220 V244" class="st-f" stroke-width="2"/>
+  <text x="30" y="258" class="t-xs mid soft">0</text><text x="110" y="258" class="t-xs mid soft">1</text><text x="190" y="258" class="t-xs mid soft">2</text><text x="270" y="258" class="t-xs mid soft">3</text>
+  <text x="287.3" y="237" class="t-m fl">π<tspan class="t-xs">＝3.14…</tspan></text>
+</svg>

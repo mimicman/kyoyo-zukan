@@ -1,0 +1,44 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <text x="180" y="16" class="t-xs mid soft">直接は戦わない</text>
+
+  <!-- 西側 -->
+  <circle cx="90" cy="58" r="32" class="tint st-f" stroke-width="2"/>
+  <text x="90" y="63" class="t-s mid ink" font-weight="700">アメリカ</text>
+  <text x="90" y="116" class="t-l mid fl">西側</text>
+  <text x="90" y="136" class="t-xs mid ink">経済：市場で自由に取引</text>
+  <text x="90" y="154" class="t-xs mid ink">政治：複数の政党で選挙</text>
+
+  <!-- 東側 -->
+  <circle cx="270" cy="58" r="32" class="tint st-f" stroke-width="2"/>
+  <text x="270" y="63" class="t-s mid ink" font-weight="700">ソ連</text>
+  <text x="270" y="116" class="t-l mid fl">東側</text>
+  <text x="270" y="136" class="t-xs mid ink">経済：国が計画して生産</text>
+  <text x="270" y="154" class="t-xs mid ink">政治：共産党が指導</text>
+
+  <!-- 間の壁とにらみ合い -->
+  <path d="M180 26 L174 40 L186 54 L174 68 L186 82 L174 96 L186 110 L174 124 L186 138 L174 152 L180 162" class="st" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M126 58 H164" class="st-f" stroke-width="2.5" marker-end="url(#a-history)"/>
+  <path d="M234 58 H196" class="st-f" stroke-width="2.5" marker-end="url(#a-history)"/>
+  <text x="145" y="82" class="t-xs mid soft">核兵器</text>
+  <text x="215" y="82" class="t-xs mid soft">核兵器</text>
+
+  <!-- 年表（1945〜1991年） -->
+  <path d="M20 225 H344" class="st-soft" stroke-width="2"/>
+  <text x="20" y="244" class="t-xs soft">1945</text>
+  <circle cx="58" cy="225" r="5" class="soft"/>
+  <text x="58" y="198" class="t-xs mid soft">1950</text>
+  <text x="58" y="213" class="t-xs mid ink">朝鮮戦争</text>
+  <circle cx="133" cy="225" r="5" class="soft"/>
+  <text x="128" y="244" class="t-xs mid soft">1961</text>
+  <text x="128" y="258" class="t-xs mid ink">ベルリンに</text>
+  <text x="128" y="272" class="t-xs mid ink">壁ができる</text>
+  <circle cx="140" cy="225" r="5" class="fl"/>
+  <text x="148" y="198" class="t-xs mid soft">1962</text>
+  <text x="148" y="213" class="t-xs mid ink">キューバ危機</text>
+  <circle cx="323" cy="225" r="6" class="fl"/>
+  <text x="312" y="198" class="t-xs mid soft">1989</text>
+  <text x="312" y="213" class="t-xs mid ink">壁が崩れる</text>
+  <circle cx="337" cy="225" r="6" class="fl"/>
+  <text x="348" y="244" class="t-xs end soft">1991</text>
+  <text x="348" y="258" class="t-xs end fl" font-weight="700">ソ連解体</text>
+</svg>

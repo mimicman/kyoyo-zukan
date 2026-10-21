@@ -1,0 +1,26 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<!-- 凡例 -->
+  <path d="M40 24 h22" class="st" stroke-width="2.5"/>
+  <text x="70" y="28" class="t-s ink"><tspan class="t-m">微分</tspan>：ある瞬間の傾き（変化の速さ）</text>
+  <rect x="40" y="40" width="22" height="12" class="tint"/><rect x="40" y="40" width="22" height="12" class="st-f" stroke-width="1"/>
+  <text x="70" y="51" class="t-s ink"><tspan class="t-m fl">積分</tspan>：下の面積（たまった量）</text>
+
+  <!-- 軸と曲線 -->
+  <path d="M40 66 V240 H344" class="st" stroke-width="1.5"/>
+  <rect x="60" y="218.2" width="26" height="21.8" class="tint"/><rect x="60" y="218.2" width="26" height="21.8" class="st-f" stroke-width="1"/><rect x="86" y="214.2" width="26" height="25.8" class="tint"/><rect x="86" y="214.2" width="26" height="25.8" class="st-f" stroke-width="1"/><rect x="112" y="208" width="26" height="32" class="tint"/><rect x="112" y="208" width="26" height="32" class="st-f" stroke-width="1"/><rect x="138" y="199.5" width="26" height="40.5" class="tint"/><rect x="138" y="199.5" width="26" height="40.5" class="st-f" stroke-width="1"/><rect x="164" y="188.7" width="26" height="51.3" class="tint"/><rect x="164" y="188.7" width="26" height="51.3" class="st-f" stroke-width="1"/>
+  <path d="M40 220 L50 219.8 L60 219.3 L70 218.5 L80 217.3 L90 215.8 L100 214 L110 211.8 L120 209.3 L130 206.5 L140 203.3 L150 199.8 L160 196 L170 191.8 L180 187.3 L190 182.5 L200 177.3 L210 171.8 L220 166 L230 159.8 L240 153.3 L250 146.5 L260 139.3 L270 131.8 L280 124 L290 115.8 L300 107.3 L310 98.5 L320 89.3 L330 79.8" class="st-f" stroke-width="3" fill="none"/>
+  <text x="115" y="172.6" class="t-xs mid fl">細い長方形を</text>
+  <text x="115" y="185.6" class="t-xs mid fl">足し合わせる</text>
+
+  <!-- 接線 -->
+  <path d="M170 200 L300 113.3" class="st" stroke-width="2.5"/>
+  <circle cx="240" cy="153.3" r="5" class="ink"/>
+  <path d="M240 153.3 h40 v-26.7" class="st-soft dash" stroke-width="1.5"/>
+  <text x="260" y="167.3" class="t-xs mid soft">横に1</text>
+  <text x="286" y="143.3" class="t-xs soft">上に</text>
+  <text x="286" y="156.3" class="t-xs soft">傾き分</text>
+  <text x="232" y="137.3" class="t-xs end ink">接線</text>
+
+  <text x="344" y="258" class="t-xs end soft">x</text>
+  <text x="180" y="272" class="t-xs mid soft">微分と積分は、たがいに逆の計算</text>
+</svg>

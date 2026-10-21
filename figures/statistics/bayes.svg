@@ -1,0 +1,24 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<text x="12" y="18" class="t-xs soft">1%の人が持つ病気を検査すると（数字は仮の例）</text>
+  <rect x="8" y="112" width="64" height="44" rx="7" class="paper"/><rect x="8" y="112" width="64" height="44" rx="7" class="st" stroke-width="1.5"/><text x="40.0" y="131.0" class="t-xs mid ink">全体</text><text x="40.0" y="147.0" class="t-s mid ink">1000人</text>
+  <path d="M72 124 L110 76" class="st-soft" stroke-width="1.5"/>
+  <path d="M72 144 L110 192" class="st-soft" stroke-width="1.5"/>
+  <text x="84" y="94" class="t-xs end soft">1%</text>
+  <text x="84" y="182" class="t-xs end soft">99%</text>
+  <rect x="110" y="54" width="80" height="44" rx="7" class="tint"/><rect x="110" y="54" width="80" height="44" rx="7" class="st-f" stroke-width="1.5"/><text x="150.0" y="73.0" class="t-xs mid ink">病気</text><text x="150.0" y="89.0" class="t-s mid ink">10人</text>
+  <rect x="110" y="170" width="80" height="44" rx="7" class="paper"/><rect x="110" y="170" width="80" height="44" rx="7" class="st-f" stroke-width="1.5"/><text x="150.0" y="189.0" class="t-xs mid ink">健康</text><text x="150.0" y="205.0" class="t-s mid ink">990人</text>
+  <path d="M190 68 L226 48" class="st-soft" stroke-width="1.5"/>
+  <path d="M190 84 L226 92" class="st-soft" stroke-width="1.5"/>
+  <path d="M190 184 L226 164" class="st-soft" stroke-width="1.5"/>
+  <path d="M190 200 L226 208" class="st-soft" stroke-width="1.5"/>
+  <rect x="226" y="34" width="124" height="28" rx="7" class="fl" stroke-width="1.5"/><text x="288.0" y="53.0" class="t-s mid on">陽性 9人（正しく）</text>
+  <rect x="226" y="78" width="124" height="28" rx="7" class="paper"/><rect x="226" y="78" width="124" height="28" rx="7" class="st-line" stroke-width="1.5"/><text x="288.0" y="97.0" class="t-s mid soft">陰性 1人</text>
+  <rect x="226" y="150" width="124" height="28" rx="7" class="fl" stroke-width="1.5"/><text x="288.0" y="169.0" class="t-s mid on">陽性 99人（誤って）</text>
+  <rect x="226" y="194" width="124" height="28" rx="7" class="paper"/><rect x="226" y="194" width="124" height="28" rx="7" class="st-line" stroke-width="1.5"/><text x="288.0" y="213.0" class="t-s mid soft">陰性 891人</text>
+  <text x="204" y="48" class="t-xs end soft halo">90%</text>
+  <text x="204" y="172" class="t-xs end soft halo">10%</text>
+
+  <rect x="8" y="234" width="344" height="40" rx="8" class="tint"/>
+  <text x="180" y="251" class="t-s mid ink">陽性 9＋99＝108人のうち、本当に病気は9人</text>
+  <text x="180" y="268" class="t-s mid fl"><tspan class="t-m">陽性でも病気の確率は約8%</tspan></text>
+</svg>

@@ -1,0 +1,41 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 簡略地図（形と位置はおおよそ） -->
+  <path d="M20 30 L95 22 L110 40 L88 64 L70 80 L56 74 L30 56 Z" class="tint"/>
+  <path d="M72 88 L100 92 L112 110 L96 150 L86 166 L78 150 L70 110 Z" class="tint"/>
+  <path d="M160 30 L230 18 L340 22 L348 70 L320 100 L300 96 L285 118 L270 100 L245 96 L225 70 L200 60 L170 58 Z" class="tint"/>
+  <path d="M168 64 L210 62 L232 86 L228 120 L208 160 L196 160 L184 118 L166 92 Z" class="tint"/>
+  <text x="62" y="48" class="t-xs mid soft">アメリカ</text>
+  <text x="196" y="44" class="t-xs mid soft">ヨーロッパ</text>
+  <text x="296" y="56" class="t-xs mid soft">アジア</text>
+  <text x="202" y="112" class="t-xs mid soft">アフリカ</text>
+  <text x="284" y="134" class="t-xs mid ink">インド</text>
+  <g class="fl"><circle cx="318" cy="112" r="3"/><circle cx="326" cy="118" r="3"/><circle cx="314" cy="121" r="3"/></g>
+  <text x="326" y="138" class="t-xs mid fl">香辛料</text>
+
+  <!-- 出発地 -->
+  <circle cx="164" cy="52" r="4" class="ink"/>
+  <text x="158" y="14" class="t-xs end ink">スペイン・ポルトガル</text>
+  <path d="M164 46 V20" class="st-line" stroke-width="1"/>
+
+  <!-- 航路 -->
+  <path d="M160 54 C140 60 122 66 104 76" class="st" stroke-width="2.5" marker-end="url(#a-ink)"/>
+  <text x="122" y="84" class="t-xs mid ink halo">コロンブス</text>
+  <text x="122" y="98" class="t-xs mid ink halo">1492</text>
+  <path d="M166 58 C140 96 170 170 205 172 C230 172 246 132 260 112" class="st-f" stroke-width="2.5" marker-end="url(#a-history)"/>
+  <text x="302" y="160" class="t-xs mid fl">バスコ・ダ・ガマ</text>
+  <text x="302" y="174" class="t-xs mid fl">1498</text>
+  <path d="M162 60 C132 110 116 160 90 174 C66 182 44 160 26 132" class="st-soft dash" stroke-width="2" marker-end="url(#a-soft)"/>
+  <text x="12" y="104" class="t-xs soft">マゼラン</text>
+  <text x="12" y="118" class="t-xs soft">世界一周</text>
+
+  <!-- 大陸の間を行き来したもの -->
+  <text x="12" y="200" class="t-s ink" font-weight="700">大陸の間を行き来したもの</text>
+  <rect x="12" y="208" width="164" height="66" rx="12" class="tint"/>
+  <text x="94" y="228" class="t-s mid fl" font-weight="700">アメリカ → 世界</text>
+  <text x="94" y="248" class="t-xs mid ink">ジャガイモ・トウモロコシ</text>
+  <text x="94" y="264" class="t-xs mid ink">トマト・銀</text>
+  <rect x="184" y="208" width="164" height="66" rx="12" class="tint"/>
+  <text x="266" y="228" class="t-s mid fl" font-weight="700">ヨーロッパ → アメリカ</text>
+  <text x="266" y="248" class="t-xs mid ink">馬・牛・小麦</text>
+  <text x="266" y="264" class="t-xs mid ink">天然痘などの病気</text>
+</svg>

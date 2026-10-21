@@ -1,0 +1,25 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <text x="30" y="28" class="t-s soft">光源氏の運勢</text>
+  <text x="340" y="28" class="t-xs end soft">全54帖</text>
+  <!-- 運勢の山 -->
+  <path d="M30 206 C56 192 76 164 92 152 C98 158 100 174 106 174 C122 172 150 112 180 86 C198 70 210 62 219 60 C234 64 250 122 266 176" class="st-f" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M276 190 C296 200 316 184 338 196" class="st-soft dash" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="106" cy="174" r="5" class="fl"/>
+  <text x="106" y="194" class="t-xs mid ink">須磨へ退く</text>
+  <circle cx="219" cy="60" r="7" class="fl"/>
+  <text x="219" y="46" class="t-xs mid fl">栄華の頂点</text>
+  <circle cx="266" cy="176" r="5" class="ink"/>
+  <text x="296" y="160" class="t-xs mid ink">光源氏の死</text>
+  <text x="308" y="214" class="t-xs mid soft">子や孫へ</text>
+
+  <!-- 三つの部（帖の数に比例した幅） -->
+  <rect x="30" y="224" width="188" height="22" rx="4" class="tint"/>
+  <rect x="220" y="224" width="46" height="22" rx="4" class="tint"/>
+  <rect x="268" y="224" width="72" height="22" rx="4" class="fl"/>
+  <text x="124" y="239" class="t-xs mid ink">第一部（1〜33帖）</text>
+  <text x="243" y="239" class="t-xs mid ink">第二部</text>
+  <text x="304" y="239" class="t-xs mid on">第三部</text>
+  <text x="124" y="266" class="t-xs mid soft">恋と出世で栄華へ</text>
+  <text x="243" y="266" class="t-xs mid soft">衰え</text>
+  <text x="304" y="266" class="t-xs mid soft">宇治十帖など</text>
+</svg>

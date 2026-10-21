@@ -1,0 +1,61 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 凡例 -->
+  <circle cx="98" cy="18" r="8" class="fl"/><text x="110" y="22" class="t-xs ink">強拍</text>
+  <circle cx="160" cy="18" r="6" class="tint st-f" stroke-width="1.5"/><text x="170" y="22" class="t-xs ink">やや強</text>
+  <circle cx="228" cy="18" r="4" class="soft"/><text x="236" y="22" class="t-xs ink">弱拍</text>
+  <text x="14" y="62" class="t-s ink" font-weight="700">2拍子</text>
+  <text x="14" y="78" class="t-xs soft">行進曲</text>
+  <circle cx="98" cy="64" r="11" class="fl"/>
+  <circle cx="132" cy="64" r="5" class="soft"/>
+  <path d="M149.0 48 V80" class="st-line" stroke-width="1.5"/>
+  <circle cx="166" cy="64" r="11" class="fl"/>
+  <circle cx="200" cy="64" r="5" class="soft"/>
+  <path d="M217.0 48 V80" class="st-line" stroke-width="1.5"/>
+  <circle cx="234" cy="64" r="11" class="fl"/>
+  <circle cx="268" cy="64" r="5" class="soft"/>
+  <path d="M285.0 48 V80" class="st-line" stroke-width="1.5"/>
+  <circle cx="302" cy="64" r="11" class="fl"/>
+  <circle cx="336" cy="64" r="5" class="soft"/>
+  <text x="14" y="122" class="t-s ink" font-weight="700">3拍子</text>
+  <text x="14" y="138" class="t-xs soft">ワルツ</text>
+  <circle cx="94" cy="124" r="11" class="fl"/>
+  <circle cx="124" cy="124" r="5" class="soft"/>
+  <circle cx="154" cy="124" r="5" class="soft"/>
+  <path d="M169.0 108 V140" class="st-line" stroke-width="1.5"/>
+  <circle cx="184" cy="124" r="11" class="fl"/>
+  <circle cx="214" cy="124" r="5" class="soft"/>
+  <circle cx="244" cy="124" r="5" class="soft"/>
+  <path d="M259.0 108 V140" class="st-line" stroke-width="1.5"/>
+  <circle cx="274" cy="124" r="11" class="fl"/>
+  <circle cx="304" cy="124" r="5" class="soft"/>
+  <circle cx="334" cy="124" r="5" class="soft"/>
+  <text x="14" y="182" class="t-s ink" font-weight="700">4拍子</text>
+  <text x="14" y="198" class="t-xs soft">多くの曲</text>
+  <circle cx="98" cy="184" r="11" class="fl"/>
+  <circle cx="132" cy="184" r="5" class="soft"/>
+  <circle cx="166" cy="184" r="8" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="200" cy="184" r="5" class="soft"/>
+  <path d="M217.0 168 V200" class="st-line" stroke-width="1.5"/>
+  <circle cx="234" cy="184" r="11" class="fl"/>
+  <circle cx="268" cy="184" r="5" class="soft"/>
+  <circle cx="302" cy="184" r="8" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="336" cy="184" r="5" class="soft"/>
+  <path d="M10 214 H350" class="st-line" stroke-width="1"/>
+  <text x="14" y="234" class="t-xs fl" font-weight="700">シンコペーション：弱い所（裏）を強める</text>
+  <circle cx="98" cy="256" r="4" class="soft"/>
+  <text x="98" y="282" class="t-xs mid soft">表</text>
+  <circle cx="132" cy="256" r="10" class="fl"/>
+  <text x="132" y="282" class="t-xs mid soft">裏</text>
+  <circle cx="166" cy="256" r="4" class="soft"/>
+  <text x="166" y="282" class="t-xs mid soft">表</text>
+  <circle cx="200" cy="256" r="10" class="fl"/>
+  <text x="200" y="282" class="t-xs mid soft">裏</text>
+  <circle cx="234" cy="256" r="4" class="soft"/>
+  <text x="234" y="282" class="t-xs mid soft">表</text>
+  <circle cx="268" cy="256" r="4" class="soft"/>
+  <text x="268" y="282" class="t-xs mid soft">裏</text>
+  <circle cx="302" cy="256" r="10" class="fl"/>
+  <text x="302" y="282" class="t-xs mid soft">表</text>
+  <circle cx="336" cy="256" r="4" class="soft"/>
+  <text x="336" y="282" class="t-xs mid soft">裏</text>
+</svg>

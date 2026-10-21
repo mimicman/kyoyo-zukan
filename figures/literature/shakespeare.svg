@@ -1,0 +1,38 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- グローブ座（上から見た図） -->
+  <text x="94" y="46" class="t-xs mid soft">グローブ座（上から）</text>
+  <circle cx="94" cy="148" r="80" class="tint"/>
+  <circle cx="94" cy="148" r="80" class="st-f" stroke-width="2" stroke-dasharray="2 3"/>
+  <circle cx="94" cy="148" r="54" class="paper st-soft" stroke-width="1.5"/>
+  <path d="M60 68 H128 V136 H60 Z" class="fl"/>
+  <text x="94" y="108" class="t-m mid on">舞台</text>
+  <text x="94" y="124" class="t-xs mid on">突き出し</text>
+  <text x="94" y="172" class="t-s mid ink">立ち見</text>
+  <text x="94" y="188" class="t-xs mid soft">（平土間）</text>
+  <text x="94" y="219" class="t-xs mid ink halo">3階の桟敷席</text>
+  <text x="94" y="256" class="t-xs mid soft">身分の違う客が一緒に見る</text>
+
+  <!-- 作品の4つの種類 -->
+  <text x="270" y="30" class="t-xs mid soft">作品の4つの種類</text>
+  <rect x="190" y="40" width="160" height="50" rx="10" class="tint"/>
+  <text x="202" y="62" class="t-m ink">喜劇</text>
+  <text x="202" y="80" class="t-xs soft">『夏の夜の夢』</text>
+  <circle cx="330" cy="65" r="11" class="st-f" stroke-width="2"/>
+  <path d="M324 67 Q330 73 336 67" class="st-f" stroke-width="2"/>
+
+  <rect x="190" y="96" width="160" height="50" rx="10" class="tint"/>
+  <text x="202" y="118" class="t-m ink">歴史劇</text>
+  <text x="202" y="136" class="t-xs soft">『リチャード三世』</text>
+  <path d="M318 128 L320 110 L326 120 L330 106 L334 120 L340 110 L342 128 Z" class="st-f" stroke-width="2" stroke-linejoin="round"/>
+
+  <rect x="190" y="152" width="160" height="50" rx="10" class="fl"/>
+  <text x="202" y="174" class="t-m on">悲劇</text>
+  <text x="202" y="192" class="t-xs on">『ハムレット』など</text>
+  <circle cx="330" cy="177" r="11" class="paper"/>
+  <path d="M324 183 Q330 177 336 183" class="st-f" stroke-width="2"/>
+
+  <rect x="190" y="208" width="160" height="50" rx="10" class="tint"/>
+  <text x="202" y="230" class="t-m ink">ロマンス劇</text>
+  <text x="202" y="248" class="t-xs soft">『テンペスト』（晩年）</text>
+  <path d="M318 236 Q324 230 330 236 T342 236 M318 244 Q324 238 330 244 T342 244" class="st-f" stroke-width="2"/>
+</svg>

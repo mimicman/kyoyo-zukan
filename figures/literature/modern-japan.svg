@@ -1,0 +1,38 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 江戸：書き言葉と話し言葉が別 -->
+  <text x="20" y="64" class="t-xs ink">書き言葉</text>
+  <text x="20" y="166" class="t-xs soft">話し言葉</text>
+  <path d="M20 74 H90 C120 74 140 100 168 112" class="st" stroke-width="3" stroke-linecap="round"/>
+  <path d="M20 150 H90 C120 150 140 124 168 114" class="st-soft" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 西洋の小説が入ってくる -->
+  <text x="150" y="24" class="t-xs mid fl">西洋の小説（翻訳）</text>
+  <path d="M150 32 C150 60 160 80 166 100" class="st-f dash" stroke-width="2" marker-end="url(#a-literature)"/>
+
+  <!-- 言文一致 -->
+  <circle cx="170" cy="113" r="9" class="fl"/>
+  <text x="170" y="144" class="t-m mid fl">言文一致</text>
+  <text x="170" y="160" class="t-xs mid soft">『浮雲』など</text>
+
+  <!-- 二つの流れに -->
+  <path d="M180 108 C210 90 230 64 258 62" class="st-f" stroke-width="3" marker-end="url(#a-literature)"/>
+  <path d="M180 118 C210 140 230 186 258 188" class="st-f" stroke-width="3" marker-end="url(#a-literature)"/>
+  <rect x="262" y="36" width="90" height="56" rx="10" class="tint"/>
+  <text x="307" y="56" class="t-s mid ink">自然主義</text>
+  <text x="307" y="71" class="t-xs mid soft">藤村・花袋</text>
+  <text x="307" y="85" class="t-xs mid soft">→私小説へ</text>
+  <rect x="262" y="162" width="90" height="56" rx="10" class="fl"/>
+  <text x="307" y="183" class="t-s mid on">漱石・鷗外</text>
+  <text x="307" y="200" class="t-xs mid on">近代人の孤独</text>
+  <text x="307" y="212" class="t-xs mid on">やエゴ</text>
+
+  <!-- 時代 -->
+  <rect x="20" y="236" width="98" height="20" rx="4" class="tint"/>
+  <rect x="120" y="236" width="168" height="20" rx="4" class="tint"/>
+  <rect x="290" y="236" width="60" height="20" rx="4" class="tint"/>
+  <text x="69" y="250" class="t-xs mid ink">江戸</text>
+  <text x="204" y="250" class="t-xs mid ink">明治</text>
+  <text x="320" y="250" class="t-xs mid ink">大正</text>
+  <text x="119" y="272" class="t-xs mid soft">1868</text>
+  <text x="289" y="272" class="t-xs mid soft">1912</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 下半分＝未知の世界 -->
+  <path d="M88 142 A92 92 0 0 0 272 142 Z" class="tint"/>
+  <path d="M40 142 H320" class="st-soft dash" stroke-width="1.5"/>
+  <text x="180" y="108" class="t-m mid ink">日常の世界</text>
+  <text x="180" y="192" class="t-m mid fl">未知の世界</text>
+  <text x="180" y="146" class="t-xs mid soft halo">境界（越えると戻れない）</text>
+  <!-- 旅の道すじ（時計回り） -->
+  <path d="M189.6 50.5 A92 92 0 0 1 252.5 85.4" class="st-f" stroke-width="3" marker-end="url(#a-literature)"/>
+  <path d="M264.0 104.6 A92 92 0 0 1 271.3 130.8" class="st-f" stroke-width="3" marker-end="url(#a-literature)"/>
+  <path d="M271.3 153.2 A92 92 0 0 1 253.5 197.4" class="st-f" stroke-width="3" marker-end="url(#a-literature)"/>
+  <path d="M236.6 214.5 A92 92 0 0 1 192.8 233.1" class="st-f" stroke-width="3" marker-end="url(#a-literature)"/>
+  <path d="M167.2 233.1 A92 92 0 0 1 123.4 214.5" class="st-f" stroke-width="3" marker-end="url(#a-literature)"/>
+  <path d="M107.5 198.6 A92 92 0 0 1 88.7 153.2" class="st-f" stroke-width="3" marker-end="url(#a-literature)"/>
+  <path d="M88.7 130.8 A92 92 0 0 1 167.2 50.9" class="st-f" stroke-width="3" marker-end="url(#a-literature)"/>
+  <circle cx="180.0" cy="50.0" r="6" class="fl"/>
+  <circle cx="259.7" cy="96.0" r="6" class="fl"/>
+  <circle cx="272.0" cy="142.0" r="8" class="paper st-f" stroke-width="3"/>
+  <circle cx="245.1" cy="207.1" r="6" class="fl"/>
+  <circle cx="180.0" cy="234.0" r="6" class="fl"/>
+  <circle cx="114.9" cy="207.1" r="6" class="fl"/>
+  <circle cx="88.0" cy="142.0" r="8" class="paper st-f" stroke-width="3"/>
+  <text x="180" y="38" class="t-s mid ink">① 日常の暮らし</text>
+  <text x="268" y="84" class="t-s ink">② 旅立ち</text>
+  <text x="282" y="160" class="t-xs ink">③ 境界を越える</text>
+  <text x="252" y="222" class="t-xs ink">④ 仲間・師に出会う</text>
+  <text x="180" y="256" class="t-s mid fl">⑤ 最大の試練</text>
+  <text x="108" y="222" class="t-xs end ink">⑥ 宝や力を得る</text>
+  <text x="78" y="138" class="t-s end ink">⑦ 帰還</text>
+  <text x="78" y="154" class="t-xs end soft">宝を持ち帰る</text>
+</svg>

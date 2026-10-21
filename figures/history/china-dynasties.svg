@@ -1,0 +1,52 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 凡例 -->
+  <rect x="20" y="19" width="12" height="12" rx="2" class="fl"/>
+  <text x="37" y="29" class="t-xs ink">統一の時代</text>
+  <rect x="110" y="19" width="12" height="12" rx="2" class="tint"/>
+  <text x="127" y="29" class="t-xs ink">分裂の時代</text>
+
+  <!-- 王朝の帯（前221〜1912年。長さはおおよそ） -->
+  <rect x="20" y="42" width="67" height="58" class="fl"/>
+  <rect x="87" y="80" width="56" height="20" class="tint"/>
+  <rect x="143" y="42" width="48" height="58" class="fl"/>
+  <rect x="191" y="80" width="9" height="20" class="tint"/>
+  <rect x="200" y="42" width="48" height="58" class="fl"/>
+  <rect x="248" y="42" width="13" height="58" class="fl"/>
+  <rect x="261" y="42" width="43" height="58" class="fl"/>
+  <rect x="304" y="42" width="40" height="58" class="fl"/>
+  <path d="M248 42 V100 M261 42 V100 M304 42 V100" class="st-line" stroke-width="1.5"/>
+  <text x="53" y="76" class="t-s mid on" font-weight="700">秦・漢</text>
+  <text x="115" y="95" class="t-xs mid ink">三国など</text>
+  <text x="167" y="76" class="t-s mid on" font-weight="700">隋・唐</text>
+  <text x="224" y="76" class="t-s mid on" font-weight="700">宋</text>
+  <text x="254.5" y="75" class="t-xs mid on">元</text>
+  <text x="282" y="76" class="t-s mid on" font-weight="700">明</text>
+  <text x="324" y="76" class="t-s mid on" font-weight="700">清</text>
+
+  <!-- 年 -->
+  <path d="M20 104 H344" class="st-soft" stroke-width="1.5"/>
+  <text x="20" y="120" class="t-xs soft">前221</text>
+  <text x="87" y="120" class="t-xs mid soft">220</text>
+  <text x="143" y="120" class="t-xs mid soft">589</text>
+  <text x="194" y="120" class="t-xs mid soft">907</text>
+  <text x="248" y="120" class="t-xs mid soft">1279</text>
+  <text x="300" y="120" class="t-xs mid soft">1644</text>
+  <text x="344" y="120" class="t-xs end soft">1912</text>
+  <text x="20" y="140" class="t-xs soft">元はモンゴル人、清は満洲人が建てた王朝</text>
+
+  <!-- 王朝交代の輪 -->
+  <path d="M224 166 Q290 168 304 196" class="st-f" stroke-width="2" marker-end="url(#a-history)"/>
+  <path d="M304 230 Q292 258 226 260" class="st-f" stroke-width="2" marker-end="url(#a-history)"/>
+  <path d="M136 260 Q70 258 56 232" class="st-f" stroke-width="2" marker-end="url(#a-history)"/>
+  <path d="M56 200 Q70 170 134 166" class="st-f" stroke-width="2" marker-end="url(#a-history)"/>
+  <rect x="138" y="153" width="84" height="26" rx="13" class="fl"/>
+  <text x="180" y="170" class="t-s mid on">建国・統一</text>
+  <rect x="262" y="202" width="84" height="26" rx="13" class="tint"/>
+  <text x="304" y="219" class="t-s mid ink">栄える</text>
+  <rect x="138" y="247" width="84" height="26" rx="13" class="tint"/>
+  <text x="180" y="264" class="t-s mid ink">乱れ・反乱</text>
+  <rect x="14" y="202" width="84" height="26" rx="13" class="tint"/>
+  <text x="56" y="219" class="t-s mid ink">滅びる</text>
+  <text x="180" y="212" class="t-s mid fl" font-weight="700">天命が移り</text>
+  <text x="180" y="229" class="t-xs mid soft">次の王朝へ</text>
+</svg>

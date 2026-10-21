@@ -1,0 +1,24 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<path d="M40 30 V172 H210" class="st" stroke-width="1.5"/>
+  <text x="46" y="28" class="t-xs soft">水の事故</text>
+  <text x="210" y="186" class="t-xs end soft">アイスの売上</text>
+  <path d="M52 162 L200 48" class="st-soft dash" stroke-width="1.5"/>
+  <circle cx="49.8" cy="161.4" r="5" class="fl"/><circle cx="62.7" cy="154.9" r="5" class="fl"/><circle cx="77.5" cy="129.2" r="5" class="fl"/><circle cx="78.5" cy="145.4" r="5" class="fl"/><circle cx="93.2" cy="117.7" r="5" class="fl"/><circle cx="115.8" cy="116.7" r="5" class="fl"/><circle cx="124" cy="108.5" r="5" class="fl"/><circle cx="131.6" cy="89.6" r="5" class="fl"/><circle cx="142.3" cy="104.1" r="5" class="fl"/><circle cx="151.3" cy="91.6" r="5" class="fl"/><circle cx="164.4" cy="61.4" r="5" class="fl"/><circle cx="176.6" cy="69.8" r="5" class="fl"/><circle cx="180.1" cy="43.5" r="5" class="fl"/><circle cx="199.8" cy="49.1" r="5" class="fl"/>
+  <text x="224" y="56" class="t-m fl">右上がり</text>
+  <text x="224" y="76" class="t-s ink">＝正の相関</text>
+  <text x="224" y="110" class="t-s ink">でも、片方が</text>
+  <text x="224" y="128" class="t-s ink">もう片方の原因</text>
+  <text x="224" y="146" class="t-s ink">とはかぎらない</text>
+
+  <!-- 隠れた第3の要因 -->
+  <rect x="124" y="198" width="112" height="28" rx="8" class="fl"/>
+  <text x="180" y="217" class="t-s mid on">気温が高い（夏）</text>
+  <path d="M146 228 L98 244" class="st-f" stroke-width="2" marker-end="url(#a-statistics)"/>
+  <path d="M214 228 L262 244" class="st-f" stroke-width="2" marker-end="url(#a-statistics)"/>
+  <rect x="10" y="246" width="110" height="28" rx="8" class="tint"/><rect x="10" y="246" width="110" height="28" rx="8" class="st-f" stroke-width="1.5"/>
+  <text x="65" y="265" class="t-xs mid ink">アイスが売れる</text>
+  <rect x="240" y="246" width="110" height="28" rx="8" class="tint"/><rect x="240" y="246" width="110" height="28" rx="8" class="st-f" stroke-width="1.5"/>
+  <text x="295" y="265" class="t-xs mid ink">水の事故が増える</text>
+  <path d="M124 260 H236" class="st-soft dash" stroke-width="1.5"/>
+  <text x="180" y="264" class="t-xs mid soft halo">直接は無関係</text>
+</svg>

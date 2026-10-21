@@ -1,0 +1,31 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <text x="40" y="26" class="t-xs soft">9つの交響曲（高さ＝曲の長さ）</text>
+  <path d="M197.9 140 V103.6" class="st-f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M208.4 140 V95.2" class="st-f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M218.9 140 V72.8" class="st-f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M229.5 140 V93.8" class="st-f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M237.0 140 V95.2" class="st-f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M243.0 140 V84.0" class="st-f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M258.1 140 V86.8" class="st-f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M264.1 140 V103.6" class="st-f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M324.2 140 V44.8" class="st-f" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="324.2" cy="44.8" r="7" class="fl"/>
+  <text x="197.9" y="95.6" class="t-xs mid ink">第1番</text>
+  <text x="218.9" y="64.8" class="t-xs mid ink">英雄</text>
+  <text x="235.0" y="73.2" class="t-xs mid ink">運命</text>
+  <text x="324.2" y="30.8" class="t-s mid fl">第九（合唱）</text>
+  <path d="M40 140 H340" class="st" stroke-width="1.5"/>
+  <text x="40.0" y="158" class="t-xs mid soft">1770</text>
+  <text x="197.9" y="158" class="t-xs mid soft">1800</text>
+  <text x="344.0" y="158" class="t-xs end soft">1827</text>
+  <!-- 聴力 -->
+  <path d="M40 182 H187.4 C227.4 186 257.4 220 340 258" class="st" stroke-width="3" stroke-linecap="round"/>
+  <text x="44" y="176" class="t-s ink">聴力</text>
+  <circle cx="187.4" cy="182" r="5" class="fl"/>
+  <text x="181.4" y="204" class="t-xs end fl">20代の終わりに衰え始める</text>
+  <text x="340" y="276" class="t-xs end ink">晩年はほとんど聞こえない</text>
+  <rect x="40" y="282" width="114.8" height="16" rx="3" class="tint"/>
+  <rect x="156.8" y="282" width="183.2" height="16" rx="3" class="tint"/>
+  <text x="97.9" y="294" class="t-xs mid ink">ボン</text>
+  <text x="247.9" y="294" class="t-xs mid ink">ウィーン（1792年〜）</text>
+</svg>

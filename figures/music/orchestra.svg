@@ -1,0 +1,33 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 扇形の配置（下が客席側） -->
+  <path d="M72.0 256.0 A108 108 0 0 1 102.3 181.0 L151.2 228.2 A40 40 0 0 0 140.0 256.0 Z" class="fl" stroke-width="2"/>
+  <path d="M102.3 181.0 A108 108 0 0 1 176.2 148.1 L178.6 216.0 A40 40 0 0 0 151.2 228.2 Z" class="fl" stroke-width="2"/>
+  <path d="M176.2 148.1 A108 108 0 0 1 252.3 175.7 L206.8 226.3 A40 40 0 0 0 178.6 216.0 Z" class="fl" stroke-width="2"/>
+  <path d="M252.3 175.7 A108 108 0 0 1 288.0 256.0 L220.0 256.0 A40 40 0 0 0 206.8 226.3 Z" class="fl" stroke-width="2"/>
+  <path d="M79.6 144.5 A150 150 0 0 1 272.3 137.8 L249.0 167.7 A112 112 0 0 0 105.1 172.8 Z" class="tint" stroke-width="2"/>
+  <path d="M294.9 159.6 A150 150 0 0 1 329.2 240.3 L291.4 244.3 A112 112 0 0 0 265.8 184.0 Z" class="fl" stroke-width="2"/>
+  <path d="M32.9 132.6 A192 192 0 0 1 318.1 122.6 L290.8 149.0 A154 154 0 0 0 62.0 157.0 Z" class="paper st-f" stroke-width="2"/>
+  <path d="M59.2 62.6 A228 228 0 0 1 300.8 62.6 L283.9 89.8 A196 196 0 0 0 76.1 89.8 Z" class="soft" stroke-width="2"/>
+  <path d="M151.2 228.2 L102.3 181.0" class="st-line" stroke-width="3"/>
+  <path d="M178.6 216.0 L176.2 148.1" class="st-line" stroke-width="3"/>
+  <path d="M206.8 226.3 L252.3 175.7" class="st-line" stroke-width="3"/>
+  <text x="109.5" y="224.5" class="t-xs mid on">第1</text>
+  <text x="109.5" y="238.5" class="t-xs mid on">バイオリン</text>
+  <text x="149.1" y="183.6" class="t-xs mid on">第2</text>
+  <text x="149.1" y="197.6" class="t-xs mid on">バイオリン</text>
+  <text x="206.0" y="188.6" class="t-xs mid on">ビオラ</text>
+  <text x="251.3" y="228.3" class="t-xs mid on">チェロ</text>
+  <text x="175.4" y="129.1" class="t-xs mid ink">木管楽器</text>
+  <text x="174.0" y="87.1" class="t-xs mid ink">金管楽器</text>
+  <text x="180.0" y="48.0" class="t-xs mid paper">打楽器</text>
+  <text x="180" y="14" class="t-xs mid soft">ティンパニなど</text>
+  <circle cx="180" cy="256" r="8" class="ink"/>
+  <text x="180" y="282" class="t-xs mid ink">指揮者</text>
+  <text x="352" y="262" class="t-xs end fl">コントラバス</text>
+  <text x="352" y="282" class="t-xs end soft">客席はこちら ↓</text>
+  <!-- 音の大きさ -->
+  <path d="M26 228 V60" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="14" y="44" class="t-xs ink">音が大きい</text>
+  <text x="14" y="246" class="t-xs soft">音が小さい</text>
+  <text x="68" y="282" class="t-xs mid fl">前は弦楽器</text>
+</svg>

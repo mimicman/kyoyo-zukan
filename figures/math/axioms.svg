@@ -1,0 +1,43 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<text x="180" y="18" class="t-s mid soft">前提を認めれば、あとは論理だけで積み上がる</text>
+  <!-- 段のラベル -->
+  <text x="40" y="62" class="t-m mid fl">定理</text>
+  <text x="40" y="146" class="t-m mid ink">定理</text>
+  <text x="40" y="232" class="t-m mid ink">公理</text>
+  <text x="40" y="248" class="t-xs mid soft">（前提）</text>
+
+  <!-- 一番上 -->
+  <rect x="148" y="30" width="148" height="44" rx="8" class="fl"/>
+  <text x="222" y="48" class="t-xs mid on">第1巻 命題47</text>
+  <text x="222" y="66" class="t-s mid on">ピタゴラスの定理</text>
+
+  <!-- 中段 -->
+  <rect x="96" y="114" width="112" height="44" rx="8" class="tint"/><rect x="96" y="114" width="112" height="44" rx="8" class="st-f" stroke-width="1.5"/>
+  <text x="152" y="132" class="t-xs mid soft">第1巻 命題1</text>
+  <text x="152" y="150" class="t-xs mid ink">正三角形が描ける</text>
+  <rect x="236" y="114" width="112" height="44" rx="8" class="tint"/><rect x="236" y="114" width="112" height="44" rx="8" class="st-f" stroke-width="1.5"/>
+  <text x="292" y="132" class="t-xs mid soft">第1巻 命題4</text>
+  <text x="292" y="150" class="t-xs mid ink">三角形の合同</text>
+
+  <!-- 下段：公理・公準 -->
+  <rect x="84" y="204" width="84" height="46" rx="8" class="paper"/><rect x="84" y="204" width="84" height="46" rx="8" class="st" stroke-width="1.5"/>
+  <text x="126" y="223" class="t-xs mid ink">2点を</text>
+  <text x="126" y="240" class="t-xs mid ink">直線で結べる</text>
+  <rect x="176" y="204" width="84" height="46" rx="8" class="paper"/><rect x="176" y="204" width="84" height="46" rx="8" class="st" stroke-width="1.5"/>
+  <text x="218" y="223" class="t-xs mid ink">中心と半径で</text>
+  <text x="218" y="240" class="t-xs mid ink">円が描ける</text>
+  <rect x="268" y="204" width="84" height="46" rx="8" class="paper"/><rect x="268" y="204" width="84" height="46" rx="8" class="st" stroke-width="1.5"/>
+  <text x="310" y="223" class="t-xs mid ink">直角は</text>
+  <text x="310" y="240" class="t-xs mid ink">みな等しい</text>
+
+  <!-- 証明の矢印（下から上へ） -->
+  <path d="M126 202 L142 162" class="st-f" stroke-width="2" marker-end="url(#a-math)"/>
+  <path d="M210 202 L166 162" class="st-f" stroke-width="2" marker-end="url(#a-math)"/>
+  <path d="M226 202 L278 162" class="st-f" stroke-width="2" marker-end="url(#a-math)"/>
+  <path d="M306 202 L298 162" class="st-f" stroke-width="2" marker-end="url(#a-math)"/>
+  <path d="M164 112 L200 78" class="st-f" stroke-width="2" marker-end="url(#a-math)"/>
+  <path d="M284 112 L246 78" class="st-f" stroke-width="2" marker-end="url(#a-math)"/>
+  <text x="222" y="100" class="t-xs mid soft">証明</text>
+
+  <text x="180" y="272" class="t-xs mid soft">ユークリッド『原論』（紀元前300年ごろ）の組み立て</text>
+</svg>

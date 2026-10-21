@@ -1,0 +1,55 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 長三和音と短三和音 -->
+  <text x="18" y="30" class="t-s fl" font-weight="700">長三和音（明るい）</text>
+  <rect x="18" y="38" width="22" height="62" class="paper st" stroke-width="1.2"/>
+  <rect x="40" y="38" width="22" height="62" class="paper st" stroke-width="1.2"/>
+  <rect x="62" y="38" width="22" height="62" class="paper st" stroke-width="1.2"/>
+  <rect x="84" y="38" width="22" height="62" class="paper st" stroke-width="1.2"/>
+  <rect x="106" y="38" width="22" height="62" class="paper st" stroke-width="1.2"/>
+  <rect x="128" y="38" width="22" height="62" class="paper st" stroke-width="1.2"/>
+  <rect x="150" y="38" width="22" height="62" class="paper st" stroke-width="1.2"/>
+  <rect x="33" y="38" width="14" height="36" rx="1.5" class="ink"/>
+  <rect x="55" y="38" width="14" height="36" rx="1.5" class="ink"/>
+  <rect x="99" y="38" width="14" height="36" rx="1.5" class="ink"/>
+  <rect x="121" y="38" width="14" height="36" rx="1.5" class="ink"/>
+  <rect x="143" y="38" width="14" height="36" rx="1.5" class="ink"/>
+  <circle cx="29.0" cy="88" r="6.5" class="fl"/>
+  <circle cx="73.0" cy="88" r="6.5" class="fl"/>
+  <circle cx="117.0" cy="88" r="6.5" class="fl"/>
+  <text x="18" y="122" class="t-xs soft">ド・ミ・ソ（1つおきに3音）</text>
+  <text x="18" y="156" class="t-s ink" font-weight="700">短三和音（暗い）</text>
+  <rect x="18" y="164" width="22" height="62" class="paper st" stroke-width="1.2"/>
+  <rect x="40" y="164" width="22" height="62" class="paper st" stroke-width="1.2"/>
+  <rect x="62" y="164" width="22" height="62" class="paper st" stroke-width="1.2"/>
+  <rect x="84" y="164" width="22" height="62" class="paper st" stroke-width="1.2"/>
+  <rect x="106" y="164" width="22" height="62" class="paper st" stroke-width="1.2"/>
+  <rect x="128" y="164" width="22" height="62" class="paper st" stroke-width="1.2"/>
+  <rect x="150" y="164" width="22" height="62" class="paper st" stroke-width="1.2"/>
+  <rect x="33" y="164" width="14" height="36" rx="1.5" class="ink"/>
+  <rect x="55" y="164" width="14" height="36" rx="1.5" class="ink"/>
+  <rect x="99" y="164" width="14" height="36" rx="1.5" class="ink"/>
+  <rect x="121" y="164" width="14" height="36" rx="1.5" class="ink"/>
+  <rect x="143" y="164" width="14" height="36" rx="1.5" class="ink"/>
+  <circle cx="29.0" cy="214" r="6.5" class="fl"/>
+  <circle cx="117.0" cy="214" r="6.5" class="fl"/>
+  <circle cx="62" cy="190" r="6" class="fl"/>
+  <text x="18" y="248" class="t-xs soft">ド・ミ♭・ソ</text>
+  <text x="18" y="266" class="t-xs fl">真ん中が半音下がる</text>
+  <path d="M184 20 V270" class="st-line" stroke-width="1"/>
+  <!-- 和音の進み方 -->
+  <text x="263" y="36" class="t-s mid ink">和音の進み方</text>
+  <rect x="192" y="188" width="28" height="40" rx="4" class="tint"/>
+  <text x="206" y="180" class="t-xs mid ink">安定</text>
+  <text x="206" y="248" class="t-m mid ink">I</text>
+  <rect x="230" y="158" width="28" height="70" rx="4" class="tint"/>
+  <text x="244" y="150" class="t-xs mid ink">広がる</text>
+  <text x="244" y="248" class="t-m mid ink">IV</text>
+  <rect x="268" y="118" width="28" height="110" rx="4" class="fl"/>
+  <text x="282" y="110" class="t-xs mid fl">緊張</text>
+  <text x="282" y="248" class="t-m mid ink">V</text>
+  <rect x="306" y="188" width="28" height="40" rx="4" class="tint"/>
+  <text x="320" y="180" class="t-xs mid ink">解決</text>
+  <text x="320" y="248" class="t-m mid ink">I</text>
+  <path d="M296 112 C312 110 320 140 320 166" class="st-f" stroke-width="2" marker-end="url(#a-music)"/>
+  <text x="263" y="56" class="t-xs mid soft">V→I で「帰ってきた」感じ</text>
+</svg>

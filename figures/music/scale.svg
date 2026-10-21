@@ -1,0 +1,43 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 1オクターブ：振動数が2倍 -->
+  <path d="M50 52 C110 14 250 14 310 52" class="st-f" stroke-width="2.5" marker-end="url(#a-music)"/>
+  <text x="180" y="22" class="t-s mid fl halo">1オクターブ＝振動数が2倍</text>
+  <!-- 鍵盤 -->
+  <rect x="30.0" y="60" width="37.5" height="130" class="tint st" stroke-width="1.5"/>
+  <rect x="67.5" y="60" width="37.5" height="130" class="paper st" stroke-width="1.5"/>
+  <rect x="105.0" y="60" width="37.5" height="130" class="paper st" stroke-width="1.5"/>
+  <rect x="142.5" y="60" width="37.5" height="130" class="paper st" stroke-width="1.5"/>
+  <rect x="180.0" y="60" width="37.5" height="130" class="paper st" stroke-width="1.5"/>
+  <rect x="217.5" y="60" width="37.5" height="130" class="paper st" stroke-width="1.5"/>
+  <rect x="255.0" y="60" width="37.5" height="130" class="paper st" stroke-width="1.5"/>
+  <rect x="292.5" y="60" width="37.5" height="130" class="tint st" stroke-width="1.5"/>
+  <text x="48.75" y="180" class="t-s mid fl">ド</text>
+  <text x="86.25" y="180" class="t-s mid ink">レ</text>
+  <text x="123.75" y="180" class="t-s mid ink">ミ</text>
+  <text x="161.25" y="180" class="t-s mid ink">ファ</text>
+  <text x="198.75" y="180" class="t-s mid ink">ソ</text>
+  <text x="236.25" y="180" class="t-s mid ink">ラ</text>
+  <text x="273.75" y="180" class="t-s mid ink">シ</text>
+  <text x="311.25" y="180" class="t-s mid fl">ド</text>
+  <rect x="56.5" y="60" width="22" height="78" rx="2" class="ink"/>
+  <rect x="94.0" y="60" width="22" height="78" rx="2" class="ink"/>
+  <rect x="169.0" y="60" width="22" height="78" rx="2" class="ink"/>
+  <rect x="206.5" y="60" width="22" height="78" rx="2" class="ink"/>
+  <rect x="244.0" y="60" width="22" height="78" rx="2" class="ink"/>
+  <path d="M51.75 198 Q67.5 212 83.25 198" class="st-soft" stroke-width="1.5"/>
+  <text x="67.5" y="230" class="t-s soft mid">全</text>
+  <path d="M89.25 198 Q105.0 212 120.75 198" class="st-soft" stroke-width="1.5"/>
+  <text x="105.0" y="230" class="t-s soft mid">全</text>
+  <path d="M126.75 198 Q142.5 212 158.25 198" class="st-f" stroke-width="2.5"/>
+  <text x="142.5" y="230" class="t-m fl mid">半</text>
+  <path d="M164.25 198 Q180.0 212 195.75 198" class="st-soft" stroke-width="1.5"/>
+  <text x="180.0" y="230" class="t-s soft mid">全</text>
+  <path d="M201.75 198 Q217.5 212 233.25 198" class="st-soft" stroke-width="1.5"/>
+  <text x="217.5" y="230" class="t-s soft mid">全</text>
+  <path d="M239.25 198 Q255.0 212 270.75 198" class="st-soft" stroke-width="1.5"/>
+  <text x="255.0" y="230" class="t-s soft mid">全</text>
+  <path d="M276.75 198 Q292.5 212 308.25 198" class="st-f" stroke-width="2.5"/>
+  <text x="292.5" y="230" class="t-m fl mid">半</text>
+  <text x="180" y="254" class="t-xs mid ink">長音階＝全・全・半・全・全・全・半</text>
+  <text x="180" y="272" class="t-xs mid soft">黒鍵も入れると、1オクターブは12の半音</text>
+</svg>

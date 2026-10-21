@@ -1,0 +1,23 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 全部が同時に鳴る区間 -->
+  <rect x="214" y="36" width="134" height="196" rx="10" class="tint"/>
+  <path d="M48 80 H348" class="st-line" stroke-width="1"/>
+  <text x="10" y="84" class="t-xs ink">上の声</text>
+  <path d="M52 80 l10 -14 l10 8 l10 -16 l10 12 l10 -6 l10 10 l10 -8 l10 14" class="st-f" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="92" y="54" class="t-xs mid fl">主題</text>
+  <path d="M132.0 80.0 L137.3 77.9 L142.7 76.1 L148.1 74.6 L153.4 73.5 L158.8 73.0 L164.1 73.2 L169.4 73.9 L174.8 75.2 L180.2 76.9 L185.5 78.8 L190.8 80.9 L196.2 82.9 L201.6 84.6 L206.9 86.0 L212.2 86.8 L217.6 87.0 L222.9 86.6 L228.3 85.6 L233.7 84.2 L239.0 82.3 L244.3 80.3 L249.7 78.2 L255.1 76.3 L260.4 74.7 L265.8 73.6 L271.1 73.1 L276.4 73.1 L281.8 73.8 L287.1 75.0 L292.5 76.6 L297.9 78.5 L303.2 80.6 L308.6 82.6 L313.9 84.4 L319.2 85.8 L324.6 86.7 L329.9 87.0 L335.3 86.7 L340.6 85.8 L346.0 84.4" class="st-soft" stroke-width="2"/>
+  <path d="M48 148 H348" class="st-line" stroke-width="1"/>
+  <text x="10" y="152" class="t-xs ink">中の声</text>
+  <path d="M132 148 l10 -14 l10 8 l10 -16 l10 12 l10 -6 l10 10 l10 -8 l10 14" class="st-f" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="172" y="122" class="t-xs mid fl">主題</text>
+  <path d="M212.0 148.0 L215.3 146.7 L218.7 145.5 L222.1 144.3 L225.4 143.3 L228.8 142.4 L232.1 141.7 L235.4 141.2 L238.8 141.0 L242.2 141.0 L245.5 141.3 L248.8 141.8 L252.2 142.5 L255.6 143.4 L258.9 144.4 L262.2 145.6 L265.6 146.9 L268.9 148.2 L272.3 149.4 L275.6 150.7 L279.0 151.8 L282.4 152.9 L285.7 153.7 L289.1 154.4 L292.4 154.8 L295.8 155.0 L299.1 154.9 L302.4 154.7 L305.8 154.1 L309.1 153.4 L312.5 152.5 L315.9 151.4 L319.2 150.3 L322.6 149.0 L325.9 147.7 L329.2 146.4 L332.6 145.2 L335.9 144.0 L339.3 143.0 L342.6 142.2 L346.0 141.6" class="st-soft" stroke-width="2"/>
+  <path d="M48 216 H348" class="st-line" stroke-width="1"/>
+  <text x="10" y="220" class="t-xs ink">下の声</text>
+  <path d="M212 216 l10 -14 l10 8 l10 -16 l10 12 l10 -6 l10 10 l10 -8 l10 14" class="st-f" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="252" y="190" class="t-xs mid fl">主題</text>
+  <path d="M292.0 216.0 L293.4 215.5 L294.7 215.0 L296.1 214.4 L297.4 213.9 L298.8 213.4 L300.1 213.0 L301.4 212.5 L302.8 212.0 L304.1 211.6 L305.5 211.2 L306.9 210.9 L308.2 210.5 L309.6 210.2 L310.9 209.9 L312.2 209.7 L313.6 209.5 L314.9 209.3 L316.3 209.2 L317.6 209.1 L319.0 209.0 L320.4 209.0 L321.7 209.0 L323.1 209.1 L324.4 209.2 L325.8 209.3 L327.1 209.5 L328.4 209.7 L329.8 210.0 L331.1 210.2 L332.5 210.6 L333.9 210.9 L335.2 211.3 L336.6 211.7 L337.9 212.1 L339.2 212.5 L340.6 213.0 L341.9 213.5 L343.3 214.0 L344.6 214.5 L346.0 215.0" class="st-soft" stroke-width="2"/>
+  <text x="200" y="56" class="t-xs mid soft halo">別の旋律を続ける</text>
+  <text x="281" y="254" class="t-xs mid fl">3つの旋律が同時に鳴る</text>
+  <path d="M52 268 H200" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="44" y="272" class="t-xs end soft">時間</text>
+</svg>

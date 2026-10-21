@@ -1,0 +1,81 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 俳句：1マス＝1音 -->
+  <text x="20" y="30" class="t-s fl" font-weight="700">俳句　5・7・5（17音）</text>
+  <rect x="50" y="40" width="12" height="12" rx="2" class="fl"/>
+  <rect x="64" y="40" width="12" height="12" rx="2" class="fl"/>
+  <rect x="78" y="40" width="12" height="12" rx="2" class="fl"/>
+  <rect x="92" y="40" width="12" height="12" rx="2" class="fl"/>
+  <rect x="106" y="40" width="12" height="12" rx="2" class="fl"/>
+  <rect x="130" y="40" width="12" height="12" rx="2" class="fl"/>
+  <rect x="144" y="40" width="12" height="12" rx="2" class="fl"/>
+  <rect x="158" y="40" width="12" height="12" rx="2" class="fl"/>
+  <rect x="172" y="40" width="12" height="12" rx="2" class="fl"/>
+  <rect x="186" y="40" width="12" height="12" rx="2" class="fl"/>
+  <rect x="200" y="40" width="12" height="12" rx="2" class="fl"/>
+  <rect x="214" y="40" width="12" height="12" rx="2" class="fl"/>
+  <rect x="238" y="40" width="12" height="12" rx="2" class="fl"/>
+  <rect x="252" y="40" width="12" height="12" rx="2" class="fl"/>
+  <rect x="266" y="40" width="12" height="12" rx="2" class="fl"/>
+  <rect x="280" y="40" width="12" height="12" rx="2" class="fl"/>
+  <rect x="294" y="40" width="12" height="12" rx="2" class="fl"/>
+  <!-- 和歌（短歌） -->
+  <text x="20" y="84" class="t-s ink" font-weight="700">和歌（短歌）　5・7・5・7・7（31音）</text>
+  <text x="44" y="104" class="t-xs end soft">上の句</text>
+  <rect x="50" y="94" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="64" y="94" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="78" y="94" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="92" y="94" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="106" y="94" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="130" y="94" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="144" y="94" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="158" y="94" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="172" y="94" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="186" y="94" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="200" y="94" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="214" y="94" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="238" y="94" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="252" y="94" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="266" y="94" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="280" y="94" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="294" y="94" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <text x="44" y="124" class="t-xs end soft">下の句</text>
+  <rect x="50" y="114" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="64" y="114" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="78" y="114" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="92" y="114" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="106" y="114" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="120" y="114" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="134" y="114" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="158" y="114" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="172" y="114" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="186" y="114" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="200" y="114" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="214" y="114" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="228" y="114" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <rect x="242" y="114" width="12" height="12" rx="2" class="tint st-f" stroke-width="1.2"/>
+  <path d="M10 146 H350" class="st-line" stroke-width="1"/>
+  <!-- ソネット：14行 -->
+  <text x="20" y="170" class="t-s ink" font-weight="700">ソネット　14行</text>
+  <path d="M24 186 H88" class="st-soft" stroke-width="3" stroke-linecap="round"/>
+  <path d="M24 197 H80" class="st-soft" stroke-width="3" stroke-linecap="round"/>
+  <path d="M24 208 H88" class="st-soft" stroke-width="3" stroke-linecap="round"/>
+  <path d="M24 219 H80" class="st-soft" stroke-width="3" stroke-linecap="round"/>
+  <path d="M106 186 H170" class="st-soft" stroke-width="3" stroke-linecap="round"/>
+  <path d="M106 197 H162" class="st-soft" stroke-width="3" stroke-linecap="round"/>
+  <path d="M106 208 H170" class="st-soft" stroke-width="3" stroke-linecap="round"/>
+  <path d="M106 219 H162" class="st-soft" stroke-width="3" stroke-linecap="round"/>
+  <path d="M188 186 H252" class="st-soft" stroke-width="3" stroke-linecap="round"/>
+  <path d="M188 197 H244" class="st-soft" stroke-width="3" stroke-linecap="round"/>
+  <path d="M188 208 H252" class="st-soft" stroke-width="3" stroke-linecap="round"/>
+  <path d="M188 219 H244" class="st-soft" stroke-width="3" stroke-linecap="round"/>
+  <path d="M270 186 H334" class="st-f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M270 197 H326" class="st-f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M90 202 H100" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M172 202 H182" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M254 202 H264" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="56" y="244" class="t-xs mid soft">4行</text>
+  <text x="138" y="244" class="t-xs mid soft">4行</text>
+  <text x="220" y="244" class="t-xs mid soft">4行</text>
+  <text x="302" y="244" class="t-xs mid fl">2行でまとめ</text>
+  <text x="180" y="270" class="t-xs mid soft">シェイクスピア風の形（4＋4＋4＋2）</text>
+</svg>

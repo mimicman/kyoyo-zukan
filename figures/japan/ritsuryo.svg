@@ -1,0 +1,39 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 年表 -->
+  <path d="M30 40 H330" class="st-soft" stroke-width="2"/>
+  <path d="M84 40 H152" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+  <path d="M204 40 H272" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+  <circle cx="60" cy="40" r="7" class="fl"/>
+  <circle cx="180" cy="40" r="7" class="fl"/>
+  <circle cx="300" cy="40" r="7" class="fl"/>
+  <text x="60" y="26" class="t-m mid ink">645</text>
+  <text x="180" y="26" class="t-m mid ink">701</text>
+  <text x="300" y="26" class="t-m mid ink">710</text>
+  <text x="60" y="64" class="t-s mid ink">大化の改新</text>
+  <text x="180" y="64" class="t-s mid ink">大宝律令</text>
+  <text x="300" y="64" class="t-s mid ink">平城京へ</text>
+  <text x="60" y="80" class="t-xs mid soft">改革の始まり</text>
+  <text x="180" y="80" class="t-xs mid soft">法が完成</text>
+  <text x="300" y="80" class="t-xs mid soft">唐風の都</text>
+
+  <!-- 国と人々のやりとり -->
+  <rect x="110" y="96" width="140" height="40" rx="10" class="fl"/>
+  <text x="180" y="121" class="t-m mid on">国（朝廷）</text>
+  <rect x="110" y="230" width="140" height="40" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="180" y="255" class="t-m mid ink">人々（農民）</text>
+
+  <path d="M116 140 C80 164 80 202 116 226" class="st-f" stroke-width="2.5" marker-end="url(#a-japan)"/>
+  <text x="14" y="172" class="t-s fl" font-weight="700">田を貸す</text>
+  <text x="14" y="188" class="t-xs soft">口分田</text>
+  <text x="14" y="204" class="t-xs soft">6歳以上に</text>
+
+  <path d="M244 226 C280 202 280 164 244 140" class="st" stroke-width="2.5" marker-end="url(#a-ink)"/>
+  <text x="346" y="172" class="t-s end ink" font-weight="700">税を納める</text>
+  <text x="346" y="188" class="t-xs end soft">租・調・庸</text>
+  <text x="346" y="204" class="t-xs end soft">兵役も</text>
+
+  <!-- 戸籍 -->
+  <rect x="158" y="150" width="44" height="54" rx="3" class="paper st-soft" stroke-width="1.5"/>
+  <path d="M166 164 H194 M166 174 H194 M166 184 H194 M166 194 H184" class="st-line" stroke-width="2"/>
+  <text x="180" y="222" class="t-s mid ink">戸籍</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<!-- オイラー図 -->
+  <ellipse cx="88" cy="128" rx="78" ry="100" class="tint"/><ellipse cx="88" cy="128" rx="78" ry="100" class="st-f" stroke-width="2"/>
+  <text x="88" y="54" class="t-m mid ink">哺乳類</text>
+  <circle cx="88" cy="160" r="38" class="fl"/>
+  <text x="88" y="166" class="t-m mid on">人間</text>
+  <circle cx="58" cy="94" r="5" class="ink"/>
+  <text x="68" y="98" class="t-xs ink">犬</text>
+  <circle cx="114" cy="96" r="5" class="ink"/>
+  <text x="124" y="100" class="t-xs ink">猫</text>
+  <circle cx="22" cy="258" r="5" class="soft"/>
+  <text x="32" y="262" class="t-xs soft">魚：哺乳類の外 → 人間でもない</text>
+  <!-- 4つの言い方 -->
+  <rect x="178" y="24" width="176" height="52" rx="8" class="tint"/><text x="188" y="45" class="t-m fl">元の文</text><text x="344" y="45" class="t-s end fl">○ 正しい</text><text x="188" y="65" class="t-xs ink">人間ならば哺乳類</text><rect x="178" y="84" width="176" height="52" rx="8" class="st-line" stroke-width="1"/><text x="188" y="105" class="t-m soft">逆</text><text x="344" y="105" class="t-s end soft">× 正しくない</text><text x="188" y="125" class="t-xs ink">哺乳類ならば人間</text><rect x="178" y="144" width="176" height="52" rx="8" class="st-line" stroke-width="1"/><text x="188" y="165" class="t-m soft">裏</text><text x="344" y="165" class="t-s end soft">× 正しくない</text><text x="188" y="185" class="t-xs ink">人間でないならば哺乳類でない</text><rect x="178" y="204" width="176" height="52" rx="8" class="tint"/><text x="188" y="225" class="t-m fl">対偶</text><text x="344" y="225" class="t-s end fl">○ 正しい</text><text x="188" y="245" class="t-xs ink">哺乳類でないならば人間でない</text>
+</svg>

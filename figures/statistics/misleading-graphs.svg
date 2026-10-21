@@ -1,0 +1,11 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+<text x="80" y="22" class="t-s mid ink">縦軸が0から</text><path d="M30 44 V220 H160" class="st" stroke-width="1.5"/><rect x="48" y="63.2" width="40" height="156.8" rx="3" class="soft" opacity="0.6"/><rect x="104" y="60" width="40" height="160" rx="3" class="fl"/><text x="68" y="57.2" class="t-s mid ink">98</text><text x="124" y="54" class="t-s mid fl">100</text><text x="68" y="236" class="t-s mid ink">A社</text><text x="124" y="236" class="t-s mid ink">B社</text><text x="24" y="224" class="t-xs end soft">0</text><text x="24" y="64" class="t-xs end soft">100</text><path d="M30 60 h-4" class="st" stroke-width="1.5"/>
+  <text x="260" y="22" class="t-s mid fl">縦軸が95から</text><path d="M210 44 V220 H340" class="st" stroke-width="1.5"/><rect x="228" y="124" width="40" height="96" rx="3" class="soft" opacity="0.6"/><rect x="284" y="60" width="40" height="160" rx="3" class="fl"/><text x="248" y="118" class="t-s mid ink">98</text><text x="304" y="54" class="t-s mid fl">100</text><text x="248" y="236" class="t-s mid ink">A社</text><text x="304" y="236" class="t-s mid ink">B社</text><text x="204" y="224" class="t-xs end soft">95</text><text x="204" y="64" class="t-xs end soft">100</text><path d="M210 60 h-4" class="st" stroke-width="1.5"/>
+  <!-- 軸を途中で切ったしるし -->
+  <path d="M204 206 l12 -4 M204 212 l12 -4" class="st" stroke-width="1.5"/>
+  <text x="90" y="40" class="t-xs mid soft">ほとんど同じ</text>
+  <text x="270" y="40" class="t-xs mid fl">B社が圧勝に見える</text>
+  <path d="M180 30 V236" class="st-line" stroke-width="1"/>
+  <text x="180" y="262" class="t-s mid ink">同じ数字でも、軸の切り方で印象が変わる</text>
+  <text x="180" y="278" class="t-xs mid soft">→ まず縦軸の目盛りがどこから始まるかを見る</text>
+</svg>

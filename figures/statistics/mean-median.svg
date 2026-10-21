@@ -1,0 +1,18 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<text x="180" y="16" class="t-xs mid soft">7人の1か月の読書数（冊）を小さい順に</text>
+  <rect x="36" y="26" width="36" height="30" rx="6" class="paper"/><rect x="36" y="26" width="36" height="30" rx="6" class="st-f" stroke-width="1.5"/><text x="54" y="47" class="t-m mid ink">1</text><rect x="78" y="26" width="36" height="30" rx="6" class="paper"/><rect x="78" y="26" width="36" height="30" rx="6" class="st-f" stroke-width="1.5"/><text x="96" y="47" class="t-m mid ink">2</text><rect x="120" y="26" width="36" height="30" rx="6" class="paper"/><rect x="120" y="26" width="36" height="30" rx="6" class="st-f" stroke-width="1.5"/><text x="138" y="47" class="t-m mid ink">2</text><rect x="162" y="26" width="36" height="30" rx="6" class="fl"/><rect x="162" y="26" width="36" height="30" rx="6" class="st-f" stroke-width="1.5"/><text x="180" y="47" class="t-m mid on">3</text><rect x="204" y="26" width="36" height="30" rx="6" class="paper"/><rect x="204" y="26" width="36" height="30" rx="6" class="st-f" stroke-width="1.5"/><text x="222" y="47" class="t-m mid ink">3</text><rect x="246" y="26" width="36" height="30" rx="6" class="paper"/><rect x="246" y="26" width="36" height="30" rx="6" class="st-f" stroke-width="1.5"/><text x="264" y="47" class="t-m mid ink">4</text><rect x="288" y="26" width="36" height="30" rx="6" class="tint"/><rect x="288" y="26" width="36" height="30" rx="6" class="st-f" stroke-width="1.5"/><text x="306" y="47" class="t-m mid ink">20</text>
+  <text x="162" y="74" class="t-xs mid fl">↑ 真ん中の人 ＝ 中央値 3</text>
+  <text x="180" y="100" class="t-s mid ink">平均 ＝ 合計35 ÷ 7人 ＝ <tspan class="t-m">5</tspan></text>
+
+  <!-- 数直線 -->
+  <path d="M30 236 H344" class="st" stroke-width="1.5"/>
+  <path d="M30 236 v5" class="st" stroke-width="1.5"/><text x="30" y="254" class="t-xs mid soft">0</text><path d="M105 236 v5" class="st" stroke-width="1.5"/><text x="105" y="254" class="t-xs mid soft">5</text><path d="M180 236 v5" class="st" stroke-width="1.5"/><text x="180" y="254" class="t-xs mid soft">10</text><path d="M255 236 v5" class="st" stroke-width="1.5"/><text x="255" y="254" class="t-xs mid soft">15</text><path d="M330 236 v5" class="st" stroke-width="1.5"/><text x="330" y="254" class="t-xs mid soft">20</text>
+  <text x="350" y="254" class="t-xs end soft">冊</text>
+  <path d="M75 236 V140" class="st dash" stroke-width="1.5"/>
+  <text x="69" y="150" class="t-s end ink">中央値 3</text>
+  <path d="M105 236 V122" class="st-f" stroke-width="2.5"/>
+  <text x="111" y="132" class="t-m fl">平均 5</text>
+  <circle cx="45" cy="224" r="6" class="ink"/><circle cx="60" cy="224" r="6" class="ink"/><circle cx="60" cy="210" r="6" class="ink"/><circle cx="75" cy="224" r="6" class="ink"/><circle cx="75" cy="210" r="6" class="ink"/><circle cx="90" cy="224" r="6" class="ink"/><circle cx="330" cy="224" r="6" class="fl"/>
+  <path d="M318 196 H113" class="st-f dash" stroke-width="1.5" marker-end="url(#a-statistics)"/>
+  <text x="222" y="188" class="t-xs mid fl">1人の20冊が平均を引っぱる</text>
+</svg>

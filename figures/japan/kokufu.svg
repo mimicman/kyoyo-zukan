@@ -1,0 +1,45 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- ひらがな -->
+  <text x="90" y="24" class="t-m mid fl">ひらがな</text>
+  <text x="90" y="40" class="t-xs mid soft">漢字をくずす</text>
+  <text x="56" y="74" class="t-xl mid soft">安</text>
+  <text x="56" y="106" class="t-xl mid soft">以</text>
+  <text x="56" y="138" class="t-xl mid soft">宇</text>
+  <path d="M74 66 H100" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+  <path d="M74 98 H100" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+  <path d="M74 130 H100" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+  <text x="124" y="74" class="t-xl mid ink">あ</text>
+  <text x="124" y="106" class="t-xl mid ink">い</text>
+  <text x="124" y="138" class="t-xl mid ink">う</text>
+
+  <path d="M180 14 V146" class="st-line" stroke-width="1.5"/>
+
+  <!-- カタカナ -->
+  <text x="270" y="24" class="t-m mid fl">カタカナ</text>
+  <text x="270" y="40" class="t-xs mid soft">漢字の一部をとる</text>
+  <text x="236" y="74" class="t-xl mid soft">阿</text>
+  <text x="236" y="106" class="t-xl mid soft">伊</text>
+  <text x="236" y="138" class="t-xl mid soft">宇</text>
+  <path d="M254 66 H280" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+  <path d="M254 98 H280" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+  <path d="M254 130 H280" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+  <text x="304" y="74" class="t-xl mid ink">ア</text>
+  <text x="304" y="106" class="t-xl mid ink">イ</text>
+  <text x="304" y="138" class="t-xl mid ink">ウ</text>
+
+  <!-- 代表作 -->
+  <text x="12" y="172" class="t-s ink" font-weight="700">かなで書かれた代表作</text>
+  <text x="348" y="172" class="t-xs end soft">894 遣唐使をやめる</text>
+  <rect x="12" y="182" width="104" height="90" rx="10" class="tint"/>
+  <text x="64" y="208" class="t-s mid fl" font-weight="700">『源氏物語』</text>
+  <text x="64" y="232" class="t-s mid ink">紫式部</text>
+  <text x="64" y="254" class="t-xs mid soft">長い物語</text>
+  <rect x="128" y="182" width="104" height="90" rx="10" class="tint"/>
+  <text x="180" y="208" class="t-s mid fl" font-weight="700">『枕草子』</text>
+  <text x="180" y="232" class="t-s mid ink">清少納言</text>
+  <text x="180" y="254" class="t-xs mid soft">随筆（エッセイ）</text>
+  <rect x="244" y="182" width="104" height="90" rx="10" class="tint"/>
+  <text x="296" y="208" class="t-s mid fl" font-weight="700">『古今和歌集』</text>
+  <text x="296" y="232" class="t-s mid ink">紀貫之ら</text>
+  <text x="296" y="254" class="t-xs mid soft">和歌を集めた本</text>
+</svg>

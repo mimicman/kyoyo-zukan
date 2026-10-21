@@ -1,0 +1,37 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <text x="340" y="24" class="t-xs end soft">→ どれも今も続く</text>
+  <!-- 雅楽（笙） -->
+  <path d="M28 66 V40 M33 66 V34 M38 66 V30 M43 66 V34 M48 66 V40" class="st-f" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M26 66 H50 Q48 76 38 76 Q28 76 26 66 Z" class="fl"/>
+  <text x="60" y="54" class="t-m ink">雅楽</text>
+  <text x="60" y="70" class="t-xs soft">宮廷・寺社</text>
+  <path d="M26 90 H322" class="st-f" stroke-width="7" stroke-linecap="round"/>
+  <path d="M320 81 L338 90 L320 99 Z" class="fl"/>
+  <!-- 能（鼓） -->
+  <path d="M160 110 L172 122 L160 134 M184 110 L172 122 L184 134" class="st-f" stroke-width="2.5"/>
+  <ellipse cx="172" cy="110" rx="13" ry="4" class="fl"/><ellipse cx="172" cy="134" rx="13" ry="4" class="fl"/>
+  <text x="194" y="120" class="t-m ink">能</text>
+  <text x="194" y="136" class="t-xs soft">武家（囃子と謡）</text>
+  <path d="M156 150 H322" class="st-f" stroke-width="7" stroke-linecap="round"/>
+  <path d="M320 141 L338 150 L320 159 Z" class="fl"/>
+  <!-- 三味線 -->
+  <rect x="214" y="186" width="16" height="16" rx="2" class="fl" transform="rotate(-35 222 194)"/>
+  <path d="M226 188 L246 160" class="st-f" stroke-width="3" stroke-linecap="round"/>
+  <text x="252" y="180" class="t-m ink">三味線</text>
+  <text x="252" y="196" class="t-xs soft">町人（歌舞伎）</text>
+  <path d="M212 212 H322" class="st-f" stroke-width="7" stroke-linecap="round"/>
+  <path d="M320 203 L338 212 L320 221 Z" class="fl"/>
+  <path d="M26 96 V230 M156 156 V230 M212 218 V230" class="st-soft dash" stroke-width="1"/>
+  <!-- 時代 -->
+  <rect x="20" y="234" width="90" height="22" rx="4" class="tint"/>
+  <text x="65.0" y="249" class="t-xs mid ink">奈良・平安</text>
+  <rect x="112" y="234" width="38" height="22" rx="4" class="tint"/>
+  <text x="131.0" y="249" class="t-xs mid ink">鎌倉</text>
+  <rect x="152" y="234" width="56" height="22" rx="4" class="tint"/>
+  <text x="180.0" y="249" class="t-xs mid ink">室町</text>
+  <rect x="210" y="234" width="80" height="22" rx="4" class="tint"/>
+  <text x="250.0" y="249" class="t-xs mid ink">江戸</text>
+  <rect x="292" y="234" width="58" height="22" rx="4" class="tint"/>
+  <text x="321.0" y="249" class="t-xs mid ink">明治〜今</text>
+  <text x="180" y="274" class="t-xs mid soft">新しい音楽が古いものを消さず、積み重なった</text>
+</svg>

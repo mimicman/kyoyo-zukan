@@ -1,0 +1,33 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 源流 -->
+  <rect x="8" y="30" width="86" height="42" rx="8" class="tint"/>
+  <text x="51" y="48" class="t-s mid ink">アフリカ由来</text>
+  <text x="51" y="64" class="t-xs mid soft">リズム・歌</text>
+  <rect x="8" y="176" width="86" height="42" rx="8" class="tint"/>
+  <text x="51" y="194" class="t-s mid ink">ヨーロッパ</text>
+  <text x="51" y="210" class="t-xs mid soft">和音・楽器</text>
+  <!-- 混ざる流れ -->
+  <path d="M94 52 C104 60 104 80 112 84 M94 52 C104 90 104 140 112 146 M94 196 C104 190 104 160 112 150 M94 196 C104 160 104 100 112 90" class="st-soft" stroke-width="2"/>
+  <circle cx="118" cy="86" r="6" class="fl"/><text x="118" y="72" class="t-xs mid ink halo">ブルース</text>
+  <circle cx="118" cy="148" r="6" class="fl"/><text x="118" y="170" class="t-xs mid ink halo">ラグタイム</text>
+  <path d="M124 88 C140 96 146 110 154 114 M124 146 C140 138 146 124 154 120" class="st-f" stroke-width="2.5"/>
+  <circle cx="166" cy="117" r="12" class="fl"/>
+  <text x="166" y="148" class="t-l mid fl">ジャズ</text>
+  <text x="166" y="164" class="t-xs mid soft">20世紀初め</text>
+  <path d="M124 84 C170 50 214 58 238 70 M178 112 C200 100 220 86 236 78" class="st-f" stroke-width="2.5" marker-end="url(#a-music)"/>
+  <circle cx="246" cy="76" r="8" class="fl"/>
+  <text x="246" y="56" class="t-s mid ink">R&amp;B</text>
+  <circle cx="236" cy="200" r="8" class="tint st-f" stroke-width="2"/>
+  <text x="236" y="224" class="t-s mid ink">カントリー</text>
+  <path d="M252 84 C266 104 278 118 284 126 M242 192 C258 172 274 160 284 152" class="st-f" stroke-width="2.5" marker-end="url(#a-music)"/>
+  <circle cx="294" cy="139" r="14" class="fl"/>
+  <path d="M290 132 L300 139 L290 146 Z" class="paper"/>
+  <text x="300" y="174" class="t-m mid fl">ロックンロール</text>
+  <text x="300" y="190" class="t-xs mid soft">1950年代</text>
+  <!-- 時間軸 -->
+  <path d="M20 250 H344" class="st" stroke-width="1.5" marker-end="url(#a-ink)"/>
+  <path d="M91 245 V255 M269 245 V255" class="st" stroke-width="1.5"/>
+  <text x="91" y="270" class="t-xs mid soft">1900</text>
+  <text x="269" y="270" class="t-xs mid soft">1950</text>
+  <text x="166" y="242" class="t-xs mid soft">アメリカ南部で混ざる</text>
+</svg>

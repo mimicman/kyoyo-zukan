@@ -1,0 +1,47 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- ポリスの姿（イメージ）：城壁の中に丘の神殿と広場 -->
+  <ellipse cx="180" cy="96" rx="166" ry="60" class="st-soft" stroke-width="2" stroke-dasharray="8 3"/>
+  <text x="344" y="34" class="t-xs end soft">城壁</text>
+  <path d="M30 136 H330" class="st-soft" stroke-width="1.5"/>
+
+  <!-- 丘と神殿 -->
+  <path d="M36 136 Q100 46 186 136 Z" class="tint"/>
+  <path d="M84 70 L110 56 L136 70 Z" class="fl"/>
+  <rect x="86" y="70" width="48" height="4" class="fl"/>
+  <path d="M90 74 V92 M99 74 V92 M108 74 V92 M117 74 V92 M126 74 V92" class="st-f" stroke-width="3"/>
+  <rect x="84" y="92" width="52" height="4" class="fl"/>
+  <text x="110" y="118" class="t-s mid fl" font-weight="700">アクロポリス</text>
+  <text x="110" y="132" class="t-xs mid soft">丘の上の神殿</text>
+
+  <!-- 広場と市民 -->
+  <rect x="214" y="100" width="104" height="34" rx="4" class="tint st-f" stroke-width="1.5"/>
+  <g class="ink">
+    <circle cx="228" cy="112" r="3.5"/><circle cx="242" cy="122" r="3.5"/><circle cx="256" cy="110" r="3.5"/>
+    <circle cx="268" cy="124" r="3.5"/><circle cx="282" cy="112" r="3.5"/><circle cx="296" cy="123" r="3.5"/>
+    <circle cx="306" cy="110" r="3.5"/><circle cx="236" cy="128" r="3.5"/>
+  </g>
+  <text x="266" y="72" class="t-s mid fl" font-weight="700">アゴラ</text>
+  <text x="266" y="90" class="t-xs mid soft">広場で話し合う</text>
+
+  <!-- 民会に参加できた人 -->
+  <text x="12" y="182" class="t-s ink" font-weight="700">民会で投票できたのは？</text>
+  <rect x="12" y="192" width="122" height="82" rx="12" class="tint"/>
+  <g class="fl">
+    <circle cx="43" cy="210" r="7"/><path d="M31 236 Q43 214 55 236 Z"/>
+    <circle cx="73" cy="210" r="7"/><path d="M61 236 Q73 214 85 236 Z"/>
+    <circle cx="103" cy="210" r="7"/><path d="M91 236 Q103 214 115 236 Z"/>
+  </g>
+  <text x="73" y="254" class="t-s mid ink">成人男性の市民</text>
+  <text x="73" y="268" class="t-xs mid fl">投票できた</text>
+
+  <rect x="142" y="192" width="206" height="82" rx="12" class="bgc"/>
+  <g class="st-soft dash" stroke-width="1.5">
+    <circle cx="176" cy="210" r="7"/><path d="M164 236 Q176 214 188 236 Z"/>
+    <circle cx="245" cy="210" r="7"/><path d="M233 236 Q245 214 257 236 Z"/>
+    <circle cx="314" cy="210" r="7"/><path d="M302 236 Q314 214 326 236 Z"/>
+  </g>
+  <text x="176" y="254" class="t-s mid soft">女性</text>
+  <text x="245" y="254" class="t-s mid soft">外国人</text>
+  <text x="314" y="254" class="t-s mid soft">奴隷</text>
+  <text x="245" y="268" class="t-xs mid soft">参加できない</text>
+</svg>

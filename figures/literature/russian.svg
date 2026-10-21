@@ -1,0 +1,36 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 作家の生きた年（1790〜1910年、1年＝2.5px） -->
+  <path d="M217.5 34 V156" class="st-soft dash" stroke-width="1.5"/>
+  <text x="217.5" y="26" class="t-xs mid soft">農奴解放（1861）</text>
+  <rect x="62.5" y="38" width="95" height="18" rx="4" class="tint"/>
+  <text x="68" y="51" class="t-xs ink">プーシキン</text>
+  <rect x="87.5" y="60" width="107.5" height="18" rx="4" class="tint"/>
+  <text x="93" y="73" class="t-xs ink">ゴーゴリ</text>
+  <rect x="117.5" y="82" width="150" height="20" rx="4" class="fl"/>
+  <text x="123" y="96" class="t-s on">ドストエフスキー</text>
+  <rect x="135" y="106" width="205" height="20" rx="4" class="fl"/>
+  <text x="141" y="120" class="t-s on">トルストイ</text>
+  <rect x="215" y="130" width="110" height="18" rx="4" class="tint"/>
+  <text x="221" y="143" class="t-xs ink">チェーホフ</text>
+  <path d="M30 156 H344" class="st" stroke-width="1.5"/>
+  <path d="M65 152 V160 M190 152 V160 M315 152 V160" class="st" stroke-width="1.5"/>
+  <text x="65" y="172" class="t-xs mid soft">1800</text>
+  <text x="190" y="172" class="t-xs mid soft">1850</text>
+  <text x="315" y="172" class="t-xs mid soft">1900</text>
+
+  <!-- 二人の描き方の違い -->
+  <rect x="12" y="184" width="164" height="90" rx="12" class="tint"/>
+  <text x="94" y="204" class="t-s mid fl">トルストイ</text>
+  <path d="M28 240 Q94 214 160 240" class="st-soft" stroke-width="1.5"/>
+  <circle cx="38" cy="236" r="4" class="fl"/><circle cx="58" cy="228" r="4" class="fl"/>
+  <circle cx="80" cy="222" r="4" class="fl"/><circle cx="102" cy="220" r="4" class="fl"/>
+  <circle cx="124" cy="224" r="4" class="fl"/><circle cx="146" cy="232" r="4" class="fl"/>
+  <text x="94" y="264" class="t-xs mid ink">多くの人物で社会全体を</text>
+
+  <rect x="184" y="184" width="164" height="90" rx="12" class="tint"/>
+  <text x="266" y="204" class="t-s mid fl">ドストエフスキー</text>
+  <circle cx="266" cy="230" r="18" class="st-soft" stroke-width="1.5"/>
+  <circle cx="266" cy="230" r="11" class="st-f" stroke-width="1.5"/>
+  <circle cx="266" cy="230" r="4" class="fl"/>
+  <text x="266" y="264" class="t-xs mid ink">悩む心の奥と激しい対話</text>
+</svg>

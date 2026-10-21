@@ -1,0 +1,36 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 三幕構成：緊張の山 -->
+  <text x="20" y="22" class="t-m fl">三幕構成</text>
+  <text x="26" y="44" class="t-xs soft">緊張↑</text>
+  <path d="M30 140 H340" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M108 50 V140 M262 50 V140" class="st-line dash" stroke-width="1.5"/>
+  <path d="M30 128 C60 126 84 122 108 110 C150 92 200 74 250 42 C262 36 268 70 286 112 C302 128 320 130 334 130" class="st-f" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="108" cy="110" r="6" class="fl"/>
+  <text x="114" y="130" class="t-xs ink">事件が起きる</text>
+  <circle cx="250" cy="42" r="7" class="fl"/>
+  <text x="236" y="30" class="t-xs end fl">最高潮（クライマックス）</text>
+  <text x="69" y="158" class="t-xs mid ink">第1幕 設定</text>
+  <text x="185" y="158" class="t-xs mid ink">第2幕 対立</text>
+  <text x="301" y="158" class="t-xs mid ink">第3幕 解決</text>
+
+  <!-- 起承転結：4つの段 -->
+  <path d="M10 176 H350" class="st-line" stroke-width="1"/>
+  <text x="20" y="198" class="t-m fl">起承転結</text>
+  <rect x="30" y="208" width="60" height="44" rx="8" class="tint"/>
+  <text x="60" y="237" class="t-l mid ink">起</text>
+  <rect x="110" y="208" width="60" height="44" rx="8" class="tint"/>
+  <text x="140" y="237" class="t-l mid ink">承</text>
+  <g transform="rotate(-10 220 230)">
+    <rect x="190" y="208" width="60" height="44" rx="8" class="fl"/>
+    <text x="220" y="237" class="t-l mid on">転</text>
+  </g>
+  <rect x="270" y="208" width="60" height="44" rx="8" class="tint"/>
+  <text x="300" y="237" class="t-l mid ink">結</text>
+  <path d="M92 230 H104" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M172 230 H184" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M254 230 H264" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="60" y="272" class="t-xs mid soft">始まり</text>
+  <text x="140" y="272" class="t-xs mid soft">広げる</text>
+  <text x="220" y="272" class="t-xs mid fl">ガラリと変える</text>
+  <text x="300" y="272" class="t-xs mid soft">まとめる</text>
+</svg>

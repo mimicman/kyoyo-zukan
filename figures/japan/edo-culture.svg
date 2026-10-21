@@ -1,0 +1,32 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 文化の盛り上がり（イメージ。1600〜1868年） -->
+  <path d="M20 108 C80 108 104 52 140 52 C176 52 196 108 222 108 C246 108 254 42 278 42 C302 42 316 108 342 108 Z" class="tint st-f" stroke-width="2"/>
+  <text x="140" y="42" class="t-m mid fl">元禄文化</text>
+  <text x="278" y="32" class="t-m mid fl">化政文化</text>
+  <text x="140" y="90" class="t-xs mid ink halo">上方が中心</text>
+  <text x="278" y="90" class="t-xs mid ink halo">江戸が中心</text>
+  <path d="M20 110 H344" class="st-soft" stroke-width="1.5"/>
+  <text x="20" y="126" class="t-xs soft">1600</text>
+  <text x="140" y="126" class="t-xs mid soft">1700</text>
+  <text x="260" y="126" class="t-xs mid soft">1800</text>
+  <text x="344" y="126" class="t-xs end soft">1868</text>
+
+  <!-- 担い手と作品 -->
+  <path d="M180 138 V206" class="st-line" stroke-width="1"/>
+  <text x="92" y="152" class="t-xs mid ink">井原西鶴：町人の小説</text>
+  <text x="92" y="174" class="t-xs mid ink">近松門左衛門：人形浄瑠璃</text>
+  <text x="92" y="196" class="t-xs mid ink">松尾芭蕉：俳諧（俳句）</text>
+  <text x="268" y="152" class="t-xs mid ink">北斎・広重：浮世絵</text>
+  <text x="268" y="174" class="t-xs mid ink">十返舎一九：こっけい本</text>
+  <text x="268" y="196" class="t-xs mid ink">歌舞伎が大人気</text>
+
+  <!-- 支えたもの -->
+  <rect x="10" y="214" width="340" height="60" rx="12" class="bgc"/>
+  <text x="22" y="232" class="t-xs soft">支えたもの</text>
+  <rect x="22" y="240" width="96" height="26" rx="13" class="fl"/>
+  <text x="70" y="257" class="t-xs mid on">平和が続く</text>
+  <rect x="132" y="240" width="96" height="26" rx="13" class="fl"/>
+  <text x="180" y="257" class="t-xs mid on">商業の発達</text>
+  <rect x="242" y="240" width="96" height="26" rx="13" class="fl"/>
+  <text x="290" y="257" class="t-xs mid on">寺子屋で学ぶ</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<!-- 紙を折る例 -->
+  <rect x="62" y="16" width="184" height="100" rx="8" class="paper"/><rect x="62" y="16" width="184" height="100" rx="8" class="st-line" stroke-width="1.5"/>
+  <text x="74" y="36" class="t-xs soft">厚さ0.1mmの紙を半分に折ると</text>
+  <text x="74" y="58" class="t-s ink">10回 → 約10cm</text>
+  <text x="74" y="80" class="t-s ink">20回 → 約100m</text>
+  <text x="74" y="104" class="t-s fl"><tspan class="t-m">42回 → 月に届く</tspan></text>
+
+  <!-- 軸 -->
+  <path d="M50 40 V230 H326" class="st" stroke-width="1.5"/>
+  <text x="44" y="54" class="t-xs end soft">1000</text>
+  <text x="44" y="144" class="t-xs end soft">500</text>
+  <text x="44" y="234" class="t-xs end soft">0</text>
+  <path d="M50 140 h6 M50 50 h6" class="st" stroke-width="1.5"/>
+  <text x="50" y="246" class="t-xs mid soft">0</text><text x="180" y="246" class="t-xs mid soft">5</text><text x="310" y="246" class="t-xs mid soft">10</text>
+  <text x="310" y="262" class="t-xs mid soft">回</text>
+  <text x="180" y="262" class="t-xs mid soft">くり返した回数</text>
+
+  <!-- 2倍ずつ と +2ずつ -->
+  <path d="M50 229.8 L310 226.2" class="st-soft" stroke-width="2.5"/>
+  <path d="M50 229.8 L56.5 229.8 L63 229.7 L69.5 229.7 L76 229.6 L82.5 229.6 L89 229.5 L95.5 229.4 L102 229.3 L108.5 229.1 L115 229 L121.5 228.8 L128 228.6 L134.5 228.3 L141 228 L147.5 227.6 L154 227.1 L160.5 226.6 L167 225.9 L173.5 225.2 L180 224.2 L186.5 223.2 L193 221.9 L199.5 220.3 L206 218.5 L212.5 216.3 L219 213.7 L225.5 210.6 L232 207 L238.5 202.6 L245 197.4 L251.5 191.3 L258 183.9 L264.5 175.2 L271 164.8 L277.5 152.5 L284 137.8 L290.5 120.4 L297 99.7 L303.5 75 L310 45.7" class="st-f" stroke-width="3"/>
+  <circle cx="50" cy="229.8" r="3.5" class="fl"/><circle cx="102" cy="229.3" r="3.5" class="fl"/><circle cx="154" cy="227.1" r="3.5" class="fl"/><circle cx="206" cy="218.5" r="3.5" class="fl"/><circle cx="258" cy="183.9" r="3.5" class="fl"/><circle cx="310" cy="45.7" r="3.5" class="fl"/>
+  <text x="344" y="150" class="t-s end fl">毎回2倍</text>
+  <text x="344" y="166" class="t-xs end fl">10回で1024</text>
+  <text x="60" y="200" class="t-xs soft">はじめはほぼ同じ</text>
+  <text x="60" y="218" class="t-xs soft">灰色＝毎回+2（10回で21）</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 劇場（上から見た図） -->
+  <text x="90" y="104" class="t-s mid soft">観客席</text>
+  <path d="M14 196 A76 76 0 0 1 166 196" class="st-soft" stroke-width="7" stroke-linecap="round"/>
+  <path d="M26 196 A64 64 0 0 1 154 196" class="st-soft" stroke-width="7" stroke-linecap="round"/>
+  <path d="M38 196 A52 52 0 0 1 142 196" class="st-soft" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="90" cy="198" r="30" class="tint st-f" stroke-width="2"/>
+  <text x="90" y="194" class="t-xs mid fl">オルケストラ</text>
+  <text x="90" y="210" class="t-xs mid ink">合唱隊</text>
+  <rect x="44" y="234" width="92" height="18" rx="3" class="fl"/>
+  <text x="90" y="247" class="t-xs mid on">舞台建物（役者）</text>
+  <text x="90" y="272" class="t-xs mid soft">上から見た劇場</text>
+
+  <!-- 主人公の運命 -->
+  <path d="M188 20 V170" class="st-line" stroke-width="1"/>
+  <text x="270" y="24" class="t-s mid ink">主人公の運命</text>
+  <path d="M212 44 V232" class="st-soft" stroke-width="1.5"/>
+  <text x="208" y="60" class="t-xs end soft">幸せ</text>
+  <text x="208" y="232" class="t-xs end soft">不幸</text>
+  <path d="M218 96 C240 88 260 76 282 72 C294 100 306 176 334 214" class="st-f" stroke-width="3.5" stroke-linecap="round" marker-end="url(#a-literature)"/>
+  <circle cx="282" cy="72" r="7" class="fl"/>
+  <text x="282" y="54" class="t-xs mid fl">認知＝真実に気づく</text>
+  <text x="290" y="124" class="t-xs end ink">同時に逆転し</text>
+  <text x="294" y="140" class="t-xs end ink">一気に転落</text>
+  <text x="272" y="256" class="t-m mid fl">カタルシス</text>
+  <text x="272" y="274" class="t-xs mid soft">恐れと憐れみ→心が洗われる</text>
+</svg>

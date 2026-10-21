@@ -1,0 +1,10 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<text x="190" y="18" class="t-s mid soft">どちらの組も平均は60点</text>
+  <path d="M190 26 V236" class="st-soft dash" stroke-width="1.5"/>
+  <rect x="173" y="70" width="34.1" height="28" rx="6" class="tint"/><circle cx="165" cy="84" r="6.5" class="ink"/><circle cx="180" cy="84" r="6.5" class="ink"/><circle cx="190" cy="84" r="6.5" class="ink"/><circle cx="200" cy="84" r="6.5" class="ink"/><circle cx="215" cy="84" r="6.5" class="ink"/><path d="M173 106 H207 M173 101 v10 M207 101 v10" class="st-f" stroke-width="1.5"/><text x="16" y="58" class="t-m ink">A組</text><text x="344" y="58" class="t-s end ink halo">標準偏差 約3（ばらつき小）</text>
+  <rect x="119.3" y="162" width="141.4" height="28" rx="6" class="tint"/><circle cx="90" cy="176" r="6.5" class="fl"/><circle cx="140" cy="176" r="6.5" class="fl"/><circle cx="190" cy="176" r="6.5" class="fl"/><circle cx="240" cy="176" r="6.5" class="fl"/><circle cx="290" cy="176" r="6.5" class="fl"/><path d="M119.3 198 H260.7 M119.3 193 v10 M260.7 193 v10" class="st-f" stroke-width="1.5"/><text x="16" y="150" class="t-m ink">B組</text><text x="344" y="150" class="t-s end ink halo">標準偏差 約14（ばらつき大）</text>
+  <text x="266.7" y="203" class="t-xs fl">←平均±1つ分</text>
+  <path d="M30 236 H350" class="st" stroke-width="1.5"/>
+  <path d="M90 236 v5" class="st" stroke-width="1.5"/><text x="90" y="254" class="t-xs mid soft">40</text><path d="M140 236 v5" class="st" stroke-width="1.5"/><text x="140" y="254" class="t-xs mid soft">50</text><path d="M190 236 v5" class="st" stroke-width="1.5"/><text x="190" y="254" class="t-xs mid soft">60</text><path d="M240 236 v5" class="st" stroke-width="1.5"/><text x="240" y="254" class="t-xs mid soft">70</text><path d="M290 236 v5" class="st" stroke-width="1.5"/><text x="290" y="254" class="t-xs mid soft">80</text>
+  <text x="180" y="274" class="t-xs mid soft">標準偏差＝平均からのずれを2乗して平均し、√をとった値</text>
+</svg>

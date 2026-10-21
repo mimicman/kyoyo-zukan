@@ -1,0 +1,43 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 3人のリレー -->
+  <path d="M88 40 H150" class="st-f" stroke-width="2.5" marker-end="url(#a-japan)"/>
+  <path d="M206 40 H268" class="st-f" stroke-width="2.5" marker-end="url(#a-japan)"/>
+  <circle cx="62" cy="40" r="23" class="fl"/>
+  <circle cx="180" cy="40" r="23" class="fl"/>
+  <circle cx="298" cy="40" r="23" class="fl"/>
+  <text x="62" y="46" class="t-l mid on">信</text>
+  <text x="180" y="46" class="t-l mid on">秀</text>
+  <text x="298" y="46" class="t-l mid on">家</text>
+
+  <text x="62" y="86" class="t-m mid ink">織田信長</text>
+  <text x="180" y="86" class="t-m mid ink">豊臣秀吉</text>
+  <text x="298" y="86" class="t-m mid ink">徳川家康</text>
+
+  <path d="M121 70 V160 M239 70 V160" class="st-line" stroke-width="1"/>
+  <text x="62" y="112" class="t-xs mid ink">1560 桶狭間の戦い</text>
+  <text x="62" y="132" class="t-xs mid ink">1573 室町幕府滅ぶ</text>
+  <text x="62" y="152" class="t-xs mid ink">1582 本能寺の変</text>
+  <text x="180" y="112" class="t-xs mid ink">1582 後を継ぐ</text>
+  <text x="180" y="132" class="t-xs mid ink">1590 全国を統一</text>
+  <text x="180" y="152" class="t-xs mid ink">朝鮮へ2度出兵</text>
+  <text x="298" y="112" class="t-xs mid ink">1600 関ヶ原の戦い</text>
+  <text x="298" y="132" class="t-xs mid ink">1603 江戸幕府</text>
+  <text x="298" y="152" class="t-xs mid ink">1615 豊臣氏滅ぶ</text>
+
+  <!-- それぞれの仕事 -->
+  <rect x="12" y="170" width="100" height="40" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="62" y="187" class="t-s mid fl" font-weight="700">道を開く</text>
+  <text x="62" y="202" class="t-xs mid ink">鉄砲・楽市楽座</text>
+  <rect x="130" y="170" width="100" height="40" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="180" y="187" class="t-s mid fl" font-weight="700">まとめる</text>
+  <text x="180" y="202" class="t-xs mid ink">検地・刀狩</text>
+  <rect x="248" y="170" width="100" height="40" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="298" y="187" class="t-s mid fl" font-weight="700">固める</text>
+  <text x="298" y="202" class="t-xs mid ink">幕府と大名の統制</text>
+
+  <!-- 統一の進み具合（イメージ） -->
+  <path d="M12 254 L348 224 V254 Z" class="fl"/>
+  <text x="12" y="272" class="t-xs soft">戦国の争い</text>
+  <text x="348" y="272" class="t-xs end fl" font-weight="700">天下統一・長い平和へ</text>
+  <text x="12" y="236" class="t-xs soft">統一の進み具合（イメージ）</text>
+</svg>

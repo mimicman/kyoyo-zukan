@@ -1,0 +1,31 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<!-- 斜辺の正方形 -->
+  <path d="M170 170 L90 110 L150 30 L230 90 Z" class="tint"/>
+  <path d="M154 158 l60 -80 M182 154 l-80 -60 M138 146 l60 -80 M194 138 l-80 -60 M122 134 l60 -80 M206 122 l-80 -60 M106 122 l60 -80 M218 106 l-80 -60" class="st-f" stroke-width="1" opacity="0.6"/>
+  <path d="M170 170 L90 110 L150 30 L230 90 Z" class="st-f" stroke-width="2.5"/>
+  <text x="160" y="106" class="t-xl mid fl halo">25</text>
+
+  <!-- 短い2辺の正方形 -->
+  <rect x="30" y="110" width="60" height="60" class="tint"/>
+  <path d="M50 110 v60 M30 130 h60 M70 110 v60 M30 150 h60" class="st-soft" stroke-width="1" opacity="0.6"/>
+  <rect x="30" y="110" width="60" height="60" class="st" stroke-width="2"/>
+  <text x="60.0" y="147.0" class="t-xl mid ink">9</text>
+  <rect x="90" y="170" width="80" height="80" class="tint"/>
+  <path d="M110 170 v80 M90 190 h80 M130 170 v80 M90 210 h80 M150 170 v80 M90 230 h80" class="st-soft" stroke-width="1" opacity="0.6"/>
+  <rect x="90" y="170" width="80" height="80" class="st" stroke-width="2"/>
+  <text x="130" y="218" class="t-xl mid ink">16</text>
+
+  <!-- 直角三角形 -->
+  <path d="M90 170 L170 170 L90 110 Z" class="fl"/>
+  <path d="M90 160 h10 v10" class="st" stroke-width="1.5" opacity="0.7"/>
+  <text x="95" y="146" class="t-s on">3</text>
+  <text x="128" y="166" class="t-s on">4</text>
+  <text x="138" y="133" class="t-s ink halo">5</text>
+
+  <!-- 式 -->
+  <text x="344" y="34" class="t-xs end soft">斜辺の正方形の面積は</text>
+  <text x="344" y="50" class="t-xs end soft">残り2つの和に等しい</text>
+  <text x="190" y="202" class="t-l ink">9 + 16 = 25</text>
+  <text x="190" y="228" class="t-m ink">3² + 4² = 5²</text>
+  <text x="190" y="256" class="t-m fl">a² + b² = c²</text>
+</svg>

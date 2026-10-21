@@ -1,0 +1,51 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 簡略地図（形と位置はおおよそ） -->
+  <text x="12" y="16" class="t-xs soft">色の範囲＝最大期の領土</text>
+  <path d="M10 62 L40 42 L90 32 L160 24 L240 22 L300 30 L318 52 L316 80 L306 100 L300 130 L284 150 L250 150 L222 140 L204 160 L182 142 L150 132 L130 150 L110 132 L80 122 L60 102 L30 100 L10 90 Z" class="bgc st-line" stroke-width="1.5"/>
+  <path d="M96 52 L160 36 L240 32 L294 42 L306 70 L298 100 L284 126 L250 132 L216 122 L180 120 L150 114 L120 100 L100 80 Z" class="tint st-f" stroke-width="2"/>
+  <path d="M328 70 L338 76 L334 98 L324 114 L318 108 L328 92 Z" class="bgc st-line" stroke-width="1.5"/>
+
+  <!-- モンゴル高原から各地へ -->
+  <ellipse cx="232" cy="60" rx="32" ry="15" class="fl"/>
+  <text x="232" y="64" class="t-xs mid on">モンゴル</text>
+  <path d="M198 56 L162 52" class="st-f" stroke-width="2.5" marker-end="url(#a-history)"/>
+  <path d="M208 70 L180 90" class="st-f" stroke-width="2.5" marker-end="url(#a-history)"/>
+  <path d="M246 76 L262 98" class="st-f" stroke-width="2.5" marker-end="url(#a-history)"/>
+
+  <text x="130" y="50" class="t-xs mid ink">ロシア</text>
+  <text x="140" y="100" class="t-xs mid ink">ペルシャ</text>
+  <text x="268" y="114" class="t-xs mid ink">中国</text>
+  <circle cx="280" cy="84" r="3.5" class="ink"/>
+  <text x="280" y="100" class="t-xs mid ink">大都</text>
+  <text x="46" y="58" class="t-xs mid soft">ヨーロッパ</text>
+  <text x="333" y="62" class="t-xs mid ink">日本</text>
+  <path d="M296 92 L318 96" class="st dash" stroke-width="1.5"/>
+  <text x="330" y="130" class="t-xs mid soft">元寇</text>
+
+  <!-- 交易路と駅 -->
+  <path d="M22 68 L75 88 L125 112 L175 118 L225 110 L278 86" class="st dash" stroke-width="1.5"/>
+  <g class="paper st" stroke-width="1.5">
+    <rect x="71" y="84" width="8" height="8"/><rect x="121" y="108" width="8" height="8"/>
+    <rect x="171" y="114" width="8" height="8"/><rect x="221" y="106" width="8" height="8"/>
+  </g>
+  <text x="175" y="140" class="t-xs mid ink halo">交易路と駅（□）</text>
+
+  <!-- 年表 -->
+  <path d="M30 206 H330" class="st-soft" stroke-width="2"/>
+  <circle cx="45" cy="206" r="6" class="fl"/>
+  <circle cx="135" cy="206" r="6" class="fl"/>
+  <circle cx="225" cy="206" r="6" class="paper st-f" stroke-width="2"/>
+  <circle cx="315" cy="206" r="6" class="soft"/>
+  <text x="45" y="194" class="t-s mid ink" font-weight="700">1206</text>
+  <text x="135" y="194" class="t-s mid ink" font-weight="700">1271</text>
+  <text x="225" y="194" class="t-s mid ink" font-weight="700">1274・81</text>
+  <text x="315" y="194" class="t-s mid ink" font-weight="700">1368</text>
+  <text x="45" y="230" class="t-xs mid ink">チンギスが</text>
+  <text x="45" y="246" class="t-xs mid ink">部族を統一</text>
+  <text x="135" y="230" class="t-xs mid ink">フビライが</text>
+  <text x="135" y="246" class="t-xs mid ink">元を建てる</text>
+  <text x="225" y="230" class="t-xs mid ink">元寇</text>
+  <text x="225" y="246" class="t-xs mid ink">日本が防ぐ</text>
+  <text x="315" y="230" class="t-xs mid ink">元が北へ</text>
+  <text x="315" y="246" class="t-xs mid ink">退く</text>
+</svg>

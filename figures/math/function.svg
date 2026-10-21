@@ -1,0 +1,28 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<!-- 入力→しくみ→出力 -->
+  <text x="14" y="53" class="t-s ink">入力 x</text>
+  <path d="M68 48 H98" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <rect x="104" y="26" width="140" height="46" rx="10" class="fl"/>
+  <text x="174" y="44" class="t-xs mid on">2倍して1を足す</text>
+  <text x="174" y="64" class="t-m mid on">y = 2x + 1</text>
+  <path d="M250 48 H280" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <text x="286" y="53" class="t-s ink">出力 y</text>
+
+  <!-- グラフ -->
+  <path d="M60 96 V250 H236" class="st" stroke-width="1.5"/>
+  <text x="60" y="90" class="t-xs mid soft">y</text>
+  <text x="244" y="254" class="t-xs soft">x</text>
+  <text x="60" y="266" class="t-xs mid soft">0</text><text x="100" y="266" class="t-xs mid soft">1</text><text x="140" y="266" class="t-xs mid soft">2</text><text x="180" y="266" class="t-xs mid soft">3</text>
+  <text x="52" y="234" class="t-xs end soft">1</text><text x="52" y="194" class="t-xs end soft">3</text><text x="52" y="154" class="t-xs end soft">5</text><text x="52" y="114" class="t-xs end soft">7</text>
+  <path d="M60 230 L200.0 90" class="st-f" stroke-width="2.5"/>
+  <path d="M100 250 V190 H60" class="st-soft dash" stroke-width="1.5"/>
+  <circle cx="60" cy="230" r="5" class="fl"/><circle cx="100" cy="190" r="5" class="fl"/><circle cx="140" cy="150" r="5" class="fl"/><circle cx="180" cy="110" r="5" class="fl"/>
+  <text x="110" y="194" class="t-xs ink halo">x=1 なら y=3</text>
+  <text x="72" y="112" class="t-xs soft">点がまっすぐ並ぶ</text>
+
+  <!-- 対応表 -->
+  <text x="282" y="124" class="t-s mid ink">x</text>
+  <text x="320" y="124" class="t-s mid fl">y</text>
+  <path d="M262 130 H340 M301 112 V236" class="st-line" stroke-width="1.5"/>
+  <text x="282" y="150" class="t-m mid ink">0</text><text x="320" y="150" class="t-m mid fl">1</text><rect x="262" y="158" width="78" height="22" rx="4" class="tint"/><text x="282" y="174" class="t-m mid ink">1</text><text x="320" y="174" class="t-m mid fl">3</text><text x="282" y="198" class="t-m mid ink">2</text><text x="320" y="198" class="t-m mid fl">5</text><text x="282" y="222" class="t-m mid ink">3</text><text x="320" y="222" class="t-m mid fl">7</text>
+</svg>

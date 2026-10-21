@@ -1,0 +1,30 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<!-- 外側ほど広い数の世界（入れ子） -->
+  <rect x="4" y="4" width="352" height="272" rx="14" class="tint" opacity="0.35"/><rect x="4" y="4" width="352" height="272" rx="14" class="st-f" stroke-width="1.5"/>
+  <rect x="10" y="36" width="280" height="234" rx="12" class="tint" opacity="0.55"/><rect x="10" y="36" width="280" height="234" rx="12" class="st-f" stroke-width="1.5"/>
+  <rect x="16" y="68" width="210" height="196" rx="10" class="tint" opacity="0.8"/><rect x="16" y="68" width="210" height="196" rx="10" class="st-f" stroke-width="1.5"/>
+  <rect x="22" y="100" width="140" height="158" rx="8" class="tint"/><rect x="22" y="100" width="140" height="158" rx="8" class="st-f" stroke-width="1.5"/>
+  <rect x="28" y="132" width="72" height="120" rx="6" class="fl"/>
+  <rect x="4" y="4" width="352" height="272" rx="14" class="st-f" stroke-width="1.5"/>
+  <rect x="10" y="36" width="280" height="234" rx="12" class="st-f" stroke-width="1.5"/>
+  <rect x="16" y="68" width="210" height="196" rx="10" class="st-f" stroke-width="1.5"/>
+  <rect x="22" y="100" width="140" height="158" rx="8" class="st-f" stroke-width="1.5"/>
+
+  <text x="14" y="25" class="t-s ink"><tspan class="t-m">複素数</tspan>（2乗して−1になる i）</text>
+  <text x="20" y="57" class="t-s ink"><tspan class="t-m">実数</tspan>（数直線をすき間なく）</text>
+  <text x="26" y="89" class="t-s ink"><tspan class="t-m">有理数</tspan>（割り算）</text>
+  <text x="32" y="121" class="t-s ink"><tspan class="t-m">整数</tspan>（引き算）</text>
+  <text x="64" y="152" class="t-m mid on">自然数</text>
+  <text x="64" y="168" class="t-xs mid on">（数える）</text>
+
+  <!-- それぞれの帯で新しく入った数 -->
+  <text x="64" y="206" class="t-l mid on">1 2 3</text>
+  <text x="131" y="190" class="t-l mid ink">−3</text>
+  <text x="131" y="222" class="t-l mid ink">0</text>
+  <text x="194" y="190" class="t-l mid ink">1/2</text>
+  <text x="194" y="222" class="t-l mid ink">0.75</text>
+  <text x="258" y="190" class="t-l mid ink">√2</text>
+  <text x="258" y="222" class="t-l mid ink">π</text>
+  <text x="323" y="190" class="t-l mid fl">i</text>
+  <text x="323" y="222" class="t-m mid fl">2+3i</text>
+</svg>

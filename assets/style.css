@@ -303,6 +303,11 @@ dialog.viewer .close {
 
 /* ---- 図解SVGの共通クラス（図の色はここでだけ決める） ---- */
 .fig svg text, .thumb svg text { font-family: inherit; }
+/* 線のクラスは塗りを消す。塗りのクラスを後に書き、両方付けたとき（例: tint st-f）は塗りが勝つようにする */
+.st     { stroke: var(--ink); fill: none; }
+.st-soft { stroke: var(--ink-soft); fill: none; }
+.st-f   { stroke: var(--f); fill: none; }
+.st-line { stroke: var(--line); fill: none; }
 .ink    { fill: var(--ink); }
 .soft   { fill: var(--ink-soft); }
 .fl     { fill: var(--f); }
@@ -311,10 +316,6 @@ dialog.viewer .close {
 .paper  { fill: var(--surface); }
 .bgc    { fill: var(--bg); }
 .no-fill { fill: none; }
-.st     { stroke: var(--ink); fill: none; }
-.st-soft { stroke: var(--ink-soft); fill: none; }
-.st-f   { stroke: var(--f); fill: none; }
-.st-line { stroke: var(--line); fill: none; }
 .dash   { stroke-dasharray: 5 4; }
 .t-xl { font-size: 22px; font-weight: 800; }
 .t-l  { font-size: 17px; font-weight: 800; }

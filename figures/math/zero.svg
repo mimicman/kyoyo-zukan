@@ -1,0 +1,24 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<text x="180" y="20" class="t-s mid soft">場所（位）で数の大きさが決まる＝位取り</text>
+  <rect x="52" y="32" width="76" height="118" rx="8" class="tint"/><rect x="52" y="32" width="76" height="118" rx="8" class="st-f" stroke-width="1.5"/>
+  <text x="90" y="50" class="t-s mid ink">百の位</text>
+  <circle cx="90" cy="136" r="6.5" class="fl"/>
+  <circle cx="90" cy="120" r="6.5" class="fl"/>
+  <rect x="142" y="32" width="76" height="118" rx="8" class="paper"/><rect x="142" y="32" width="76" height="118" rx="8" class="st-f" stroke-width="1.5"/>
+  <text x="180" y="50" class="t-s mid ink">十の位</text>
+  <text x="180" y="108" class="t-xs mid soft">何もない</text>
+  <rect x="232" y="32" width="76" height="118" rx="8" class="tint"/><rect x="232" y="32" width="76" height="118" rx="8" class="st-f" stroke-width="1.5"/>
+  <text x="270" y="50" class="t-s mid ink">一の位</text>
+  <circle cx="270" cy="136" r="6.5" class="fl"/>
+  <circle cx="270" cy="120" r="6.5" class="fl"/>
+  <circle cx="270" cy="104" r="6.5" class="fl"/>
+  <circle cx="270" cy="88" r="6.5" class="fl"/>
+  <circle cx="270" cy="72" r="6.5" class="fl"/>
+  <text x="90" y="190" class="t-xl mid ink">2</text>
+  <text x="180" y="190" class="t-xl mid fl">0</text>
+  <text x="270" y="190" class="t-xl mid ink">5</text>
+  <path d="M180 154 V168" class="st-f" stroke-width="2" marker-end="url(#a-math)"/>
+  <text x="180" y="222" class="t-m mid ink">205 ＝ 2×100 ＋ 0×10 ＋ 5</text>
+  <rect x="38" y="238" width="284" height="32" rx="8" class="st-line dash" stroke-width="1.5"/>
+  <text x="180" y="259" class="t-s mid soft">0がないと「2 5」は 25？ 205？ 区別できない</text>
+</svg>
