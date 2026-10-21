@@ -1,0 +1,48 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 人：送る人（左）と受け取る人（右） -->
+  <circle cx="42" cy="34" r="11" class="soft"/>
+  <path d="M22 70 C22 52 62 52 62 70 Z" class="soft"/>
+  <text x="42" y="88" class="t-s mid ink">送る人</text>
+  <circle cx="318" cy="34" r="11" class="fl"/>
+  <path d="M298 70 C298 52 338 52 338 70 Z" class="fl"/>
+  <text x="318" y="88" class="t-s mid fl">受け取る人</text>
+
+  <!-- ① 公開鍵（開いた南京錠）を配る -->
+  <path d="M290 40 H80" class="st-f dash" stroke-width="1.5" marker-end="url(#a-technology)"/>
+  <rect x="168" y="22" width="22" height="18" rx="3" class="fl"/>
+  <path d="M172 22 V14 A7 7 0 0 1 186 14 V10" class="st-f" stroke-width="2.5"/>
+  <text x="180" y="60" class="t-xs mid fl">① 公開鍵（錠前）をだれにでも配る</text>
+
+  <!-- ② 錠をかけて送る -->
+  <rect x="24" y="118" width="40" height="28" rx="3" class="paper"/>
+  <rect x="24" y="118" width="40" height="28" rx="3" class="st" stroke-width="1.5"/>
+  <path d="M24 118 L44 134 L64 118" class="st" stroke-width="1.5"/>
+  <text x="44" y="164" class="t-xs mid soft">手紙</text>
+  <path d="M70 132 H110" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <rect x="118" y="114" width="56" height="38" rx="4" class="ink"/>
+  <rect x="164" y="138" width="16" height="13" rx="2" class="fl"/>
+  <path d="M167 138 V133 A5 5 0 0 1 177 133 V138" class="st-f" stroke-width="2"/>
+  <text x="146" y="137" class="t-xs mid paper">暗号文</text>
+  <text x="150" y="172" class="t-xs mid soft">② 錠をかける</text>
+  <path d="M184 132 H284" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <text x="236" y="124" class="t-xs mid soft">ネットを通る</text>
+
+  <!-- ③ 秘密鍵で開ける -->
+  <circle cx="308" cy="132" r="9" class="st-f" stroke-width="3"/>
+  <path d="M317 132 H342 M334 132 V140 M340 132 V138" class="st-f" stroke-width="3"/>
+  <text x="318" y="164" class="t-xs mid fl">③ 秘密鍵で開く</text>
+  <text x="318" y="178" class="t-xs mid soft">本人だけが持つ</text>
+
+  <!-- 盗み見る人 -->
+  <path d="M236 136 V196" class="st-soft dash" stroke-width="1.5"/>
+  <circle cx="236" cy="206" r="9" class="soft"/>
+  <path d="M220 238 C220 222 252 222 252 238 Z" class="soft"/>
+  <text x="236" y="256" class="t-xs mid soft">盗み見る人</text>
+  <text x="236" y="270" class="t-xs mid soft">錠前はあっても鍵がない</text>
+
+  <text x="20" y="214" class="t-s ink">閉める鍵</text>
+  <text x="96" y="214" class="t-s ink">≠</text>
+  <text x="114" y="214" class="t-s fl">開ける鍵</text>
+  <text x="20" y="234" class="t-xs soft">2つが別だから、</text>
+  <text x="20" y="250" class="t-xs soft">初対面でも安全に送れる</text>
+</svg>

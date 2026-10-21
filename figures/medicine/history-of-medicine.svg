@@ -1,0 +1,61 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 3つの時代の考え方 -->
+  <text x="62" y="22" class="t-m mid ink">体液説</text>
+  <text x="62" y="38" class="t-xs mid soft">病は体液の乱れ</text>
+  <text x="180" y="22" class="t-m mid ink">解剖学</text>
+  <text x="180" y="38" class="t-xs mid soft">体を開いて確かめる</text>
+  <text x="298" y="22" class="t-m mid fl">細菌学</text>
+  <text x="298" y="38" class="t-xs mid soft">原因は微生物</text>
+
+  <!-- 4つの体液 -->
+  <circle cx="62" cy="106" r="48" class="paper"/>
+  <circle cx="62" cy="106" r="48" class="st" stroke-width="2"/>
+  <path d="M14 106 H110 M62 58 V154" class="st" stroke-width="1.5"/>
+  <text x="40" y="96" class="t-xs mid ink">血液</text>
+  <text x="84" y="96" class="t-xs mid ink">粘液</text>
+  <text x="40" y="126" class="t-xs mid ink">黄胆汁</text>
+  <text x="84" y="126" class="t-xs mid ink">黒胆汁</text>
+
+  <!-- 解剖：人体の輪郭と心臓・血管 -->
+  <circle cx="180" cy="68" r="11" class="paper"/>
+  <circle cx="180" cy="68" r="11" class="st" stroke-width="2"/>
+  <path d="M164 84 H196 L200 128 H190 L188 156 H172 L170 128 H160 Z" class="paper"/>
+  <path d="M164 84 H196 L200 128 H190 L188 156 H172 L170 128 H160 Z" class="st" stroke-width="2"/>
+  <path d="M164 86 L150 124 M196 86 L210 124" class="st" stroke-width="2" stroke-linecap="round"/>
+  <path d="M184 98 c-4 -5 -11 0 -6 6 l6 6 l6 -6 c5 -6 -2 -11 -6 -6 z" class="fl"/>
+  <path d="M184 112 V146 M178 112 L172 150 M190 112 L194 150" class="st-f" stroke-width="1.2"/>
+
+  <!-- 細菌と顕微鏡のレンズ -->
+  <circle cx="298" cy="106" r="46" class="tint"/>
+  <circle cx="298" cy="106" r="46" class="st-f" stroke-width="2.5"/>
+  <rect x="270" y="84" width="26" height="8" rx="4" class="fl"/>
+  <rect x="300" y="96" width="24" height="8" rx="4" class="fl" transform="rotate(30 312 100)"/>
+  <rect x="276" y="116" width="28" height="8" rx="4" class="fl" transform="rotate(-20 290 120)"/>
+  <circle cx="314" cy="128" r="4" class="fl"/><circle cx="324" cy="120" r="4" class="fl"/><circle cx="282" cy="100" r="4" class="fl"/>
+
+  <!-- 移り変わり -->
+  <path d="M114 106 H124" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <path d="M236 106 H246" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+
+  <!-- 年表 -->
+  <path d="M14 190 H346" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <circle cx="40" cy="190" r="5" class="ink"/>
+  <circle cx="104" cy="190" r="5" class="ink"/>
+  <circle cx="168" cy="190" r="5" class="ink"/>
+  <circle cx="232" cy="190" r="5" class="ink"/>
+  <circle cx="306" cy="190" r="5" class="fl"/>
+  <text x="40" y="180" class="t-xs mid soft">前5世紀頃</text>
+  <text x="104" y="180" class="t-xs mid soft">2世紀</text>
+  <text x="168" y="180" class="t-xs mid soft">1543</text>
+  <text x="232" y="180" class="t-xs mid soft">1628</text>
+  <text x="306" y="180" class="t-xs mid soft">19世紀後半</text>
+  <text x="40" y="210" class="t-xs mid ink">ヒポクラテス</text>
+  <text x="104" y="226" class="t-xs mid ink">ガレノス</text>
+  <text x="168" y="210" class="t-xs mid ink">ヴェサリウス</text>
+  <text x="232" y="226" class="t-xs mid ink">ハーヴェイ</text>
+  <text x="306" y="210" class="t-xs mid fl">パスツール</text>
+  <text x="306" y="226" class="t-xs mid fl">コッホ</text>
+
+  <text x="180" y="258" class="t-s mid ink">古い説 → 観察 → 実験で確かめる</text>
+  <text x="180" y="276" class="t-xs mid soft">医学は「確かめ方」を変えて進んできた</text>
+</svg>

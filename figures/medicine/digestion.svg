@@ -1,0 +1,36 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 消化管（口から肛門まで1本の管） -->
+  <!-- 口 -->
+  <path d="M76 22 Q96 36 116 22" class="st" stroke-width="3" stroke-linecap="round"/>
+  <!-- 食道 -->
+  <path d="M96 32 V78" class="st" stroke-width="6" stroke-linecap="round"/>
+  <!-- 胃 -->
+  <path d="M96 78 C96 70 140 70 144 92 C148 116 120 126 104 122 C92 120 96 108 108 104" class="tint"/>
+  <path d="M96 78 C96 70 140 70 144 92 C148 116 120 126 104 122 C92 120 96 108 108 104" class="st-f" stroke-width="3"/>
+  <!-- 大腸（外側の枠） -->
+  <path d="M56 222 V150 C56 142 60 138 68 138 H140 C148 138 152 142 152 150 V214 C152 222 146 226 138 226 H112 V256" class="st-soft" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- 小腸（内側の曲がりくねった管） -->
+  <path d="M108 120 C76 130 70 152 92 156 C118 160 126 150 128 166 C130 182 80 170 78 186 C76 204 124 194 126 210 C127 220 76 218 60 222" class="st-f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="112" cy="262" r="3" class="ink"/>
+
+  <!-- 説明 -->
+  <path d="M120 22 H166" class="st-line" stroke-width="1"/>
+  <text x="172" y="20" class="t-s ink">口</text>
+  <text x="194" y="20" class="t-xs soft">かみ砕き、唾液でデンプンを分解</text>
+  <path d="M102 58 H166" class="st-line" stroke-width="1"/>
+  <text x="172" y="56" class="t-s ink">食道</text>
+  <text x="206" y="56" class="t-xs soft">波打つ動きで胃へ送る</text>
+  <path d="M148 98 H166" class="st-line" stroke-width="1"/>
+  <text x="172" y="94" class="t-s fl">胃</text>
+  <text x="194" y="94" class="t-xs soft">胃酸と酵素で</text>
+  <text x="194" y="108" class="t-xs soft">たんぱく質を分解</text>
+  <path d="M130 172 H166" class="st-line" stroke-width="1"/>
+  <text x="172" y="160" class="t-s fl">小腸（長い）</text>
+  <text x="172" y="176" class="t-xs soft">分解を仕上げ、栄養の</text>
+  <text x="172" y="190" class="t-xs soft">大部分を血液などへ吸収</text>
+  <path d="M158 222 H166" class="st-line" stroke-width="1"/>
+  <text x="172" y="220" class="t-s ink">大腸</text>
+  <text x="206" y="220" class="t-xs soft">主に水分を吸収し便に</text>
+  <text x="172" y="254" class="t-xs soft">消化＝小さく分ける</text>
+  <text x="172" y="270" class="t-xs soft">吸収＝体の中へ取り込む</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- ペトリ皿 -->
+  <circle cx="116" cy="112" r="96" class="paper"/>
+  <circle cx="116" cy="112" r="96" class="st" stroke-width="2.5"/>
+  <circle cx="116" cy="112" r="90" class="st-line" stroke-width="1"/>
+
+  <!-- 細菌の集まり（コロニー） -->
+  <g class="soft">
+    <circle cx="44" cy="80" r="6"/><circle cx="58" cy="54" r="5"/><circle cx="86" cy="34" r="6"/><circle cx="120" cy="30" r="5"/>
+    <circle cx="156" cy="38" r="6"/><circle cx="184" cy="62" r="5"/><circle cx="198" cy="96" r="6"/><circle cx="196" cy="134" r="5"/>
+    <circle cx="182" cy="168" r="6"/><circle cx="152" cy="192" r="5"/><circle cx="114" cy="198" r="6"/><circle cx="78" cy="188" r="5"/>
+    <circle cx="48" cy="164" r="6"/><circle cx="34" cy="126" r="5"/><circle cx="66" cy="102" r="4"/><circle cx="170" cy="112" r="4"/>
+    <circle cx="96" cy="166" r="4"/><circle cx="140" cy="60" r="4"/>
+  </g>
+
+  <!-- 青カビと、細菌が育たない透明な輪 -->
+  <circle cx="116" cy="112" r="46" class="tint"/>
+  <circle cx="116" cy="112" r="46" class="st-f dash" stroke-width="1.5"/>
+  <path d="M100 100 C96 86 116 82 124 92 C136 88 142 104 134 114 C140 126 124 136 114 128 C102 136 90 124 98 114 C88 108 92 98 100 100 Z" class="fl"/>
+
+  <!-- 引き出し線 -->
+  <path d="M136 104 L238 52" class="st-soft" stroke-width="1"/>
+  <text x="242" y="48" class="t-s fl">青カビ</text>
+  <text x="242" y="64" class="t-xs soft">ペニシリンを出す</text>
+  <path d="M158 124 L238 112" class="st-soft" stroke-width="1"/>
+  <text x="242" y="108" class="t-s ink">育たない輪</text>
+  <text x="242" y="124" class="t-xs soft">細菌が溶けて消えた</text>
+  <path d="M198 96 L238 172" class="st-soft" stroke-width="1"/>
+  <text x="242" y="170" class="t-s ink">細菌</text>
+  <text x="242" y="186" class="t-xs soft">ブドウ球菌</text>
+
+  <!-- 年表 -->
+  <path d="M20 244 H344" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <circle cx="56" cy="244" r="6" class="fl"/>
+  <circle cx="176" cy="244" r="6" class="fl"/>
+  <circle cx="296" cy="244" r="6" class="paper"/>
+  <circle cx="296" cy="244" r="6" class="st-f" stroke-width="2"/>
+  <text x="56" y="232" class="t-s mid ink">1928</text>
+  <text x="56" y="266" class="t-xs mid soft">フレミングが発見</text>
+  <text x="176" y="232" class="t-s mid ink">1940年代</text>
+  <text x="176" y="266" class="t-xs mid soft">薬として量産</text>
+  <text x="296" y="232" class="t-s mid ink">その後</text>
+  <text x="296" y="266" class="t-xs mid soft">効かない耐性菌</text>
+</svg>

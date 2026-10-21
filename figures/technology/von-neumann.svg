@@ -1,0 +1,46 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 入力装置 -->
+  <rect x="8" y="96" width="76" height="56" rx="8" class="paper"/>
+  <rect x="8" y="96" width="76" height="56" rx="8" class="st" stroke-width="2"/>
+  <text x="46" y="120" class="t-s mid ink">入力装置</text>
+  <text x="46" y="138" class="t-xs mid soft">キーボード</text>
+
+  <!-- CPU（制御装置＋演算装置） -->
+  <rect x="108" y="30" width="144" height="150" rx="10" class="tint"/>
+  <rect x="108" y="30" width="144" height="150" rx="10" class="st-f" stroke-width="2.5"/>
+  <text x="180" y="50" class="t-m mid fl">CPU</text>
+  <rect x="120" y="60" width="120" height="48" rx="6" class="paper"/>
+  <rect x="120" y="60" width="120" height="48" rx="6" class="st-f" stroke-width="1.5"/>
+  <text x="180" y="81" class="t-s mid ink">制御装置</text>
+  <text x="180" y="98" class="t-xs mid soft">命令を読み、指示</text>
+  <rect x="120" y="120" width="120" height="48" rx="6" class="paper"/>
+  <rect x="120" y="120" width="120" height="48" rx="6" class="st-f" stroke-width="1.5"/>
+  <text x="180" y="141" class="t-s mid ink">演算装置</text>
+  <text x="180" y="158" class="t-xs mid soft">足し算・比べる</text>
+  <path d="M168 108 V118" class="st-f" stroke-width="1.5" marker-end="url(#a-technology)"/>
+
+  <!-- 出力装置 -->
+  <rect x="276" y="96" width="76" height="56" rx="8" class="paper"/>
+  <rect x="276" y="96" width="76" height="56" rx="8" class="st" stroke-width="2"/>
+  <text x="314" y="120" class="t-s mid ink">出力装置</text>
+  <text x="314" y="138" class="t-xs mid soft">画面</text>
+
+  <!-- 記憶装置 -->
+  <rect x="108" y="206" width="144" height="52" rx="8" class="paper"/>
+  <rect x="108" y="206" width="144" height="52" rx="8" class="st" stroke-width="2"/>
+  <text x="180" y="228" class="t-s mid ink">記憶装置（メモリ）</text>
+  <text x="180" y="246" class="t-xs mid soft">命令とデータを置く</text>
+
+  <!-- データの流れ -->
+  <path d="M86 124 H104" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <path d="M254 124 H272" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <path d="M156 204 V184" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <path d="M204 182 V202" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <text x="150" y="198" class="t-xs end soft">読む</text>
+  <text x="210" y="198" class="t-xs soft">書く</text>
+
+  <text x="46" y="80" class="t-xs mid soft">① 入れる</text>
+  <text x="314" y="80" class="t-xs mid soft">③ 出す</text>
+  <text x="180" y="20" class="t-xs mid soft">② 1つずつ命令を実行</text>
+  <text x="180" y="276" class="t-xs mid soft">プログラムもデータと同じく記憶に置く</text>
+</svg>

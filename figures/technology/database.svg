@@ -1,0 +1,63 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <text x="14" y="22" class="t-m ink">会員</text>
+  <rect x="14" y="30" width="106" height="24" class="fl"/>
+  <text x="32" y="46" class="t-xs mid on">ID</text>
+  <text x="85" y="46" class="t-xs mid on">名前</text>
+  <rect x="14" y="54" width="106" height="24" class="paper"/>
+  <rect x="14" y="54" width="106" height="24" class="st-line" stroke-width="1"/>
+  <text x="32" y="70" class="t-xs mid ink">1</text>
+  <text x="85" y="70" class="t-xs mid ink">佐藤</text>
+  <rect x="14" y="78" width="106" height="24" class="tint"/>
+  <rect x="14" y="78" width="106" height="24" class="st-line" stroke-width="1"/>
+  <text x="32" y="94" class="t-xs mid ink">2</text>
+  <text x="85" y="94" class="t-xs mid ink">鈴木</text>
+  <rect x="14" y="102" width="106" height="24" class="paper"/>
+  <rect x="14" y="102" width="106" height="24" class="st-line" stroke-width="1"/>
+  <text x="32" y="118" class="t-xs mid ink">3</text>
+  <text x="85" y="118" class="t-xs mid ink">田中</text>
+  <path d="M50 30 V126" class="st-line" stroke-width="1"/>
+  <rect x="14" y="30" width="106" height="96" class="st" stroke-width="1.5"/>
+  <text x="168" y="22" class="t-m ink">注文</text>
+  <rect x="168" y="30" width="178" height="24" class="fl"/>
+  <text x="193" y="46" class="t-xs mid on">注文</text>
+  <text x="248" y="46" class="t-xs mid on">会員ID</text>
+  <text x="312" y="46" class="t-xs mid on">品物</text>
+  <rect x="168" y="54" width="178" height="24" class="paper"/>
+  <rect x="168" y="54" width="178" height="24" class="st-line" stroke-width="1"/>
+  <text x="193" y="70" class="t-xs mid ink">101</text>
+  <text x="248" y="70" class="t-xs mid ink">1</text>
+  <text x="312" y="70" class="t-xs mid ink">本</text>
+  <rect x="168" y="78" width="178" height="24" class="tint"/>
+  <rect x="168" y="78" width="178" height="24" class="st-line" stroke-width="1"/>
+  <text x="193" y="94" class="t-xs mid ink">102</text>
+  <text x="248" y="94" class="t-xs mid ink">2</text>
+  <text x="312" y="94" class="t-xs mid ink">傘</text>
+  <rect x="168" y="102" width="178" height="24" class="tint"/>
+  <rect x="168" y="102" width="178" height="24" class="st-line" stroke-width="1"/>
+  <text x="193" y="118" class="t-xs mid ink">103</text>
+  <text x="248" y="118" class="t-xs mid ink">2</text>
+  <text x="312" y="118" class="t-xs mid ink">ペン</text>
+  <rect x="168" y="126" width="178" height="24" class="paper"/>
+  <rect x="168" y="126" width="178" height="24" class="st-line" stroke-width="1"/>
+  <text x="193" y="142" class="t-xs mid ink">104</text>
+  <text x="248" y="142" class="t-xs mid ink">3</text>
+  <text x="312" y="142" class="t-xs mid ink">本</text>
+  <path d="M218 30 V150" class="st-line" stroke-width="1"/>
+  <path d="M278 30 V150" class="st-line" stroke-width="1"/>
+  <rect x="168" y="30" width="178" height="120" class="st" stroke-width="1.5"/>
+  <!-- 会員IDでつながる -->
+  <path d="M120 90 H166" class="st-f" stroke-width="2.5"/>
+  <path d="M140 90 C154 90 152 114 166 114" class="st-f" stroke-width="2.5"/>
+  <circle cx="120" cy="90" r="4" class="fl"/>
+  <text x="67" y="146" class="t-xs mid soft">横の1行＝1件</text>
+  <text x="258" y="174" class="t-xs mid soft">会員IDで表と表をつなぐ</text>
+  <!-- 問い合わせと結果 -->
+  <rect x="14" y="196" width="196" height="40" rx="6" class="paper"/>
+  <rect x="14" y="196" width="196" height="40" rx="6" class="st" stroke-width="1.5"/>
+  <text x="24" y="213" class="t-xs soft">問い合わせ（SQL）</text>
+  <text x="24" y="229" class="t-s ink">鈴木さんの注文は？</text>
+  <path d="M214 216 H248" class="st-f" stroke-width="2" marker-end="url(#a-technology)"/>
+  <rect x="254" y="196" width="92" height="40" rx="6" class="fl"/>
+  <text x="300" y="221" class="t-m mid on">傘・ペン</text>
+  <text x="180" y="266" class="t-xs mid soft">同じ情報は1か所だけに置き、必要なときに組み合わせる</text>
+</svg>

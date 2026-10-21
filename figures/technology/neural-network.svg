@@ -1,0 +1,62 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- つながり（太さ＝重みのイメージ） -->
+  <path d="M50 62 L150 48" class="st-soft" stroke-width="2.5"/>
+  <path d="M50 62 L150 90" class="st-soft" stroke-width="1"/>
+  <path d="M50 62 L150 132" class="st-soft" stroke-width="1.5"/>
+  <path d="M50 62 L150 174" class="st-soft" stroke-width="0.8"/>
+  <path d="M50 104 L150 48" class="st-soft" stroke-width="1"/>
+  <path d="M50 104 L150 90" class="st-soft" stroke-width="2"/>
+  <path d="M50 104 L150 132" class="st-soft" stroke-width="0.8"/>
+  <path d="M50 104 L150 174" class="st-soft" stroke-width="1.5"/>
+  <path d="M50 146 L150 48" class="st-soft" stroke-width="1"/>
+  <path d="M50 146 L150 90" class="st-soft" stroke-width="1.2"/>
+  <path d="M50 146 L150 132" class="st-soft" stroke-width="2.5"/>
+  <path d="M50 146 L150 174" class="st-soft" stroke-width="1"/>
+  <path d="M150 48 L250 80" class="st-f" stroke-width="2.5"/>
+  <path d="M150 48 L250 142" class="st-f" stroke-width="0.8"/>
+  <path d="M150 90 L250 80" class="st-f" stroke-width="1.5"/>
+  <path d="M150 90 L250 142" class="st-f" stroke-width="1"/>
+  <path d="M150 132 L250 80" class="st-f" stroke-width="0.8"/>
+  <path d="M150 132 L250 142" class="st-f" stroke-width="2"/>
+  <path d="M150 174 L250 80" class="st-f" stroke-width="1"/>
+  <path d="M150 174 L250 142" class="st-f" stroke-width="1.5"/>
+  <circle cx="50" cy="62" r="11" class="paper"/>
+  <circle cx="50" cy="62" r="11" class="st" stroke-width="2"/>
+  <circle cx="50" cy="104" r="11" class="paper"/>
+  <circle cx="50" cy="104" r="11" class="st" stroke-width="2"/>
+  <circle cx="50" cy="146" r="11" class="paper"/>
+  <circle cx="50" cy="146" r="11" class="st" stroke-width="2"/>
+  <circle cx="150" cy="48" r="11" class="tint"/>
+  <circle cx="150" cy="48" r="11" class="st-f" stroke-width="2"/>
+  <circle cx="150" cy="90" r="11" class="tint"/>
+  <circle cx="150" cy="90" r="11" class="st-f" stroke-width="2"/>
+  <circle cx="150" cy="132" r="11" class="tint"/>
+  <circle cx="150" cy="132" r="11" class="st-f" stroke-width="2"/>
+  <circle cx="150" cy="174" r="11" class="tint"/>
+  <circle cx="150" cy="174" r="11" class="st-f" stroke-width="2"/>
+  <circle cx="250" cy="80" r="11" class="fl"/>
+  <circle cx="250" cy="142" r="11" class="paper"/>
+  <circle cx="250" cy="142" r="11" class="st-f" stroke-width="2"/>
+  <text x="268" y="78" class="t-s ink">ネコ</text>
+  <text x="268" y="94" class="t-xs fl">90%</text>
+  <text x="268" y="140" class="t-s ink">イヌ</text>
+  <text x="268" y="156" class="t-xs soft">10%</text>
+  <text x="50" y="180" class="t-xs mid soft">入力層</text>
+  <text x="50" y="194" class="t-xs mid soft">（画素など）</text>
+  <text x="150" y="200" class="t-xs mid soft">中間層</text>
+  <text x="250" y="180" class="t-xs mid soft">出力層</text>
+  <!-- 学習：答えとのずれから重みを直す -->
+  <path d="M250 64 C240 20 160 14 60 40" class="st-f dash" stroke-width="1.5" marker-end="url(#a-technology)"/>
+  <text x="150" y="18" class="t-xs mid fl halo">正解とのずれから重みを直す</text>
+  <!-- 下：1つの「ニューロン」の中身 -->
+  <path d="M14 214 H346" class="st-line" stroke-width="1"/>
+  <text x="14" y="234" class="t-xs soft">1つの点の中身</text>
+  <text x="14" y="258" class="t-s ink">入力×重みを全部足す</text>
+  <path d="M164 254 H186" class="st-f" stroke-width="2" marker-end="url(#a-technology)"/>
+  <circle cx="204" cy="254" r="14" class="tint"/>
+  <circle cx="204" cy="254" r="14" class="st-f" stroke-width="2"/>
+  <text x="204" y="259" class="t-m mid fl">Σ</text>
+  <path d="M220 254 H242" class="st-f" stroke-width="2" marker-end="url(#a-technology)"/>
+  <text x="248" y="250" class="t-xs ink">大きければ</text>
+  <text x="248" y="266" class="t-xs ink">強く次へ伝える</text>
+</svg>

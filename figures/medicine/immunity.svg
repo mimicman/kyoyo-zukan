@@ -1,0 +1,51 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 侵入者 -->
+  <text x="34" y="20" class="t-xs mid soft">病原体</text>
+  <circle cx="22" cy="44" r="7" class="ink"/>
+  <circle cx="44" cy="62" r="6" class="ink"/>
+  <circle cx="24" cy="80" r="7" class="ink"/>
+  <path d="M54 62 H70" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+
+  <!-- ① 壁：皮膚・粘膜 -->
+  <rect x="76" y="26" width="16" height="200" rx="3" class="soft" opacity="0.6"/>
+  <text x="84" y="246" class="t-s mid ink">① 壁</text>
+  <text x="84" y="262" class="t-xs mid soft">皮膚・粘膜</text>
+
+  <!-- ② 自然免疫：すぐ動き、何でも食べる -->
+  <rect x="104" y="26" width="104" height="200" rx="8" class="paper"/>
+  <rect x="104" y="26" width="104" height="200" rx="8" class="st-soft" stroke-width="1.5"/>
+  <text x="156" y="46" class="t-s mid ink">② 自然免疫</text>
+  <text x="156" y="62" class="t-xs mid soft">数時間で動く</text>
+  <path d="M156 84 m-26 0 a26 22 0 1 0 52 0 a26 22 0 1 0 -52 0" class="tint"/>
+  <path d="M156 84 m-26 0 a26 22 0 1 0 52 0 a26 22 0 1 0 -52 0" class="st-soft" stroke-width="1.5"/>
+  <path d="M166 74 l14 -6 v26 z" class="paper"/>
+  <circle cx="148" cy="86" r="5" class="ink"/>
+  <text x="156" y="124" class="t-xs mid ink">食細胞</text>
+  <text x="156" y="138" class="t-xs mid soft">相手を選ばず食べる</text>
+  <path d="M156 150 V184" class="st-f dash" stroke-width="1.5"/>
+  <path d="M156 184 H214" class="st-f dash" stroke-width="1.5" marker-end="url(#a-medicine)"/>
+  <text x="156" y="204" class="t-xs mid soft">敵の目印を</text>
+  <text x="156" y="218" class="t-xs mid soft">伝える</text>
+
+  <!-- ③ 獲得免疫：遅いが狙い撃ち、記憶する -->
+  <rect x="220" y="26" width="130" height="200" rx="8" class="tint"/>
+  <rect x="220" y="26" width="130" height="200" rx="8" class="st-f" stroke-width="2"/>
+  <text x="285" y="46" class="t-s mid fl">③ 獲得免疫</text>
+  <text x="285" y="62" class="t-xs mid soft">数日〜1週間ほど</text>
+  <circle cx="252" cy="96" r="14" class="paper"/>
+  <circle cx="252" cy="96" r="14" class="st-f" stroke-width="2"/>
+  <text x="252" y="100" class="t-xs mid fl">T</text>
+  <text x="252" y="126" class="t-xs mid ink">T細胞</text>
+  <text x="252" y="140" class="t-xs mid soft">感染細胞を</text>
+  <text x="252" y="154" class="t-xs mid soft">攻撃</text>
+  <circle cx="314" cy="96" r="14" class="fl"/>
+  <text x="314" y="100" class="t-xs mid on">B</text>
+  <path d="M336 90 V80 L331 74 M336 80 L341 74 M334 112 V102 L329 96 M334 102 L339 96" class="st-f" stroke-width="2" stroke-linecap="round"/>
+  <text x="314" y="126" class="t-xs mid ink">B細胞</text>
+  <text x="314" y="140" class="t-xs mid soft">抗体を出す</text>
+  <path d="M234 168 H336" class="st-f" stroke-width="1"/>
+  <text x="285" y="190" class="t-xs mid ink">記憶細胞が残る</text>
+  <text x="285" y="206" class="t-xs mid soft">→ 2回目は速い</text>
+
+  <text x="128" y="254" class="t-xs soft">左から順に食い止める</text>
+</svg>

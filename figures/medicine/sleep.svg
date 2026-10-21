@@ -1,0 +1,32 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 段階の目盛り -->
+  <path d="M66 50 H340" class="st-line" stroke-width="1"/>
+  <text x="60" y="54" class="t-xs end soft">目覚め</text>
+  <path d="M66 80 H340" class="st-line" stroke-width="1"/>
+  <text x="60" y="84" class="t-xs end fl">レム</text>
+  <path d="M66 120 H340" class="st-line" stroke-width="1"/>
+  <text x="60" y="118" class="t-xs end soft">ノンレム</text>
+  <text x="60" y="131" class="t-xs end ink">浅い</text>
+  <path d="M66 170 H340" class="st-line" stroke-width="1"/>
+  <text x="60" y="168" class="t-xs end soft">ノンレム</text>
+  <text x="60" y="181" class="t-xs end ink">深い</text>
+  <!-- 一晩の睡眠の深さ -->
+  <path d="M66 50 H75 V120 H83 V170 H107 V120 H114 V80 H121 V120 H131 V170 H155 V120 H169 V80 H179 V120 H189 V170 H200 V120 H217 V80 H234 V120 H265 V80 H285 V120 H313 V80 H333 V50 H340 V50" class="st" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M114 80 H121" class="st-f" stroke-width="7" stroke-linecap="round"/>
+  <path d="M169 80 H179" class="st-f" stroke-width="7" stroke-linecap="round"/>
+  <path d="M217 80 H234" class="st-f" stroke-width="7" stroke-linecap="round"/>
+  <path d="M265 80 H285" class="st-f" stroke-width="7" stroke-linecap="round"/>
+  <path d="M313 80 H333" class="st-f" stroke-width="7" stroke-linecap="round"/>
+  <path d="M66 196 H340" class="st" stroke-width="1.5"/>
+  <text x="66" y="212" class="t-xs mid soft">0</text>
+  <text x="134" y="212" class="t-xs mid soft">2</text>
+  <text x="203" y="212" class="t-xs mid soft">4</text>
+  <text x="272" y="212" class="t-xs mid soft">6</text>
+  <text x="340" y="212" class="t-xs mid soft">8</text>
+  <text x="340" y="228" class="t-xs end soft">寝てからの時間（時間）</text>
+  <!-- 約90分のひと区切り -->
+  <path d="M66 30 V24 H121 V30" class="st-f" stroke-width="1.5"/>
+  <text x="93" y="18" class="t-xs mid fl">約90分でひと回り</text>
+  <text x="14" y="252" class="t-xs ink">前半：深いノンレム睡眠が多い</text>
+  <text x="14" y="270" class="t-xs fl">後半：レム睡眠が長くなる（夢を見やすい）</text>
+</svg>

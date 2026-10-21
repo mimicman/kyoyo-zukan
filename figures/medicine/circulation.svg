@@ -1,0 +1,50 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 肺 -->
+  <rect x="120" y="16" width="120" height="44" rx="20" class="tint"/>
+  <rect x="120" y="16" width="120" height="44" rx="20" class="st-f" stroke-width="2"/>
+  <text x="180" y="36" class="t-s mid ink">肺</text>
+  <text x="180" y="51" class="t-xs mid soft">酸素をもらう</text>
+
+  <!-- 心臓：4つの部屋（図の左＝体の右側） -->
+  <rect x="98" y="104" width="70" height="40" rx="6" class="paper"/>
+  <rect x="98" y="104" width="70" height="40" rx="6" class="st-soft" stroke-width="2"/>
+  <text x="133" y="129" class="t-s mid ink">右心房</text>
+  <rect x="98" y="150" width="70" height="44" rx="6" class="paper"/>
+  <rect x="98" y="150" width="70" height="44" rx="6" class="st-soft" stroke-width="2"/>
+  <text x="133" y="177" class="t-s mid ink">右心室</text>
+  <rect x="192" y="104" width="70" height="40" rx="6" class="tint"/>
+  <rect x="192" y="104" width="70" height="40" rx="6" class="st-f" stroke-width="2"/>
+  <text x="227" y="129" class="t-s mid ink">左心房</text>
+  <rect x="192" y="150" width="70" height="44" rx="6" class="tint"/>
+  <rect x="192" y="150" width="70" height="44" rx="6" class="st-f" stroke-width="2"/>
+  <text x="227" y="177" class="t-s mid ink">左心室</text>
+  <path d="M133 144 V150 M227 144 V150" class="st" stroke-width="2"/>
+
+  <!-- 全身 -->
+  <rect x="110" y="232" width="140" height="40" rx="8" class="paper"/>
+  <rect x="110" y="232" width="140" height="40" rx="8" class="st" stroke-width="2"/>
+  <text x="180" y="250" class="t-s mid ink">全身</text>
+  <text x="180" y="265" class="t-xs mid soft">酸素を渡す</text>
+
+  <!-- 肺循環：右心室 → 肺動脈 → 肺 → 肺静脈 → 左心房 -->
+  <path d="M168 172 H180 V64" class="st-soft" stroke-width="3" marker-end="url(#a-soft)"/>
+  <path d="M240 38 H284 V124 H266" class="st-f" stroke-width="3" marker-end="url(#a-medicine)"/>
+  <text x="174" y="86" class="t-xs end soft">肺動脈</text>
+  <text x="290" y="86" class="t-xs fl">肺静脈</text>
+
+  <!-- 体循環：左心室 → 大動脈 → 全身 → 大静脈 → 右心房 -->
+  <path d="M262 172 H314 V252 H254" class="st-f" stroke-width="3" marker-end="url(#a-medicine)"/>
+  <path d="M110 252 H58 V124 H94" class="st-soft" stroke-width="3" marker-end="url(#a-soft)"/>
+  <text x="320" y="214" class="t-xs fl">大動脈</text>
+  <text x="52" y="214" class="t-xs end soft">大静脈</text>
+
+  <text x="54" y="44" class="t-s mid fl">肺循環</text>
+  <text x="180" y="218" class="t-s mid fl">体循環</text>
+
+  <!-- 凡例 -->
+  <path d="M20 290 H44" class="st-f" stroke-width="3"/>
+  <text x="50" y="294" class="t-xs ink">酸素の多い血</text>
+  <path d="M170 290 H194" class="st-soft" stroke-width="3"/>
+  <text x="200" y="294" class="t-xs ink">酸素の少ない血</text>
+  <text x="342" y="18" class="t-xs end soft">正面から見た図</text>
+</svg>

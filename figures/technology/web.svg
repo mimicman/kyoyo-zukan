@@ -1,0 +1,34 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- ブラウザ（左）とサーバー（右） -->
+  <rect x="24" y="14" width="76" height="52" rx="5" class="paper"/>
+  <rect x="24" y="14" width="76" height="52" rx="5" class="st" stroke-width="2"/>
+  <path d="M24 26 H100" class="st" stroke-width="1.5"/>
+  <circle cx="31" cy="20" r="2" class="ink"/><circle cx="38" cy="20" r="2" class="ink"/>
+  <text x="62" y="50" class="t-s mid ink">ブラウザ</text>
+  <rect x="268" y="12" width="56" height="56" rx="4" class="tint"/>
+  <rect x="268" y="12" width="56" height="56" rx="4" class="st-f" stroke-width="2"/>
+  <path d="M268 30 H324 M268 49 H324" class="st-f" stroke-width="1.5"/>
+  <circle cx="314" cy="21" r="2.5" class="fl"/><circle cx="314" cy="40" r="2.5" class="fl"/><circle cx="314" cy="59" r="2.5" class="fl"/>
+  <text x="296" y="84" class="t-s mid fl">サーバー</text>
+
+  <!-- 時間の流れ（下へ） -->
+  <path d="M62 70 V262" class="st-soft dash" stroke-width="1.5"/>
+  <path d="M296 90 V262" class="st-f dash" stroke-width="1.5"/>
+
+  <text x="14" y="104" class="t-xs soft halo">① URLを入力</text>
+  <path d="M64 124 H292" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <text x="178" y="116" class="t-s mid ink">② リクエスト「ください」</text>
+  <text x="178" y="138" class="t-xs mid soft">GET /index.html（HTTP）</text>
+
+  <path d="M294 166 H66" class="st-f" stroke-width="2.5" marker-end="url(#a-technology)"/>
+  <text x="178" y="158" class="t-s mid fl">③ レスポンス「どうぞ」</text>
+  <text x="178" y="180" class="t-xs mid soft">200 OK ＋ HTML（ページの文書）</text>
+
+  <path d="M64 204 H292" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M294 218 H66" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="178" y="200" class="t-xs mid soft halo">④ 画像なども同じように取りに行く</text>
+
+  <rect x="20" y="238" width="84" height="34" rx="4" class="fl"/>
+  <text x="62" y="259" class="t-xs mid on">⑤ 画面に描く</text>
+  <text x="300" y="276" class="t-xs end soft">URL＝ページの住所</text>
+</svg>

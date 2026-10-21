@@ -1,0 +1,46 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- ここまでの文 -->
+  <text x="14" y="20" class="t-xs soft">ここまでの文</text>
+  <rect x="14" y="28" width="62" height="30" rx="6" class="paper"/>
+  <rect x="14" y="28" width="62" height="30" rx="6" class="st" stroke-width="1.5"/>
+  <text x="45" y="48" class="t-s mid ink">今日は</text>
+  <rect x="82" y="28" width="52" height="30" rx="6" class="paper"/>
+  <rect x="82" y="28" width="52" height="30" rx="6" class="st" stroke-width="1.5"/>
+  <text x="108" y="48" class="t-s mid ink">天気</text>
+  <rect x="140" y="28" width="38" height="30" rx="6" class="paper"/>
+  <rect x="140" y="28" width="38" height="30" rx="6" class="st" stroke-width="1.5"/>
+  <text x="159" y="48" class="t-s mid ink">が</text>
+  <rect x="184" y="28" width="52" height="30" rx="6" class="fl"/>
+  <text x="210" y="48" class="t-s mid on">いい</text>
+  <text x="244" y="48" class="t-s soft">…</text>
+
+  <!-- 予測する仕組み -->
+  <path d="M96 62 V80" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <rect x="24" y="84" width="144" height="38" rx="8" class="tint"/>
+  <rect x="24" y="84" width="144" height="38" rx="8" class="st-f" stroke-width="2"/>
+  <text x="96" y="101" class="t-s mid ink">大規模言語モデル</text>
+  <text x="96" y="115" class="t-xs mid soft">大量の文章で学習した</text>
+
+  <!-- 次の語の候補と確率 -->
+  <path d="M170 104 H186" class="st-f" stroke-width="2" marker-end="url(#a-technology)"/>
+  <text x="194" y="82" class="t-xs soft">次の語の確率（例）</text>
+  <text x="236" y="104" class="t-s end ink">いい</text>
+  <rect x="242" y="92" width="96" height="14" rx="2" class="fl"/>
+  <text x="236" y="126" class="t-s end ink">悪い</text>
+  <rect x="242" y="114" width="40" height="14" rx="2" class="soft"/>
+  <text x="236" y="148" class="t-s end ink">変わる</text>
+  <rect x="242" y="136" width="26" height="14" rx="2" class="soft"/>
+  <text x="236" y="170" class="t-s end ink">晴れ</text>
+  <rect x="242" y="158" width="10" height="14" rx="2" class="soft"/>
+
+  <!-- 選んでつなげる（くり返し） -->
+  <path d="M340 92 C356 60 300 30 246 40" class="st-f" stroke-width="2" marker-end="url(#a-technology)"/>
+  <text x="336" y="20" class="t-xs end fl">1語選んで文の後ろへ</text>
+
+  <!-- くり返しの説明 -->
+  <path d="M14 196 H346" class="st-line" stroke-width="1"/>
+  <path d="M34 212 A14 14 0 1 1 20 226" class="st-f" stroke-width="2" marker-end="url(#a-technology)"/>
+  <text x="58" y="222" class="t-s ink">予測 → 選ぶ → つなげる、をくり返す</text>
+  <text x="58" y="242" class="t-xs soft">これで長い文章ができる。</text>
+  <text x="58" y="262" class="t-xs soft">確率で選ぶので、もっともらしい誤りも出る</text>
+</svg>

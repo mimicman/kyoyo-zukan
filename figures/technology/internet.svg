@@ -1,0 +1,52 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 網の目のつながり -->
+  <path d="M74 130 L124 76 L196 58 L262 92 L290 130 M74 130 L120 190 L192 206 L258 176 L290 130 M124 76 L162 134 L120 190 M162 134 L258 176 M196 58 L162 134 M262 92 L258 176" class="st-line" stroke-width="2.5"/>
+
+  <!-- パケットの通り道（3つが別の道を通る） -->
+  <path d="M74 130 L124 76 L196 58 L262 92 L290 130" class="st-f" stroke-width="2.5"/>
+  <path d="M74 130 L162 134 L258 176 L290 130" class="st-f dash" stroke-width="2"/>
+  <path d="M74 130 L120 190 L192 206 L258 176" class="st-soft" stroke-width="2"/>
+
+  <!-- ルーター -->
+  <circle cx="124" cy="76" r="9" class="paper"/>
+  <circle cx="124" cy="76" r="9" class="st" stroke-width="2"/>
+  <circle cx="196" cy="58" r="9" class="paper"/>
+  <circle cx="196" cy="58" r="9" class="st" stroke-width="2"/>
+  <circle cx="262" cy="92" r="9" class="paper"/>
+  <circle cx="262" cy="92" r="9" class="st" stroke-width="2"/>
+  <circle cx="162" cy="134" r="9" class="paper"/>
+  <circle cx="162" cy="134" r="9" class="st" stroke-width="2"/>
+  <circle cx="120" cy="190" r="9" class="paper"/>
+  <circle cx="120" cy="190" r="9" class="st" stroke-width="2"/>
+  <circle cx="192" cy="206" r="9" class="paper"/>
+  <circle cx="192" cy="206" r="9" class="st" stroke-width="2"/>
+  <circle cx="258" cy="176" r="9" class="paper"/>
+  <circle cx="258" cy="176" r="9" class="st" stroke-width="2"/>
+
+  <!-- パケット -->
+  <rect x="150" y="56" width="18" height="14" rx="2" class="fl"/>
+  <text x="159" y="67" class="t-xs mid on">1</text>
+  <rect x="200" y="144" width="18" height="14" rx="2" class="fl"/>
+  <text x="209" y="155" class="t-xs mid on">2</text>
+  <rect x="146" y="190" width="18" height="14" rx="2" class="fl"/>
+  <text x="155" y="201" class="t-xs mid on">3</text>
+
+  <!-- 送る側・受け取る側 -->
+  <rect x="6" y="108" width="72" height="44" rx="6" class="tint"/>
+  <rect x="6" y="108" width="72" height="44" rx="6" class="st-f" stroke-width="2"/>
+  <text x="42" y="128" class="t-s mid ink">送る側</text>
+  <text x="42" y="144" class="t-xs mid soft">小分けにする</text>
+  <rect x="290" y="108" width="62" height="44" rx="6" class="tint"/>
+  <rect x="290" y="108" width="62" height="44" rx="6" class="st-f" stroke-width="2"/>
+  <text x="321" y="128" class="t-s mid ink">受け取る</text>
+  <text x="321" y="144" class="t-xs mid soft">組み立てる</text>
+  <text x="350" y="200" class="t-xs end soft">住所＝IPアドレス</text>
+
+  <!-- 凡例 -->
+  <circle cx="24" cy="240" r="8" class="paper"/>
+  <circle cx="24" cy="240" r="8" class="st" stroke-width="2"/>
+  <text x="40" y="244" class="t-xs ink">ルーター：宛先を見て、次の中継先へ渡す</text>
+  <rect x="15" y="258" width="18" height="14" rx="2" class="fl"/>
+  <text x="40" y="269" class="t-xs ink">パケット：小分けのデータ（宛先つき）</text>
+  <text x="180" y="24" class="t-xs mid soft">1本の道が切れても、別の道を通れる</text>
+</svg>

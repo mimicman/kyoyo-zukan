@@ -1,0 +1,119 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <text x="20" y="18" class="t-xs soft">並んだ1〜16から「13」を探す</text>
+  <text x="20" y="40" class="t-s ink">前から順に調べる（線形探索）</text>
+  <rect x="21" y="48" width="18" height="24" rx="3" class="tint"/>
+  <rect x="21" y="48" width="18" height="24" rx="3" class="st-soft" stroke-width="1"/>
+  <text x="30" y="64" class="t-xs mid ink">1</text>
+  <rect x="41" y="48" width="18" height="24" rx="3" class="tint"/>
+  <rect x="41" y="48" width="18" height="24" rx="3" class="st-soft" stroke-width="1"/>
+  <text x="50" y="64" class="t-xs mid ink">2</text>
+  <rect x="61" y="48" width="18" height="24" rx="3" class="tint"/>
+  <rect x="61" y="48" width="18" height="24" rx="3" class="st-soft" stroke-width="1"/>
+  <text x="70" y="64" class="t-xs mid ink">3</text>
+  <rect x="81" y="48" width="18" height="24" rx="3" class="tint"/>
+  <rect x="81" y="48" width="18" height="24" rx="3" class="st-soft" stroke-width="1"/>
+  <text x="90" y="64" class="t-xs mid ink">4</text>
+  <rect x="101" y="48" width="18" height="24" rx="3" class="tint"/>
+  <rect x="101" y="48" width="18" height="24" rx="3" class="st-soft" stroke-width="1"/>
+  <text x="110" y="64" class="t-xs mid ink">5</text>
+  <rect x="121" y="48" width="18" height="24" rx="3" class="tint"/>
+  <rect x="121" y="48" width="18" height="24" rx="3" class="st-soft" stroke-width="1"/>
+  <text x="130" y="64" class="t-xs mid ink">6</text>
+  <rect x="141" y="48" width="18" height="24" rx="3" class="tint"/>
+  <rect x="141" y="48" width="18" height="24" rx="3" class="st-soft" stroke-width="1"/>
+  <text x="150" y="64" class="t-xs mid ink">7</text>
+  <rect x="161" y="48" width="18" height="24" rx="3" class="tint"/>
+  <rect x="161" y="48" width="18" height="24" rx="3" class="st-soft" stroke-width="1"/>
+  <text x="170" y="64" class="t-xs mid ink">8</text>
+  <rect x="181" y="48" width="18" height="24" rx="3" class="tint"/>
+  <rect x="181" y="48" width="18" height="24" rx="3" class="st-soft" stroke-width="1"/>
+  <text x="190" y="64" class="t-xs mid ink">9</text>
+  <rect x="201" y="48" width="18" height="24" rx="3" class="tint"/>
+  <rect x="201" y="48" width="18" height="24" rx="3" class="st-soft" stroke-width="1"/>
+  <text x="210" y="64" class="t-xs mid ink">10</text>
+  <rect x="221" y="48" width="18" height="24" rx="3" class="tint"/>
+  <rect x="221" y="48" width="18" height="24" rx="3" class="st-soft" stroke-width="1"/>
+  <text x="230" y="64" class="t-xs mid ink">11</text>
+  <rect x="241" y="48" width="18" height="24" rx="3" class="tint"/>
+  <rect x="241" y="48" width="18" height="24" rx="3" class="st-soft" stroke-width="1"/>
+  <text x="250" y="64" class="t-xs mid ink">12</text>
+  <rect x="261" y="48" width="18" height="24" rx="3" class="fl" stroke-width="1"/>
+  <text x="270" y="64" class="t-xs mid on">13</text>
+  <rect x="281" y="48" width="18" height="24" rx="3" class="paper"/>
+  <rect x="281" y="48" width="18" height="24" rx="3" class="st-line" stroke-width="1"/>
+  <text x="290" y="64" class="t-xs mid soft">14</text>
+  <rect x="301" y="48" width="18" height="24" rx="3" class="paper"/>
+  <rect x="301" y="48" width="18" height="24" rx="3" class="st-line" stroke-width="1"/>
+  <text x="310" y="64" class="t-xs mid soft">15</text>
+  <rect x="321" y="48" width="18" height="24" rx="3" class="paper"/>
+  <rect x="321" y="48" width="18" height="24" rx="3" class="st-line" stroke-width="1"/>
+  <text x="330" y="64" class="t-xs mid soft">16</text>
+  <path d="M30 80 H266" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="340" y="96" class="t-s end ink">13回目</text>
+  <text x="20" y="128" class="t-s fl">真ん中で半分に絞る（二分探索）</text>
+  <rect x="21" y="136" width="18" height="24" rx="3" class="paper"/>
+  <rect x="21" y="136" width="18" height="24" rx="3" class="st-line" stroke-width="1"/>
+  <text x="30" y="152" class="t-xs mid soft">1</text>
+  <rect x="41" y="136" width="18" height="24" rx="3" class="paper"/>
+  <rect x="41" y="136" width="18" height="24" rx="3" class="st-line" stroke-width="1"/>
+  <text x="50" y="152" class="t-xs mid soft">2</text>
+  <rect x="61" y="136" width="18" height="24" rx="3" class="paper"/>
+  <rect x="61" y="136" width="18" height="24" rx="3" class="st-line" stroke-width="1"/>
+  <text x="70" y="152" class="t-xs mid soft">3</text>
+  <rect x="81" y="136" width="18" height="24" rx="3" class="paper"/>
+  <rect x="81" y="136" width="18" height="24" rx="3" class="st-line" stroke-width="1"/>
+  <text x="90" y="152" class="t-xs mid soft">4</text>
+  <rect x="101" y="136" width="18" height="24" rx="3" class="paper"/>
+  <rect x="101" y="136" width="18" height="24" rx="3" class="st-line" stroke-width="1"/>
+  <text x="110" y="152" class="t-xs mid soft">5</text>
+  <rect x="121" y="136" width="18" height="24" rx="3" class="paper"/>
+  <rect x="121" y="136" width="18" height="24" rx="3" class="st-line" stroke-width="1"/>
+  <text x="130" y="152" class="t-xs mid soft">6</text>
+  <rect x="141" y="136" width="18" height="24" rx="3" class="paper"/>
+  <rect x="141" y="136" width="18" height="24" rx="3" class="st-line" stroke-width="1"/>
+  <text x="150" y="152" class="t-xs mid soft">7</text>
+  <rect x="161" y="136" width="18" height="24" rx="3" class="tint"/>
+  <rect x="161" y="136" width="18" height="24" rx="3" class="st-f" stroke-width="1"/>
+  <text x="170" y="152" class="t-xs mid ink">8</text>
+  <rect x="181" y="136" width="18" height="24" rx="3" class="paper"/>
+  <rect x="181" y="136" width="18" height="24" rx="3" class="st-line" stroke-width="1"/>
+  <text x="190" y="152" class="t-xs mid soft">9</text>
+  <rect x="201" y="136" width="18" height="24" rx="3" class="paper"/>
+  <rect x="201" y="136" width="18" height="24" rx="3" class="st-line" stroke-width="1"/>
+  <text x="210" y="152" class="t-xs mid soft">10</text>
+  <rect x="221" y="136" width="18" height="24" rx="3" class="paper"/>
+  <rect x="221" y="136" width="18" height="24" rx="3" class="st-line" stroke-width="1"/>
+  <text x="230" y="152" class="t-xs mid soft">11</text>
+  <rect x="241" y="136" width="18" height="24" rx="3" class="tint"/>
+  <rect x="241" y="136" width="18" height="24" rx="3" class="st-f" stroke-width="1"/>
+  <text x="250" y="152" class="t-xs mid ink">12</text>
+  <rect x="261" y="136" width="18" height="24" rx="3" class="fl" stroke-width="1"/>
+  <text x="270" y="152" class="t-xs mid on">13</text>
+  <rect x="281" y="136" width="18" height="24" rx="3" class="tint"/>
+  <rect x="281" y="136" width="18" height="24" rx="3" class="st-f" stroke-width="1"/>
+  <text x="290" y="152" class="t-xs mid ink">14</text>
+  <rect x="301" y="136" width="18" height="24" rx="3" class="paper"/>
+  <rect x="301" y="136" width="18" height="24" rx="3" class="st-line" stroke-width="1"/>
+  <text x="310" y="152" class="t-xs mid soft">15</text>
+  <rect x="321" y="136" width="18" height="24" rx="3" class="paper"/>
+  <rect x="321" y="136" width="18" height="24" rx="3" class="st-line" stroke-width="1"/>
+  <text x="330" y="152" class="t-xs mid soft">16</text>
+  <path d="M23 178 H337" class="st-f" stroke-width="2"/>
+  <circle cx="170" cy="178" r="7" class="fl"/>
+  <text x="170" y="182" class="t-xs mid on">1</text>
+  <text x="22" y="182" class="t-xs soft halo">13は8より大きい</text>
+  <path d="M183 196 H337" class="st-f" stroke-width="2"/>
+  <circle cx="250" cy="196" r="7" class="fl"/>
+  <text x="250" y="200" class="t-xs mid on">2</text>
+  <text x="177" y="200" class="t-xs end soft">12より大きい</text>
+  <path d="M263 214 H337" class="st-f" stroke-width="2"/>
+  <circle cx="290" cy="214" r="7" class="fl"/>
+  <text x="290" y="218" class="t-xs mid on">3</text>
+  <text x="257" y="218" class="t-xs end soft">14より小さい</text>
+  <path d="M263 232 H277" class="st-f" stroke-width="2"/>
+  <circle cx="270" cy="232" r="7" class="fl"/>
+  <text x="270" y="236" class="t-xs mid on">4</text>
+  <text x="257" y="236" class="t-xs end soft">見つかった</text>
+  <text x="340" y="252" class="t-s end fl">4回目</text>
+  <text x="180" y="274" class="t-s mid ink">100個なら 最大100回 対 最大7回</text>
+</svg>

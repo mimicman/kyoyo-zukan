@@ -1,0 +1,37 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 細菌 -->
+  <text x="100" y="22" class="t-m mid ink">細菌</text>
+  <rect x="34" y="40" width="132" height="64" rx="32" class="tint"/>
+  <rect x="34" y="40" width="132" height="64" rx="32" class="st" stroke-width="2.5"/>
+  <rect x="40" y="46" width="120" height="52" rx="26" class="st-soft" stroke-width="1"/>
+  <path d="M60 72 C70 56 86 88 100 70 C112 56 124 86 140 70" class="st-f" stroke-width="2"/>
+  <circle cx="74" cy="88" r="2.5" class="ink"/><circle cx="96" cy="58" r="2.5" class="ink"/><circle cx="128" cy="88" r="2.5" class="ink"/><circle cx="116" cy="60" r="2.5" class="ink"/>
+  <path d="M166 72 C176 62 184 84 196 70" class="st" stroke-width="1.5"/>
+  <text x="100" y="122" class="t-xs mid soft">細胞壁・遺伝子・自分の工場</text>
+
+  <!-- ウイルス（とても小さい） -->
+  <text x="282" y="22" class="t-m mid fl">ウイルス</text>
+  <circle cx="282" cy="70" r="12" class="paper"/>
+  <circle cx="282" cy="70" r="12" class="st-f" stroke-width="2.5"/>
+  <path d="M276 66 C280 74 284 64 288 74" class="st-f" stroke-width="1.5"/>
+  <path d="M282 58 V52 M282 82 V88 M270 70 H264 M294 70 H300 M273 61 L269 57 M291 61 L295 57 M273 79 L269 83 M291 79 L295 83" class="st-f" stroke-width="2"/>
+  <text x="282" y="110" class="t-xs mid soft">殻と遺伝子だけ</text>
+  <text x="282" y="124" class="t-xs mid soft">細菌よりずっと小さい</text>
+
+  <!-- 比べる表 -->
+  <path d="M14 140 H346" class="st-line" stroke-width="1"/>
+  <text x="14" y="164" class="t-xs soft">増え方</text>
+  <text x="100" y="164" class="t-s mid ink">自分で分裂</text>
+  <text x="282" y="164" class="t-s mid fl">細胞に入りこむ</text>
+  <path d="M14 178 H346" class="st-line" stroke-width="1"/>
+  <text x="14" y="202" class="t-xs soft">抗生物質</text>
+  <text x="100" y="202" class="t-s mid ink">効く</text>
+  <text x="282" y="202" class="t-s mid fl">効かない</text>
+  <path d="M14 216 H346" class="st-line" stroke-width="1"/>
+  <text x="14" y="240" class="t-xs soft">病気の例</text>
+  <text x="100" y="240" class="t-s mid ink">結核・コレラ</text>
+  <text x="282" y="240" class="t-s mid fl">かぜ・はしか</text>
+  <path d="M14 254 H346" class="st-line" stroke-width="1"/>
+  <text x="180" y="274" class="t-xs mid soft">細菌は光の顕微鏡で見え、ウイルスは電子顕微鏡が要る</text>
+  <path d="M201 40 V254" class="st-line" stroke-width="1"/>
+</svg>

@@ -1,0 +1,78 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：これまでのプログラムと機械学習の違い -->
+  <text x="14" y="22" class="t-xs soft">これまで</text>
+  <rect x="70" y="10" width="64" height="20" rx="4" class="paper"/>
+  <rect x="70" y="10" width="64" height="20" rx="4" class="st-soft" stroke-width="1.5"/>
+  <text x="102" y="24" class="t-xs mid ink">人のルール</text>
+  <text x="142" y="24" class="t-xs ink">＋</text>
+  <rect x="156" y="10" width="54" height="20" rx="4" class="paper"/>
+  <rect x="156" y="10" width="54" height="20" rx="4" class="st-soft" stroke-width="1.5"/>
+  <text x="183" y="24" class="t-xs mid ink">データ</text>
+  <path d="M216 20 H244" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <rect x="250" y="10" width="54" height="20" rx="4" class="paper"/>
+  <rect x="250" y="10" width="54" height="20" rx="4" class="st-soft" stroke-width="1.5"/>
+  <text x="277" y="24" class="t-xs mid ink">答え</text>
+
+  <text x="14" y="56" class="t-xs fl">機械学習</text>
+  <rect x="70" y="44" width="64" height="20" rx="4" class="tint"/>
+  <rect x="70" y="44" width="64" height="20" rx="4" class="st-f" stroke-width="1.5"/>
+  <text x="102" y="58" class="t-xs mid ink">データ</text>
+  <text x="142" y="58" class="t-xs ink">＋</text>
+  <rect x="156" y="44" width="54" height="20" rx="4" class="tint"/>
+  <rect x="156" y="44" width="54" height="20" rx="4" class="st-f" stroke-width="1.5"/>
+  <text x="183" y="58" class="t-xs mid ink">答え</text>
+  <path d="M216 54 H244" class="st-f" stroke-width="2" marker-end="url(#a-technology)"/>
+  <rect x="250" y="44" width="64" height="20" rx="4" class="fl"/>
+  <text x="282" y="58" class="t-xs mid on">ルール</text>
+
+  <!-- 下：迷惑メールの例（散らばり図と境界線） -->
+  <path d="M44 92 V252 H340" class="st" stroke-width="1.5"/>
+  <text x="340" y="270" class="t-xs end soft">怪しい言葉の数</text>
+  <text x="48" y="86" class="t-xs soft">リンクの数</text>
+
+  <!-- 普通のメール（○） -->
+  <circle cx="70" cy="226" r="5" class="paper"/>
+  <circle cx="70" cy="226" r="5" class="st" stroke-width="1.5"/>
+  <circle cx="92" cy="236" r="5" class="paper"/>
+  <circle cx="92" cy="236" r="5" class="st" stroke-width="1.5"/>
+  <circle cx="84" cy="200" r="5" class="paper"/>
+  <circle cx="84" cy="200" r="5" class="st" stroke-width="1.5"/>
+  <circle cx="118" cy="218" r="5" class="paper"/>
+  <circle cx="118" cy="218" r="5" class="st" stroke-width="1.5"/>
+  <circle cx="64" cy="178" r="5" class="paper"/>
+  <circle cx="64" cy="178" r="5" class="st" stroke-width="1.5"/>
+  <circle cx="140" cy="236" r="5" class="paper"/>
+  <circle cx="140" cy="236" r="5" class="st" stroke-width="1.5"/>
+  <circle cx="110" cy="182" r="5" class="paper"/>
+  <circle cx="110" cy="182" r="5" class="st" stroke-width="1.5"/>
+  <circle cx="160" cy="210" r="5" class="paper"/>
+  <circle cx="160" cy="210" r="5" class="st" stroke-width="1.5"/>
+  <circle cx="74" cy="150" r="5" class="paper"/>
+  <circle cx="74" cy="150" r="5" class="st" stroke-width="1.5"/>
+  <!-- 迷惑メール（●） -->
+  <circle cx="230" cy="128" r="5" class="fl"/>
+  <circle cx="262" cy="148" r="5" class="fl"/>
+  <circle cx="290" cy="118" r="5" class="fl"/>
+  <circle cx="246" cy="176" r="5" class="fl"/>
+  <circle cx="300" cy="170" r="5" class="fl"/>
+  <circle cx="200" cy="112" r="5" class="fl"/>
+  <circle cx="276" cy="200" r="5" class="fl"/>
+  <circle cx="318" cy="140" r="5" class="fl"/>
+  <circle cx="214" cy="160" r="5" class="fl"/>
+
+  <!-- 学習した境界線 -->
+  <path d="M120 100 L240 248" class="st-f dash" stroke-width="2.5"/>
+  <text x="128" y="94" class="t-xs fl">学習した境界線</text>
+
+  <!-- 新しいメール -->
+  <circle cx="236" cy="226" r="7" class="paper"/>
+  <circle cx="236" cy="226" r="7" class="st" stroke-width="2"/>
+  <text x="236" y="230" class="t-xs mid ink">?</text>
+  <text x="250" y="230" class="t-xs soft">新着はどっち側？</text>
+
+  <circle cx="58" cy="114" r="5" class="paper"/>
+  <circle cx="58" cy="114" r="5" class="st" stroke-width="1.5"/>
+  <text x="68" y="118" class="t-xs soft">普通</text>
+  <circle cx="58" cy="132" r="5" class="fl"/>
+  <text x="68" y="136" class="t-xs soft">迷惑</text>
+</svg>

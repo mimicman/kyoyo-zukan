@@ -1,0 +1,28 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 軸 -->
+  <path d="M40 30 V220 H344" class="st" stroke-width="2"/>
+  <text x="44" y="22" class="t-xs soft">抗体の量</text>
+  <text x="344" y="240" class="t-xs end soft">時間</text>
+
+  <!-- 1回目：ワクチン（ゆっくり・少し） -->
+  <path d="M60 220 C90 220 96 218 110 196 C122 176 132 172 144 182 C156 194 168 208 190 212" class="st-soft" stroke-width="3" stroke-linecap="round"/>
+  <path d="M60 52 V214" class="st-soft dash" stroke-width="1.5"/>
+  <text x="66" y="48" class="t-s ink">1回目</text>
+  <text x="66" y="64" class="t-xs soft">ワクチン</text>
+  <text x="128" y="162" class="t-xs mid soft">弱い・遅い</text>
+
+  <!-- 2回目：本物の病原体（速く・たくさん） -->
+  <path d="M200 212 C214 212 218 160 228 100 C236 58 252 54 270 68 C290 84 310 120 340 140" class="st-f" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M200 52 V210" class="st-f dash" stroke-width="1.5"/>
+  <text x="206" y="48" class="t-s fl">2回目</text>
+  <text x="206" y="64" class="t-xs soft">本物の病原体</text>
+  <text x="300" y="86" class="t-xs fl">強い・速い</text>
+
+  <!-- 記憶 -->
+  <path d="M150 194 C170 186 180 186 196 196" class="st-f" stroke-width="1.5" marker-end="url(#a-medicine)"/>
+  <text x="170" y="236" class="t-xs mid fl">記憶細胞が覚えている</text>
+
+  <!-- 中身 -->
+  <rect x="14" y="248" width="332" height="28" rx="6" class="tint"/>
+  <text x="180" y="266" class="t-xs mid ink">ワクチン＝弱めた病原体や、その一部（目印）を体に見せる</text>
+</svg>
