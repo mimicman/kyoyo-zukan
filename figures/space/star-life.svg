@@ -1,0 +1,42 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <text x="14" y="22" class="t-s ink">星の重さで、最期が決まる</text>
+
+  <!-- 星雲 → 主系列星 -->
+  <ellipse cx="30" cy="146" rx="20" ry="14" class="tint"/>
+  <ellipse cx="42" cy="156" rx="14" ry="10" class="tint"/>
+  <ellipse cx="24" cy="160" rx="12" ry="9" class="tint"/>
+  <text x="34" y="190" class="t-xs mid ink">星雲</text>
+  <path d="M58 152 H80" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <circle cx="102" cy="152" r="13" class="fl"/>
+  <text x="102" y="190" class="t-xs mid ink">主系列星</text>
+  <text x="102" y="204" class="t-xs mid soft">（太陽は今ここ）</text>
+
+  <!-- 太陽くらいの星 -->
+  <path d="M114 142 L158 98" class="st-f" stroke-width="2" marker-end="url(#a-space)"/>
+  <text x="126" y="104" class="t-xs end fl">太陽くらい</text>
+  <circle cx="190" cy="80" r="26" class="tint"/>
+  <circle cx="190" cy="80" r="26" class="st-f" stroke-width="2"/>
+  <text x="190" y="124" class="t-xs mid ink">赤色巨星</text>
+  <path d="M220 80 H268" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <circle cx="300" cy="80" r="22" class="st-soft dash" stroke-width="1.5"/>
+  <circle cx="300" cy="80" r="5" class="ink"/>
+  <text x="300" y="124" class="t-xs mid ink">白色矮星</text>
+  <text x="300" y="50" class="t-xs mid soft">ガスが散る</text>
+
+  <!-- 重い星 -->
+  <path d="M114 162 L156 202" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <text x="138" y="230" class="t-xs end ink">重い星</text>
+  <circle cx="190" cy="222" r="30" class="tint"/>
+  <circle cx="190" cy="222" r="30" class="st" stroke-width="2"/>
+  <text x="190" y="268" class="t-xs mid ink">赤色超巨星</text>
+  <path d="M222 222 H240" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <path d="M262.0 202.0 L264.8 213.4 L273.8 205.8 L269.3 216.7 L281.0 215.8 L271.0 222.0 L281.0 228.2 L269.3 227.3 L273.8 238.2 L264.8 230.6 L262.0 242.0 L259.2 230.6 L250.2 238.2 L254.7 227.3 L243.0 228.2 L253.0 222.0 L243.0 215.8 L254.7 216.7 L250.2 205.8 L259.2 213.4Z" class="fl"/>
+  <text x="262" y="258" class="t-xs mid fl">超新星爆発</text>
+  <path d="M282 212 L314 186" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <circle cx="326" cy="178" r="4" class="ink"/>
+  <text x="326" y="164" class="t-xs mid ink">中性子星</text>
+  <path d="M284 230 L312 240" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <circle cx="330" cy="244" r="10" class="bgc"/>
+  <circle cx="330" cy="244" r="10" class="st" stroke-width="2.5"/>
+  <text x="352" y="274" class="t-xs end ink">ブラックホール</text>
+</svg>

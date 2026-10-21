@@ -1,0 +1,49 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <text x="180" y="24" class="t-m mid ink">1光年 ＝ 光が1年で進む距離</text>
+  <text x="180" y="44" class="t-s mid fl">約9兆5000億km</text>
+  <text x="180" y="64" class="t-xs mid soft">光は1秒で約30万km（地球を7周半）</text>
+  <text x="14" y="90" class="t-xs soft">光が届くまでの時間</text>
+  <path d="M231 96 V272" class="st-soft dash" stroke-width="1"/>
+  <text x="231" y="90" class="t-xs mid ink halo">1年</text>
+  <rect x="124" y="106" width="200" height="12" rx="3" class="tint"/>
+  <rect x="124" y="106" width="4" height="12" rx="3" class="fl"/>
+  <text x="14" y="111" class="t-s ink">月</text>
+  <text x="14" y="126" class="t-xs soft">約1.3秒</text>
+  <rect x="124" y="138" width="200" height="12" rx="3" class="tint"/>
+  <rect x="124" y="138" width="39" height="12" rx="3" class="fl"/>
+  <text x="14" y="143" class="t-s ink">太陽</text>
+  <text x="14" y="158" class="t-xs soft">約8分</text>
+  <rect x="124" y="170" width="200" height="12" rx="3" class="tint"/>
+  <rect x="124" y="170" width="60" height="12" rx="3" class="fl"/>
+  <text x="14" y="175" class="t-s ink">海王星</text>
+  <text x="14" y="190" class="t-xs soft">約4時間</text>
+  <rect x="124" y="202" width="200" height="12" rx="3" class="tint"/>
+  <rect x="124" y="202" width="116" height="12" rx="3" class="fl"/>
+  <text x="14" y="207" class="t-s ink">となりの恒星</text>
+  <text x="14" y="222" class="t-xs soft">約4.2年</text>
+  <rect x="124" y="234" width="200" height="12" rx="3" class="tint"/>
+  <rect x="124" y="234" width="170" height="12" rx="3" class="fl"/>
+  <text x="14" y="239" class="t-s ink">天の川の中心</text>
+  <text x="14" y="254" class="t-xs soft">約2.6万年</text>
+  <rect x="124" y="266" width="200" height="12" rx="3" class="tint"/>
+  <rect x="124" y="266" width="199" height="12" rx="3" class="fl"/>
+  <text x="14" y="271" class="t-s ink">アンドロメダ銀河</text>
+  <text x="14" y="286" class="t-xs soft">約250万年</text>
+  <text x="224" y="292" class="t-xs mid soft">目盛り1つで10倍になる長さ（対数）</text>
+  <path d="M124 276 V281" class="st-soft" stroke-width="1"/>
+  <path d="M138 276 V281" class="st-soft" stroke-width="1"/>
+  <path d="M153 276 V281" class="st-soft" stroke-width="1"/>
+  <path d="M167 276 V281" class="st-soft" stroke-width="1"/>
+  <path d="M181 276 V281" class="st-soft" stroke-width="1"/>
+  <path d="M195 276 V281" class="st-soft" stroke-width="1"/>
+  <path d="M210 276 V281" class="st-soft" stroke-width="1"/>
+  <path d="M224 276 V281" class="st-soft" stroke-width="1"/>
+  <path d="M238 276 V281" class="st-soft" stroke-width="1"/>
+  <path d="M253 276 V281" class="st-soft" stroke-width="1"/>
+  <path d="M267 276 V281" class="st-soft" stroke-width="1"/>
+  <path d="M281 276 V281" class="st-soft" stroke-width="1"/>
+  <path d="M295 276 V281" class="st-soft" stroke-width="1"/>
+  <path d="M310 276 V281" class="st-soft" stroke-width="1"/>
+  <path d="M324 276 V281" class="st-soft" stroke-width="1"/>
+  <path d="M124 276 H324" class="st-soft" stroke-width="1"/>
+</svg>

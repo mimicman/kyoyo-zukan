@@ -1,0 +1,44 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 曲がる光 -->
+  <path d="M14 30 Q180 66 346 30" class="st-soft" stroke-width="1.8" marker-end="url(#a-soft)"/>
+  <path d="M14 70 C140 70 222 66 264 106 S300 170 306 186" class="st-f" stroke-width="1.8" marker-end="url(#a-space)"/>
+  <path d="M14 108 Q120 112 148 118" class="st" stroke-width="1.8" marker-end="url(#a-ink)"/>
+  <text x="18" y="24" class="t-xs soft">遠い光：少し曲がる</text>
+  <text x="18" y="64" class="t-xs fl">近い光：大きく曲がる</text>
+  <text x="18" y="102" class="t-xs ink">さらに近い光：落ちる</text>
+
+  <!-- 降着円盤（奥側） -->
+  <path d="M104 124 A76 16 0 0 1 256 124" class="st-f" stroke-width="5" opacity="0.5"/>
+  <!-- 事象の地平面 -->
+  <circle cx="180" cy="124" r="40" class="fl" opacity="0.25"/>
+  <circle cx="180" cy="124" r="32" class="bgc"/>
+  <circle cx="180" cy="124" r="32" class="st dash" stroke-width="1.5"/>
+  <!-- 降着円盤（手前側） -->
+  <path d="M104 124 A76 16 0 0 0 256 124" class="st-f" stroke-width="5" opacity="0.8"/>
+  <text x="180" y="116" class="t-xs mid soft">光も</text>
+  <text x="180" y="130" class="t-xs mid soft">出られない</text>
+
+  <path d="M212 108 L264 76" class="st-line" stroke-width="1"/>
+  <text x="268" y="74" class="t-xs ink">事象の地平面</text>
+  <text x="268" y="88" class="t-xs soft">（境目）</text>
+  <path d="M112 134 L84 152" class="st-line" stroke-width="1"/>
+  <text x="80" y="164" class="t-xs end fl">降着円盤</text>
+
+  <path d="M14 196 H346" class="st-line" stroke-width="1"/>
+
+  <!-- 太陽をおし縮めると -->
+  <text x="14" y="216" class="t-s ink">太陽と同じ重さなら</text>
+  <circle cx="54" cy="242" r="18" class="fl"/>
+  <text x="54" y="276" class="t-xs mid soft">半径 約70万km</text>
+  <path d="M82 244 H128" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <text x="105" y="236" class="t-xs mid soft">縮める</text>
+  <circle cx="146" cy="244" r="3" class="ink"/>
+  <text x="146" y="276" class="t-xs mid ink">約3km</text>
+
+  <!-- 撮影 -->
+  <circle cx="260" cy="242" r="16" class="fl" opacity="0.5"/>
+  <circle cx="260" cy="242" r="8" class="bgc"/>
+  <text x="290" y="238" class="t-s fl">2019年</text>
+  <text x="290" y="254" class="t-xs ink">初めて</text>
+  <text x="196" y="276" class="t-xs ink">ブラックホールの「影」を撮影</text>
+</svg>

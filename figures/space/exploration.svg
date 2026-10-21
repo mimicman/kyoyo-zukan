@@ -1,0 +1,57 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <text x="180" y="24" class="t-xs mid soft">冷戦期の米ソの競争から、国際協力と無人探査の時代へ</text>
+  <!-- 年表の軸 -->
+  <path d="M14 140 H346" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <path d="M60 136 V144" class="st-soft" stroke-width="1"/>
+  <path d="M140 136 V144" class="st-soft" stroke-width="1"/>
+  <path d="M220 136 V144" class="st-soft" stroke-width="1"/>
+  <path d="M300 136 V144" class="st-soft" stroke-width="1"/>
+  <path d="M48 134 L44 108" class="st-soft" stroke-width="1"/>
+  <circle cx="48" cy="140" r="5" class="fl"/>
+  <text x="44" y="62" class="t-m mid fl">1957</text>
+  <text x="44" y="82" class="t-xs mid ink">初の人工衛星</text>
+  <text x="44" y="98" class="t-xs mid soft">スプートニク1号</text>
+  <path d="M96 134 L124 108" class="st-soft" stroke-width="1"/>
+  <circle cx="96" cy="140" r="5" class="fl"/>
+  <text x="124" y="62" class="t-m mid fl">1969</text>
+  <text x="124" y="82" class="t-xs mid ink">人類が月面へ</text>
+  <text x="124" y="98" class="t-xs mid soft">アポロ11号</text>
+  <path d="M180 134 L204 108" class="st-soft" stroke-width="1"/>
+  <circle cx="180" cy="140" r="5" class="fl"/>
+  <text x="204" y="62" class="t-m mid fl">1990</text>
+  <text x="204" y="82" class="t-xs mid ink">ハッブル</text>
+  <text x="204" y="98" class="t-xs mid soft">宇宙望遠鏡</text>
+  <path d="M260 134 L300 108" class="st-soft" stroke-width="1"/>
+  <circle cx="260" cy="140" r="5" class="fl"/>
+  <text x="300" y="62" class="t-m mid fl">2010</text>
+  <text x="300" y="82" class="t-xs mid ink">はやぶさが</text>
+  <text x="300" y="98" class="t-xs mid soft">小惑星から帰還</text>
+  <path d="M64 146 L58 170" class="st-soft" stroke-width="1"/>
+  <circle cx="64" cy="140" r="5" class="ink"/>
+  <text x="58" y="190" class="t-m mid ink">1961</text>
+  <text x="58" y="210" class="t-xs mid ink">初の有人飛行</text>
+  <text x="58" y="226" class="t-xs mid soft">ガガーリン</text>
+  <path d="M128 146 L140 170" class="st-soft" stroke-width="1"/>
+  <circle cx="128" cy="140" r="5" class="ink"/>
+  <text x="140" y="190" class="t-m mid ink">1977</text>
+  <text x="140" y="210" class="t-xs mid ink">ボイジャー</text>
+  <text x="140" y="226" class="t-xs mid soft">外惑星へ出発</text>
+  <path d="M212 146 L222 170" class="st-soft" stroke-width="1"/>
+  <circle cx="212" cy="140" r="5" class="ink"/>
+  <text x="222" y="190" class="t-m mid ink">1998</text>
+  <text x="222" y="210" class="t-xs mid ink">国際宇宙</text>
+  <text x="222" y="226" class="t-xs mid soft">ステーション</text>
+  <path d="M300 146 L304 170" class="st-soft" stroke-width="1"/>
+  <circle cx="300" cy="140" r="5" class="ink"/>
+  <text x="304" y="190" class="t-m mid ink">2020</text>
+  <text x="304" y="210" class="t-xs mid ink">はやぶさ2が</text>
+  <text x="304" y="226" class="t-xs mid soft">再び試料を回収</text>
+  <path d="M14 244 H346" class="st-line" stroke-width="1"/>
+  <circle cx="30" cy="264" r="9" class="fl"/>
+  <text x="46" y="268" class="t-xs ink">地球のまわり</text>
+  <path d="M114 264 H134" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <circle cx="148" cy="264" r="6" class="soft"/>
+  <text x="160" y="268" class="t-xs ink">月</text>
+  <path d="M178 264 H198" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="206" y="268" class="t-xs ink">惑星・小惑星・太陽系の外</text>
+</svg>

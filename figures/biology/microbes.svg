@@ -1,0 +1,55 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 大きさの目盛り（1目盛りで10分の1） -->
+  <path d="M30 118 H330" class="st" stroke-width="2"/>
+  <path d="M30 112 V124 M105 104 V124 M180 112 V124 M255 112 V124 M330 112 V124" class="st" stroke-width="2"/>
+  <text x="30" y="138" class="t-xs mid soft">1mm</text>
+  <text x="105" y="138" class="t-xs mid soft">0.1mm</text>
+  <text x="180" y="138" class="t-xs mid soft">10μm</text>
+  <text x="255" y="138" class="t-xs mid soft">1μm</text>
+  <text x="330" y="138" class="t-xs mid soft">0.1μm</text>
+  <path d="M30 148 H103" class="st-soft" stroke-width="1.5"/>
+  <path d="M107 148 H330" class="st-f" stroke-width="1.5"/>
+  <text x="67" y="162" class="t-xs mid soft">肉眼で見える</text>
+  <text x="218" y="162" class="t-xs mid fl">顕微鏡が必要</text>
+
+  <!-- ゾウリムシ -->
+  <text x="78" y="44" class="t-xs mid ink">ゾウリムシ</text>
+  <path d="M56 80 C56 66 72 62 84 64 C96 66 102 72 100 80 C98 90 88 94 76 94 C62 94 56 90 56 80 Z" class="tint"/>
+  <path d="M56 80 C56 66 72 62 84 64 C96 66 102 72 100 80 C98 90 88 94 76 94 C62 94 56 90 56 80 Z" class="st-f" stroke-width="1.5"/>
+  <path d="M56 80 h-5 M60 68 l-4 -4 M72 62 v-5 M86 62 l2 -5 M98 70 l4 -3 M100 82 h5 M92 92 l3 4 M76 95 v5 M62 92 l-3 4" class="st-f" stroke-width="1"/>
+  <circle cx="76" cy="80" r="5" class="fl"/>
+
+  <!-- 酵母（出芽） -->
+  <text x="180" y="44" class="t-xs mid ink">酵母</text>
+  <circle cx="174" cy="82" r="14" class="tint"/>
+  <circle cx="174" cy="82" r="14" class="st-f" stroke-width="1.5"/>
+  <circle cx="192" cy="68" r="7" class="tint"/>
+  <circle cx="192" cy="68" r="7" class="st-f" stroke-width="1.5"/>
+  <circle cx="172" cy="84" r="4" class="fl"/>
+
+  <!-- 細菌 -->
+  <text x="255" y="44" class="t-xs mid ink">細菌</text>
+  <rect x="238" y="72" width="34" height="16" rx="8" class="tint"/>
+  <rect x="238" y="72" width="34" height="16" rx="8" class="st-f" stroke-width="1.5"/>
+  <path d="M272 80 c6 -6 10 6 16 0" class="st-f" stroke-width="1.2"/>
+
+  <!-- ウイルス -->
+  <text x="330" y="44" class="t-xs mid soft">ウイルス</text>
+  <circle cx="330" cy="80" r="8" class="st-soft" stroke-width="1.5"/>
+  <path d="M330 68 v4 M330 88 v4 M318 80 h4 M338 80 h4 M322 72 l3 3 M335 85 l3 3 M322 88 l3 -3 M335 75 l3 -3" class="st-soft" stroke-width="1.5"/>
+  <text x="330" y="106" class="t-xs mid soft">細胞なし</text>
+
+  <!-- 微生物の働き -->
+  <rect x="14" y="182" width="104" height="84" rx="10" class="tint"/>
+  <rect x="128" y="182" width="104" height="84" rx="10" class="tint"/>
+  <rect x="242" y="182" width="104" height="84" rx="10" class="tint"/>
+  <text x="66" y="206" class="t-m mid fl">発酵</text>
+  <text x="66" y="230" class="t-xs mid ink">ヨーグルト</text>
+  <text x="66" y="246" class="t-xs mid ink">みそ・パン</text>
+  <text x="180" y="206" class="t-m mid fl">分解</text>
+  <text x="180" y="230" class="t-xs mid ink">落ち葉や死がいを</text>
+  <text x="180" y="246" class="t-xs mid ink">土に戻す</text>
+  <text x="294" y="206" class="t-m mid fl">酸素</text>
+  <text x="294" y="230" class="t-xs mid ink">植物プランクトン</text>
+  <text x="294" y="246" class="t-xs mid ink">が光合成で出す</text>
+</svg>

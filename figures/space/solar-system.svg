@@ -1,0 +1,51 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <text x="180" y="30" class="t-xs mid soft">大きさの比較（実際の距離はずっと離れている）</text>
+
+  <!-- 太陽（左端に一部だけ） -->
+  <circle cx="-150" cy="130" r="180" class="fl"/>
+  <text x="4" y="134" class="t-s on">太陽</text>
+
+  <!-- 岩石の惑星 -->
+  <circle cx="44" cy="130" r="2.5" class="soft"/>
+  <circle cx="58" cy="130" r="3.5" class="soft"/>
+  <circle cx="74" cy="130" r="4" class="fl"/>
+  <circle cx="88" cy="130" r="2.5" class="soft"/>
+
+  <!-- 木星・土星 -->
+  <circle cx="136" cy="130" r="39" class="tint"/>
+  <path d="M100 116 H172 M98 130 H174 M100 144 H172" class="st-f" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="136" cy="130" r="39" class="st-f" stroke-width="2"/>
+  <text x="136" y="84" class="t-xs mid soft">地球の約11倍</text>
+  <circle cx="226" cy="130" r="33" class="tint"/>
+  <circle cx="226" cy="130" r="33" class="st-f" stroke-width="2"/>
+  <ellipse cx="226" cy="130" rx="46" ry="9" class="st-f" stroke-width="3"/>
+
+  <!-- 天王星・海王星 -->
+  <circle cx="294" cy="130" r="14" class="paper"/>
+  <circle cx="294" cy="130" r="14" class="st" stroke-width="2"/>
+  <circle cx="333" cy="130" r="13.5" class="paper"/>
+  <circle cx="333" cy="130" r="13.5" class="st" stroke-width="2"/>
+
+  <!-- 名前 -->
+  <text x="44" y="186" class="t-xs mid ink">水</text>
+  <text x="59" y="186" class="t-xs mid ink">金</text>
+  <text x="74" y="186" class="t-xs mid fl">地</text>
+  <text x="89" y="186" class="t-xs mid ink">火</text>
+  <text x="136" y="186" class="t-xs mid ink">木星</text>
+  <text x="226" y="186" class="t-xs mid ink">土星</text>
+  <text x="294" y="186" class="t-xs mid ink">天王星</text>
+  <text x="333" y="186" class="t-xs mid ink">海王星</text>
+  <path d="M74 136 V174" class="st-f" stroke-width="1"/>
+
+  <!-- 3つのグループ -->
+  <path d="M38 198 V204 H95 V198" class="st-soft" stroke-width="1.5"/>
+  <text x="66" y="222" class="t-xs mid ink">岩石の惑星</text>
+  <path d="M97 198 V204 H272 V198" class="st-f" stroke-width="1.5"/>
+  <text x="185" y="222" class="t-xs mid fl">ガスの巨大惑星</text>
+  <path d="M280 198 V204 H347 V198" class="st-soft" stroke-width="1.5"/>
+  <text x="314" y="222" class="t-xs mid ink">氷の巨大惑星</text>
+
+  <path d="M30 244 H340" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="180" y="240" class="t-xs mid soft halo">太陽から遠くなる</text>
+  <text x="180" y="268" class="t-xs mid soft">冥王星は2006年から「準惑星」に分類</text>
+</svg>

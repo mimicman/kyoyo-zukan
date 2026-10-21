@@ -1,0 +1,36 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 太陽の光 -->
+  <circle cx="34" cy="34" r="13" class="fl"/>
+  <path d="M34 12 V16 M34 52 V56 M12 34 H16 M52 34 H56 M18 18 L21 21 M47 47 L50 50 M18 50 L21 47 M47 21 L50 18" class="st-f" stroke-width="2" stroke-linecap="round"/>
+  <path d="M46 54 L62 88" class="st-f" stroke-width="2" marker-end="url(#a-biology)"/>
+  <text x="66" y="62" class="t-s fl">光</text>
+
+  <!-- 光合成 -->
+  <circle cx="84" cy="140" r="46" class="tint"/>
+  <circle cx="84" cy="140" r="46" class="st-f" stroke-width="2.5"/>
+  <text x="84" y="138" class="t-m mid fl">光合成</text>
+  <text x="84" y="156" class="t-xs mid soft">葉緑体</text>
+
+  <!-- 呼吸 -->
+  <circle cx="276" cy="140" r="46" class="paper"/>
+  <circle cx="276" cy="140" r="46" class="st" stroke-width="2.5"/>
+  <text x="276" y="138" class="t-m mid ink">呼吸</text>
+  <text x="276" y="156" class="t-xs mid soft">ミトコンドリア</text>
+
+  <!-- 上：糖と酸素 -->
+  <path d="M118 108 Q180 62 242 108" class="st-f" stroke-width="2.5" marker-end="url(#a-biology)"/>
+  <text x="180" y="66" class="t-s mid ink">糖（でんぷん）＋酸素</text>
+
+  <!-- 下：二酸化炭素と水 -->
+  <path d="M242 172 Q180 218 118 172" class="st-soft" stroke-width="2.5" marker-end="url(#a-soft)"/>
+  <text x="180" y="226" class="t-s mid ink">二酸化炭素＋水</text>
+
+  <!-- 取り出したエネルギー -->
+  <path d="M310 108 L330 82" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <text x="346" y="58" class="t-xs end ink">生きる</text>
+  <text x="346" y="72" class="t-xs end ink">エネルギー</text>
+
+  <!-- まとめ -->
+  <text x="180" y="254" class="t-s mid ink">植物は両方を行い、動物は呼吸だけを行う</text>
+  <text x="180" y="274" class="t-xs mid soft">光合成＝光で糖をつくる　呼吸＝糖を分解して力を出す</text>
+</svg>

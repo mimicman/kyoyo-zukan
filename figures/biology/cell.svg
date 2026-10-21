@@ -1,0 +1,50 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左右の区切り -->
+  <path d="M180 14 V200" class="st-line" stroke-width="1.5"/>
+
+  <!-- 動物の細胞 -->
+  <text x="90" y="24" class="t-m mid ink">動物の細胞</text>
+  <ellipse cx="90" cy="112" rx="72" ry="62" class="tint"/>
+  <ellipse cx="90" cy="112" rx="72" ry="62" class="st-f" stroke-width="2"/>
+  <circle cx="82" cy="106" r="22" class="fl"/>
+  <circle cx="88" cy="100" r="6" class="on" opacity="0.5"/>
+  <text x="80" y="118" class="t-s mid on">核</text>
+  <ellipse cx="128" cy="140" rx="15" ry="8" class="paper"/>
+  <ellipse cx="128" cy="140" rx="15" ry="8" class="st" stroke-width="1.5"/>
+  <path d="M117 140 q3 -5 6 0 t6 0 t6 0 t5 0" class="st" stroke-width="1"/>
+  <ellipse cx="52" cy="146" rx="12" ry="7" class="paper"/>
+  <ellipse cx="52" cy="146" rx="12" ry="7" class="st" stroke-width="1.5"/>
+  <path d="M43 146 q3 -4 6 0 t6 0 t5 0" class="st" stroke-width="1"/>
+  <!-- ラベル -->
+  <path d="M36 44 L45 62" class="st-soft" stroke-width="1"/>
+  <text x="18" y="40" class="t-xs soft">細胞膜</text>
+  <path d="M128 149 V182" class="st-soft" stroke-width="1"/>
+  <text x="128" y="196" class="t-xs mid ink">ミトコンドリア</text>
+
+  <!-- 植物の細胞 -->
+  <text x="262" y="24" class="t-m mid ink">植物の細胞</text>
+  <rect x="196" y="44" width="148" height="136" rx="8" class="st-f" stroke-width="5"/>
+  <rect x="202" y="50" width="136" height="124" rx="5" class="tint"/>
+  <rect x="202" y="50" width="136" height="124" rx="5" class="st-f" stroke-width="1.2"/>
+  <rect x="254" y="62" width="74" height="78" rx="14" class="paper"/>
+  <rect x="254" y="62" width="74" height="78" rx="14" class="st-soft dash" stroke-width="1.5"/>
+  <text x="291" y="106" class="t-xs mid soft">液胞</text>
+  <circle cx="226" cy="92" r="16" class="fl"/>
+  <text x="226" y="96" class="t-xs mid on">核</text>
+  <ellipse cx="222" cy="150" rx="11" ry="6" class="fl"/>
+  <ellipse cx="252" cy="160" rx="11" ry="6" class="fl"/>
+  <ellipse cx="290" cy="156" rx="11" ry="6" class="fl"/>
+  <ellipse cx="322" cy="158" rx="9" ry="5" class="fl"/>
+  <ellipse cx="228" cy="124" rx="9" ry="5" class="paper"/>
+  <ellipse cx="228" cy="124" rx="9" ry="5" class="st" stroke-width="1.2"/>
+  <!-- ラベル -->
+  <path d="M222 156 V182" class="st-soft" stroke-width="1"/>
+  <text x="222" y="196" class="t-xs mid fl">葉緑体</text>
+  <path d="M318 38 L326 46" class="st-soft" stroke-width="1"/>
+  <text x="314" y="40" class="t-xs end fl">細胞壁</text>
+
+  <!-- まとめ -->
+  <text x="180" y="226" class="t-s mid ink">共通：核・細胞膜・ミトコンドリア</text>
+  <text x="180" y="248" class="t-s mid fl">植物だけ：細胞壁・葉緑体・液胞</text>
+  <text x="180" y="270" class="t-xs mid soft">フックがコルクの小部屋を「細胞」と名づけた（1665年）</text>
+</svg>

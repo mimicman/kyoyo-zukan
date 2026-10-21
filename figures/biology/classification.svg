@@ -1,0 +1,46 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 系統樹：3つのドメイン -->
+  <path d="M118 150 V130 M36 130 H200 M36 130 V46 M200 130 V110 M100 110 H260 M100 110 V46 M260 110 V80 M176 80 H318 M176 80 V46 M222 80 V46 M268 80 V46 M318 80 V46" class="st-f" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="118" cy="152" r="5" class="ink"/>
+  <text x="128" y="156" class="t-xs soft">共通の祖先</text>
+
+  <circle cx="36" cy="42" r="5" class="fl"/>
+  <circle cx="100" cy="42" r="5" class="fl"/>
+  <circle cx="176" cy="42" r="5" class="fl"/>
+  <circle cx="222" cy="42" r="5" class="fl"/>
+  <circle cx="268" cy="42" r="5" class="fl"/>
+  <circle cx="318" cy="42" r="5" class="fl"/>
+  <text x="176" y="28" class="t-xs mid ink">動物</text>
+  <text x="222" y="28" class="t-xs mid ink">植物</text>
+  <text x="268" y="28" class="t-xs mid ink">菌類</text>
+  <text x="318" y="28" class="t-xs mid ink">原生生物</text>
+  <text x="268" y="16" class="t-xs mid soft">キノコ等</text>
+
+  <!-- ドメイン名 -->
+  <text x="44" y="96" class="t-m fl halo">細菌</text>
+  <text x="108" y="90" class="t-m fl halo">古細菌</text>
+  <text x="268" y="102" class="t-m fl halo">真核生物</text>
+
+  <!-- 分類の段階 -->
+  <path d="M14 172 H346" class="st-line" stroke-width="1"/>
+  <text x="14" y="192" class="t-s ink">分類の段階（例：ヒト）</text>
+  <path d="M10 202 H350 L340 246 H20 Z" class="tint"/>
+  <text x="26" y="218" class="t-xs mid soft">ドメイン</text>
+  <text x="69" y="218" class="t-xs mid soft">界</text>
+  <text x="112" y="218" class="t-xs mid soft">門</text>
+  <text x="155" y="218" class="t-xs mid soft">綱</text>
+  <text x="198" y="218" class="t-xs mid soft">目</text>
+  <text x="241" y="218" class="t-xs mid soft">科</text>
+  <text x="284" y="218" class="t-xs mid soft">属</text>
+  <text x="327" y="218" class="t-xs mid soft">種</text>
+  <text x="26" y="238" class="t-xs mid ink">真核</text>
+  <text x="69" y="238" class="t-xs mid ink">動物</text>
+  <text x="112" y="238" class="t-xs mid ink">脊索</text>
+  <text x="155" y="238" class="t-xs mid ink">哺乳</text>
+  <text x="198" y="238" class="t-xs mid ink">霊長</text>
+  <text x="241" y="238" class="t-xs mid ink">ヒト科</text>
+  <text x="284" y="238" class="t-xs mid ink">ヒト属</text>
+  <text x="327" y="238" class="t-xs mid fl">ヒト</text>
+  <path d="M40 256 H320" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="180" y="274" class="t-xs mid soft">右へ行くほど細かい。学名は「属名＋種小名」の2語</text>
+</svg>

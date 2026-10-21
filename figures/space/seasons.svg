@@ -1,0 +1,50 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 公転の軌道 -->
+  <ellipse cx="180" cy="92" rx="128" ry="38" class="st-soft dash" stroke-width="1.2"/>
+  <circle cx="180" cy="92" r="22" class="fl"/>
+  <text x="180" y="96" class="t-xs mid on">太陽</text>
+
+  <!-- 12月ごろ（左）と6月ごろ（右）。軸の向きは同じまま -->
+  <circle cx="52" cy="92" r="17" class="tint"/>
+  <path d="M52 75 A17 17 0 0 0 52 109Z" class="soft" opacity="0.4"/>
+  <circle cx="52" cy="92" r="17" class="st-f" stroke-width="1.5"/>
+  <path d="M63.1 117.7 L40.9 66.3" class="st" stroke-width="2"/>
+  <text x="38.9" y="62.3" class="t-xs mid ink">北</text>
+  <path d="M36.4 85.2 L67.6 98.8" class="st-f dash" stroke-width="1"/>
+  <circle cx="308" cy="92" r="17" class="tint"/>
+  <path d="M308 75 A17 17 0 0 1 308 109Z" class="soft" opacity="0.4"/>
+  <circle cx="308" cy="92" r="17" class="st-f" stroke-width="1.5"/>
+  <path d="M319.1 117.7 L296.9 66.3" class="st" stroke-width="2"/>
+  <text x="294.9" y="62.3" class="t-xs mid ink">北</text>
+  <path d="M292.4 85.2 L323.6 98.8" class="st-f dash" stroke-width="1"/>
+  <text x="52" y="140" class="t-xs mid soft">12月ごろ</text>
+  <text x="52" y="155" class="t-s mid ink">北半球は冬</text>
+  <text x="308" y="140" class="t-xs mid soft">6月ごろ</text>
+  <text x="308" y="155" class="t-s mid fl">北半球は夏</text>
+  <text x="180" y="146" class="t-xs mid soft">地軸は約23.4度</text>
+  <text x="180" y="160" class="t-xs mid soft">傾いたまま回る</text>
+
+  <path d="M14 176 H346" class="st-line" stroke-width="1"/>
+
+  <!-- 夏：太陽が高い -->
+  <text x="20" y="196" class="t-s fl">夏：太陽が高い</text>
+  <path d="M20 240 H170" class="st" stroke-width="2"/>
+  <path d="M109.9 182.9 L128.4 240.0 L151.6 240.0 L133.0 182.9Z" class="fl" opacity="0.35"/>
+  <path d="M114.5 182.9 L130.6 232.4" class="st-f" stroke-width="1.5" marker-end="url(#a-space)"/>
+  <path d="M121.5 182.9 L137.5 232.4" class="st-f" stroke-width="1.5" marker-end="url(#a-space)"/>
+  <path d="M128.4 182.9 L144.5 232.4" class="st-f" stroke-width="1.5" marker-end="url(#a-space)"/>
+  <path d="M128.4 245 H151.6" class="st-f" stroke-width="3"/>
+  <text x="95" y="268" class="t-xs mid ink">狭い範囲に強く当たる</text>
+  <text x="95" y="284" class="t-xs mid fl">→ 暑い</text>
+
+  <!-- 冬：太陽が低い -->
+  <text x="196" y="196" class="t-s ink">冬：太陽が低い</text>
+  <path d="M196 240 H346" class="st" stroke-width="2"/>
+  <path d="M205.6 211.8 L258.6 240.0 L305.4 240.0 L252.5 211.8Z" class="fl" opacity="0.35"/>
+  <path d="M215.0 211.8 L260.9 236.2" class="st-f" stroke-width="1.5" marker-end="url(#a-space)"/>
+  <path d="M229.0 211.8 L274.9 236.2" class="st-f" stroke-width="1.5" marker-end="url(#a-space)"/>
+  <path d="M243.1 211.8 L289.0 236.2" class="st-f" stroke-width="1.5" marker-end="url(#a-space)"/>
+  <path d="M258.6 245 H305.4" class="st-f" stroke-width="3"/>
+  <text x="271" y="268" class="t-xs mid ink">広く薄く当たる</text>
+  <text x="271" y="284" class="t-xs mid soft">→ 寒い</text>
+</svg>

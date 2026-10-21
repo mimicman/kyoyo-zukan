@@ -1,0 +1,70 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 核 -->
+  <rect x="14" y="30" width="130" height="112" rx="18" class="tint"/>
+  <rect x="14" y="30" width="130" height="112" rx="18" class="st-soft dash" stroke-width="1.5"/>
+  <text x="26" y="48" class="t-xs soft">核</text>
+
+  <!-- DNA（2本の鎖） -->
+  <text x="79" y="56" class="t-s mid ink">DNA</text>
+  <path d="M38 70 V82 M48 70 V82 M58 70 V82 M68 70 V82 M78 70 V82 M88 70 V82 M98 70 V82 M108 70 V82 M118 70 V82" class="st-soft" stroke-width="1.5"/>
+  <path d="M32 68 H126 M32 84 H126" class="st" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 転写 -->
+  <path d="M79 90 V114" class="st-f" stroke-width="2" marker-end="url(#a-biology)"/>
+  <text x="88" y="106" class="t-xs fl">転写</text>
+
+  <!-- mRNA（核の外へ） -->
+  <path d="M40 126 H300" class="st-f" stroke-width="3" stroke-linecap="round"/>
+  <text x="152" y="118" class="t-xs fl">mRNA（写し）</text>
+
+  <!-- リボソーム -->
+  <ellipse cx="250" cy="113" rx="22" ry="11" class="soft" opacity="0.45"/>
+  <ellipse cx="250" cy="138" rx="28" ry="12" class="soft" opacity="0.45"/>
+  <text x="250" y="166" class="t-xs mid soft">リボソーム</text>
+  <text x="196" y="152" class="t-xs end fl">翻訳</text>
+
+  <!-- アミノ酸の鎖 → タンパク質 -->
+  <circle cx="252" cy="94" r="6" class="fl"/>
+  <circle cx="258" cy="81" r="6" class="fl"/>
+  <circle cx="268" cy="70" r="6" class="fl"/>
+  <circle cx="281" cy="62" r="6" class="fl"/>
+  <circle cx="295" cy="58" r="6" class="fl"/>
+  <circle cx="308" cy="52" r="6" class="fl"/>
+  <circle cx="316" cy="40" r="6" class="fl"/>
+  <circle cx="328" cy="48" r="6" class="fl"/>
+  <circle cx="322" cy="60" r="6" class="fl"/>
+  <text x="290" y="26" class="t-s mid ink">タンパク質</text>
+
+  <!-- 読み方の例 -->
+  <path d="M14 180 H346" class="st-line" stroke-width="1"/>
+  <text x="14" y="198" class="t-xs soft">mRNAの読み方（例）</text>
+    <rect x="48" y="206" width="20" height="22" rx="3" class="st-f" stroke-width="1.5"/>
+    <rect x="70" y="206" width="20" height="22" rx="3" class="st-f" stroke-width="1.5"/>
+    <rect x="92" y="206" width="20" height="22" rx="3" class="st-f" stroke-width="1.5"/>
+    <rect x="148" y="206" width="20" height="22" rx="3" class="st-f" stroke-width="1.5"/>
+    <rect x="170" y="206" width="20" height="22" rx="3" class="st-f" stroke-width="1.5"/>
+    <rect x="192" y="206" width="20" height="22" rx="3" class="st-f" stroke-width="1.5"/>
+    <rect x="248" y="206" width="20" height="22" rx="3" class="st-f" stroke-width="1.5"/>
+    <rect x="270" y="206" width="20" height="22" rx="3" class="st-f" stroke-width="1.5"/>
+    <rect x="292" y="206" width="20" height="22" rx="3" class="st-f" stroke-width="1.5"/>
+  <text x="58" y="222" class="t-s mid ink">A</text>
+  <text x="80" y="222" class="t-s mid ink">U</text>
+  <text x="102" y="222" class="t-s mid ink">G</text>
+  <text x="158" y="222" class="t-s mid ink">G</text>
+  <text x="180" y="222" class="t-s mid ink">C</text>
+  <text x="202" y="222" class="t-s mid ink">U</text>
+  <text x="258" y="222" class="t-s mid ink">U</text>
+  <text x="280" y="222" class="t-s mid ink">G</text>
+  <text x="302" y="222" class="t-s mid ink">G</text>
+  <path d="M80 232 V244" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M180 232 V244" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M280 232 V244" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M88 256 H172 M188 256 H272" class="st-f" stroke-width="2"/>
+  <circle cx="80" cy="256" r="8" class="fl"/>
+  <circle cx="180" cy="256" r="8" class="fl"/>
+  <circle cx="280" cy="256" r="8" class="fl"/>
+  <text x="80" y="280" class="t-xs mid ink">メチオニン</text>
+  <text x="180" y="280" class="t-xs mid ink">アラニン</text>
+  <text x="280" y="280" class="t-xs mid ink">トリプトファン</text>
+  <text x="180" y="296" class="t-xs mid soft">塩基3つ（コドン）で、アミノ酸1つが決まる</text>
+</svg>

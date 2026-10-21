@@ -1,0 +1,32 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 体温：ちょうどよい帯 -->
+  <text x="14" y="24" class="t-s ink">体温</text>
+  <rect x="30" y="66" width="316" height="18" class="tint"/>
+  <path d="M30 75 H346" class="st-f dash" stroke-width="1"/>
+  <text x="34" y="62" class="t-xs fl">37℃前後</text>
+  <path d="M30 75 H70 C90 75 100 40 120 40 C140 40 150 75 170 75 C190 75 210 110 230 110 C250 110 260 75 280 75 H346" class="st" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="120" y="28" class="t-xs mid ink">暑い → 汗で冷やす</text>
+  <path d="M140 46 L152 62" class="st-f" stroke-width="2" marker-end="url(#a-biology)"/>
+  <text x="230" y="128" class="t-xs mid ink">寒い → ふるえて温める</text>
+  <path d="M250 104 L262 88" class="st-f" stroke-width="2" marker-end="url(#a-biology)"/>
+  <text x="346" y="128" class="t-xs end soft">時間 →</text>
+
+  <path d="M14 146 H346" class="st-line" stroke-width="1"/>
+
+  <!-- 血糖値：上がれば下げ、下がれば上げる -->
+  <rect x="130" y="188" width="100" height="40" rx="10" class="tint"/>
+  <rect x="130" y="188" width="100" height="40" rx="10" class="st-f" stroke-width="2"/>
+  <text x="180" y="206" class="t-s mid ink">血糖値</text>
+  <text x="180" y="221" class="t-xs mid fl">ちょうどよい幅</text>
+
+  <text x="64" y="168" class="t-s mid ink">食後に上がる</text>
+  <text x="64" y="184" class="t-xs mid fl">インスリンで下げる</text>
+  <path d="M64 192 V208 H122" class="st-f" stroke-width="2" marker-end="url(#a-biology)"/>
+
+  <text x="296" y="168" class="t-s mid ink">空腹で下がる</text>
+  <text x="296" y="184" class="t-xs mid fl">グルカゴンで上げる</text>
+  <path d="M296 192 V208 H238" class="st-f" stroke-width="2" marker-end="url(#a-biology)"/>
+
+  <text x="180" y="254" class="t-s mid ink">しくみ＝負のフィードバック</text>
+  <text x="180" y="272" class="t-xs mid soft">ずれを感じたら、ずれと逆向きに働いて元に戻す</text>
+</svg>

@@ -1,0 +1,67 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 太陽の光 -->
+  <text x="14" y="22" class="t-xs fl">太陽の光 →</text>
+  <path d="M8 60 H40" class="st-f" stroke-width="2" marker-end="url(#a-space)"/>
+  <path d="M8 232 H40" class="st-f" stroke-width="2" marker-end="url(#a-space)"/>
+  <circle cx="180" cy="146" r="70" class="st-soft dash" stroke-width="1.2"/>
+  <path d="M133.4 198.2 A70 70 0 0 0 157.4 212.2" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <circle cx="180" cy="146" r="16" class="tint"/>
+  <path d="M180 130 A16 16 0 0 0 180 162Z" class="fl"/>
+  <circle cx="180" cy="146" r="16" class="st-f" stroke-width="1.5"/>
+  <text x="180" y="178" class="t-xs mid ink halo">地球</text>
+  <circle cx="110.0" cy="146.0" r="8" class="tint"/>
+  <path d="M110.0 138.0 A8 8 0 0 0 110.0 154.0Z" class="fl"/>
+  <circle cx="110.0" cy="146.0" r="8" class="st-f" stroke-width="1"/>
+  <circle cx="68.0" cy="146.0" r="11" class="tint"/>
+  <circle cx="68.0" cy="146.0" r="11" class="st-soft" stroke-width="1"/>
+  <text x="68.0" y="174.0" class="t-xs mid ink">新月</text>
+  <circle cx="130.5" cy="195.5" r="8" class="tint"/>
+  <path d="M130.5 187.5 A8 8 0 0 0 130.5 203.5Z" class="fl"/>
+  <circle cx="130.5" cy="195.5" r="8" class="st-f" stroke-width="1"/>
+  <circle cx="100.8" cy="225.2" r="11" class="tint"/>
+  <path d="M100.8 214.2 A11 11 0 0 1 100.8 236.2 A7.78 11 0 0 0 100.8 214.2Z" class="fl"/>
+  <circle cx="100.8" cy="225.2" r="11" class="st-soft" stroke-width="1"/>
+  <text x="100.8" y="251.2" class="t-xs mid ink">三日月</text>
+  <circle cx="180.0" cy="216.0" r="8" class="tint"/>
+  <path d="M180.0 208.0 A8 8 0 0 0 180.0 224.0Z" class="fl"/>
+  <circle cx="180.0" cy="216.0" r="8" class="st-f" stroke-width="1"/>
+  <circle cx="180.0" cy="258.0" r="11" class="tint"/>
+  <path d="M180.0 247.0 A11 11 0 0 1 180.0 269.0 A0.00 11 0 0 0 180.0 247.0Z" class="fl"/>
+  <circle cx="180.0" cy="258.0" r="11" class="st-soft" stroke-width="1"/>
+  <text x="198.0" y="262.0" class="t-xs ink">上弦</text>
+  <circle cx="229.5" cy="195.5" r="8" class="tint"/>
+  <path d="M229.5 187.5 A8 8 0 0 0 229.5 203.5Z" class="fl"/>
+  <circle cx="229.5" cy="195.5" r="8" class="st-f" stroke-width="1"/>
+  <circle cx="259.2" cy="225.2" r="11" class="tint"/>
+  <path d="M259.2 214.2 A11 11 0 0 1 259.2 236.2 A7.78 11 0 0 1 259.2 214.2Z" class="fl"/>
+  <circle cx="259.2" cy="225.2" r="11" class="st-soft" stroke-width="1"/>
+  <circle cx="250.0" cy="146.0" r="8" class="tint"/>
+  <path d="M250.0 138.0 A8 8 0 0 0 250.0 154.0Z" class="fl"/>
+  <circle cx="250.0" cy="146.0" r="8" class="st-f" stroke-width="1"/>
+  <circle cx="292.0" cy="146.0" r="11" class="tint"/>
+  <circle cx="292.0" cy="146.0" r="11" class="fl"/>
+  <circle cx="292.0" cy="146.0" r="11" class="st-soft" stroke-width="1"/>
+  <text x="292.0" y="174.0" class="t-xs mid ink">満月</text>
+  <circle cx="229.5" cy="96.5" r="8" class="tint"/>
+  <path d="M229.5 88.5 A8 8 0 0 0 229.5 104.5Z" class="fl"/>
+  <circle cx="229.5" cy="96.5" r="8" class="st-f" stroke-width="1"/>
+  <circle cx="259.2" cy="66.8" r="11" class="tint"/>
+  <path d="M259.2 55.8 A11 11 0 0 0 259.2 77.8 A7.78 11 0 0 0 259.2 55.8Z" class="fl"/>
+  <circle cx="259.2" cy="66.8" r="11" class="st-soft" stroke-width="1"/>
+  <circle cx="180.0" cy="76.0" r="8" class="tint"/>
+  <path d="M180.0 68.0 A8 8 0 0 0 180.0 84.0Z" class="fl"/>
+  <circle cx="180.0" cy="76.0" r="8" class="st-f" stroke-width="1"/>
+  <circle cx="180.0" cy="34.0" r="11" class="tint"/>
+  <path d="M180.0 23.0 A11 11 0 0 0 180.0 45.0 A0.00 11 0 0 0 180.0 23.0Z" class="fl"/>
+  <circle cx="180.0" cy="34.0" r="11" class="st-soft" stroke-width="1"/>
+  <text x="198.0" y="38.0" class="t-xs ink">下弦</text>
+  <circle cx="130.5" cy="96.5" r="8" class="tint"/>
+  <path d="M130.5 88.5 A8 8 0 0 0 130.5 104.5Z" class="fl"/>
+  <circle cx="130.5" cy="96.5" r="8" class="st-f" stroke-width="1"/>
+  <circle cx="100.8" cy="66.8" r="11" class="tint"/>
+  <path d="M100.8 55.8 A11 11 0 0 0 100.8 77.8 A7.78 11 0 0 1 100.8 55.8Z" class="fl"/>
+  <circle cx="100.8" cy="66.8" r="11" class="st-soft" stroke-width="1"/>
+  <text x="350" y="22" class="t-xs end soft">外側：地球からの見え方</text>
+  <text x="350" y="282" class="t-xs end soft">約29.5日でひとめぐり</text>
+  <text x="14" y="296" class="t-xs soft">内側：宇宙から見た月（左半分が照らされる）</text>
+</svg>
