@@ -1,17 +1,24 @@
-"""全ページをスマホ幅とPC幅、ライトとダークで開き、レイアウト崩れを確認する。
+"""ホーム・分野一覧・全カードをスマホ幅とPC幅、ライトとダークで開き、表示崩れを確認する。
 
 確認すること:
-    - 幅375pxで横スクロールが出ない（scrollWidth が画面幅を超えない）
+    - 横スクロールが出ない（ページ全体の scrollWidth が画面幅を超えない）
+    - カードの図が読み込まれている
     - コンソールエラーが出ない
 スクリーンショットは出力先に保存するので、図の文字の重なりは目で確認する。
 
+ページは fetch でデータを読むため、確認中だけ簡易サーバーを立てる。
+
 使い方（Playwright が入った Python で実行）:
-    python tools/check_layout.py [ページ名.html ...] [--out 出力先]
-ページ名を省略すると全ページを確認する。
+    python tools/check_layout.py [分野/カード ...] [--out 出力先]
+カードを省略すると全カードを確認する（例: python tools/check_layout.py economics/compound）。
 """
 
 import argparse
+import functools
+import http.server
+import json
 import sys
+import threading
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
@@ -21,42 +28,69 @@ VIEWPORTS = {"mobile": (375, 812), "desktop": (1200, 900)}
 SCHEMES = ("light", "dark")
 
 
-def pages(names: list[str]) -> list[Path]:
-    """確認するページ（指定がなければ _ で始まる雛形以外の全ページ）"""
-    if names:
-        return [ROOT / n for n in names]
-    return sorted(p for p in ROOT.glob("*.html") if not p.name.startswith("_"))
+def serve() -> tuple[http.server.ThreadingHTTPServer, str]:
+    """リポジトリ直下を配信する簡易サーバーを空いているポートで立てる"""
+    class QuietHandler(http.server.SimpleHTTPRequestHandler):
+        def log_message(self, *args) -> None:
+            """アクセスログは出さない"""
+
+    handler = functools.partial(QuietHandler, directory=str(ROOT))
+    class QuietServer(http.server.ThreadingHTTPServer):
+        def handle_error(self, request, client_address) -> None:
+            """再読み込みで切れた接続のエラーは無視する"""
+
+    server = QuietServer(("127.0.0.1", 0), handler)
+    threading.Thread(target=server.serve_forever, daemon=True).start()
+    return server, f"http://127.0.0.1:{server.server_address[1]}/"
+
+
+def routes(cards: list[str]) -> list[str]:
+    """確認する画面の一覧（# 以降）"""
+    data = json.loads((ROOT / "data" / "cards.json").read_text(encoding="utf-8"))
+    if cards:
+        return cards
+    return ["", *[f["id"] for f in data["fields"]], *[f"{c['field']}/{c['id']}" for c in data["cards"]]]
 
 
 def main() -> int:
-    """各ページ×画面幅×配色で表示し、問題があれば一覧を出して終了コード1を返す"""
+    """各画面×画面幅×配色で表示し、問題があれば一覧を出して終了コード1を返す"""
     parser = argparse.ArgumentParser()
-    parser.add_argument("pages", nargs="*")
+    parser.add_argument("cards", nargs="*")
     parser.add_argument("--out", default=str(ROOT / "tmp" / "screenshots"))
     args = parser.parse_args()
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
+    server, base = serve()
 
     problems: list[str] = []
     with sync_playwright() as pw:
         browser = pw.chromium.launch()
-        for page_path in pages(args.pages):
-            for vp_name, (w, h) in VIEWPORTS.items():
-                for scheme in SCHEMES:
-                    ctx = browser.new_context(viewport={"width": w, "height": h}, color_scheme=scheme)
-                    page = ctx.new_page()
-                    errors: list[str] = []
-                    page.on("console", lambda m, e=errors: e.append(m.text) if m.type == "error" else None)
-                    page.goto(page_path.as_uri())
-                    label = f"{page_path.name} {vp_name} {scheme}"
+        for vp_name, (w, h) in VIEWPORTS.items():
+            for scheme in SCHEMES:
+                ctx = browser.new_context(viewport={"width": w, "height": h}, color_scheme=scheme)
+                page = ctx.new_page()
+                errors: list[str] = []
+                page.on("console", lambda m, e=errors: e.append(m.text) if m.type == "error" else None)
+                page.on("pageerror", lambda ex, e=errors: e.append(str(ex)))
+                for r in routes(args.cards):
+                    label = f"#/{r} {vp_name} {scheme}"
+                    errors.clear()
+                    page.goto(f"{base}#/{r}")
+                    page.reload()  # 画面を毎回まっさらな状態から描く
+                    page.wait_for_load_state("networkidle")
+                    if r.count("/") == 1:
+                        slide = page.locator(f'.slide[data-key="{r}"]')
+                        if slide.locator(".fig svg").count() == 0:
+                            problems.append(f"{label}: 図が読み込まれていない")
                     scroll_w = page.evaluate("document.documentElement.scrollWidth")
                     if scroll_w > w:
                         problems.append(f"{label}: 横スクロールあり（scrollWidth={scroll_w}）")
-                    for e in errors:
-                        problems.append(f"{label}: コンソールエラー {e}")
-                    page.screenshot(path=out / f"{page_path.stem}_{vp_name}_{scheme}.png", full_page=True)
-                    ctx.close()
+                    problems.extend(f"{label}: コンソールエラー {e}" for e in errors)
+                    name = (r or "home").replace("/", "_")
+                    page.screenshot(path=out / f"{name}_{vp_name}_{scheme}.png", full_page=r.count("/") == 0)
+                ctx.close()
         browser.close()
+    server.shutdown()
 
     for p in problems:
         print("NG", p)

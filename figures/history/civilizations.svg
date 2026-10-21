@@ -1,0 +1,52 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 簡略地図（西→東）。位置はおおよそ -->
+  <rect x="10" y="10" width="340" height="122" rx="18" class="bgc"/>
+  <text x="22" y="30" class="t-xs soft">西</text>
+  <text x="338" y="30" class="t-xs end soft">東</text>
+
+  <!-- 川と文明の位置 -->
+  <path d="M46 116 C40 100 52 92 44 76 C40 66 48 60 46 52" class="st-f" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="45" cy="72" r="6" class="fl"/>
+  <path d="M96 48 C104 58 100 66 110 78 M110 48 C114 60 112 66 116 78" class="st-f" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="112" cy="66" r="6" class="fl"/>
+  <path d="M176 50 C170 62 182 70 174 84 C170 92 176 100 172 108" class="st-f" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="175" cy="78" r="6" class="fl"/>
+  <path d="M250 70 C266 54 280 78 298 62 C310 52 320 60 334 56" class="st-f" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="298" cy="62" r="6" class="fl"/>
+
+  <!-- 地図とカードを結ぶ -->
+  <path d="M45 80 V148 M112 74 L136 148 M175 86 L222 148 M298 70 V148" class="st-line dash" stroke-width="1.5"/>
+
+  <!-- 4つの文明 -->
+  <g>
+    <rect x="10" y="150" width="80" height="120" rx="12" class="tint"/>
+    <text x="50" y="174" class="t-s mid fl" font-weight="700">エジプト</text>
+    <text x="50" y="196" class="t-xs mid soft">ナイル川</text>
+    <path d="M30 212 H70" class="st-line" stroke-width="1"/>
+    <text x="50" y="234" class="t-xs mid ink">ヒエログリフ</text>
+    <text x="50" y="252" class="t-xs mid soft">（神聖文字）</text>
+  </g>
+  <g>
+    <rect x="96" y="150" width="80" height="120" rx="12" class="tint"/>
+    <text x="136" y="174" class="t-s mid fl" font-weight="700">メソポタミア</text>
+    <text x="136" y="196" class="t-xs mid soft">2つの大河</text>
+    <path d="M116 212 H156" class="st-line" stroke-width="1"/>
+    <text x="136" y="234" class="t-xs mid ink">楔形文字</text>
+  </g>
+  <g>
+    <rect x="182" y="150" width="80" height="120" rx="12" class="tint"/>
+    <text x="222" y="174" class="t-s mid fl" font-weight="700">インダス</text>
+    <text x="222" y="196" class="t-xs mid soft">インダス川</text>
+    <path d="M202 212 H242" class="st-line" stroke-width="1"/>
+    <text x="222" y="234" class="t-xs mid ink">インダス文字</text>
+    <text x="222" y="252" class="t-xs mid soft">（未解読）</text>
+  </g>
+  <g>
+    <rect x="268" y="150" width="82" height="120" rx="12" class="tint"/>
+    <text x="309" y="174" class="t-s mid fl" font-weight="700">中国</text>
+    <text x="309" y="196" class="t-xs mid soft">黄河</text>
+    <path d="M289 212 H329" class="st-line" stroke-width="1"/>
+    <text x="309" y="234" class="t-xs mid ink">甲骨文字</text>
+    <text x="309" y="252" class="t-xs mid soft">（漢字の祖）</text>
+  </g>
+</svg>

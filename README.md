@@ -1,52 +1,78 @@
 # 教養の図解（kyoyo-zukan）
 
-教養（哲学・世界史・経済ほか）を、文字を少なく図解中心で学ぶ自分用のページ。GitHub Pages で公開している。
+教養を **1テーマ＝1枚の図解カード** で学ぶ自分用のページ。文字は最小限にして、図と画像で覚える。
 
 - **公開URL**: https://mimicman.github.io/kyoyo-zukan/
-- 検索エンジンには載せない（`noindex` と `robots.txt`）。URLを知っていれば誰でも見られる点に注意し、個人情報は書かない
-- 2026-10-21 に `AllInOneStorage/doc/教養/` から分離
+- 検索エンジンには載せない（`noindex` と `robots.txt`）。URLを知っていれば誰でも見られるので、個人情報は書かない
+- ビルドは不要。`main` に push すると、1〜2分で公開URLに反映される
 
-## ページ
+## 画面
 
-| ファイル | 内容 |
+| URL | 画面 |
 |---|---|
-| `index.html` | 全体地図（分野の関係・時代×分野・学ぶ順番・各ページへの入口） |
-| `philosophy.html` | 哲学・思想史 |
-| `religion.html` | 宗教 |
-| `world-history.html` | 世界史 |
-| `japan.html` | 日本史・日本文化 |
-| `politics.html` | 政治・法・国際関係 |
-| `economics.html` | 経済・お金 |
-| `science.html` | 科学史 |
-| `psychology.html` | 心理学・脳 |
-| `art.html` | 芸術 |
-| `_template.html` | 新しいページの雛形 |
-| `tools/check_layout.py` | 全ページの表示確認（Playwright） |
+| `#/` | ホーム（今日の1枚・分野） |
+| `#/<分野>` | 分野のカード一覧（既読に印） |
+| `#/<分野>/<カード>` | カード。左右スワイプ・← →キーで前後、Escで一覧へ |
 
-ビルドは不要。HTML を直して `main` に push すると、1〜2分で公開URLに反映される。
+## ファイル
 
-## 更新の手順
+| パス | 中身 |
+|---|---|
+| `index.html` | 画面の土台と、図で使う矢印（`url(#a-ink)` `url(#a-soft)` `url(#a-<分野>)`） |
+| `assets/style.css` | 配色（ライト/ダーク）・レイアウト・図のクラス |
+| `assets/app.js` | 画面の切り替え・スワイプ・キーワード表示・画像の拡大 |
+| `data/cards.json` | 分野とカードのデータ。**文字はすべてここに書く** |
+| `figures/<分野>/<カードid>.svg` | カードの図解 |
+| `images/<id>.jpg` / `credits.json` / `CREDITS.md` | パブリックドメインの画像と出典 |
+| `tools/validate.py` | データの検査（文字数・ファイルの有無・出典・図の決まり） |
+| `tools/check_layout.py` | 全画面の表示確認（Playwright） |
+| `tools/fetch_commons.py` | Wikimedia Commons から画像を取得して出典を記録 |
 
-1. HTML を直す
-2. 表示を確認する: `python tools/check_layout.py [ページ名.html ...]`（Playwright が入った Python で実行。幅375px・1200px × ライト・ダークで横スクロールとコンソールエラーを確認し、スクリーンショットを `tmp/screenshots/` に保存）
-3. コミットして `main` に push する
+## カードを1枚足す
 
-Claude Code では `/kyoyo-update <やりたい変更>` でこの流れをまとめて実行できる。
+1. `figures/<分野>/<id>.svg` に図を描く（下の「図の決まり」）
+2. `data/cards.json` の `cards` に追記する。同じ分野の中では並び順がそのまま番号になる
+   ```json
+   {
+     "id": "supply-demand", "field": "economics", "title": "需要と供給", "era": "18世紀〜",
+     "line": "買いたい量と売りたい量が釣り合う所で、価格が決まる",
+     "image": { "id": "adam-smith", "pos": "50% 25%" },
+     "keywords": [{ "word": "均衡価格", "note": "需要と供給がちょうど一致するときの価格" }],
+     "links": ["economics/inflation"]
+   }
+   ```
+   `image` は任意（`pos` は帯に切り抜くときの中心）。`links` は関連カード（他分野も可）
+3. 画像を使うなら取得する（パブリックドメイン/CC0 以外は保存されない）
+   ```
+   python3 tools/fetch_commons.py --check "File:ファイル名.jpg"
+   python3 tools/fetch_commons.py <画像id> "File:ファイル名.jpg" "表示名（作者）"
+   sips -Z 800 -s formatOptions 75 images/<画像id>.jpg
+   ```
+4. `python3 tools/validate.py` で問題0件にする
+5. `<Playwright入りのpython> tools/check_layout.py <分野>/<id>` で表示を確認し、`tmp/screenshots/` の画像で図の文字の重なりを見る
+6. コミットして push
 
-## ページを増やすとき
+分野を増やすときは、`data/cards.json` の `fields` に追加し、`assets/style.css` の分野色（`--c-<分野>` をライト・ダーク両方と `[data-field]`）と、`index.html` の矢印 `a-<分野>` を足す。
 
-1. `_template.html` をコピーして `<名前>.html` を作る。`<style>` の共通部分は変えず、ページ固有の指定は後ろに足す
-2. 全ページの `nav.top` に新しいページへのリンクを足す
-3. `index.html` の分野カードや「次の一歩」からリンクする
+## 文字の決まり（validate.py が検査）
+
+| 要素 | 上限 |
+|---|---|
+| 見出し `title` | 15字 |
+| ひとこと `line`（図が言いたいことを1行で） | 30字 |
+| キーワード | 3つまで、説明 `note` は40字 |
+| つながり `links` | 2件まで |
+
+- 段落の文章は書かない。説明は図で済ませる
+- 年号は確実なものだけ書き、自信のないものは世紀単位にする。名言の引用や、すぐ古くなる統計値は書かない
+- 政治・宗教など評価が分かれる話題は、特定の立場を取らない
 
 ## 図の決まり
 
-- 図はインラインSVG。viewBox の幅は 360〜400 で縦長に組む（PCでは最大520pxで表示）
-- 色は直接書かず、雛形のクラス（`.t` `.box` `.phil` `.on-color` など）を使う。ダークモードはこれで自動対応する
-- 年号は確実なものだけ書き、自信のないものは世紀単位にする。名言の引用や、すぐ古くなる統計値は書かない
-
-## 文章の決まり
-
-- 文字は少なく簡潔に。説明は図で済ませ、文章は図を読む手がかりにとどめる
-- 「◯◯論」「◯◯主義」などの考え方や専門用語は、名前だけで終わらせない。ページ内の「考え方・用語の解説」（`dl.glossary`、各項目は `<div id="g-xxx">`）で1〜2文で説明し、本文やカードから `#g-xxx` でリンクする
-- 政治・宗教など評価が分かれる話題は、特定の立場を支持・批判せず、背景の説明にとどめる
+- `viewBox="0 0 360 280"`（縦は必要なら伸ばしてよい）。図がカードの主役
+- 色は直接書かず、クラスだけで指定する（ダークモードに自動で対応するため）
+  - 塗り: `.ink`（文字色）`.soft`（薄い文字色）`.fl`（分野色）`.on`（分野色の上の文字）`.tint`（分野色の淡い面）`.paper` `.bgc`
+  - 線: `.st` `.st-soft` `.st-f` `.st-line`、点線は `.dash`
+  - 文字: `.t-xl` `.t-l` `.t-m` `.t-s` `.t-xs`、中央揃え `.mid`、右揃え `.end`、線と重なる文字は `.halo`（背景色のふち取り）
+- `id` 属性は使わない（ページに埋め込むと衝突する）。矢印は `index.html` の共通のものを使う
+- 一覧のサムネイルでは図の文字は消える。文字がなくても形で区別できる図にする

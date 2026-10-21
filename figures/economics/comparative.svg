@@ -1,0 +1,37 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 見出し行：1つ作るのにかかる時間（●＝1時間） -->
+  <text x="174" y="22" class="t-m mid ink">パン1個</text>
+  <text x="294" y="22" class="t-m mid ink">服1着</text>
+  <text x="16" y="22" class="t-xs soft">● ＝1時間</text>
+
+  <!-- Aさん -->
+  <circle cx="34" cy="62" r="13" class="ink"/>
+  <text x="56" y="67" class="t-m ink">Aさん</text>
+  <rect x="122" y="40" width="104" height="44" rx="10" class="tint st-f" stroke-width="2"/>
+  <circle cx="174" cy="62" r="7" class="fl"/>
+  <text x="222" y="54" class="t-xs end fl">得意</text>
+  <rect x="242" y="40" width="104" height="44" rx="10" class="bgc"/>
+  <circle cx="285" cy="62" r="7" class="soft"/><circle cx="303" cy="62" r="7" class="soft"/>
+
+  <!-- Bさん -->
+  <circle cx="34" cy="116" r="13" class="soft"/>
+  <text x="56" y="121" class="t-m ink">Bさん</text>
+  <rect x="122" y="94" width="104" height="44" rx="10" class="bgc"/>
+  <circle cx="156" cy="116" r="7" class="soft"/><circle cx="174" cy="116" r="7" class="soft"/><circle cx="192" cy="116" r="7" class="soft"/>
+  <rect x="242" y="94" width="104" height="44" rx="10" class="tint st-f" stroke-width="2"/>
+  <circle cx="276" cy="116" r="7" class="fl"/><circle cx="294" cy="116" r="7" class="fl"/><circle cx="312" cy="116" r="7" class="fl"/>
+  <text x="342" y="108" class="t-xs end fl">得意</text>
+
+  <text x="180" y="160" class="t-xs mid soft">Aはどちらも速い。でも服を作ると、パン2個分の時間を失う</text>
+
+  <!-- 分業して交換 -->
+  <circle cx="60" cy="214" r="18" class="ink"/>
+  <text x="60" y="219" class="t-s mid paper">A</text>
+  <circle cx="300" cy="214" r="18" class="soft"/>
+  <text x="300" y="219" class="t-s mid paper">B</text>
+  <path d="M84 202 H272" class="st-f" stroke-width="2.5" marker-end="url(#a-economics)"/>
+  <text x="180" y="194" class="t-s mid ink">パン</text>
+  <path d="M276 226 H88" class="st-f" stroke-width="2.5" marker-end="url(#a-economics)"/>
+  <text x="180" y="244" class="t-s mid ink">服</text>
+  <text x="180" y="272" class="t-m mid fl">分業して交換 → 両方が得</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 持ち時間 -->
+  <circle cx="180" cy="36" r="22" class="paper st" stroke-width="2.5"/>
+  <path d="M180 22 V36 L190 44" class="st" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="214" y="34" class="t-m ink">2時間</text>
+  <text x="214" y="50" class="t-xs soft">使えるのは1つ</text>
+
+  <path d="M164 56 L104 92" class="st-f" stroke-width="2.5" marker-end="url(#a-economics)"/>
+  <path d="M196 56 L256 92" class="st-soft dash" stroke-width="2" marker-end="url(#a-soft)"/>
+
+  <!-- 選んだ -->
+  <rect x="16" y="98" width="156" height="72" rx="14" class="fl"/>
+  <text x="94" y="130" class="t-l mid on">勉強する</text>
+  <text x="94" y="152" class="t-xs mid on">選んだ ✓</text>
+  <!-- 諦めた -->
+  <rect x="188" y="98" width="156" height="72" rx="14" class="bgc st-soft dash" stroke-width="1.5"/>
+  <text x="266" y="128" class="t-m mid soft">バイトする</text>
+  <text x="266" y="152" class="t-s mid soft">2,000円分</text>
+
+  <!-- 機会費用 -->
+  <path d="M266 172 V196" class="st-f" stroke-width="2" marker-end="url(#a-economics)"/>
+  <rect x="16" y="202" width="328" height="68" rx="14" class="tint st-f" stroke-width="1.5"/>
+  <text x="180" y="232" class="t-l mid fl">機会費用 ＝ 2,000円</text>
+  <text x="180" y="254" class="t-xs mid soft">勉強のコストは、もらえなかったバイト代</text>
+</svg>

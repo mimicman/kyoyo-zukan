@@ -1,0 +1,50 @@
+{
+  "school-of-athens": {
+    "name": "アテネの学堂（ラファエロ）",
+    "artist": "Raphael",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg"
+  },
+  "death-of-socrates": {
+    "name": "ソクラテスの死（ダヴィッド）",
+    "artist": "Jacques-Louis David",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:David_-_The_Death_of_Socrates.jpg"
+  },
+  "plato-cave": {
+    "name": "プラトンの洞窟（サーンレダム、1604年）",
+    "artist": "After Cornelis van Haarlem / Jan Saenredam",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Jan_Pietersz_Saenredam_after_Cornelis_Cornelisz_van_Haarlem,_Plato%27s_Cave,_1604,_NGA_62542.jpg"
+  },
+  "descartes": {
+    "name": "デカルトの肖像（ハルスに基づく）",
+    "artist": "After Frans Hals",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg"
+  },
+  "kant": {
+    "name": "イマヌエル・カントの肖像",
+    "artist": "作者不明（アントン・グラフ派か）",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Immanuel_Kant_(painted_portrait).jpg"
+  },
+  "adam-smith": {
+    "name": "アダム・スミスの肖像（ミュア肖像）",
+    "artist": "作者不明",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Adam_Smith_The_Muir_portrait.jpg"
+  },
+  "birth-of-venus": {
+    "name": "ヴィーナスの誕生（ボッティチェリ）",
+    "artist": "Sandro Botticelli",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg"
+  },
+  "watt-engine": {
+    "name": "ワットの複動式蒸気機関（1782年の仕様書より）",
+    "artist": "Robison, John, 1739-1805.",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Steam_engine_-_Mr._Watt%27s_double_steam_engine_from_his_specification_of_1782_LCCN2006691752.jpg"
+  }
+}

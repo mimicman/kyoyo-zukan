@@ -1,0 +1,178 @@
+{
+  "hero": { "image": "school-of-athens", "tagline": "1テーマ1枚。図で見て、ひとことで覚える" },
+  "fields": [
+    {
+      "id": "philosophy", "name": "哲学", "desc": "考え方そのものを考える",
+      "icon": "<circle cx=\"24\" cy=\"24\" r=\"17\"/><path d=\"M19 19.5a5 5 0 1 1 7 4.6c-1.4.7-2 1.6-2 3.4\"/><path d=\"M24 33.5v.5\"/>"
+    },
+    {
+      "id": "economics", "name": "経済", "desc": "限られたものの分け方",
+      "icon": "<path d=\"M8 38h32\"/><path d=\"M10 32l9-9 6 6 13-14\"/><path d=\"M31 15h7v7\"/>"
+    },
+    {
+      "id": "history", "name": "世界史", "desc": "人類の歩みを流れで見る",
+      "icon": "<path d=\"M8 17l16-9 16 9\"/><path d=\"M9 18h30\"/><path d=\"M14 22v11M21 22v11M27 22v11M34 22v11\"/><path d=\"M8 38h32\"/>"
+    }
+  ],
+  "cards": [
+    {
+      "id": "ignorance", "field": "philosophy", "title": "無知の知", "era": "前5世紀",
+      "line": "知らないと自覚することが、知の出発点",
+      "image": { "id": "death-of-socrates", "pos": "50% 35%" },
+      "keywords": [
+        { "word": "ソクラテス", "note": "古代アテネの哲学者。著作を残さず、対話で人々に問い続けた" },
+        { "word": "問答法", "note": "質問を重ねて相手の思い込みを崩し、考えを深める対話の方法" },
+        { "word": "産婆術", "note": "答えを教えず、相手自身が答えを生み出すのを手助けすること" }
+      ],
+      "links": ["philosophy/cave"]
+    },
+    {
+      "id": "cave", "field": "philosophy", "title": "洞窟の比喩", "era": "前4世紀",
+      "line": "見えている物は、本物（イデア）の影にすぎない",
+      "image": { "id": "plato-cave", "pos": "50% 45%" },
+      "keywords": [
+        { "word": "イデア", "note": "物事の完全な本質。描いた三角形ではなく「三角形そのもの」" },
+        { "word": "プラトン", "note": "ソクラテスの弟子。学園アカデメイアを開いた" },
+        { "word": "二元論", "note": "世界を2つの領域に分ける考え方。ここでは感覚の世界と理性の世界" }
+      ],
+      "links": ["philosophy/ignorance", "philosophy/kant"]
+    },
+    {
+      "id": "cogito", "field": "philosophy", "title": "我思う、ゆえに我あり", "era": "17世紀",
+      "line": "すべてを疑っても、疑っている私だけは残る",
+      "image": { "id": "descartes", "pos": "50% 25%" },
+      "keywords": [
+        { "word": "方法的懐疑", "note": "確かな土台を探すため、少しでも疑えるものはいったん全部退ける方法" },
+        { "word": "心身二元論", "note": "考える心と、広がりをもつ身体を別のものとみる考え方" },
+        { "word": "合理論", "note": "理性による推論を知識の土台とする立場。経験論と対になる" }
+      ],
+      "links": ["philosophy/kant"]
+    },
+    {
+      "id": "kant", "field": "philosophy", "title": "見え方の枠", "era": "18世紀",
+      "line": "世界は、心の「枠」を通してしか見えない",
+      "image": { "id": "kant", "pos": "50% 22%" },
+      "keywords": [
+        { "word": "物自体", "note": "枠を通す前の世界そのもの。人間には知りえないとされる" },
+        { "word": "カテゴリー", "note": "原因と結果などの、理解の型。経験より先に心に備わるとされる" },
+        { "word": "コペルニクス的転回", "note": "認識が対象に従うのでなく、対象が認識の枠に従うという発想の逆転" }
+      ],
+      "links": ["philosophy/cogito", "philosophy/trolley"]
+    },
+    {
+      "id": "trolley", "field": "philosophy", "title": "結果か、ルールか", "era": "18〜19世紀",
+      "line": "善い行いを、結果で決めるか義務で決めるか",
+      "keywords": [
+        { "word": "功利主義", "note": "幸福の総量を最大にする行為が正しいとする考え。ベンサムやミル" },
+        { "word": "義務論", "note": "結果にかかわらず守るべき義務があるとする考え。カントが代表" },
+        { "word": "トロッコ問題", "note": "1人か5人かを選ばせ、道徳の直観を比べる思考実験" }
+      ],
+      "links": ["philosophy/kant", "economics/opportunity"]
+    },
+
+    {
+      "id": "supply-demand", "field": "economics", "title": "需要と供給", "era": "18世紀〜",
+      "line": "買いたい量と売りたい量が釣り合う所で、価格が決まる",
+      "image": { "id": "adam-smith", "pos": "50% 25%" },
+      "keywords": [
+        { "word": "均衡価格", "note": "需要と供給がちょうど一致するときの価格" },
+        { "word": "見えざる手", "note": "各自が自分の利益を追うと市場全体が調整される、というアダム・スミスの比喩" },
+        { "word": "価格弾力性", "note": "価格が変わったとき、買われる量がどれだけ変わるかの度合い" }
+      ],
+      "links": ["economics/inflation", "history/industrial"]
+    },
+    {
+      "id": "opportunity", "field": "economics", "title": "機会費用", "era": "19世紀〜",
+      "line": "何かを選ぶコストは、諦めた選択肢の価値",
+      "keywords": [
+        { "word": "トレードオフ", "note": "何かを得ると、別の何かを手放す関係" },
+        { "word": "希少性", "note": "時間もお金も欲しいだけはないこと。経済学の出発点" },
+        { "word": "サンクコスト", "note": "もう取り戻せない過去の費用。これからの判断には入れない" }
+      ],
+      "links": ["economics/comparative", "philosophy/trolley"]
+    },
+    {
+      "id": "comparative", "field": "economics", "title": "比較優位", "era": "19世紀",
+      "line": "どちらも得意な人とでも、分業して交換すると両方が得",
+      "keywords": [
+        { "word": "絶対優位", "note": "相手より少ない時間や資源で作れること" },
+        { "word": "比較優位", "note": "それを作るときに諦めるものが、相手より少ないこと" },
+        { "word": "リカード", "note": "イギリスの経済学者。比較優位で自由貿易の利点を説いた" }
+      ],
+      "links": ["economics/opportunity"]
+    },
+    {
+      "id": "inflation", "field": "economics", "title": "インフレと金利", "era": "20世紀〜",
+      "line": "物価が上がりすぎたら、金利を上げてブレーキ",
+      "keywords": [
+        { "word": "インフレ", "note": "物価が上がり続け、お金の価値が下がること" },
+        { "word": "中央銀行", "note": "お金を発行し、金利を調整する「銀行の銀行」。日本は日本銀行" },
+        { "word": "デフレ", "note": "物価が下がり続けること。景気の停滞と結びつきやすい" }
+      ],
+      "links": ["economics/supply-demand", "economics/compound"]
+    },
+    {
+      "id": "compound", "field": "economics", "title": "複利", "era": "古代〜",
+      "line": "利息にも利息がつき、時間とともに雪だるま式に増える",
+      "keywords": [
+        { "word": "単利", "note": "最初の元本にだけ利息がつく方式" },
+        { "word": "複利", "note": "元本とそれまでの利息の合計に、利息がつく方式" },
+        { "word": "72の法則", "note": "72÷年利（%）で、お金がおよそ2倍になる年数がわかる" }
+      ],
+      "links": ["economics/inflation"]
+    },
+
+    {
+      "id": "civilizations", "field": "history", "title": "四大文明", "era": "前4千年紀〜",
+      "line": "大河のほとりで農耕が栄え、都市と文字が生まれた",
+      "keywords": [
+        { "word": "大河", "note": "定期的な洪水が肥えた土を運び、農耕を支えた" },
+        { "word": "文字", "note": "収穫や税、暦を記録するために生まれた" },
+        { "word": "四大文明", "note": "日本や中国で広まった整理の仕方。ほかにも多くの古代文明がある" }
+      ],
+      "links": ["history/rome"]
+    },
+    {
+      "id": "rome", "field": "history", "title": "ローマの興亡", "era": "前6世紀〜15世紀",
+      "line": "都市国家から大帝国へ。やがて東西に分かれた",
+      "keywords": [
+        { "word": "共和政", "note": "王を置かず、選ばれた役人と元老院が治める政治の仕組み" },
+        { "word": "パクス・ロマーナ", "note": "帝政のはじめ、約200年続いた比較的平和な時代" },
+        { "word": "ビザンツ帝国", "note": "東ローマ帝国の別名。首都はコンスタンティノープル" }
+      ],
+      "links": ["history/civilizations", "history/renaissance"]
+    },
+    {
+      "id": "renaissance", "field": "history", "title": "ルネサンス", "era": "14〜16世紀",
+      "line": "古代を手本に、人間中心の見方がよみがえった",
+      "image": { "id": "birth-of-venus", "pos": "50% 30%" },
+      "keywords": [
+        { "word": "人文主義", "note": "ギリシャ・ローマの古典を学び、人間の可能性を重んじる考え方" },
+        { "word": "遠近法", "note": "奥行きを幾何学で描く技法。ルネサンスの絵画で確立した" },
+        { "word": "活版印刷", "note": "15世紀にグーテンベルクが実用化。本と知識が一気に広まった" }
+      ],
+      "links": ["history/rome", "philosophy/cogito"]
+    },
+    {
+      "id": "industrial", "field": "history", "title": "産業革命", "era": "18世紀後半〜",
+      "line": "機械と蒸気の力で、作れる量がけた違いに増えた",
+      "image": { "id": "watt-engine", "pos": "50% 40%" },
+      "keywords": [
+        { "word": "蒸気機関", "note": "蒸気の力で機械を動かす装置。ワットが効率を大きく高めた" },
+        { "word": "工場制", "note": "機械を1か所に集め、雇った労働者が分業して作る仕組み" },
+        { "word": "都市化", "note": "仕事を求めて、人が農村から都市へ移ること" }
+      ],
+      "links": ["economics/supply-demand", "history/world-wars"]
+    },
+    {
+      "id": "world-wars", "field": "history", "title": "二つの世界大戦", "era": "20世紀前半",
+      "line": "国の総力を挙げた戦争が、30年のうちに二度起きた",
+      "keywords": [
+        { "word": "総力戦", "note": "兵士だけでなく、経済や国民生活のすべてを戦争に動員すること" },
+        { "word": "世界恐慌", "note": "1929年に始まった世界的な大不況" },
+        { "word": "国際連合", "note": "第二次大戦後の1945年に、平和を保つためにつくられた国際機関" }
+      ],
+      "links": ["history/industrial", "economics/inflation"]
+    }
+  ]
+}

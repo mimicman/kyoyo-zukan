@@ -1,0 +1,37 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 物自体 -->
+  <rect x="12" y="24" width="92" height="150" rx="14" class="bgc st-soft dash" stroke-width="1.5"/>
+  <text x="58" y="104" class="mid soft" font-size="46" font-weight="800">?</text>
+  <text x="58" y="198" class="t-m mid ink">物自体</text>
+  <text x="58" y="214" class="t-xs mid soft">知りえない</text>
+
+  <!-- 心の枠 -->
+  <path d="M108 99 H128" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <rect x="134" y="14" width="92" height="170" rx="14" class="fl"/>
+  <text x="180" y="40" class="t-m mid on">心の枠</text>
+  <rect x="144" y="56" width="72" height="50" rx="8" class="paper"/>
+  <text x="180" y="78" class="t-s mid ink">時間</text>
+  <text x="180" y="96" class="t-s mid ink">空間</text>
+  <rect x="144" y="114" width="72" height="56" rx="8" class="paper"/>
+  <text x="180" y="138" class="t-xs mid ink">カテゴリー</text>
+  <text x="180" y="156" class="t-xs mid soft">原因と結果…</text>
+  <text x="180" y="208" class="t-xs mid soft">経験より先に</text>
+  <text x="180" y="222" class="t-xs mid soft">備わっている</text>
+
+  <!-- 現象 -->
+  <path d="M230 99 H250" class="st-f" stroke-width="2" marker-end="url(#a-philosophy)"/>
+  <rect x="256" y="24" width="92" height="150" rx="14" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="302" cy="62" r="12" class="fl"/>
+  <path d="M272 140 H332" class="st-f" stroke-width="2"/>
+  <path d="M280 140 V114 L294 102 L308 114 V140" class="st-f" stroke-width="2"/>
+  <path d="M318 140 V120 M318 120 L310 128 M318 120 L326 128" class="st-f" stroke-width="2"/>
+  <text x="302" y="198" class="t-m mid ink">現象</text>
+  <text x="302" y="214" class="t-xs mid soft">私たちの見る世界</text>
+
+  <!-- たとえ：外せない眼鏡 -->
+  <rect x="12" y="236" width="336" height="36" rx="12" class="bgc"/>
+  <circle cx="40" cy="254" r="9" class="st-f" stroke-width="2"/>
+  <circle cx="64" cy="254" r="9" class="st-f" stroke-width="2"/>
+  <path d="M49 254 H55" class="st-f" stroke-width="2"/>
+  <text x="84" y="259" class="t-s ink">外せない眼鏡で世界を見ている</text>
+</svg>

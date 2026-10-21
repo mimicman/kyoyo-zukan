@@ -1,0 +1,46 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 洞窟の中 -->
+  <rect x="14" y="14" width="238" height="252" rx="18" class="bgc st-soft" stroke-width="1.5"/>
+  <!-- 外の世界 -->
+  <rect x="262" y="14" width="84" height="252" rx="18" class="tint st-f" stroke-width="1.5"/>
+
+  <!-- 奥の壁と影 -->
+  <rect x="22" y="40" width="8" height="190" rx="4" class="soft"/>
+  <path d="M44 112 L58 82 L72 112Z" class="soft" opacity="0.45"/>
+  <circle cx="58" cy="132" r="10" class="soft" opacity="0.45"/>
+  <text x="62" y="170" class="t-m mid ink">影</text>
+  <text x="62" y="186" class="t-xs mid soft">感覚の世界</text>
+
+  <!-- 鎖につながれた人々（壁を向いて座る） -->
+  <circle cx="104" cy="206" r="9" class="ink"/>
+  <circle cx="128" cy="206" r="9" class="ink"/>
+  <path d="M94 232 Q104 214 114 232Z M118 232 Q128 214 138 232Z" class="ink"/>
+  <path d="M92 240 H140" class="st-soft dash" stroke-width="2"/>
+  <text x="116" y="256" class="t-xs mid soft">鎖の人々</text>
+
+  <!-- 低い壁と人形 -->
+  <rect x="158" y="172" width="34" height="54" rx="4" class="st-soft" stroke-width="1.5"/>
+  <path d="M162 168 L175 140 L188 168Z" class="ink"/>
+  <text x="175" y="130" class="t-xs mid soft">人形</text>
+
+  <!-- 火 -->
+  <path d="M222 236 C206 222 212 206 222 190 C224 204 236 208 230 222 C238 216 240 230 222 236Z" class="fl"/>
+  <text x="222" y="254" class="t-xs mid soft">火</text>
+
+  <!-- 光の筋：火→人形→壁 -->
+  <path d="M216 200 L176 156 L34 98" class="st-f dash" stroke-width="1.5"/>
+
+  <!-- 外へ出る -->
+  <path d="M232 178 C246 140 256 116 286 104" class="st-f" stroke-width="2.5" marker-end="url(#a-philosophy)"/>
+  <text x="236" y="122" class="t-xs end fl">外へ</text>
+
+  <!-- 太陽＝善のイデア -->
+  <circle cx="304" cy="56" r="17" class="fl"/>
+  <path d="M304 28 V22 M304 90 V84 M276 56 H270 M338 56 H332 M284 36 L280 32 M324 36 L328 32" class="st-f" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="304" y="126" class="t-s mid ink">太陽</text>
+  <text x="304" y="142" class="t-xs mid fl">＝善のイデア</text>
+  <path d="M304 160 L288 196 H320Z" class="fl"/>
+  <rect x="300" y="196" width="8" height="12" class="fl"/>
+  <text x="304" y="232" class="t-s mid ink">本物</text>
+  <text x="304" y="248" class="t-xs mid soft">イデアの世界</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 連鎖：上から下へ -->
+  <rect x="40" y="8" width="280" height="38" rx="19" class="bgc"/>
+  <circle cx="64" cy="27" r="5" class="soft"/><circle cx="72" cy="22" r="5" class="soft"/><circle cx="74" cy="31" r="5" class="soft"/>
+  <text x="94" y="32" class="t-m ink">綿の布が大人気に</text>
+
+  <path d="M180 48 V60" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <rect x="40" y="64" width="280" height="38" rx="19" class="bgc"/>
+  <circle cx="68" cy="83" r="10" class="st-soft" stroke-width="2"/>
+  <path d="M68 73 V93 M58 83 H78" class="st-soft" stroke-width="2"/>
+  <text x="94" y="88" class="t-m ink">糸と布を機械で作る</text>
+
+  <path d="M180 104 V116" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <rect x="40" y="120" width="280" height="44" rx="22" class="fl"/>
+  <path d="M60 152 C56 140 66 136 64 128 C72 132 78 140 74 152Z" class="on"/>
+  <text x="94" y="148" class="t-l on">蒸気機関が動力に</text>
+
+  <path d="M180 166 V178" class="st-f" stroke-width="2" marker-end="url(#a-history)"/>
+  <rect x="40" y="182" width="280" height="38" rx="19" class="tint st-f" stroke-width="1.5"/>
+  <path d="M58 212 V198 L66 204 V198 L74 204 V198 L82 204 V212Z" class="fl"/>
+  <text x="94" y="206" class="t-m ink">工場・鉄道・蒸気船</text>
+
+  <path d="M180 222 V234" class="st-f" stroke-width="2" marker-end="url(#a-history)"/>
+  <rect x="40" y="238" width="280" height="38" rx="19" class="tint st-f" stroke-width="1.5"/>
+  <path d="M58 268 V252 H64 V268 M66 268 V246 H74 V268 M76 268 V256 H82 V268" class="st-f" stroke-width="1.5"/>
+  <text x="94" y="262" class="t-m ink">都市化・労働問題</text>
+
+  <text x="338" y="146" class="t-xs mid soft" transform="rotate(90 338 146)">イギリスから世界へ</text>
+</svg>

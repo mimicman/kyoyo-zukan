@@ -1,0 +1,37 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 線路：分岐して上に5人、下に1人 -->
+  <path d="M16 78 H150 C190 78 210 40 250 40 H344" class="st" stroke-width="3"/>
+  <path d="M150 78 C190 78 210 116 250 116 H344" class="st" stroke-width="3"/>
+  <!-- トロッコ -->
+  <rect x="26" y="56" width="44" height="20" rx="4" class="ink"/>
+  <circle cx="36" cy="80" r="5" class="ink"/>
+  <circle cx="60" cy="80" r="5" class="ink"/>
+  <path d="M80 66 H112" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <!-- 5人 -->
+  <g class="ink">
+    <circle cx="262" cy="24" r="6"/><circle cx="280" cy="24" r="6"/><circle cx="298" cy="24" r="6"/><circle cx="316" cy="24" r="6"/><circle cx="334" cy="24" r="6"/>
+  </g>
+  <text x="298" y="60" class="t-s mid ink">5人</text>
+  <!-- 1人 -->
+  <circle cx="298" cy="100" r="6" class="ink"/>
+  <text x="298" y="136" class="t-s mid ink">1人</text>
+  <!-- レバー -->
+  <path d="M150 104 L164 88" class="st-f" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="164" cy="88" r="4" class="fl"/>
+  <circle cx="136" cy="112" r="7" class="fl"/>
+  <text x="136" y="138" class="t-xs mid fl">あなた</text>
+
+  <!-- 2つの答え -->
+  <rect x="12" y="156" width="164" height="114" rx="14" class="fl"/>
+  <text x="94" y="184" class="t-l mid on">功利主義</text>
+  <text x="94" y="208" class="t-s mid on">結果で決める</text>
+  <rect x="28" y="221" width="132" height="1.5" class="on" opacity="0.4"/>
+  <text x="94" y="246" class="t-s mid on">5人を救うため</text>
+  <text x="94" y="262" class="t-s mid on">レバーを引く</text>
+
+  <rect x="184" y="156" width="164" height="114" rx="14" class="tint st-f" stroke-width="2"/>
+  <text x="266" y="184" class="t-l mid fl">義務論</text>
+  <text x="266" y="208" class="t-s mid ink">ルールで決める</text>
+  <text x="266" y="246" class="t-s mid ink">人を手段として</text>
+  <text x="266" y="262" class="t-s mid ink">使ってはならない</text>
+</svg>

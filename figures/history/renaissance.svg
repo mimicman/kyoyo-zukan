@@ -1,0 +1,35 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 人間への関心の高さ：古代→中世→ルネサンス -->
+  <path d="M60 70 C110 160 250 160 300 70" class="st-soft" stroke-width="2.5"/>
+  <path d="M74 44 C140 8 220 8 286 44" class="st-f dash" stroke-width="2" marker-end="url(#a-history)"/>
+  <text x="180" y="42" class="t-xs mid fl">古代を手本にする（再生）</text>
+
+  <circle cx="60" cy="70" r="12" class="fl"/>
+  <text x="60" y="102" class="t-m mid ink halo">古代</text>
+  <text x="60" y="118" class="t-xs mid soft halo">ギリシャ・ローマ</text>
+
+  <circle cx="180" cy="137" r="12" class="soft"/>
+  <text x="180" y="169" class="t-m mid ink">中世</text>
+  <text x="180" y="185" class="t-xs mid soft">神が中心</text>
+
+  <circle cx="300" cy="70" r="14" class="fl"/>
+  <text x="300" y="102" class="t-m mid fl halo">ルネサンス</text>
+  <text x="300" y="118" class="t-xs mid soft halo">人間が中心</text>
+
+  <!-- 生まれたもの -->
+  <rect x="10" y="200" width="108" height="72" rx="12" class="tint"/>
+  <path d="M28 214 H64 V246 H28Z" class="st-f" stroke-width="1.5"/>
+  <path d="M28 214 L46 230 L64 214 M28 246 L46 230 L64 246" class="st-f" stroke-width="1.5"/>
+  <text x="64" y="264" class="t-xs mid ink">遠近法</text>
+  <text x="92" y="236" class="t-xs mid soft">奥行き</text>
+
+  <rect x="126" y="200" width="108" height="72" rx="12" class="tint"/>
+  <path d="M152 222 Q166 214 180 222 Q194 214 208 222 V246 Q194 238 180 246 Q166 238 152 246Z M180 222 V246" class="st-f" stroke-width="1.5"/>
+  <text x="180" y="264" class="t-xs mid ink">活版印刷</text>
+
+  <rect x="242" y="200" width="108" height="72" rx="12" class="tint"/>
+  <circle cx="296" cy="230" r="20" class="st-f" stroke-width="1.5"/>
+  <circle cx="296" cy="218" r="4" class="fl"/>
+  <path d="M296 222 V238 M280 228 H312 M296 238 L286 248 M296 238 L306 248" class="st-f" stroke-width="1.5"/>
+  <text x="296" y="264" class="t-xs mid ink">人体の観察</text>
+</svg>

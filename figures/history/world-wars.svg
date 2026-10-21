@@ -1,0 +1,37 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 年表（1910〜1950年。1年＝7.5px） -->
+  <text x="75" y="40" class="t-s mid ink" font-weight="700">第一次大戦</text>
+  <rect x="60" y="50" width="30" height="70" rx="6" class="fl"/>
+  <text x="270" y="40" class="t-s mid ink" font-weight="700">第二次大戦</text>
+  <rect x="247" y="50" width="46" height="70" rx="6" class="fl"/>
+  <text x="172" y="84" class="t-xs mid soft">戦間期 約20年</text>
+  <path d="M96 92 H242" class="st-soft dash" stroke-width="1.5"/>
+
+  <path d="M24 128 H340" class="st" stroke-width="2"/>
+  <g class="st-soft" stroke-width="1.5">
+    <path d="M30 124 V132 M105 124 V132 M180 124 V132 M255 124 V132 M330 124 V132"/>
+  </g>
+  <text x="30" y="148" class="t-xs mid soft">1910</text>
+  <text x="105" y="148" class="t-xs mid soft">1920</text>
+  <text x="180" y="148" class="t-xs mid soft">1930</text>
+  <text x="255" y="148" class="t-xs mid soft">1940</text>
+  <text x="330" y="148" class="t-xs mid soft">1950</text>
+
+  <!-- 出来事 -->
+  <path d="M105 160 l6 6 -6 6 -6 -6z" class="soft"/>
+  <text x="105" y="188" class="t-xs mid ink">国際連盟</text>
+  <path d="M172 160 l6 6 -6 6 -6 -6z" class="fl"/>
+  <text x="172" y="188" class="t-xs mid fl">世界恐慌</text>
+  <path d="M293 160 l6 6 -6 6 -6 -6z" class="soft"/>
+  <text x="293" y="188" class="t-xs mid ink">国際連合</text>
+
+  <!-- 2つの比較 -->
+  <rect x="10" y="204" width="166" height="68" rx="12" class="tint"/>
+  <text x="93" y="226" class="t-m mid ink">1914–1918</text>
+  <text x="93" y="246" class="t-xs mid soft">主な戦場</text>
+  <text x="93" y="262" class="t-xs mid ink">ヨーロッパ</text>
+  <rect x="184" y="204" width="166" height="68" rx="12" class="tint"/>
+  <text x="267" y="226" class="t-m mid ink">1939–1945</text>
+  <text x="267" y="246" class="t-xs mid soft">主な戦場</text>
+  <text x="267" y="262" class="t-xs mid ink">ヨーロッパ・アジア太平洋</text>
+</svg>
