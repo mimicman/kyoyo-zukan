@@ -1,0 +1,46 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：エネルギーはなめらか？とびとび？ -->
+  <text x="90" y="20" class="t-s mid soft">昔の考え</text>
+  <path d="M24 120 L156 40" class="st-soft" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="86" cy="75" r="7" class="soft"/>
+  <text x="90" y="140" class="t-xs mid soft">坂：どの高さでも止まれる</text>
+
+  <path d="M180 14 V144" class="st-line" stroke-width="1.5"/>
+
+  <text x="270" y="20" class="t-s mid fl">量子の考え</text>
+  <path d="M200 120 H232 V100 H264 V80 H296 V60 H328 V40" class="st-f" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="248" cy="92" r="7" class="fl"/>
+  <text x="270" y="140" class="t-xs mid fl">階段：決まった段だけ</text>
+  <text x="352" y="98" class="t-xs end soft">とびとび</text>
+
+  <path d="M8 156 H352" class="st-line" stroke-width="1.5"/>
+
+  <!-- 下：二重スリット。1個ずつ通しても縞ができる -->
+  <text x="30" y="196" class="t-xs mid soft">1個ずつ</text>
+  <circle cx="30" cy="216" r="6" class="ink"/>
+  <circle cx="54" cy="216" r="3" class="soft"/>
+  <circle cx="72" cy="216" r="3" class="soft"/>
+  <path d="M84 216 H128" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="30" y="240" class="t-xs mid ink">電子</text>
+
+  <rect x="140" y="166" width="8" height="30" class="ink"/>
+  <rect x="140" y="204" width="8" height="24" class="ink"/>
+  <rect x="140" y="236" width="8" height="30" class="ink"/>
+
+  <path d="M158.3 187.7 A16 16 0 0 1 158.3 212.3 M168.6 175.5 A32 32 0 0 1 168.6 224.5 M178.9 163.2 A48 48 0 0 1 178.9 236.8" class="st-f" stroke-width="1.5"/>
+  <path d="M158.3 219.7 A16 16 0 0 1 158.3 244.3 M168.6 207.5 A32 32 0 0 1 168.6 256.5 M178.9 195.2 A48 48 0 0 1 178.9 268.8" class="st-f" stroke-width="1.5"/>
+  <text x="240" y="208" class="t-xs mid soft">波のように</text>
+  <text x="240" y="224" class="t-xs mid soft">重なり合う</text>
+
+  <rect x="296" y="166" width="14" height="100" class="st-soft" stroke-width="1"/>
+  <rect x="296" y="171" width="14" height="10" class="fl" opacity="0.35"/>
+  <rect x="296" y="193" width="14" height="10" class="fl" opacity="0.7"/>
+  <rect x="296" y="211" width="14" height="10" class="fl"/>
+  <rect x="296" y="229" width="14" height="10" class="fl" opacity="0.7"/>
+  <rect x="296" y="251" width="14" height="10" class="fl" opacity="0.35"/>
+  <text x="318" y="210" class="t-xs fl">縞が</text>
+  <text x="318" y="226" class="t-xs fl">できる</text>
+
+  <text x="144" y="286" class="t-xs mid soft">すき間2つ</text>
+  <text x="303" y="286" class="t-xs mid soft">スクリーン</text>
+</svg>

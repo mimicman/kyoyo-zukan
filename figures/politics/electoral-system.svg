@@ -1,0 +1,34 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 全国の得票（例） -->
+  <text x="16" y="16" class="t-xs soft">全国の得票（例）</text>
+  <rect x="16" y="24" width="148" height="28" rx="6" class="fl"/>
+  <rect x="164" y="24" width="114" height="28" class="tint st-f" stroke-width="1.5"/>
+  <rect x="278" y="24" width="66" height="28" rx="6" class="paper st-soft" stroke-width="1.5"/>
+  <text x="90" y="43" class="t-s mid on" font-weight="700">A党 45%</text>
+  <text x="221" y="43" class="t-s mid ink">B党 35%</text>
+  <text x="311" y="43" class="t-s mid ink">C党 20%</text>
+
+  <!-- 小選挙区 -->
+  <rect x="8" y="66" width="344" height="96" rx="12" class="bgc"/>
+  <text x="20" y="88" class="t-m ink">小選挙区</text>
+  <text x="84" y="88" class="t-xs soft">1区で1位の人だけ当選</text>
+  <text x="340" y="88" class="t-xs end soft">●＝1議席</text>
+  <circle cx="54" cy="116" r="11" class="fl"/><circle cx="82" cy="116" r="11" class="fl"/>
+  <circle cx="110" cy="116" r="11" class="fl"/><circle cx="138" cy="116" r="11" class="fl"/>
+  <circle cx="166" cy="116" r="11" class="fl"/><circle cx="194" cy="116" r="11" class="fl"/>
+  <circle cx="222" cy="116" r="11" class="fl"/><circle cx="250" cy="116" r="11" class="fl"/>
+  <circle cx="282" cy="116" r="11" class="tint st-f" stroke-width="1.5"/><circle cx="310" cy="116" r="11" class="tint st-f" stroke-width="1.5"/>
+  <text x="180" y="150" class="t-xs mid ink">A党が45%の票で8割の議席。C党は0議席</text>
+
+  <!-- 比例代表 -->
+  <rect x="8" y="172" width="344" height="96" rx="12" class="bgc"/>
+  <text x="20" y="194" class="t-m ink">比例代表</text>
+  <text x="84" y="194" class="t-xs soft">得票の割合で議席を配る</text>
+  <circle cx="54" cy="222" r="11" class="fl"/><circle cx="82" cy="222" r="11" class="fl"/>
+  <circle cx="110" cy="222" r="11" class="fl"/><circle cx="138" cy="222" r="11" class="fl"/>
+  <circle cx="166" cy="222" r="11" class="fl"/>
+  <circle cx="198" cy="222" r="11" class="tint st-f" stroke-width="1.5"/><circle cx="226" cy="222" r="11" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="254" cy="222" r="11" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="286" cy="222" r="11" class="paper st-soft" stroke-width="1.5"/><circle cx="314" cy="222" r="11" class="paper st-soft" stroke-width="1.5"/>
+  <text x="180" y="256" class="t-xs mid ink">議席の割合が得票に近い。小さな党も議席を得る</text>
+</svg>

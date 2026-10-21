@@ -1,0 +1,38 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- ミュラー・リヤー錯視：同じ長さ -->
+  <path d="M30 26 V116 M130 26 V116" class="st-soft dash" stroke-width="1"/>
+  <path d="M30 46 H130 M30 46 L16 34 M30 46 L16 58 M130 46 L144 34 M130 46 L144 58" class="st" stroke-width="3" stroke-linecap="round"/>
+  <path d="M30 96 H130 M30 96 L44 84 M30 96 L44 108 M130 96 L116 84 M130 96 L116 108" class="st" stroke-width="3" stroke-linecap="round"/>
+  <text x="80" y="136" class="t-s mid fl">2本は同じ長さ</text>
+
+  <!-- エビングハウス錯視：真ん中の円は同じ大きさ -->
+  <circle cx="254" cy="72" r="17" class="soft" opacity="0.5"/>
+  <circle cx="237" cy="101.4" r="17" class="soft" opacity="0.5"/>
+  <circle cx="203" cy="101.4" r="17" class="soft" opacity="0.5"/>
+  <circle cx="186" cy="72" r="17" class="soft" opacity="0.5"/>
+  <circle cx="203" cy="42.6" r="17" class="soft" opacity="0.5"/>
+  <circle cx="237" cy="42.6" r="17" class="soft" opacity="0.5"/>
+  <circle cx="220" cy="72" r="10" class="fl"/>
+  <circle cx="328" cy="72" r="4" class="soft" opacity="0.5"/>
+  <circle cx="322.7" cy="84.7" r="4" class="soft" opacity="0.5"/>
+  <circle cx="310" cy="90" r="4" class="soft" opacity="0.5"/>
+  <circle cx="297.3" cy="84.7" r="4" class="soft" opacity="0.5"/>
+  <circle cx="292" cy="72" r="4" class="soft" opacity="0.5"/>
+  <circle cx="297.3" cy="59.3" r="4" class="soft" opacity="0.5"/>
+  <circle cx="310" cy="54" r="4" class="soft" opacity="0.5"/>
+  <circle cx="322.7" cy="59.3" r="4" class="soft" opacity="0.5"/>
+  <circle cx="310" cy="72" r="10" class="fl"/>
+  <text x="262" y="136" class="t-s mid fl">真ん中の円は同じ大きさ</text>
+
+  <path d="M8 152 H352" class="st-line" stroke-width="1.5"/>
+
+  <!-- カニッツァの三角形：ない三角形が見える -->
+  <path d="M125 178 L136 197.05 A22 22 0 1 0 114 197.05 Z" class="fl"/>
+  <path d="M73 268 L95 268 A22 22 0 1 1 84 248.95 Z" class="fl"/>
+  <path d="M177 268 L155 268 A22 22 0 1 0 166 248.95 Z" class="fl"/>
+  <text x="214" y="204" class="t-s ink">線はないのに</text>
+  <text x="214" y="222" class="t-s ink">白い三角形が</text>
+  <text x="214" y="240" class="t-s ink">見える</text>
+  <text x="214" y="264" class="t-xs soft">脳がすき間を補って</text>
+  <text x="214" y="278" class="t-xs soft">形を作り上げる</text>
+</svg>

@@ -1,0 +1,68 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 原子模型の移り変わり（左から時代順） -->
+  <text x="45" y="18" class="t-s mid ink">ドルトン</text>
+  <text x="45" y="34" class="t-xs mid soft">19世紀初め</text>
+  <text x="135" y="18" class="t-s mid ink">トムソン</text>
+  <text x="135" y="34" class="t-xs mid soft">19世紀末</text>
+  <text x="225" y="18" class="t-s mid ink">ラザフォード</text>
+  <text x="225" y="34" class="t-xs mid soft">1911年</text>
+  <text x="315" y="18" class="t-s mid fl">ボーア</text>
+  <text x="315" y="34" class="t-xs mid soft">1913年</text>
+
+  <!-- ドルトン：分けられない玉 -->
+  <circle cx="45" cy="84" r="26" class="soft"/>
+  <!-- トムソン：＋の球に電子が散らばる -->
+  <circle cx="135" cy="84" r="28" class="tint st-f" stroke-width="2"/>
+  <text x="135" y="89" class="t-s mid soft">＋</text>
+  <circle cx="124" cy="70" r="3.5" class="ink"/>
+  <circle cx="148" cy="72" r="3.5" class="ink"/>
+  <circle cx="120" cy="94" r="3.5" class="ink"/>
+  <circle cx="150" cy="96" r="3.5" class="ink"/>
+  <circle cx="137" cy="105" r="3.5" class="ink"/>
+  <!-- ラザフォード：中心に小さく重い核、まわりはすき間 -->
+  <circle cx="225" cy="84" r="28" class="st-soft dash" stroke-width="1.5"/>
+  <circle cx="225" cy="84" r="4.5" class="fl"/>
+  <circle cx="206" cy="68" r="3" class="ink"/>
+  <circle cx="246" cy="74" r="3" class="ink"/>
+  <circle cx="212" cy="104" r="3" class="ink"/>
+  <circle cx="240" cy="102" r="3" class="ink"/>
+  <!-- ボーア：決まった軌道だけ -->
+  <circle cx="315" cy="84" r="12" class="st-f" stroke-width="1.5"/>
+  <circle cx="315" cy="84" r="20" class="st-f" stroke-width="1.5"/>
+  <circle cx="315" cy="84" r="28" class="st-f" stroke-width="1.5"/>
+  <circle cx="315" cy="84" r="5" class="fl"/>
+  <circle cx="327" cy="84" r="3" class="ink"/>
+  <circle cx="315" cy="64" r="3" class="ink"/>
+  <circle cx="287" cy="84" r="3" class="ink"/>
+
+  <path d="M76 84 H96" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <path d="M166 84 H186" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <path d="M256 84 H276" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+
+  <text x="45" y="134" class="t-xs mid soft">それ以上</text>
+  <text x="45" y="148" class="t-xs mid soft">分けられない玉</text>
+  <text x="135" y="134" class="t-xs mid soft">＋の球に</text>
+  <text x="135" y="148" class="t-xs mid soft">電子が散らばる</text>
+  <text x="225" y="134" class="t-xs mid soft">中心に小さく</text>
+  <text x="225" y="148" class="t-xs mid soft">重い原子核</text>
+  <text x="315" y="134" class="t-xs mid soft">電子は決まった</text>
+  <text x="315" y="148" class="t-xs mid soft">軌道だけ回る</text>
+
+  <path d="M8 166 H352" class="st-line" stroke-width="1.5"/>
+
+  <!-- 金箔実験：ほとんど素通り、ごく一部が跳ね返る -->
+  <text x="348" y="186" class="t-s end ink">金箔実験（1911年）</text>
+  <rect x="14" y="216" width="34" height="36" rx="4" class="soft"/>
+  <text x="31" y="270" class="t-xs mid soft">放射線</text>
+  <path d="M52 212 H184" class="st-soft" stroke-width="2"/>
+  <path d="M52 234 H184" class="st-soft" stroke-width="2"/>
+  <path d="M52 256 H184" class="st-soft" stroke-width="2"/>
+  <rect x="188" y="198" width="7" height="70" class="fl"/>
+  <text x="191" y="280" class="t-xs mid fl">金箔</text>
+  <path d="M199 212 H296" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <path d="M199 256 H296" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <path d="M184 234 L132 206" class="st-f" stroke-width="2.5" marker-end="url(#a-science)"/>
+  <text x="126" y="202" class="t-xs end fl">ごく一部が跳ね返る</text>
+  <text x="304" y="216" class="t-xs soft">素通り</text>
+  <text x="304" y="260" class="t-xs soft">素通り</text>
+</svg>

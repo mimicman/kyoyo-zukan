@@ -1,0 +1,42 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 外発的：外からのほうび -->
+  <text x="90" y="20" class="t-m mid ink">外発的</text>
+  <circle cx="36" cy="80" r="13" class="fl"/>
+  <text x="36" y="85" class="t-s mid on">¥</text>
+  <path d="M52 80 H70" class="st-f" stroke-width="2.5" marker-end="url(#a-psychology)"/>
+  <circle cx="96" cy="52" r="11" class="soft"/>
+  <path d="M78 108 Q96 62 114 108 Z" class="soft"/>
+  <text x="90" y="130" class="t-xs mid soft">ほうび・評価・罰で動く</text>
+
+  <path d="M180 14 V136" class="st-line" stroke-width="1.5"/>
+
+  <!-- 内発的：それ自体が楽しい -->
+  <text x="270" y="20" class="t-m mid fl">内発的</text>
+  <circle cx="270" cy="52" r="11" class="soft"/>
+  <path d="M252 108 Q270 62 288 108 Z" class="soft"/>
+  <path d="M270 100 C258 92 260 82 270 88 C280 82 282 92 270 100 Z" class="fl"/>
+  <path d="M248 40 L240 34 M292 40 L300 34 M270 32 V24 M244 58 H234 M296 58 H306" class="st-f" stroke-width="2" stroke-linecap="round"/>
+  <text x="270" y="130" class="t-xs mid fl">楽しい・知りたいで動く</text>
+
+  <path d="M8 146 H352" class="st-line" stroke-width="1.5"/>
+
+  <!-- 下：デシの実験（自由時間にパズルを続けた長さ） -->
+  <text x="12" y="164" class="t-xs soft">自由時間にパズルを続けた長さ（デシの実験）</text>
+  <rect x="145" y="174" width="90" height="76" class="tint"/>
+  <text x="190" y="188" class="t-xs mid fl">Bにだけお金</text>
+  <path d="M40 174 V250 H340" class="st" stroke-width="1.5"/>
+  <path d="M90 216 L190 212 L290 210" class="st-soft" stroke-width="2.5"/>
+  <path d="M90 214 L190 198 L290 234" class="st-f" stroke-width="2.5"/>
+  <circle cx="90" cy="216" r="4" class="soft"/>
+  <circle cx="190" cy="212" r="4" class="soft"/>
+  <circle cx="290" cy="210" r="4" class="soft"/>
+  <circle cx="90" cy="214" r="4" class="fl"/>
+  <circle cx="190" cy="198" r="4" class="fl"/>
+  <circle cx="290" cy="234" r="4" class="fl"/>
+  <text x="300" y="214" class="t-xs soft">A なし</text>
+  <text x="300" y="238" class="t-xs fl">B あり</text>
+  <text x="90" y="266" class="t-xs mid soft">1回目</text>
+  <text x="190" y="266" class="t-xs mid soft">2回目</text>
+  <text x="290" y="266" class="t-xs mid soft">3回目</text>
+  <text x="290" y="284" class="t-xs mid fl">お金をやめると減った</text>
+</svg>

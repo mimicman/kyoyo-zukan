@@ -1,0 +1,31 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 保存の課題：同じ量の水を細いコップへ -->
+  <text x="12" y="18" class="t-xs fl">保存の課題：水の量は同じ？</text>
+  <rect x="41" y="78" width="54" height="22" class="fl" opacity="0.45"/>
+  <path d="M40 48 V100 H96 V48" class="st" stroke-width="2"/>
+  <path d="M102 76 H128" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <text x="115" y="68" class="t-xs mid soft">移す</text>
+  <rect x="137" y="44" width="21" height="56" class="fl" opacity="0.45"/>
+  <path d="M136 30 V100 H159 V30" class="st" stroke-width="2"/>
+  <text x="100" y="120" class="t-xs mid ink">幼い子は「細いほうが多い」</text>
+
+  <!-- 発達の4段階（階段） -->
+  <path d="M10 270 V210 H95 V170 H180 V130 H265 V90 H350 V270 Z" class="tint"/>
+  <path d="M10 270 V210 H95 V170 H180 V130 H265 V90 H350" class="st-f" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M95 210 V270 M180 170 V270 M265 130 V270" class="st-line" stroke-width="1"/>
+
+  <text x="52" y="228" class="t-s mid ink">感覚運動期</text>
+  <text x="52" y="244" class="t-xs mid fl">0〜2歳</text>
+  <text x="52" y="260" class="t-xs mid soft">体で知る</text>
+  <text x="137" y="188" class="t-s mid ink">前操作期</text>
+  <text x="137" y="204" class="t-xs mid fl">2〜7歳</text>
+  <text x="137" y="220" class="t-xs mid soft">見た目が中心</text>
+  <text x="222" y="148" class="t-s mid ink">具体的操作期</text>
+  <text x="222" y="164" class="t-xs mid fl">7〜11歳</text>
+  <text x="222" y="180" class="t-xs mid soft">筋道を立てる</text>
+  <text x="307" y="108" class="t-s mid ink">形式的操作期</text>
+  <text x="307" y="124" class="t-xs mid fl">11歳ごろ〜</text>
+  <text x="307" y="140" class="t-xs mid soft">仮の話も考える</text>
+  <text x="300" y="40" class="t-xs mid soft">年齢とともに</text>
+  <path d="M222 80 L330 52" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+</svg>

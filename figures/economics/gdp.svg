@@ -1,0 +1,41 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 3つの段階 -->
+  <text x="75" y="24" class="t-m mid ink">農家</text>
+  <text x="75" y="40" class="t-xs mid soft">小麦</text>
+  <text x="180" y="24" class="t-m mid ink">製粉所</text>
+  <text x="180" y="40" class="t-xs mid soft">小麦粉</text>
+  <text x="285" y="24" class="t-m mid ink">パン屋</text>
+  <text x="285" y="40" class="t-xs mid soft">パン</text>
+
+  <!-- 凡例 -->
+  <rect x="16" y="52" width="12" height="12" rx="3" class="fl"/>
+  <text x="32" y="62" class="t-xs fl">新しく生まれた価値</text>
+  <rect x="196" y="52" width="12" height="12" rx="3" class="bgc st-soft" stroke-width="1.5"/>
+  <text x="212" y="62" class="t-xs soft">仕入れた材料</text>
+
+  <!-- 棒（高さ＝金額×0.45） -->
+  <path d="M20 220 H340" class="st-soft" stroke-width="1.5"/>
+  <rect x="45" y="175" width="60" height="45" rx="3" class="fl"/>
+  <text x="75" y="202" class="t-s mid on" font-weight="700">+100</text>
+  <text x="75" y="168" class="t-s mid ink">100円</text>
+
+  <rect x="150" y="175" width="60" height="45" class="bgc st-soft dash" stroke-width="1.5"/>
+  <rect x="150" y="152" width="60" height="23" rx="3" class="fl"/>
+  <text x="180" y="168" class="t-s mid on" font-weight="700">+50</text>
+  <text x="180" y="145" class="t-s mid ink">150円</text>
+
+  <rect x="255" y="152" width="60" height="68" class="bgc st-soft dash" stroke-width="1.5"/>
+  <rect x="255" y="85" width="60" height="67" rx="3" class="fl"/>
+  <text x="285" y="124" class="t-s mid on" font-weight="700">+150</text>
+  <text x="285" y="78" class="t-s mid ink">300円</text>
+
+  <!-- 売った物が次の材料になる -->
+  <path d="M108 198 H146" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <path d="M213 186 H251" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <text x="127" y="190" class="t-xs mid soft">売る</text>
+  <text x="232" y="178" class="t-xs mid soft">売る</text>
+
+  <!-- 合計 -->
+  <text x="180" y="248" class="t-m mid fl">GDP＝100＋50＋150＝300円</text>
+  <text x="180" y="268" class="t-xs mid soft">売上を全部足した550円ではない（材料の二重計算）</text>
+</svg>

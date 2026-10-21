@@ -1,0 +1,46 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- ① 形は変わっても合計は同じ（落ちるボール） -->
+  <text x="12" y="14" class="t-xs soft">① 形は変わっても、合計は同じ</text>
+  <path d="M24 40 H266" class="st-f dash" stroke-width="1.5"/>
+  <text x="145" y="34" class="t-xs mid fl">合計は変わらない</text>
+
+  <rect x="30" y="40" width="50" height="90" class="fl"/>
+  <rect x="120" y="40" width="50" height="45" class="tint st-f" stroke-width="2"/>
+  <rect x="120" y="85" width="50" height="45" class="fl"/>
+  <rect x="210" y="40" width="50" height="90" class="soft" opacity="0.6"/>
+  <path d="M84 85 H114" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <path d="M174 85 H204" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <text x="55" y="148" class="t-xs mid ink">高い所</text>
+  <text x="145" y="148" class="t-xs mid ink">落ちる途中</text>
+  <text x="235" y="148" class="t-xs mid ink">床で止まる</text>
+
+  <!-- 凡例 -->
+  <rect x="290" y="50" width="12" height="12" class="fl"/>
+  <text x="308" y="60" class="t-xs ink">高さ</text>
+  <rect x="290" y="76" width="12" height="12" class="tint st-f" stroke-width="1.5"/>
+  <text x="308" y="86" class="t-xs ink">動き</text>
+  <rect x="290" y="102" width="12" height="12" class="soft" opacity="0.6"/>
+  <text x="308" y="112" class="t-xs ink">熱</text>
+
+  <path d="M8 162 H352" class="st-line" stroke-width="1.5"/>
+
+  <!-- ② 熱は熱い所から冷たい所へ。逆はひとりでに起きない -->
+  <text x="12" y="178" class="t-xs soft">② 熱は熱い所から冷たい所へ流れる</text>
+  <rect x="20" y="190" width="50" height="48" rx="6" class="fl"/>
+  <rect x="74" y="190" width="50" height="48" rx="6" class="tint st-f" stroke-width="2"/>
+  <text x="45" y="219" class="t-s mid on">熱い</text>
+  <text x="99" y="219" class="t-s mid ink">冷たい</text>
+
+  <path d="M136 204 H202" class="st-f" stroke-width="2.5" marker-end="url(#a-science)"/>
+  <text x="169" y="196" class="t-xs mid fl">時間がたつ</text>
+  <path d="M202 228 H136" class="st-soft dash" stroke-width="2" marker-end="url(#a-soft)"/>
+  <path d="M163 222 L175 234 M175 222 L163 234" class="st" stroke-width="2"/>
+  <text x="169" y="250" class="t-xs mid soft">逆は起きない</text>
+
+  <rect x="214" y="190" width="50" height="48" rx="6" class="tint st-f" stroke-width="2"/>
+  <rect x="268" y="190" width="50" height="48" rx="6" class="tint st-f" stroke-width="2"/>
+  <text x="239" y="219" class="t-s mid ink">ぬるい</text>
+  <text x="293" y="219" class="t-s mid ink">ぬるい</text>
+
+  <text x="180" y="272" class="t-s mid ink">散らばった熱は集め直せない（エントロピー増大）</text>
+</svg>

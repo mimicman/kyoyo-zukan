@@ -1,0 +1,43 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 見出し -->
+  <rect x="8" y="10" width="168" height="28" rx="10" class="fl"/>
+  <text x="92" y="29" class="t-m mid on">外部性</text>
+  <rect x="184" y="10" width="168" height="28" rx="10" class="fl"/>
+  <text x="268" y="29" class="t-m mid on">公共財</text>
+  <rect x="8" y="46" width="168" height="160" rx="12" class="bgc"/>
+  <rect x="184" y="46" width="168" height="160" rx="12" class="bgc"/>
+
+  <!-- 工場の煙が周りに迷惑 -->
+  <rect x="70" y="86" width="10" height="30" class="ink"/>
+  <path d="M22 116 L38 104 V116 L54 104 V116 L70 104 V116 H86 V152 H22 Z" class="ink"/>
+  <circle cx="82" cy="76" r="6" class="soft"/>
+  <circle cx="96" cy="68" r="8" class="soft"/>
+  <circle cx="114" cy="64" r="9" class="soft"/>
+  <path d="M124 76 L140 100" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M128 130 L146 114 L164 130 V152 H128 Z" class="paper st-soft" stroke-width="1.5"/>
+  <circle cx="146" cy="138" r="4" class="soft"/>
+  <text x="54" y="168" class="t-xs mid ink">工場</text>
+  <text x="146" y="168" class="t-xs mid ink">周りの人</text>
+  <text x="92" y="186" class="t-xs mid ink">迷惑が値段に入らない</text>
+  <text x="92" y="200" class="t-xs mid fl">→ 作りすぎる</text>
+
+  <!-- 街灯：払わない人も使える -->
+  <path d="M244 92 L222 154 H346 L264 92 Z" class="tint"/>
+  <path d="M214 154 V80 H250" class="st" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="254" cy="86" rx="12" ry="6" class="fl"/>
+  <circle cx="262" cy="126" r="6" class="fl"/><path d="M252 152 C252 136 272 136 272 152 Z" class="fl"/>
+  <circle cx="290" cy="126" r="6" class="soft"/><path d="M280 152 C280 136 300 136 300 152 Z" class="soft"/>
+  <circle cx="318" cy="126" r="6" class="soft"/><path d="M308 152 C308 136 328 136 328 152 Z" class="soft"/>
+  <text x="262" y="168" class="t-xs mid fl">払う</text>
+  <text x="304" y="168" class="t-xs mid soft">払わない</text>
+  <text x="268" y="186" class="t-xs mid ink">払わない人も使える</text>
+  <text x="268" y="200" class="t-xs mid fl">→ 誰も作りたがらない</text>
+
+  <!-- 政府が補う -->
+  <path d="M92 208 V226" class="st-f" stroke-width="2" marker-end="url(#a-economics)"/>
+  <path d="M268 208 V226" class="st-f" stroke-width="2" marker-end="url(#a-economics)"/>
+  <rect x="8" y="230" width="344" height="54" rx="12" class="tint st-f" stroke-width="1.5"/>
+  <text x="180" y="250" class="t-s mid fl" font-weight="700">政府が補う</text>
+  <text x="92" y="272" class="t-xs mid ink">税・規制で迷惑を値段に</text>
+  <text x="268" y="272" class="t-xs mid ink">税金で公共財を用意</text>
+</svg>

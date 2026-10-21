@@ -1,0 +1,34 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 首長と議会 -->
+  <rect x="12" y="14" width="138" height="56" rx="12" class="fl"/>
+  <text x="81" y="40" class="t-l mid on">首長</text>
+  <text x="81" y="58" class="t-xs mid on">知事・市町村長</text>
+  <rect x="210" y="14" width="138" height="56" rx="12" class="tint st-f" stroke-width="2"/>
+  <text x="279" y="40" class="t-l mid ink">議会</text>
+  <text x="279" y="58" class="t-xs mid soft">議員</text>
+
+  <!-- 互いのブレーキ -->
+  <path d="M206 32 H156" class="st-f" stroke-width="2" marker-end="url(#a-politics)"/>
+  <text x="180" y="26" class="t-xs mid ink">不信任</text>
+  <path d="M154 54 H204" class="st-f" stroke-width="2" marker-end="url(#a-politics)"/>
+  <text x="180" y="70" class="t-xs mid ink">解散</text>
+
+  <!-- 住民がそれぞれ選ぶ（二元代表制） -->
+  <path d="M81 194 V78" class="st-f" stroke-width="2.5" marker-end="url(#a-politics)"/>
+  <text x="73" y="140" class="t-s end ink">選挙</text>
+  <path d="M279 194 V78" class="st-f" stroke-width="2.5" marker-end="url(#a-politics)"/>
+  <text x="287" y="140" class="t-s ink">選挙</text>
+
+  <!-- 直接請求 -->
+  <path d="M180 194 V150" class="st-soft dash" stroke-width="2" marker-end="url(#a-soft)"/>
+  <rect x="104" y="100" width="152" height="46" rx="10" class="paper st-soft dash" stroke-width="1.5"/>
+  <text x="180" y="120" class="t-s mid ink" font-weight="700">直接請求（署名）</text>
+  <text x="180" y="137" class="t-xs mid soft">条例の提案・リコール</text>
+
+  <!-- 住民 -->
+  <rect x="12" y="198" width="336" height="50" rx="12" class="bgc st-soft" stroke-width="1.5"/>
+  <circle cx="40" cy="223" r="6" class="ink"/><circle cx="58" cy="223" r="6" class="ink"/><circle cx="76" cy="223" r="6" class="ink"/>
+  <circle cx="284" cy="223" r="6" class="ink"/><circle cx="302" cy="223" r="6" class="ink"/><circle cx="320" cy="223" r="6" class="ink"/>
+  <text x="180" y="229" class="t-l mid ink">住民</text>
+  <text x="180" y="270" class="t-xs mid soft">国の政治より、住民が直接関われる仕組みが多い</text>
+</svg>

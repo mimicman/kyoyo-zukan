@@ -1,0 +1,45 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：3つの記憶の箱 -->
+  <text x="48" y="22" class="t-xs mid soft">目・耳から</text>
+  <path d="M302 30 Q246 2 194 28" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="246" y="12" class="t-xs mid soft">思い出す</text>
+
+  <rect x="8" y="30" width="80" height="56" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="48" y="54" class="t-s mid ink">感覚記憶</text>
+  <text x="48" y="72" class="t-xs mid soft">ほんの一瞬</text>
+  <rect x="140" y="30" width="80" height="56" rx="10" class="tint st-f" stroke-width="2"/>
+  <text x="180" y="54" class="t-s mid ink">短期記憶</text>
+  <text x="180" y="72" class="t-xs mid soft">数十秒・数個</text>
+  <rect x="272" y="30" width="80" height="56" rx="10" class="fl"/>
+  <text x="312" y="54" class="t-s mid on">長期記憶</text>
+  <text x="312" y="72" class="t-xs mid on">長く残る</text>
+
+  <path d="M92 58 H136" class="st-f" stroke-width="2.5" marker-end="url(#a-psychology)"/>
+  <text x="114" y="50" class="t-xs mid fl">注意</text>
+  <path d="M224 58 H268" class="st-f" stroke-width="2.5" marker-end="url(#a-psychology)"/>
+  <text x="246" y="50" class="t-xs mid fl">くり返し</text>
+  <text x="246" y="76" class="t-xs mid fl">意味づけ</text>
+
+  <path d="M48 90 V108" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="48" y="124" class="t-xs mid soft">すぐ消える</text>
+  <path d="M180 90 V108" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="180" y="124" class="t-xs mid soft">あふれて消える</text>
+
+  <path d="M8 138 H352" class="st-line" stroke-width="1.5"/>
+
+  <!-- 下：忘却曲線と復習 -->
+  <path d="M40 150 V256 H340" class="st" stroke-width="1.5"/>
+  <text x="46" y="158" class="t-xs soft">覚えている量</text>
+  <text x="340" y="274" class="t-xs end soft">時間</text>
+  <text x="40" y="274" class="t-xs mid soft">覚えた</text>
+  <path d="M42 164 C60 220 100 236 336 244" class="st-soft" stroke-width="2.5"/>
+  <path d="M80 210 V256 M150 196 V256" class="st-line dash" stroke-width="1"/>
+  <path d="M42 164 C52 190 64 204 80 210 V168 C98 190 120 196 150 198 V170 C190 184 250 188 336 192" class="st-f" stroke-width="2.5"/>
+  <circle cx="80" cy="168" r="4" class="fl"/>
+  <circle cx="150" cy="170" r="4" class="fl"/>
+  <text x="80" y="274" class="t-xs mid fl">復習</text>
+  <text x="150" y="274" class="t-xs mid fl">復習</text>
+  <text x="336" y="184" class="t-xs end fl">復習あり</text>
+  <text x="336" y="236" class="t-xs end soft">復習なし</text>
+  <text x="250" y="158" class="t-xs mid soft">忘却曲線（エビングハウス）</text>
+</svg>

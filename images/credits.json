@@ -130,5 +130,449 @@
     "artist": "Katsushika Hokusai",
     "license": "Public domain",
     "source": "https://commons.wikimedia.org/wiki/File:Tsunami_by_hokusai_19th_century.jpg"
+  },
+  "math-euclid": {
+    "name": "ユークリッド『原論』のパピルス断片（オクシリンコス出土）",
+    "artist": "Euclid",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:P._Oxy._I_29.jpg"
+  },
+  "math-pythagoras": {
+    "name": "アテネの学堂（部分）ピタゴラス（ラファエロ）",
+    "artist": "Raphael",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Sanzio_01_Pythagoras.jpg"
+  },
+  "math-leibniz": {
+    "name": "ライプニッツの肖像（フランケ）",
+    "artist": "Christoph Bernhard Francke",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Gottfried_Wilhelm_Leibniz,_Bernhard_Christoph_Francke.jpg"
+  },
+  "statistics-pascal": {
+    "name": "パスカルの肖像（ケネルの原画による模写）",
+    "artist": "unknown; a copy of the painting of François II Quesnel, which was made for Gérard Edelinck en 1691[réf. nécessaire].",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Blaise_Pascal_Versailles.JPG"
+  },
+  "statistics-bernoulli": {
+    "name": "ヤコブ・ベルヌーイの肖像（ニクラウス・ベルヌーイ）",
+    "artist": "Niklaus Bernoulli (1662-1716)",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Jakob_Bernoulli.jpg"
+  },
+  "statistics-gauss": {
+    "name": "ガウスの肖像（イェンセン）",
+    "artist": "Christian Albrecht Jensen",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Carl_Friedrich_Gauss_1840_by_Jensen.jpg"
+  },
+  "earth-blue-marble": {
+    "name": "ブルー・マーブル（アポロ17号の乗組員撮影、NASA）",
+    "artist": "NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg"
+  },
+  "earth-wegener": {
+    "name": "アルフレート・ウェゲナーの肖像（撮影者不詳）",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Alfred_Wegener_ca.1924-30.jpg"
+  },
+  "earth-vesuvius": {
+    "name": "ポジリポから見たヴェスヴィオ火山の噴火（ジョゼフ・ライト・オブ・ダービー）",
+    "artist": "Joseph Wright of Derby",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Joseph_wright_of_derby_ara_vesuvius_in_eruption_viewed_from_posillipo081644).jpg"
+  },
+  "geography-mercator": {
+    "name": "メルカトルの世界地図 1569年（ゲラルドゥス・メルカトル）",
+    "artist": "Gerardus Mercator",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Mercator_1569_world_map_composite.jpg"
+  },
+  "geography-mahan": {
+    "name": "アルフレッド・セイヤー・マハンの肖像（撮影者不詳）",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Alfred_Thayer_Mahan_-_NH_126.jpeg"
+  },
+  "geography-ortelius": {
+    "name": "『世界の舞台』の世界図（アブラハム・オルテリウス）",
+    "artist": "Abraham Ortelius",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Theatrum_Orbis_Terrarum,_by_Abraham_Ortelius,_World,_1572.jpg"
+  },
+  "science-mendeleev": {
+    "name": "メンデレーエフの肖像（イワン・クラムスコイ）",
+    "artist": "Ivan Kramskoi",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:0444Hb._Portrait_of_Dmitri_Ivanovich_Mendeleev,_1878_(Kramskoy_I.N.).jpg"
+  },
+  "science-faraday": {
+    "name": "マイケル・ファラデーの肖像（トーマス・フィリップス）",
+    "artist": "Thomas Phillips",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Thomas_Phillips_(1770-1845)_-_Michael_Faraday_-_NPG_269_-_National_Portrait_Gallery.jpg"
+  },
+  "literature-homer": {
+    "name": "ホメロスの胸像（作者不詳、大英博物館）",
+    "artist": "不明",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Homer_British_Museum.jpg"
+  },
+  "science-planck": {
+    "name": "マックス・プランク（ルドルフ・デュールコープ）",
+    "artist": "Rudolf Dührkoop",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Max_Planck_c1910.jpg"
+  },
+  "literature-shakespeare": {
+    "name": "シェイクスピアの肖像（ドルーシャウト、1623年）",
+    "artist": "Martin Droeshout",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Shakespeare_Droeshout_1623.jpg"
+  },
+  "psychology-ebbinghaus": {
+    "name": "ヘルマン・エビングハウス（作者不詳）",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Ebbinghaus2.jpg"
+  },
+  "literature-genji": {
+    "name": "源氏物語絵巻「宿木」（作者不詳、平安時代）",
+    "artist": "Imperial court in Kyoto. The handscroll had been said to be painted by Fujiwara, Takayoshi, though it is now presumed to be painted by several groups of painters in Heian period.",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Genji_emaki_Yadorigi.JPG"
+  },
+  "psychology-wife-mother": {
+    "name": "妻と義母（W・E・ヒル）",
+    "artist": "W. E. Hill",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:My_Wife_and_My_Mother-in-Law.jpg"
+  },
+  "literature-quixote": {
+    "name": "ドン・キホーテの挿絵（ギュスターヴ・ドレ）",
+    "artist": "Gustave Doré",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Don_Quixote_1.jpg"
+  },
+  "art-rembrandt": {
+    "name": "自画像（レンブラント）",
+    "artist": "Rembrandt",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg"
+  },
+  "music-bach": {
+    "name": "バッハの肖像（ハウスマン）",
+    "artist": "Elias Gottlob Haussmann",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Johann_Sebastian_Bach.jpg"
+  },
+  "art-liberty": {
+    "name": "民衆を導く自由の女神（ドラクロワ、1830年）",
+    "artist": "Eugène Delacroix",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Delacroix_-_Le_28_Juillet._La_Libert%C3%A9_guidant_le_peuple.jpg"
+  },
+  "biology-hooke-cork": {
+    "name": "『ミクログラフィア』のコルク（ロバート・フック）",
+    "artist": "Robert Hooke",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Cork_Micrographia_Hooke.png"
+  },
+  "architecture-parthenon": {
+    "name": "パルテノン神殿（フォトクローム、19世紀末ごろ）",
+    "artist": "Photoglob Co., publisher",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Ath%C3%A8nes._Parthenon_LCCN2017658100.jpg"
+  },
+  "music-beethoven": {
+    "name": "ベートーヴェンの肖像（シュティーラー）",
+    "artist": "Joseph Karl Stieler",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Beethoven.jpg"
+  },
+  "biology-mendel": {
+    "name": "グレゴール・メンデル（ウィリアム・ベイトソン『メンデルの遺伝の原理』より）",
+    "artist": "Bateson, William",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Gregor_Mendel_Monk.jpg"
+  },
+  "architecture-pantheon": {
+    "name": "パンテオンの内部（パニーニ、18世紀）",
+    "artist": "Giovanni Paolo Panini",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Giovanni_Paolo_Panini_-_Interior_of_the_Pantheon,_Rome_-_Google_Art_Project.jpg"
+  },
+  "biology-haeckel-diatomea": {
+    "name": "『生物の驚異的な形』珪藻類（エルンスト・ヘッケル）",
+    "artist": "Ernst Haeckel",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Haeckel_Diatomea.jpg"
+  },
+  "architecture-notre-dame": {
+    "name": "ノートルダム大聖堂（フォトクローム、1890〜1900年ごろ）",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Notre_Dame,_Paris,_France,_ca._1890-1900.jpg"
+  },
+  "architecture-himeji": {
+    "name": "明治時代の姫路城（古写真）",
+    "artist": "unknown 不明",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Himejicastle-meiji.jpg"
+  },
+  "biology-haeckel-tree": {
+    "name": "生命の系統樹（エルンスト・ヘッケル）",
+    "artist": "Ernst Haeckel",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Tree_of_life_by_Haeckel.jpg"
+  },
+  "architecture-crystal-palace": {
+    "name": "水晶宮（ジョン・アブソロン、1851年ごろの石版画）",
+    "artist": "John Absolon (1815-1895)",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:John_Absolon,_Crystal_Palace,_General_View,_lithograph,_coloured_by_hand.jpg"
+  },
+  "space-cellarius": {
+    "name": "コペルニクスの宇宙体系図（アンドレアス・セラリウス『大宇宙の調和』）",
+    "artist": "Andreas Cellarius",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Cellarius_Harmonia_Macrocosmica_-_Scenographia_Systematis_Copernicani.jpg"
+  },
+  "space-blue-marble": {
+    "name": "ザ・ブルー・マーブル（NASA／アポロ17号）",
+    "artist": "Harrison Schmitt / Apollo 17",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Blue_Marble,_AS17-148-22727.jpg"
+  },
+  "space-earthrise": {
+    "name": "地球の出（NASA／アポロ8号 ウィリアム・アンダース）",
+    "artist": "NASA/Bill Anders",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:NASA-Apollo8-Dec24-Earthrise.jpg"
+  },
+  "space-aldrin": {
+    "name": "月面のオルドリン（NASA／アポロ11号 ニール・アームストロング撮影）",
+    "artist": "Neil Armstrong",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Aldrin_Apollo_11_original.jpg"
+  },
+  "language-rosetta": {
+    "name": "ロゼッタ・ストーンの図版『エジプト誌』（ジョマール画）",
+    "artist": "divers",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Pierre_de_Rosette,_dessin_Jomard,_gravure_Bigand_Description_de_l%27Egypte_1822.jpg"
+  },
+  "technology-eniac": {
+    "name": "ENIAC（米陸軍の写真）",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Glen_Beck_and_Betty_Snyder_program_the_ENIAC_in_building_328_at_the_Ballistic_Research_Laboratory.jpg"
+  },
+  "language-cuneiform": {
+    "name": "楔形文字の粘土板（メトロポリタン美術館）",
+    "artist": "不明",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cuneiform_tablet-_messenger_tablet_MET_ME57_16_6.jpg"
+  },
+  "technology-lovelace": {
+    "name": "エイダ・ラブレス（A. E. シャロン）",
+    "artist": "Alfred Edward Chalon",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Ada_Lovelace_portrait.jpg"
+  },
+  "language-koyagire": {
+    "name": "高野切 第一種（伝紀貫之筆）",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Koyagire_1stVolume_fragment.jpg"
+  },
+  "literature-soseki": {
+    "name": "夏目漱石の肖像写真（小川一真）",
+    "artist": "Ogawa Kazumasa",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Natsume_Soseki_photo.jpg"
+  },
+  "medicine-fleming": {
+    "name": "研究室のフレミング（英国の公式写真）",
+    "artist": "Official photographer",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Synthetic_Production_of_Penicillin_TR1468.jpg"
+  },
+  "sociology-weber": {
+    "name": "マックス・ウェーバー（エルンスト・ゴットマン撮影）",
+    "artist": "Ernst Gottmann",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Max_Weber,_1918.jpg"
+  },
+  "music-laudario": {
+    "name": "コルトーナのラウダ集（作者不詳、13世紀の写本）",
+    "artist": "Juandelaencina",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Laudario_Di_Cortona.jpg"
+  },
+  "sociology-durkheim": {
+    "name": "エミール・デュルケーム（作者不明）",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:%C3%89mile_Durkheim.jpg"
+  },
+  "medicine-harvey": {
+    "name": "ハーヴェイ『心臓の運動について』の静脈弁の図",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:William_Harvey_(1578-1657)_Venenbild.jpg"
+  },
+  "history-parthenon": {
+    "name": "パルテノン神殿の東正面（スチュアート、レヴェット）",
+    "artist": "James Stuart / Nicholas Revett",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:A_view_of_the_eastern_portico_of_the_Parthenon_-_Stuart_James_%26_Revett_Nicholas_-_1787.jpg"
+  },
+  "sociology-tonnies": {
+    "name": "フェルディナント・テンニース（フェルディナント・ウルバーンス撮影）",
+    "artist": "Ferdinand Urbahns",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Ferdinand_T%C3%B6nnies.jpg"
+  },
+  "music-shamisen": {
+    "name": "三味線を持つ女（葛飾北斎）",
+    "artist": "Katsushika Hokusai",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Seated_Woman_with_Shamisen_-_Katsushika_Hokusai.jpg"
+  },
+  "architecture-horyuji-pagoda": {
+    "name": "法隆寺五重塔の実測断面図（池田谷久吉）",
+    "artist": "池田谷久吉",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:%E6%B3%95%E9%9A%86%E5%AF%BA%E4%BA%94%E9%87%8D%E5%A1%94%E7%A9%BA%E6%B4%9E%E5%AE%9F%E6%B8%AC%E6%96%AD%E9%9D%A2%E5%9B%B3.jpg"
+  },
+  "medicine-vesalius": {
+    "name": "ヴェサリウス『ファブリカ』の筋肉図",
+    "artist": "不明",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Vesalius_Fabrica_p174.jpg"
+  },
+  "sociology-dore-london": {
+    "name": "『ロンドン巡礼』より鉄道から見たロンドン（ギュスターヴ・ドレ）",
+    "artist": "Gustave Doré",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Dore_London.jpg"
+  },
+  "history-catalan-atlas": {
+    "name": "カタルーニャ図の隊商（アブラハム・クレスケス）",
+    "artist": "w:Abraham Cresques",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Catalan_Atlas_caravan_drawing.jpg"
+  },
+  "medicine-jenner": {
+    "name": "エドワード・ジェンナー（ジェームズ・ノースコート）",
+    "artist": "James Northcote",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Edward_Jenner_by_James_Northcote.jpg"
+  },
+  "history-ortelius": {
+    "name": "世界の舞台の世界図（オルテリウス）",
+    "artist": "Abraham Ortelius",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:1570_Typus_Orbis_Terrarum_Ortelius.jpg"
+  },
+  "japan-jomon-pot": {
+    "name": "火焔型土器（縄文時代、作者不明）",
+    "artist": "不明",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:%E7%81%AB%E7%84%94%E5%9C%9F%E5%99%A8-%E2%80%9CFlame-Rimmed%E2%80%9D_Cooking_Vessel_(Kaen_doki)_MET_2015_300_258_Burke_website.jpg"
+  },
+  "japan-genji-emaki": {
+    "name": "源氏物語絵巻 東屋（作者不明）",
+    "artist": "Imperial court in Kyoto",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Genji_emaki_azumaya.jpg"
+  },
+  "japan-nagashino": {
+    "name": "長篠合戦図屏風（作者不明）",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Six_fold_screen_of_The_Battle_of_Nagashino.png"
+  },
+  "philosophy-aristotle": {
+    "name": "アリストテレス胸像（ローマ時代の模刻）",
+    "artist": "After Lysippos",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Aristotle_Altemps_Inv8575.jpg"
+  },
+  "philosophy-hegel": {
+    "name": "ヘーゲル像（シュレジンガー）",
+    "artist": "Jakob Schlesinger",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Jakob_Schlesinger_-_Hegel_1831.jpg"
+  },
+  "japan-nihonbashi": {
+    "name": "東海道五十三次 日本橋（歌川広重）",
+    "artist": "Utagawa Hiroshige",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Hiroshige_le_pont_Nihonbashi_%C3%A0_l%27aube.jpg"
+  },
+  "philosophy-laozi": {
+    "name": "老子騎牛図（張路）",
+    "artist": "Zhang Lu",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Zhang_Lu-Laozi_Riding_an_Ox.jpg"
+  },
+  "religion-itsukushima": {
+    "name": "安芸 厳島（歌川広重）",
+    "artist": "Utagawa Hiroshige",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Hiroshige_Aki_Miyajima.jpg"
+  },
+  "religion-daruma": {
+    "name": "達磨像（白隠慧鶴）",
+    "artist": "Hakuin Ekaku",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Hakuin_Ekaku_-_Half-length_Portrait_of_Bodhidharma_-_2018.66.1_-_Minneapolis_Institute_of_Art.jpg"
+  },
+  "religion-kasuga-deer": {
+    "name": "春日鹿曼荼羅（作者不詳）",
+    "artist": "anonymous",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Anonymous_-_Deer_Mandala_of_Kasuga_Shrine_-_2015.300.11_-_Metropolitan_Museum_of_Art.jpg"
+  },
+  "politics-montesquieu": {
+    "name": "モンテスキューの肖像（ダシエの原作による）",
+    "artist": "After Jacques-Antoine Dassier",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Charles_Montesquieu.jpg"
+  },
+  "politics-grotius": {
+    "name": "フーゴー・グロティウスの肖像（ミヒール・ファン・ミーレフェルト）",
+    "artist": "Michiel Jansz. van Mierevelt",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Michiel_Jansz_van_Mierevelt_-_Hugo_Grotius.jpg"
+  },
+  "politics-house-of-commons": {
+    "name": "庶民院（ローランドソンとピュージン『ロンドンの縮図』）",
+    "artist": "Thomas Rowlandson (1756–1827) and Augustus Charles Pugin (1762–1832) (after) John Bluck (fl. 1791–1819), Joseph Constantine Stadler (fl. 1780–1812), Thomas Sutherland (1785–1838), J. Hill, and Harraden (aquatint engravers)[1]",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Microcosm_of_London_Plate_021_-_House_of_Commons_(colour).jpg"
+  },
+  "economics-ricardo": {
+    "name": "デヴィッド・リカードの肖像（トマス・フィリップス）",
+    "artist": "Thomas Phillips",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_David_Ricardo_by_Thomas_Phillips_(cropped).jpg"
+  },
+  "economics-amsterdam-exchange": {
+    "name": "アムステルダム取引所の中庭（ヨブ・ベルクハイデ）",
+    "artist": "Job Adriaenszoon Berckheyde",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:SA_3025-De_binnenplaats_van_de_Beurs_van_Hendrick_de_Keyser.jpg"
+  },
+  "economics-silver-yen": {
+    "name": "明治3年の一円銀貨（大日本帝国政府）",
+    "artist": "The government of the Empire of Japan.",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:1_Yen_-_Empire_of_Japan_(Meiji_3_-_1870)_MA-Shops.jpg"
   }
 }

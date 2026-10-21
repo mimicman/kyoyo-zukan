@@ -1,0 +1,43 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 株主たち -->
+  <circle cx="60" cy="22" r="8" class="ink"/>
+  <path d="M47 50 C47 34 73 34 73 50 Z" class="ink"/>
+  <circle cx="108" cy="22" r="8" class="ink"/>
+  <path d="M95 50 C95 34 121 34 121 50 Z" class="ink"/>
+  <circle cx="156" cy="22" r="8" class="ink"/>
+  <path d="M143 50 C143 34 169 34 169 50 Z" class="ink"/>
+  <circle cx="204" cy="22" r="8" class="ink"/>
+  <path d="M191 50 C191 34 217 34 217 50 Z" class="ink"/>
+  <circle cx="252" cy="22" r="8" class="ink"/>
+  <path d="M239 50 C239 34 265 34 265 50 Z" class="ink"/>
+  <circle cx="300" cy="22" r="8" class="ink"/>
+  <path d="M287 50 C287 34 313 34 313 50 Z" class="ink"/>
+  <text x="20" y="40" class="t-s mid soft">株主</text>
+  <text x="180" y="70" class="t-xs mid soft">株主総会で経営に意見できる</text>
+  <!-- お金と株・配当 -->
+  <path d="M96 80 L136 118" class="st-f" stroke-width="2.5" marker-end="url(#a-economics)"/>
+  <text x="106" y="112" class="t-s end ink">出資</text>
+  <path d="M224 118 L264 80" class="st-f" stroke-width="2.5" marker-end="url(#a-economics)"/>
+  <text x="254" y="112" class="t-s ink">株・配当</text>
+  <!-- 会社 -->
+  <path d="M120 128 L180 96 L240 128 Z" class="fl"/>
+  <rect x="128" y="128" width="104" height="56" class="fl"/>
+  <text x="180" y="156" class="t-l mid on">会社</text>
+  <text x="180" y="174" class="t-xs mid on">事業でもうける</text>
+  <!-- 株券 -->
+  <rect x="292" y="122" width="40" height="50" rx="4" class="paper st-f" stroke-width="1.5"/>
+  <text x="312" y="146" class="t-s mid fl">株</text>
+  <path d="M300 156 H324 M300 163 H318" class="st-f" stroke-width="1.5"/>
+  <!-- 有限責任と株式市場 -->
+  <rect x="10" y="204" width="164" height="64" rx="12" class="tint"/>
+  <text x="92" y="228" class="t-m mid fl">有限責任</text>
+  <text x="92" y="250" class="t-xs mid ink">失うのは出したお金まで</text>
+  <rect x="186" y="204" width="164" height="64" rx="12" class="bgc"/>
+  <text x="268" y="228" class="t-m mid ink">株式市場</text>
+  <circle cx="214" cy="248" r="6" class="ink"/>
+  <circle cx="322" cy="248" r="6" class="ink"/>
+  <path d="M226 244 H308" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M310 254 H228" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="268" y="240" class="t-xs mid soft halo">株</text>
+  <text x="268" y="264" class="t-xs mid soft">お金</text>
+</svg>

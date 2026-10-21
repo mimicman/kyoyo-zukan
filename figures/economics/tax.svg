@@ -1,0 +1,47 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 出す人 -->
+  <rect x="10" y="28" width="80" height="36" rx="10" class="bgc st-soft" stroke-width="1.5"/>
+  <text x="50" y="51" class="t-m mid ink">家計</text>
+  <rect x="10" y="92" width="80" height="36" rx="10" class="bgc st-soft" stroke-width="1.5"/>
+  <text x="50" y="115" class="t-m mid ink">企業</text>
+  <path d="M94 50 L138 70" class="st-f" stroke-width="2.5" marker-end="url(#a-economics)"/>
+  <path d="M94 108 L138 90" class="st-f" stroke-width="2.5" marker-end="url(#a-economics)"/>
+  <text x="114" y="50" class="t-xs mid fl">税</text>
+  <text x="114" y="122" class="t-xs mid fl">税</text>
+
+  <!-- 政府 -->
+  <circle cx="180" cy="80" r="38" class="fl"/>
+  <text x="180" y="78" class="t-l mid on">政府</text>
+  <text x="180" y="96" class="t-xs mid on">国・地方</text>
+  <text x="180" y="136" class="t-xs mid soft">所得税・消費税・法人税など</text>
+
+  <!-- 使い道 -->
+  <path d="M220 70 L264 30" class="st-f" stroke-width="2" marker-end="url(#a-economics)"/>
+  <path d="M220 78 L264 64" class="st-f" stroke-width="2" marker-end="url(#a-economics)"/>
+  <path d="M220 86 L264 98" class="st-f" stroke-width="2" marker-end="url(#a-economics)"/>
+  <path d="M220 94 L264 132" class="st-f" stroke-width="2" marker-end="url(#a-economics)"/>
+  <rect x="268" y="16" width="84" height="28" rx="8" class="tint"/>
+  <text x="310" y="35" class="t-xs mid ink">道路・水道</text>
+  <rect x="268" y="50" width="84" height="28" rx="8" class="tint"/>
+  <text x="310" y="69" class="t-xs mid ink">学校・教育</text>
+  <rect x="268" y="84" width="84" height="28" rx="8" class="tint"/>
+  <text x="310" y="103" class="t-xs mid ink">警察・消防</text>
+  <rect x="268" y="118" width="84" height="28" rx="8" class="tint"/>
+  <text x="310" y="137" class="t-xs mid ink">年金・医療</text>
+
+  <!-- みんなに戻る -->
+  <path d="M310 150 C310 184 50 184 50 134" class="st-soft dash" stroke-width="2" marker-end="url(#a-soft)"/>
+  <text x="180" y="170" class="t-xs mid soft halo">サービスとしてみんなに戻る</text>
+
+  <!-- 累進課税 -->
+  <path d="M30 206 V270 H196" class="st" stroke-width="1.5"/>
+  <text x="34" y="214" class="t-xs soft">税率</text>
+  <text x="196" y="285" class="t-xs end soft">所得</text>
+  <rect x="44" y="254" width="32" height="16" rx="2" class="tint st-f" stroke-width="1"/>
+  <rect x="80" y="242" width="32" height="28" rx="2" class="tint st-f" stroke-width="1"/>
+  <rect x="116" y="228" width="32" height="42" rx="2" class="fl"/>
+  <rect x="152" y="212" width="32" height="58" rx="2" class="fl"/>
+  <text x="212" y="230" class="t-m fl">累進課税</text>
+  <text x="212" y="250" class="t-xs ink">所得が多いほど</text>
+  <text x="212" y="265" class="t-xs ink">税率が高い → 格差を縮める</text>
+</svg>

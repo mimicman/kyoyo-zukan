@@ -1,0 +1,39 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 決まりのピラミッド：上ほど強い -->
+  <path d="M118 14 L151.4 84 H84.6 Z" class="fl"/>
+  <path d="M84.6 84 H151.4 L178.2 140 H57.8 Z" class="tint st-f" stroke-width="1.5"/>
+  <path d="M57.8 140 H178.2 L202.0 190 H34.0 Z" class="bgc st-f" stroke-width="1.5"/>
+  <path d="M34.0 190 H202.0 L224.0 236 H12.0 Z" class="bgc st-f" stroke-width="1.5"/>
+  <text x="118" y="74" class="t-m mid on">憲法</text>
+  <text x="118" y="112" class="t-m mid ink">法律</text>
+  <text x="118" y="128" class="t-xs mid soft">国会が作る</text>
+  <text x="118" y="163" class="t-m mid ink">命令</text>
+  <text x="118" y="179" class="t-xs mid soft">政令・省令（内閣・省）</text>
+  <text x="118" y="213" class="t-m mid ink">条例</text>
+  <text x="118" y="229" class="t-xs mid soft">都道府県・市町村の議会</text>
+  <!-- 上ほど強い -->
+  <path d="M10 200 V30" class="st-f" stroke-width="2" marker-end="url(#a-politics)"/>
+  <text x="22" y="40" class="t-xs fl">強い</text>
+  <text x="118" y="256" class="t-xs mid ink">下の決まりは、上に反すると無効</text>
+  <!-- 誰が誰をしばるか -->
+  <path d="M238 14 V244" class="st-line" stroke-width="1.5"/>
+  <rect x="248" y="14" width="102" height="108" rx="10" class="tint"/>
+  <text x="299" y="34" class="t-m mid fl">憲法</text>
+  <text x="277" y="60" class="t-xs end ink">国民</text>
+  <circle cx="290" cy="56" r="5" class="ink"/><circle cx="304" cy="56" r="5" class="ink"/><circle cx="318" cy="56" r="5" class="ink"/>
+  <path d="M304 66 V88" class="st-f" stroke-width="2" marker-end="url(#a-politics)"/>
+  <text x="312" y="82" class="t-xs fl">しばる</text>
+  <rect x="266" y="92" width="66" height="22" rx="6" class="fl"/>
+  <text x="299" y="107" class="t-xs mid on">国家</text>
+  <rect x="248" y="136" width="102" height="108" rx="10" class="bgc"/>
+  <text x="299" y="156" class="t-m mid ink">法律</text>
+  <rect x="266" y="164" width="66" height="22" rx="6" class="soft"/>
+  <text x="299" y="179" class="t-xs mid paper">国家</text>
+  <path d="M304 190 V212" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <text x="312" y="206" class="t-xs soft">しばる</text>
+  <text x="277" y="230" class="t-xs end ink">国民</text>
+  <circle cx="290" cy="226" r="5" class="ink"/><circle cx="304" cy="226" r="5" class="ink"/><circle cx="318" cy="226" r="5" class="ink"/>
+  <!-- 改正の重さ -->
+  <rect x="8" y="266" width="344" height="28" rx="8" class="bgc"/>
+  <text x="180" y="284" class="t-xs mid ink">改正：法律は国会の過半数／憲法は国会の2/3＋国民投票</text>
+</svg>

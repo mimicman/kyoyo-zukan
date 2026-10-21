@@ -1,0 +1,75 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <text x="180" y="20" class="t-s mid soft">国際連合（1945年〜）</text>
+  <!-- 総会：全加盟国が並ぶ半円 -->
+  <circle cx="50.0" cy="150.0" r="4" class="soft"/>
+  <circle cx="54.2" cy="131.8" r="4" class="soft"/>
+  <circle cx="65.8" cy="117.2" r="4" class="soft"/>
+  <circle cx="82.7" cy="109.1" r="4" class="soft"/>
+  <circle cx="101.3" cy="109.1" r="4" class="soft"/>
+  <circle cx="118.2" cy="117.2" r="4" class="soft"/>
+  <circle cx="129.8" cy="131.8" r="4" class="soft"/>
+  <circle cx="134.0" cy="150.0" r="4" class="soft"/>
+  <circle cx="35.0" cy="150.0" r="4" class="soft"/>
+  <circle cx="37.8" cy="132.4" r="4" class="soft"/>
+  <circle cx="45.9" cy="116.5" r="4" class="soft"/>
+  <circle cx="58.5" cy="103.9" r="4" class="soft"/>
+  <circle cx="74.4" cy="95.8" r="4" class="soft"/>
+  <circle cx="92.0" cy="93.0" r="4" class="soft"/>
+  <circle cx="109.6" cy="95.8" r="4" class="soft"/>
+  <circle cx="125.5" cy="103.9" r="4" class="soft"/>
+  <circle cx="138.1" cy="116.5" r="4" class="soft"/>
+  <circle cx="146.2" cy="132.4" r="4" class="soft"/>
+  <circle cx="149.0" cy="150.0" r="4" class="soft"/>
+  <circle cx="20.0" cy="150.0" r="4" class="soft"/>
+  <circle cx="22.1" cy="132.8" r="4" class="soft"/>
+  <circle cx="28.2" cy="116.5" r="4" class="soft"/>
+  <circle cx="38.1" cy="102.3" r="4" class="soft"/>
+  <circle cx="51.1" cy="90.7" r="4" class="soft"/>
+  <circle cx="66.5" cy="82.7" r="4" class="soft"/>
+  <circle cx="83.3" cy="78.5" r="4" class="soft"/>
+  <circle cx="100.7" cy="78.5" r="4" class="soft"/>
+  <circle cx="117.5" cy="82.7" r="4" class="soft"/>
+  <circle cx="132.9" cy="90.7" r="4" class="soft"/>
+  <circle cx="145.9" cy="102.3" r="4" class="soft"/>
+  <circle cx="155.8" cy="116.5" r="4" class="soft"/>
+  <circle cx="161.9" cy="132.8" r="4" class="soft"/>
+  <circle cx="164.0" cy="150.0" r="4" class="soft"/>
+  <text x="92" y="144" class="t-l mid ink">総会</text>
+  <path d="M14 156 H170" class="st-soft" stroke-width="1.5"/>
+  <text x="92" y="174" class="t-xs mid ink">すべての加盟国</text>
+  <text x="92" y="189" class="t-xs mid soft">1国1票</text>
+  <path d="M92 196 V220" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <rect x="16" y="226" width="152" height="44" rx="10" class="bgc st-soft" stroke-width="1.5"/>
+  <text x="92" y="245" class="t-m mid ink">勧告</text>
+  <text x="92" y="261" class="t-xs mid soft">拘束力はない</text>
+  <!-- 総会が非常任理事国を選ぶ -->
+  <path d="M170 112 H212" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="190" y="104" class="t-xs mid soft">選出</text>
+  <!-- 安全保障理事会：15か国の円卓 -->
+  <circle cx="206" cy="38" r="6" class="fl"/>
+  <text x="218" y="42" class="t-xs ink">常任5か国（拒否権）</text>
+  <circle cx="206" cy="54" r="4.5" class="tint st-f" stroke-width="1.5"/>
+  <text x="218" y="58" class="t-xs soft">非常任10か国（任期2年）</text>
+  <circle cx="274.0" cy="88.0" r="9" class="fl"/>
+  <circle cx="295.2" cy="92.5" r="6" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="312.6" cy="105.2" r="6" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="323.5" cy="123.9" r="9" class="fl"/>
+  <circle cx="325.7" cy="145.4" r="6" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="319.0" cy="166.0" r="6" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="304.6" cy="182.1" r="9" class="fl"/>
+  <circle cx="284.8" cy="190.9" r="6" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="263.2" cy="190.9" r="6" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="243.4" cy="182.1" r="9" class="fl"/>
+  <circle cx="229.0" cy="166.0" r="6" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="222.3" cy="145.4" r="6" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="224.5" cy="123.9" r="9" class="fl"/>
+  <circle cx="235.4" cy="105.2" r="6" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="252.8" cy="92.5" r="6" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="274" cy="140" r="32" class="paper st-f" stroke-width="2"/>
+  <text x="274" y="139" class="t-s mid ink" font-weight="700">安保理</text>
+  <text x="274" y="155" class="t-xs mid soft">15か国</text>
+  <path d="M274 204 V220" class="st-f" stroke-width="2" marker-end="url(#a-politics)"/>
+  <rect x="192" y="226" width="152" height="44" rx="10" class="fl"/>
+  <text x="268" y="245" class="t-m mid on">決議・制裁</text>
+  <text x="268" y="261" class="t-xs mid on">加盟国を拘束する</text>
+</svg>

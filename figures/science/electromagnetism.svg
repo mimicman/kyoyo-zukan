@@ -1,0 +1,44 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左上：電流のまわりに磁場（エルステッド） -->
+  <ellipse cx="90" cy="100" rx="44" ry="12" class="st-f" stroke-width="2"/>
+  <ellipse cx="90" cy="62" rx="44" ry="12" class="st-f" stroke-width="2"/>
+  <path d="M90 132 V24" class="st" stroke-width="3" marker-end="url(#a-ink)"/>
+  <path d="M60 110 Q76 113 84 113" class="st-f" stroke-width="2" marker-end="url(#a-science)"/>
+  <text x="100" y="32" class="t-s ink">電流</text>
+  <text x="140" y="66" class="t-s fl">磁場</text>
+  <text x="90" y="152" class="t-xs mid soft">電気が流れる → 磁石の力</text>
+
+  <path d="M180 14 V152" class="st-line" stroke-width="1.5"/>
+
+  <!-- 右上：磁石を動かすとコイルに電気（ファラデー） -->
+  <path d="M190 40 H226" class="st-f" stroke-width="2.5" marker-end="url(#a-science)"/>
+  <text x="208" y="32" class="t-xs mid fl">動かす</text>
+  <rect x="190" y="62" width="20" height="16" class="fl"/>
+  <rect x="210" y="62" width="20" height="16" class="tint st-f" stroke-width="1.5"/>
+  <text x="200" y="74" class="t-xs mid on">N</text>
+  <text x="220" y="74" class="t-xs mid ink">S</text>
+  <ellipse cx="246" cy="70" rx="6" ry="22" class="st" stroke-width="2"/>
+  <ellipse cx="260" cy="70" rx="6" ry="22" class="st" stroke-width="2"/>
+  <ellipse cx="274" cy="70" rx="6" ry="22" class="st" stroke-width="2"/>
+  <ellipse cx="288" cy="70" rx="6" ry="22" class="st" stroke-width="2"/>
+  <ellipse cx="302" cy="70" rx="6" ry="22" class="st" stroke-width="2"/>
+  <text x="330" y="74" class="t-xs mid soft">コイル</text>
+  <path d="M246 92 V118 H263 M277 118 H302 V92" class="st" stroke-width="2"/>
+  <circle cx="270" cy="118" r="10" class="paper st" stroke-width="2"/>
+  <path d="M270 122 L276 111" class="st-f" stroke-width="2"/>
+  <text x="270" y="140" class="t-xs mid fl">電気が流れる</text>
+  <text x="270" y="152" class="t-xs mid soft">磁石の動き → 電気</text>
+
+  <path d="M8 164 H352" class="st-line" stroke-width="1.5"/>
+
+  <!-- 下：電気と磁気の波＝電磁波（マクスウェル） -->
+  <text x="180" y="180" class="t-xs mid soft">電気と磁気が支え合って進む波（電磁波）</text>
+  <path d="M20 222 H336" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M20 222 q25 -60 50 0 t50 0 t50 0 t50 0 t50 0 t50 0" class="st-f" stroke-width="2.5"/>
+  <path d="M20 222 q25 24 50 0 t50 0 t50 0 t50 0 t50 0 t50 0" class="st dash" stroke-width="1.5"/>
+  <path d="M14 262 H34" class="st-f" stroke-width="2.5"/>
+  <text x="40" y="266" class="t-xs ink">電気</text>
+  <path d="M78 262 H98" class="st dash" stroke-width="1.5"/>
+  <text x="104" y="266" class="t-xs ink">磁気</text>
+  <text x="348" y="266" class="t-s end fl">光も電波もこの波</text>
+</svg>

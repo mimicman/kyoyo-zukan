@@ -1,0 +1,120 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <text x="10" y="20" class="t-s ink">横の行（周期）：原子番号の順に並ぶ</text>
+  <path d="M10 30 H350" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="143" y="64" class="t-s mid ink">縦の列（族）は</text>
+  <text x="143" y="82" class="t-s mid fl">性質が似ている</text>
+  <rect x="10" y="40" width="18" height="18" rx="2" class="tint"/>
+  <text x="19" y="53" class="t-xs mid ink">H</text>
+  <rect x="333" y="40" width="18" height="18" rx="2" class="paper st-f" stroke-width="1.5"/>
+  <text x="342" y="53" class="t-xs mid fl">He</text>
+  <rect x="10" y="59" width="18" height="18" rx="2" class="fl"/>
+  <text x="19" y="72" class="t-xs mid on">Li</text>
+  <rect x="29" y="59" width="18" height="18" rx="2" class="tint"/>
+  <rect x="238" y="59" width="18" height="18" rx="2" class="tint"/>
+  <rect x="257" y="59" width="18" height="18" rx="2" class="tint"/>
+  <rect x="276" y="59" width="18" height="18" rx="2" class="tint"/>
+  <rect x="295" y="59" width="18" height="18" rx="2" class="tint"/>
+  <text x="304" y="72" class="t-xs mid ink">O</text>
+  <rect x="314" y="59" width="18" height="18" rx="2" class="tint"/>
+  <rect x="333" y="59" width="18" height="18" rx="2" class="paper st-f" stroke-width="1.5"/>
+  <text x="342" y="72" class="t-xs mid fl">Ne</text>
+  <rect x="10" y="78" width="18" height="18" rx="2" class="fl"/>
+  <text x="19" y="91" class="t-xs mid on">Na</text>
+  <rect x="29" y="78" width="18" height="18" rx="2" class="tint"/>
+  <rect x="238" y="78" width="18" height="18" rx="2" class="tint"/>
+  <rect x="257" y="78" width="18" height="18" rx="2" class="tint"/>
+  <rect x="276" y="78" width="18" height="18" rx="2" class="tint"/>
+  <rect x="295" y="78" width="18" height="18" rx="2" class="tint"/>
+  <rect x="314" y="78" width="18" height="18" rx="2" class="tint"/>
+  <rect x="333" y="78" width="18" height="18" rx="2" class="paper st-f" stroke-width="1.5"/>
+  <rect x="10" y="97" width="18" height="18" rx="2" class="fl"/>
+  <rect x="29" y="97" width="18" height="18" rx="2" class="tint"/>
+  <rect x="48" y="97" width="18" height="18" rx="2" class="paper st-f dash" stroke-width="1.5"/>
+  <text x="57" y="110" class="t-xs mid fl">?</text>
+  <rect x="67" y="97" width="18" height="18" rx="2" class="tint"/>
+  <rect x="86" y="97" width="18" height="18" rx="2" class="tint"/>
+  <rect x="105" y="97" width="18" height="18" rx="2" class="tint"/>
+  <rect x="124" y="97" width="18" height="18" rx="2" class="tint"/>
+  <rect x="143" y="97" width="18" height="18" rx="2" class="tint"/>
+  <text x="152" y="110" class="t-xs mid ink">Fe</text>
+  <rect x="162" y="97" width="18" height="18" rx="2" class="tint"/>
+  <rect x="181" y="97" width="18" height="18" rx="2" class="tint"/>
+  <rect x="200" y="97" width="18" height="18" rx="2" class="tint"/>
+  <rect x="219" y="97" width="18" height="18" rx="2" class="tint"/>
+  <rect x="238" y="97" width="18" height="18" rx="2" class="paper st-f dash" stroke-width="1.5"/>
+  <text x="247" y="110" class="t-xs mid fl">?</text>
+  <rect x="257" y="97" width="18" height="18" rx="2" class="paper st-f dash" stroke-width="1.5"/>
+  <text x="266" y="110" class="t-xs mid fl">?</text>
+  <rect x="276" y="97" width="18" height="18" rx="2" class="tint"/>
+  <rect x="295" y="97" width="18" height="18" rx="2" class="tint"/>
+  <rect x="314" y="97" width="18" height="18" rx="2" class="tint"/>
+  <rect x="333" y="97" width="18" height="18" rx="2" class="paper st-f" stroke-width="1.5"/>
+  <rect x="10" y="116" width="18" height="18" rx="2" class="fl"/>
+  <rect x="29" y="116" width="18" height="18" rx="2" class="tint"/>
+  <rect x="48" y="116" width="18" height="18" rx="2" class="tint"/>
+  <rect x="67" y="116" width="18" height="18" rx="2" class="tint"/>
+  <rect x="86" y="116" width="18" height="18" rx="2" class="tint"/>
+  <rect x="105" y="116" width="18" height="18" rx="2" class="tint"/>
+  <rect x="124" y="116" width="18" height="18" rx="2" class="tint"/>
+  <rect x="143" y="116" width="18" height="18" rx="2" class="tint"/>
+  <rect x="162" y="116" width="18" height="18" rx="2" class="tint"/>
+  <rect x="181" y="116" width="18" height="18" rx="2" class="tint"/>
+  <rect x="200" y="116" width="18" height="18" rx="2" class="tint"/>
+  <rect x="219" y="116" width="18" height="18" rx="2" class="tint"/>
+  <rect x="238" y="116" width="18" height="18" rx="2" class="tint"/>
+  <rect x="257" y="116" width="18" height="18" rx="2" class="tint"/>
+  <rect x="276" y="116" width="18" height="18" rx="2" class="tint"/>
+  <rect x="295" y="116" width="18" height="18" rx="2" class="tint"/>
+  <rect x="314" y="116" width="18" height="18" rx="2" class="tint"/>
+  <rect x="333" y="116" width="18" height="18" rx="2" class="paper st-f" stroke-width="1.5"/>
+  <rect x="10" y="135" width="18" height="18" rx="2" class="fl"/>
+  <rect x="29" y="135" width="18" height="18" rx="2" class="tint"/>
+  <rect x="48" y="135" width="18" height="18" rx="2" class="tint"/>
+  <rect x="67" y="135" width="18" height="18" rx="2" class="tint"/>
+  <rect x="86" y="135" width="18" height="18" rx="2" class="tint"/>
+  <rect x="105" y="135" width="18" height="18" rx="2" class="tint"/>
+  <rect x="124" y="135" width="18" height="18" rx="2" class="tint"/>
+  <rect x="143" y="135" width="18" height="18" rx="2" class="tint"/>
+  <rect x="162" y="135" width="18" height="18" rx="2" class="tint"/>
+  <rect x="181" y="135" width="18" height="18" rx="2" class="tint"/>
+  <rect x="200" y="135" width="18" height="18" rx="2" class="tint"/>
+  <rect x="219" y="135" width="18" height="18" rx="2" class="tint"/>
+  <rect x="238" y="135" width="18" height="18" rx="2" class="tint"/>
+  <rect x="257" y="135" width="18" height="18" rx="2" class="tint"/>
+  <rect x="276" y="135" width="18" height="18" rx="2" class="tint"/>
+  <rect x="295" y="135" width="18" height="18" rx="2" class="tint"/>
+  <rect x="314" y="135" width="18" height="18" rx="2" class="tint"/>
+  <rect x="333" y="135" width="18" height="18" rx="2" class="paper st-f" stroke-width="1.5"/>
+  <rect x="10" y="154" width="18" height="18" rx="2" class="fl"/>
+  <rect x="29" y="154" width="18" height="18" rx="2" class="tint"/>
+  <rect x="48" y="154" width="18" height="18" rx="2" class="tint"/>
+  <rect x="67" y="154" width="18" height="18" rx="2" class="tint"/>
+  <rect x="86" y="154" width="18" height="18" rx="2" class="tint"/>
+  <rect x="105" y="154" width="18" height="18" rx="2" class="tint"/>
+  <rect x="124" y="154" width="18" height="18" rx="2" class="tint"/>
+  <rect x="143" y="154" width="18" height="18" rx="2" class="tint"/>
+  <rect x="162" y="154" width="18" height="18" rx="2" class="tint"/>
+  <rect x="181" y="154" width="18" height="18" rx="2" class="tint"/>
+  <rect x="200" y="154" width="18" height="18" rx="2" class="tint"/>
+  <rect x="219" y="154" width="18" height="18" rx="2" class="tint"/>
+  <rect x="238" y="154" width="18" height="18" rx="2" class="tint"/>
+  <rect x="257" y="154" width="18" height="18" rx="2" class="tint"/>
+  <rect x="276" y="154" width="18" height="18" rx="2" class="tint"/>
+  <rect x="295" y="154" width="18" height="18" rx="2" class="tint"/>
+  <rect x="314" y="154" width="18" height="18" rx="2" class="tint"/>
+  <rect x="333" y="154" width="18" height="18" rx="2" class="paper st-f" stroke-width="1.5"/>
+  <!-- 凡例と注釈 -->
+  <path d="M19 174 V194" class="st-f" stroke-width="1.5"/>
+  <text x="10" y="210" class="t-s fl">左端の列</text>
+  <text x="10" y="226" class="t-xs soft">よく反応する金属</text>
+  <text x="10" y="240" class="t-xs soft">ナトリウムなど</text>
+  <path d="M342 174 V194" class="st-f" stroke-width="1.5"/>
+  <text x="352" y="210" class="t-s end fl">右端の列</text>
+  <text x="352" y="226" class="t-xs end soft">反応しにくい気体</text>
+  <text x="352" y="240" class="t-xs end soft">ヘリウムなど</text>
+  <rect x="118" y="198" width="18" height="18" rx="2" class="paper st-f dash" stroke-width="1.5"/>
+  <text x="127" y="211" class="t-xs mid fl">?</text>
+  <text x="142" y="212" class="t-s ink">＝予言された空欄</text>
+  <text x="142" y="230" class="t-xs soft">のちに発見され的中</text>
+  <text x="180" y="270" class="t-xs mid soft">メンデレーエフの周期表（1869年）をもとに今の形で表示</text>
+</svg>

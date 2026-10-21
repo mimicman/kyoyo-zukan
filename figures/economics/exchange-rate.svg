@@ -1,0 +1,32 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 1ドルと交換するのに必要な円（コイン1枚＝25円） -->
+  <rect x="8" y="8" width="344" height="112" rx="12" class="tint"/>
+  <text x="22" y="36" class="t-xl fl">円高</text>
+  <text x="74" y="36" class="t-xs soft">円の価値が高い</text>
+  <circle cx="42" cy="88" r="18" class="paper st" stroke-width="2"/>
+  <text x="42" y="93" class="t-s mid ink" font-weight="700">$1</text>
+  <text x="74" y="94" class="t-l mid ink">＝</text>
+  <rect x="96" y="100" width="36" height="8" rx="4" class="fl"/>
+  <rect x="96" y="91" width="36" height="8" rx="4" class="fl"/>
+  <rect x="96" y="82" width="36" height="8" rx="4" class="fl"/>
+  <rect x="96" y="73" width="36" height="8" rx="4" class="fl"/>
+  <text x="140" y="94" class="t-m ink">100円</text>
+  <text x="196" y="78" class="t-xs fl">得：輸入品・海外旅行が安い</text>
+  <text x="196" y="98" class="t-xs soft">損：輸出する会社は不利</text>
+  <rect x="8" y="130" width="344" height="112" rx="12" class="bgc"/>
+  <text x="22" y="158" class="t-xl fl">円安</text>
+  <text x="74" y="158" class="t-xs soft">円の価値が低い</text>
+  <circle cx="42" cy="210" r="18" class="paper st" stroke-width="2"/>
+  <text x="42" y="215" class="t-s mid ink" font-weight="700">$1</text>
+  <text x="74" y="216" class="t-l mid ink">＝</text>
+  <rect x="96" y="222" width="36" height="8" rx="4" class="fl"/>
+  <rect x="96" y="213" width="36" height="8" rx="4" class="fl"/>
+  <rect x="96" y="204" width="36" height="8" rx="4" class="fl"/>
+  <rect x="96" y="195" width="36" height="8" rx="4" class="fl"/>
+  <rect x="96" y="186" width="36" height="8" rx="4" class="fl"/>
+  <rect x="96" y="177" width="36" height="8" rx="4" class="fl"/>
+  <text x="140" y="216" class="t-m ink">150円</text>
+  <text x="196" y="200" class="t-xs fl">得：輸出する会社に有利</text>
+  <text x="196" y="220" class="t-xs soft">損：輸入品が値上がり</text>
+  <text x="180" y="268" class="t-xs mid soft">1ドルに必要な円が少ないほど「円高」</text>
+</svg>
