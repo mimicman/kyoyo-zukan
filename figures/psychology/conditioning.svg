@@ -1,0 +1,45 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 段階の枠 -->
+  <rect x="8" y="14" width="344" height="76" rx="14" class="st-line" stroke-width="1.5"/>
+  <rect x="8" y="100" width="344" height="76" rx="14" class="st-line" stroke-width="1.5"/>
+  <rect x="8" y="186" width="344" height="80" rx="14" class="tint"/>
+
+  <!-- 1 前：ベルだけでは反応しない -->
+  <circle cx="34" cy="46" r="13" class="fl"/>
+  <text x="34" y="51" class="t-m mid on">1</text>
+  <text x="34" y="78" class="t-xs mid soft">前</text>
+  <path d="M76 58 C76 30 104 30 104 58 Z M72 58 H108" class="st" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="90" cy="63" r="3.5" class="ink"/>
+  <text x="90" y="82" class="t-xs mid soft">ベル</text>
+  <path d="M206 50 H250" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <text x="298" y="55" class="t-s mid soft">反応なし</text>
+
+  <!-- 2 訓練：ベルとエサを一緒に（くり返す） -->
+  <circle cx="34" cy="132" r="13" class="fl"/>
+  <text x="34" y="137" class="t-m mid on">2</text>
+  <text x="34" y="164" class="t-xs mid soft">くり返す</text>
+  <path d="M76 144 C76 116 104 116 104 144 Z M72 144 H108" class="st" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="90" cy="149" r="3.5" class="ink"/>
+  <text x="90" y="168" class="t-xs mid soft">ベル</text>
+  <text x="132" y="143" class="t-l mid soft">＋</text>
+  <path d="M154 134 H196 C194 152 156 152 154 134 Z" class="st" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="166" cy="130" r="4" class="ink"/>
+  <circle cx="176" cy="128" r="4" class="ink"/>
+  <circle cx="186" cy="130" r="4" class="ink"/>
+  <text x="175" y="168" class="t-xs mid soft">エサ</text>
+  <path d="M206 136 H250" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <path d="M286 120 C294 132 294 140 286 140 C278 140 278 132 286 120 Z M310 120 C318 132 318 140 310 140 C302 140 302 132 310 120 Z" class="soft"/>
+  <text x="298" y="166" class="t-s mid ink">よだれ</text>
+
+  <!-- 3 後：ベルだけでよだれ -->
+  <circle cx="34" cy="220" r="13" class="fl"/>
+  <text x="34" y="225" class="t-m mid on">3</text>
+  <text x="34" y="252" class="t-xs mid soft">後</text>
+  <path d="M76 232 C76 204 104 204 104 232 Z M72 232 H108" class="fl st-f" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="90" cy="237" r="3.5" class="fl"/>
+  <path d="M112 210 Q118 218 112 226 M120 204 Q130 218 120 232" class="st-f" stroke-width="1.5"/>
+  <text x="90" y="256" class="t-xs mid fl">ベルだけ</text>
+  <path d="M206 224 H250" class="st-f" stroke-width="2.5" marker-end="url(#a-psychology)"/>
+  <path d="M286 206 C294 218 294 226 286 226 C278 226 278 218 286 206 Z M310 206 C318 218 318 226 310 226 C302 226 302 218 310 206 Z" class="fl"/>
+  <text x="298" y="254" class="t-s mid fl">よだれ</text>
+</svg>

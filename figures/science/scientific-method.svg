@@ -1,0 +1,29 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 循環の矢印（時計回り） -->
+  <path d="M213.7 56.6 A90 90 0 0 1 263.4 106.3" class="st-f" stroke-width="2.5" marker-end="url(#a-science)"/>
+  <path d="M263.4 173.7 A90 90 0 0 1 213.7 223.4" class="st-f" stroke-width="2.5" marker-end="url(#a-science)"/>
+  <path d="M146.3 223.4 A90 90 0 0 1 96.6 173.7" class="st-f" stroke-width="2.5" marker-end="url(#a-science)"/>
+  <path d="M96.6 106.3 A90 90 0 0 1 146.3 56.6" class="st-f" stroke-width="2.5" marker-end="url(#a-science)"/>
+
+  <!-- 外れたら仮説を直す -->
+  <path d="M120 140 H234" class="st-soft dash" stroke-width="2" marker-end="url(#a-soft)"/>
+  <text x="178" y="130" class="t-xs mid soft">外れたら修正</text>
+
+  <!-- 4つの段階 -->
+  <circle cx="180" cy="50" r="28" class="tint st-f" stroke-width="2"/>
+  <text x="180" y="55" class="t-m mid ink">観察</text>
+  <circle cx="270" cy="140" r="28" class="tint st-f" stroke-width="2"/>
+  <text x="270" y="145" class="t-m mid ink">仮説</text>
+  <circle cx="180" cy="230" r="28" class="tint st-f" stroke-width="2"/>
+  <text x="180" y="235" class="t-m mid ink">実験</text>
+  <circle cx="90" cy="140" r="28" class="fl"/>
+  <text x="90" y="145" class="t-m mid on">検証</text>
+
+  <!-- 段階の補足 -->
+  <text x="252" y="40" class="t-xs soft">気づく</text>
+  <text x="304" y="180" class="t-xs mid soft">予想を立てる</text>
+  <text x="252" y="252" class="t-xs soft">試す</text>
+  <text x="56" y="180" class="t-xs mid soft">合っているか</text>
+  <text x="20" y="40" class="t-xs soft">合えば支持され</text>
+  <text x="20" y="56" class="t-xs soft">新たな問いへ</text>
+</svg>

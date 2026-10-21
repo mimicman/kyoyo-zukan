@@ -1,0 +1,34 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 系統（左→右が時間） -->
+  <text x="20" y="140" class="t-s ink">初期の教会</text>
+  <text x="20" y="168" class="t-xs soft">ローマ帝国に広がる</text>
+  <path d="M20 150 H194" class="st-f" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- 東西分裂 -->
+  <path d="M194 150 C208 150 208 125 222 125 H346" class="st-f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M194 150 C208 150 208 200 222 200 H346" class="st-f" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+  <!-- 宗教改革 -->
+  <path d="M268 125 C282 125 282 70 296 70 H346" class="st-f" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+
+  <circle cx="194" cy="150" r="7" class="fl"/>
+  <circle cx="268" cy="125" r="7" class="fl"/>
+
+  <text x="346" y="58" class="t-s end ink" font-weight="700">プロテスタント</text>
+  <text x="346" y="90" class="t-xs end soft halo">聖書中心</text>
+  <text x="224" y="146" class="t-s ink" font-weight="700">カトリック</text>
+  <text x="346" y="146" class="t-xs end soft">ローマ教皇</text>
+  <text x="226" y="190" class="t-s ink" font-weight="700">正教会</text>
+  <text x="346" y="222" class="t-xs end soft halo">ギリシャ・ロシア</text>
+  <text x="226" y="114" class="t-xs fl">西</text>
+  <text x="226" y="222" class="t-xs fl">東</text>
+
+  <!-- 年表 -->
+  <path d="M194 158 V244 M268 133 V244" class="st-soft dash" stroke-width="1.2"/>
+  <path d="M20 250 H346" class="st-soft" stroke-width="1.5"/>
+  <text x="194" y="240" class="t-xs mid fl halo">東西分裂</text>
+  <text x="268" y="240" class="t-xs mid fl halo">宗教改革</text>
+  <text x="20" y="268" class="t-xs soft">1世紀</text>
+  <text x="194" y="268" class="t-xs mid ink">1054年</text>
+  <text x="268" y="268" class="t-xs mid ink">1517年</text>
+  <text x="346" y="268" class="t-xs end soft">今</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 約700年（1185〜1868年。1年≒0.48px） -->
+  <path d="M19 30 H342" class="st-soft" stroke-width="1.5" marker-start="url(#a-soft)" marker-end="url(#a-soft)"/>
+  <text x="180" y="35" class="t-m mid ink halo">約700年</text>
+
+  <!-- 3つの幕府と戦国 -->
+  <rect x="17" y="48" width="71" height="38" rx="6" class="fl"/>
+  <text x="53" y="72" class="t-s mid on">鎌倉幕府</text>
+  <rect x="90" y="48" width="62" height="38" rx="6" class="fl"/>
+  <text x="121" y="72" class="t-s mid on">室町幕府</text>
+  <path d="M154 48 L162 56 L170 48 L178 56 L186 48 L194 56 L202 48 L210 56 L215 50 V86 L208 78 L200 86 L192 78 L184 86 L176 78 L168 86 L160 78 L154 84 Z" class="tint st-f" stroke-width="1.5" stroke-linejoin="round"/>
+  <text x="185" y="72" class="t-s mid fl" font-weight="700">戦国</text>
+  <rect x="217" y="48" width="127" height="38" rx="6" class="fl"/>
+  <text x="280" y="73" class="t-m mid on">江戸幕府</text>
+
+  <!-- 年 -->
+  <path d="M17 96 H344" class="st-soft" stroke-width="1.5"/>
+  <path d="M17 92 V100 M90 92 V100 M217 92 V100 M344 92 V100" class="st-soft" stroke-width="1.5"/>
+  <text x="22" y="114" class="t-xs mid soft">1185</text>
+  <text x="90" y="114" class="t-xs mid soft">1336</text>
+  <text x="217" y="114" class="t-xs mid soft">1603</text>
+  <text x="338" y="114" class="t-xs mid soft">1868</text>
+
+  <!-- 幕府の場所と開いた人 -->
+  <path d="M53 120 L64 146 M121 120 L176 146 M280 120 L292 146" class="st-line dash" stroke-width="1.5"/>
+  <rect x="12" y="150" width="104" height="80" rx="12" class="tint"/>
+  <text x="64" y="182" class="t-l mid fl">鎌倉</text>
+  <text x="64" y="208" class="t-s mid ink">源頼朝</text>
+  <rect x="124" y="150" width="104" height="80" rx="12" class="tint"/>
+  <text x="176" y="182" class="t-l mid fl">京都</text>
+  <text x="176" y="208" class="t-s mid ink">足利尊氏</text>
+  <rect x="236" y="150" width="112" height="80" rx="12" class="tint"/>
+  <text x="292" y="182" class="t-l mid fl">江戸</text>
+  <text x="292" y="208" class="t-s mid ink">徳川家康</text>
+
+  <!-- 将軍が頂点 -->
+  <rect x="12" y="240" width="336" height="32" rx="12" class="bgc"/>
+  <path d="M30 264 V250 L37 256 L44 246 L51 256 L58 250 V264 Z" class="fl"/>
+  <text x="70" y="261" class="t-s ink">将軍をトップに、武士が国を治めた</text>
+</svg>

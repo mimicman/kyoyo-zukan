@@ -11,6 +11,12 @@
   --c-philosophy: #6a4fb3;
   --c-economics: #1f7a5c;
   --c-history: #b5532a;
+  --c-religion: #a07a12;
+  --c-japan: #a8323a;
+  --c-politics: #3d5a80;
+  --c-science: #2a63b5;
+  --c-psychology: #0f7c86;
+  --c-art: #b53a6b;
   --on-field: #ffffff;   /* 分野色の上に載せる文字 */
   --shadow: 0 1px 2px rgba(30, 25, 15, 0.06), 0 6px 20px rgba(30, 25, 15, 0.06);
   --radius: 16px;
@@ -23,12 +29,14 @@
   :root:not([data-theme="light"]) {
     --bg: #131518; --surface: #1c1f23; --ink: #ebe8e2; --ink-soft: #a2a8af; --line: #353a41;
     --accent: #e3906a; --c-philosophy: #a993ec; --c-economics: #5cc6a0; --c-history: #e3906a;
+    --c-religion: #d9b24a; --c-japan: #e2767d; --c-politics: #8fa9d1; --c-science: #6f9ee8; --c-psychology: #4fc1c9; --c-art: #e57ba3;
     --on-field: #15171a; --shadow: none; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #131518; --surface: #1c1f23; --ink: #ebe8e2; --ink-soft: #a2a8af; --line: #353a41;
   --accent: #e3906a; --c-philosophy: #a993ec; --c-economics: #5cc6a0; --c-history: #e3906a;
+    --c-religion: #d9b24a; --c-japan: #e2767d; --c-politics: #8fa9d1; --c-science: #6f9ee8; --c-psychology: #4fc1c9; --c-art: #e57ba3;
   --on-field: #15171a; --shadow: none; color-scheme: dark;
 }
 
@@ -36,6 +44,12 @@
 [data-field="philosophy"] { --f: var(--c-philosophy); }
 [data-field="economics"]  { --f: var(--c-economics); }
 [data-field="history"]    { --f: var(--c-history); }
+[data-field="religion"]   { --f: var(--c-religion); }
+[data-field="japan"]      { --f: var(--c-japan); }
+[data-field="politics"]   { --f: var(--c-politics); }
+[data-field="science"]    { --f: var(--c-science); }
+[data-field="psychology"] { --f: var(--c-psychology); }
+[data-field="art"]        { --f: var(--c-art); }
 [data-field] { --f-tint: color-mix(in srgb, var(--f) 12%, var(--surface)); }
 
 /* ---- 土台 ---- */

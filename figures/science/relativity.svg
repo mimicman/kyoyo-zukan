@@ -1,0 +1,33 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <text x="12" y="16" class="t-xs soft">特殊相対性理論</text>
+
+  <!-- 止まっている時計：針が進む -->
+  <circle cx="84" cy="64" r="32" class="st" stroke-width="2.5"/>
+  <path d="M84 64 L84 36 A28 28 0 0 1 112 64 Z" class="tint"/>
+  <path d="M84 64 V40 M84 64 H106" class="st" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="84" cy="64" r="3" class="ink"/>
+  <text x="84" y="116" class="t-s mid ink">止まっている</text>
+
+  <!-- 速く動く時計：針が遅れる -->
+  <path d="M168 52 H200 M158 64 H204 M168 76 H200" class="st-soft" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="246" cy="64" r="32" class="st-f" stroke-width="2.5"/>
+  <path d="M246 64 L246 36 A28 28 0 0 1 260 39.8 Z" class="tint"/>
+  <path d="M246 64 V40 M246 64 L257 45" class="st-f" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="246" cy="64" r="3" class="fl"/>
+  <text x="246" y="116" class="t-s mid fl">速く動く</text>
+  <text x="318" y="68" class="t-s mid fl">ゆっくり</text>
+
+  <path d="M12 134 H348" class="st-line" stroke-width="1.5"/>
+  <text x="12" y="154" class="t-xs soft">一般相対性理論</text>
+  <text x="348" y="160" class="t-s end fl">空間が曲がる</text>
+
+  <!-- 重いものが空間（時空）をくぼませる -->
+  <path d="M20 176 C120 176 140 194 180 194 C220 194 240 176 340 176" class="st-soft" stroke-width="1.5"/>
+  <path d="M20 200 C110 200 136 236 180 236 C224 236 250 200 340 200" class="st-f" stroke-width="2"/>
+  <path d="M20 224 C120 224 140 242 180 242 C220 242 240 224 340 224" class="st-soft" stroke-width="1.5"/>
+  <circle cx="180" cy="218" r="17" class="fl"/>
+  <ellipse cx="180" cy="218" rx="92" ry="16" class="st-f dash" stroke-width="1.5"/>
+  <circle cx="88" cy="218" r="6" class="ink"/>
+  <text x="180" y="270" class="t-s mid ink">重い星</text>
+  <text x="70" y="250" class="t-xs mid soft">回る星</text>
+</svg>

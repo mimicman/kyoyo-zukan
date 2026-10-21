@@ -1,0 +1,131 @@
+{
+  "cards": [
+    {
+      "id": "separation-of-powers",
+      "title": "三権分立",
+      "era": "18世紀〜",
+      "line": "権力を3つに分け、互いにブレーキをかけ合う",
+      "keywords": [
+        {
+          "word": "モンテスキュー",
+          "note": "フランスの思想家。『法の精神』で三権分立を説いた"
+        },
+        {
+          "word": "違憲審査権",
+          "note": "法律や命令が憲法に反していないか、裁判所が判断する権限"
+        },
+        {
+          "word": "衆議院の解散",
+          "note": "任期の途中で衆議院議員の全員を選び直すこと"
+        }
+      ],
+      "links": [
+        "politics/parliamentary",
+        "politics/rule-of-law"
+      ]
+    },
+    {
+      "id": "social-contract",
+      "title": "社会契約説",
+      "era": "17〜18世紀",
+      "line": "国家は、人々の約束でつくられたと考える",
+      "keywords": [
+        {
+          "word": "自然状態",
+          "note": "国家や法がない状態。思想家ごとに見方が違う"
+        },
+        {
+          "word": "抵抗権",
+          "note": "政府が権利を守らないとき、人々が抵抗し取り替える権利（ロック）"
+        },
+        {
+          "word": "一般意志",
+          "note": "みんなに共通する利益をめざす意志（ルソー）"
+        }
+      ],
+      "links": [
+        "politics/human-rights",
+        "philosophy/kant"
+      ]
+    },
+    {
+      "id": "parliamentary",
+      "title": "議院内閣制と大統領制",
+      "era": "18世紀〜",
+      "line": "首相は議会が選び、大統領は国民が選ぶ",
+      "keywords": [
+        {
+          "word": "内閣不信任",
+          "note": "議会が内閣を信任しないと決めること。内閣は総辞職か解散を選ぶ"
+        },
+        {
+          "word": "首相",
+          "note": "議院内閣制での政府のトップ。日本では国会が指名する"
+        },
+        {
+          "word": "大統領選挙",
+          "note": "アメリカでは、国民が選んだ選挙人を通じて選ぶ"
+        }
+      ],
+      "links": [
+        "politics/separation-of-powers"
+      ]
+    },
+    {
+      "id": "rule-of-law",
+      "title": "法の支配",
+      "era": "1215年〜",
+      "line": "王でも法に従う。権力者を法でしばる",
+      "image": {
+        "id": "magna-carta",
+        "pos": "50% 40%"
+      },
+      "keywords": [
+        {
+          "word": "マグナ・カルタ",
+          "note": "1215年、イングランドの貴族たちが王に認めさせた文書"
+        },
+        {
+          "word": "人の支配",
+          "note": "権力者の思うままが、そのまま決まりになる状態"
+        },
+        {
+          "word": "立憲主義",
+          "note": "憲法で国の権力を制限し、人々の権利を守る考え方"
+        }
+      ],
+      "links": [
+        "politics/separation-of-powers",
+        "politics/human-rights"
+      ]
+    },
+    {
+      "id": "human-rights",
+      "title": "人権の宣言",
+      "era": "18〜20世紀",
+      "line": "生まれながらの権利が、一国から世界へ広がった",
+      "image": {
+        "id": "declaration",
+        "pos": "50% 50%"
+      },
+      "keywords": [
+        {
+          "word": "アメリカ独立宣言",
+          "note": "1776年。人は平等で、生命・自由・幸福追求の権利をもつとした"
+        },
+        {
+          "word": "フランス人権宣言",
+          "note": "1789年、フランス革命の中で出された。自由・平等・国民主権"
+        },
+        {
+          "word": "世界人権宣言",
+          "note": "1948年、国際連合で採択。すべての人と国の共通の基準"
+        }
+      ],
+      "links": [
+        "politics/social-contract",
+        "history/world-wars"
+      ]
+    }
+  ]
+}

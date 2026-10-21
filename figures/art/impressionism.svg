@@ -1,0 +1,47 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 右：印象派の側 -->
+  <rect x="186" y="12" width="164" height="258" rx="16" class="tint"/>
+  <text x="98" y="32" class="t-s mid soft">それまで</text>
+  <text x="268" y="32" class="t-s mid fl" font-weight="700">印象派</text>
+
+  <!-- 1. 描く場所 -->
+  <path d="M72 66 L98 46 L124 66 V100 H72Z" class="st-soft" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="88" y="74" width="20" height="16" class="st-soft" stroke-width="1.5"/>
+  <text x="98" y="118" class="t-xs mid ink">アトリエで</text>
+  <circle cx="240" cy="62" r="10" class="fl"/>
+  <path d="M240 44 V40 M240 84 V80 M222 62 H218 M262 62 H258 M227 49 L224 46 M253 49 L256 46" class="st-f" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="296" cy="70" r="16" class="fl" opacity="0.55"/>
+  <path d="M296 86 V100 M210 100 H330" class="st-soft" stroke-width="2"/>
+  <text x="268" y="118" class="t-xs mid ink">外で光を見て</text>
+
+  <!-- 2. 色の置き方 -->
+  <circle cx="64" cy="152" r="11" class="fl"/>
+  <circle cx="92" cy="152" r="11" class="soft"/>
+  <path d="M106 152 H118" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <circle cx="136" cy="152" r="13" class="soft" opacity="0.6"/>
+  <text x="98" y="186" class="t-xs mid ink">混ぜて塗る</text>
+  <g class="fl">
+    <circle cx="228" cy="140" r="5"/><circle cx="252" cy="140" r="5"/><circle cx="276" cy="140" r="5"/><circle cx="300" cy="140" r="5"/>
+    <circle cx="240" cy="152" r="5"/><circle cx="264" cy="152" r="5"/><circle cx="288" cy="152" r="5"/><circle cx="312" cy="152" r="5"/>
+    <circle cx="228" cy="164" r="5"/><circle cx="252" cy="164" r="5"/><circle cx="276" cy="164" r="5"/><circle cx="300" cy="164" r="5"/>
+  </g>
+  <g class="soft">
+    <circle cx="240" cy="140" r="5"/><circle cx="264" cy="140" r="5"/><circle cx="288" cy="140" r="5"/><circle cx="312" cy="140" r="5"/>
+    <circle cx="228" cy="152" r="5"/><circle cx="252" cy="152" r="5"/><circle cx="276" cy="152" r="5"/><circle cx="300" cy="152" r="5"/>
+    <circle cx="240" cy="164" r="5"/><circle cx="264" cy="164" r="5"/><circle cx="288" cy="164" r="5"/><circle cx="312" cy="164" r="5"/>
+  </g>
+  <text x="268" y="186" class="t-xs mid ink">並べて置く（筆触分割）</text>
+
+  <!-- 3. 形の描き方 -->
+  <circle cx="98" cy="226" r="20" class="paper st" stroke-width="3.5"/>
+  <text x="98" y="262" class="t-xs mid ink">くっきり輪郭</text>
+  <g class="fl">
+    <circle cx="268" cy="206" r="3.5"/><circle cx="282" cy="210" r="3"/><circle cx="288" cy="224" r="3.5"/><circle cx="283" cy="238" r="3"/>
+    <circle cx="268" cy="246" r="3.5"/><circle cx="254" cy="239" r="3"/><circle cx="248" cy="225" r="3.5"/><circle cx="254" cy="211" r="3"/>
+    <circle cx="268" cy="226" r="4"/><circle cx="276" cy="218" r="3"/><circle cx="259" cy="232" r="3"/>
+  </g>
+  <g class="soft" opacity="0.7">
+    <circle cx="261" cy="218" r="3"/><circle cx="277" cy="234" r="3"/><circle cx="296" cy="216" r="2.5"/><circle cx="242" cy="233" r="2.5"/>
+  </g>
+  <text x="268" y="262" class="t-xs mid ink">輪郭が光にとける</text>
+</svg>

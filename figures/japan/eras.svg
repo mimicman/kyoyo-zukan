@@ -1,0 +1,46 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 全体（約1万6千年前〜現在）。長さはおおよその比率 -->
+  <text x="12" y="26" class="t-xs soft">約1万6千年前</text>
+  <text x="348" y="26" class="t-xs end soft">現在</text>
+  <text x="300" y="26" class="t-xs mid soft">弥生</text>
+  <rect x="12" y="34" width="277" height="38" class="fl"/>
+  <rect x="289" y="34" width="22" height="38" class="tint"/>
+  <rect x="311" y="34" width="37" height="38" class="tint st-f" stroke-width="1.5"/>
+  <text x="26" y="60" class="t-l on">縄文</text>
+  <text x="76" y="58" class="t-xs on">1万年以上つづく</text>
+
+  <!-- 古墳〜現代を拡大 -->
+  <path d="M311 74 L12 128 M348 74 V128" class="st-soft dash" stroke-width="1"/>
+  <text x="340" y="104" class="t-xs end soft">古墳〜現代を拡大</text>
+
+  <!-- 拡大した帯（250年〜現在。1年≒0.19px） -->
+  <g>
+    <rect x="12" y="130" width="65" height="40" class="tint"/>
+    <rect x="77" y="130" width="22" height="40" class="fl"/>
+    <rect x="99" y="130" width="16" height="40" class="tint"/>
+    <rect x="115" y="130" width="74" height="40" class="fl"/>
+    <rect x="189" y="130" width="28" height="40" class="tint"/>
+    <rect x="217" y="130" width="45" height="40" class="fl"/>
+    <rect x="262" y="130" width="6" height="40" class="tint"/>
+    <rect x="268" y="130" width="50" height="40" class="fl"/>
+    <rect x="318" y="130" width="30" height="40" class="tint"/>
+  </g>
+  <text x="44" y="155" class="t-s mid ink">古墳</text>
+  <text x="152" y="155" class="t-s mid on">平安</text>
+  <text x="203" y="154" class="t-xs mid ink">鎌倉</text>
+  <text x="240" y="155" class="t-s mid on">室町</text>
+  <text x="293" y="155" class="t-s mid on">江戸</text>
+
+  <!-- 細い時代は下に引き出す -->
+  <path d="M88 172 V178 M107 172 V196 M265 172 V196 M333 172 V178" class="st-soft" stroke-width="1"/>
+  <text x="84" y="190" class="t-xs mid ink">飛鳥</text>
+  <text x="110" y="208" class="t-xs mid ink">奈良</text>
+  <text x="265" y="208" class="t-xs mid ink">安土桃山</text>
+  <text x="327" y="190" class="t-xs mid ink">明治以降</text>
+
+  <!-- 大きなまとまり -->
+  <path d="M99 222 V228 H189 V222 M191 222 V228 H316 V222 M320 222 V228 H348 V222" class="st-f" stroke-width="1.5"/>
+  <text x="144" y="248" class="t-s mid fl">貴族の世</text>
+  <text x="253" y="248" class="t-s mid fl">武士の世</text>
+  <text x="334" y="248" class="t-s mid fl">近代</text>
+</svg>

@@ -46,5 +46,89 @@
     "artist": "Robison, John, 1739-1805.",
     "license": "Public domain",
     "source": "https://commons.wikimedia.org/wiki/File:Steam_engine_-_Mr._Watt%27s_double_steam_engine_from_his_specification_of_1782_LCCN2006691752.jpg"
+  },
+  "creation-of-adam": {
+    "name": "アダムの創造（ミケランジェロ）",
+    "artist": "Michelangelo",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Michelangelo_-_Creation_of_Adam_(cropped).jpg"
+  },
+  "moko-shurai": {
+    "name": "蒙古襲来絵詞",
+    "artist": "作者不明（竹崎季長の発注）",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:M%C5%8Dko_Sh%C5%ABrai_Ekotoba.jpg"
+  },
+  "perry": {
+    "name": "ペリーを描いた浮世絵",
+    "artist": "作者不明",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Commodore_Perry_in_Japan_LCCN2002700116.jpg"
+  },
+  "magna-carta": {
+    "name": "マグナ・カルタ（1215年）",
+    "artist": "ジョン王と諸侯",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Magna_Carta_(British_Library_Cotton_MS_Augustus_II.106).jpg"
+  },
+  "declaration": {
+    "name": "独立宣言（トランブル）",
+    "artist": "John Trumbull",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Declaration_of_Independence_(1819),_by_John_Trumbull.jpg"
+  },
+  "galileo": {
+    "name": "ガリレオの肖像（ススターマンス）",
+    "artist": "Justus Sustermans",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Justus_Sustermans_-_Portrait_of_Galileo_Galilei_(Uffizi).jpg"
+  },
+  "newton": {
+    "name": "ニュートンの肖像（ネラー、1689年）",
+    "artist": "Godfrey Kneller",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_Sir_Isaac_Newton,_1689_(brightened).jpg"
+  },
+  "darwin": {
+    "name": "ダーウィン（キャメロン撮影、1868年頃）",
+    "artist": "Julia Margaret Cameron",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Charles_Darwin_by_Julia_Margaret_Cameron,_c._1868.jpg"
+  },
+  "einstein": {
+    "name": "アインシュタイン（シュムッツァー撮影、1921年）",
+    "artist": "Ferdinand Schmutzer",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Albert_Einstein_1921_by_F_Schmutzer.jpg"
+  },
+  "pavlov": {
+    "name": "パブロフ",
+    "artist": "作者不明",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Ivan_Pavlov_nobel.jpg"
+  },
+  "freud": {
+    "name": "フロイト（ハルバーシュタット撮影）",
+    "artist": "Max Halberstadt",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Sigmund_Freud,_by_Max_Halberstadt_(cropped).jpg"
+  },
+  "calling-of-matthew": {
+    "name": "聖マタイの召命（カラヴァッジョ）",
+    "artist": "Caravaggio",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Caravaggio_-_La_vocazione_di_San_Matteo.jpg"
+  },
+  "impression-sunrise": {
+    "name": "印象・日の出（モネ）",
+    "artist": "Claude Monet",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Monet_-_Impression,_Sunrise.jpg"
+  },
+  "great-wave": {
+    "name": "神奈川沖浪裏（葛飾北斎）",
+    "artist": "Katsushika Hokusai",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Tsunami_by_hokusai_19th_century.jpg"
   }
 }

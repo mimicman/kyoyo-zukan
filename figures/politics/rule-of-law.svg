@@ -1,0 +1,45 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <path d="M180 14 V200" class="st-line" stroke-width="1.5"/>
+
+  <!-- 人の支配：王が法の上 -->
+  <rect x="22" y="14" width="142" height="28" rx="10" class="bgc st-soft" stroke-width="1.5"/>
+  <text x="93" y="33" class="t-m mid soft">人の支配</text>
+  <path d="M73 84 V62 L83 72 L93 56 L103 72 L113 62 V84 Z" class="soft"/>
+  <path d="M93 88 V104" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <rect x="68" y="108" width="50" height="24" rx="4" class="bgc st-soft" stroke-width="1.5"/>
+  <text x="93" y="125" class="t-s mid soft">法</text>
+  <path d="M93 136 V150" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <circle cx="71" cy="162" r="5" class="soft"/>
+  <circle cx="82" cy="162" r="5" class="soft"/>
+  <circle cx="93" cy="162" r="5" class="soft"/>
+  <circle cx="104" cy="162" r="5" class="soft"/>
+  <circle cx="115" cy="162" r="5" class="soft"/>
+  <text x="93" y="194" class="t-s mid soft">王が法より上</text>
+
+  <!-- 法の支配：法が全員の上 -->
+  <rect x="196" y="14" width="142" height="28" rx="10" class="fl"/>
+  <text x="267" y="33" class="t-m mid on">法の支配</text>
+  <rect x="196" y="56" width="142" height="34" rx="6" class="fl"/>
+  <text x="267" y="79" class="t-l mid on">法</text>
+  <path d="M230 92 V108" class="st-f" stroke-width="2" marker-end="url(#a-politics)"/>
+  <path d="M300 92 V114" class="st-f" stroke-width="2" marker-end="url(#a-politics)"/>
+  <path d="M215 136 V120 L222 127 L230 114 L238 127 L245 120 V136 Z" class="fl"/>
+  <circle cx="284" cy="126" r="5" class="ink"/>
+  <circle cx="292" cy="126" r="5" class="ink"/>
+  <circle cx="300" cy="126" r="5" class="ink"/>
+  <circle cx="308" cy="126" r="5" class="ink"/>
+  <circle cx="316" cy="126" r="5" class="ink"/>
+  <path d="M206 144 H328" class="st-f dash" stroke-width="1.5"/>
+  <text x="230" y="160" class="t-xs mid ink">王</text>
+  <text x="300" y="160" class="t-xs mid ink">国民</text>
+  <text x="267" y="194" class="t-s mid ink" font-weight="700">王も法に従う</text>
+
+  <!-- 始まり：マグナ・カルタ -->
+  <rect x="12" y="212" width="336" height="60" rx="12" class="tint"/>
+  <rect x="24" y="226" width="24" height="32" rx="3" class="paper st-f" stroke-width="1.5"/>
+  <path d="M29 234 H43 M29 240 H43 M29 246 H39" class="st-f" stroke-width="1.5"/>
+  <text x="58" y="238" class="t-m ink">1215 マグナ・カルタ</text>
+  <text x="58" y="258" class="t-xs soft">王の権力を文書でしばる</text>
+  <path d="M220 242 H244" class="st-f" stroke-width="2" marker-end="url(#a-politics)"/>
+  <text x="252" y="247" class="t-m fl">立憲主義へ</text>
+</svg>

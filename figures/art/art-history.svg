@@ -1,0 +1,51 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：見たままに近い度合い（おおまかな傾向） -->
+  <text x="14" y="20" class="t-xs soft">見たままに近い</text>
+  <path d="M34 124 V40 M92 124 V34 M150 124 V38 M208 124 V62 M266 124 V84 M324 124 V98" class="st-line dash" stroke-width="1.2"/>
+  <path d="M34 40 C60 34 70 34 92 34 C120 34 130 36 150 38 C175 42 190 52 208 62 C230 72 248 80 266 84 C290 90 305 96 324 98" class="st-f" stroke-width="3" stroke-linecap="round"/>
+  <g class="fl">
+    <circle cx="34" cy="40" r="4"/><circle cx="92" cy="34" r="4"/><circle cx="150" cy="38" r="4"/>
+    <circle cx="208" cy="62" r="4"/><circle cx="266" cy="84" r="4"/><circle cx="324" cy="98" r="4"/>
+  </g>
+
+  <!-- 時代ごとの描き方の目印 -->
+  <g class="paper st-soft" stroke-width="1.5">
+    <circle cx="34" cy="150" r="22"/><circle cx="92" cy="150" r="22"/><circle cx="150" cy="150" r="22"/>
+    <circle cx="208" cy="150" r="22"/><circle cx="266" cy="150" r="22"/><circle cx="324" cy="150" r="22"/>
+  </g>
+  <!-- ルネサンス：遠近法 -->
+  <path d="M16 162 L34 148 L52 162 M20 138 L34 148 L48 138 M34 148 V162" class="st-f" stroke-width="1.8"/>
+  <!-- バロック：明暗 -->
+  <path d="M92 128 A22 22 0 0 0 92 172Z" class="soft"/>
+  <circle cx="100" cy="146" r="7" class="fl"/>
+  <!-- ロマン主義・写実主義：風景 -->
+  <path d="M132 162 L143 146 L150 154 L159 140 L169 162Z" class="fl"/>
+  <circle cx="141" cy="138" r="4" class="soft"/>
+  <!-- 印象派：色の点 -->
+  <g class="fl"><circle cx="198" cy="142" r="4"/><circle cx="214" cy="140" r="4"/><circle cx="206" cy="154" r="4"/><circle cx="220" cy="156" r="4"/><circle cx="196" cy="160" r="3"/></g>
+  <g class="soft"><circle cx="206" cy="142" r="3.5"/><circle cx="198" cy="151" r="3.5"/><circle cx="214" cy="149" r="3.5"/><circle cx="212" cy="163" r="3"/></g>
+  <!-- キュビスム：面に分解 -->
+  <path d="M254 162 L258 138 L272 144 L280 160Z" class="tint"/>
+  <path d="M254 162 L258 138 L272 144 L280 160Z M258 138 L268 152 L272 144 M268 152 L254 162 M268 152 L280 160" class="st-f" stroke-width="1.8" stroke-linejoin="round"/>
+  <!-- 抽象：色と線だけ -->
+  <rect x="310" y="136" width="28" height="28" class="st" stroke-width="2"/>
+  <rect x="310" y="136" width="12" height="14" class="fl"/>
+  <path d="M322 136 V164 M310 150 H338" class="st" stroke-width="2"/>
+
+  <!-- 名前と時代 -->
+  <g class="t-xs mid ink" font-weight="700">
+    <text x="34" y="190">ルネサンス</text><text x="92" y="190">バロック</text><text x="150" y="190">ロマン主義</text>
+    <text x="208" y="190">印象派</text><text x="266" y="190">キュビスム</text><text x="324" y="190">抽象</text>
+  </g>
+  <text x="150" y="204" class="t-xs mid ink">写実主義</text>
+  <g class="mid soft" font-size="9.5">
+    <text x="34" y="222">15〜16世紀</text><text x="92" y="222">17世紀</text><text x="150" y="222">19世紀</text>
+    <text x="208" y="222">19世紀後半</text><text x="266" y="222">20世紀初め</text><text x="324" y="222">20世紀</text>
+  </g>
+
+  <!-- 大きなまとまり -->
+  <path d="M14 234 V240 H170 V234 M190 234 V240 H226 V234 M246 234 V240 H346 V234" class="st-f" stroke-width="1.5"/>
+  <text x="92" y="258" class="t-xs mid fl">見たままを極める</text>
+  <text x="208" y="258" class="t-xs mid fl">光へ</text>
+  <text x="296" y="258" class="t-xs mid fl">形と色そのものへ</text>
+</svg>

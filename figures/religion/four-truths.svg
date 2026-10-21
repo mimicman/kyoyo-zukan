@@ -1,0 +1,49 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上段：苦とその原因 -->
+  <circle cx="70" cy="62" r="28" class="soft"/>
+  <text x="70" y="70" class="t-xl mid on">苦</text>
+  <circle cx="200" cy="62" r="28" class="soft" opacity="0.7"/>
+  <text x="200" y="70" class="t-xl mid on">集</text>
+  <path d="M168 62 H106" class="st-soft" stroke-width="2.5" marker-end="url(#a-soft)"/>
+  <text x="136" y="54" class="t-xs mid soft">原因</text>
+  <text x="70" y="108" class="t-s mid ink">人生は苦</text>
+  <text x="70" y="122" class="t-xs mid soft">（病状）</text>
+  <text x="200" y="108" class="t-s mid ink">欲・執着</text>
+  <text x="200" y="122" class="t-xs mid soft">（病因）</text>
+
+  <!-- 下段：苦が消えた状態と、そこへの道 -->
+  <circle cx="70" cy="180" r="28" class="fl"/>
+  <text x="70" y="188" class="t-xl mid on">滅</text>
+  <circle cx="200" cy="180" r="28" class="fl" opacity="0.8"/>
+  <text x="200" y="188" class="t-xl mid on">道</text>
+  <path d="M168 180 H106" class="st-f" stroke-width="2.5" marker-end="url(#a-religion)"/>
+  <text x="136" y="172" class="t-xs mid fl">方法</text>
+  <text x="70" y="226" class="t-s mid ink">苦が消える</text>
+  <text x="70" y="240" class="t-xs mid soft">（回復）</text>
+  <text x="200" y="226" class="t-s mid ink">修行する</text>
+  <text x="200" y="240" class="t-xs mid soft">（治療）</text>
+
+  <!-- 苦から滅へ -->
+  <path d="M30 86 C14 110 14 140 34 162" class="st-f dash" stroke-width="1.5" marker-end="url(#a-religion)"/>
+
+  <!-- 番号 -->
+  <text x="40" y="36" class="t-xs soft">1</text>
+  <text x="170" y="36" class="t-xs soft">2</text>
+  <text x="40" y="154" class="t-xs soft">3</text>
+  <text x="170" y="154" class="t-xs soft">4</text>
+
+  <!-- 八正道の輪 -->
+  <path d="M230 180 H262" class="st-f dash" stroke-width="1.5"/>
+  <circle cx="300" cy="180" r="36" class="tint st-f" stroke-width="3"/>
+  <path d="M300 144 V216 M264 180 H336 M274.5 154.5 L325.5 205.5 M325.5 154.5 L274.5 205.5" class="st-f" stroke-width="2"/>
+  <circle cx="300" cy="180" r="9" class="fl"/>
+  <text x="300" y="236" class="t-s mid ink">八正道</text>
+  <text x="300" y="250" class="t-xs mid soft">8つの正しい道</text>
+
+  <!-- ブッダ（坐像の形） -->
+  <circle cx="300" cy="62" r="34" class="tint"/>
+  <circle cx="300" cy="46" r="9" class="soft"/>
+  <path d="M282 86 C282 66 290 58 300 58 C310 58 318 66 318 86Z" class="soft"/>
+  <path d="M274 88 Q300 78 326 88" class="st-soft" stroke-width="3" stroke-linecap="round"/>
+  <text x="300" y="112" class="t-xs mid soft">ブッダが説いた</text>
+</svg>

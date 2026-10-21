@@ -1,0 +1,81 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 行の見出し -->
+  <text x="20" y="88" class="t-xs mid soft" transform="rotate(-90 20 88)">自然状態</text>
+  <text x="20" y="200" class="t-xs mid soft" transform="rotate(-90 20 200)">国家</text>
+
+  <!-- 3人の名前 -->
+  <rect x="32" y="12" width="102" height="28" rx="8" class="fl"/>
+  <text x="83" y="31" class="t-m mid on">ホッブズ</text>
+  <rect x="140" y="12" width="102" height="28" rx="8" class="fl"/>
+  <text x="191" y="31" class="t-m mid on">ロック</text>
+  <rect x="248" y="12" width="102" height="28" rx="8" class="fl"/>
+  <text x="299" y="31" class="t-m mid on">ルソー</text>
+
+  <!-- 自然状態 -->
+  <rect x="32" y="46" width="102" height="82" rx="10" class="bgc"/>
+  <rect x="140" y="46" width="102" height="82" rx="10" class="bgc"/>
+  <rect x="248" y="46" width="102" height="82" rx="10" class="bgc"/>
+  <!-- ホッブズ：争い -->
+  <path d="M68 66 L73 60 L78 68 L83 60 L88 68 L93 60 L98 66 M66 74 L71 80 L69 86 L76 88 M100 74 L95 80 L97 86 L90 88" class="st-f" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="60" cy="68" r="6" class="ink"/>
+  <circle cx="106" cy="68" r="6" class="ink"/>
+  <circle cx="83" cy="96" r="6" class="ink"/>
+  <text x="83" y="118" class="t-xs mid ink">争いだらけ</text>
+  <!-- ロック：自由だが不安定 -->
+  <circle cx="191" cy="80" r="26" class="st-soft dash" stroke-width="1.5"/>
+  <circle cx="177" cy="72" r="6" class="ink"/>
+  <circle cx="205" cy="72" r="6" class="ink"/>
+  <circle cx="191" cy="92" r="6" class="ink"/>
+  <text x="191" y="120" class="t-xs mid ink">自由だが不安定</text>
+  <!-- ルソー：自由で平和 -->
+  <path d="M276 96 C286 88 312 88 322 96" class="st-f" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="281" cy="76" r="6" class="ink"/>
+  <circle cx="299" cy="68" r="6" class="ink"/>
+  <circle cx="317" cy="76" r="6" class="ink"/>
+  <text x="299" y="118" class="t-xs mid ink">自由で平和</text>
+
+  <!-- 契約 -->
+  <path d="M83 130 V144" class="st-f" stroke-width="2" marker-end="url(#a-politics)"/>
+  <path d="M191 130 V144" class="st-f" stroke-width="2" marker-end="url(#a-politics)"/>
+  <path d="M299 130 V144" class="st-f" stroke-width="2" marker-end="url(#a-politics)"/>
+  <text x="91" y="142" class="t-xs soft">契約</text>
+  <text x="199" y="142" class="t-xs soft">契約</text>
+  <text x="307" y="142" class="t-xs soft">契約</text>
+
+  <!-- 国家 -->
+  <rect x="32" y="150" width="102" height="100" rx="10" class="tint"/>
+  <rect x="140" y="150" width="102" height="100" rx="10" class="tint"/>
+  <rect x="248" y="150" width="102" height="100" rx="10" class="tint"/>
+  <!-- ホッブズ：強い主権者に従う -->
+  <path d="M59 204 L77 180 M71 204 L80 182 M83 204 V184 M95 204 L86 182 M107 204 L89 180" class="st-soft" stroke-width="1.5"/>
+  <circle cx="83" cy="172" r="14" class="fl"/>
+  <circle cx="59" cy="210" r="5" class="ink"/>
+  <circle cx="71" cy="210" r="5" class="ink"/>
+  <circle cx="83" cy="210" r="5" class="ink"/>
+  <circle cx="95" cy="210" r="5" class="ink"/>
+  <circle cx="107" cy="210" r="5" class="ink"/>
+  <text x="83" y="238" class="t-xs mid ink">強い国家に従う</text>
+  <!-- ロック：権利を守る政府。守らなければ取り替える -->
+  <rect x="163" y="158" width="56" height="22" rx="6" class="fl"/>
+  <text x="191" y="173" class="t-xs mid on">政府</text>
+  <path d="M191 182 V196" class="st-f" stroke-width="2" marker-end="url(#a-politics)"/>
+  <circle cx="175" cy="210" r="5" class="ink"/>
+  <circle cx="191" cy="210" r="5" class="ink"/>
+  <circle cx="207" cy="210" r="5" class="ink"/>
+  <path d="M216 210 C232 206 234 184 222 172" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="191" y="238" class="t-xs mid ink">権利を守る政府</text>
+  <!-- ルソー：みんなで決める -->
+  <circle cx="299" cy="190" r="10" class="fl"/>
+  <circle cx="299" cy="166" r="5" class="ink"/>
+  <circle cx="320" cy="178" r="5" class="ink"/>
+  <circle cx="320" cy="202" r="5" class="ink"/>
+  <circle cx="299" cy="214" r="5" class="ink"/>
+  <circle cx="278" cy="202" r="5" class="ink"/>
+  <circle cx="278" cy="178" r="5" class="ink"/>
+  <circle cx="299" cy="190" r="24" class="st-soft" stroke-width="1"/>
+  <text x="299" y="238" class="t-xs mid ink">みんなで決める</text>
+
+  <!-- 影響 -->
+  <text x="191" y="268" class="t-xs mid soft">→ アメリカ独立</text>
+  <text x="299" y="268" class="t-xs mid soft">→ フランス革命</text>
+</svg>

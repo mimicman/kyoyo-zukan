@@ -1,0 +1,49 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- システム1：速い直感 -->
+  <circle cx="90" cy="58" r="34" class="fl"/>
+  <path d="M96 32 L74 62 H88 L82 86 L106 52 H92 Z" class="on"/>
+  <text x="90" y="114" class="t-m mid fl">システム1</text>
+  <text x="90" y="130" class="t-xs mid soft">速い・直感</text>
+
+  <!-- システム2：遅い熟考 -->
+  <circle cx="270" cy="58" r="34" class="tint st-f" stroke-width="2"/>
+  <path d="M248 78 H258 V68 H268 V58 H278 V48 H288 V38" class="st-f" stroke-width="2.5" stroke-linejoin="round"/>
+  <text x="270" y="114" class="t-m mid ink">システム2</text>
+  <text x="270" y="130" class="t-xs mid soft">遅い・じっくり</text>
+
+  <!-- 2はたまに1を見直す -->
+  <path d="M232 64 H130" class="st-f dash" stroke-width="2" marker-end="url(#a-psychology)"/>
+  <text x="180" y="54" class="t-xs mid fl">たまに見直す</text>
+
+  <!-- 直感から生まれるクセ -->
+  <path d="M90 138 V158 M64 158 H296" class="st-soft" stroke-width="1.5"/>
+  <path d="M64 158 V176" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M180 158 V176" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M296 158 V176" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="240" y="152" class="t-xs mid soft">決まったクセ</text>
+
+  <rect x="10" y="182" width="108" height="90" rx="12" class="tint"/>
+  <rect x="126" y="182" width="108" height="90" rx="12" class="tint"/>
+  <rect x="242" y="182" width="108" height="90" rx="12" class="tint"/>
+
+  <!-- 確証バイアス：合う情報だけ拾う -->
+  <circle cx="58" cy="212" r="18" class="paper st-f" stroke-width="2"/>
+  <path d="M71 225 L82 236" class="st-f" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="52" cy="208" r="4" class="fl"/>
+  <circle cx="63" cy="216" r="4" class="fl"/>
+  <circle cx="96" cy="200" r="4" class="soft"/>
+  <circle cx="28" cy="236" r="4" class="soft"/>
+  <circle cx="98" cy="222" r="4" class="soft"/>
+  <text x="64" y="262" class="t-xs mid ink">確証バイアス</text>
+
+  <!-- アンカリング：最初の数字に引きずられる -->
+  <circle cx="180" cy="196" r="5" class="st-f" stroke-width="2.5"/>
+  <path d="M180 201 V236 M170 208 H190 M162 222 Q164 238 180 238 Q196 238 198 222" class="st-f" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="180" y="262" class="t-xs mid ink">アンカリング</text>
+
+  <!-- ハロー効果：一つの長所で全体を高く見る -->
+  <ellipse cx="296" cy="200" rx="15" ry="4.5" class="st-f" stroke-width="2"/>
+  <circle cx="296" cy="218" r="10" class="fl"/>
+  <path d="M278 244 Q296 222 314 244 Z" class="fl"/>
+  <text x="296" y="262" class="t-xs mid ink">ハロー効果</text>
+</svg>

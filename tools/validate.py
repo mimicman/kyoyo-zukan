@@ -1,4 +1,4 @@
-"""data/cards.json と図・画像を検査する。問題があれば一覧を出して終了コード1を返す。
+"""カードのデータ（data/index.json・data/fields/*.json）と図・画像を検査する。問題があれば一覧を出して終了コード1を返す。
 
 検査すること:
     - 文字数の上限（見出し15字・ひとこと30字・キーワード説明40字・キーワード3つまで・つながり2件まで）
@@ -15,7 +15,8 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+from kyoyo_data import ROOT, load
+
 LIMITS = {"title": 15, "line": 30, "note": 40, "keywords": 3, "links": 2}
 COLOR_ATTR = re.compile(r'\b(fill|stroke|stop-color)="(#|rgb|hsl)|style="[^"]*(fill|stroke|color)\s*:', re.I)
 
@@ -35,10 +36,9 @@ def check_svg(path: Path) -> list[str]:
 
 def main() -> int:
     """全カードを検査して結果を表示する"""
-    data = json.loads((ROOT / "data" / "cards.json").read_text(encoding="utf-8"))
+    data = load()
     credits_path = ROOT / "images" / "credits.json"
     credits = json.loads(credits_path.read_text(encoding="utf-8")) if credits_path.exists() else {}
-    fields = {f["id"] for f in data["fields"]}
     keys = [f"{c['field']}/{c['id']}" for c in data["cards"]]
     errors: list[str] = []
 
@@ -49,8 +49,6 @@ def main() -> int:
 
     for c in data["cards"]:
         key = f"{c['field']}/{c['id']}"
-        if c["field"] not in fields:
-            errors.append(f"{key}: 分野 {c['field']} が fields にない")
         for name in ("title", "line"):
             if len(c[name]) > LIMITS[name]:
                 errors.append(f"{key}: {name} が{LIMITS[name]}字を超えている（{len(c[name])}字）")

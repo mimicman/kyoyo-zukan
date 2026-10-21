@@ -1,0 +1,54 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 簡略地図（形と位置はおおよそ） -->
+  <path d="M10 70 L44 78 L52 102 L46 122 L30 132 L10 128 Z" class="bgc st-line" stroke-width="1.5"/>
+  <text x="28" y="106" class="t-xs mid soft">朝鮮</text>
+  <path d="M262 22 L298 14 L330 28 L322 52 L296 60 L276 56 L268 44 Z" class="tint"/>
+  <path d="M118 146 L150 132 L190 124 L222 110 L244 88 L258 68 L276 66 L280 88 L268 110 L246 132 L214 146 L180 152 L150 160 L124 162 Z" class="tint"/>
+  <path d="M150 166 L184 160 L192 172 L160 178 Z" class="tint"/>
+  <path d="M90 150 L114 148 L120 166 L112 188 L94 186 L86 168 Z" class="tint"/>
+  <ellipse cx="66" cy="132" rx="4" ry="7" class="tint"/>
+  <circle cx="62" cy="200" r="3" class="tint"/>
+  <circle cx="50" cy="206" r="3" class="tint"/>
+  <circle cx="38" cy="210" r="3" class="tint"/>
+
+  <!-- 4つの窓口と相手 -->
+  <path d="M62 126 L50 114" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+  <circle cx="66" cy="132" r="5" class="fl"/>
+  <text x="76" y="116" class="t-s ink" font-weight="700">対馬</text>
+
+  <path d="M86 166 L60 166" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+  <circle cx="91" cy="166" r="5" class="fl"/>
+  <text x="56" y="160" class="t-s end ink" font-weight="700">長崎</text>
+  <text x="6" y="182" class="t-xs soft">オランダ・中国</text>
+
+  <path d="M100 188 L70 198" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+  <circle cx="104" cy="184" r="5" class="fl"/>
+  <text x="122" y="196" class="t-s ink" font-weight="700">薩摩</text>
+  <text x="34" y="222" class="t-xs soft">琉球</text>
+
+  <path d="M276 54 L290 44" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+  <circle cx="273" cy="57" r="5" class="fl"/>
+  <text x="256" y="52" class="t-s end ink" font-weight="700">松前</text>
+  <text x="306" y="38" class="t-xs mid ink">アイヌ</text>
+
+  <!-- 黒船 -->
+  <path d="M322 168 L250 140" class="st dash" stroke-width="2" marker-end="url(#a-ink)"/>
+  <path d="M312 178 H348 L340 188 H318 Z" class="ink"/>
+  <path d="M326 178 V168 M336 178 V170" class="st" stroke-width="2"/>
+  <text x="330" y="204" class="t-s mid ink" font-weight="700">黒船</text>
+  <rect x="236" y="126" width="8" height="8" class="ink"/>
+  <text x="232" y="122" class="t-xs end soft halo">江戸</text>
+
+  <!-- 流れ -->
+  <rect x="12" y="228" width="100" height="44" rx="10" class="tint"/>
+  <text x="62" y="246" class="t-s mid ink">4つの窓口</text>
+  <text x="62" y="263" class="t-xs mid soft">約200年</text>
+  <path d="M114 250 H124" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+  <rect x="128" y="228" width="100" height="44" rx="10" class="fl"/>
+  <text x="178" y="247" class="t-m mid on">1853</text>
+  <text x="178" y="264" class="t-xs mid on">ペリー来航</text>
+  <path d="M230 250 H240" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+  <rect x="244" y="228" width="104" height="44" rx="10" class="fl"/>
+  <text x="296" y="247" class="t-m mid on">1854</text>
+  <text x="296" y="264" class="t-xs mid on">和親条約で開国</text>
+</svg>

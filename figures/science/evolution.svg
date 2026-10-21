@@ -1,0 +1,49 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 変異：一匹ずつ少し違う -->
+  <circle cx="24" cy="58" r="7" class="fl"/>
+  <circle cx="42" cy="58" r="7" class="soft"/>
+  <circle cx="60" cy="58" r="7" class="fl"/>
+  <circle cx="78" cy="58" r="7" class="soft"/>
+  <circle cx="96" cy="58" r="7" class="soft"/>
+  <text x="60" y="94" class="t-m mid ink">変異</text>
+  <text x="60" y="110" class="t-xs mid soft">少しずつ違う</text>
+
+  <path d="M110 58 H138" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+
+  <!-- 自然選択：合わないものは減る -->
+  <circle cx="144" cy="58" r="7" class="fl"/>
+  <circle cx="162" cy="58" r="7" class="soft" opacity="0.3"/>
+  <circle cx="180" cy="58" r="7" class="fl"/>
+  <circle cx="198" cy="58" r="7" class="soft" opacity="0.3"/>
+  <circle cx="216" cy="58" r="7" class="soft" opacity="0.3"/>
+  <path d="M157 53 L167 63 M167 53 L157 63 M193 53 L203 63 M203 53 L193 63 M211 53 L221 63 M221 53 L211 63" class="st" stroke-width="1.5"/>
+  <text x="180" y="94" class="t-m mid ink">自然選択</text>
+  <text x="180" y="110" class="t-xs mid soft">合う者が残る</text>
+
+  <path d="M230 58 H258" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+
+  <!-- 適応：世代を重ねて広がる -->
+  <circle cx="264" cy="58" r="7" class="fl"/>
+  <circle cx="282" cy="58" r="7" class="fl"/>
+  <circle cx="300" cy="58" r="7" class="fl"/>
+  <circle cx="318" cy="58" r="7" class="fl"/>
+  <circle cx="336" cy="58" r="7" class="fl"/>
+  <text x="300" y="94" class="t-m mid fl">適応</text>
+  <text x="300" y="110" class="t-xs mid soft">世代を重ねて</text>
+
+  <!-- 系統樹：共通の祖先から枝分かれ -->
+  <path d="M28 132 H332" class="st-line" stroke-width="1"/>
+  <path d="M180 262 V238 M90 238 H255 M90 238 V200 M60 200 H120 M60 200 V156 M120 200 V156 M255 238 V215 M210 215 H300 M300 215 V156 M210 215 V185 M180 185 H240 M180 185 V156 M240 185 V156" class="st-f" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M120 200 H146 V176" class="st-soft dash" stroke-width="2"/>
+  <path d="M141 171 L151 181 M151 171 L141 181" class="st-soft" stroke-width="1.5"/>
+  <circle cx="60" cy="152" r="5" class="fl"/>
+  <circle cx="120" cy="152" r="5" class="fl"/>
+  <circle cx="180" cy="152" r="5" class="fl"/>
+  <circle cx="240" cy="152" r="5" class="fl"/>
+  <circle cx="300" cy="152" r="5" class="fl"/>
+  <circle cx="180" cy="262" r="5" class="ink"/>
+  <text x="192" y="266" class="t-xs soft">共通の祖先</text>
+  <text x="314" y="156" class="t-xs soft">今の種</text>
+  <text x="156" y="196" class="t-xs soft">絶滅</text>
+  <text x="344" y="266" class="t-s end ink">系統樹</text>
+</svg>

@@ -16,14 +16,13 @@
 import argparse
 import functools
 import http.server
-import json
 import sys
 import threading
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
-ROOT = Path(__file__).resolve().parent.parent
+from kyoyo_data import ROOT, load
 VIEWPORTS = {"mobile": (375, 812), "desktop": (1200, 900)}
 SCHEMES = ("light", "dark")
 
@@ -46,9 +45,9 @@ def serve() -> tuple[http.server.ThreadingHTTPServer, str]:
 
 def routes(cards: list[str]) -> list[str]:
     """確認する画面の一覧（# 以降）"""
-    data = json.loads((ROOT / "data" / "cards.json").read_text(encoding="utf-8"))
     if cards:
         return cards
+    data = load()
     return ["", *[f["id"] for f in data["fields"]], *[f"{c['field']}/{c['id']}" for c in data["cards"]]]
 
 

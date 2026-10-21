@@ -1,0 +1,35 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 時代のまとまり -->
+  <path d="M30 96 V90 H180 V96" class="st-soft" stroke-width="1.5"/>
+  <text x="105" y="82" class="t-xs mid soft">18世紀の市民革命</text>
+  <text x="280" y="62" class="t-xs mid soft">国際連合で採択</text>
+
+  <!-- だんだん広がる円 -->
+  <circle cx="56" cy="128" r="20" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="56" cy="122" r="4" class="fl"/>
+  <path d="M48 138 C48 128 64 128 64 138" class="fl"/>
+  <path d="M80 128 H114" class="st-f" stroke-width="2" marker-end="url(#a-politics)"/>
+  <circle cx="150" cy="128" r="30" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="141" cy="120" r="5" class="fl"/>
+  <path d="M131 140 C131 128 151 128 151 140" class="fl"/>
+  <circle cx="160" cy="120" r="5" class="fl"/>
+  <path d="M150 140 C150 128 170 128 170 140" class="fl"/>
+  <path d="M184 128 H218" class="st-f dash" stroke-width="2" marker-end="url(#a-politics)"/>
+  <text x="201" y="118" class="t-xs mid soft">約160年</text>
+  <circle cx="280" cy="128" r="56" class="tint st-f" stroke-width="2"/>
+  <ellipse cx="280" cy="128" rx="24" ry="56" class="st-f" stroke-width="1.5"/>
+  <path d="M224 128 H336 M232 100 H328 M232 156 H328 M280 72 V184" class="st-f" stroke-width="1.5"/>
+
+  <!-- 年表 -->
+  <path d="M20 196 H340" class="st-soft" stroke-width="1.5"/>
+  <path d="M56 192 V200 M150 192 V200 M280 192 V200" class="st-soft" stroke-width="1.5"/>
+  <text x="56" y="218" class="t-m mid ink">1776</text>
+  <text x="56" y="236" class="t-xs mid ink">アメリカ独立宣言</text>
+  <text x="56" y="252" class="t-xs mid soft">自然権をうたう</text>
+  <text x="150" y="218" class="t-m mid ink">1789</text>
+  <text x="150" y="236" class="t-xs mid ink">フランス人権宣言</text>
+  <text x="150" y="252" class="t-xs mid soft">人と市民の権利</text>
+  <text x="280" y="218" class="t-m mid fl">1948</text>
+  <text x="280" y="236" class="t-xs mid ink">世界人権宣言</text>
+  <text x="280" y="252" class="t-xs mid soft">すべての人・国へ</text>
+</svg>

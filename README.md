@@ -21,9 +21,11 @@
 | `index.html` | 画面の土台と、図で使う矢印（`url(#a-ink)` `url(#a-soft)` `url(#a-<分野>)`） |
 | `assets/style.css` | 配色（ライト/ダーク）・レイアウト・図のクラス |
 | `assets/app.js` | 画面の切り替え・スワイプ・キーワード表示・画像の拡大 |
-| `data/cards.json` | 分野とカードのデータ。**文字はすべてここに書く** |
+| `data/index.json` | ホームの画像と、分野の一覧（並び順・名前・アイコン） |
+| `data/fields/<分野>.json` | その分野のカード。**文字はすべてここに書く** |
 | `figures/<分野>/<カードid>.svg` | カードの図解 |
 | `images/<id>.jpg` / `credits.json` / `CREDITS.md` | パブリックドメインの画像と出典 |
+| `tools/kyoyo_data.py` | 上の2種類のデータを読んでまとめる（ツール共通） |
 | `tools/validate.py` | データの検査（文字数・ファイルの有無・出典・図の決まり） |
 | `tools/check_layout.py` | 全画面の表示確認（Playwright） |
 | `tools/fetch_commons.py` | Wikimedia Commons から画像を取得して出典を記録 |
@@ -31,10 +33,10 @@
 ## カードを1枚足す
 
 1. `figures/<分野>/<id>.svg` に図を描く（下の「図の決まり」）
-2. `data/cards.json` の `cards` に追記する。同じ分野の中では並び順がそのまま番号になる
+2. `data/fields/<分野>.json` の `cards` に追記する。並び順がそのまま番号になる
    ```json
    {
-     "id": "supply-demand", "field": "economics", "title": "需要と供給", "era": "18世紀〜",
+     "id": "supply-demand", "title": "需要と供給", "era": "18世紀〜",
      "line": "買いたい量と売りたい量が釣り合う所で、価格が決まる",
      "image": { "id": "adam-smith", "pos": "50% 25%" },
      "keywords": [{ "word": "均衡価格", "note": "需要と供給がちょうど一致するときの価格" }],
@@ -52,7 +54,7 @@
 5. `<Playwright入りのpython> tools/check_layout.py <分野>/<id>` で表示を確認し、`tmp/screenshots/` の画像で図の文字の重なりを見る
 6. コミットして push
 
-分野を増やすときは、`data/cards.json` の `fields` に追加し、`assets/style.css` の分野色（`--c-<分野>` をライト・ダーク両方と `[data-field]`）と、`index.html` の矢印 `a-<分野>` を足す。
+分野を増やすときは、`data/index.json` の `fields` に追加して `data/fields/<分野>.json` を作り、`assets/style.css` の分野色（`--c-<分野>` をライト・ダーク両方と `[data-field]`）と、`index.html` の矢印 `a-<分野>` を足す。
 
 ## 文字の決まり（validate.py が検査）
 

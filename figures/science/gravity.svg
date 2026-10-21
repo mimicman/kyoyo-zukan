@@ -1,0 +1,31 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 地球 -->
+  <circle cx="80" cy="194" r="60" class="tint st-f" stroke-width="2"/>
+  <text x="80" y="200" class="t-m mid ink">地球</text>
+
+  <!-- リンゴが落ちる -->
+  <circle cx="80" cy="82" r="8" class="fl"/>
+  <path d="M80 74 Q82 68 86 66" class="st" stroke-width="1.5"/>
+  <path d="M80 96 V126" class="st-f" stroke-width="2.5" marker-end="url(#a-science)"/>
+  <text x="94" y="86" class="t-s ink">リンゴ</text>
+
+  <!-- 月も同じ力で引かれ、落ち続けている -->
+  <path d="M254 16 Q294 50 318 104" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <circle cx="288" cy="60" r="13" class="soft"/>
+  <text x="300" y="34" class="t-m ink">月</text>
+  <path d="M276 68 L148 150" class="st-f" stroke-width="2.5" marker-end="url(#a-science)"/>
+  <text x="204" y="128" class="t-s mid fl halo">同じ引力</text>
+
+  <!-- 距離の2乗に反比例 -->
+  <path d="M214 172 V250 H344" class="st" stroke-width="1.5"/>
+  <text x="214" y="166" class="t-xs mid soft">力</text>
+  <text x="344" y="266" class="t-xs end soft">距離</text>
+  <path d="M236 180 C250 215 280 236 340 244" class="st-f" stroke-width="2.5"/>
+  <path d="M236 180 V250 M276 233 V250" class="st-soft dash" stroke-width="1"/>
+  <circle cx="236" cy="180" r="4.5" class="fl"/>
+  <circle cx="276" cy="233" r="4.5" class="fl"/>
+  <text x="244" y="184" class="t-xs ink">1</text>
+  <text x="282" y="226" class="t-xs fl">1/4</text>
+  <text x="236" y="266" class="t-xs mid soft">1</text>
+  <text x="276" y="266" class="t-xs mid soft">2倍</text>
+</svg>

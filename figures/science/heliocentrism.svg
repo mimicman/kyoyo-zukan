@@ -1,0 +1,37 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左右の区切り -->
+  <path d="M180 14 V196" class="st-line" stroke-width="1.5"/>
+
+  <!-- 天動説：地球が中心 -->
+  <text x="90" y="24" class="t-m mid ink">天動説</text>
+  <circle cx="90" cy="116" r="66" class="st-soft dash" stroke-width="1.5"/>
+  <circle cx="90" cy="116" r="34" class="st-soft dash" stroke-width="1.5"/>
+  <circle cx="90" cy="116" r="11" class="ink"/>
+  <circle cx="61" cy="134" r="4" class="soft"/>
+  <circle cx="156" cy="116" r="10" class="soft"/>
+  <path d="M152 93 A66 66 0 0 0 123 59" class="st-soft" stroke-width="2.5" marker-end="url(#a-soft)"/>
+  <text x="90" y="146" class="t-xs mid ink halo">地球</text>
+  <text x="156" y="144" class="t-xs mid soft halo">太陽</text>
+  <text x="90" y="208" class="t-s mid soft">地球が中心</text>
+
+  <!-- 地動説：太陽が中心 -->
+  <text x="270" y="24" class="t-m mid fl">地動説</text>
+  <circle cx="270" cy="116" r="72" class="st-f dash" stroke-width="1.5"/>
+  <circle cx="270" cy="116" r="46" class="st-f dash" stroke-width="1.5"/>
+  <circle cx="270" cy="116" r="14" class="fl"/>
+  <circle cx="202" cy="92" r="4" class="soft"/>
+  <circle cx="303" cy="149" r="7" class="ink"/>
+  <path d="M313 134 A46 46 0 0 0 316 104" class="st-f" stroke-width="2.5" marker-end="url(#a-science)"/>
+  <text x="270" y="146" class="t-xs mid fl halo">太陽</text>
+  <text x="303" y="174" class="t-xs mid ink halo">地球</text>
+  <text x="270" y="208" class="t-s mid fl">太陽が中心</text>
+
+  <!-- 流れ：コペルニクス → ガリレオ -->
+  <path d="M24 244 H336" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <circle cx="110" cy="244" r="6" class="fl"/>
+  <circle cx="250" cy="244" r="6" class="fl"/>
+  <text x="110" y="232" class="t-xs mid soft">16世紀 太陽中心説</text>
+  <text x="250" y="232" class="t-xs mid soft">17世紀 望遠鏡で観測</text>
+  <text x="110" y="268" class="t-s mid ink">コペルニクス</text>
+  <text x="250" y="268" class="t-s mid ink">ガリレオ</text>
+</svg>

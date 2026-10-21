@@ -1,0 +1,32 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- ピラミッド（下から満たしていくとした） -->
+  <path d="M110 70 H166 L192 118 H84 Z" class="tint"/>
+  <path d="M84 118 H192 L218 166 H58 Z" class="tint"/>
+  <path d="M58 166 H218 L244 214 H32 Z" class="tint"/>
+  <path d="M32 214 H244 L270 262 H6 Z" class="tint"/>
+  <path d="M138 22 L166 70 H110 Z" class="fl"/>
+  <path d="M138 22 L270 262 H6 Z M110 70 H166 M84 118 H192 M58 166 H218 M32 214 H244" class="st-f" stroke-width="2" stroke-linejoin="round"/>
+
+  <text x="138" y="98" class="t-m mid ink">承認</text>
+  <text x="138" y="112" class="t-xs mid soft">認められる</text>
+  <text x="138" y="146" class="t-m mid ink">所属と愛</text>
+  <text x="138" y="160" class="t-xs mid soft">仲間・家族</text>
+  <text x="138" y="194" class="t-m mid ink">安全</text>
+  <text x="138" y="208" class="t-xs mid soft">身の安全・健康</text>
+  <text x="138" y="242" class="t-m mid ink">生理的</text>
+  <text x="138" y="256" class="t-xs mid soft">食事・睡眠</text>
+
+  <!-- いちばん上 -->
+  <path d="M154 46 H196" class="st-soft" stroke-width="1"/>
+  <text x="200" y="44" class="t-m fl">自己実現</text>
+  <text x="200" y="60" class="t-xs soft">力を発揮したい</text>
+
+  <!-- 欠乏欲求と成長欲求 -->
+  <path d="M282 24 H290 V66 H282" class="st-soft" stroke-width="1.5"/>
+  <text x="298" y="42" class="t-s fl">成長</text>
+  <text x="298" y="58" class="t-s fl">欲求</text>
+  <path d="M282 74 H290 V260 H282" class="st-soft" stroke-width="1.5"/>
+  <text x="298" y="164" class="t-s ink">欠乏</text>
+  <text x="298" y="180" class="t-s ink">欲求</text>
+  <path d="M342 250 V86" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+</svg>

@@ -7,7 +7,7 @@
 
 const app = document.getElementById("app");
 const svgCache = new Map();
-let data = null;      // data/cards.json
+let data = null;      // data/index.json（分野）と data/fields/*.json（カード）をまとめたもの
 let credits = {};     // images/credits.json
 let deckField = null; // いま表示しているカード列の分野（同じ分野内の移動では作り直さない）
 
@@ -292,10 +292,20 @@ window.addEventListener("hashchange", route);
 /** データを読み込んで最初の画面を出す */
 async function start() {
   try {
-    [data, credits] = await Promise.all([
-      fetch("data/cards.json").then((r) => r.json()),
+    const [index, creditsJson] = await Promise.all([
+      fetch("data/index.json").then((r) => r.json()),
       fetch("images/credits.json").then((r) => (r.ok ? r.json() : {})).catch(() => ({})),
     ]);
+    credits = creditsJson;
+    // 分野ごとのカードを並行して読み、分野の並び順でつなげる（まだカードのない分野は出さない）
+    const perField = await Promise.all(index.fields.map((f) =>
+      fetch(`data/fields/${f.id}.json`).then((r) => (r.ok ? r.json() : { cards: [] })).catch(() => ({ cards: [] }))
+        .then((j) => j.cards.map((c) => ({ ...c, field: f.id })))));
+    data = {
+      hero: index.hero,
+      fields: index.fields.filter((_, i) => perField[i].length > 0),
+      cards: perField.flat(),
+    };
   } catch {
     app.innerHTML = '<p class="wrap">データを読み込めませんでした。</p>';
     return;

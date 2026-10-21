@@ -1,0 +1,46 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 屋根：目標 -->
+  <path d="M16 76 L180 14 L344 76 Z" class="tint st-f" stroke-width="2" stroke-linejoin="round"/>
+  <text x="180" y="64" class="t-m mid ink">富国強兵・殖産興業</text>
+  <rect x="16" y="78" width="328" height="8" class="fl"/>
+
+  <!-- 4本の柱：改革 -->
+  <g>
+    <rect x="28" y="92" width="64" height="24" class="fl"/>
+    <text x="60" y="109" class="t-s mid on">廃藩置県</text>
+    <rect x="28" y="116" width="64" height="88" class="tint"/>
+    <text x="60" y="140" class="t-xs mid ink">藩をやめて</text>
+    <text x="60" y="156" class="t-xs mid ink">県を置く</text>
+    <text x="60" y="194" class="t-xs mid soft">1871</text>
+  </g>
+  <g>
+    <rect x="108" y="92" width="64" height="24" class="fl"/>
+    <text x="140" y="109" class="t-s mid on">学制</text>
+    <rect x="108" y="116" width="64" height="88" class="tint"/>
+    <text x="140" y="140" class="t-xs mid ink">全国に</text>
+    <text x="140" y="156" class="t-xs mid ink">学校を</text>
+    <text x="140" y="194" class="t-xs mid soft">1872</text>
+  </g>
+  <g>
+    <rect x="188" y="92" width="64" height="24" class="fl"/>
+    <text x="220" y="109" class="t-s mid on">徴兵令</text>
+    <rect x="188" y="116" width="64" height="88" class="tint"/>
+    <text x="220" y="140" class="t-xs mid ink">国民から</text>
+    <text x="220" y="156" class="t-xs mid ink">兵を集める</text>
+    <text x="220" y="194" class="t-xs mid soft">1873</text>
+  </g>
+  <g>
+    <rect x="268" y="92" width="64" height="24" class="fl"/>
+    <text x="300" y="109" class="t-s mid on">地租改正</text>
+    <rect x="268" y="116" width="64" height="88" class="tint"/>
+    <text x="300" y="140" class="t-xs mid ink">税を米から</text>
+    <text x="300" y="156" class="t-xs mid ink">お金に</text>
+    <text x="300" y="194" class="t-xs mid soft">1873</text>
+  </g>
+
+  <!-- 土台：出発点 -->
+  <rect x="16" y="208" width="328" height="30" rx="4" class="fl"/>
+  <text x="180" y="229" class="t-m mid on">1868 明治維新</text>
+  <rect x="6" y="242" width="348" height="30" rx="4" class="bgc"/>
+  <text x="180" y="262" class="t-s mid soft">江戸幕府が終わり、天皇中心の新政府へ</text>
+</svg>

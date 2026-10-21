@@ -1,0 +1,36 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 3つの権力 -->
+  <circle cx="180" cy="50" r="36" class="fl"/>
+  <text x="180" y="52" class="t-l mid on">立法</text>
+  <text x="180" y="70" class="t-xs mid on">国会</text>
+  <circle cx="64" cy="214" r="36" class="fl"/>
+  <text x="64" y="216" class="t-l mid on">行政</text>
+  <text x="64" y="234" class="t-xs mid on">内閣</text>
+  <circle cx="296" cy="214" r="36" class="fl"/>
+  <text x="296" y="216" class="t-l mid on">司法</text>
+  <text x="296" y="234" class="t-xs mid on">裁判所</text>
+
+  <!-- 立法 ⇄ 行政 -->
+  <path d="M150.6 82.7 L83.6 176.3" class="st-f" stroke-width="2" marker-end="url(#a-politics)"/>
+  <path d="M93.4 183.3 L160.4 89.7" class="st-f" stroke-width="2" marker-end="url(#a-politics)"/>
+  <text x="108" y="124" class="t-xs end ink">不信任決議</text>
+  <text x="128" y="148" class="t-xs ink">解散</text>
+
+  <!-- 立法 ⇄ 司法 -->
+  <path d="M209.4 82.7 L276.4 176.3" class="st-f" stroke-width="2" marker-end="url(#a-politics)"/>
+  <path d="M266.6 183.3 L199.6 89.7" class="st-f" stroke-width="2" marker-end="url(#a-politics)"/>
+  <text x="252" y="124" class="t-xs ink">弾劾裁判</text>
+  <text x="234" y="148" class="t-xs end ink">違憲審査</text>
+
+  <!-- 行政 ⇄ 司法 -->
+  <path d="M104 208 H254" class="st-f" stroke-width="2" marker-end="url(#a-politics)"/>
+  <path d="M256 220 H106" class="st-f" stroke-width="2" marker-end="url(#a-politics)"/>
+  <text x="180" y="200" class="t-xs mid ink">裁判官の任命</text>
+  <text x="180" y="238" class="t-xs mid ink">命令・処分の審査</text>
+
+  <!-- まん中に国民 -->
+  <path d="M180 152 V94" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <circle cx="180" cy="170" r="17" class="tint st-f" stroke-width="1.5"/>
+  <text x="180" y="174" class="t-xs mid ink">国民</text>
+  <text x="180" y="266" class="t-xs mid soft">権力を分けて、行きすぎを止め合う</text>
+</svg>

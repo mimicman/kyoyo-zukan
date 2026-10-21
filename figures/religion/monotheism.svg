@@ -1,0 +1,31 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 3つの宗教の流れ（左→右が時間） -->
+  <rect x="16" y="40" width="328" height="26" rx="13" class="fl"/>
+  <text x="30" y="58" class="t-s on" font-weight="700">ユダヤ教</text>
+  <text x="332" y="57" class="t-xs end on">古代〜</text>
+  <text x="322" y="84" class="t-xs end soft">ヘブライ語聖書（旧約）</text>
+
+  <path d="M118 66 C118 100 126 123 146 123" class="st-f" stroke-width="3" marker-end="url(#a-religion)"/>
+  <rect x="150" y="110" width="160" height="26" rx="13" class="fl"/>
+  <text x="162" y="128" class="t-s on" font-weight="700">キリスト教</text>
+  <text x="298" y="127" class="t-xs end on">1世紀〜</text>
+  <text x="306" y="154" class="t-xs end soft">＋新約聖書</text>
+
+  <!-- イスラム教はユダヤ教・キリスト教の両方の流れを受ける -->
+  <path d="M330 66 V192" class="st-f" stroke-width="3" marker-end="url(#a-religion)"/>
+  <path d="M250 136 C250 168 290 166 290 192" class="st-f" stroke-width="3" marker-end="url(#a-religion)"/>
+  <rect x="270" y="196" width="74" height="26" rx="13" class="fl"/>
+  <text x="307" y="214" class="t-s mid on" font-weight="700">イスラム教</text>
+  <text x="344" y="240" class="t-xs end soft">クルアーン</text>
+  <text x="264" y="240" class="t-xs end soft">7世紀〜</text>
+
+  <!-- 共通の唯一神 -->
+  <circle cx="64" cy="206" r="18" class="tint st-f" stroke-width="2"/>
+  <circle cx="64" cy="206" r="7" class="fl"/>
+  <path d="M64 174 V180 M64 232 V238 M32 206 H38 M90 206 H96" class="st-f" stroke-width="2" stroke-linecap="round"/>
+  <path d="M64 170 V70" class="st-f dash" stroke-width="1.5"/>
+  <path d="M86 192 L158 140" class="st-f dash" stroke-width="1.5"/>
+  <path d="M100 209 H266" class="st-f dash" stroke-width="1.5"/>
+  <text x="64" y="258" class="t-s mid ink">唯一の神</text>
+  <text x="64" y="273" class="t-xs mid soft">3つとも同じ神</text>
+</svg>

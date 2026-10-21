@@ -1,0 +1,37 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 輪廻の輪（時計回り） -->
+  <circle cx="140" cy="150" r="86" class="tint"/>
+  <path d="M162.3 66.9 A86 86 0 0 1 223.1 127.7" class="st-f" stroke-width="3" marker-end="url(#a-religion)"/>
+  <path d="M223.1 172.3 A86 86 0 0 1 162.3 233.1" class="st-f" stroke-width="3" marker-end="url(#a-religion)"/>
+  <path d="M117.7 233.1 A86 86 0 0 1 56.9 172.3" class="st-f" stroke-width="3" marker-end="url(#a-religion)"/>
+  <path d="M56.9 127.7 A86 86 0 0 1 117.7 66.9" class="st-f" stroke-width="3" marker-end="url(#a-religion)"/>
+
+  <circle cx="140" cy="64" r="8" class="fl"/>
+  <circle cx="226" cy="150" r="8" class="fl"/>
+  <circle cx="140" cy="236" r="8" class="fl"/>
+  <circle cx="54" cy="150" r="8" class="fl"/>
+  <text x="140" y="48" class="t-s mid ink">生まれる</text>
+  <text x="238" y="155" class="t-s ink">生きる</text>
+  <text x="140" y="264" class="t-s mid ink">死ぬ</text>
+  <text x="42" y="146" class="t-xs end ink">生まれ</text>
+  <text x="42" y="160" class="t-xs end ink">変わる</text>
+
+  <!-- 業（カルマ）が次の生を左右する -->
+  <path d="M116 112 H164 M140 106 V124 M116 112 L108 128 H124Z M164 112 L156 128 H172Z" class="st-soft" stroke-width="1.5" stroke-linejoin="round"/>
+  <text x="140" y="164" class="t-xl mid fl">業</text>
+  <text x="140" y="182" class="t-xs mid soft">（カルマ）＝行い</text>
+  <text x="140" y="198" class="t-xs mid soft">次の生を左右する</text>
+
+  <!-- 解脱：輪から抜け出す -->
+  <path d="M200 89 C230 62 256 50 288 48" class="st-f" stroke-width="3" stroke-dasharray="6 4" marker-end="url(#a-religion)"/>
+  <circle cx="316" cy="46" r="20" class="paper st-f" stroke-width="2.5"/>
+  <circle cx="316" cy="46" r="8" class="fl"/>
+  <text x="316" y="86" class="t-l mid fl">解脱</text>
+  <text x="316" y="102" class="t-xs mid soft">輪から抜ける</text>
+
+  <!-- どこの考えか -->
+  <rect x="252" y="196" width="96" height="70" rx="12" class="bgc"/>
+  <text x="300" y="216" class="t-xs mid fl" font-weight="700">インドの宗教</text>
+  <text x="300" y="236" class="t-xs mid ink">ヒンドゥー教</text>
+  <text x="300" y="254" class="t-xs mid ink">仏教 など</text>
+</svg>

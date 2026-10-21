@@ -1,0 +1,26 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 無意識（水面の下の大部分） -->
+  <path d="M90 135 L272 135 L290 190 L250 250 L180 268 L110 240 L75 180 Z" class="soft" opacity="0.35"/>
+  <!-- 前意識（水面のすぐ下） -->
+  <path d="M120 90 L225 90 L270 130 L272 135 L90 135 L95 120 Z" class="tint"/>
+  <path d="M90 135 H272" class="st-f dash" stroke-width="1.5"/>
+  <!-- 意識（水面の上） -->
+  <path d="M140 90 L172 34 L196 48 L222 90 Z" class="fl"/>
+  <!-- 氷山の輪郭 -->
+  <path d="M120 90 L95 120 L75 180 L110 240 L180 268 L250 250 L290 190 L270 130 L225 90" class="st-f" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- 水面 -->
+  <path d="M0 90 q15 -6 30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0" class="st-f" stroke-width="2"/>
+  <text x="352" y="80" class="t-xs end soft">水面</text>
+
+  <text x="232" y="54" class="t-m ink">意識</text>
+  <text x="232" y="70" class="t-xs soft">気づいている</text>
+  <text x="180" y="116" class="t-m mid ink">前意識</text>
+  <text x="180" y="130" class="t-xs mid soft">思い出せる</text>
+  <text x="182" y="192" class="t-l mid ink">無意識</text>
+  <text x="182" y="212" class="t-xs mid soft">気づけない欲求・記憶</text>
+
+  <!-- 下から表に出てくる -->
+  <path d="M50 236 C30 200 30 150 52 104" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="12" y="262" class="t-xs soft">夢・言い間違い</text>
+</svg>

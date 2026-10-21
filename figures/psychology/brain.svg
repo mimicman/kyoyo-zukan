@@ -1,0 +1,32 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 脳幹と小脳（大脳の下・後ろ） -->
+  <path d="M216 184 C220 216 222 240 224 266 L246 266 C244 240 246 214 252 182 Z" class="soft" opacity="0.55"/>
+  <ellipse cx="282" cy="204" rx="44" ry="26" class="tint st-f" stroke-width="2"/>
+  <path d="M248 206 Q282 196 318 206 M254 218 Q282 210 312 218" class="st-f" stroke-width="1" opacity="0.6"/>
+
+  <!-- 大脳（左が顔の側）。下に紙色を敷いて後ろの小脳を隠す -->
+  <path d="M30 136 C24 78 82 28 170 26 C262 24 338 66 338 126 C340 160 326 180 300 184 L250 184 C230 196 200 200 170 198 C130 196 108 188 92 178 C60 176 34 164 30 136 Z" class="paper"/>
+  <path d="M30 136 C24 78 82 28 170 26 C262 24 338 66 338 126 C340 160 326 180 300 184 L250 184 C230 196 200 200 170 198 C130 196 108 188 92 178 C60 176 34 164 30 136 Z" class="tint st-f" stroke-width="2.5"/>
+  <!-- 前頭葉 -->
+  <path d="M30 136 C24 78 82 28 170 26 C176 64 172 104 154 138 C130 140 108 150 88 162 C58 166 34 158 30 136 Z" class="fl" opacity="0.3"/>
+  <!-- 境目：中心溝・外側溝・頭頂後頭溝 -->
+  <path d="M176 27 C176 66 172 104 154 138" class="st-f" stroke-width="2"/>
+  <path d="M88 162 C130 140 180 132 240 128" class="st-f" stroke-width="2"/>
+  <path d="M276 42 C272 90 282 136 296 184" class="st-f dash" stroke-width="1.5"/>
+
+  <text x="100" y="92" class="t-m mid ink">前頭葉</text>
+  <text x="100" y="108" class="t-xs mid soft">考える・判断</text>
+  <text x="224" y="76" class="t-m mid ink">頭頂葉</text>
+  <text x="224" y="92" class="t-xs mid soft">触覚・空間</text>
+  <text x="176" y="164" class="t-m mid ink">側頭葉</text>
+  <text x="176" y="180" class="t-xs mid soft">聞く・記憶</text>
+  <text x="308" y="114" class="t-s mid ink">後頭葉</text>
+  <text x="308" y="130" class="t-xs mid soft">見る</text>
+
+  <text x="300" y="250" class="t-s mid ink">小脳</text>
+  <text x="300" y="266" class="t-xs mid soft">バランス</text>
+  <text x="212" y="246" class="t-s end ink">脳幹</text>
+  <text x="212" y="262" class="t-xs end soft">呼吸・心拍</text>
+  <path d="M60 246 H24" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="66" y="250" class="t-xs soft">顔の側</text>
+</svg>
