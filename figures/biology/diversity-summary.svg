@@ -1,0 +1,36 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 生命の広がり：下の根元（最初の生命）から枝分かれする系統樹と、上の帯（今の生態系） -->
+  <rect x="34" y="10" width="316" height="58" rx="10" class="tint"/>
+  <text x="46" y="32" class="t-s ink" font-weight="700">今の地球：つながり合う（生態系）</text>
+  <text x="46" y="54" class="t-xs soft">植物 → 動物 → 分解者（微生物）→ 土 → 植物</text>
+
+  <!-- 時間の矢印 -->
+  <path d="M18 252 V92" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="18" y="84" class="t-xs mid ink">今</text>
+  <text x="8" y="270" class="t-xs soft">約40億年前</text>
+
+  <!-- 系統樹 -->
+  <path d="M190 252 V212" class="st-f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M190 212 C130 204 76 170 76 116" class="st-f" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M190 212 C214 204 240 192 240 172" class="st-f" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M240 172 C222 154 190 136 190 116" class="st-f" stroke-width="3" stroke-linecap="round"/>
+  <path d="M240 172 C262 154 300 136 300 116" class="st-f" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="190" cy="252" r="6" class="ink"/>
+  <circle cx="190" cy="212" r="4" class="fl"/>
+  <circle cx="240" cy="172" r="4" class="fl"/>
+  <circle cx="76" cy="116" r="6" class="fl"/>
+  <circle cx="190" cy="116" r="6" class="fl"/>
+  <circle cx="300" cy="116" r="6" class="fl"/>
+
+  <text x="76" y="94" class="t-s mid ink" font-weight="700">細菌</text>
+  <text x="76" y="106" class="t-xs mid soft">大腸菌など</text>
+  <text x="190" y="94" class="t-s mid ink" font-weight="700">古細菌</text>
+  <text x="190" y="106" class="t-xs mid soft">熱い泉など</text>
+  <text x="300" y="94" class="t-s mid ink" font-weight="700">真核生物</text>
+  <text x="300" y="106" class="t-xs mid soft">動物・植物・キノコ</text>
+
+  <text x="200" y="250" class="t-xs ink">最初の生命</text>
+  <text x="200" y="230" class="t-xs soft">共通の祖先</text>
+  <text x="40" y="214" class="t-xs soft">枝分かれの形が</text>
+  <text x="40" y="228" class="t-xs soft">分類のもとになる</text>
+</svg>

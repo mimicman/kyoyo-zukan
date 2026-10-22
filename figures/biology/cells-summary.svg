@@ -1,0 +1,60 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 細胞と体：1個の細胞の中のエネルギーの流れ（左）と、細胞が集まった体の調節（右） -->
+  <text x="110" y="30" class="t-s mid ink" font-weight="700">① 1個の細胞</text>
+  <text x="290" y="30" class="t-s mid ink" font-weight="700">③ 集まって体に</text>
+
+  <!-- 細胞 -->
+  <circle cx="114" cy="148" r="94" class="tint"/>
+  <circle cx="114" cy="148" r="94" class="st-f" stroke-width="2.5"/>
+  <circle cx="156" cy="100" r="18" class="paper"/>
+  <circle cx="156" cy="100" r="18" class="st-soft" stroke-width="1.5"/>
+  <text x="156" y="104" class="t-xs mid soft">核</text>
+
+  <!-- 光 → 葉緑体 -->
+  <circle cx="28" cy="52" r="10" class="fl"/>
+  <path d="M28 34 V30 M28 70 V74 M10 52 H6 M46 52 H50 M15 39 L12 36 M41 39 L44 36" class="st-f" stroke-width="2" stroke-linecap="round"/>
+  <text x="56" y="48" class="t-xs ink">光</text>
+  <path d="M38 64 L56 100" class="st-f" stroke-width="2" marker-end="url(#a-biology)"/>
+  <ellipse cx="76" cy="122" rx="30" ry="15" class="fl"/>
+  <path d="M56 122 H96 M62 116 H90 M62 128 H90" class="st-line" stroke-width="1.2"/>
+  <text x="76" y="152" class="t-xs mid ink">葉緑体</text>
+  <text x="76" y="166" class="t-xs mid soft">光で糖を作る</text>
+
+  <!-- 糖 → ミトコンドリア -->
+  <path d="M100 136 C122 146 128 158 130 170" class="st dash" stroke-width="1.5" marker-end="url(#a-ink)"/>
+  <text x="128" y="146" class="t-xs ink">糖</text>
+  <ellipse cx="128" cy="190" rx="32" ry="15" class="paper"/>
+  <ellipse cx="128" cy="190" rx="32" ry="15" class="st" stroke-width="1.5"/>
+  <path d="M102 190 l7 -8 l7 16 l7 -16 l7 16 l7 -16 l7 16 l6 -8" class="st-soft" stroke-width="1.2"/>
+  <text x="128" y="220" class="t-xs mid ink">ミトコンドリア</text>
+  <text x="128" y="234" class="t-xs mid soft">糖を燃やす</text>
+
+  <!-- エネルギーを外へ -->
+  <path d="M162 186 H226" class="st-f" stroke-width="2.5" marker-end="url(#a-biology)"/>
+  <text x="196" y="176" class="t-xs mid ink halo">生きる力</text>
+  <text x="114" y="266" class="t-s mid ink" font-weight="700">② 光合成と呼吸</text>
+
+  <!-- 細胞が集まる -->
+  <g class="tint">
+    <circle cx="272" cy="58" r="9"/><circle cx="290" cy="58" r="9"/><circle cx="308" cy="58" r="9"/>
+    <circle cx="281" cy="74" r="9"/><circle cx="299" cy="74" r="9"/>
+  </g>
+  <g class="st-f" stroke-width="1.5">
+    <circle cx="272" cy="58" r="9"/><circle cx="290" cy="58" r="9"/><circle cx="308" cy="58" r="9"/>
+    <circle cx="281" cy="74" r="9"/><circle cx="299" cy="74" r="9"/>
+  </g>
+  <text x="290" y="102" class="t-xs mid soft">細胞が集まる</text>
+  <path d="M290 110 V130" class="st-f" stroke-width="2" marker-end="url(#a-biology)"/>
+
+  <!-- 体と体温計 -->
+  <circle cx="284" cy="152" r="13" class="soft"/>
+  <rect x="266" y="170" width="36" height="54" rx="14" class="soft"/>
+  <rect x="312" y="150" width="10" height="62" rx="5" class="paper"/>
+  <rect x="312" y="150" width="10" height="62" rx="5" class="st" stroke-width="1.5"/>
+  <rect x="315" y="178" width="4" height="34" class="fl"/>
+  <circle cx="317" cy="218" r="8" class="fl"/>
+  <path d="M306 178 H328" class="st-f dash" stroke-width="1.2"/>
+  <text x="331" y="182" class="t-xs ink">37℃</text>
+  <text x="296" y="248" class="t-xs mid ink">体温などを一定に</text>
+  <text x="296" y="264" class="t-xs mid soft">ずれたら元に戻す</text>
+</svg>

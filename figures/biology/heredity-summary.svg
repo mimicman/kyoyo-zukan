@@ -1,0 +1,42 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 遺伝：見える特徴から分子へとズームしていく4段（左に絵、右に説明と年代） -->
+  <path d="M152 70 H348 M152 134 H348 M152 198 H348" class="st-line" stroke-width="1"/>
+
+  <!-- 1 見える特徴 -->
+  <circle cx="58" cy="40" r="14" class="fl"/>
+  <path d="M90 28 c8 -4 14 2 18 0 c6 4 2 10 6 14 c-2 8 -10 6 -14 12 c-8 0 -10 -6 -16 -6 c-6 -4 0 -10 -2 -14 c0 -4 4 -6 8 -6z" class="tint"/>
+  <path d="M90 28 c8 -4 14 2 18 0 c6 4 2 10 6 14 c-2 8 -10 6 -14 12 c-8 0 -10 -6 -16 -6 c-6 -4 0 -10 -2 -14 c0 -4 4 -6 8 -6z" class="st-f" stroke-width="1.5"/>
+  <text x="164" y="36" class="t-s ink" font-weight="700">目に見える特徴</text>
+  <text x="164" y="54" class="t-xs soft">メンデル（1865年）：粒が伝わる</text>
+
+  <!-- 2 細胞と染色体 -->
+  <path d="M80 62 V80" class="st-f" stroke-width="2" marker-end="url(#a-biology)"/>
+  <text x="90" y="76" class="t-xs soft">拡大</text>
+  <circle cx="80" cy="106" r="24" class="tint"/>
+  <circle cx="80" cy="106" r="24" class="st-soft" stroke-width="1.5"/>
+  <circle cx="80" cy="106" r="13" class="paper"/>
+  <path d="M74 99 L82 113 M82 99 L74 113 M84 100 L90 110 M90 100 L84 110" class="st-f" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="164" y="100" class="t-s ink" font-weight="700">核の中の染色体</text>
+  <text x="164" y="118" class="t-xs soft">20世紀：粒は染色体の上にある</text>
+
+  <!-- 3 DNA -->
+  <path d="M80 134 V150" class="st-f" stroke-width="2" marker-end="url(#a-biology)"/>
+  <path d="M50 162 V178 M70 162 V178 M90 162 V178 M110 162 V178" class="st-soft" stroke-width="1.5"/>
+  <path d="M40 170 Q50 154 60 170 T80 170 T100 170 T120 170" class="st-f" stroke-width="2.5"/>
+  <path d="M40 170 Q50 186 60 170 T80 170 T100 170 T120 170" class="st" stroke-width="2.5"/>
+  <text x="164" y="164" class="t-s ink" font-weight="700">DNA（二重らせん）</text>
+  <text x="164" y="182" class="t-xs soft">1953年：A・T・G・Cの4文字</text>
+
+  <!-- 4 RNA → タンパク質 -->
+  <path d="M80 190 V208" class="st-f" stroke-width="2" marker-end="url(#a-biology)"/>
+  <path d="M34 232 H72" class="st-f" stroke-width="2.5"/>
+  <path d="M38 232 v-6 M46 232 v-6 M54 232 v-6 M62 232 v-6 M70 232 v-6" class="st-f" stroke-width="1.5"/>
+  <path d="M76 232 H90" class="st" stroke-width="1.5" marker-end="url(#a-ink)"/>
+  <path d="M100 236 c0 -16 16 -16 16 -4 c0 10 12 10 12 0 c0 -12 -14 -14 -10 -22" class="st" stroke-width="3" stroke-linecap="round"/>
+  <text x="164" y="228" class="t-s ink" font-weight="700">RNA → タンパク質</text>
+  <text x="164" y="246" class="t-xs soft">1958年〜：情報が流れる順番</text>
+
+  <!-- タンパク質が特徴になって現れる -->
+  <path d="M30 220 C6 190 6 80 38 46" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="14" y="268" class="t-xs soft">点線：タンパク質が働き、見える特徴になる</text>
+</svg>

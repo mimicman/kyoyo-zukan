@@ -1,0 +1,46 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 医学の歴史：上の段は病気の考え方の3段階、下の段は感染症の流行と予防の前進 -->
+  <text x="12" y="24" class="t-xs soft">上の段：病気の考え方</text>
+
+  <rect x="12" y="34" width="96" height="78" rx="10" class="tint"/>
+  <text x="60" y="58" class="t-s mid ink" font-weight="700">体液説</text>
+  <text x="60" y="80" class="t-xs mid soft">ヒポクラテス</text>
+  <text x="60" y="95" class="t-xs mid soft">ガレノス</text>
+  <path d="M110 73 H128" class="st-f" stroke-width="2" marker-end="url(#a-medicine)"/>
+
+  <rect x="132" y="34" width="96" height="78" rx="10" class="tint"/>
+  <text x="180" y="58" class="t-s mid ink" font-weight="700">解剖で確かめる</text>
+  <text x="180" y="80" class="t-xs mid soft">ヴェサリウス</text>
+  <text x="180" y="95" class="t-xs mid soft">ハーヴェイ</text>
+  <path d="M230 73 H248" class="st-f" stroke-width="2" marker-end="url(#a-medicine)"/>
+
+  <rect x="252" y="34" width="96" height="78" rx="10" class="fl"/>
+  <text x="300" y="58" class="t-s mid on" font-weight="700">病原体を探す</text>
+  <text x="300" y="80" class="t-xs mid on">パスツール</text>
+  <text x="300" y="95" class="t-xs mid on">コッホ</text>
+
+  <!-- 時代の軸 -->
+  <path d="M12 130 H346" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="60" y="146" class="t-xs mid ink">古代</text>
+  <text x="180" y="146" class="t-xs mid ink">16〜17世紀</text>
+  <text x="290" y="146" class="t-xs mid ink">19世紀〜</text>
+  <path d="M340 114 V164" class="st-f dash" stroke-width="1.5" marker-end="url(#a-medicine)"/>
+
+  <!-- 下の段：感染症との戦い -->
+  <path d="M12 176 H350" class="st-line" stroke-width="1.5"/>
+  <circle cx="110" cy="176" r="7" class="soft"/>
+  <text x="110" y="198" class="t-xs mid ink">ペスト</text>
+  <text x="110" y="212" class="t-xs mid soft">14世紀</text>
+  <circle cx="230" cy="176" r="7" class="fl"/>
+  <text x="230" y="198" class="t-xs mid ink">種痘</text>
+  <text x="230" y="212" class="t-xs mid soft">1796年</text>
+  <circle cx="276" cy="176" r="7" class="soft"/>
+  <path d="M276 184 V222" class="st-line" stroke-width="1"/>
+  <text x="276" y="236" class="t-xs mid ink">コレラの地図</text>
+  <text x="276" y="250" class="t-xs mid soft">1854年</text>
+  <circle cx="334" cy="176" r="7" class="fl"/>
+  <text x="352" y="198" class="t-xs end ink">天然痘根絶</text>
+  <text x="352" y="212" class="t-xs end soft">1980年</text>
+
+  <text x="12" y="270" class="t-xs soft">下の段：灰色の点＝大流行、色の点＝予防の前進</text>
+</svg>

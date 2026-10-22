@@ -1,0 +1,40 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 体のしくみ：人の形の中の4つの働き（左に脳と神経、右に心臓と消化管） -->
+  <circle cx="180" cy="46" r="28" class="bgc"/>
+  <circle cx="180" cy="46" r="28" class="st-soft" stroke-width="1.5"/>
+  <rect x="132" y="84" width="96" height="150" rx="38" class="bgc"/>
+  <rect x="132" y="84" width="96" height="150" rx="38" class="st-soft" stroke-width="1.5"/>
+
+  <!-- 脳 -->
+  <ellipse cx="180" cy="42" rx="17" ry="13" class="tint"/>
+  <path d="M168 40 c4 -6 8 4 12 -2 c4 -6 8 4 12 -2" class="st-f" stroke-width="1.5"/>
+  <!-- 脊髄と神経 -->
+  <path d="M168 72 L156 112 L152 204" class="st-f" stroke-width="2"/>
+  <path d="M156 118 L142 146 M154 160 L142 186" class="st-f" stroke-width="1.5"/>
+  <!-- 心臓 -->
+  <path d="M178 108 c-6 -10 -22 -6 -16 8 c3 6 10 12 16 18 c6 -6 13 -12 16 -18 c6 -14 -10 -18 -16 -8z" class="fl"/>
+  <!-- 消化管：胃と腸 -->
+  <path d="M206 88 V128 c0 10 16 12 18 2" class="st" stroke-width="3" stroke-linecap="round"/>
+  <path d="M216 140 V156 H190 V170 H216 V184 H190 V198 H208 V216" class="st" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M186 176 C172 168 170 154 176 140" class="st-f dash" stroke-width="1.5" marker-end="url(#a-medicine)"/>
+
+  <!-- 左の名前 -->
+  <path d="M122 46 H160" class="st-line" stroke-width="1"/>
+  <text x="118" y="44" class="t-s end ink" font-weight="700">脳・眠り</text>
+  <text x="118" y="60" class="t-xs end soft">眠って回復する</text>
+  <path d="M122 140 H146" class="st-line" stroke-width="1"/>
+  <text x="118" y="136" class="t-s end ink" font-weight="700">神経・反射</text>
+  <text x="118" y="152" class="t-xs end soft">感じてすぐ動く</text>
+
+  <!-- 右の名前 -->
+  <path d="M196 116 H242" class="st-line" stroke-width="1"/>
+  <text x="246" y="116" class="t-s ink" font-weight="700">心臓・循環</text>
+  <text x="246" y="132" class="t-xs soft">酸素と栄養を運ぶ</text>
+  <path d="M220 192 H242" class="st-line" stroke-width="1"/>
+  <text x="246" y="194" class="t-s ink" font-weight="700">消化管・消化</text>
+  <text x="246" y="210" class="t-xs soft">分解して吸収する</text>
+  <text x="246" y="160" class="t-xs soft">点線：栄養が</text>
+  <text x="246" y="174" class="t-xs soft">血液へ入る</text>
+
+  <text x="180" y="262" class="t-xs mid ink">食べる → 運ぶ → 感じて動く → 眠って回復</text>
+</svg>

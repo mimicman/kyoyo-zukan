@@ -1,0 +1,47 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 病原体と免疫：左の病原体、中央の体の守り（免疫）、右の人の道具（ワクチン・抗生物質） -->
+  <text x="60" y="24" class="t-s mid soft">病原体</text>
+  <text x="180" y="24" class="t-s mid soft">体の守り</text>
+  <text x="298" y="24" class="t-s mid soft">人の道具</text>
+
+  <!-- ウイルス -->
+  <path d="M60 64 V58 M60 104 V110 M40 84 H34 M80 84 H86 M46 70 L42 66 M74 70 L78 66 M46 98 L42 102 M74 98 L78 102" class="st" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="60" cy="84" r="16" class="soft"/>
+  <text x="60" y="130" class="t-s mid ink" font-weight="700">ウイルス</text>
+  <text x="60" y="145" class="t-xs mid soft">細胞の中で増える</text>
+
+  <!-- 細菌 -->
+  <rect x="30" y="168" width="60" height="26" rx="13" class="soft"/>
+  <path d="M90 181 c6 -6 10 6 16 0" class="st" stroke-width="1.5"/>
+  <text x="60" y="212" class="t-s mid ink" font-weight="700">細菌</text>
+  <text x="60" y="227" class="t-xs mid soft">自分で増える</text>
+
+  <!-- 攻めてくる -->
+  <path d="M84 92 L136 106" class="st" stroke-width="1.8" marker-end="url(#a-ink)"/>
+  <path d="M108 176 L136 160" class="st" stroke-width="1.8" marker-end="url(#a-ink)"/>
+  <text x="112" y="128" class="t-xs mid soft">入りこむ</text>
+
+  <!-- 免疫の盾 -->
+  <path d="M180 52 L220 68 V126 C220 166 200 190 180 202 C160 190 140 166 140 126 V68 Z" class="tint"/>
+  <path d="M180 52 L220 68 V126 C220 166 200 190 180 202 C160 190 140 166 140 126 V68 Z" class="st-f" stroke-width="2.5"/>
+  <text x="180" y="116" class="t-l mid ink">免疫</text>
+  <text x="180" y="140" class="t-xs mid soft">壁・自然免疫</text>
+  <text x="180" y="155" class="t-xs mid soft">獲得免疫</text>
+
+  <!-- ワクチン -->
+  <rect x="244" y="52" width="108" height="66" rx="10" class="paper"/>
+  <rect x="244" y="52" width="108" height="66" rx="10" class="st-f" stroke-width="1.5"/>
+  <text x="298" y="74" class="t-s mid ink" font-weight="700">ワクチン</text>
+  <text x="298" y="92" class="t-xs mid soft">敵の目印を</text>
+  <text x="298" y="106" class="t-xs mid soft">前もって覚えさせる</text>
+  <path d="M244 92 L224 98" class="st-f" stroke-width="2.5" marker-end="url(#a-medicine)"/>
+
+  <!-- 抗生物質 -->
+  <rect x="244" y="148" width="108" height="66" rx="10" class="paper"/>
+  <rect x="244" y="148" width="108" height="66" rx="10" class="st-f" stroke-width="1.5"/>
+  <text x="298" y="170" class="t-s mid ink" font-weight="700">抗生物質</text>
+  <text x="298" y="188" class="t-xs mid soft">細菌を直接たたく</text>
+  <text x="298" y="204" class="t-xs mid ink">ウイルスには ×</text>
+  <path d="M298 214 V244 H60 V236" class="st-f dash" stroke-width="2" marker-end="url(#a-medicine)"/>
+  <text x="180" y="264" class="t-xs mid soft">抗生物質が効くのは細菌だけ</text>
+</svg>
