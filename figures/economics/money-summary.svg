@@ -1,0 +1,39 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- まん中のお金から、4つの「値段」へ -->
+  <path d="M152 118 L132 96 M208 118 L228 96 M152 162 L132 184 M208 162 L228 184" class="st-soft" stroke-width="1.5"/>
+
+  <rect x="10" y="16" width="130" height="80" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="75" y="42" class="t-l mid ink">金利</text>
+  <text x="75" y="62" class="t-xs mid ink">お金を借りる値段</text>
+  <text x="75" y="82" class="t-xs mid soft">利息に利息＝複利</text>
+
+  <rect x="220" y="16" width="130" height="80" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="285" y="42" class="t-l mid ink">株価</text>
+  <text x="285" y="62" class="t-xs mid ink">会社の持ち分の値段</text>
+  <text x="285" y="82" class="t-xs mid soft">株式会社</text>
+
+  <rect x="10" y="184" width="130" height="80" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="75" y="210" class="t-l mid ink">物価</text>
+  <text x="75" y="230" class="t-xs mid ink">モノの値段</text>
+  <text x="75" y="250" class="t-xs mid soft">上がるとお金の価値↓</text>
+
+  <rect x="220" y="184" width="130" height="80" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="285" y="210" class="t-l mid ink">為替</text>
+  <text x="285" y="230" class="t-xs mid ink">外国のお金の値段</text>
+  <text x="285" y="250" class="t-xs mid soft">円高・円安</text>
+
+  <circle cx="180" cy="140" r="34" class="fl"/>
+  <circle cx="180" cy="140" r="27" class="st" stroke-width="1" opacity="0.35"/>
+  <text x="180" y="146" class="t-m mid on">お金</text>
+
+  <!-- 結びつき（点線） -->
+  <path d="M40 100 V180" class="st-f dash" stroke-width="1.5" marker-end="url(#a-economics)"/>
+  <path d="M28 180 V100" class="st-f dash" stroke-width="1.5" marker-end="url(#a-economics)"/>
+  <text x="50" y="136" class="t-xs ink">金利で</text>
+  <text x="50" y="150" class="t-xs ink">物価を</text>
+  <text x="50" y="164" class="t-xs ink">調整</text>
+  <path d="M144 224 H216" class="st-f dash" stroke-width="1.5" marker-end="url(#a-economics)"/>
+  <path d="M216 236 H144" class="st-f dash" stroke-width="1.5" marker-end="url(#a-economics)"/>
+  <text x="180" y="256" class="t-xs mid ink">円安で</text>
+  <text x="180" y="270" class="t-xs mid ink">輸入品高</text>
+</svg>

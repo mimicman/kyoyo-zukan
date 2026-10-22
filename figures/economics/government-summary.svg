@@ -1,0 +1,42 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 外側の点線：国の経済全体（GDPが測る範囲） -->
+  <rect x="6" y="6" width="348" height="278" rx="14" class="st-soft dash" stroke-width="1.5"/>
+
+  <!-- 上：政府 -->
+  <rect x="124" y="20" width="112" height="44" rx="10" class="fl"/>
+  <text x="180" y="47" class="t-l mid on">政府</text>
+
+  <!-- 下：家計と企業、まん中の市場 -->
+  <rect x="18" y="150" width="96" height="50" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="66" y="180" class="t-m mid ink">家計</text>
+  <rect x="246" y="150" width="96" height="50" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="294" y="180" class="t-m mid ink">企業</text>
+  <path d="M244 162 H118" class="st-f" stroke-width="2" marker-end="url(#a-economics)"/>
+  <path d="M116 190 H242" class="st-f" stroke-width="2" marker-end="url(#a-economics)"/>
+  <text x="180" y="156" class="t-xs mid ink">モノ・サービス</text>
+  <text x="180" y="180" class="t-s mid ink" font-weight="700">市場</text>
+  <text x="180" y="206" class="t-xs mid ink">お金</text>
+
+  <!-- 税（実線・上へ）と公共サービス（点線・下へ） -->
+  <path d="M54 146 L128 66" class="st-f" stroke-width="2" marker-end="url(#a-economics)"/>
+  <path d="M306 146 L232 66" class="st-f" stroke-width="2" marker-end="url(#a-economics)"/>
+  <path d="M140 68 L84 136" class="st-f dash" stroke-width="1.5" marker-end="url(#a-economics)"/>
+  <path d="M220 68 L276 136" class="st-f dash" stroke-width="1.5" marker-end="url(#a-economics)"/>
+  <text x="66" y="96" class="t-s end ink" font-weight="700">税</text>
+  <text x="294" y="96" class="t-s ink" font-weight="700">税</text>
+  <text x="122" y="122" class="t-xs ink">公共サービス</text>
+  <text x="238" y="122" class="t-xs end ink">再分配</text>
+
+  <!-- 市場の失敗：煙と街灯 -->
+  <rect x="324" y="134" width="10" height="16" class="soft"/>
+  <circle cx="331" cy="122" r="8" class="soft" opacity="0.5"/>
+  <circle cx="338" cy="108" r="6" class="soft" opacity="0.4"/>
+  <circle cx="332" cy="96" r="4" class="soft" opacity="0.3"/>
+  <text x="344" y="226" class="t-xs end soft">煙の迷惑（外部性）</text>
+  <path d="M30 248 V218 H40" class="st" stroke-width="2"/>
+  <circle cx="44" cy="218" r="4" class="fl"/>
+  <text x="50" y="230" class="t-xs soft">街灯（公共財）</text>
+  <text x="180" y="250" class="t-xs mid soft">市場だけでは足りない所を、政府が税で補う</text>
+
+  <text x="180" y="274" class="t-s mid ink">点線の枠＝国の経済。1年の新しい価値の合計がGDP</text>
+</svg>

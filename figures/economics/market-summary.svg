@@ -1,0 +1,48 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- ① 希少性：時間は限られている -->
+  <rect x="10" y="12" width="152" height="124" rx="10" class="tint"/>
+  <text x="22" y="32" class="t-s ink" font-weight="700">① 限られている</text>
+  <circle cx="86" cy="76" r="26" class="paper st" stroke-width="2"/>
+  <path d="M86 76 V58 M86 76 L100 84" class="st" stroke-width="2"/>
+  <text x="86" y="124" class="t-xs mid soft">時間もお金も足りない</text>
+
+  <!-- ② 選ぶ：機会費用 -->
+  <rect x="198" y="12" width="152" height="124" rx="10" class="tint"/>
+  <text x="210" y="32" class="t-s ink" font-weight="700">② 選ぶ</text>
+  <circle cx="216" cy="78" r="5" class="ink"/>
+  <path d="M220 74 L254 58 M220 82 L254 98" class="st" stroke-width="1.5"/>
+  <rect x="256" y="46" width="62" height="24" rx="6" class="fl"/>
+  <text x="287" y="62" class="t-xs mid on">選んだ方</text>
+  <rect x="256" y="86" width="62" height="24" rx="6" class="paper st-soft dash" stroke-width="1.5"/>
+  <text x="287" y="102" class="t-xs mid soft">諦めた方</text>
+  <text x="274" y="128" class="t-xs mid ink">諦めた価値＝機会費用</text>
+
+  <!-- ③ 分業して交換：比較優位 -->
+  <rect x="10" y="158" width="152" height="124" rx="10" class="tint"/>
+  <text x="22" y="178" class="t-s ink" font-weight="700">③ 分業して交換</text>
+  <circle cx="46" cy="222" r="18" class="fl"/>
+  <text x="46" y="227" class="t-s mid on">A</text>
+  <circle cx="126" cy="222" r="18" class="fl"/>
+  <text x="126" y="227" class="t-s mid on">B</text>
+  <path d="M68 216 H102" class="st-f" stroke-width="2" marker-end="url(#a-economics)"/>
+  <path d="M104 230 H70" class="st-f" stroke-width="2" marker-end="url(#a-economics)"/>
+  <text x="46" y="256" class="t-xs mid ink">パン</text>
+  <text x="126" y="256" class="t-xs mid ink">服</text>
+  <text x="86" y="274" class="t-xs mid soft">得意な方に集中＝比較優位</text>
+
+  <!-- ④ 市場で価格が決まる：需要と供給 -->
+  <rect x="198" y="158" width="152" height="124" rx="10" class="tint"/>
+  <text x="210" y="178" class="t-s ink" font-weight="700">④ 市場で価格</text>
+  <path d="M222 190 V262 H338" class="st" stroke-width="1.5"/>
+  <path d="M230 200 L308 246" class="st-f" stroke-width="2.5"/>
+  <path d="M230 252 L308 206" class="st" stroke-width="2"/>
+  <circle cx="269" cy="226" r="5" class="fl"/>
+  <text x="312" y="208" class="t-xs ink">供給</text>
+  <text x="312" y="252" class="t-xs ink">需要</text>
+  <text x="274" y="276" class="t-xs mid soft">交わる所で価格が決まる</text>
+
+  <!-- 流れの矢印 -->
+  <path d="M164 74 H194" class="st-f" stroke-width="2.5" marker-end="url(#a-economics)"/>
+  <path d="M250 138 C 250 150, 110 142, 96 154" class="st-f" stroke-width="2.5" marker-end="url(#a-economics)"/>
+  <path d="M164 220 H194" class="st-f" stroke-width="2.5" marker-end="url(#a-economics)"/>
+</svg>

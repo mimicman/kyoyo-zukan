@@ -1,0 +1,59 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：憲法が屋根、三権が柱 -->
+  <polygon points="180,10 344,64 16,64" class="fl"/>
+  <text x="180" y="46" class="t-m mid on">憲法</text>
+  <text x="180" y="60" class="t-xs mid on">いちばん上の決まり（最高法規）</text>
+
+  <rect x="36" y="74" width="64" height="96" rx="6" class="tint st-f" stroke-width="1.5"/>
+  <text x="68" y="112" class="t-l mid ink">立法</text>
+  <text x="68" y="132" class="t-xs mid soft">国会</text>
+  <text x="68" y="146" class="t-xs mid soft">法律を作る</text>
+
+  <rect x="148" y="74" width="64" height="96" rx="6" class="tint st-f" stroke-width="1.5"/>
+  <text x="180" y="112" class="t-l mid ink">行政</text>
+  <text x="180" y="132" class="t-xs mid soft">内閣</text>
+  <text x="180" y="146" class="t-xs mid soft">法律で動く</text>
+
+  <rect x="260" y="74" width="64" height="96" rx="6" class="tint st-f" stroke-width="1.5"/>
+  <text x="292" y="112" class="t-l mid ink">司法</text>
+  <text x="292" y="132" class="t-xs mid soft">裁判所</text>
+  <text x="292" y="146" class="t-xs mid soft">争いを裁く</text>
+
+  <!-- 柱どうしのブレーキ -->
+  <path d="M104 100 H144" class="st-f" stroke-width="1.5" marker-end="url(#a-politics)"/>
+  <path d="M144 112 H104" class="st-f" stroke-width="1.5" marker-end="url(#a-politics)"/>
+  <path d="M216 100 H256" class="st-f" stroke-width="1.5" marker-end="url(#a-politics)"/>
+  <path d="M256 112 H216" class="st-f" stroke-width="1.5" marker-end="url(#a-politics)"/>
+  <text x="124" y="132" class="t-xs mid ink">抑え</text>
+  <text x="124" y="146" class="t-xs mid ink">合う</text>
+  <text x="236" y="132" class="t-xs mid ink">抑え</text>
+  <text x="236" y="146" class="t-xs mid ink">合う</text>
+  <rect x="16" y="170" width="328" height="8" rx="3" class="fl"/>
+
+  <!-- 下：立法と行政のつなぎ方 -->
+  <text x="180" y="200" class="t-xs mid soft">立法と行政のつなぎ方は2通り</text>
+  <path d="M180 210 V292" class="st-line" stroke-width="1.5"/>
+
+  <text x="88" y="224" class="t-s mid ink" font-weight="700">議院内閣制</text>
+  <rect x="12" y="238" width="40" height="26" rx="6" class="paper st-f" stroke-width="1.5"/>
+  <text x="32" y="255" class="t-xs mid ink">国民</text>
+  <rect x="70" y="238" width="40" height="26" rx="6" class="paper st-f" stroke-width="1.5"/>
+  <text x="90" y="255" class="t-xs mid ink">議会</text>
+  <rect x="128" y="238" width="40" height="26" rx="6" class="fl"/>
+  <text x="148" y="255" class="t-xs mid on">首相</text>
+  <path d="M53 251 H67" class="st-f" stroke-width="1.5" marker-end="url(#a-politics)"/>
+  <path d="M111 251 H125" class="st-f" stroke-width="1.5" marker-end="url(#a-politics)"/>
+  <text x="88" y="284" class="t-xs mid soft">一本の鎖で選ぶ</text>
+
+  <text x="272" y="224" class="t-s mid ink" font-weight="700">大統領制</text>
+  <rect x="252" y="262" width="40" height="26" rx="6" class="paper st-f" stroke-width="1.5"/>
+  <text x="272" y="279" class="t-xs mid ink">国民</text>
+  <rect x="196" y="234" width="40" height="26" rx="6" class="paper st-f" stroke-width="1.5"/>
+  <text x="216" y="251" class="t-xs mid ink">議会</text>
+  <rect x="300" y="234" width="50" height="26" rx="6" class="fl"/>
+  <text x="325" y="251" class="t-xs mid on">大統領</text>
+  <path d="M254 270 L240 258" class="st-f" stroke-width="1.5" marker-end="url(#a-politics)"/>
+  <path d="M290 270 L304 260" class="st-f" stroke-width="1.5" marker-end="url(#a-politics)"/>
+  <text x="200" y="284" class="t-xs soft">別々に</text>
+  <text x="300" y="284" class="t-xs soft">選ぶ</text>
+</svg>

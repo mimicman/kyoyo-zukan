@@ -1,0 +1,55 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左：国内（上下の関係） -->
+  <rect x="10" y="14" width="112" height="146" rx="10" class="tint"/>
+  <text x="66" y="34" class="t-s mid ink" font-weight="700">国の中</text>
+  <rect x="34" y="46" width="64" height="28" rx="6" class="fl"/>
+  <text x="66" y="65" class="t-s mid on">政府</text>
+  <path d="M50 76 L36 108" class="st-f" stroke-width="1.5" marker-end="url(#a-politics)"/>
+  <path d="M66 76 V108" class="st-f" stroke-width="1.5" marker-end="url(#a-politics)"/>
+  <path d="M82 76 L96 108" class="st-f" stroke-width="1.5" marker-end="url(#a-politics)"/>
+  <circle cx="34" cy="122" r="9" class="paper st-f" stroke-width="1.5"/>
+  <circle cx="66" cy="122" r="9" class="paper st-f" stroke-width="1.5"/>
+  <circle cx="98" cy="122" r="9" class="paper st-f" stroke-width="1.5"/>
+  <text x="66" y="150" class="t-xs mid soft">上から法を守らせる</text>
+
+  <!-- 右：国際社会（横の関係） -->
+  <rect x="132" y="14" width="218" height="146" rx="10" class="tint"/>
+  <text x="142" y="34" class="t-s ink" font-weight="700">国際社会</text>
+  <text x="340" y="34" class="t-xs end soft">上に政府はない</text>
+  <path d="M182 64 H298" class="st-f" stroke-width="2"/>
+  <path d="M182 128 H298" class="st-f" stroke-width="2"/>
+  <text x="240" y="68" class="t-xs mid ink halo">条約</text>
+  <text x="240" y="132" class="t-xs mid ink halo">条約</text>
+  <path d="M176 78 L214 90" class="st-soft dash" stroke-width="1.2"/>
+  <path d="M304 78 L266 90" class="st-soft dash" stroke-width="1.2"/>
+  <path d="M176 114 L214 102" class="st-soft dash" stroke-width="1.2"/>
+  <path d="M304 114 L266 102" class="st-soft dash" stroke-width="1.2"/>
+  <circle cx="166" cy="64" r="15" class="paper st-f" stroke-width="1.5"/>
+  <circle cx="314" cy="64" r="15" class="paper st-f" stroke-width="1.5"/>
+  <circle cx="166" cy="128" r="15" class="paper st-f" stroke-width="1.5"/>
+  <circle cx="314" cy="128" r="15" class="paper st-f" stroke-width="1.5"/>
+  <text x="166" y="68" class="t-s mid ink">国</text>
+  <text x="314" y="68" class="t-s mid ink">国</text>
+  <text x="166" y="132" class="t-s mid ink">国</text>
+  <text x="314" y="132" class="t-s mid ink">国</text>
+  <rect x="210" y="84" width="60" height="24" rx="12" class="fl"/>
+  <text x="240" y="100" class="t-xs mid on">国連（場）</text>
+
+  <!-- 下：年の流れ（間隔は目安） -->
+  <path d="M14 196 H224" class="st-line" stroke-width="2"/>
+  <path d="M244 196 H340" class="st-line" stroke-width="2" marker-end="url(#a-soft)"/>
+  <path d="M226 202 L232 190 M236 202 L242 190" class="st-soft" stroke-width="1.5"/>
+  <circle cx="56" cy="196" r="5" class="fl"/>
+  <circle cx="168" cy="196" r="5" class="fl"/>
+  <circle cx="296" cy="196" r="5" class="fl"/>
+  <text x="56" y="184" class="t-xs mid ink">1625年</text>
+  <text x="168" y="184" class="t-xs mid ink">1648年</text>
+  <text x="296" y="184" class="t-xs mid ink">1945年</text>
+  <text x="56" y="220" class="t-s mid ink" font-weight="700">グロティウス</text>
+  <text x="56" y="236" class="t-xs mid soft">国際法の父</text>
+  <text x="168" y="220" class="t-s mid ink" font-weight="700">ウェストファリア</text>
+  <text x="168" y="236" class="t-xs mid soft">対等な主権国家</text>
+  <text x="296" y="220" class="t-s mid ink" font-weight="700">国際連合</text>
+  <text x="296" y="236" class="t-xs mid soft">世界大戦の反省</text>
+  <text x="180" y="266" class="t-xs mid soft">国どうしの約束と話し合いで、秩序を保つ</text>
+</svg>

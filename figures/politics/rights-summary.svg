@@ -1,0 +1,40 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：守られる人の範囲がくさび形に広がる -->
+  <text x="20" y="26" class="t-m ink">守られる人が広がっていく</text>
+  <polygon points="20,88 340,40 340,150 20,108" class="tint"/>
+  <path d="M30 98 H322" class="st-f dash" stroke-width="1.5" marker-end="url(#a-politics)"/>
+  <text x="62" y="94" class="t-xs mid ink halo">貴族</text>
+  <text x="180" y="94" class="t-s mid ink halo" font-weight="700">国民（市民）</text>
+  <text x="296" y="78" class="t-s mid ink" font-weight="700">世界の</text>
+  <text x="296" y="94" class="t-s mid ink halo" font-weight="700">すべての人</text>
+
+  <!-- まん中：年の線と、それぞれの考え -->
+  <path d="M14 176 H346" class="st-line" stroke-width="2"/>
+  <circle cx="60" cy="176" r="5" class="fl"/>
+  <circle cx="180" cy="176" r="5" class="fl"/>
+  <circle cx="300" cy="176" r="5" class="fl"/>
+  <text x="60" y="166" class="t-xs mid soft">王をしばる</text>
+  <text x="180" y="166" class="t-xs mid soft">国家は人々の約束</text>
+  <text x="300" y="166" class="t-xs mid soft">権利を宣言する</text>
+
+  <!-- 下：3枚のカード -->
+  <rect x="10" y="190" width="100" height="80" rx="10" class="fl"/>
+  <text x="60" y="210" class="t-s mid on" font-weight="700">法の支配</text>
+  <text x="60" y="230" class="t-xs mid on">1215年</text>
+  <text x="60" y="246" class="t-xs mid on">マグナ・カルタ</text>
+
+  <rect x="130" y="190" width="100" height="80" rx="10" class="fl"/>
+  <text x="180" y="210" class="t-s mid on" font-weight="700">社会契約説</text>
+  <text x="180" y="230" class="t-xs mid on">17〜18世紀</text>
+  <text x="180" y="246" class="t-xs mid on">ホッブズ・ロック</text>
+  <text x="180" y="261" class="t-xs mid on">ルソー</text>
+
+  <rect x="250" y="190" width="100" height="80" rx="10" class="fl"/>
+  <text x="300" y="210" class="t-s mid on" font-weight="700">人権の宣言</text>
+  <text x="300" y="230" class="t-xs mid on">1776 独立宣言</text>
+  <text x="300" y="246" class="t-xs mid on">1789 人権宣言</text>
+  <text x="300" y="261" class="t-xs mid on">1948 世界人権宣言</text>
+
+  <path d="M111 230 H127" class="st-f" stroke-width="2" marker-end="url(#a-politics)"/>
+  <path d="M231 230 H247" class="st-f" stroke-width="2" marker-end="url(#a-politics)"/>
+</svg>
