@@ -1,0 +1,50 @@
+<svg viewBox="0 0 360 296" xmlns="http://www.w3.org/2000/svg">
+  <path d="M180 8 V222" class="st-line" stroke-width="1.5"/>
+  <text x="90" y="20" class="t-m mid ink">ふだん</text>
+  <text x="270" y="20" class="t-m mid fl">カフェインがあると</text>
+
+  <!-- 左：アデノシンがはまる -->
+  <rect x="8" y="156" width="164" height="14" class="tint"/>
+  <path d="M8 156 H172" class="st-soft" stroke-width="1"/>
+  <text x="12" y="186" class="t-xs soft">神経細胞</text>
+  <path d="M64 162 V124 H74 A10 10 0 0 0 94 124 H104 V162 Z" class="paper"/>
+  <path d="M64 162 V124 H74 A10 10 0 0 0 94 124 H104 V162 Z" class="st" stroke-width="2"/>
+  <text x="110" y="148" class="t-xs soft">受容体</text>
+  <circle cx="84" cy="123" r="9" class="ink"/>
+  <text x="84" y="127" class="t-xs mid paper">A</text>
+  <circle cx="40" cy="78" r="9" class="ink"/><text x="40" y="82" class="t-xs mid paper">A</text>
+  <circle cx="138" cy="90" r="9" class="ink"/><text x="138" y="94" class="t-xs mid paper">A</text>
+  <text x="40" y="58" class="t-xs mid ink">アデノシン</text>
+  <path d="M84 172 V196" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <text x="90" y="214" class="t-s mid ink" font-weight="700">眠気の合図が出る</text>
+
+  <!-- 右：カフェインがふさぐ -->
+  <rect x="188" y="156" width="164" height="14" class="tint"/>
+  <path d="M188 156 H352" class="st-soft" stroke-width="1"/>
+  <path d="M244 162 V124 H254 A10 10 0 0 0 274 124 H284 V162 Z" class="paper"/>
+  <path d="M244 162 V124 H254 A10 10 0 0 0 274 124 H284 V162 Z" class="st" stroke-width="2"/>
+  <circle cx="264" cy="123" r="9" class="fl"/>
+  <text x="264" y="127" class="t-xs mid on">C</text>
+  <text x="238" y="128" class="t-xs end fl" font-weight="700">カフェイン</text>
+  <circle cx="300" cy="102" r="9" class="ink"/><text x="300" y="106" class="t-xs mid paper">A</text>
+  <path d="M286 112 L280 118 M280 112 L286 118" class="st-f" stroke-width="2"/>
+  <text x="312" y="128" class="t-xs fl">はまれない</text>
+  <circle cx="216" cy="84" r="9" class="ink"/><text x="216" y="88" class="t-xs mid paper">A</text>
+  <circle cx="330" cy="70" r="9" class="ink"/><text x="330" y="74" class="t-xs mid paper">A</text>
+  <text x="270" y="52" class="t-xs mid soft">アデノシンは残っている</text>
+  <path d="M264 172 V196" class="st-soft dash" stroke-width="2"/>
+  <path d="M258 180 L270 190 M270 180 L258 190" class="st-f" stroke-width="2"/>
+  <text x="270" y="214" class="t-s mid fl" font-weight="700">眠気を感じにくい</text>
+
+  <!-- 下：効き目が切れると -->
+  <path d="M4 228 H356" class="st-line" stroke-width="1"/>
+  <text x="6" y="246" class="t-xs soft">しばらくして効き目が切れると</text>
+  <rect x="6" y="256" width="110" height="30" rx="15" class="tint"/>
+  <text x="61" y="275" class="t-xs mid ink">カフェインが離れる</text>
+  <path d="M120 271 H136" class="st-f" stroke-width="2" marker-end="url(#a-food)"/>
+  <rect x="140" y="256" width="118" height="30" rx="15" class="tint"/>
+  <text x="199" y="275" class="t-xs mid ink">アデノシンがはまる</text>
+  <path d="M262 271 H278" class="st-f" stroke-width="2" marker-end="url(#a-food)"/>
+  <rect x="282" y="256" width="72" height="30" rx="15" class="ink"/>
+  <text x="318" y="275" class="t-xs mid paper" font-weight="700">眠気が戻る</text>
+</svg>

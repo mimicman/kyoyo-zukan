@@ -1,0 +1,57 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 実の断面 -->
+  <path d="M110 30 C104 22 112 12 122 14" class="st-soft" stroke-width="2.5"/>
+  <ellipse cx="110" cy="130" rx="90" ry="100" class="fl"/>
+  <ellipse cx="110" cy="130" rx="84" ry="94" class="tint"/>
+  <ellipse cx="110" cy="130" rx="72" ry="84" class="paper"/>
+  <ellipse cx="110" cy="130" rx="72" ry="84" class="fl" opacity="0.2"/>
+  <ellipse cx="110" cy="130" rx="72" ry="84" class="st-soft dash" stroke-width="1"/>
+  <!-- 左のタネ：パーチメント→シルバースキン→生豆 -->
+  <path d="M106 54 C66 54 52 98 52 130 C52 162 66 206 106 206 Z" class="paper"/>
+  <path d="M106 54 C66 54 52 98 52 130 C52 162 66 206 106 206 Z" class="st" stroke-width="2.5"/>
+  <path d="M102 62 C70 62 60 100 60 130 C60 160 70 198 102 198 Z" class="soft" opacity="0.35"/>
+  <path d="M102 62 C70 62 60 100 60 130 C60 160 70 198 102 198 Z" class="st-soft" stroke-width="1"/>
+  <!-- 右のタネ -->
+  <path d="M114 54 C154 54 168 98 168 130 C168 162 154 206 114 206 Z" class="paper"/>
+  <path d="M114 54 C154 54 168 98 168 130 C168 162 154 206 114 206 Z" class="st" stroke-width="2.5"/>
+  <path d="M118 62 C150 62 160 100 160 130 C160 160 150 198 118 198 Z" class="soft" opacity="0.35"/>
+  <path d="M118 62 C150 62 160 100 160 130 C160 160 150 198 118 198 Z" class="st-soft" stroke-width="1"/>
+
+  <!-- 引き出し線 -->
+  <g class="st-line" stroke-width="1.2">
+    <path d="M178 66 L226 44"/>
+    <path d="M190 104 L226 80"/>
+    <path d="M176 128 L226 116"/>
+    <path d="M165 160 L226 152"/>
+    <path d="M148 186 L226 188"/>
+    <path d="M126 186 L226 224"/>
+  </g>
+  <g class="ink">
+    <circle cx="178" cy="66" r="2.5"/><circle cx="190" cy="104" r="2.5"/><circle cx="176" cy="128" r="2.5"/>
+    <circle cx="165" cy="160" r="2.5"/><circle cx="148" cy="186" r="2.5"/><circle cx="126" cy="186" r="2.5"/>
+  </g>
+  <text x="230" y="44" class="t-s fl" font-weight="700">外皮</text>
+  <text x="230" y="58" class="t-xs soft">赤く熟す皮</text>
+  <text x="230" y="80" class="t-s ink" font-weight="700">果肉</text>
+  <text x="230" y="94" class="t-xs soft">うっすら甘い</text>
+  <text x="230" y="116" class="t-s ink" font-weight="700">ミューシレージ</text>
+  <text x="230" y="130" class="t-xs soft">ぬるぬるした層</text>
+  <text x="230" y="152" class="t-s ink" font-weight="700">パーチメント</text>
+  <text x="230" y="166" class="t-xs soft">タネを包む硬い殻</text>
+  <text x="230" y="188" class="t-s ink" font-weight="700">シルバースキン</text>
+  <text x="230" y="202" class="t-xs soft">豆に付く薄皮</text>
+  <text x="230" y="224" class="t-s fl" font-weight="700">種子＝生豆</text>
+  <text x="230" y="238" class="t-xs soft">これを煎る</text>
+
+  <!-- 下：タネの数とカスカラ -->
+  <text x="110" y="250" class="t-xs mid soft">ふつうはタネが2つ、向かい合わせ</text>
+  <path d="M10 262 H350" class="st-line" stroke-width="1"/>
+  <ellipse cx="28" cy="280" rx="9" ry="11" class="soft" opacity="0.5"/>
+  <ellipse cx="28" cy="280" rx="9" ry="11" class="st" stroke-width="1.5"/>
+  <text x="44" y="278" class="t-xs ink" font-weight="700">ピーベリー</text>
+  <text x="44" y="292" class="t-xs soft">タネが1つの丸い豆</text>
+  <path d="M196 272 H222 V284 A13 10 0 0 1 196 284 Z" class="tint"/>
+  <path d="M196 272 H222 V284 A13 10 0 0 1 196 284 Z M222 276 C230 276 230 286 222 286" class="st" stroke-width="1.5"/>
+  <text x="234" y="278" class="t-xs ink" font-weight="700">カスカラ</text>
+  <text x="234" y="292" class="t-xs soft">皮と果肉を干したお茶</text>
+</svg>

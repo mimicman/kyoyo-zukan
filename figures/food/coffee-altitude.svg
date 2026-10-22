@@ -1,0 +1,52 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- コーヒーベルト -->
+  <rect x="8" y="8" width="344" height="72" rx="8" class="st-line" stroke-width="1"/>
+  <rect x="9" y="26" width="342" height="36" class="tint"/>
+  <path d="M9 26 H351 M9 62 H351" class="st-f dash" stroke-width="1.5"/>
+  <path d="M9 44 H351" class="st-soft" stroke-width="1"/>
+  <text x="14" y="22" class="t-xs soft">北回帰線</text>
+  <text x="14" y="76" class="t-xs soft">南回帰線</text>
+  <text x="346" y="22" class="t-xs end soft">（北緯・南緯 約23度）</text>
+  <text x="180" y="40" class="t-s mid fl" font-weight="700">コーヒーベルト</text>
+  <text x="180" y="57" class="t-xs mid ink">中南米・アフリカ・アジアの熱帯</text>
+  <text x="346" y="56" class="t-xs end soft">赤道</text>
+
+  <!-- 山の断面 -->
+  <path d="M50 290 L80 240 L112 180 L136 134 L150 122 L164 130 L188 180 L214 240 L236 290 Z" class="tint"/>
+  <path d="M50 290 L80 240 L112 180 L136 134 L150 122 L164 130 L188 180 L214 240 L236 290" class="st" stroke-width="2"/>
+  <path d="M6 290 H244" class="st-soft" stroke-width="1.5"/>
+  <path d="M30 150 H236" class="st-soft dash" stroke-width="1"/>
+  <text x="236" y="146" class="t-xs end soft">高地</text>
+  <path d="M30 240 H236" class="st-soft dash" stroke-width="1"/>
+  <text x="236" y="236" class="t-xs end soft">低地</text>
+  <!-- 木（高地にアラビカ、低地にカネフォラ） -->
+  <g class="fl"><circle cx="124" cy="160" r="7"/><circle cx="176" cy="160" r="7"/></g>
+  <g class="soft"><circle cx="70" cy="256" r="7"/><circle cx="222" cy="262" r="7"/></g>
+  <text x="150" y="190" class="t-xs mid fl" font-weight="700">アラビカ</text>
+  <text x="146" y="274" class="t-xs mid ink">カネフォラ</text>
+  <!-- 気温 -->
+  <text x="14" y="128" class="t-s fl" font-weight="700">涼しい</text>
+  <text x="14" y="282" class="t-s ink" font-weight="700">暑い</text>
+  <path d="M28 262 V140" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="34" y="186" class="t-xs soft">100mで</text>
+  <text x="34" y="200" class="t-xs soft">約0.6℃</text>
+  <text x="34" y="214" class="t-xs soft">下がる</text>
+
+  <!-- 右：味への流れ -->
+  <rect x="254" y="104" width="100" height="36" rx="8" class="paper"/>
+  <rect x="254" y="104" width="100" height="36" rx="8" class="st-f" stroke-width="1.5"/>
+  <text x="304" y="127" class="t-xs mid ink">気温が低い</text>
+  <path d="M304 142 V156" class="st-f" stroke-width="2" marker-end="url(#a-food)"/>
+  <rect x="254" y="160" width="100" height="36" rx="8" class="paper"/>
+  <rect x="254" y="160" width="100" height="36" rx="8" class="st-f" stroke-width="1.5"/>
+  <text x="304" y="176" class="t-xs mid ink">実がゆっくり</text>
+  <text x="304" y="190" class="t-xs mid ink">熟す</text>
+  <path d="M304 198 V212" class="st-f" stroke-width="2" marker-end="url(#a-food)"/>
+  <rect x="254" y="216" width="100" height="36" rx="8" class="paper"/>
+  <rect x="254" y="216" width="100" height="36" rx="8" class="st-f" stroke-width="1.5"/>
+  <text x="304" y="232" class="t-xs mid ink">豆が硬く</text>
+  <text x="304" y="246" class="t-xs mid ink">詰まる</text>
+  <path d="M304 254 V268" class="st-f" stroke-width="2" marker-end="url(#a-food)"/>
+  <rect x="254" y="272" width="100" height="26" rx="8" class="fl"/>
+  <text x="304" y="289" class="t-xs mid on" font-weight="700">香り・酸味が豊か</text>
+</svg>

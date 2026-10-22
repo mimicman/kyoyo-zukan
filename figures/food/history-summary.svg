@@ -1,0 +1,50 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 年表：上が世界、下が日本（位置はおおよそ） -->
+  <text x="8" y="22" class="t-s fl" font-weight="700">世界</text>
+  <text x="8" y="196" class="t-s ink" font-weight="700">日本</text>
+
+  <!-- 江戸時代の帯 -->
+  <rect x="118" y="146" width="129" height="8" rx="4" class="tint"/>
+
+  <!-- 軸 -->
+  <path d="M14 150 H348" class="st-line" stroke-width="2"/>
+  <g class="t-xs mid soft">
+    <text x="69" y="170">1500</text><text x="118" y="170">1600</text><text x="168" y="170">1700</text>
+    <text x="217" y="170">1800</text><text x="266" y="170">1900</text><text x="315" y="170">2000</text>
+  </g>
+
+  <!-- 世界の出来事 -->
+  <g class="st-line" stroke-width="1.2">
+    <path d="M44 144 V138"/><path d="M96 144 V70"/><path d="M143 144 V138"/>
+    <path d="M190 144 V70"/><path d="M315 144 V138"/><path d="M340 144 V70"/>
+  </g>
+  <g class="fl"><circle cx="44" cy="150" r="5"/><circle cx="96" cy="150" r="5"/><circle cx="143" cy="150" r="5"/><circle cx="190" cy="150" r="5"/><circle cx="315" cy="150" r="5"/></g>
+  <circle cx="340" cy="150" r="5" class="paper"/>
+  <circle cx="340" cy="150" r="5" class="st-f dash" stroke-width="1.5"/>
+  <text x="44" y="118" class="t-xs mid ink">イエメンで</text>
+  <text x="44" y="132" class="t-xs mid ink">飲み始める</text>
+  <text x="96" y="50" class="t-xs mid ink">イスタンブールの</text>
+  <text x="96" y="64" class="t-xs mid ink">コーヒーハウス</text>
+  <text x="143" y="118" class="t-xs mid ink">ヨーロッパの</text>
+  <text x="143" y="132" class="t-xs mid ink">コーヒーハウス</text>
+  <text x="190" y="50" class="t-xs mid ink">植民地で</text>
+  <text x="190" y="64" class="t-xs mid ink">栽培が広がる</text>
+  <text x="315" y="118" class="t-xs mid ink">熱帯で作り</text>
+  <text x="315" y="132" class="t-xs mid ink">消費国で飲む</text>
+  <text x="352" y="50" class="t-xs end fl">2050年ごろ</text>
+  <text x="352" y="64" class="t-xs end fl">適地が減る予測</text>
+
+  <!-- 日本の出来事 -->
+  <g class="st-line" stroke-width="1.2">
+    <path d="M168 156 V184"/><path d="M261 156 V184"/><path d="M300 156 V226"/>
+  </g>
+  <g class="ink"><circle cx="168" cy="150" r="4"/><circle cx="261" cy="150" r="4"/><circle cx="300" cy="150" r="4"/></g>
+  <text x="168" y="198" class="t-xs mid ink">出島で</text>
+  <text x="168" y="212" class="t-xs mid ink">オランダ人が飲む</text>
+  <text x="182" y="236" class="t-xs mid soft">（淡い帯は江戸時代）</text>
+  <text x="250" y="198" class="t-xs mid ink">1888 可否茶館</text>
+  <text x="250" y="212" class="t-xs mid ink">喫茶店の始まり</text>
+  <text x="300" y="240" class="t-xs mid ink">1969 缶コーヒー</text>
+
+  <text x="180" y="272" class="t-xs mid soft">原産地エチオピア → 中東 → ヨーロッパ・植民地 → 日本</text>
+</svg>

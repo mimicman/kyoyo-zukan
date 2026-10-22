@@ -1,0 +1,49 @@
+<svg viewBox="0 0 360 296" xmlns="http://www.w3.org/2000/svg">
+  <!-- 見出し -->
+  <text x="56" y="18" class="t-xs mid soft">乾かすときの姿</text>
+  <text x="180" y="18" class="t-xs mid soft">方法</text>
+  <text x="300" y="18" class="t-xs mid soft">味の傾向</text>
+  <g class="st-line" stroke-width="1"><path d="M4 28 H356 M4 108 H356 M4 188 H356 M4 268 H356"/></g>
+
+  <!-- ナチュラル：実まるごと -->
+  <path d="M56 38 C52 32 58 28 64 30" class="st-soft" stroke-width="2"/>
+  <circle cx="56" cy="70" r="30" class="fl"/>
+  <ellipse cx="46" cy="60" rx="8" ry="5" class="paper" opacity="0.35"/>
+  <text x="180" y="58" class="t-m mid ink">ナチュラル</text>
+  <text x="180" y="78" class="t-xs mid ink">実のまま天日で</text>
+  <text x="180" y="92" class="t-xs mid ink">何週間も乾かす</text>
+  <rect x="252" y="50" width="96" height="40" rx="10" class="fl"/>
+  <text x="300" y="66" class="t-xs mid on" font-weight="700">果実のような</text>
+  <text x="300" y="81" class="t-xs mid on" font-weight="700">甘い香り</text>
+
+  <!-- ハニー：ぬめり付き -->
+  <ellipse cx="56" cy="148" rx="30" ry="32" class="fl" opacity="0.35"/>
+  <path d="M40 176 C40 184 46 184 46 176 M68 176 C68 186 74 186 74 176" class="st-f" stroke-width="2"/>
+  <path d="M54 124 C34 124 28 138 28 148 C28 158 34 172 54 172 Z" class="paper"/>
+  <path d="M54 124 C34 124 28 138 28 148 C28 158 34 172 54 172 Z" class="st" stroke-width="2"/>
+  <path d="M58 124 C78 124 84 138 84 148 C84 158 78 172 58 172 Z" class="paper"/>
+  <path d="M58 124 C78 124 84 138 84 148 C84 158 78 172 58 172 Z" class="st" stroke-width="2"/>
+  <text x="180" y="138" class="t-m mid ink">ハニー</text>
+  <text x="180" y="158" class="t-xs mid ink">皮と果肉を除き</text>
+  <text x="180" y="172" class="t-xs mid ink">ぬめりを残して乾かす</text>
+  <rect x="252" y="130" width="96" height="40" rx="10" class="tint"/>
+  <rect x="252" y="130" width="96" height="40" rx="10" class="st-f" stroke-width="1.5"/>
+  <text x="300" y="146" class="t-xs mid fl" font-weight="700">その中間</text>
+  <text x="300" y="161" class="t-xs mid fl" font-weight="700">甘みとコク</text>
+
+  <!-- ウォッシュド：殻だけ -->
+  <path d="M54 204 C34 204 28 218 28 228 C28 238 34 252 54 252 Z" class="paper"/>
+  <path d="M54 204 C34 204 28 218 28 228 C28 238 34 252 54 252 Z" class="st" stroke-width="2"/>
+  <path d="M58 204 C78 204 84 218 84 228 C84 238 78 252 58 252 Z" class="paper"/>
+  <path d="M58 204 C78 204 84 218 84 228 C84 238 78 252 58 252 Z" class="st" stroke-width="2"/>
+  <path d="M14 206 C10 212 10 216 14 216 C18 216 18 212 14 206 Z M96 214 C92 220 92 224 96 224 C100 224 100 220 96 214 Z M16 240 C12 246 12 250 16 250 C20 250 20 246 16 240 Z" class="st-soft" stroke-width="1.5"/>
+  <text x="180" y="218" class="t-m mid ink">ウォッシュド</text>
+  <text x="180" y="238" class="t-xs mid ink">皮と果肉を除き</text>
+  <text x="180" y="252" class="t-xs mid ink">水で洗って乾かす</text>
+  <rect x="252" y="210" width="96" height="40" rx="10" class="paper"/>
+  <rect x="252" y="210" width="96" height="40" rx="10" class="st" stroke-width="1.5"/>
+  <text x="300" y="226" class="t-xs mid ink" font-weight="700">すっきり</text>
+  <text x="300" y="241" class="t-xs mid ink" font-weight="700">きれいな酸味</text>
+
+  <text x="180" y="288" class="t-xs mid soft">どれも最後に殻（パーチメント）を外して生豆にする</text>
+</svg>

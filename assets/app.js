@@ -431,7 +431,7 @@ document.addEventListener("click", (e) => {
 function renderPeople() {
   const byYear = (a, b) => (a.years?.[0] ?? a.years?.[1] ?? 0) - (b.years?.[0] ?? b.years?.[1] ?? 0);
   const section = (region) => {
-    const ps = data.people.filter((p) => (p.region || "世界") === region).sort(byYear);
+    const ps = data.people.filter((p) => (region === "日本") === (p.region === "日本")).sort(byYear);
     if (!ps.length) return "";
     return `<h2 class="sec-h">${region}の人物（${ps.length}人）</h2>
       <div class="people-list">${ps.map((p) => `

@@ -1,0 +1,57 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- チコリの根 -->
+  <path d="M36 30 C32 20 26 18 22 20 M45 30 C46 18 50 12 54 12 M42 30 C40 16 38 12 36 10" class="st-f" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M34 30 H54 C54 60 48 80 44 100 C40 80 34 60 34 30 Z" class="soft" opacity="0.5"/>
+  <path d="M34 30 H54 C54 60 48 80 44 100 C40 80 34 60 34 30 Z M38 48 H44 M42 64 H48" class="st" stroke-width="1.5"/>
+  <!-- 大麦 -->
+  <path d="M135 100 V20" class="st" stroke-width="1.5"/>
+  <g class="fl">
+    <ellipse cx="129" cy="34" rx="4" ry="7"/><ellipse cx="141" cy="34" rx="4" ry="7"/>
+    <ellipse cx="129" cy="50" rx="4" ry="7"/><ellipse cx="141" cy="50" rx="4" ry="7"/>
+    <ellipse cx="129" cy="66" rx="4" ry="7"/><ellipse cx="141" cy="66" rx="4" ry="7"/>
+    <ellipse cx="135" cy="22" rx="4" ry="7"/>
+  </g>
+  <path d="M129 28 L124 8 M141 28 L146 8 M135 16 V4" class="st-soft" stroke-width="1"/>
+  <!-- たんぽぽの根 -->
+  <circle cx="225" cy="22" r="12" class="fl"/>
+  <circle cx="225" cy="22" r="5" class="tint"/>
+  <path d="M225 34 V58" class="st" stroke-width="1.5"/>
+  <path d="M225 58 C212 52 206 56 204 58 C214 62 220 60 225 58 C238 52 244 56 246 58 C236 62 230 60 225 58" class="st-f" stroke-width="1.5"/>
+  <path d="M220 60 H230 C230 76 228 88 225 100 C222 88 220 76 220 60 Z" class="soft" opacity="0.5"/>
+  <path d="M220 60 H230 C230 76 228 88 225 100 C222 88 220 76 220 60 Z M224 86 L216 94 M226 78 L234 86" class="st" stroke-width="1.5"/>
+  <!-- デーツと種 -->
+  <ellipse cx="302" cy="54" rx="14" ry="24" class="fl"/>
+  <path d="M302 30 V24" class="st" stroke-width="2"/>
+  <ellipse cx="330" cy="72" rx="6" ry="16" class="soft" opacity="0.6"/>
+  <path d="M330 58 V86" class="st" stroke-width="1"/>
+  <ellipse cx="330" cy="72" rx="6" ry="16" class="st" stroke-width="1.5"/>
+  <text x="330" y="102" class="t-xs mid soft">種</text>
+
+  <text x="45" y="120" class="t-s mid ink" font-weight="700">チコリの根</text>
+  <text x="45" y="134" class="t-xs mid soft">キク科の植物</text>
+  <text x="135" y="120" class="t-s mid ink" font-weight="700">大麦</text>
+  <text x="135" y="134" class="t-xs mid soft">イタリアのオルゾ</text>
+  <text x="225" y="120" class="t-s mid ink" font-weight="700">たんぽぽの根</text>
+  <text x="225" y="134" class="t-xs mid soft">根を干して使う</text>
+  <text x="315" y="120" class="t-s mid ink" font-weight="700">デーツの種</text>
+  <text x="315" y="134" class="t-xs mid soft">なつめやしの実</text>
+
+  <!-- 煎る -->
+  <g class="st-f" stroke-width="2">
+    <path d="M45 142 L120 166" marker-end="url(#a-food)"/>
+    <path d="M135 142 L150 160" marker-end="url(#a-food)"/>
+    <path d="M225 142 L210 160" marker-end="url(#a-food)"/>
+    <path d="M315 142 L240 166" marker-end="url(#a-food)"/>
+  </g>
+  <rect x="110" y="166" width="140" height="32" rx="16" class="fl"/>
+  <text x="180" y="187" class="t-s mid on" font-weight="700">煎って粉にする</text>
+  <path d="M180 200 V214" class="st-f" stroke-width="2" marker-end="url(#a-food)"/>
+
+  <!-- 一杯 -->
+  <path d="M130 220 H172 V234 A21 18 0 0 1 130 234 Z" class="soft" opacity="0.6"/>
+  <path d="M130 220 H172 V234 A21 18 0 0 1 130 234 Z M172 224 C184 224 184 240 170 240" class="st" stroke-width="2"/>
+  <path d="M122 256 H180" class="st" stroke-width="3" stroke-linecap="round"/>
+  <text x="194" y="236" class="t-m ink">代用コーヒー</text>
+  <text x="194" y="252" class="t-xs fl">多くはカフェインなし</text>
+  <text x="180" y="282" class="t-xs mid soft">戦争や品不足で豆がない時代にも飲まれた</text>
+</svg>

@@ -1,0 +1,46 @@
+<svg viewBox="0 0 360 310" xmlns="http://www.w3.org/2000/svg">
+  <!-- 簡略地図（形と位置はおおよそ） -->
+  <rect x="4" y="56" width="352" height="44" class="fl" opacity="0.14"/>
+  <path d="M4 56 H356 M4 100 H356" class="st-f dash" stroke-width="1"/>
+  <path d="M20 14 L110 10 L120 40 L100 64 L82 72 L60 58 L30 40 Z" class="tint"/>
+  <path d="M84 78 L118 82 L130 100 L112 140 L100 142 L94 110 Z" class="tint"/>
+  <path d="M158 12 L210 10 L214 40 L190 46 L162 42 Z" class="tint"/>
+  <path d="M164 52 L212 50 L230 78 L214 122 L200 124 L184 92 L166 80 Z" class="tint"/>
+  <path d="M216 10 L320 12 L326 44 L300 66 L282 90 L262 70 L240 64 L222 44 Z" class="tint"/>
+  <path d="M332 30 L340 34 L336 54 L328 50 Z" class="tint"/>
+  <path d="M288 112 L328 108 L334 132 L296 136 Z" class="tint"/>
+  <g class="fl"><circle cx="104" cy="92" r="5"/><circle cx="88" cy="70" r="4"/><circle cx="196" cy="80" r="5"/><circle cx="276" cy="84" r="5"/><circle cx="300" cy="94" r="4"/></g>
+  <path d="M90 66 C82 54 72 44 64 38" class="st-f" stroke-width="2" marker-end="url(#a-food)"/>
+  <path d="M196 74 C194 62 190 50 186 40" class="st-f" stroke-width="2" marker-end="url(#a-food)"/>
+  <path d="M282 80 C300 66 316 54 328 46" class="st-f" stroke-width="2" marker-end="url(#a-food)"/>
+  <text x="54" y="30" class="t-xs mid ink" font-weight="700">北米</text>
+  <text x="186" y="26" class="t-xs mid ink" font-weight="700">ヨーロッパ</text>
+  <text x="352" y="26" class="t-xs end ink" font-weight="700">日本</text>
+  <text x="140" y="96" class="t-xs fl" font-weight="700">熱帯の産地</text>
+  <text x="180" y="156" class="t-xs mid soft">● 産地（熱帯）　→ 飲む量の多い国へ</text>
+
+  <!-- 左下：価格の動き -->
+  <path d="M166 168 V302" class="st-line" stroke-width="1"/>
+  <text x="8" y="182" class="t-xs ink" font-weight="700">国際価格（模式図）</text>
+  <path d="M14 196 V290 H158" class="st" stroke-width="1.5"/>
+  <path d="M20 256 L36 248 L52 258 L70 206 L86 236 L104 274 L120 262 L136 222 L156 240" class="st-f" stroke-width="2.5" stroke-linejoin="round"/>
+  <text x="76" y="202" class="t-xs ink">干ばつ・霜で↑</text>
+  <text x="104" y="286" class="t-xs mid ink halo">豊作で↓</text>
+
+  <!-- 右下：2050年ごろの予測と備え -->
+  <text x="176" y="182" class="t-xs ink" font-weight="700">アラビカの栽培適地</text>
+  <path d="M190 226 C186 200 214 194 226 202 C240 194 266 204 260 224 C266 244 238 254 224 248 C206 254 186 244 190 226 Z" class="tint"/>
+  <path d="M190 226 C186 200 214 194 226 202 C240 194 266 204 260 224 C266 244 238 254 224 248 C206 254 186 244 190 226 Z" class="st-f" stroke-width="1.5"/>
+  <path d="M268 224 H288" class="st-f" stroke-width="2" marker-end="url(#a-food)"/>
+  <path d="M302 226 C300 214 314 210 320 216 C328 212 340 218 336 228 C338 238 324 242 318 238 C308 242 300 236 302 226 Z" class="tint"/>
+  <path d="M302 226 C300 214 314 210 320 216 C328 212 340 218 336 228 C338 238 324 242 318 238 C308 242 300 236 302 226 Z" class="st-f dash" stroke-width="1.5"/>
+  <text x="225" y="266" class="t-xs mid ink">いま</text>
+  <text x="320" y="258" class="t-xs mid ink">2050年ごろ</text>
+  <text x="320" y="272" class="t-xs mid soft">（予測）</text>
+  <rect x="176" y="280" width="88" height="24" rx="12" class="paper"/>
+  <rect x="176" y="280" width="88" height="24" rx="12" class="st-f" stroke-width="1.5"/>
+  <text x="220" y="296" class="t-xs mid fl">フェアトレード</text>
+  <rect x="270" y="280" width="84" height="24" rx="12" class="paper"/>
+  <rect x="270" y="280" width="84" height="24" rx="12" class="st-f" stroke-width="1.5"/>
+  <text x="312" y="296" class="t-xs mid fl">環境の認証</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上の流れ：生豆 → 焙煎 → 一杯 → 脳 -->
+  <ellipse cx="42" cy="70" rx="13" ry="18" class="soft" opacity="0.5"/>
+  <ellipse cx="42" cy="70" rx="13" ry="18" class="st" stroke-width="1.5"/>
+  <path d="M42 54 C38 64 46 76 42 86" class="st-soft" stroke-width="1.5"/>
+
+  <path d="M128 92 C114 82 120 66 128 56 C130 66 136 64 134 52 C146 62 148 80 140 92 Z" class="fl"/>
+  <path d="M118 96 H150" class="st" stroke-width="3" stroke-linecap="round"/>
+
+  <path d="M204 60 H240 V74 A18 16 0 0 1 204 74 Z" class="fl"/>
+  <path d="M240 64 C250 64 250 78 238 78" class="st-f" stroke-width="3"/>
+  <path d="M198 96 H246" class="st" stroke-width="3" stroke-linecap="round"/>
+  <path d="M216 54 C212 48 220 44 216 38 M228 54 C224 48 232 44 228 38" class="st-soft" stroke-width="1.5"/>
+
+  <path d="M292 84 C284 84 282 72 288 66 C286 56 298 50 306 54 C312 46 328 50 328 60 C336 64 334 78 326 80 C324 88 312 90 306 86 C302 90 294 90 292 84 Z" class="tint"/>
+  <path d="M292 84 C284 84 282 72 288 66 C286 56 298 50 306 54 C312 46 328 50 328 60 C336 64 334 78 326 80 C324 88 312 90 306 86 C302 90 294 90 292 84 Z" class="st" stroke-width="2"/>
+  <circle cx="310" cy="70" r="6" class="fl"/>
+
+  <g class="st-f" stroke-width="2.5">
+    <path d="M62 74 H104" marker-end="url(#a-food)"/>
+    <path d="M156 74 H190" marker-end="url(#a-food)"/>
+    <path d="M254 74 H278" marker-end="url(#a-food)"/>
+  </g>
+
+  <text x="42" y="22" class="t-s mid ink" font-weight="700">生豆</text>
+  <text x="134" y="22" class="t-s mid fl" font-weight="700">焙煎</text>
+  <text x="222" y="22" class="t-s mid ink" font-weight="700">一杯</text>
+  <text x="312" y="22" class="t-s mid ink" font-weight="700">脳</text>
+  <g class="t-xs mid ink">
+    <text x="42" y="120">緑色で</text><text x="42" y="134">青臭い</text>
+    <text x="134" y="120">化学変化で</text><text x="134" y="134">色と香り</text><text x="134" y="148">酸味→苦味</text>
+    <text x="222" y="120">香り・苦味</text><text x="222" y="134">カフェイン</text>
+    <text x="312" y="120">カフェインが</text><text x="312" y="134">受容体を</text><text x="312" y="148">ふさぐ</text>
+  </g>
+
+  <!-- 下の枝：代用コーヒー -->
+  <path d="M4 168 H356" class="st-line" stroke-width="1"/>
+  <text x="8" y="188" class="t-xs soft">枝分かれ：豆以外を煎ると</text>
+  <rect x="8" y="204" width="94" height="40" rx="10" class="tint"/>
+  <text x="55" y="221" class="t-xs mid ink">麦・チコリの根</text>
+  <text x="55" y="236" class="t-xs mid ink">デーツの種</text>
+  <path d="M106 224 H126" class="st-f" stroke-width="2" marker-end="url(#a-food)"/>
+  <rect x="130" y="204" width="56" height="40" rx="10" class="fl"/>
+  <text x="158" y="229" class="t-s mid on" font-weight="700">煎る</text>
+  <path d="M190 224 H210" class="st-f" stroke-width="2" marker-end="url(#a-food)"/>
+  <rect x="214" y="204" width="138" height="40" rx="10" class="paper"/>
+  <rect x="214" y="204" width="138" height="40" rx="10" class="st-f" stroke-width="1.5"/>
+  <text x="283" y="221" class="t-xs mid fl" font-weight="700">代用コーヒー</text>
+  <text x="283" y="236" class="t-xs mid ink">多くはカフェインなし</text>
+  <text x="180" y="276" class="t-xs mid soft">香りは「煎ること」から、眠気覚ましは「カフェイン」から</text>
+</svg>

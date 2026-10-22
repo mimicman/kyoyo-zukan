@@ -1,0 +1,48 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 1 原種：木 -->
+  <path d="M45 104 V70" class="st" stroke-width="3"/>
+  <ellipse cx="32" cy="66" rx="14" ry="8" class="fl" transform="rotate(-30 32 66)"/>
+  <ellipse cx="58" cy="60" rx="14" ry="8" class="fl" transform="rotate(30 58 60)"/>
+  <ellipse cx="45" cy="44" rx="8" ry="15" class="fl"/>
+  <!-- 2 産地：山 -->
+  <path d="M106 104 L130 56 L138 50 L146 58 L166 104 Z" class="tint"/>
+  <path d="M106 104 L130 56 L138 50 L146 58 L166 104" class="st" stroke-width="2"/>
+  <circle cx="134" cy="66" r="5" class="fl"/>
+  <!-- 3 実：チェリー -->
+  <path d="M225 46 C222 38 228 34 234 36" class="st-soft" stroke-width="2"/>
+  <circle cx="225" cy="76" r="26" class="fl"/>
+  <ellipse cx="215" cy="66" rx="7" ry="4" class="paper" opacity="0.35"/>
+  <!-- 4 精製：生豆 -->
+  <path d="M312 54 C296 54 290 66 290 78 C290 90 296 102 312 102 Z" class="soft" opacity="0.5"/>
+  <path d="M318 54 C334 54 340 66 340 78 C340 90 334 102 318 102 Z" class="soft" opacity="0.5"/>
+  <path d="M312 54 C296 54 290 66 290 78 C290 90 296 102 312 102 Z M318 54 C334 54 340 66 340 78 C340 90 334 102 318 102 Z" class="st" stroke-width="2"/>
+
+  <!-- 矢印 -->
+  <g class="st-f" stroke-width="2.5">
+    <path d="M74 80 H98" marker-end="url(#a-food)"/>
+    <path d="M172 80 H192" marker-end="url(#a-food)"/>
+    <path d="M256 80 H280" marker-end="url(#a-food)"/>
+  </g>
+
+  <!-- 段の名前 -->
+  <g class="t-xs mid fl"><text x="45" y="16">1 選ぶ</text><text x="135" y="16">2 育つ</text><text x="225" y="16">3 実る</text><text x="315" y="16">4 取り出す</text></g>
+  <text x="45" y="132" class="t-s mid ink" font-weight="700">原種</text>
+  <text x="135" y="132" class="t-s mid ink" font-weight="700">産地・標高</text>
+  <text x="225" y="132" class="t-s mid ink" font-weight="700">実のつくり</text>
+  <text x="315" y="132" class="t-s mid ink" font-weight="700">精製</text>
+
+  <!-- 決まること -->
+  <path d="M4 146 H356" class="st-line" stroke-width="1"/>
+  <text x="8" y="164" class="t-xs soft">ここで決まること</text>
+  <g class="t-xs mid ink">
+    <text x="45" y="186">香り・苦味</text><text x="45" y="200">病気への強さ</text>
+    <text x="135" y="186">熟す速さ</text><text x="135" y="200">豆の硬さ</text>
+    <text x="225" y="186">タネが2つか</text><text x="225" y="200">1つか</text>
+    <text x="315" y="186">果実感か</text><text x="315" y="200">すっきりか</text>
+  </g>
+  <rect x="270" y="218" width="88" height="34" rx="10" class="fl"/>
+  <text x="314" y="240" class="t-s mid on" font-weight="700">生豆</text>
+  <path d="M315 208 V214" class="st-f" stroke-width="2"/>
+  <path d="M270 268 H350" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="264" y="272" class="t-xs end soft">次の章：焙煎して茶色の豆に</text>
+</svg>
