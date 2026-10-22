@@ -30,6 +30,7 @@
   --c-music: #9c2f86;
   --c-literature: #8a3f6e;
   --c-language: #1d6f8f;
+  --c-food: #7a4a2a;
   --on-field: #ffffff;   /* 分野色の上に載せる文字 */
   --shadow: 0 1px 2px rgba(30, 25, 15, 0.06), 0 6px 20px rgba(30, 25, 15, 0.06);
   --radius: 16px;
@@ -43,7 +44,6 @@
     --bg: #131518; --surface: #1c1f23; --ink: #ebe8e2; --ink-soft: #a2a8af; --line: #353a41;
     --accent: #e3906a; --c-philosophy: #a993ec; --c-economics: #5cc6a0; --c-history: #e3906a;
     --c-religion: #d9b24a; --c-japan: #e2767d; --c-politics: #8fa9d1; --c-science: #6f9ee8; --c-psychology: #4fc1c9; --c-art: #e57ba3;
-    --c-math: #9a9ef0; --c-statistics: #b4c66a; --c-biology: #7fcf6e; --c-space: #8a9ff0; --c-earth: #c9b27a; --c-medicine: #ef8a96; --c-sociology: #b6a3e6; --c-geography: #e5a274; --c-technology: #9fb1c8; --c-architecture: #cfc77a; --c-music: #e08ad0; --c-literature: #d98bbd; --c-language: #6cc0e0;
     --on-field: #15171a; --shadow: none; color-scheme: dark;
   }
 }
@@ -51,7 +51,6 @@
   --bg: #131518; --surface: #1c1f23; --ink: #ebe8e2; --ink-soft: #a2a8af; --line: #353a41;
   --accent: #e3906a; --c-philosophy: #a993ec; --c-economics: #5cc6a0; --c-history: #e3906a;
     --c-religion: #d9b24a; --c-japan: #e2767d; --c-politics: #8fa9d1; --c-science: #6f9ee8; --c-psychology: #4fc1c9; --c-art: #e57ba3;
-    --c-math: #9a9ef0; --c-statistics: #b4c66a; --c-biology: #7fcf6e; --c-space: #8a9ff0; --c-earth: #c9b27a; --c-medicine: #ef8a96; --c-sociology: #b6a3e6; --c-geography: #e5a274; --c-technology: #9fb1c8; --c-architecture: #cfc77a; --c-music: #e08ad0; --c-literature: #d98bbd; --c-language: #6cc0e0;
   --on-field: #15171a; --shadow: none; color-scheme: dark;
 }
 
@@ -78,6 +77,7 @@
 [data-field="music"] { --f: var(--c-music); }
 [data-field="literature"] { --f: var(--c-literature); }
 [data-field="language"] { --f: var(--c-language); }
+[data-field="food"] { --f: var(--c-food); }
 [data-field] { --f-tint: color-mix(in srgb, var(--f) 12%, var(--surface)); }
 
 /* ---- 土台 ---- */
@@ -336,3 +336,137 @@ dialog.viewer .close {
 @media (prefers-reduced-motion: no-preference) {
   .deck { scroll-behavior: smooth; }
 }
+
+/* ===== 章・まとめカード ===== */
+.toc { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 8px; }
+.toc a {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 4px 12px;
+  border-radius: 999px; background: var(--surface); border: 1px solid var(--line);
+  text-decoration: none; font-size: 13px; font-weight: 700;
+}
+.toc a b { color: var(--f); }
+.chapter { padding-top: 12px; scroll-margin-top: calc(var(--top-h) + 8px); }
+.ch-h { display: flex; align-items: baseline; gap: 10px; margin: 18px 0 4px; font-size: 20px; line-height: 1.3; }
+.ch-h span { font-size: 13px; color: var(--f); white-space: nowrap; }
+.ch-desc { margin: 0 0 12px; font-size: 13px; color: var(--ink-soft); }
+.sum-tile {
+  display: grid; grid-template-columns: 132px 1fr; gap: 12px; align-items: center; margin-bottom: 12px;
+  padding: 10px; border-radius: var(--radius); text-decoration: none;
+  background: var(--f-tint); border: 1.5px solid var(--f);
+}
+.sum-tile .thumb { border-radius: 10px; background: var(--surface); padding: 4px; }
+.sum-tile .no { font-size: 11px; font-weight: 800; color: var(--f); }
+.sum-tile h3 { margin: 2px 0 4px; font-size: 16px; line-height: 1.35; }
+.sum-tile p { margin: 0; font-size: 12.5px; color: var(--ink-soft); line-height: 1.5; }
+.chapter .grid { padding-bottom: 8px; }
+.card.summary { border: 2px solid var(--f); }
+.ch-list { margin: 16px 16px 0; display: grid; gap: 6px; }
+.ch-list > span { font-size: 12px; color: var(--ink-soft); }
+.ch-list a {
+  display: grid; grid-template-columns: 36px 1fr; gap: 8px; align-items: start;
+  padding: 10px 12px; border-radius: 10px; background: var(--bg); text-decoration: none;
+}
+.ch-list b { font-size: 12px; color: var(--f); padding-top: 2px; }
+.ch-list strong { display: block; font-size: 14px; }
+.ch-list a > span { font-size: 12.5px; color: var(--ink-soft); line-height: 1.5; }
+
+/* ===== つながりマップ ===== */
+.linkmap {
+  display: grid; grid-template-columns: 1fr 76px 1fr; gap: 0; align-items: center;
+  margin: 16px 12px 16px; padding: 12px 4px; border-top: 1px dashed var(--line);
+}
+.lm-col { display: grid; gap: 6px; position: relative; }
+.lm-h { font-size: 11px; color: var(--ink-soft); text-align: center; }
+.lm-col a {
+  position: relative; display: block; padding: 6px 8px; border-radius: 10px;
+  background: var(--bg); text-decoration: none; font-size: 12.5px; font-weight: 600; line-height: 1.4;
+  border: 1px solid var(--line);
+}
+.lm-col a i { display: block; font-style: normal; font-size: 10px; color: var(--f); font-weight: 700; }
+.lm-col em { text-align: center; color: var(--ink-soft); font-style: normal; font-size: 12px; }
+/* カードと中央をつなぐ線 */
+.lm-in a::after, .lm-out a::before {
+  content: ""; position: absolute; top: 50%; width: 10px; border-top: 2px solid var(--line);
+}
+.lm-in a::after { right: -11px; }
+.lm-out a::before { left: -11px; }
+.lm-center {
+  margin: 0 10px; aspect-ratio: 1; border-radius: 50%; display: grid; place-items: center; text-align: center;
+  background: var(--f); color: var(--on-field); font-size: 10.5px; font-weight: 800; line-height: 1.3; padding: 6px;
+}
+.lm-center span { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* ===== 人物 ===== */
+button.person {
+  display: inline; padding: 0; border: 0; background: none; font: inherit; color: inherit; cursor: pointer;
+  text-decoration: underline; text-decoration-color: var(--f); text-decoration-thickness: 2px; text-underline-offset: 3px;
+}
+dialog.sheet {
+  position: fixed; inset: auto 0 0 0; margin: 0 auto; width: 100%; max-width: 560px; max-height: 80vh; overflow-y: auto;
+  border: 0; border-radius: 18px 18px 0 0; padding: 18px 16px calc(18px + env(safe-area-inset-bottom));
+  background: var(--surface); color: var(--ink);
+}
+dialog.sheet::backdrop { background: rgba(0, 0, 0, 0.45); }
+dialog.sheet .close { position: absolute; top: 10px; right: 10px; width: 40px; height: 40px; border: 0; border-radius: 50%; background: var(--bg); font-size: 20px; cursor: pointer; }
+.sh-head { display: flex; align-items: center; gap: 12px; padding-right: 40px; }
+.sh-head img, .sh-ico { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; flex: none; background: var(--f-tint); color: var(--f); display: grid; place-items: center; }
+.sh-ico svg { width: 36px; height: 36px; }
+.sh-head h3 { margin: 0; font-size: 20px; }
+.sh-head p { margin: 0; font-size: 13px; color: var(--ink-soft); }
+.sh-line { margin: 12px 0 0; font-weight: 800; font-size: 16px; }
+dialog.sheet .points { margin: 12px 0 0; }
+.sh-more {
+  display: flex; align-items: center; justify-content: center; gap: 4px; margin-top: 14px; min-height: 44px;
+  border-radius: 12px; background: var(--f); color: var(--on-field); text-decoration: none; font-weight: 700;
+}
+.sh-more svg { width: 18px; height: 18px; }
+.field-head.plain .ico { display: grid; place-items: center; background: var(--accent); color: #fff; }
+.field-head.plain .ico svg { width: 28px; height: 28px; }
+.people-list { display: grid; gap: 8px; padding-bottom: 12px; }
+.person-row {
+  display: grid; grid-template-columns: 56px 1fr; gap: 12px; align-items: center;
+  padding: 10px 12px; border-radius: 14px; background: var(--surface); border: 1px solid var(--line); text-decoration: none;
+}
+.person-row img, .pr-ico { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; background: var(--f-tint); color: var(--f); display: grid; place-items: center; }
+.pr-ico svg { width: 30px; height: 30px; }
+.person-row b { font-size: 16px; }
+.person-row small { margin-left: 8px; font-size: 12px; color: var(--ink-soft); }
+.person-row em { display: block; font-style: normal; font-size: 13px; color: var(--ink-soft); line-height: 1.5; }
+.person-page { padding-top: 12px; padding-bottom: 40px; }
+.person-page .card { max-width: 560px; margin: 0 auto; }
+.events { list-style: none; margin: 14px 16px 0; padding: 0 0 0 4px; border-left: 2px solid var(--f); }
+.events li { position: relative; display: grid; grid-template-columns: 76px 1fr; gap: 8px; padding: 6px 0 6px 14px; font-size: 14px; line-height: 1.5; }
+.events li::before { content: ""; position: absolute; left: -7px; top: 12px; width: 10px; height: 10px; border-radius: 50%; background: var(--f); }
+.events b { color: var(--f); font-size: 13px; font-variant-numeric: tabular-nums; }
+.mini-h { margin: 18px 16px 0; font-size: 13px; color: var(--f); }
+
+/* ===== ホームの入口 ===== */
+.views { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
+.view-tile {
+  display: flex; align-items: center; gap: 10px; padding: 12px; border-radius: var(--radius);
+  background: var(--surface); border: 1px solid var(--line); text-decoration: none; box-shadow: var(--shadow);
+}
+.view-tile svg { width: 34px; height: 34px; flex: none; color: var(--accent); }
+.view-tile h3 { margin: 0; font-size: 15px; }
+.view-tile p { margin: 0; font-size: 11.5px; color: var(--ink-soft); line-height: 1.4; }
+
+/* ===== 年表 ===== */
+.tl-filter { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 12px; }
+.tl-filter button {
+  min-height: 34px; padding: 4px 12px; border-radius: 999px; cursor: pointer; font-size: 13px; font-weight: 700;
+  border: 1px solid var(--line); background: var(--surface);
+}
+.tl-filter button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.timeline { position: relative; padding-bottom: 40px; }
+.tl-era {
+  position: sticky; top: var(--top-h); z-index: 2; margin: 18px 0 4px; padding: 6px 0;
+  font-size: 18px; background: var(--bg); border-bottom: 2px solid var(--ink);
+}
+.tl-cent { margin: 12px 0 4px 84px; font-size: 12px; color: var(--ink-soft); font-weight: 700; }
+.tl-item { display: grid; grid-template-columns: 72px 12px 1fr; gap: 8px; align-items: center; padding: 3px 0; text-decoration: none; }
+.tl-y { text-align: right; font-size: 11.5px; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.tl-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--f); }
+.tl-item.tl-person .tl-dot { border-radius: 3px; transform: rotate(45deg) scale(0.85); }
+.tl-t { padding: 6px 10px; border-radius: 10px; background: var(--surface); border-left: 4px solid var(--f); }
+.tl-t b { font-size: 14px; }
+.tl-t small { margin-left: 8px; font-size: 11px; color: var(--f); font-weight: 700; }

@@ -1,0 +1,33 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 江戸の3本柱：幕府と藩のしくみ／限られた窓口／町人の文化 -->
+  <rect x="104" y="12" width="152" height="40" rx="10" class="fl"/>
+  <text x="180" y="37" class="t-m mid on">江戸幕府（将軍）</text>
+
+  <!-- 幕府と藩 -->
+  <rect x="12" y="92" width="64" height="32" rx="8" class="tint st-f" stroke-width="1.5"/>
+  <text x="44" y="113" class="t-s mid ink">藩</text>
+  <rect x="84" y="92" width="64" height="32" rx="8" class="tint st-f" stroke-width="1.5"/>
+  <text x="116" y="113" class="t-s mid ink">藩</text>
+  <path d="M150 32 C40 40 30 60 44 88" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+  <path d="M120 54 V86" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+  <text x="80" y="76" class="t-xs mid soft halo">治め方を任せる</text>
+  <path d="M60 128 C70 150 150 150 160 60" class="st dash" stroke-width="1.5" marker-end="url(#a-ink)"/>
+  <text x="84" y="160" class="t-xs mid ink">参勤交代で江戸へ</text>
+
+  <!-- 窓口 -->
+  <rect x="200" y="84" width="148" height="80" rx="12" class="bgc"/>
+  <text x="274" y="104" class="t-s mid ink" font-weight="700">外とは4つの窓口</text>
+  <text x="274" y="124" class="t-xs mid soft">長崎・対馬・薩摩・松前</text>
+  <text x="274" y="142" class="t-xs mid soft">キリスト教を禁じ</text>
+  <text x="274" y="156" class="t-xs mid soft">交流を管理した</text>
+  <path d="M220 52 L240 80" class="st-soft" stroke-width="1.5"/>
+
+  <!-- 町人の文化 -->
+  <rect x="12" y="186" width="336" height="82" rx="12" class="tint"/>
+  <text x="26" y="208" class="t-s ink" font-weight="700">約260年の平和 → 町人の文化</text>
+  <g class="t-xs soft">
+    <text x="26" y="230">商人や職人が力をつけ、芝居・浮世絵・俳諧を楽しむ</text>
+    <text x="26" y="248">寺子屋で読み書きが広まる</text>
+  </g>
+  <text x="340" y="262" class="t-xs end fl" font-weight="700">1603〜1867</text>
+</svg>

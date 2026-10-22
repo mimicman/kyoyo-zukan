@@ -48,7 +48,13 @@ def routes(cards: list[str]) -> list[str]:
     if cards:
         return cards
     data = load()
-    return ["", *[f["id"] for f in data["fields"]], *[f"{c['field']}/{c['id']}" for c in data["cards"]]]
+    extra = ["timeline", "people", *[f"people/{p['id']}" for p in data["people"]]]
+    return ["", *[f["id"] for f in data["fields"]], *[f"{c['field']}/{c['id']}" for c in data["cards"]], *extra]
+
+
+def is_card(route: str) -> bool:
+    """カード画面（分野/カード）かどうか。people/<id> は人物ページなので含めない"""
+    return route.count("/") == 1 and not route.startswith("people/")
 
 
 def main() -> int:
@@ -73,7 +79,7 @@ def main() -> int:
                 page.on("console", lambda m, e=errors: e.append(m.text)
                         if m.type == "error" and not m.text.startswith("Failed to load resource") else None)
                 page.on("response", lambda r, e=errors: e.append(f"{r.status} {r.url}")
-                        if r.status >= 400 and "/data/fields/" not in r.url else None)
+                        if r.status >= 400 and "/data/fields/" not in r.url and "/data/people/" not in r.url else None)
                 page.on("pageerror", lambda ex, e=errors: e.append(str(ex)))
                 for r in routes(args.cards):
                     label = f"#/{r} {vp_name} {scheme}"
@@ -81,7 +87,7 @@ def main() -> int:
                     page.goto(f"{base}#/{r}")
                     page.reload()  # 画面を毎回まっさらな状態から描く
                     page.wait_for_load_state("networkidle")
-                    if r.count("/") == 1:
+                    if is_card(r):
                         slide = page.locator(f'.slide[data-key="{r}"]')
                         if slide.locator(".fig svg").count() == 0:
                             problems.append(f"{label}: 図が読み込まれていない")
@@ -91,7 +97,7 @@ def main() -> int:
                     problems.extend(f"{label}: コンソールエラー {e}" for e in errors)
                     name = (r or "home").replace("/", "_")
                     shot = out / f"{name}_{vp_name}_{scheme}.png"
-                    if r.count("/") == 1:
+                    if is_card(r):
                         # カードは縦に長いので、そのカードだけを残して縦に広げ、全体を1枚に撮る
                         page.evaluate("""(key) => {
                           document.body.classList.remove("deck-mode");

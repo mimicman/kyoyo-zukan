@@ -1,0 +1,30 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 古代の4段階：ムラ→クニ→大和政権→律令国家→貴族の世（階段で、まとまりが大きくなる） -->
+  <rect x="12" y="206" width="76" height="62" rx="10" class="tint"/>
+  <rect x="96" y="160" width="76" height="108" rx="10" class="tint"/>
+  <rect x="180" y="114" width="76" height="154" rx="10" class="tint"/>
+  <rect x="264" y="68" width="84" height="200" rx="10" class="fl"/>
+
+  <text x="50" y="228" class="t-xs mid soft">弥生</text>
+  <text x="50" y="246" class="t-s mid ink" font-weight="700">ムラ→クニ</text>
+  <text x="50" y="262" class="t-xs mid soft">3世紀 卑弥呼</text>
+
+  <text x="134" y="182" class="t-xs mid soft">古墳</text>
+  <text x="134" y="200" class="t-s mid ink" font-weight="700">大和政権</text>
+  <text x="134" y="216" class="t-xs mid soft">各地の豪族を</text>
+  <text x="134" y="230" class="t-xs mid soft">まとめる</text>
+
+  <text x="218" y="136" class="t-xs mid soft">飛鳥・奈良</text>
+  <text x="218" y="154" class="t-s mid ink" font-weight="700">律令国家</text>
+  <text x="218" y="170" class="t-xs mid soft">法と戸籍で</text>
+  <text x="218" y="184" class="t-xs mid soft">全国を治める</text>
+
+  <text x="306" y="90" class="t-xs mid on">平安</text>
+  <text x="306" y="108" class="t-s mid on" font-weight="700">貴族の世</text>
+  <text x="306" y="124" class="t-xs mid on">国風文化</text>
+  <text x="306" y="138" class="t-xs mid on">かな文字</text>
+
+  <path d="M40 196 L118 150 L206 104 L290 58" class="st-f dash" stroke-width="2" marker-end="url(#a-japan)"/>
+  <text x="20" y="40" class="t-m ink">まとまりが大きくなる</text>
+  <text x="20" y="58" class="t-xs soft">3世紀ごろ → 11世紀ごろ</text>
+</svg>

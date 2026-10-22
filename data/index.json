@@ -157,6 +157,13 @@
       "desc": "ことばの仕組みと系統",
       "icon": "<path d=\"M8 10h22v14H18l-6 5v-5H8z\"/><path d=\"M34 18h6v14h-4v5l-6-5h-8v-4\"/>",
       "group": "culture"
+    },
+    {
+      "id": "food",
+      "name": "食と飲み物",
+      "desc": "毎日の一杯から広がる世界",
+      "icon": "<path d=\"M10 20h24v8a12 12 0 0 1-24 0z\"/><path d=\"M34 22h3a4 4 0 0 1 0 8h-3\"/><path d=\"M16 8c-2 3 2 5 0 8M22 8c-2 3 2 5 0 8M28 8c-2 3 2 5 0 8\"/><path d=\"M8 42h28\"/>",
+      "group": "culture"
     }
   ],
   "groups": [
