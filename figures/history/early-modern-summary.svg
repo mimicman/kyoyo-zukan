@@ -1,0 +1,45 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：ルネサンスと大航海時代の期間（重なり）。下：古典の再生→技術→外洋へ→世界がつながる、の流れ -->
+  <text x="20" y="28" class="t-m ink" font-weight="700">再生と航海は重なって進んだ</text>
+
+  <!-- 期間の帯（1300〜1700年の目盛り、1年＝0.725） -->
+  <rect x="40" y="44" width="217" height="30" rx="6" class="tint"/>
+  <text x="50" y="64" class="t-s ink" font-weight="700">ルネサンス</text>
+  <rect x="112" y="82" width="182" height="30" rx="6" class="fl"/>
+  <text x="106" y="102" class="t-s end ink" font-weight="700">大航海時代</text>
+  <circle cx="179" cy="97" r="4" class="paper"/>
+  <text x="200" y="102" class="t-xs on">1492 コロンブス</text>
+
+  <path d="M30 124 H340" class="st-soft" stroke-width="1.5"/>
+  <path d="M40 120 V128 M112 120 V128 M185 120 V128 M257 120 V128 M330 120 V128" class="st-soft" stroke-width="1.5"/>
+  <text x="40" y="142" class="t-xs mid soft">1300</text>
+  <text x="112" y="142" class="t-xs mid soft">1400</text>
+  <text x="185" y="142" class="t-xs mid soft">1500</text>
+  <text x="257" y="142" class="t-xs mid soft">1600</text>
+  <text x="330" y="142" class="t-xs mid soft">1700</text>
+
+  <!-- 流れ -->
+  <rect x="14" y="164" width="76" height="62" rx="10" class="tint"/>
+  <text x="52" y="188" class="t-s mid ink" font-weight="700">古典の</text>
+  <text x="52" y="204" class="t-s mid ink" font-weight="700">学び直し</text>
+  <text x="52" y="219" class="t-xs mid soft">イタリア</text>
+
+  <rect x="102" y="164" width="76" height="62" rx="10" class="tint"/>
+  <text x="140" y="184" class="t-xs mid ink">印刷・地図</text>
+  <text x="140" y="200" class="t-xs mid ink">羅針盤</text>
+  <text x="140" y="216" class="t-xs mid soft">技術が支える</text>
+
+  <rect x="190" y="164" width="76" height="62" rx="10" class="fl"/>
+  <text x="228" y="188" class="t-s mid on" font-weight="700">外洋へ</text>
+  <text x="228" y="206" class="t-xs mid on">ポルトガル</text>
+  <text x="228" y="220" class="t-xs mid on">スペイン</text>
+
+  <rect x="278" y="164" width="72" height="62" rx="10" class="ink"/>
+  <text x="314" y="190" class="t-s mid paper" font-weight="700">世界が</text>
+  <text x="314" y="208" class="t-s mid paper" font-weight="700">つながる</text>
+
+  <path d="M90 195 H100" class="st-f" stroke-width="2" marker-end="url(#a-history)"/>
+  <path d="M178 195 H188" class="st-f" stroke-width="2" marker-end="url(#a-history)"/>
+  <path d="M266 195 H276" class="st-f" stroke-width="2" marker-end="url(#a-history)"/>
+  <text x="20" y="256" class="t-xs soft">航路で、作物・銀・人・病気が大陸の間を行き来した</text>
+</svg>

@@ -1,0 +1,46 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：草原のモンゴル帝国。下：中国の王朝の帯（高い＝統一、低い＝分裂）。モンゴルが元として中国に入る -->
+  <text x="20" y="28" class="t-m ink" font-weight="700">農耕の中国と、草原の帝国</text>
+
+  <!-- モンゴル帝国 -->
+  <rect x="190" y="44" width="112" height="44" rx="10" class="ink"/>
+  <text x="246" y="64" class="t-s mid paper" font-weight="700">モンゴル帝国</text>
+  <text x="246" y="80" class="t-xs mid paper">1206年〜 草原から</text>
+  <path d="M188 66 H124" class="st-f" stroke-width="2" marker-end="url(#a-history)"/>
+  <text x="20" y="62" class="t-xs ink">西はペルシャ・</text>
+  <text x="20" y="76" class="t-xs ink">ロシアまで</text>
+  <path d="M243 90 V146" class="st-f" stroke-width="2" marker-end="url(#a-history)"/>
+  <text x="252" y="114" class="t-xs ink">中国を支配し</text>
+  <text x="252" y="128" class="t-xs ink">元を建てる</text>
+
+  <!-- 凡例 -->
+  <rect x="20" y="106" width="12" height="12" rx="2" class="fl"/>
+  <text x="37" y="116" class="t-xs ink">統一</text>
+  <rect x="80" y="106" width="12" height="12" rx="2" class="tint"/>
+  <text x="97" y="116" class="t-xs ink">分裂</text>
+
+  <!-- 中国の王朝（前221〜1912年、長さはおおよそ） -->
+  <rect x="34" y="150" width="60" height="50" class="fl"/>
+  <rect x="94" y="180" width="49" height="20" class="tint"/>
+  <rect x="143" y="150" width="45" height="50" class="fl"/>
+  <rect x="188" y="180" width="7" height="20" class="tint"/>
+  <rect x="195" y="150" width="42" height="50" class="fl"/>
+  <rect x="237" y="150" width="13" height="50" class="ink"/>
+  <rect x="250" y="150" width="38" height="50" class="fl"/>
+  <rect x="288" y="150" width="36" height="50" class="fl"/>
+  <path d="M250 150 V200 M288 150 V200" class="st-line" stroke-width="1.5"/>
+  <text x="64" y="216" class="t-xs mid ink">秦・漢</text>
+  <text x="118" y="216" class="t-xs mid soft">三国など</text>
+  <text x="165" y="216" class="t-xs mid ink">隋・唐</text>
+  <text x="216" y="216" class="t-xs mid ink">宋</text>
+  <text x="243" y="216" class="t-xs mid ink" font-weight="700">元</text>
+  <text x="269" y="216" class="t-xs mid ink">明</text>
+  <text x="306" y="216" class="t-xs mid ink">清</text>
+
+  <!-- 年の軸 -->
+  <path d="M30 228 H330" class="st-soft" stroke-width="1.5"/>
+  <text x="34" y="244" class="t-xs mid soft">前221</text>
+  <text x="200" y="244" class="t-xs mid soft">1000</text>
+  <text x="324" y="244" class="t-xs mid soft">1912</text>
+  <text x="20" y="268" class="t-xs soft">日本は唐から律令を学び、元の軍とは鎌倉時代に戦った</text>
+</svg>

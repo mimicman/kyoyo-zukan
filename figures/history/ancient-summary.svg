@@ -1,0 +1,36 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 古代の3つのまとまりを年表の帯で並べ、受けつがれた流れを点線の矢印で示す（長さはおおよそ） -->
+  <text x="20" y="30" class="t-m ink" font-weight="700">大河から地中海へ</text>
+  <text x="20" y="48" class="t-xs soft">帯の長さ＝栄えた期間　点線＝受けつがれたもの</text>
+
+  <!-- 四大文明（前3500〜前1500ごろ） -->
+  <rect x="30" y="66" width="150" height="38" rx="8" class="tint"/>
+  <text x="105" y="84" class="t-s mid ink" font-weight="700">四大文明</text>
+  <text x="105" y="98" class="t-xs mid soft">大河・農耕・文字</text>
+
+  <!-- ポリス（前8〜前4世紀） -->
+  <rect x="232" y="122" width="36" height="34" rx="6" class="fl"/>
+  <text x="224" y="136" class="t-s end ink" font-weight="700">ギリシャのポリス</text>
+  <text x="224" y="151" class="t-xs end soft">市民の民主政・哲学</text>
+
+  <!-- ローマ（前509〜476年、西） -->
+  <rect x="254" y="174" width="76" height="34" rx="6" class="fl"/>
+  <text x="246" y="188" class="t-s end ink" font-weight="700">ローマ</text>
+  <text x="246" y="203" class="t-xs end soft">共和政→帝政・ローマ法</text>
+  <text x="292" y="196" class="t-xs mid on">大帝国</text>
+
+  <!-- 受けつぐ流れ -->
+  <path d="M182 86 C214 88 236 98 248 118" class="st-f dash" stroke-width="2" fill="none" marker-end="url(#a-history)"/>
+  <text x="196" y="76" class="t-xs soft">文字・暦</text>
+  <path d="M270 140 C290 146 296 156 294 170" class="st-f dash" stroke-width="2" fill="none" marker-end="url(#a-history)"/>
+  <text x="300" y="150" class="t-xs soft">文化</text>
+
+  <!-- 年の軸 -->
+  <path d="M24 226 H340" class="st-soft" stroke-width="1.5"/>
+  <path d="M67.5 222 V230 M142.5 222 V230 M217.5 222 V230 M292.5 222 V230" class="st-soft" stroke-width="1.5"/>
+  <text x="67.5" y="244" class="t-xs mid soft">前3000</text>
+  <text x="142.5" y="244" class="t-xs mid soft">前2000</text>
+  <text x="217.5" y="244" class="t-xs mid soft">前1000</text>
+  <text x="292.5" y="244" class="t-xs mid soft">紀元0</text>
+  <text x="20" y="268" class="t-xs soft">西ローマは476年に滅び、東ローマは1453年まで続いた</text>
+</svg>
