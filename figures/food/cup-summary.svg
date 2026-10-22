@@ -1,5 +1,5 @@
 <svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
-  <!-- 上の流れ：生豆 → 焙煎 → 一杯 → 脳 -->
+  <!-- 上の流れ：生豆 → 焙煎 → 抽出 → 脳 -->
   <ellipse cx="42" cy="70" rx="13" ry="18" class="soft" opacity="0.5"/>
   <ellipse cx="42" cy="70" rx="13" ry="18" class="st" stroke-width="1.5"/>
   <path d="M42 54 C38 64 46 76 42 86" class="st-soft" stroke-width="1.5"/>
@@ -24,12 +24,12 @@
 
   <text x="42" y="22" class="t-s mid ink" font-weight="700">生豆</text>
   <text x="134" y="22" class="t-s mid fl" font-weight="700">焙煎</text>
-  <text x="222" y="22" class="t-s mid ink" font-weight="700">一杯</text>
+  <text x="222" y="22" class="t-s mid fl" font-weight="700">抽出</text>
   <text x="312" y="22" class="t-s mid ink" font-weight="700">脳</text>
   <g class="t-xs mid ink">
     <text x="42" y="120">緑色で</text><text x="42" y="134">青臭い</text>
     <text x="134" y="120">化学変化で</text><text x="134" y="134">色と香り</text><text x="134" y="148">酸味→苦味</text>
-    <text x="222" y="120">香り・苦味</text><text x="222" y="134">カフェイン</text>
+    <text x="222" y="120">お湯で成分を</text><text x="222" y="134">溶かし出す</text><text x="222" y="148">挽き目と時間</text>
     <text x="312" y="120">カフェインが</text><text x="312" y="134">受容体を</text><text x="312" y="148">ふさぐ</text>
   </g>
 
@@ -47,5 +47,5 @@
   <rect x="214" y="204" width="138" height="40" rx="10" class="st-f" stroke-width="1.5"/>
   <text x="283" y="221" class="t-xs mid fl" font-weight="700">代用コーヒー</text>
   <text x="283" y="236" class="t-xs mid ink">多くはカフェインなし</text>
-  <text x="180" y="276" class="t-xs mid soft">香りは「煎ること」から、眠気覚ましは「カフェイン」から</text>
+  <text x="180" y="276" class="t-xs mid soft">香りは「煎る」、味は「淹れる」、眠気覚ましは「カフェイン」</text>
 </svg>

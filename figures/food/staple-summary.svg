@@ -1,0 +1,67 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 4つの作物と原産地 -->
+  <g class="t-s mid ink" font-weight="700">
+    <text x="40" y="20">米</text><text x="145" y="20">小麦</text><text x="250" y="20">トウモロコシ</text><text x="322" y="20">ジャガイモ</text>
+  </g>
+  <!-- 米：粒 -->
+  <g class="fl"><ellipse cx="30" cy="48" rx="5" ry="9" transform="rotate(-20 30 48)"/><ellipse cx="42" cy="44" rx="5" ry="9"/><ellipse cx="54" cy="48" rx="5" ry="9" transform="rotate(20 54 48)"/><ellipse cx="36" cy="60" rx="5" ry="9" transform="rotate(-10 36 60)"/><ellipse cx="48" cy="60" rx="5" ry="9" transform="rotate(10 48 60)"/></g>
+  <!-- 小麦：穂 -->
+  <path d="M145 74 V34" class="st" stroke-width="2"/>
+  <g class="fl"><ellipse cx="139" cy="40" rx="4" ry="7" transform="rotate(-25 139 40)"/><ellipse cx="151" cy="40" rx="4" ry="7" transform="rotate(25 151 40)"/><ellipse cx="139" cy="52" rx="4" ry="7" transform="rotate(-25 139 52)"/><ellipse cx="151" cy="52" rx="4" ry="7" transform="rotate(25 151 52)"/><ellipse cx="145" cy="30" rx="3.5" ry="6"/></g>
+  <!-- トウモロコシ -->
+  <ellipse cx="250" cy="52" rx="10" ry="22" class="fl"/>
+  <path d="M240 72 C232 60 232 44 236 34 M260 72 C268 60 268 44 264 34" class="st-soft" stroke-width="2.5"/>
+  <!-- ジャガイモ -->
+  <path d="M306 56 C304 42 322 36 334 42 C344 48 342 64 330 68 C318 72 308 68 306 56 Z" class="fl"/>
+  <g class="paper"><circle cx="318" cy="50" r="1.6"/><circle cx="330" cy="56" r="1.6"/><circle cx="320" cy="62" r="1.6"/></g>
+
+  <g class="t-xs mid soft">
+    <text x="40" y="92">長江流域</text><text x="145" y="92">西アジア</text><text x="250" y="92">メキシコ</text><text x="322" y="92">アンデス</text>
+  </g>
+
+  <!-- 食べ方 -->
+  <g class="st-f" stroke-width="2">
+    <path d="M40 100 V116" marker-end="url(#a-food)"/>
+    <path d="M145 100 V116" marker-end="url(#a-food)"/>
+    <path d="M250 100 V116" marker-end="url(#a-food)"/>
+    <path d="M322 100 V116" marker-end="url(#a-food)"/>
+  </g>
+  <g class="tint">
+    <rect x="6" y="122" width="68" height="30" rx="8"/>
+    <rect x="216" y="122" width="68" height="30" rx="8"/>
+    <rect x="292" y="122" width="62" height="30" rx="8"/>
+  </g>
+  <rect x="111" y="122" width="68" height="30" rx="8" class="fl"/>
+  <text x="40" y="141" class="t-xs mid ink">粒のまま炊く</text>
+  <text x="145" y="141" class="t-xs mid on" font-weight="700">粉にひく</text>
+  <text x="250" y="141" class="t-xs mid ink">粉にする</text>
+  <text x="323" y="141" class="t-xs mid ink">ゆでる</text>
+
+  <g class="st-f" stroke-width="2">
+    <path d="M40 156 V172" marker-end="url(#a-food)"/>
+    <path d="M134 156 L118 172" marker-end="url(#a-food)"/>
+    <path d="M156 156 L172 172" marker-end="url(#a-food)"/>
+    <path d="M250 156 V172" marker-end="url(#a-food)"/>
+    <path d="M322 156 V172" marker-end="url(#a-food)"/>
+  </g>
+  <g class="paper">
+    <rect x="6" y="178" width="68" height="30" rx="8"/><rect x="88" y="178" width="52" height="30" rx="8"/><rect x="150" y="178" width="52" height="30" rx="8"/>
+    <rect x="212" y="178" width="76" height="30" rx="8"/><rect x="292" y="178" width="62" height="30" rx="8"/>
+  </g>
+  <g class="st-f" stroke-width="1.5" fill="none">
+    <rect x="6" y="178" width="68" height="30" rx="8"/><rect x="88" y="178" width="52" height="30" rx="8"/><rect x="150" y="178" width="52" height="30" rx="8"/>
+    <rect x="212" y="178" width="76" height="30" rx="8"/><rect x="292" y="178" width="62" height="30" rx="8"/>
+  </g>
+  <text x="40" y="197" class="t-xs mid ink">米粉の麺も</text>
+  <text x="114" y="198" class="t-s mid ink" font-weight="700">パン</text>
+  <text x="176" y="198" class="t-s mid ink" font-weight="700">麺</text>
+  <text x="250" y="197" class="t-xs mid ink">トルティーヤ</text>
+  <text x="323" y="197" class="t-xs mid ink">干して保存</text>
+  <text x="114" y="224" class="t-xs mid soft">発酵させる</text>
+  <text x="176" y="224" class="t-xs mid soft">切る・伸ばす</text>
+
+  <!-- 世界へ -->
+  <path d="M4 240 H356" class="st-line" stroke-width="1"/>
+  <path d="M300 262 C240 252 140 252 60 262" class="st-f" stroke-width="2.5" marker-end="url(#a-food)"/>
+  <text x="180" y="284" class="t-xs mid ink">16世紀〜　アメリカ大陸の作物が世界へ広がる</text>
+</svg>

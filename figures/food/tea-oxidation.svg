@@ -1,0 +1,59 @@
+<svg viewBox="0 0 360 304" xmlns="http://www.w3.org/2000/svg">
+  <text x="8" y="18" class="t-xs soft">摘んだ葉は、酵素の働きで酸化して茶色くなっていく</text>
+
+  <!-- 摘んだ葉 -->
+  <path d="M30 120 C10 132 10 158 30 170 C50 158 50 132 30 120 Z" class="fl" opacity="0.25"/>
+  <path d="M30 120 C10 132 10 158 30 170 C50 158 50 132 30 120 Z" class="st-f" stroke-width="1.5"/>
+  <path d="M30 124 V168" class="st-soft" stroke-width="1"/>
+  <text x="30" y="188" class="t-xs mid ink">摘んだ葉</text>
+  <g class="st-soft" stroke-width="1.5">
+    <path d="M46 136 C54 100 56 72 64 64"/>
+    <path d="M48 145 H62"/>
+    <path d="M46 154 C54 190 56 218 64 226"/>
+  </g>
+
+  <!-- 3本の流れ -->
+  <g>
+    <text x="70" y="62" class="t-s ink" font-weight="700">緑茶</text>
+    <text x="70" y="78" class="t-xs soft">不発酵</text>
+    <path d="M118 50 C108 56 108 70 118 76 C128 70 128 56 118 50 Z" class="fl" opacity="0.25"/>
+
+    <text x="66" y="142" class="t-s ink" font-weight="700">烏龍茶</text>
+    <text x="70" y="158" class="t-xs soft">半発酵</text>
+    <path d="M118 130 C108 136 108 150 118 156 C128 150 128 136 118 130 Z" class="fl" opacity="0.6"/>
+
+    <text x="70" y="222" class="t-s ink" font-weight="700">紅茶</text>
+    <text x="70" y="238" class="t-xs soft">発酵</text>
+    <path d="M118 210 C108 216 108 230 118 236 C128 230 128 216 118 210 Z" class="fl"/>
+  </g>
+
+  <!-- 工程 -->
+  <g class="tint">
+    <rect x="206" y="50" width="60" height="26" rx="13"/><rect x="278" y="50" width="60" height="26" rx="13"/>
+    <rect x="136" y="130" width="60" height="26" rx="13"/><rect x="278" y="130" width="60" height="26" rx="13"/>
+    <rect x="136" y="210" width="60" height="26" rx="13"/><rect x="206" y="210" width="60" height="26" rx="13"/><rect x="278" y="210" width="60" height="26" rx="13"/>
+  </g>
+  <rect x="136" y="50" width="60" height="26" rx="13" class="fl"/>
+  <rect x="206" y="130" width="60" height="26" rx="13" class="fl"/>
+  <text x="166" y="67" class="t-xs mid on" font-weight="700">すぐ加熱</text>
+  <text x="236" y="67" class="t-xs mid ink">揉む</text>
+  <text x="308" y="67" class="t-xs mid ink">乾かす</text>
+  <text x="166" y="147" class="t-xs mid ink">揺すって</text>
+  <text x="236" y="147" class="t-xs mid on" font-weight="700">加熱</text>
+  <text x="308" y="147" class="t-xs mid ink">揉む・乾燥</text>
+  <text x="166" y="227" class="t-xs mid ink">揉む</text>
+  <text x="236" y="227" class="t-xs mid ink">酸化させる</text>
+  <text x="308" y="227" class="t-xs mid ink">乾かす</text>
+  <g class="st-soft" stroke-width="1.5">
+    <path d="M196 63 H204"/><path d="M266 63 H276"/>
+    <path d="M196 143 H204"/><path d="M266 143 H276"/>
+    <path d="M196 223 H204"/><path d="M266 223 H276"/>
+  </g>
+  <text x="166" y="174" class="t-xs mid soft">一部だけ酸化</text>
+
+  <!-- 凡例 -->
+  <path d="M4 254 H356" class="st-line" stroke-width="1"/>
+  <rect x="8" y="264" width="30" height="14" rx="7" class="fl"/>
+  <text x="46" y="276" class="t-xs ink">＝加熱で酵素が働かなくなり、酸化が止まる</text>
+  <text x="8" y="296" class="t-xs soft">※プーアル茶などは、微生物でさらに発酵させる別の仲間</text>
+</svg>

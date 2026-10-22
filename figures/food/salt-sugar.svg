@@ -1,0 +1,37 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 塩の段 -->
+  <rect x="8" y="10" width="40" height="22" rx="11" class="ink"/>
+  <text x="28" y="26" class="t-s mid paper" font-weight="700">塩</text>
+  <path d="M20 66 H340" class="st-line" stroke-width="2"/>
+  <g class="ink"><circle cx="60" cy="66" r="5"/><circle cx="180" cy="66" r="5"/><circle cx="300" cy="66" r="5"/></g>
+  <g class="t-xs mid soft"><text x="60" y="54">古代〜</text><text x="180" y="54">前2世紀〜</text><text x="300" y="54">1930年</text></g>
+  <g class="t-xs mid ink">
+    <text x="60" y="86">海水や岩塩から</text><text x="60" y="100">作り、運んで売る</text>
+    <text x="180" y="86">国が専売にし</text><text x="180" y="100">税をかける</text>
+    <text x="300" y="86">インドで</text><text x="300" y="100">塩の行進</text>
+  </g>
+
+  <!-- 共通点 -->
+  <rect x="8" y="114" width="344" height="52" rx="12" class="tint"/>
+  <circle cx="40" cy="140" r="12" class="paper"/>
+  <circle cx="40" cy="140" r="12" class="st" stroke-width="1.5"/>
+  <g class="st-f" stroke-width="1.8">
+    <path d="M54 140 H66" marker-end="url(#a-food)"/><path d="M50 130 L56 124" marker-end="url(#a-food)"/><path d="M50 150 L56 156" marker-end="url(#a-food)"/>
+  </g>
+  <text x="78" y="136" class="t-xs ink" font-weight="700">共通点：微生物の体から水を引き出す</text>
+  <text x="78" y="154" class="t-xs ink">→ 塩漬け・砂糖漬けで、食べ物が長持ち</text>
+
+  <!-- 砂糖の段 -->
+  <rect x="8" y="180" width="54" height="22" rx="11" class="fl"/>
+  <text x="35" y="196" class="t-s mid on" font-weight="700">砂糖</text>
+  <path d="M20 236 H340" class="st-line" stroke-width="2"/>
+  <g class="fl"><circle cx="48" cy="236" r="5"/><circle cx="136" cy="236" r="5"/><circle cx="224" cy="236" r="5"/><circle cx="312" cy="236" r="5"/></g>
+  <g class="t-xs mid fl"><text x="48" y="224">古代</text><text x="136" y="224">中世</text><text x="224" y="224">16〜18世紀</text><text x="312" y="224">19世紀</text></g>
+  <g class="t-xs mid ink">
+    <text x="48" y="256">サトウキビ</text><text x="48" y="270">インドで結晶に</text>
+    <text x="136" y="256">イスラム世界</text><text x="136" y="270">から地中海へ</text>
+    <text x="224" y="256">カリブ海などの</text><text x="224" y="270">大農園・奴隷労働</text>
+    <text x="312" y="256">テンサイから</text><text x="312" y="270">砂糖を作る</text>
+  </g>
+  <text x="180" y="294" class="t-xs mid soft">砂糖は紅茶やコーヒーとともに、ヨーロッパの日常品になった</text>
+</svg>

@@ -1,0 +1,58 @@
+<svg viewBox="0 0 360 304" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：お湯が粉の粒から成分を溶かし出す -->
+  <text x="40" y="22" class="t-s mid ink" font-weight="700">お湯</text>
+  <g class="fl" opacity="0.55">
+    <path d="M30 40 C26 48 24 52 30 56 C36 52 34 48 30 40 Z"/>
+    <path d="M50 46 C46 54 44 58 50 62 C56 58 54 54 50 46 Z"/>
+    <path d="M36 66 C32 74 30 78 36 82 C42 78 40 74 36 66 Z"/>
+  </g>
+  <path d="M64 62 H104" class="st-f" stroke-width="2.5" marker-end="url(#a-food)"/>
+  <text x="84" y="52" class="t-xs mid soft">しみこむ</text>
+
+  <circle cx="150" cy="62" r="36" class="tint"/>
+  <circle cx="150" cy="62" r="36" class="st" stroke-width="2"/>
+  <g class="fl"><circle cx="136" cy="48" r="4"/><circle cx="160" cy="44" r="3"/><circle cx="146" cy="70" r="4"/><circle cx="166" cy="66" r="3"/><circle cx="134" cy="80" r="3"/><circle cx="160" cy="84" r="4"/></g>
+  <text x="150" y="116" class="t-xs mid ink">粉の粒（拡大）</text>
+
+  <g class="st-f" stroke-width="2">
+    <path d="M186 50 C194 40 198 34 206 32" marker-end="url(#a-food)"/>
+    <path d="M188 62 H206" marker-end="url(#a-food)"/>
+    <path d="M186 74 C194 84 198 90 206 92" marker-end="url(#a-food)"/>
+  </g>
+  <text x="214" y="36" class="t-xs fl" font-weight="700">① 酸味・香り</text>
+  <text x="214" y="66" class="t-xs ink">② 甘み・コク</text>
+  <text x="214" y="96" class="t-xs ink">③ 苦味・渋み</text>
+  <text x="352" y="36" class="t-xs end soft">先に出る</text>
+  <text x="352" y="96" class="t-xs end soft">あとで出る</text>
+
+  <!-- 中：抽出の時間 -->
+  <text x="340" y="138" class="t-xs end soft">抽出が進む →</text>
+  <rect x="20" y="146" width="100" height="12" rx="6" class="tint"/>
+  <rect x="122" y="146" width="116" height="12" rx="6" class="fl"/>
+  <rect x="240" y="146" width="100" height="12" rx="6" class="ink" opacity="0.55"/>
+  <text x="70" y="176" class="t-xs mid ink">短すぎ→酸っぱい</text>
+  <text x="180" y="176" class="t-xs mid fl" font-weight="700">ちょうどよい</text>
+  <text x="290" y="176" class="t-xs mid ink">長すぎ→苦く渋い</text>
+
+  <!-- 下：挽き目と時間の地図 -->
+  <path d="M4 192 H356" class="st-line" stroke-width="1"/>
+  <path d="M70 284 V206" class="st" stroke-width="1.5" marker-end="url(#a-ink)"/>
+  <path d="M70 284 H346" class="st" stroke-width="1.5" marker-end="url(#a-ink)"/>
+  <text x="64" y="214" class="t-xs end ink">細かい</text>
+  <text x="64" y="248" class="t-xs end soft">挽き目</text>
+  <text x="64" y="280" class="t-xs end ink">粗い</text>
+  <path d="M92 214 C160 236 240 256 324 270" class="st-soft dash" stroke-width="1.5"/>
+
+  <circle cx="96" cy="214" r="6" class="fl"/>
+  <text x="108" y="212" class="t-xs ink" font-weight="700">エスプレッソ</text>
+  <text x="174" y="212" class="t-xs soft">（圧力をかける）</text>
+  <circle cx="196" cy="242" r="6" class="fl"/>
+  <text x="196" y="230" class="t-xs mid ink" font-weight="700">ドリップ</text>
+  <circle cx="244" cy="262" r="6" class="fl"/>
+  <text x="236" y="278" class="t-xs end ink" font-weight="700">フレンチプレス</text>
+  <circle cx="322" cy="268" r="6" class="fl"/>
+  <text x="322" y="254" class="t-xs mid ink" font-weight="700">水出し</text>
+  <text x="96" y="298" class="t-xs mid soft">数十秒</text>
+  <text x="210" y="298" class="t-xs mid soft">数分</text>
+  <text x="322" y="298" class="t-xs mid soft">数時間</text>
+</svg>

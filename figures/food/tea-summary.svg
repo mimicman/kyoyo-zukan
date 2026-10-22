@@ -1,0 +1,42 @@
+<svg viewBox="0 0 360 304" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：中国から日本とイギリスへ -->
+  <circle cx="70" cy="96" r="40" class="fl"/>
+  <path d="M60 118 C50 104 56 84 70 74 C84 84 90 104 80 118 Z" class="paper" opacity="0.35"/>
+  <text x="70" y="92" class="t-m mid on" font-weight="700">中国</text>
+  <text x="70" y="110" class="t-xs mid on">茶の原産地</text>
+
+  <rect x="196" y="22" width="156" height="58" rx="12" class="tint"/>
+  <text x="274" y="44" class="t-s mid ink" font-weight="700">日本</text>
+  <text x="274" y="64" class="t-xs mid ink">抹茶・緑茶 → 茶の湯</text>
+
+  <rect x="196" y="114" width="156" height="58" rx="12" class="tint"/>
+  <text x="274" y="136" class="t-s mid ink" font-weight="700">イギリス</text>
+  <text x="274" y="156" class="t-xs mid ink">紅茶 → 三角貿易・茶園</text>
+
+  <g class="st-f" stroke-width="2.5">
+    <path d="M110 84 C140 66 160 56 190 52" marker-end="url(#a-food)"/>
+    <path d="M110 108 C140 126 160 136 190 140" marker-end="url(#a-food)"/>
+  </g>
+  <text x="146" y="54" class="t-xs mid ink halo">平安・鎌倉</text>
+  <text x="146" y="150" class="t-xs mid ink halo">17世紀〜</text>
+
+  <!-- 下：製法で3つに分かれる -->
+  <path d="M4 196 H356" class="st-line" stroke-width="1"/>
+  <text x="8" y="216" class="t-xs soft">同じ葉が、酸化の度合いで分かれる</text>
+  <g>
+    <path d="M60 228 C40 236 40 256 60 264 C80 256 80 236 60 228 Z" class="fl" opacity="0.25"/>
+    <path d="M180 228 C160 236 160 256 180 264 C200 256 200 236 180 228 Z" class="fl" opacity="0.6"/>
+    <path d="M300 228 C280 236 280 256 300 264 C320 256 320 236 300 228 Z" class="fl"/>
+    <g class="st-soft" stroke-width="1"><path d="M60 230 V262 M180 230 V262 M300 230 V262"/></g>
+  </g>
+  <g class="st-f" stroke-width="2">
+    <path d="M90 246 H146" marker-end="url(#a-food)"/>
+    <path d="M210 246 H266" marker-end="url(#a-food)"/>
+  </g>
+  <text x="60" y="282" class="t-s mid ink" font-weight="700">緑茶</text>
+  <text x="180" y="282" class="t-s mid ink" font-weight="700">烏龍茶</text>
+  <text x="300" y="282" class="t-s mid ink" font-weight="700">紅茶</text>
+  <text x="60" y="298" class="t-xs mid soft">酸化させない</text>
+  <text x="180" y="298" class="t-xs mid soft">途中まで</text>
+  <text x="300" y="298" class="t-xs mid soft">しっかり酸化</text>
+</svg>

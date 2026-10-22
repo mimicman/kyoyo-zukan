@@ -1,0 +1,48 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左：書院の茶 -->
+  <rect x="8" y="8" width="160" height="156" rx="12" class="tint"/>
+  <text x="88" y="30" class="t-s mid ink" font-weight="700">書院の茶</text>
+  <text x="88" y="48" class="t-xs mid soft">広い座敷・唐物を飾る</text>
+  <!-- 棚と天目茶碗・花入 -->
+  <path d="M30 72 H146 M30 112 H146" class="st" stroke-width="2"/>
+  <path d="M34 72 V136 M142 72 V136" class="st" stroke-width="2"/>
+  <path d="M30 136 H146" class="st" stroke-width="2"/>
+  <path d="M52 92 L84 92 L76 108 L60 108 Z" class="fl"/>
+  <path d="M56 110 H80" class="st" stroke-width="3" stroke-linecap="round"/>
+  <path d="M112 86 C104 92 104 104 110 110 H122 C128 104 128 92 120 86 Z" class="fl" opacity="0.7"/>
+  <path d="M116 86 V76" class="st" stroke-width="1.5"/>
+  <path d="M50 132 H130" class="st-soft" stroke-width="6" stroke-linecap="round"/>
+  <text x="88" y="156" class="t-xs mid ink">見せる豪華さ</text>
+
+  <!-- 右：わび茶 -->
+  <rect x="192" y="8" width="160" height="156" rx="12" class="paper"/>
+  <rect x="192" y="8" width="160" height="156" rx="12" class="st-f" stroke-width="1.5"/>
+  <text x="272" y="30" class="t-s mid fl" font-weight="700">わび茶</text>
+  <text x="272" y="48" class="t-xs mid soft">小さな茶室・素朴な器</text>
+  <!-- 2畳の茶室（上から見た図） -->
+  <rect x="222" y="62" width="100" height="70" class="st" stroke-width="2"/>
+  <path d="M222 97 H322" class="st-soft" stroke-width="1.5"/>
+  <rect x="300" y="104" width="16" height="16" class="ink" opacity="0.6"/>
+  <path d="M232 120 C232 108 254 108 254 120 C252 128 234 128 232 120 Z" class="fl"/>
+  <path d="M222 132 V118" class="st-f" stroke-width="5"/>
+  <text x="294" y="117" class="t-xs end soft">炉</text>
+  <text x="272" y="88" class="t-xs mid soft">2畳ほど</text>
+  <text x="272" y="156" class="t-xs mid ink">簡素の中の美</text>
+
+  <path d="M170 86 H188" class="st-f" stroke-width="2.5" marker-end="url(#a-food)"/>
+
+  <!-- 年表 -->
+  <path d="M16 200 H344" class="st-line" stroke-width="2"/>
+  <g class="fl"><circle cx="40" cy="200" r="5"/><circle cx="110" cy="200" r="5"/><circle cx="180" cy="200" r="5"/><circle cx="250" cy="200" r="5"/><circle cx="320" cy="200" r="7"/></g>
+  <g class="t-xs mid fl">
+    <text x="40" y="190">12世紀</text><text x="110" y="190">14世紀</text><text x="180" y="190">15世紀</text><text x="250" y="190">16世紀前半</text><text x="320" y="190">16世紀後半</text>
+  </g>
+  <g class="t-xs mid ink">
+    <text x="40" y="220" font-weight="700">栄西</text><text x="40" y="234">抹茶を</text><text x="40" y="248">伝える</text>
+    <text x="110" y="220" font-weight="700">闘茶</text><text x="110" y="234">産地を</text><text x="110" y="248">飲み当てる</text>
+    <text x="180" y="220" font-weight="700">村田珠光</text><text x="180" y="234">わび茶の</text><text x="180" y="248">始まり</text>
+    <text x="250" y="220" font-weight="700">武野紹鷗</text><text x="250" y="234">受け継ぐ</text>
+    <text x="320" y="220" font-weight="700">千利休</text><text x="320" y="234">わび茶を</text><text x="320" y="248">大成</text>
+  </g>
+  <text x="180" y="284" class="t-xs mid soft">茶・器・花・掛け軸・料理・建物をまとめた、もてなしの文化</text>
+</svg>

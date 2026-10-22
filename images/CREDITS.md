@@ -106,7 +106,6 @@
 | pavlov | パブロフ | 作者不明 | Public domain | https://commons.wikimedia.org/wiki/File:Ivan_Pavlov_nobel.jpg |
 | people-akbar | ライオンと子牛とアクバル（ゴーヴァルダン、1630年ごろ） | Govardhan / Mir Ali Heravi | Public domain | https://commons.wikimedia.org/wiki/File:Govardhan._Akbar_With_Lion_and_Calf_ca._1630,_Metmuseum.jpg |
 | people-alexander-the-great | アレクサンドロス・モザイク（部分、ポンペイ出土） | 作者不明（古代の胸像） | Public domain | https://commons.wikimedia.org/wiki/File:Alexander_the_Great_mosaic.jpg |
-| people-appert-nicolas | ニコラ・アペール（エドゥアール・フーコー） | Édouard Foucaud | Public domain | https://commons.wikimedia.org/wiki/File:Appert_Nicolas.jpg |
 | people-archimedes | アルキメデス（ドメニコ・フェッティ、1620年） | ドメニコ・フェッティ | Public domain | https://commons.wikimedia.org/wiki/File:Domenico-Fetti_Archimedes_1620.jpg |
 | people-arrhenius-svante | スヴァンテ・アレニウスの肖像（ヴィルヘルム・エンゲルマン社刊の写真版） | 作者不明（ライプツィヒのエンゲルマン社の図版） | Public domain | https://commons.wikimedia.org/wiki/File:Svante_Arrhenius_01.jpg |
 | people-ashikaga-yoshimasa | 足利義政像（伝土佐光信） | Attributed to Tosa Mitsunobu | Public domain | https://commons.wikimedia.org/wiki/File:Ashikaga_Yoshimasa.jpg |

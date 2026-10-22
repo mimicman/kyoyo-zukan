@@ -1,0 +1,39 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 三角貿易（19世紀前半） -->
+  <text x="180" y="18" class="t-xs mid soft">19世紀前半の三角貿易</text>
+  <circle cx="62" cy="62" r="34" class="tint"/>
+  <circle cx="62" cy="62" r="34" class="st" stroke-width="1.5"/>
+  <circle cx="298" cy="62" r="34" class="tint"/>
+  <circle cx="298" cy="62" r="34" class="st" stroke-width="1.5"/>
+  <circle cx="180" cy="168" r="34" class="tint"/>
+  <circle cx="180" cy="168" r="34" class="st" stroke-width="1.5"/>
+  <text x="62" y="67" class="t-s mid ink" font-weight="700">イギリス</text>
+  <text x="298" y="60" class="t-s mid ink" font-weight="700">中国</text>
+  <text x="298" y="76" class="t-xs mid soft">（清）</text>
+  <text x="180" y="173" class="t-s mid ink" font-weight="700">インド</text>
+
+  <g class="st-f" stroke-width="3">
+    <path d="M262 50 H100" marker-end="url(#a-food)"/>
+    <path d="M86 88 L148 142" marker-end="url(#a-food)"/>
+    <path d="M212 142 L272 90" marker-end="url(#a-food)"/>
+  </g>
+  <text x="180" y="42" class="t-m mid fl" font-weight="700">茶</text>
+  <text x="104" y="128" class="t-s end ink">綿製品</text>
+  <text x="256" y="128" class="t-s ink">アヘン</text>
+  <path d="M94 74 C140 104 220 104 266 74" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="180" y="116" class="t-xs mid soft">はじめは銀で払った</text>
+
+  <!-- 年表 -->
+  <path d="M16 230 H344" class="st-line" stroke-width="2"/>
+  <g class="fl"><circle cx="46" cy="230" r="5"/><circle cx="134" cy="230" r="5"/><circle cx="222" cy="230" r="5"/><circle cx="310" cy="230" r="5"/></g>
+  <g class="t-xs mid fl">
+    <text x="46" y="220">1662</text><text x="134" y="220">1773</text><text x="222" y="220">1840</text><text x="310" y="220">19世紀</text>
+  </g>
+  <g class="t-xs mid ink">
+    <text x="46" y="250">王妃が宮廷で</text><text x="46" y="264">茶を好む</text>
+    <text x="134" y="250">ボストン</text><text x="134" y="264">茶会事件</text>
+    <text x="222" y="250">アヘン戦争</text>
+    <text x="310" y="250">インド・</text><text x="310" y="264">セイロンに茶園</text>
+  </g>
+  <text x="180" y="292" class="t-xs mid soft">茶を買う側から、植民地で茶を作る側へ</text>
+</svg>

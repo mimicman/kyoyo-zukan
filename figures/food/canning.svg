@@ -1,0 +1,50 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左：缶詰・瓶詰 -->
+  <text x="84" y="20" class="t-s mid ink" font-weight="700">缶詰・瓶詰</text>
+  <g class="tint">
+    <rect x="20" y="32" width="128" height="28" rx="14"/><rect x="20" y="76" width="128" height="28" rx="14"/><rect x="20" y="164" width="128" height="28" rx="14"/>
+  </g>
+  <rect x="20" y="120" width="128" height="28" rx="14" class="fl"/>
+  <text x="84" y="51" class="t-xs mid ink">① 食べ物を詰める</text>
+  <text x="84" y="95" class="t-xs mid ink">② すき間なく密封</text>
+  <text x="84" y="139" class="t-xs mid on" font-weight="700">③ 加熱して菌を殺す</text>
+  <text x="84" y="183" class="t-xs mid ink">④ 常温で長く保存</text>
+  <g class="st-f" stroke-width="2">
+    <path d="M84 61 V73" marker-end="url(#a-food)"/><path d="M84 105 V117" marker-end="url(#a-food)"/><path d="M84 149 V161" marker-end="url(#a-food)"/>
+  </g>
+
+  <!-- 右：冷蔵庫の冷媒の輪 -->
+  <text x="266" y="20" class="t-s mid ink" font-weight="700">冷蔵庫</text>
+  <rect x="176" y="70" width="44" height="80" rx="6" class="tint"/>
+  <text x="198" y="164" class="t-xs mid ink">庫内</text>
+  <path d="M266 44 C306 44 330 70 330 108 C330 146 306 172 266 172 C226 172 204 146 204 108 C204 70 226 44 266 44 Z" class="st-soft dash" stroke-width="1.5"/>
+  <g class="st-f" stroke-width="2.5">
+    <path d="M286 46 C306 52 322 68 328 88" marker-end="url(#a-food)"/>
+    <path d="M326 130 C318 152 300 166 280 170" marker-end="url(#a-food)"/>
+    <path d="M248 170 C228 164 212 148 206 128" marker-end="url(#a-food)"/>
+    <path d="M208 86 C216 66 232 52 250 46" marker-end="url(#a-food)"/>
+  </g>
+  <rect x="246" y="34" width="40" height="20" rx="6" class="fl"/>
+  <text x="266" y="48" class="t-xs mid on" font-weight="700">圧縮</text>
+  <text x="346" y="104" class="t-xs end ink" font-weight="700">放熱</text>
+  <text x="352" y="120" class="t-xs end soft">外へ熱</text>
+  <text x="266" y="190" class="t-xs mid ink" font-weight="700">膨張</text>
+  <text x="198" y="104" class="t-xs mid fl halo" font-weight="700">蒸発</text>
+  <text x="198" y="120" class="t-xs mid ink halo">熱を奪う</text>
+  <text x="270" y="104" class="t-xs mid soft">冷媒が</text>
+  <text x="270" y="118" class="t-xs mid soft">回る</text>
+
+  <!-- 年表 -->
+  <path d="M16 236 H344" class="st-line" stroke-width="2"/>
+  <g class="fl"><circle cx="50" cy="236" r="5"/><circle cx="140" cy="236" r="5"/><circle cx="230" cy="236" r="5"/><circle cx="315" cy="236" r="5"/></g>
+  <g class="t-xs mid fl">
+    <text x="50" y="226">1810</text><text x="140" y="226">1860年代</text><text x="230" y="226">1870年代</text><text x="315" y="226">1950年代</text>
+  </g>
+  <g class="t-xs mid ink">
+    <text x="50" y="256">アペールが</text><text x="50" y="270">瓶詰の本</text>
+    <text x="140" y="256">パスツールが</text><text x="140" y="270">微生物を示す</text>
+    <text x="230" y="256">冷凍機が</text><text x="230" y="270">実用に</text>
+    <text x="315" y="256">日本の家庭に</text><text x="315" y="270">冷蔵庫</text>
+  </g>
+  <text x="180" y="294" class="t-xs mid soft">冷やしても菌は死なない。増え方が遅くなるだけ</text>
+</svg>

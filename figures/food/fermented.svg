@@ -1,0 +1,40 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：発酵と腐敗 -->
+  <rect x="8" y="26" width="72" height="44" rx="10" class="tint"/>
+  <text x="44" y="53" class="t-s mid ink" font-weight="700">食べ物</text>
+  <text x="104" y="20" class="t-xs mid soft">微生物</text>
+  <g class="fl"><circle cx="96" cy="38" r="5"/><circle cx="110" cy="44" r="4"/><circle cx="100" cy="54" r="4"/><ellipse cx="114" cy="30" rx="6" ry="3"/></g>
+  <path d="M84 48 H128" class="st-f" stroke-width="2.5" marker-end="url(#a-food)"/>
+  <path d="M136 48 C150 30 160 24 176 22" class="st-f" stroke-width="2.5" marker-end="url(#a-food)"/>
+  <path d="M136 48 C150 66 160 72 176 74" class="st-soft" stroke-width="2.5" marker-end="url(#a-soft)"/>
+  <rect x="182" y="6" width="170" height="34" rx="10" class="fl"/>
+  <text x="194" y="28" class="t-s on" font-weight="700">発酵</text>
+  <text x="232" y="28" class="t-xs on">うま味・香り・日持ち</text>
+  <rect x="182" y="58" width="170" height="34" rx="10" class="paper"/>
+  <rect x="182" y="58" width="170" height="34" rx="10" class="st-soft dash" stroke-width="1.5"/>
+  <text x="194" y="80" class="t-s ink" font-weight="700">腐敗</text>
+  <text x="232" y="80" class="t-xs soft">食べられなくなる</text>
+  <text x="180" y="112" class="t-xs mid soft">仕組みは同じ。塩や酸で、役に立つ微生物だけを育てる</text>
+
+  <!-- 下：2つの例 -->
+  <path d="M4 124 H356" class="st-line" stroke-width="1"/>
+  <text x="92" y="146" class="t-s mid ink" font-weight="700">味噌・醤油</text>
+  <text x="268" y="146" class="t-s mid ink" font-weight="700">チーズ</text>
+  <g class="tint">
+    <rect x="14" y="156" width="156" height="30" rx="8"/><rect x="190" y="156" width="156" height="30" rx="8"/>
+    <rect x="14" y="246" width="156" height="30" rx="8"/><rect x="190" y="246" width="156" height="30" rx="8"/>
+  </g>
+  <rect x="14" y="201" width="156" height="30" rx="8" class="fl"/>
+  <rect x="190" y="201" width="156" height="30" rx="8" class="fl"/>
+  <text x="92" y="175" class="t-xs mid ink">大豆・麦や米 ＋ 麹カビ</text>
+  <text x="92" y="220" class="t-xs mid on" font-weight="700">塩を加えて寝かせる</text>
+  <text x="92" y="265" class="t-xs mid ink">タンパク質→うま味</text>
+  <text x="268" y="175" class="t-xs mid ink">牛乳 ＋ 乳酸菌・酵素</text>
+  <text x="268" y="220" class="t-xs mid on" font-weight="700">固めて水を抜き熟成</text>
+  <text x="268" y="265" class="t-xs mid ink">酸と塩で長持ち</text>
+  <g class="st-f" stroke-width="2">
+    <path d="M92 187 V199" marker-end="url(#a-food)"/><path d="M92 232 V244" marker-end="url(#a-food)"/>
+    <path d="M268 187 V199" marker-end="url(#a-food)"/><path d="M268 232 V244" marker-end="url(#a-food)"/>
+  </g>
+  <text x="180" y="296" class="t-xs mid soft">ほかにも、ヨーグルト・パン・漬物・酒など</text>
+</svg>

@@ -1,0 +1,48 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 簡略地図（形と位置はおおよそ） -->
+  <path d="M14 70 L60 40 L150 26 L250 24 L318 36 L334 64 L324 96 L312 118 L296 140 L270 150 L250 146 L232 150 L222 186 L206 152 L184 140 L150 128 L120 118 L84 110 L60 104 L30 98 Z" class="tint"/>
+  <path d="M56 116 L118 122 L140 146 L126 180 L104 208 L84 212 L72 180 L58 146 Z" class="tint"/>
+  <path d="M340 70 L348 76 L344 96 L336 102 L334 86 Z" class="tint"/>
+  <text x="60" y="164" class="t-xs mid soft">アフリカ</text>
+
+  <!-- 原産地 -->
+  <circle cx="270" cy="124" r="14" class="fl" opacity="0.3"/>
+  <circle cx="270" cy="124" r="5" class="fl"/>
+  <text x="262" y="164" class="t-xs mid fl" font-weight="700">原産地</text>
+  <path d="M266 152 V140" class="st-f" stroke-width="1"/>
+  <text x="290" y="78" class="t-s mid ink" font-weight="700">中国</text>
+  <circle cx="304" cy="118" r="3.5" class="ink"/>
+  <text x="312" y="134" class="t-xs ink">福建</text>
+
+  <!-- 陸の道：チャ -->
+  <g class="st-f" stroke-width="2.5">
+    <path d="M262 108 C240 84 222 64 206 54" marker-end="url(#a-food)"/>
+    <path d="M256 116 C220 106 180 96 140 94" marker-end="url(#a-food)"/>
+    <path d="M258 128 C246 134 236 138 226 142" marker-end="url(#a-food)"/>
+    <path d="M314 98 C322 92 328 88 334 86" marker-end="url(#a-food)"/>
+  </g>
+  <text x="196" y="44" class="t-xs mid ink halo">ロシア：チャイ</text>
+  <text x="110" y="86" class="t-xs mid ink halo">トルコ：チャイ</text>
+  <text x="196" y="130" class="t-xs end ink halo">インド：チャイ</text>
+  <text x="352" y="62" class="t-xs end ink">日本：チャ</text>
+  <text x="210" y="80" class="t-xs mid fl halo" font-weight="700">陸の道（チャ）</text>
+
+  <!-- 海の道：テ -->
+  <path d="M304 124 C316 170 270 200 200 206 C140 210 116 232 76 226 C34 220 10 150 18 84" class="st-f dash" stroke-width="2.5" fill="none" marker-end="url(#a-food)"/>
+  <text x="50" y="58" class="t-xs mid ink halo">英：ティー</text>
+  <text x="50" y="72" class="t-xs mid ink halo">仏：テ</text>
+  <text x="206" y="226" class="t-xs mid fl halo" font-weight="700">海の道（テ）</text>
+
+  <!-- 年表 -->
+  <path d="M20 258 H340" class="st-line" stroke-width="2"/>
+  <g class="fl"><circle cx="60" cy="258" r="5"/><circle cx="180" cy="258" r="5"/><circle cx="300" cy="258" r="5"/></g>
+  <text x="60" y="250" class="t-xs mid fl">8世紀</text>
+  <text x="180" y="250" class="t-xs mid fl">12世紀</text>
+  <text x="300" y="250" class="t-xs mid fl">17世紀</text>
+  <text x="60" y="276" class="t-xs mid ink">唐の陸羽が</text>
+  <text x="60" y="290" class="t-xs mid ink">『茶経』を書く</text>
+  <text x="180" y="276" class="t-xs mid ink">栄西が抹茶を</text>
+  <text x="180" y="290" class="t-xs mid ink">日本に広める</text>
+  <text x="300" y="276" class="t-xs mid ink">オランダ船が</text>
+  <text x="300" y="290" class="t-xs mid ink">ヨーロッパへ</text>
+</svg>

@@ -1,0 +1,59 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 4つの作り方 -->
+  <g class="tint">
+    <rect x="8" y="8" width="168" height="92" rx="12"/><rect x="184" y="8" width="168" height="92" rx="12"/>
+    <rect x="8" y="108" width="168" height="92" rx="12"/><rect x="184" y="108" width="168" height="92" rx="12"/>
+  </g>
+  <g class="t-m ink" font-weight="700">
+    <text x="20" y="32">切る</text><text x="196" y="32">伸ばす</text><text x="20" y="132">押し出す</text><text x="196" y="132">削る</text>
+  </g>
+  <g class="t-xs soft">
+    <text x="20" y="52">うどん・そば</text><text x="196" y="52">拉麺・そうめん</text><text x="20" y="152">パスタ・冷麺</text><text x="196" y="152">刀削麺</text>
+  </g>
+
+  <!-- 切る：たたんだ生地と包丁 -->
+  <rect x="96" y="64" width="64" height="22" rx="3" class="paper"/>
+  <rect x="96" y="64" width="64" height="22" rx="3" class="st" stroke-width="1.5"/>
+  <g class="st-soft" stroke-width="1"><path d="M106 64 V86 M116 64 V86 M126 64 V86"/></g>
+  <path d="M136 30 H166 V40 L136 58 Z" class="ink" opacity="0.7"/>
+  <path d="M150 26 H170" class="st" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- 伸ばす：両手で引く -->
+  <circle cx="206" cy="80" r="8" class="fl"/>
+  <circle cx="340" cy="80" r="8" class="fl"/>
+  <g class="st-f" stroke-width="1.5">
+    <path d="M214 76 C250 70 300 70 332 76"/><path d="M214 80 C250 76 300 76 332 80"/><path d="M214 84 C250 82 300 82 332 84"/><path d="M214 88 C250 88 300 88 332 88"/>
+  </g>
+  <path d="M260 62 H232" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M290 62 H318" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+
+  <!-- 押し出す：穴のあいた筒 -->
+  <rect x="106" y="116" width="44" height="34" rx="4" class="paper"/>
+  <rect x="106" y="116" width="44" height="34" rx="4" class="st" stroke-width="1.5"/>
+  <path d="M128 110 V118" class="st" stroke-width="5"/>
+  <path d="M118 111 H138" class="st" stroke-width="3" stroke-linecap="round"/>
+  <path d="M104 150 H152" class="st" stroke-width="3"/>
+  <g class="st-f" stroke-width="2"><path d="M112 152 V192 M120 152 V194 M128 152 V190 M136 152 V194 M144 152 V192"/></g>
+
+  <!-- 削る：かたまりと刃 -->
+  <path d="M244 176 C240 160 256 152 270 154 C284 156 290 168 286 180 C278 190 252 190 244 176 Z" class="paper"/>
+  <path d="M244 176 C240 160 256 152 270 154 C284 156 290 168 286 180 C278 190 252 190 244 176 Z" class="st" stroke-width="1.5"/>
+  <path d="M290 166 L312 158" class="st" stroke-width="3" stroke-linecap="round"/>
+  <g class="st-f" stroke-width="2.5" stroke-linecap="round">
+    <path d="M308 166 C318 172 326 180 334 186"/><path d="M304 174 C312 182 318 188 326 194"/><path d="M314 160 C326 164 334 170 342 178"/>
+  </g>
+
+  <!-- 年表 -->
+  <path d="M16 230 H344" class="st-line" stroke-width="2"/>
+  <g class="fl"><circle cx="46" cy="230" r="5"/><circle cx="134" cy="230" r="5"/><circle cx="222" cy="230" r="5"/><circle cx="310" cy="230" r="5"/></g>
+  <g class="t-xs mid fl">
+    <text x="46" y="220">約4000年前</text><text x="134" y="220">6世紀</text><text x="222" y="220">12世紀</text><text x="310" y="220">20世紀初め</text>
+  </g>
+  <g class="t-xs mid ink">
+    <text x="46" y="250">中国で</text><text x="46" y="264">キビの麺</text>
+    <text x="134" y="250">中国の本に</text><text x="134" y="264">製法の記録</text>
+    <text x="222" y="250">シチリアで</text><text x="222" y="264">乾燥パスタ</text>
+    <text x="310" y="250">日本で</text><text x="310" y="264">ラーメン</text>
+  </g>
+  <text x="180" y="290" class="t-xs mid soft">小麦はグルテンでよく伸び、どの作り方にも向く</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 簡略地図（形と位置はおおよそ） -->
+  <path d="M8 10 L120 6 L130 30 L110 46 L84 50 L60 44 L30 50 L10 36 Z" class="tint"/>
+  <path d="M30 62 L120 60 L140 74 L150 100 L176 140 L150 170 L130 220 L104 262 L84 266 L72 230 L58 180 L40 120 L26 90 Z" class="tint"/>
+  <path d="M126 50 L180 44 L214 60 L206 84 L186 98 L166 112 L150 92 L138 70 Z" class="tint"/>
+  <path d="M204 66 L240 64 L250 90 L232 140 L220 154 L210 122 L200 90 Z" class="tint"/>
+  <path d="M232 160 L240 158 L242 170 L234 174 Z" class="tint"/>
+  <path d="M250 60 L300 50 L330 64 L320 96 L300 104 L284 120 L270 104 L254 86 Z" class="tint"/>
+  <path d="M290 130 L320 136 L316 146 L292 142 Z M300 154 L330 156 L326 164 L302 162 Z" class="tint"/>
+  <g class="fl"><circle cx="338" cy="124" r="3.5"/><circle cx="346" cy="134" r="3.5"/><circle cx="340" cy="144" r="3"/></g>
+  <text x="44" y="40" class="t-xs mid soft">ヨーロッパ</text>
+  <text x="96" y="150" class="t-xs mid soft">アフリカ</text>
+
+  <!-- 古い道：アラブ・インドの商人とヴェネツィア -->
+  <path d="M212 112 C190 112 170 92 150 72 C130 56 110 36 96 30" class="st" stroke-width="1.8" marker-end="url(#a-ink)"/>
+  <circle cx="94" cy="28" r="3.5" class="ink"/>
+  <text x="96" y="20" class="t-xs ink">ヴェネツィア</text>
+  <circle cx="148" cy="70" r="3" class="ink"/>
+  <text x="128" y="84" class="t-xs end ink halo">エジプト</text>
+
+  <!-- 新しい道：アフリカ南端回り -->
+  <path d="M14 46 C0 120 40 220 92 276 C120 292 150 270 170 220 C186 180 200 140 214 118" class="st-f" stroke-width="3" marker-end="url(#a-food)"/>
+  <text x="96" y="294" class="t-xs mid fl halo" font-weight="700">喜望峰を回る</text>
+
+  <!-- 産地 -->
+  <circle cx="214" cy="112" r="6" class="fl"/>
+  <text x="248" y="196" class="t-xs ink"><tspan class="fl" font-weight="700">胡椒</tspan> インド南西部</text>
+  <path d="M246 190 C232 170 222 140 216 122" class="st-soft" stroke-width="1"/>
+  <text x="248" y="214" class="t-xs ink"><tspan class="fl" font-weight="700">シナモン</tspan> スリランカ</text>
+  <path d="M246 208 C242 196 238 186 238 176" class="st-soft" stroke-width="1"/>
+  <text x="352" y="104" class="t-xs end ink"><tspan class="fl" font-weight="700">丁子・ナツメグ</tspan></text>
+  <text x="352" y="118" class="t-xs end ink halo">香料諸島</text>
+
+  <!-- 凡例 -->
+  <path d="M190 240 H216" class="st" stroke-width="1.8"/>
+  <text x="222" y="244" class="t-xs ink">古い道：商人たちの中継</text>
+  <path d="M190 262 H216" class="st-f" stroke-width="3"/>
+  <text x="222" y="266" class="t-xs ink">1498年 ダ・ガマの航路</text>
+  <text x="190" y="290" class="t-xs soft">17世紀 オランダが香料諸島を支配</text>
+</svg>

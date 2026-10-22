@@ -1,0 +1,59 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <g class="t-s mid ink" font-weight="700">
+    <text x="60" y="20">① こねる</text><text x="180" y="20" class="fl">② 発酵</text><text x="300" y="20">③ 焼く</text>
+  </g>
+
+  <!-- ① 生地とグルテンの網 -->
+  <path d="M22 110 C18 84 40 70 60 70 C80 70 102 84 98 110 Z" class="tint"/>
+  <path d="M22 110 C18 84 40 70 60 70 C80 70 102 84 98 110 Z" class="st" stroke-width="1.5"/>
+  <g class="st-f" stroke-width="1.2">
+    <path d="M32 100 L46 84 L62 98 L78 82 L90 100"/>
+    <path d="M30 106 L46 92 L62 106 L76 92 L92 106"/>
+    <path d="M46 84 V92 M62 98 V106 M78 82 V92"/>
+  </g>
+
+  <!-- ② ふくらむ生地と泡 -->
+  <path d="M132 110 C126 64 154 44 180 44 C206 44 234 64 228 110 Z" class="tint"/>
+  <path d="M132 110 C126 64 154 44 180 44 C206 44 234 64 228 110 Z" class="st" stroke-width="1.5"/>
+  <g class="paper">
+    <circle cx="160" cy="80" r="9"/><circle cx="190" cy="70" r="7"/><circle cx="204" cy="92" r="10"/><circle cx="172" cy="98" r="6"/><circle cx="150" cy="100" r="5"/>
+  </g>
+  <g class="st-f" stroke-width="1.2">
+    <circle cx="160" cy="80" r="9"/><circle cx="190" cy="70" r="7"/><circle cx="204" cy="92" r="10"/><circle cx="172" cy="98" r="6"/><circle cx="150" cy="100" r="5"/>
+  </g>
+  <g class="fl"><circle cx="176" cy="82" r="2.5"/><circle cx="196" cy="84" r="2.5"/><circle cx="160" cy="94" r="2.5"/></g>
+
+  <!-- ③ 焼き上がり -->
+  <path d="M252 110 C246 70 270 56 300 56 C330 56 354 70 348 110 Z" class="fl" opacity="0.85"/>
+  <path d="M252 110 C246 70 270 56 300 56 C330 56 354 70 348 110 Z" class="st" stroke-width="1.5"/>
+  <g class="paper"><ellipse cx="282" cy="86" rx="7" ry="5"/><ellipse cx="306" cy="76" rx="6" ry="4"/><ellipse cx="324" cy="94" rx="8" ry="5"/><ellipse cx="298" cy="100" rx="5" ry="3.5"/><ellipse cx="268" cy="100" rx="4" ry="3"/></g>
+
+  <g class="st-f" stroke-width="2.5">
+    <path d="M104 92 H122" marker-end="url(#a-food)"/>
+    <path d="M234 92 H244" marker-end="url(#a-food)"/>
+  </g>
+  <g class="t-xs mid ink">
+    <text x="60" y="130">グルテンの</text><text x="60" y="144">網ができる</text>
+    <text x="180" y="130">酵母が泡を出し</text><text x="180" y="144">網が包みこむ</text>
+    <text x="300" y="130">泡が広がり</text><text x="300" y="144">熱で固まる</text>
+  </g>
+
+  <!-- 酵母のはたらき -->
+  <path d="M4 164 H356" class="st-line" stroke-width="1"/>
+  <circle cx="34" cy="196" r="14" class="fl"/>
+  <circle cx="46" cy="184" r="6" class="fl"/>
+  <text x="34" y="226" class="t-xs mid ink">酵母</text>
+  <rect x="70" y="182" width="44" height="28" rx="8" class="tint"/>
+  <text x="92" y="201" class="t-s mid ink" font-weight="700">糖</text>
+  <path d="M118 196 H140" class="st-f" stroke-width="2.5" marker-end="url(#a-food)"/>
+  <rect x="146" y="182" width="88" height="28" rx="8" class="fl"/>
+  <text x="190" y="201" class="t-xs mid on" font-weight="700">二酸化炭素</text>
+  <text x="244" y="201" class="t-s mid soft">＋</text>
+  <rect x="256" y="182" width="96" height="28" rx="8" class="tint"/>
+  <text x="304" y="201" class="t-xs mid ink">アルコール</text>
+  <text x="190" y="228" class="t-xs mid soft">泡になってふくらむ</text>
+  <text x="304" y="228" class="t-xs mid soft">焼くと蒸発する</text>
+
+  <text x="180" y="262" class="t-xs mid ink">グルテンの網 ＝ 泡を閉じこめる風船のゴム</text>
+  <text x="180" y="286" class="t-xs mid soft">米粉やトウモロコシ粉はグルテンがなく、同じにはふくらまない</text>
+</svg>
