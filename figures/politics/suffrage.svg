@@ -1,0 +1,32 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：選挙権を持つ人の広がり（イメージ、1800〜2000年、1年＝1.6）。下：女性の選挙権の例 -->
+  <text x="16" y="24" class="t-m ink" font-weight="700">選挙権を持つ人の広がり（イメージ）</text>
+  <polygon points="20,170 20,164 96,164 112,120 340,120 340,170" class="fl"/>
+  <polygon points="205,120 250,72 340,72 340,120" class="tint"/>
+  <path d="M20 72 H340" class="st-line dash" stroke-width="1"/>
+  <text x="24" y="66" class="t-xs soft">すべての大人</text>
+  <text x="22" y="140" class="t-xs ink">税を多く納める</text>
+  <text x="22" y="155" class="t-xs ink">男性だけ</text>
+  <text x="226" y="150" class="t-s mid on" font-weight="700">男性の普通選挙</text>
+  <text x="294" y="100" class="t-s mid ink" font-weight="700">女性にも</text>
+  <text x="104" y="112" class="t-xs mid ink">1848 フランス</text>
+
+  <path d="M20 186 H340" class="st-soft" stroke-width="1.5"/>
+  <path d="M20 182 V190 M100 182 V190 M180 182 V190 M260 182 V190 M340 182 V190" class="st-soft" stroke-width="1.5"/>
+  <text x="20" y="202" class="t-xs mid soft">1800</text>
+  <text x="100" y="202" class="t-xs mid soft">1850</text>
+  <text x="180" y="202" class="t-xs mid soft">1900</text>
+  <text x="260" y="202" class="t-xs mid soft">1950</text>
+  <text x="340" y="202" class="t-xs end soft">2000</text>
+
+  <!-- 女性の選挙権の例 -->
+  <text x="16" y="236" class="t-xs ink" font-weight="700">女性の選挙権の例</text>
+  <path d="M130 232 H340" class="st-line" stroke-width="1.5"/>
+  <circle cx="169" cy="232" r="5" class="fl"/>
+  <circle cx="209" cy="232" r="5" class="fl"/>
+  <circle cx="252" cy="232" r="5" class="fl"/>
+  <text x="169" y="222" class="t-xs mid ink">1893 ニュージーランド</text>
+  <text x="209" y="250" class="t-xs mid ink">1918 イギリス</text>
+  <text x="262" y="222" class="t-xs ink">1945 日本</text>
+  <text x="180" y="272" class="t-xs mid soft">いまの日本では、18歳以上の全員が一票を持つ</text>
+</svg>

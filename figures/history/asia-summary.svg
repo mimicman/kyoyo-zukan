@@ -1,23 +1,23 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- 上：草原のモンゴル帝国。下：中国の王朝の帯（高い＝統一、低い＝分裂）。モンゴルが元として中国に入る -->
-  <text x="20" y="28" class="t-m ink" font-weight="700">農耕の中国と、草原の帝国</text>
+  <!-- 上：アジアと世界をつないだ3つの動き（期間の帯）。下：中国の王朝の帯（高い＝統一、低い＝分裂）。横軸は前221〜1912年（1年＝0.136） -->
+  <text x="20" y="26" class="t-m ink" font-weight="700">中国の王朝と、世界とのつながり</text>
 
-  <!-- モンゴル帝国 -->
-  <rect x="190" y="44" width="112" height="44" rx="10" class="ink"/>
-  <text x="246" y="64" class="t-s mid paper" font-weight="700">モンゴル帝国</text>
-  <text x="246" y="80" class="t-xs mid paper">1206年〜 草原から</text>
-  <path d="M188 66 H124" class="st-f" stroke-width="2" marker-end="url(#a-history)"/>
-  <text x="20" y="62" class="t-xs ink">西はペルシャ・</text>
-  <text x="20" y="76" class="t-xs ink">ロシアまで</text>
-  <path d="M243 90 V146" class="st-f" stroke-width="2" marker-end="url(#a-history)"/>
-  <text x="252" y="114" class="t-xs ink">中国を支配し</text>
-  <text x="252" y="128" class="t-xs ink">元を建てる</text>
+  <!-- シルクロード（前200〜1500ごろ） -->
+  <rect x="37" y="40" width="231" height="24" rx="6" class="tint"/>
+  <text x="46" y="56" class="t-xs ink" font-weight="700">シルクロード（草原・砂漠・海の道）</text>
+  <!-- モンゴル帝国（1206〜1368） -->
+  <rect x="228" y="72" width="22" height="24" rx="4" class="ink"/>
+  <text x="220" y="88" class="t-xs end ink" font-weight="700">モンゴル帝国が東西をつなぐ</text>
+  <!-- 列強の進出（1840〜1910） -->
+  <rect x="314" y="104" width="12" height="24" rx="3" class="fl"/>
+  <text x="306" y="120" class="t-xs end ink" font-weight="700">欧米の列強が海から進出</text>
+  <path d="M239 98 V146" class="st-f dash" stroke-width="1.5" marker-end="url(#a-history)"/>
 
   <!-- 凡例 -->
-  <rect x="20" y="106" width="12" height="12" rx="2" class="fl"/>
-  <text x="37" y="116" class="t-xs ink">統一</text>
-  <rect x="80" y="106" width="12" height="12" rx="2" class="tint"/>
-  <text x="97" y="116" class="t-xs ink">分裂</text>
+  <rect x="20" y="132" width="12" height="12" rx="2" class="fl"/>
+  <text x="37" y="142" class="t-xs ink">統一</text>
+  <rect x="80" y="132" width="12" height="12" rx="2" class="tint"/>
+  <text x="97" y="142" class="t-xs ink">分裂</text>
 
   <!-- 中国の王朝（前221〜1912年、長さはおおよそ） -->
   <rect x="34" y="150" width="60" height="50" class="fl"/>
@@ -42,5 +42,5 @@
   <text x="34" y="244" class="t-xs mid soft">前221</text>
   <text x="200" y="244" class="t-xs mid soft">1000</text>
   <text x="324" y="244" class="t-xs mid soft">1912</text>
-  <text x="20" y="268" class="t-xs soft">日本は唐から律令を学び、元の軍とは鎌倉時代に戦った</text>
+  <text x="20" y="268" class="t-xs soft">日本は唐から律令を学び、元の軍や黒船とも向き合った</text>
 </svg>

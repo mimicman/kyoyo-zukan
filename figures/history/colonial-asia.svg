@@ -1,0 +1,54 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 20世紀初めのアジアの略図。濃い色＝植民地、淡い色＝権利を奪われた、枠だけ＝独立を保った -->
+  <rect x="12" y="14" width="124" height="44" rx="10" class="ink"/>
+  <text x="74" y="33" class="t-s mid paper" font-weight="700">工業化した欧米</text>
+  <text x="74" y="49" class="t-xs mid paper">原料と市場を求める</text>
+  <path d="M74 60 L88 92" class="st-f" stroke-width="2" marker-end="url(#a-history)"/>
+  <path d="M138 40 L162 52" class="st-f" stroke-width="2" marker-end="url(#a-history)"/>
+
+  <!-- インド -->
+  <polygon points="46,98 140,98 124,148 98,198 72,148" class="fl"/>
+  <text x="94" y="126" class="t-s mid on" font-weight="700">インド</text>
+  <text x="94" y="142" class="t-xs mid on">イギリス</text>
+
+  <!-- 中国 -->
+  <rect x="166" y="40" width="128" height="86" rx="14" class="tint"/>
+  <text x="230" y="70" class="t-s mid ink" font-weight="700">清（中国）</text>
+  <text x="230" y="88" class="t-xs mid ink">戦争に敗れ</text>
+  <text x="230" y="102" class="t-xs mid ink">港を開く</text>
+  <circle cx="288" cy="112" r="4" class="ink"/>
+  <circle cx="276" cy="122" r="4" class="ink"/>
+  <circle cx="294" cy="94" r="4" class="ink"/>
+
+  <!-- 日本 -->
+  <path d="M316 50 C332 56 340 74 334 92 C330 104 320 112 312 114" class="st-f" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <text x="348" y="132" class="t-xs end ink" font-weight="700">日本</text>
+  <text x="348" y="146" class="t-xs end fl">独立を保つ</text>
+
+  <!-- タイ・インドシナ -->
+  <rect x="148" y="146" width="40" height="48" rx="8" class="paper st-f" stroke-width="2"/>
+  <text x="168" y="166" class="t-xs mid ink" font-weight="700">タイ</text>
+  <text x="168" y="182" class="t-xs mid fl">独立</text>
+  <rect x="194" y="146" width="66" height="48" rx="8" class="fl"/>
+  <text x="227" y="166" class="t-xs mid on" font-weight="700">インドシナ</text>
+  <text x="227" y="182" class="t-xs mid on">フランス</text>
+
+  <!-- フィリピン -->
+  <ellipse cx="302" cy="168" rx="8" ry="12" class="fl"/>
+  <ellipse cx="312" cy="190" rx="7" ry="9" class="fl"/>
+  <text x="348" y="214" class="t-xs end ink">フィリピン</text>
+
+  <!-- インドネシア -->
+  <ellipse cx="208" cy="226" rx="24" ry="8" class="fl"/>
+  <ellipse cx="252" cy="234" rx="18" ry="7" class="fl"/>
+  <ellipse cx="290" cy="224" rx="14" ry="8" class="fl"/>
+  <text x="250" y="260" class="t-xs mid ink">インドネシア（オランダ）</text>
+
+  <!-- 凡例 -->
+  <rect x="14" y="216" width="14" height="12" rx="2" class="fl"/>
+  <text x="34" y="226" class="t-xs ink">植民地</text>
+  <rect x="14" y="236" width="14" height="12" rx="2" class="tint"/>
+  <text x="34" y="246" class="t-xs ink">権利を奪われた</text>
+  <rect x="14" y="256" width="14" height="12" rx="2" class="paper st-f" stroke-width="1.5"/>
+  <text x="34" y="266" class="t-xs ink">独立を保った</text>
+</svg>

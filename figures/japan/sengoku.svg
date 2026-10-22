@@ -1,0 +1,60 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左：応仁の乱。中：下剋上の階段。右：戦国大名が並び立つ -->
+  <text x="62" y="28" class="t-m mid ink" font-weight="700">応仁の乱</text>
+  <text x="62" y="44" class="t-xs mid soft">1467〜77年</text>
+  <text x="180" y="28" class="t-m mid ink" font-weight="700">下剋上</text>
+  <text x="180" y="44" class="t-xs mid soft">下が上を倒す</text>
+  <text x="298" y="28" class="t-m mid ink" font-weight="700">戦国大名</text>
+  <text x="298" y="44" class="t-xs mid soft">各地に並び立つ</text>
+  <path d="M96 22 H134" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+  <path d="M206 22 H254" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+
+  <!-- 応仁の乱 -->
+  <rect x="12" y="58" width="100" height="116" rx="10" class="tint"/>
+  <text x="62" y="76" class="t-xs mid soft">京都</text>
+  <circle cx="38" cy="108" r="19" class="fl"/>
+  <text x="38" y="112" class="t-xs mid on" font-weight="700">東軍</text>
+  <circle cx="86" cy="108" r="19" class="ink"/>
+  <text x="86" y="112" class="t-xs mid paper" font-weight="700">西軍</text>
+  <path d="M58 100 L66 116 M66 100 L58 116" class="st" stroke-width="2"/>
+  <text x="62" y="148" class="t-s mid ink" font-weight="700">約11年</text>
+  <text x="62" y="164" class="t-xs mid soft">町の多くが焼ける</text>
+  <text x="62" y="194" class="t-xs mid soft">きっかけは</text>
+  <text x="62" y="208" class="t-xs mid soft">将軍家などの</text>
+  <text x="62" y="222" class="t-xs mid soft">跡継ぎ争い</text>
+
+  <!-- 下剋上 -->
+  <rect x="128" y="62" width="60" height="26" rx="6" class="paper st-soft" stroke-width="1.5"/>
+  <text x="158" y="79" class="t-xs mid soft">将軍</text>
+  <rect x="144" y="104" width="72" height="26" rx="6" class="paper st-soft" stroke-width="1.5"/>
+  <text x="180" y="121" class="t-xs mid soft">守護大名</text>
+  <rect x="160" y="146" width="72" height="40" rx="6" class="fl"/>
+  <text x="196" y="162" class="t-xs mid on">家来や</text>
+  <text x="196" y="178" class="t-xs mid on">地元の武士</text>
+  <path d="M168 144 C134 140 124 108 140 92" class="st-f" stroke-width="2.5" fill="none" marker-end="url(#a-japan)"/>
+  <text x="180" y="208" class="t-xs mid ink">弱まった上の者を</text>
+  <text x="180" y="222" class="t-xs mid ink">実力で倒す</text>
+
+  <!-- 戦国大名（領国のパッチワーク） -->
+  <g stroke-width="1.5">
+    <path d="M248 60 H298 L292 104 L248 112 Z" class="tint st-f"/>
+    <path d="M298 60 H348 V96 L292 104 Z" class="bgc st-f"/>
+    <path d="M248 112 L292 104 L300 148 L248 156 Z" class="bgc st-f"/>
+    <path d="M292 104 L348 96 V146 L300 148 Z" class="tint st-f"/>
+    <path d="M248 156 L300 148 L304 186 H248 Z" class="tint st-f"/>
+    <path d="M300 148 L348 146 V186 H304 Z" class="bgc st-f"/>
+  </g>
+  <g class="t-s mid ink" font-weight="700">
+    <text x="272" y="92">城</text>
+    <text x="320" y="86">城</text>
+    <text x="270" y="138">城</text>
+    <text x="324" y="132">城</text>
+    <text x="274" y="176">城</text>
+    <text x="326" y="176">城</text>
+  </g>
+  <text x="298" y="208" class="t-xs mid ink">城下町を築き</text>
+  <text x="298" y="222" class="t-xs mid ink">分国法で治める</text>
+
+  <path d="M12 242 H348" class="st-line" stroke-width="1"/>
+  <text x="180" y="266" class="t-xs mid soft">1573年に室町幕府が終わり、天下統一の時代へ</text>
+</svg>

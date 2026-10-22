@@ -15,9 +15,11 @@
   <text x="180" y="146" class="t-xs mid soft">法律で動く</text>
 
   <rect x="260" y="74" width="64" height="96" rx="6" class="tint st-f" stroke-width="1.5"/>
+  <path d="M334 150 C346 120 344 86 320 62" class="st-f dash" stroke-width="1.5" fill="none" marker-end="url(#a-politics)"/>
   <text x="292" y="112" class="t-l mid ink">司法</text>
   <text x="292" y="132" class="t-xs mid soft">裁判所</text>
   <text x="292" y="146" class="t-xs mid soft">争いを裁く</text>
+  <text x="292" y="162" class="t-xs mid fl" font-weight="700">違憲審査</text>
 
   <!-- 柱どうしのブレーキ -->
   <path d="M104 100 H144" class="st-f" stroke-width="1.5" marker-end="url(#a-politics)"/>

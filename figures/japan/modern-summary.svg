@@ -1,46 +1,49 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- 近代と現代：開国→明治の近代化→戦争の時代→戦後の復興と成長 -->
+  <!-- 近代と現代：開国→明治の近代化→大正の政党政治→戦争の時代→戦後の復興と成長 -->
   <text x="16" y="24" class="t-m ink">世界の中の日本へ</text>
-  <path d="M24 70 H336" class="st-line" stroke-width="2"/>
-  <circle cx="40" cy="70" r="10" class="fl"/>
-  <circle cx="120" cy="70" r="10" class="fl"/>
-  <circle cx="220" cy="70" r="10" class="soft"/>
-  <circle cx="310" cy="70" r="10" class="fl"/>
-  <text x="40" y="50" class="t-xs mid soft">1854</text>
-  <text x="120" y="50" class="t-xs mid soft">1868</text>
-  <text x="220" y="50" class="t-xs mid soft">1894〜1945</text>
-  <text x="310" y="50" class="t-xs mid soft">1945〜</text>
+  <path d="M20 70 H340" class="st-line" stroke-width="2"/>
+  <circle cx="44" cy="70" r="9" class="fl"/>
+  <circle cx="112" cy="70" r="9" class="fl"/>
+  <circle cx="180" cy="70" r="9" class="fl"/>
+  <circle cx="248" cy="70" r="9" class="soft"/>
+  <circle cx="316" cy="70" r="9" class="fl"/>
+  <text x="44" y="50" class="t-xs mid soft">1854</text>
+  <text x="112" y="50" class="t-xs mid soft">1868</text>
+  <text x="180" y="50" class="t-xs mid soft">1912</text>
+  <text x="248" y="50" class="t-xs mid soft">1931</text>
+  <text x="316" y="50" class="t-xs mid soft">1945</text>
 
-  <g>
-    <rect x="12" y="96" width="76" height="92" rx="10" class="tint"/>
-    <text x="50" y="120" class="t-s mid ink" font-weight="700">開国</text>
-    <text x="50" y="140" class="t-xs mid soft">黒船が来て</text>
-    <text x="50" y="154" class="t-xs mid soft">条約を結ぶ</text>
-  </g>
-  <g>
-    <rect x="94" y="96" width="76" height="92" rx="10" class="tint"/>
-    <text x="132" y="120" class="t-s mid ink" font-weight="700">明治維新</text>
-    <text x="132" y="140" class="t-xs mid soft">西洋にならい</text>
-    <text x="132" y="154" class="t-xs mid soft">国を作り直す</text>
-    <text x="132" y="168" class="t-xs mid soft">憲法・工業</text>
-  </g>
-  <g>
-    <rect x="176" y="96" width="88" height="92" rx="10" class="bgc"/>
-    <text x="220" y="120" class="t-s mid ink" font-weight="700">戦争の時代</text>
-    <text x="220" y="140" class="t-xs mid soft">日清・日露から</text>
-    <text x="220" y="154" class="t-xs mid soft">二つの世界大戦</text>
-    <text x="220" y="168" class="t-xs mid soft">1945年に敗戦</text>
-  </g>
-  <g>
-    <rect x="270" y="96" width="78" height="92" rx="10" class="fl"/>
-    <text x="309" y="120" class="t-s mid on" font-weight="700">戦後</text>
-    <text x="309" y="140" class="t-xs mid on">新しい憲法</text>
-    <text x="309" y="154" class="t-xs mid on">高度経済成長</text>
-    <text x="309" y="168" class="t-xs mid on">バブルと崩壊</text>
-  </g>
+  <rect x="12" y="94" width="64" height="98" rx="10" class="tint"/>
+  <text x="44" y="116" class="t-s mid ink" font-weight="700">開国</text>
+  <text x="44" y="136" class="t-xs mid soft">黒船が来て</text>
+  <text x="44" y="150" class="t-xs mid soft">条約を</text>
+  <text x="44" y="164" class="t-xs mid soft">結ぶ</text>
+
+  <rect x="80" y="94" width="64" height="98" rx="10" class="tint"/>
+  <text x="112" y="116" class="t-s mid ink" font-weight="700">明治</text>
+  <text x="112" y="136" class="t-xs mid soft">西洋に</text>
+  <text x="112" y="150" class="t-xs mid soft">ならい国を</text>
+  <text x="112" y="164" class="t-xs mid soft">作り直す</text>
+
+  <rect x="148" y="94" width="64" height="98" rx="10" class="tint"/>
+  <text x="180" y="116" class="t-s mid ink" font-weight="700">大正</text>
+  <text x="180" y="136" class="t-xs mid soft">政党内閣</text>
+  <text x="180" y="150" class="t-xs mid soft">普通選挙</text>
+
+  <rect x="216" y="94" width="64" height="98" rx="10" class="bgc"/>
+  <text x="248" y="116" class="t-s mid ink" font-weight="700">戦争</text>
+  <text x="248" y="136" class="t-xs mid soft">満州事変</text>
+  <text x="248" y="150" class="t-xs mid soft">から太平洋</text>
+  <text x="248" y="164" class="t-xs mid soft">戦争へ</text>
+
+  <rect x="284" y="94" width="64" height="98" rx="10" class="fl"/>
+  <text x="316" y="116" class="t-s mid on" font-weight="700">戦後</text>
+  <text x="316" y="136" class="t-xs mid on">新しい憲法</text>
+  <text x="316" y="150" class="t-xs mid on">高度成長</text>
+  <text x="316" y="164" class="t-xs mid on">バブル崩壊</text>
 
   <!-- 変化の大きさ -->
   <rect x="12" y="206" width="336" height="62" rx="12" class="bgc"/>
   <text x="26" y="228" class="t-s ink" font-weight="700">約150年で、暮らしも国の形も大きく変わった</text>
-  <text x="26" y="250" class="t-xs soft">身分の廃止・学校・鉄道・選挙・テレビ…今の日本の土台の多くがこの時代に</text>
+  <text x="26" y="250" class="t-xs soft">学校・鉄道・選挙・テレビ…今の暮らしの土台がここで生まれた</text>
 </svg>

@@ -1,0 +1,44 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：大王の遠征路の略図。下：ギリシャとオリエントの文化が混じってヘレニズム文化に -->
+  <text x="16" y="24" class="t-m ink" font-weight="700">大王の遠征と、混じり合う文化</text>
+
+  <!-- 地中海とインダス川（略図） -->
+  <ellipse cx="58" cy="112" rx="44" ry="17" class="tint"/>
+  <text x="58" y="116" class="t-xs mid soft">地中海</text>
+  <path d="M330 52 C322 74 338 92 328 112 C320 130 334 144 326 160" class="st-soft" stroke-width="3" fill="none"/>
+  <text x="340" y="176" class="t-xs end soft">インダス川</text>
+
+  <!-- 遠征路 -->
+  <path d="M50 66 C96 70 118 92 112 122 C108 138 102 146 98 150" class="st-f" stroke-width="3" fill="none" marker-end="url(#a-history)"/>
+  <path d="M106 146 C130 120 168 110 196 108" class="st-f" stroke-width="3" fill="none" marker-end="url(#a-history)"/>
+  <path d="M206 104 C246 90 284 86 316 90" class="st-f" stroke-width="3" fill="none" marker-end="url(#a-history)"/>
+  <path d="M318 104 C290 132 246 136 212 120" class="st-f dash" stroke-width="2" fill="none" marker-end="url(#a-history)"/>
+
+  <circle cx="50" cy="66" r="7" class="ink"/>
+  <text x="50" y="52" class="t-xs mid ink" font-weight="700">マケドニア</text>
+  <text x="16" y="88" class="t-xs soft">前334年 出発</text>
+  <circle cx="98" cy="152" r="6" class="fl"/>
+  <text x="98" y="172" class="t-xs mid ink" font-weight="700">エジプト</text>
+  <text x="98" y="186" class="t-xs mid soft">アレクサンドリア</text>
+  <circle cx="204" cy="110" r="6" class="fl"/>
+  <text x="200" y="96" class="t-xs mid ink" font-weight="700">ペルシャを倒す</text>
+  <text x="252" y="150" class="t-xs mid soft">前323年 大王が死去</text>
+
+  <text x="16" y="206" class="t-xs soft">死後は3つの王国に。各地の都市でギリシャ語が共通語に</text>
+
+  <!-- 文化が混じる -->
+  <rect x="12" y="216" width="100" height="56" rx="10" class="tint"/>
+  <text x="62" y="236" class="t-s mid ink" font-weight="700">ギリシャ</text>
+  <text x="62" y="252" class="t-xs mid soft">ことば・哲学</text>
+  <text x="62" y="265" class="t-xs mid soft">彫刻・幾何学</text>
+  <text x="124" y="250" class="t-l mid ink">＋</text>
+  <rect x="136" y="216" width="100" height="56" rx="10" class="tint"/>
+  <text x="186" y="236" class="t-s mid ink" font-weight="700">オリエント</text>
+  <text x="186" y="252" class="t-xs mid soft">王の政治・天文学</text>
+  <text x="186" y="265" class="t-xs mid soft">宗教・美術</text>
+  <path d="M240 244 H254" class="st-f" stroke-width="2.5" marker-end="url(#a-history)"/>
+  <rect x="260" y="216" width="88" height="56" rx="10" class="fl"/>
+  <text x="304" y="236" class="t-s mid on" font-weight="700">ヘレニズム</text>
+  <text x="304" y="252" class="t-xs mid on">文化</text>
+  <text x="304" y="265" class="t-xs mid on">学問・美術</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 3つの列：自由権（国を遠ざける）・参政権（国に参加する）・社会権（国が支える）。国と個人の関係の違い -->
+  <path d="M30 22 H322" class="st-f dash" stroke-width="1.5" marker-end="url(#a-politics)"/>
+  <text x="180" y="16" class="t-xs mid soft">国と個人の関係が広がる</text>
+
+  <rect x="12" y="32" width="104" height="210" rx="10" class="tint"/>
+  <rect x="128" y="32" width="104" height="210" rx="10" class="tint"/>
+  <rect x="244" y="32" width="104" height="210" rx="10" class="tint"/>
+  <text x="64" y="50" class="t-xs mid soft">18世紀〜</text>
+  <text x="180" y="50" class="t-xs mid soft">19世紀〜</text>
+  <text x="296" y="50" class="t-xs mid soft">20世紀〜</text>
+
+  <!-- 国 -->
+  <rect x="38" y="60" width="52" height="26" rx="6" class="ink"/>
+  <rect x="154" y="60" width="52" height="26" rx="6" class="ink"/>
+  <rect x="270" y="60" width="52" height="26" rx="6" class="ink"/>
+  <text x="64" y="78" class="t-s mid paper">国</text>
+  <text x="180" y="78" class="t-s mid paper">国</text>
+  <text x="296" y="78" class="t-s mid paper">国</text>
+
+  <!-- 人 -->
+  <circle cx="64" cy="160" r="13" class="paper st-f" stroke-width="2"/>
+  <circle cx="180" cy="160" r="13" class="paper st-f" stroke-width="2"/>
+  <circle cx="296" cy="160" r="13" class="paper st-f" stroke-width="2"/>
+  <text x="64" y="165" class="t-xs mid ink">人</text>
+  <text x="180" y="165" class="t-xs mid ink">人</text>
+  <text x="296" y="165" class="t-xs mid ink">人</text>
+
+  <!-- 自由権：国の手出しを壁で止める -->
+  <path d="M64 88 V108" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <path d="M30 120 H98" class="st-f" stroke-width="5" stroke-linecap="round"/>
+  <text x="64" y="138" class="t-xs mid ink">口出しさせない</text>
+  <!-- 参政権：人から国へ一票 -->
+  <path d="M180 145 V92" class="st-f" stroke-width="2.5" marker-end="url(#a-politics)"/>
+  <rect x="188" y="110" width="14" height="16" rx="2" class="fl"/>
+  <text x="168" y="124" class="t-xs end ink">一票</text>
+  <!-- 社会権：国から人へ支え -->
+  <path d="M296 90 V142" class="st-f" stroke-width="2.5" marker-end="url(#a-politics)"/>
+  <text x="306" y="122" class="t-xs ink">支える</text>
+
+  <text x="64" y="198" class="t-m mid ink" font-weight="700">自由権</text>
+  <text x="180" y="198" class="t-m mid ink" font-weight="700">参政権</text>
+  <text x="296" y="198" class="t-m mid ink" font-weight="700">社会権</text>
+  <text x="64" y="216" class="t-xs mid fl">国からの自由</text>
+  <text x="180" y="216" class="t-xs mid fl">政治に加わる</text>
+  <text x="296" y="216" class="t-xs mid fl">国による支え</text>
+  <text x="64" y="232" class="t-xs mid soft">表現・信教</text>
+  <text x="180" y="232" class="t-xs mid soft">選挙権</text>
+  <text x="296" y="232" class="t-xs mid soft">生存権・教育</text>
+  <text x="180" y="266" class="t-xs mid soft">日本国憲法は、3つの種類の権利をどれも定めている</text>
+</svg>

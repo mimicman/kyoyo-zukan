@@ -1,28 +1,32 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- 1750〜2000年の年表に、産業革命・二つの大戦・冷戦の時期を並べ、つながりを矢印で示す（1年＝1.2） -->
-  <text x="20" y="28" class="t-m ink" font-weight="700">機械の力から、世界規模の対立へ</text>
+  <!-- 1750〜2000年の年表に、産業革命・フランス革命・二つの大戦・冷戦の時期を並べ、つながりを矢印で示す（1年＝1.2） -->
+  <text x="20" y="26" class="t-m ink" font-weight="700">機械と革命から、世界規模の対立へ</text>
 
   <!-- 産業革命 1760〜1850 -->
-  <rect x="42" y="48" width="120" height="34" rx="6" class="tint"/>
-  <text x="102" y="64" class="t-s mid ink" font-weight="700">産業革命</text>
-  <text x="102" y="77" class="t-xs mid soft">イギリスから世界へ</text>
+  <rect x="42" y="40" width="120" height="30" rx="6" class="tint"/>
+  <text x="102" y="55" class="t-s mid ink" font-weight="700">産業革命</text>
+  <text x="102" y="67" class="t-xs mid soft">イギリスから世界へ</text>
+  <!-- フランス革命 1789〜1799 -->
+  <rect x="77" y="78" width="12" height="24" rx="3" class="fl"/>
+  <text x="97" y="89" class="t-s ink" font-weight="700">フランス革命</text>
+  <text x="97" y="102" class="t-xs soft">国民が主役の国へ</text>
 
   <!-- 二つの世界大戦 1914〜18、1939〜45 -->
-  <rect x="227" y="106" width="6" height="34" class="ink"/>
-  <rect x="257" y="106" width="8" height="34" class="ink"/>
-  <text x="219" y="120" class="t-s end ink" font-weight="700">二つの世界大戦</text>
-  <text x="219" y="135" class="t-xs end soft">国の総力を挙げた戦争</text>
+  <rect x="227" y="114" width="6" height="32" class="ink"/>
+  <rect x="257" y="114" width="8" height="32" class="ink"/>
+  <text x="219" y="127" class="t-s end ink" font-weight="700">二つの世界大戦</text>
+  <text x="219" y="141" class="t-xs end soft">国の総力を挙げた戦争</text>
 
   <!-- 冷戦 1947〜1991 -->
-  <rect x="266" y="164" width="53" height="34" rx="6" class="fl"/>
-  <text x="292" y="186" class="t-xs mid on">米ソ</text>
-  <text x="258" y="178" class="t-s end ink" font-weight="700">冷戦</text>
+  <rect x="266" y="166" width="53" height="32" rx="6" class="fl"/>
+  <text x="292" y="187" class="t-xs mid on">米ソ</text>
+  <text x="258" y="179" class="t-s end ink" font-weight="700">冷戦</text>
   <text x="258" y="193" class="t-xs end soft">東西の陣営に分かれて対立</text>
 
   <!-- つながり -->
-  <path d="M164 70 C200 72 222 84 228 102" class="st-f dash" stroke-width="2" fill="none" marker-end="url(#a-history)"/>
-  <text x="178" y="62" class="t-xs soft">工業力が兵器に</text>
-  <path d="M268 142 C276 148 282 154 286 160" class="st-f dash" stroke-width="2" fill="none" marker-end="url(#a-history)"/>
+  <path d="M164 58 C200 62 222 84 229 108" class="st-f dash" stroke-width="2" fill="none" marker-end="url(#a-history)"/>
+  <text x="176" y="50" class="t-xs soft">工業力が兵器に</text>
+  <path d="M268 148 C276 154 282 158 286 162" class="st-f dash" stroke-width="2" fill="none" marker-end="url(#a-history)"/>
 
   <!-- 年の軸 -->
   <path d="M26 216 H340" class="st-soft" stroke-width="1.5"/>

@@ -35,21 +35,31 @@
   <rect x="210" y="84" width="60" height="24" rx="12" class="fl"/>
   <text x="240" y="100" class="t-xs mid on">国連（場）</text>
 
+  <!-- 地域のまとまり（下の2国） -->
+  <rect x="146" y="111" width="188" height="34" rx="17" class="st-f dash" stroke-width="1.2" fill="none"/>
+  <text x="240" y="157" class="t-xs mid fl">地域のまとまり（EUなど）</text>
+
   <!-- 下：年の流れ（間隔は目安） -->
-  <path d="M14 196 H224" class="st-line" stroke-width="2"/>
-  <path d="M244 196 H340" class="st-line" stroke-width="2" marker-end="url(#a-soft)"/>
-  <path d="M226 202 L232 190 M236 202 L242 190" class="st-soft" stroke-width="1.5"/>
-  <circle cx="56" cy="196" r="5" class="fl"/>
-  <circle cx="168" cy="196" r="5" class="fl"/>
-  <circle cx="296" cy="196" r="5" class="fl"/>
-  <text x="56" y="184" class="t-xs mid ink">1625年</text>
-  <text x="168" y="184" class="t-xs mid ink">1648年</text>
-  <text x="296" y="184" class="t-xs mid ink">1945年</text>
-  <text x="56" y="220" class="t-s mid ink" font-weight="700">グロティウス</text>
-  <text x="56" y="236" class="t-xs mid soft">国際法の父</text>
-  <text x="168" y="220" class="t-s mid ink" font-weight="700">ウェストファリア</text>
-  <text x="168" y="236" class="t-xs mid soft">対等な主権国家</text>
-  <text x="296" y="220" class="t-s mid ink" font-weight="700">国際連合</text>
-  <text x="296" y="236" class="t-xs mid soft">世界大戦の反省</text>
-  <text x="180" y="266" class="t-xs mid soft">国どうしの約束と話し合いで、秩序を保つ</text>
+  <path d="M14 196 H340" class="st-line" stroke-width="2" marker-end="url(#a-soft)"/>
+  <circle cx="36" cy="196" r="5" class="fl"/>
+  <circle cx="110" cy="196" r="5" class="fl"/>
+  <circle cx="180" cy="196" r="5" class="fl"/>
+  <circle cx="250" cy="196" r="5" class="fl"/>
+  <circle cx="318" cy="196" r="5" class="fl"/>
+  <text x="36" y="184" class="t-xs mid ink">1625</text>
+  <text x="110" y="184" class="t-xs mid ink">1648</text>
+  <text x="180" y="184" class="t-xs mid ink">1815</text>
+  <text x="250" y="184" class="t-xs mid ink">1945</text>
+  <text x="318" y="184" class="t-xs mid ink">1993</text>
+  <text x="36" y="214" class="t-xs mid ink" font-weight="700">グロティウス</text>
+  <text x="110" y="246" class="t-xs mid ink" font-weight="700">ウェストファリア</text>
+  <text x="180" y="214" class="t-xs mid ink" font-weight="700">ウィーン会議</text>
+  <text x="250" y="246" class="t-xs mid ink" font-weight="700">国際連合</text>
+  <text x="318" y="214" class="t-xs mid ink" font-weight="700">EU発足</text>
+  <text x="110" y="260" class="t-xs mid soft">対等な主権国家</text>
+  <text x="180" y="228" class="t-xs mid soft">力の釣り合い</text>
+  <text x="250" y="260" class="t-xs mid soft">集団安全保障</text>
+  <text x="36" y="228" class="t-xs mid soft">国際法の父</text>
+  <text x="318" y="228" class="t-xs mid soft">地域統合</text>
+  <text x="180" y="276" class="t-xs mid soft">国どうしの約束と話し合いで、秩序を保つ</text>
 </svg>

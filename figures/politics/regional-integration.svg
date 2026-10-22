@@ -1,0 +1,29 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 統合の深さの階段：自由貿易→関税同盟→単一市場→通貨同盟。下：EUの歩み -->
+  <text x="16" y="26" class="t-m ink" font-weight="700">結びつきの深さ</text>
+  <path d="M24 162 C80 150 160 112 244 62" class="st-f dash" stroke-width="1.5" fill="none" marker-end="url(#a-politics)"/>
+  <text x="60" y="118" class="t-xs fl" font-weight="700">統合が深まる</text>
+
+  <rect x="16" y="182" width="80" height="40" rx="4" class="tint"/>
+  <rect x="96" y="142" width="80" height="80" rx="4" class="tint st-f" stroke-width="1"/>
+  <rect x="176" y="102" width="80" height="120" rx="4" class="fl"/>
+  <rect x="256" y="62" width="80" height="160" rx="4" class="fl st-line" stroke-width="1"/>
+
+  <text x="56" y="200" class="t-s mid ink" font-weight="700">自由貿易</text>
+  <text x="56" y="215" class="t-xs mid soft">関税をなくす</text>
+  <text x="136" y="160" class="t-s mid ink" font-weight="700">関税同盟</text>
+  <text x="136" y="176" class="t-xs mid soft">外への関税も</text>
+  <text x="136" y="190" class="t-xs mid soft">そろえる</text>
+  <text x="216" y="120" class="t-s mid on" font-weight="700">単一市場</text>
+  <text x="216" y="136" class="t-xs mid on">人やお金も</text>
+  <text x="216" y="150" class="t-xs mid on">自由に動く</text>
+  <text x="296" y="80" class="t-s mid on" font-weight="700">通貨同盟</text>
+  <text x="296" y="96" class="t-xs mid on">通貨も共通に</text>
+  <text x="296" y="110" class="t-xs mid on">（ユーロ）</text>
+
+  <text x="56" y="177" class="t-xs mid soft">ASEANなど</text>
+  <text x="344" y="54" class="t-xs end fl" font-weight="700">EU（ユーロの国）</text>
+
+  <text x="16" y="246" class="t-xs ink">1952 石炭と鉄鋼の共同管理 → 1993 EU発足</text>
+  <text x="16" y="264" class="t-xs ink">→ 1999 ユーロ導入 → 2020 イギリスが離脱</text>
+</svg>

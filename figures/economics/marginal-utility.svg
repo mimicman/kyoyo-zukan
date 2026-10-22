@@ -1,0 +1,33 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- ケーキを1個ずつ食べたときに増える満足（限界効用）の棒グラフ。点線は値段。値段より高い棒だけ買う -->
+  <text x="16" y="24" class="t-m ink" font-weight="700">1つ増えるごとの満足（限界効用）</text>
+  <text x="54" y="48" class="t-xs soft">増える満足</text>
+  <path d="M50 54 V220 H250" class="st" stroke-width="1.5"/>
+
+  <rect x="62" y="70" width="28" height="150" rx="2" class="fl"/>
+  <rect x="100" y="124" width="28" height="96" rx="2" class="fl"/>
+  <rect x="138" y="164" width="28" height="56" rx="2" class="fl"/>
+  <rect x="176" y="192" width="28" height="28" rx="2" class="tint st-f" stroke-width="1"/>
+  <rect x="214" y="210" width="28" height="10" rx="2" class="tint st-f" stroke-width="1"/>
+
+  <path d="M50 180 H256" class="st-f dash" stroke-width="2"/>
+  <text x="46" y="184" class="t-xs end ink" font-weight="700">値段</text>
+
+  <text x="76" y="236" class="t-xs mid ink">1個目</text>
+  <text x="114" y="236" class="t-xs mid ink">2個目</text>
+  <text x="152" y="236" class="t-xs mid ink">3個目</text>
+  <text x="190" y="236" class="t-xs mid soft">4個目</text>
+  <text x="228" y="236" class="t-xs mid soft">5個目</text>
+
+  <path d="M98 66 C140 80 170 140 200 186" class="st-soft dash" stroke-width="1.2" fill="none" marker-end="url(#a-soft)"/>
+  <text x="150" y="90" class="t-xs soft">だんだん小さく</text>
+
+  <text x="264" y="112" class="t-xs fl" font-weight="700">値段より</text>
+  <text x="264" y="126" class="t-xs fl" font-weight="700">満足が大きい</text>
+  <text x="264" y="140" class="t-xs fl" font-weight="700">→ 買う</text>
+  <text x="264" y="198" class="t-xs soft">小さくなれば</text>
+  <text x="264" y="212" class="t-xs soft">→ やめる</text>
+
+  <text x="16" y="256" class="t-xs ink">値段が下がって点線が下がると、買う数が増える</text>
+  <text x="16" y="272" class="t-xs soft">→ だから需要の線は右下がりになる</text>
+</svg>

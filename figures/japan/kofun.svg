@@ -1,0 +1,45 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：前方後円墳（上から見た形）。下：同じ形の古墳が各地に広がる（帯は西から東） -->
+  <!-- 堀 -->
+  <path d="M40 30 L130 46 A62 62 0 1 1 130 128 L40 144 Z" class="tint"/>
+  <!-- 墳丘 -->
+  <path d="M56 46 L132 58 A46 46 0 1 1 132 116 L56 128 Z" class="fl"/>
+  <text x="84" y="92" class="t-s mid on" font-weight="700">前方</text>
+  <text x="84" y="107" class="t-xs mid on">四角</text>
+  <text x="172" y="92" class="t-s mid on" font-weight="700">後円</text>
+  <text x="172" y="107" class="t-xs mid on">円・ここに埋葬</text>
+  <!-- 埴輪 -->
+  <g class="paper st-f" stroke-width="1.2">
+    <rect x="158" y="38" width="5" height="9" rx="1"/>
+    <rect x="178" y="36" width="5" height="9" rx="1"/>
+    <rect x="198" y="42" width="5" height="9" rx="1"/>
+    <rect x="212" y="58" width="5" height="9" rx="1"/>
+  </g>
+  <text x="34" y="160" class="t-xs soft">まわりの淡い部分＝堀</text>
+  <path d="M222 50 L248 40" class="st-soft" stroke-width="1"/>
+  <text x="252" y="36" class="t-xs ink">埴輪を並べる</text>
+
+  <text x="252" y="76" class="t-s ink" font-weight="700">大仙陵古墳</text>
+  <text x="252" y="92" class="t-xs soft">大阪府堺市・5世紀</text>
+  <text x="252" y="108" class="t-xs soft">全長は約500m</text>
+  <text x="252" y="124" class="t-xs soft">世界最大級の墓</text>
+
+  <!-- 各地への広がり -->
+  <text x="16" y="186" class="t-s ink" font-weight="700">同じ形の古墳が各地に広がる</text>
+  <path d="M180 214 C150 196 70 196 42 210" class="st-f dash" stroke-width="1.5" fill="none" marker-end="url(#a-japan)"/>
+  <path d="M180 214 C160 204 128 204 112 212" class="st-f dash" stroke-width="1.5" fill="none" marker-end="url(#a-japan)"/>
+  <path d="M180 214 C200 204 232 204 248 212" class="st-f dash" stroke-width="1.5" fill="none" marker-end="url(#a-japan)"/>
+  <path d="M180 214 C210 196 290 196 318 210" class="st-f dash" stroke-width="1.5" fill="none" marker-end="url(#a-japan)"/>
+  <rect x="12" y="216" width="60" height="30" rx="8" class="tint"/>
+  <text x="42" y="236" class="t-xs mid ink">九州</text>
+  <rect x="78" y="216" width="68" height="30" rx="8" class="tint"/>
+  <text x="112" y="236" class="t-xs mid ink">中国・四国</text>
+  <rect x="152" y="212" width="56" height="38" rx="8" class="fl"/>
+  <text x="180" y="230" class="t-s mid on" font-weight="700">近畿</text>
+  <text x="180" y="244" class="t-xs mid on">大王</text>
+  <rect x="214" y="216" width="68" height="30" rx="8" class="tint"/>
+  <text x="248" y="236" class="t-xs mid ink">東海・関東</text>
+  <rect x="288" y="216" width="60" height="30" rx="8" class="tint"/>
+  <text x="318" y="236" class="t-xs mid ink">東北南部</text>
+  <text x="180" y="272" class="t-xs mid soft">近畿の大王を中心に豪族が連合＝ヤマト政権</text>
+</svg>

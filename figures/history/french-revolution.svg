@@ -1,0 +1,42 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左：革命前の身分の三角形。右：1789〜1799年の年表 -->
+  <text x="12" y="24" class="t-s ink" font-weight="700">革命前の身分</text>
+  <polygon points="81,40 102.6,90 59.4,90" class="fl"/>
+  <polygon points="59.4,92 102.6,92 119.8,132 42.2,132" class="fl"/>
+  <polygon points="42.2,134 119.8,134 150,200 12,200" class="tint"/>
+  <text x="81" y="82" class="t-xs mid on">聖職者</text>
+  <text x="81" y="117" class="t-xs mid on">貴族</text>
+  <text x="81" y="166" class="t-s mid ink" font-weight="700">第三身分</text>
+  <text x="81" y="184" class="t-xs mid soft">平民（農民・商人）</text>
+  <path d="M106 70 H128" class="st-soft" stroke-width="1"/>
+  <text x="132" y="66" class="t-xs ink">税を免れる</text>
+  <text x="132" y="80" class="t-xs ink">などの特権</text>
+  <text x="81" y="218" class="t-xs mid soft">人口の大部分は第三身分</text>
+
+  <rect x="12" y="232" width="164" height="38" rx="10" class="bgc"/>
+  <text x="94" y="249" class="t-s mid ink" font-weight="700">自由・平等・国民主権</text>
+  <text x="94" y="263" class="t-xs mid soft">人権宣言がうたった考え</text>
+
+  <!-- 年表 -->
+  <path d="M200 36 V232" class="st-line" stroke-width="2"/>
+  <circle cx="200" cy="44" r="6" class="fl"/>
+  <text x="212" y="49" class="t-s ink" font-weight="700">1789</text>
+  <text x="250" y="49" class="t-xs ink">バスティーユ襲撃</text>
+  <circle cx="200" cy="80" r="6" class="fl"/>
+  <text x="212" y="85" class="t-s ink" font-weight="700">1789</text>
+  <text x="250" y="85" class="t-xs ink">人権宣言</text>
+  <circle cx="200" cy="116" r="6" class="fl"/>
+  <text x="212" y="121" class="t-s ink" font-weight="700">1792</text>
+  <text x="250" y="121" class="t-xs ink">王政を廃止し共和政</text>
+  <circle cx="200" cy="152" r="6" class="ink"/>
+  <text x="212" y="157" class="t-s ink" font-weight="700">1793</text>
+  <text x="250" y="157" class="t-xs ink">王を処刑、恐怖政治</text>
+  <circle cx="200" cy="188" r="6" class="soft"/>
+  <text x="212" y="193" class="t-s ink" font-weight="700">1794</text>
+  <text x="250" y="193" class="t-xs ink">恐怖政治が終わる</text>
+  <circle cx="200" cy="224" r="6" class="fl"/>
+  <text x="212" y="229" class="t-s ink" font-weight="700">1799</text>
+  <text x="250" y="229" class="t-xs ink">ナポレオン政権へ</text>
+  <text x="200" y="262" class="t-xs soft">わずか10年で、国の形が</text>
+  <text x="200" y="276" class="t-xs soft">何度も入れかわった</text>
+</svg>

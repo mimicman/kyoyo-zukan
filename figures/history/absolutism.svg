@@ -1,0 +1,32 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 王（屋根）を官僚と常備軍（柱）が支え、重商主義（土台）がお金を生む。王の正しさは神から（王権神授説） -->
+  <circle cx="44" cy="34" r="18" class="paper st-f" stroke-width="2"/>
+  <text x="44" y="40" class="t-m mid ink">神</text>
+  <path d="M64 36 C110 36 140 44 162 60" class="st-f dash" stroke-width="2" fill="none" marker-end="url(#a-history)"/>
+  <text x="92" y="26" class="t-xs ink">力を授ける</text>
+  <text x="346" y="24" class="t-xs end soft">例：フランスのルイ14世</text>
+
+  <!-- 屋根：王 -->
+  <polygon points="180,52 334,108 26,108" class="fl"/>
+  <text x="180" y="88" class="t-l mid on" font-weight="700">王</text>
+  <text x="180" y="102" class="t-xs mid on">国をひとつにまとめる</text>
+
+  <!-- 柱 -->
+  <rect x="54" y="114" width="80" height="84" rx="6" class="tint st-f" stroke-width="1.5"/>
+  <text x="94" y="140" class="t-m mid ink" font-weight="700">官僚</text>
+  <text x="94" y="162" class="t-xs mid soft">税を集め</text>
+  <text x="94" y="176" class="t-xs mid soft">命令を全国へ</text>
+  <rect x="226" y="114" width="80" height="84" rx="6" class="tint st-f" stroke-width="1.5"/>
+  <text x="266" y="140" class="t-m mid ink" font-weight="700">常備軍</text>
+  <text x="266" y="162" class="t-xs mid soft">ふだんから置く</text>
+  <text x="266" y="176" class="t-xs mid soft">職業の兵</text>
+  <text x="180" y="148" class="t-xs mid soft">貴族は宮廷に</text>
+  <text x="180" y="162" class="t-xs mid soft">集められ</text>
+  <text x="180" y="176" class="t-xs mid soft">力をおさえられた</text>
+
+  <!-- 土台：重商主義 -->
+  <rect x="26" y="204" width="308" height="44" rx="8" class="ink"/>
+  <text x="180" y="223" class="t-s mid paper" font-weight="700">土台：重商主義でお金を集める</text>
+  <text x="180" y="240" class="t-xs mid paper">輸出を増やし、輸入を抑え、金銀をためる</text>
+  <text x="180" y="270" class="t-xs mid soft">重い税や戦費への不満が、のちの市民革命へ</text>
+</svg>

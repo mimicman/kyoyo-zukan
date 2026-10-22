@@ -1,0 +1,44 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左：勢力均衡（天びん）。右：集団安全保障（輪の全員で違反国を止める） -->
+  <path d="M180 14 V250" class="st-line" stroke-width="1"/>
+
+  <text x="90" y="28" class="t-m mid ink" font-weight="700">勢力均衡</text>
+  <text x="90" y="46" class="t-xs mid soft">同盟で力を釣り合わせる</text>
+  <path d="M20 150 H160" class="st" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="90,152 74,180 106,180" class="ink"/>
+  <circle cx="36" cy="134" r="12" class="fl"/>
+  <circle cx="60" cy="134" r="12" class="fl"/>
+  <circle cx="48" cy="112" r="12" class="fl"/>
+  <circle cx="120" cy="134" r="12" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="144" cy="134" r="12" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="132" cy="112" r="12" class="tint st-f" stroke-width="1.5"/>
+  <text x="48" y="90" class="t-xs mid ink" font-weight="700">同盟A</text>
+  <text x="132" y="90" class="t-xs mid ink" font-weight="700">同盟B</text>
+  <text x="90" y="204" class="t-xs mid ink">釣り合いが崩れると</text>
+  <text x="90" y="218" class="t-xs mid ink">同盟どうしの大戦争に</text>
+  <text x="90" y="236" class="t-xs mid soft">例：第一次世界大戦</text>
+
+  <text x="270" y="28" class="t-m mid ink" font-weight="700">集団安全保障</text>
+  <text x="270" y="46" class="t-xs mid soft">全員で違反国を止める</text>
+  <circle cx="270" cy="128" r="66" class="tint"/>
+  <circle cx="270" cy="128" r="66" class="st-f dash" stroke-width="1.5" fill="none"/>
+  <g class="paper st-f" stroke-width="1.5">
+    <circle cx="270" cy="74" r="10"/><circle cx="317" cy="101" r="10"/><circle cx="317" cy="155" r="10"/>
+    <circle cx="270" cy="182" r="10"/><circle cx="223" cy="155" r="10"/><circle cx="223" cy="101" r="10"/>
+  </g>
+  <circle cx="270" cy="128" r="15" class="ink"/>
+  <text x="270" y="132" class="t-xs mid paper" font-weight="700">違反</text>
+  <g class="st-f" stroke-width="1.8">
+    <path d="M270 86 V108" marker-end="url(#a-politics)"/>
+    <path d="M306 107 L288 118" marker-end="url(#a-politics)"/>
+    <path d="M306 149 L288 138" marker-end="url(#a-politics)"/>
+    <path d="M270 170 V148" marker-end="url(#a-politics)"/>
+    <path d="M234 149 L252 138" marker-end="url(#a-politics)"/>
+    <path d="M234 107 L252 118" marker-end="url(#a-politics)"/>
+  </g>
+  <text x="330" y="190" class="t-xs fl" font-weight="700">制裁</text>
+  <text x="270" y="216" class="t-xs mid ink">国際連盟・国際連合が採用</text>
+  <text x="270" y="234" class="t-xs mid soft">大国の違反には弱い</text>
+
+  <text x="180" y="268" class="t-xs mid soft">現実には、同盟と集団安全保障を組み合わせて使う</text>
+</svg>

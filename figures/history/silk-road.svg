@@ -1,0 +1,38 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 東西を結ぶ3本の道（略図）と、運ばれたもの -->
+  <text x="16" y="24" class="t-m ink" font-weight="700">東西を結んだ3本の道</text>
+
+  <!-- 砂漠のイメージ -->
+  <ellipse cx="238" cy="104" rx="56" ry="16" class="tint"/>
+
+  <!-- 草原の道 -->
+  <path d="M34 90 C80 50 150 44 210 50 C260 54 300 64 326 88" class="st-f dash" stroke-width="2" fill="none"/>
+  <text x="180" y="42" class="t-xs mid ink">草原の道</text>
+  <!-- オアシスの道 -->
+  <path d="M34 100 C70 110 100 112 124 110 C160 106 180 96 202 98 C230 100 260 106 322 100" class="st-f" stroke-width="3.5" fill="none"/>
+  <text x="238" y="128" class="t-xs mid ink">オアシスの道</text>
+  <!-- 海の道 -->
+  <path d="M34 112 C60 150 110 168 160 172 C210 176 250 186 290 170 C312 160 322 140 326 120" class="st-f dash" stroke-width="2" fill="none"/>
+  <text x="208" y="196" class="t-xs mid ink">海の道</text>
+
+  <!-- 都市 -->
+  <circle cx="30" cy="100" r="8" class="ink"/>
+  <text x="16" y="74" class="t-xs ink" font-weight="700">地中海</text>
+  <circle cx="124" cy="110" r="5" class="fl"/>
+  <text x="124" y="132" class="t-xs mid soft">バグダード</text>
+  <circle cx="202" cy="98" r="5" class="fl"/>
+  <text x="196" y="86" class="t-xs mid soft">サマルカンド</text>
+  <circle cx="276" cy="104" r="5" class="fl"/>
+  <text x="280" y="90" class="t-xs mid soft">敦煌</text>
+  <circle cx="330" cy="100" r="8" class="ink"/>
+  <text x="344" y="74" class="t-xs end ink" font-weight="700">長安</text>
+  <circle cx="160" cy="172" r="5" class="fl"/>
+  <text x="140" y="160" class="t-xs mid soft">インド</text>
+
+  <!-- 運ばれたもの -->
+  <path d="M330 222 H40" class="st-f" stroke-width="2.5" marker-end="url(#a-history)"/>
+  <text x="186" y="216" class="t-xs mid ink">西へ：絹・陶磁器・紙づくり</text>
+  <path d="M30 248 H320" class="st-f" stroke-width="2.5" marker-end="url(#a-history)"/>
+  <text x="176" y="242" class="t-xs mid ink">東へ：ガラス・馬・香辛料</text>
+  <text x="16" y="270" class="t-xs soft">仏教やイスラームなどの宗教も、道を伝わって広がった</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：景気の波（実線）と、政策でならした波（点線）。谷で支出を増やし、山で抑える。下：支出が給料と買い物を生む流れ -->
+  <text x="16" y="24" class="t-m ink" font-weight="700">景気の波をならす</text>
+  <text x="346" y="24" class="t-xs end soft">金利の調整（金融政策）とも組み合わせる</text>
+
+  <path d="M20 116 H330" class="st-line" stroke-width="1"/>
+  <path d="M20 116 C50 50 90 50 120 116 S190 182 220 116 S290 50 320 116" class="st-f" stroke-width="3" fill="none"/>
+  <path d="M20 116 C50 88 90 88 120 116 S190 144 220 116 S290 88 320 116" class="st-soft dash" stroke-width="2" fill="none"/>
+  <text x="70" y="54" class="t-xs mid ink" font-weight="700">山（好景気）</text>
+  <text x="170" y="182" class="t-xs mid ink" font-weight="700">谷（不景気）</text>
+
+  <path d="M102 66 V90" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <text x="108" y="74" class="t-xs ink">支出を抑える・増税</text>
+  <path d="M146 164 V136" class="st-f" stroke-width="2.5" marker-end="url(#a-economics)"/>
+  <text x="134" y="150" class="t-xs end fl" font-weight="700">支出を増やす</text>
+  <text x="134" y="164" class="t-xs end fl" font-weight="700">減税</text>
+
+  <path d="M228 196 H248" class="st-f" stroke-width="3"/>
+  <text x="254" y="200" class="t-xs ink">実際の景気</text>
+  <path d="M228 212 H248" class="st-soft dash" stroke-width="2"/>
+  <text x="254" y="216" class="t-xs soft">ならしたイメージ</text>
+
+  <!-- 支出が生む流れ -->
+  <rect x="12" y="222" width="76" height="28" rx="8" class="fl"/>
+  <text x="50" y="240" class="t-xs mid on" font-weight="700">公共事業</text>
+  <rect x="100" y="222" width="76" height="28" rx="8" class="tint"/>
+  <text x="138" y="240" class="t-xs mid ink">働き口ができる</text>
+  <rect x="188" y="222" width="76" height="28" rx="8" class="tint"/>
+  <text x="226" y="240" class="t-xs mid ink">給料が出る</text>
+  <rect x="276" y="222" width="76" height="28" rx="8" class="tint"/>
+  <text x="314" y="240" class="t-xs mid ink">買い物が増える</text>
+  <path d="M89 236 H98" class="st-f" stroke-width="2" marker-end="url(#a-economics)"/>
+  <path d="M177 236 H186" class="st-f" stroke-width="2" marker-end="url(#a-economics)"/>
+  <path d="M265 236 H274" class="st-f" stroke-width="2" marker-end="url(#a-economics)"/>
+  <text x="180" y="270" class="t-xs mid soft">売上が増えた会社がさらに人を雇い、景気が上向く</text>
+</svg>

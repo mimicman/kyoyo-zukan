@@ -1,0 +1,32 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：1910〜1935年の年表（1年＝12）。下：選挙権を持つ人の割合（人口に対して、100%＝220） -->
+  <text x="16" y="22" class="t-m ink" font-weight="700">民衆の声を政治へ</text>
+  <path d="M30 70 H332" class="st-line" stroke-width="2"/>
+  <rect x="54" y="66" width="168" height="8" rx="3" class="tint"/>
+  <circle cx="102" cy="70" r="6" class="fl"/>
+  <circle cx="126" cy="70" r="6" class="fl"/>
+  <circle cx="210" cy="70" r="6" class="fl"/>
+  <circle cx="294" cy="70" r="6" class="ink"/>
+  <text x="102" y="44" class="t-xs mid ink" font-weight="700">1916</text>
+  <text x="102" y="58" class="t-xs mid ink">民本主義</text>
+  <text x="210" y="44" class="t-xs mid ink" font-weight="700">1925</text>
+  <text x="210" y="58" class="t-xs mid ink">普通選挙法</text>
+  <text x="126" y="94" class="t-xs mid ink" font-weight="700">1918</text>
+  <text x="126" y="108" class="t-xs mid ink">原敬の政党内閣</text>
+  <text x="294" y="94" class="t-xs mid ink" font-weight="700">1932</text>
+  <text x="294" y="108" class="t-xs mid ink">政党内閣とだえる</text>
+  <text x="138" y="128" class="t-xs mid soft">淡い帯＝大正時代（1912〜1926）</text>
+
+  <!-- 選挙権の割合 -->
+  <text x="16" y="156" class="t-xs soft">選挙権を持つ人の割合（人口に対して）</text>
+  <text x="16" y="182" class="t-xs ink" font-weight="700">1890年</text>
+  <rect x="72" y="170" width="4" height="18" rx="1" class="fl"/>
+  <text x="84" y="183" class="t-xs ink">約1%　税の条件つき・男性</text>
+  <text x="16" y="214" class="t-xs ink" font-weight="700">1928年</text>
+  <rect x="72" y="202" width="44" height="18" rx="2" class="fl"/>
+  <text x="124" y="215" class="t-xs ink">約20%　25歳以上の男性</text>
+  <text x="16" y="246" class="t-xs soft" font-weight="700">1946年</text>
+  <rect x="72" y="234" width="110" height="18" rx="2" class="tint st-f dash" stroke-width="1.2"/>
+  <text x="190" y="247" class="t-xs soft">約50%　女性も（戦後）</text>
+  <text x="16" y="272" class="t-xs soft">1928年は普通選挙法による最初の選挙</text>
+</svg>

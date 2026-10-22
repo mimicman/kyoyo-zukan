@@ -1,0 +1,40 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 1700〜1850年（1年＝2.133）。上：3つの改革の期間。下：幕府の財政のイメージ（ききんで落ち込む） -->
+  <!-- 改革の名前 -->
+  <text x="85" y="22" class="t-s mid ink" font-weight="700">享保の改革</text>
+  <text x="85" y="37" class="t-xs mid soft">徳川吉宗</text>
+  <text x="85" y="51" class="t-xs mid soft">新田開発・目安箱</text>
+  <text x="212" y="22" class="t-s mid ink" font-weight="700">寛政の改革</text>
+  <text x="212" y="37" class="t-xs mid soft">松平定信</text>
+  <text x="212" y="51" class="t-xs mid soft">倹約・米の蓄え</text>
+  <text x="346" y="22" class="t-s end ink" font-weight="700">天保の改革</text>
+  <text x="346" y="37" class="t-xs end soft">水野忠邦</text>
+  <text x="346" y="51" class="t-xs end soft">株仲間の解散</text>
+
+  <!-- 期間の帯 -->
+  <rect x="54" y="62" width="62" height="60" rx="4" class="fl"/>
+  <rect x="163" y="80" width="40" height="42" rx="4" class="tint"/>
+  <rect x="206" y="62" width="13" height="60" rx="3" class="fl"/>
+  <rect x="319" y="62" width="6" height="60" rx="2" class="fl"/>
+  <text x="183" y="140" class="t-xs mid soft">田沼の政治</text>
+  <text x="183" y="154" class="t-xs mid soft">商業を重視</text>
+
+  <!-- 財政のイメージ -->
+  <path d="M20 176 C40 182 50 188 56 190 C70 182 86 176 100 180 C110 196 120 204 150 206 C180 210 190 218 196 222 C204 210 214 206 228 212 C260 220 290 228 304 236 C316 232 322 230 334 238" class="st-f" stroke-width="3" fill="none"/>
+  <text x="20" y="200" class="t-xs soft">幕府の財政</text>
+  <text x="20" y="213" class="t-xs soft">（イメージ）</text>
+  <g class="ink">
+    <path d="M88 168 l5 -9 l5 9 Z"/>
+    <path d="M190 210 l5 -9 l5 9 Z"/>
+    <path d="M300 224 l5 -9 l5 9 Z"/>
+  </g>
+  <text x="248" y="196" class="t-xs ink">▲ ききん</text>
+
+  <!-- 年の軸 -->
+  <path d="M20 250 H340" class="st-soft" stroke-width="1.5"/>
+  <path d="M20 246 V254 M126.7 246 V254 M233.3 246 V254 M340 246 V254" class="st-soft" stroke-width="1.5"/>
+  <text x="20" y="268" class="t-xs mid soft">1700</text>
+  <text x="126.7" y="268" class="t-xs mid soft">1750</text>
+  <text x="233.3" y="268" class="t-xs mid soft">1800</text>
+  <text x="340" y="268" class="t-xs end soft">1850</text>
+</svg>

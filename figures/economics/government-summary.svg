@@ -6,6 +6,11 @@
   <rect x="124" y="20" width="112" height="44" rx="10" class="fl"/>
   <text x="180" y="47" class="t-l mid on">政府</text>
 
+  <!-- 左上：景気の波と財政政策 -->
+  <path d="M16 40 C26 24 36 24 46 40 S66 56 76 40 S96 24 106 40" class="st-f" stroke-width="2" fill="none"/>
+  <text x="16" y="62" class="t-xs ink">景気の波は</text>
+  <text x="16" y="76" class="t-xs ink">政府の支出でならす</text>
+
   <!-- 下：家計と企業、まん中の市場 -->
   <rect x="18" y="150" width="96" height="50" rx="10" class="tint st-f" stroke-width="1.5"/>
   <text x="66" y="180" class="t-m mid ink">家計</text>

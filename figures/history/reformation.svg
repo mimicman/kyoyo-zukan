@@ -1,0 +1,37 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：批判→印刷で広まる→王や諸侯が選ぶ。中：北と南で信仰が分かれる（略図）。下：宗教戦争の年表 -->
+  <rect x="12" y="12" width="100" height="52" rx="10" class="fl"/>
+  <text x="62" y="31" class="t-xs mid on">1517年</text>
+  <text x="62" y="50" class="t-s mid on" font-weight="700">ルターが批判</text>
+  <rect x="130" y="12" width="100" height="52" rx="10" class="tint"/>
+  <text x="180" y="33" class="t-s mid ink" font-weight="700">印刷で</text>
+  <text x="180" y="51" class="t-s mid ink" font-weight="700">一気に広まる</text>
+  <rect x="248" y="12" width="100" height="52" rx="10" class="tint"/>
+  <text x="298" y="33" class="t-s mid ink" font-weight="700">諸侯や国王が</text>
+  <text x="298" y="51" class="t-s mid ink" font-weight="700">信仰を選ぶ</text>
+  <path d="M113 38 H127" class="st-f" stroke-width="2" marker-end="url(#a-history)"/>
+  <path d="M231 38 H245" class="st-f" stroke-width="2" marker-end="url(#a-history)"/>
+
+  <!-- 北と南（略図） -->
+  <path d="M12 80 H348 V126 C300 136 250 116 200 130 C150 144 100 122 12 134 Z" class="tint"/>
+  <path d="M12 134 C100 122 150 144 200 130 C250 116 300 136 348 126 V180 H12 Z" class="fl"/>
+  <text x="24" y="102" class="t-s ink" font-weight="700">北：プロテスタントが広がる</text>
+  <text x="24" y="118" class="t-xs soft">ドイツ北部・北欧・オランダ・イギリス（国教会）</text>
+  <text x="24" y="158" class="t-s on" font-weight="700">南：カトリックが残る</text>
+  <text x="24" y="173" class="t-xs on">スペイン・イタリア・フランスなど</text>
+
+  <!-- 宗教戦争の年表（1500〜1650年） -->
+  <rect x="152" y="200" width="77" height="20" rx="4" class="tint"/>
+  <text x="190" y="214" class="t-xs mid ink">フランスの戦争</text>
+  <rect x="272" y="200" width="64" height="20" rx="4" class="fl"/>
+  <text x="304" y="214" class="t-xs mid on">三十年戦争</text>
+  <path d="M20 232 H340" class="st-soft" stroke-width="1.5"/>
+  <circle cx="56" cy="232" r="5" class="fl"/>
+  <circle cx="137" cy="232" r="5" class="ink"/>
+  <circle cx="336" cy="232" r="5" class="ink"/>
+  <text x="56" y="248" class="t-xs mid soft">1517</text>
+  <text x="137" y="248" class="t-xs mid soft">1555</text>
+  <text x="233" y="248" class="t-xs mid soft">1600</text>
+  <text x="340" y="248" class="t-xs end soft">1648</text>
+  <text x="16" y="270" class="t-xs ink">1555 領主が宗教を選べる → 1648 ウェストファリア条約</text>
+</svg>
