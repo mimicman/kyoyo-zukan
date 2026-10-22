@@ -1,0 +1,36 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 劇と小説の2つの流れが、翻訳を通じて明治の日本に集まる -->
+  <text x="16" y="26" class="t-m ink">劇と小説、2つの流れ</text>
+
+  <text x="26" y="81" class="t-s mid fl" font-weight="700">劇</text>
+  <rect x="44" y="56" width="96" height="42" rx="10" class="tint"/>
+  <text x="92" y="74" class="t-s mid ink" font-weight="700">シェイクスピア</text>
+  <text x="92" y="90" class="t-xs mid soft">イギリス</text>
+  <path d="M142 77 H256" class="st-f dash" stroke-width="2" marker-end="url(#a-literature)"/>
+  <text x="199" y="71" class="t-xs mid ink halo">坪内逍遙が翻訳</text>
+
+  <text x="22" y="157" class="t-s mid fl" font-weight="700">小説</text>
+  <rect x="40" y="132" width="98" height="42" rx="10" class="tint"/>
+  <text x="89" y="150" class="t-s mid ink" font-weight="700">ドン・キホーテ</text>
+  <text x="89" y="166" class="t-xs mid soft">スペイン</text>
+  <path d="M139 153 H152" class="st-f" stroke-width="2" marker-end="url(#a-literature)"/>
+  <rect x="156" y="132" width="86" height="42" rx="10" class="tint"/>
+  <text x="199" y="150" class="t-s mid ink" font-weight="700">ロシア文学</text>
+  <text x="199" y="166" class="t-xs mid soft">19世紀</text>
+  <path d="M243 153 H256" class="st-f" stroke-width="2" marker-end="url(#a-literature)"/>
+
+  <rect x="260" y="56" width="88" height="118" rx="12" class="fl"/>
+  <text x="304" y="82" class="t-xs mid on">明治〜大正</text>
+  <text x="304" y="104" class="t-s mid on" font-weight="700">日本の</text>
+  <text x="304" y="121" class="t-s mid on" font-weight="700">近代文学</text>
+  <text x="304" y="144" class="t-xs mid on">言文一致</text>
+  <text x="304" y="160" class="t-xs mid on">漱石・鷗外</text>
+
+  <text x="88" y="192" class="t-xs mid soft">1605年</text>
+  <text x="199" y="192" class="t-xs mid soft">二葉亭四迷らが翻訳</text>
+  <text x="92" y="114" class="t-xs mid soft">16〜17世紀</text>
+
+  <rect x="12" y="208" width="336" height="60" rx="12" class="bgc"/>
+  <text x="26" y="232" class="t-s ink" font-weight="700">英雄の物語から、ふつうの人の心へ</text>
+  <text x="26" y="254" class="t-xs soft">2つの流れが、翻訳を通じて明治の日本に届いた</text>
+</svg>

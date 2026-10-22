@@ -1,0 +1,52 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 音の地図：縦が高さ（音階・和音）、横が時間（リズム） -->
+  <text x="16" y="24" class="t-m ink">音の地図：高さと時間</text>
+  <path d="M208 20 q8 -10 16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0" class="st-f" stroke-width="2"/>
+  <text x="344" y="42" class="t-xs end soft">振動の速さ＝高さ</text>
+
+  <!-- 音階の段 -->
+  <g class="st-line" stroke-width="1">
+    <path d="M64 64 H336"/><path d="M64 82 H336"/><path d="M64 100 H336"/><path d="M64 118 H336"/>
+    <path d="M64 136 H336"/><path d="M64 154 H336"/><path d="M64 172 H336"/>
+  </g>
+  <text x="54" y="176" class="t-xs end soft">ド</text>
+  <text x="54" y="158" class="t-xs end soft">レ</text>
+  <text x="54" y="140" class="t-xs end soft">ミ</text>
+  <text x="54" y="122" class="t-xs end soft">ファ</text>
+  <text x="54" y="104" class="t-xs end soft">ソ</text>
+  <text x="54" y="86" class="t-xs end soft">ラ</text>
+  <text x="54" y="68" class="t-xs end soft">シ</text>
+  <path d="M60 200 V46" class="st" stroke-width="1.5" marker-end="url(#a-ink)"/>
+  <path d="M60 200 H342" class="st" stroke-width="1.5" marker-end="url(#a-ink)"/>
+  <text x="54" y="52" class="t-xs end ink" font-weight="700">高さ</text>
+  <text x="342" y="216" class="t-xs end ink" font-weight="700">時間</text>
+
+  <!-- 和音：1つおきに縦に重ねる -->
+  <circle cx="106" cy="172" r="6" class="fl"/>
+  <circle cx="106" cy="136" r="6" class="fl"/>
+  <circle cx="106" cy="100" r="6" class="fl"/>
+  <path d="M120 100 h6 V172 h-6" class="st-f" stroke-width="1.5"/>
+  <text x="134" y="128" class="t-s ink halo" font-weight="700">和音</text>
+  <text x="134" y="146" class="t-xs ink halo">1つおきに</text>
+  <text x="134" y="161" class="t-xs ink halo">同時に重ねる</text>
+
+  <!-- 音階：高さの段を順に -->
+  <circle cx="230" cy="172" r="4.5" class="soft"/>
+  <circle cx="252" cy="154" r="4.5" class="soft"/>
+  <circle cx="274" cy="136" r="4.5" class="soft"/>
+  <circle cx="296" cy="118" r="4.5" class="soft"/>
+  <circle cx="318" cy="100" r="4.5" class="soft"/>
+  <text x="262" y="78" class="t-s mid ink halo" font-weight="700">音階</text>
+  <text x="262" y="94" class="t-xs mid ink halo">高さの段を順に</text>
+
+  <!-- リズム：強い拍と弱い拍 -->
+  <text x="16" y="240" class="t-s ink" font-weight="700">リズム</text>
+  <circle cx="96" cy="236" r="7" class="fl"/>
+  <circle cx="136" cy="236" r="4" class="soft"/>
+  <circle cx="176" cy="236" r="7" class="fl"/>
+  <circle cx="216" cy="236" r="4" class="soft"/>
+  <circle cx="256" cy="236" r="7" class="fl"/>
+  <circle cx="296" cy="236" r="4" class="soft"/>
+  <circle cx="336" cy="236" r="7" class="fl"/>
+  <text x="16" y="266" class="t-xs soft">強い拍・弱い拍のくり返しで、時間を区切る</text>
+</svg>

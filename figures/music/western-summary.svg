@@ -1,0 +1,39 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 1500〜1950年（1年＝0.715px）。時代の帯・作曲家の生涯・オーケストラの大きさ -->
+  <text x="16" y="22" class="t-m ink">時代とともに大きくなる音楽</text>
+  <text x="20" y="40" class="t-xs soft">← 中世の聖歌（9世紀ごろ〜）から続く</text>
+
+  <rect x="20" y="48" width="71.5" height="26" class="tint"/>
+  <rect x="91.5" y="48" width="107.3" height="26" class="fl"/>
+  <rect x="198.8" y="48" width="50" height="26" class="tint"/>
+  <rect x="248.8" y="48" width="57.2" height="26" class="fl"/>
+  <rect x="306" y="48" width="36" height="26" class="tint"/>
+  <text x="55.7" y="65" class="t-xs mid ink">ルネサンス</text>
+  <text x="145" y="65" class="t-xs mid on">バロック</text>
+  <text x="223.8" y="65" class="t-xs mid ink">古典派</text>
+  <text x="277.4" y="65" class="t-xs mid on">ロマン派</text>
+  <text x="324" y="65" class="t-xs mid ink">近現代</text>
+  <text x="91.5" y="88" class="t-xs mid soft">1600</text>
+  <text x="198.8" y="88" class="t-xs mid soft">1750</text>
+  <text x="306" y="88" class="t-xs mid soft">1900</text>
+
+  <!-- 作曲家の生涯 -->
+  <rect x="152.3" y="98" width="46.5" height="16" rx="4" class="fl"/>
+  <text x="146" y="111" class="t-s end ink" font-weight="700">バッハ</text>
+  <rect x="213" y="122" width="40.8" height="16" rx="4" class="fl"/>
+  <text x="207" y="135" class="t-s end ink" font-weight="700">ベートーヴェン</text>
+  <path d="M248.8 94 V142" class="st-soft dash" stroke-width="1.2"/>
+
+  <!-- オーケストラの大きさ（目安） -->
+  <text x="20" y="196" class="t-s ink" font-weight="700">オーケストラ</text>
+  <text x="20" y="212" class="t-xs soft">の大きさ（目安）</text>
+  <rect x="91.5" y="222" width="107.3" height="18" class="tint"/>
+  <rect x="198.8" y="204" width="50" height="36" class="tint"/>
+  <rect x="248.8" y="166" width="93.2" height="74" class="fl"/>
+  <text x="145" y="235" class="t-xs mid ink">小さな合奏</text>
+  <text x="223.8" y="226" class="t-xs mid ink">形が整う</text>
+  <text x="295.4" y="200" class="t-xs mid on">100人近く</text>
+  <text x="295.4" y="215" class="t-xs mid on">になることも</text>
+  <path d="M20 240 H342" class="st" stroke-width="1.5"/>
+  <text x="20" y="264" class="t-xs soft">古典派で形が整い、ロマン派で感情も編成も大きくなった</text>
+</svg>

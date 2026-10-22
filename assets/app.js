@@ -430,7 +430,9 @@ document.addEventListener("click", (e) => {
 
 /** 人物辞典の一覧（日本・世界、生まれた年の順） */
 function renderPeople() {
-  const byYear = (a, b) => (a.years?.[0] ?? a.years?.[1] ?? 0) - (b.years?.[0] ?? b.years?.[1] ?? 0);
+  // 生没年が不明な人は、最初の出来事の年で並べる
+  const yearOf = (p) => p.years?.[0] ?? p.years?.[1] ?? p.events?.[0]?.year ?? 0;
+  const byYear = (a, b) => yearOf(a) - yearOf(b);
   const section = (region) => {
     const ps = data.people.filter((p) => (region === "日本") === (p.region === "日本")).sort(byYear);
     if (!ps.length) return "";

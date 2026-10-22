@@ -1,0 +1,40 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 古典の3つの形：語る叙事詩（前8世紀）→演じる悲劇（前5世紀）／読む物語（11世紀の日本） -->
+  <text x="16" y="26" class="t-m ink">古典の3つの形</text>
+
+  <rect x="12" y="54" width="88" height="74" rx="10" class="tint"/>
+  <text x="56" y="72" class="t-xs mid soft">前8世紀ごろ</text>
+  <text x="56" y="92" class="t-s mid ink" font-weight="700">ホメロス</text>
+  <text x="56" y="112" class="t-xs mid fl" font-weight="700">語る叙事詩</text>
+
+  <rect x="124" y="54" width="96" height="74" rx="10" class="tint"/>
+  <text x="172" y="72" class="t-xs mid soft">前5世紀</text>
+  <text x="172" y="92" class="t-s mid ink" font-weight="700">ギリシャ悲劇</text>
+  <text x="172" y="112" class="t-xs mid fl" font-weight="700">演じる劇</text>
+
+  <rect x="260" y="54" width="88" height="74" rx="10" class="fl"/>
+  <text x="304" y="72" class="t-xs mid on">11世紀初め</text>
+  <text x="304" y="92" class="t-s mid on" font-weight="700">源氏物語</text>
+  <text x="304" y="112" class="t-xs mid on" font-weight="700">読む物語</text>
+
+  <path d="M101 91 H120" class="st-f" stroke-width="2" marker-end="url(#a-literature)"/>
+
+  <!-- 時間軸（前800〜1100年） -->
+  <path d="M24 150 H340" class="st" stroke-width="1.5"/>
+  <path d="M33 150 L56 129 M81 150 L172 129 M319 150 L304 129" class="st-soft dash" stroke-width="1.2"/>
+  <circle cx="33" cy="150" r="4.5" class="fl"/>
+  <circle cx="81" cy="150" r="4.5" class="fl"/>
+  <circle cx="319" cy="150" r="4.5" class="fl"/>
+  <text x="24" y="166" class="t-xs soft">前800年</text>
+  <text x="155" y="166" class="t-xs mid soft">紀元0年</text>
+  <text x="319" y="166" class="t-xs mid soft">1000年</text>
+
+  <rect x="12" y="178" width="208" height="28" rx="8" class="tint"/>
+  <text x="116" y="196" class="t-xs mid ink">ギリシャ：神話の英雄を語り、演じる</text>
+  <rect x="260" y="178" width="88" height="28" rx="8" class="tint"/>
+  <text x="304" y="196" class="t-xs mid ink">日本の宮廷</text>
+
+  <rect x="12" y="218" width="336" height="52" rx="12" class="bgc"/>
+  <text x="26" y="240" class="t-s ink" font-weight="700">語る詩 → 演じる劇 → 読む物語</text>
+  <text x="26" y="259" class="t-xs soft">ギリシャと日本の古典は、それぞれ独自に生まれた</text>
+</svg>
