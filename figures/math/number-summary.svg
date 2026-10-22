@@ -1,53 +1,69 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- 数える数（1,2,3…）から、広げる・書く・分けるの3方向へ -->
+  <!-- 数える数（1,2,3…）から、広げる・書く・分ける・比べる（無限）の4方向へ -->
   <circle cx="180" cy="54" r="42" class="fl"/>
   <text x="180" y="56" class="t-l mid on">1, 2, 3…</text>
   <text x="180" y="76" class="t-xs mid on">物を数える</text>
 
-  <path d="M146 80 L76 126" class="st-f" stroke-width="2" marker-end="url(#a-math)"/>
-  <path d="M180 97 V126" class="st-f" stroke-width="2" marker-end="url(#a-math)"/>
-  <path d="M214 80 L284 126" class="st-f" stroke-width="2" marker-end="url(#a-math)"/>
+  <path d="M142 72 L56 126" class="st-f" stroke-width="2" marker-end="url(#a-math)"/>
+  <path d="M164 93 L140 126" class="st-f" stroke-width="2" marker-end="url(#a-math)"/>
+  <path d="M196 93 L220 126" class="st-f" stroke-width="2" marker-end="url(#a-math)"/>
+  <path d="M218 72 L304 126" class="st-f" stroke-width="2" marker-end="url(#a-math)"/>
 
-  <rect x="8" y="132" width="108" height="138" rx="12" class="tint"/>
-  <rect x="126" y="132" width="108" height="138" rx="12" class="tint"/>
-  <rect x="244" y="132" width="108" height="138" rx="12" class="tint"/>
-  <text x="62" y="154" class="t-m mid ink">広げる</text>
-  <text x="180" y="154" class="t-m mid ink">書く</text>
-  <text x="298" y="154" class="t-m mid ink">分ける</text>
+  <rect x="6" y="132" width="82" height="138" rx="12" class="tint"/>
+  <rect x="94" y="132" width="82" height="138" rx="12" class="tint"/>
+  <rect x="182" y="132" width="82" height="138" rx="12" class="tint"/>
+  <rect x="270" y="132" width="84" height="138" rx="12" class="tint"/>
+  <text x="47" y="154" class="t-m mid ink">広げる</text>
+  <text x="135" y="154" class="t-m mid ink">書く</text>
+  <text x="223" y="154" class="t-m mid ink">分ける</text>
+  <text x="312" y="154" class="t-m mid ink">比べる</text>
 
   <!-- 広げる：帯がだんだん長くなる -->
-  <rect x="16" y="164" width="56" height="17" rx="4" class="paper st-soft"/>
-  <text x="22" y="177" class="t-xs ink">−1 負の数</text>
-  <rect x="16" y="185" width="68" height="17" rx="4" class="paper st-soft"/>
-  <text x="22" y="198" class="t-xs ink">½ 分数</text>
-  <rect x="16" y="206" width="80" height="17" rx="4" class="paper st-soft"/>
-  <text x="22" y="219" class="t-xs ink">√2 無理数</text>
-  <rect x="16" y="227" width="92" height="17" rx="4" class="paper st-f"/>
-  <text x="22" y="240" class="t-xs ink">i 虚数</text>
-  <text x="62" y="261" class="t-xs mid soft">答えがないと外へ</text>
+  <rect x="12" y="164" width="44" height="17" rx="4" class="paper st-soft"/>
+  <text x="16" y="177" class="t-xs ink">−1 負</text>
+  <rect x="12" y="185" width="54" height="17" rx="4" class="paper st-soft"/>
+  <text x="16" y="198" class="t-xs ink">½ 分数</text>
+  <rect x="12" y="206" width="64" height="17" rx="4" class="paper st-soft"/>
+  <text x="16" y="219" class="t-xs ink">√2 無理数</text>
+  <rect x="12" y="227" width="70" height="17" rx="4" class="paper st-f"/>
+  <text x="16" y="240" class="t-xs ink">i 虚数</text>
+  <text x="47" y="261" class="t-xs mid soft">外へ広げる</text>
 
   <!-- 書く：位取りと0 -->
-  <rect x="142" y="170" width="24" height="30" rx="4" class="paper st-soft"/>
-  <rect x="168" y="170" width="24" height="30" rx="4" class="paper st-f" stroke-width="2"/>
-  <rect x="194" y="170" width="24" height="30" rx="4" class="paper st-soft"/>
-  <text x="154" y="192" class="t-l mid ink">2</text>
-  <text x="180" y="192" class="t-l mid ink">0</text>
-  <text x="206" y="192" class="t-l mid ink">5</text>
-  <text x="154" y="214" class="t-xs mid soft">百</text>
-  <text x="180" y="214" class="t-xs mid soft">十</text>
-  <text x="206" y="214" class="t-xs mid soft">一</text>
-  <text x="180" y="240" class="t-xs mid soft">0で空きの位を示す</text>
-  <text x="180" y="256" class="t-xs mid soft">10個の数字で書ける</text>
+  <rect x="102" y="170" width="20" height="30" rx="4" class="paper st-soft"/>
+  <rect x="125" y="170" width="20" height="30" rx="4" class="paper st-f" stroke-width="2"/>
+  <rect x="148" y="170" width="20" height="30" rx="4" class="paper st-soft"/>
+  <text x="112" y="192" class="t-l mid ink">2</text>
+  <text x="135" y="192" class="t-l mid ink">0</text>
+  <text x="158" y="192" class="t-l mid ink">5</text>
+  <text x="112" y="214" class="t-xs mid soft">百</text>
+  <text x="135" y="214" class="t-xs mid soft">十</text>
+  <text x="158" y="214" class="t-xs mid soft">一</text>
+  <text x="135" y="240" class="t-xs mid soft">0で空きを示す</text>
+  <text x="135" y="261" class="t-xs mid soft">数字は10個</text>
 
   <!-- 分ける：素因数の木 -->
-  <text x="298" y="182" class="t-l mid ink">12</text>
-  <path d="M290 186 L278 200 M306 186 L318 200 M318 214 L308 226 M324 214 L334 226" class="st-soft" stroke-width="1.5"/>
-  <circle cx="274" cy="208" r="9" class="fl"/>
-  <text x="274" y="212" class="t-s mid on">2</text>
-  <text x="321" y="212" class="t-s mid ink">6</text>
-  <circle cx="304" cy="234" r="9" class="fl"/>
-  <text x="304" y="238" class="t-s mid on">2</text>
-  <circle cx="336" cy="234" r="9" class="fl"/>
-  <text x="336" y="238" class="t-s mid on">3</text>
-  <text x="298" y="261" class="t-xs mid soft">素数は数の部品</text>
+  <text x="223" y="182" class="t-l mid ink">12</text>
+  <path d="M215 186 L203 200 M231 186 L243 200 M243 214 L233 226 M249 214 L259 226" class="st-soft" stroke-width="1.5"/>
+  <circle cx="199" cy="208" r="9" class="fl"/>
+  <text x="199" y="212" class="t-s mid on">2</text>
+  <text x="246" y="212" class="t-s mid ink">6</text>
+  <circle cx="229" cy="234" r="9" class="fl"/>
+  <text x="229" y="238" class="t-s mid on">2</text>
+  <circle cx="259" cy="234" r="9" class="fl"/>
+  <text x="259" y="238" class="t-s mid on">3</text>
+  <text x="223" y="261" class="t-xs mid soft">素数は部品</text>
+
+  <!-- 比べる：無限どうしの1対1 -->
+  <g class="t-s mid ink">
+    <text x="286" y="182">1</text><text x="306" y="182">2</text><text x="326" y="182">3</text>
+  </g>
+  <g class="t-s mid fl" font-weight="700">
+    <text x="286" y="214">2</text><text x="306" y="214">4</text><text x="326" y="214">6</text>
+  </g>
+  <text x="344" y="182" class="t-xs mid soft">…</text>
+  <text x="344" y="214" class="t-xs mid soft">…</text>
+  <path d="M286 187 V200 M306 187 V200 M326 187 V200" class="st-f" stroke-width="1.5"/>
+  <text x="312" y="240" class="t-xs mid soft">1対1に組む</text>
+  <text x="312" y="261" class="t-xs mid soft">無限にも大小</text>
 </svg>

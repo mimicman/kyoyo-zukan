@@ -1,27 +1,32 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- 上：情報の流れ（世界→感じる→組み立てる→残す）、下：それを担う脳の分担 -->
-  <text x="12" y="24" class="t-m ink">外の情報を、脳が組み立てて残す</text>
+  <!-- 上：情報の流れ（世界→感じる→選ぶ→組み立てる→残す）、下：それを担う脳の分担 -->
+  <text x="12" y="24" class="t-m ink">外の情報を選び、組み立てて残す</text>
 
-  <rect x="8" y="40" width="72" height="56" rx="10" class="bgc"/>
-  <text x="44" y="64" class="t-s mid ink">外の世界</text>
-  <text x="44" y="82" class="t-xs mid soft">光・音</text>
-  <rect x="96" y="40" width="72" height="56" rx="10" class="tint st-f" stroke-width="1.5"/>
-  <text x="132" y="64" class="t-s mid ink">感じる</text>
-  <text x="132" y="82" class="t-xs mid soft">目・耳</text>
-  <rect x="184" y="40" width="72" height="56" rx="10" class="tint st-f" stroke-width="2"/>
-  <text x="220" y="64" class="t-s mid ink">組み立てる</text>
-  <text x="220" y="82" class="t-xs mid fl">錯視と知覚</text>
-  <rect x="272" y="40" width="80" height="56" rx="10" class="fl"/>
-  <text x="312" y="64" class="t-s mid on">残す</text>
-  <text x="312" y="82" class="t-xs mid on">記憶の仕組み</text>
-  <path d="M81 68 H93" class="st-f" stroke-width="2" marker-end="url(#a-psychology)"/>
-  <path d="M169 68 H181" class="st-f" stroke-width="2" marker-end="url(#a-psychology)"/>
-  <path d="M257 68 H269" class="st-f" stroke-width="2" marker-end="url(#a-psychology)"/>
+  <rect x="6" y="40" width="64" height="56" rx="10" class="bgc"/>
+  <text x="38" y="64" class="t-s mid ink">外の世界</text>
+  <text x="38" y="82" class="t-xs mid soft">光・音</text>
+  <rect x="77" y="40" width="64" height="56" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="109" y="64" class="t-s mid ink">感じる</text>
+  <text x="109" y="82" class="t-xs mid soft">目・耳</text>
+  <rect x="148" y="40" width="64" height="56" rx="10" class="tint st-f" stroke-width="2"/>
+  <text x="180" y="64" class="t-s mid ink">選ぶ</text>
+  <text x="180" y="82" class="t-xs mid fl">注意</text>
+  <rect x="219" y="40" width="64" height="56" rx="10" class="tint st-f" stroke-width="2"/>
+  <text x="251" y="64" class="t-xs mid ink" font-weight="700">組み立てる</text>
+  <text x="251" y="82" class="t-xs mid fl">知覚</text>
+  <rect x="290" y="40" width="64" height="56" rx="10" class="fl"/>
+  <text x="322" y="64" class="t-s mid on">残す</text>
+  <text x="322" y="82" class="t-xs mid on">記憶</text>
+  <path d="M70 68 H75" class="st-f" stroke-width="2" marker-end="url(#a-psychology)"/>
+  <path d="M141 68 H146" class="st-f" stroke-width="2" marker-end="url(#a-psychology)"/>
+  <path d="M212 68 H217" class="st-f" stroke-width="2" marker-end="url(#a-psychology)"/>
+  <path d="M283 68 H288" class="st-f" stroke-width="2" marker-end="url(#a-psychology)"/>
 
-  <!-- 3つの働きが脳の中へ -->
-  <path d="M132 100 Q140 118 158 136" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
-  <path d="M220 100 Q214 118 204 134" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
-  <path d="M312 100 Q300 124 262 140" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <!-- 働きが脳の中へ -->
+  <path d="M109 100 Q120 120 140 138" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M180 100 V132" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M251 100 Q240 120 224 136" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M322 100 Q310 126 270 146" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
 
   <!-- 脳（左が顔の側） -->
   <path d="M70 205 C60 152 125 134 190 136 C255 138 300 162 298 205 C296 230 272 240 250 240 C232 260 192 266 160 256 C118 256 74 240 70 205 Z" class="tint st" stroke-width="1.5"/>

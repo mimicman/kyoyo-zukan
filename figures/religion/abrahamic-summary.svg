@@ -16,6 +16,7 @@
   <path d="M35 110 H336" class="st-soft" stroke-width="6" stroke-linecap="round"/>
   <text x="344" y="102" class="t-s end ink" font-weight="700">ユダヤ教</text>
   <text x="44" y="102" class="t-xs soft">唯一の神と契約</text>
+  <text x="214" y="102" class="t-xs fl">律法を守る</text>
 
   <!-- キリスト教（1世紀に分かれ、さらに分かれる） -->
   <path d="M100 110 C116 110 116 160 136 160 H214" class="st-f" stroke-width="6" stroke-linecap="round"/>

@@ -19,20 +19,23 @@
 
   <!-- 分ける -->
   <path d="M280 96 V178" class="st dash" stroke-width="1.5"/>
-  <text x="274" y="174" class="t-xs end ink">神仏分離</text>
+  <text x="274" y="194" class="t-xs end ink">神仏分離</text>
+  <circle cx="210" cy="130" r="5" class="paper st-f" stroke-width="2"/>
+  <text x="205" y="176" class="t-xs mid fl" font-weight="700">鎌倉：新しい宗派</text>
 
   <text x="344" y="58" class="t-xs end ink">神社</text>
   <text x="344" y="206" class="t-xs end ink">寺</text>
 
   <!-- 時代の目盛り -->
   <path d="M16 232 H344" class="st-line" stroke-width="1.5"/>
-  <path d="M84 227 V237 M150 227 V237 M280 227 V237" class="st-line" stroke-width="1.5"/>
+  <path d="M84 227 V237 M150 227 V237 M210 227 V237 M280 227 V237" class="st-line" stroke-width="1.5"/>
   <g class="t-xs mid soft">
     <text x="30" y="252">古代</text>
     <text x="84" y="252">6世紀</text>
     <text x="150" y="252">8世紀〜</text>
+    <text x="210" y="252">鎌倉</text>
     <text x="280" y="252">1868</text>
   </g>
   <text x="344" y="252" class="t-xs end soft">今</text>
-  <text x="180" y="272" class="t-xs mid soft">今も、初詣は神社、お盆やお葬式は寺という人が多い</text>
+  <text x="180" y="272" class="t-xs mid soft">今も年中行事で、初詣は神社、お盆や彼岸は寺へ行く人が多い</text>
 </svg>

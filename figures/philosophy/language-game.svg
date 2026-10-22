@@ -1,0 +1,35 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 同じ一語「水！」が、場面（言語ゲーム）によって違う働きをする。下は前期と後期の考えの違い -->
+  <text x="16" y="22" class="t-m ink">同じ言葉でも、場面で意味が変わる</text>
+
+  <!-- 吹き出し -->
+  <path d="M20 96 Q20 74 44 74 H92 Q116 74 116 96 V108 Q116 130 92 130 H62 L46 146 L50 130 H44 Q20 130 20 108 Z" class="fl"/>
+  <text x="68" y="110" class="t-xl mid on" font-weight="700">水！</text>
+  <text x="68" y="166" class="t-xs mid soft">同じ一語</text>
+
+  <!-- 3つの場面 -->
+  <path d="M120 92 Q150 60 168 56" class="st-f" stroke-width="2" fill="none" marker-end="url(#a-philosophy)"/>
+  <path d="M120 104 H166" class="st-f" stroke-width="2" marker-end="url(#a-philosophy)"/>
+  <path d="M120 116 Q150 150 168 152" class="st-f" stroke-width="2" fill="none" marker-end="url(#a-philosophy)"/>
+
+  <rect x="174" y="34" width="174" height="44" rx="10" class="tint"/>
+  <text x="186" y="52" class="t-xs soft">のどが渇いた場面</text>
+  <text x="186" y="70" class="t-s ink" font-weight="700">「水をください」</text>
+  <rect x="174" y="84" width="174" height="44" rx="10" class="tint"/>
+  <text x="186" y="102" class="t-xs soft">火事の場面</text>
+  <text x="186" y="120" class="t-s ink" font-weight="700">「早く水をかけて！」</text>
+  <rect x="174" y="134" width="174" height="44" rx="10" class="tint"/>
+  <text x="186" y="152" class="t-xs soft">理科の授業</text>
+  <text x="186" y="170" class="t-s ink" font-weight="700">「これは水という物質」</text>
+
+  <!-- 前期と後期 -->
+  <rect x="12" y="194" width="162" height="70" rx="12" class="bgc st-soft" stroke-width="1"/>
+  <text x="24" y="214" class="t-xs soft">前期『論理哲学論考』</text>
+  <text x="24" y="234" class="t-s ink" font-weight="700">言葉は世界の写し絵</text>
+  <text x="24" y="252" class="t-xs soft">文は事実の形を写す</text>
+  <path d="M178 229 H196" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <rect x="200" y="194" width="148" height="70" rx="12" class="fl"/>
+  <text x="212" y="214" class="t-xs on">後期『哲学探究』</text>
+  <text x="212" y="234" class="t-s on" font-weight="700">言葉は暮らしの道具</text>
+  <text x="212" y="252" class="t-xs on">意味は使い方で決まる</text>
+</svg>

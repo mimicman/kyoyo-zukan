@@ -1,0 +1,41 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 注意のスポットライト：明るい丸の中だけがくわしく処理され、外を通るゴリラ役は見落とされやすい。下はカクテルパーティー効果 -->
+  <text x="16" y="22" class="t-m ink">光の外は、目に入っても気づきにくい</text>
+
+  <!-- 視野 -->
+  <rect x="12" y="34" width="336" height="150" rx="12" class="bgc"/>
+  <!-- スポットライト -->
+  <path d="M40 40 L92 82 M40 40 L70 138" class="st-soft dash" stroke-width="1.2"/>
+  <circle cx="36" cy="44" r="8" class="fl"/>
+  <ellipse cx="128" cy="112" rx="72" ry="52" class="tint st-f" stroke-width="2"/>
+  <text x="128" y="74" class="t-xs mid fl" font-weight="700">注意を向けた所</text>
+  <!-- パスする2人とボール -->
+  <g class="ink">
+    <circle cx="94" cy="100" r="7"/><rect x="88" y="108" width="12" height="26" rx="5"/>
+    <circle cx="162" cy="100" r="7"/><rect x="156" y="108" width="12" height="26" rx="5"/>
+  </g>
+  <circle cx="128" cy="106" r="5" class="fl"/>
+  <path d="M104 112 Q128 92 152 112" class="st-f dash" stroke-width="1.5" fill="none" marker-end="url(#a-psychology)"/>
+  <text x="128" y="152" class="t-xs mid ink">パスの回数を数える</text>
+
+  <!-- ゴリラ役（気づかれない） -->
+  <g class="soft">
+    <circle cx="276" cy="86" r="13"/>
+    <path d="M254 150 Q252 106 276 102 Q300 106 298 150 Z"/>
+    <path d="M256 112 Q240 128 246 146 M296 112 Q312 128 306 146" class="st-soft" stroke-width="6" stroke-linecap="round" fill="none"/>
+  </g>
+  <path d="M232 168 H322" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="276" y="62" class="t-xs mid soft">横切るゴリラ役</text>
+  <text x="276" y="180" class="t-xs mid ink halo">気づかない人が多い</text>
+
+  <!-- カクテルパーティー効果 -->
+  <rect x="12" y="196" width="336" height="74" rx="12" class="tint"/>
+  <text x="24" y="216" class="t-s ink" font-weight="700">ざわめきの中でも</text>
+  <g class="t-xs soft">
+    <text x="24" y="238">ガヤガヤ…</text><text x="88" y="252">ワイワイ…</text><text x="24" y="262">…ザワザワ</text>
+  </g>
+  <path d="M150 234 H196" class="st-f" stroke-width="2" marker-end="url(#a-psychology)"/>
+  <rect x="204" y="222" width="132" height="32" rx="8" class="fl"/>
+  <text x="270" y="243" class="t-s mid on" font-weight="700">「田中さん！」</text>
+  <text x="270" y="216" class="t-xs mid ink">自分の名前は耳に届く</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 傍観者効果：倒れた人の周りの全員が「誰かがやるだろう」と思う。下はほかに聞いている人数と、すぐ助けに動いた人の多さ（イメージ） -->
+  <text x="16" y="22" class="t-m ink">大勢いるほど、自分が動かなくなる</text>
+
+  <!-- 倒れた人 -->
+  <ellipse cx="180" cy="108" rx="34" ry="10" class="fl"/>
+  <circle cx="140" cy="104" r="8" class="fl"/>
+  <text x="180" y="134" class="t-xs mid fl" font-weight="700">助けが必要な人</text>
+
+  <!-- 周りの人々と吹き出し -->
+  <g class="soft">
+    <circle cx="48" cy="64" r="7"/><rect x="42" y="73" width="12" height="22" rx="5"/>
+    <circle cx="48" cy="146" r="7"/><rect x="42" y="155" width="12" height="22" rx="5"/>
+    <circle cx="312" cy="64" r="7"/><rect x="306" y="73" width="12" height="22" rx="5"/>
+    <circle cx="312" cy="146" r="7"/><rect x="306" y="155" width="12" height="22" rx="5"/>
+    <circle cx="250" cy="160" r="7"/><rect x="244" y="169" width="12" height="22" rx="5"/>
+  </g>
+  <g class="t-xs soft">
+    <text x="62" y="62">誰かがやるだろう</text>
+    <text x="62" y="150">みんな平気そう</text>
+    <text x="298" y="62" class="end">私じゃなくても</text>
+    <text x="298" y="150" class="end">急いでるし…</text>
+  </g>
+
+  <!-- 責任が薄まる -->
+  <rect x="12" y="196" width="140" height="74" rx="12" class="tint"/>
+  <text x="82" y="216" class="t-s mid ink" font-weight="700">責任の分散</text>
+  <g class="fl">
+    <rect x="26" y="228" width="26" height="26" rx="4"/>
+  </g>
+  <text x="39" y="266" class="t-xs mid soft">1人</text>
+  <g class="st-f" stroke-width="1.5" fill="none">
+    <rect x="70" y="236" width="12" height="12" rx="2"/><rect x="86" y="236" width="12" height="12" rx="2"/>
+    <rect x="102" y="236" width="12" height="12" rx="2"/><rect x="118" y="236" width="12" height="12" rx="2"/>
+  </g>
+  <text x="100" y="266" class="t-xs mid soft">大勢で分ける</text>
+
+  <!-- 実験のグラフ（イメージ） -->
+  <text x="166" y="212" class="t-xs soft">すぐ助けに動いた人（イメージ）</text>
+  <path d="M170 262 H344" class="st" stroke-width="1.5"/>
+  <rect x="182" y="218" width="40" height="44" class="fl"/>
+  <rect x="238" y="232" width="40" height="30" class="fl"/>
+  <rect x="294" y="248" width="40" height="14" class="fl"/>
+  <g class="t-xs mid ink">
+    <text x="202" y="276">自分だけ</text><text x="258" y="276">ほか1人</text><text x="314" y="276">ほか4人</text>
+  </g>
+</svg>

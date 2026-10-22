@@ -1,0 +1,45 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 対数：上は2を何回かけたかの数、下はその回数（対数）。4×8は、下で2＋3＝5なので上の32。下は10倍ごとに等間隔の対数目盛り -->
+  <text x="16" y="22" class="t-m ink">かけ算を、回数の足し算に変える</text>
+
+  <!-- 上の段：ふつうの数 -->
+  <text x="16" y="48" class="t-xs soft">2をかけていった数</text>
+  <!-- 下の段：対数 -->
+  <path d="M30 110 H340" class="st-line" stroke-width="1.5"/>
+  <g class="t-l mid ink">
+    <text x="40" y="78">1</text><text x="88" y="78">2</text><text x="136" y="78">4</text><text x="184" y="78">8</text>
+    <text x="232" y="78">16</text><text x="280" y="78">32</text><text x="328" y="78">64</text>
+  </g>
+  <g class="st-soft" stroke-width="1.2">
+    <path d="M40 84 V104 M88 84 V104 M136 84 V104 M184 84 V104 M232 84 V104 M280 84 V104 M328 84 V104"/>
+  </g>
+  <g class="fl">
+    <circle cx="40" cy="110" r="4"/><circle cx="88" cy="110" r="4"/><circle cx="136" cy="110" r="4"/><circle cx="184" cy="110" r="4"/>
+    <circle cx="232" cy="110" r="4"/><circle cx="280" cy="110" r="4"/><circle cx="328" cy="110" r="4"/>
+  </g>
+  <g class="t-m mid fl" font-weight="700">
+    <text x="40" y="132">0</text><text x="88" y="132">1</text><text x="136" y="132">2</text><text x="184" y="132">3</text>
+    <text x="232" y="132">4</text><text x="280" y="132">5</text><text x="328" y="132">6</text>
+  </g>
+  <text x="16" y="150" class="t-xs fl">対数（かけた回数）</text>
+
+  <!-- 4×8＝32 ↔ 2＋3＝5 -->
+  <rect x="124" y="58" width="72" height="26" rx="6" class="st-f" stroke-width="1.5" fill="none"/>
+  <circle cx="280" cy="72" r="14" class="st-f" stroke-width="2" fill="none"/>
+  <path d="M40 162 H136" class="st-f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M138 162 H280" class="st" stroke-width="4" stroke-linecap="round"/>
+  <text x="88" y="182" class="t-xs mid ink">4は2回</text>
+  <text x="208" y="182" class="t-xs mid ink">＋ 8は3回</text>
+  <text x="286" y="182" class="t-xs fl" font-weight="700">計5回＝32</text>
+  <text x="348" y="150" class="t-s end ink" font-weight="700">4×8＝32</text>
+
+  <!-- 対数目盛り -->
+  <rect x="12" y="196" width="336" height="74" rx="12" class="bgc"/>
+  <text x="24" y="214" class="t-xs soft">10倍ごとに同じ間隔（対数目盛り）</text>
+  <path d="M30 238 H330" class="st" stroke-width="2"/>
+  <path d="M40 230 V246 M110 230 V246 M180 230 V246 M250 230 V246 M320 230 V246" class="st" stroke-width="2"/>
+  <g class="t-xs mid ink">
+    <text x="40" y="260">1</text><text x="110" y="260">10</text><text x="180" y="260">100</text><text x="250" y="260">1000</text><text x="320" y="260">10000</text>
+  </g>
+  <text x="340" y="214" class="t-xs end fl">地震の規模・音の大きさ</text>
+</svg>

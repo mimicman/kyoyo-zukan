@@ -1,0 +1,44 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 無限の大きさ：自然数と偶数は1対1に組める（同じ多さ）。下は対角線論法で、小数の一覧にない数を作る -->
+  <text x="16" y="22" class="t-m ink">1対1に組めれば、同じ多さ</text>
+
+  <!-- 自然数と偶数の対応 -->
+  <text x="16" y="52" class="t-xs soft">自然数</text>
+  <text x="16" y="96" class="t-xs soft">偶数</text>
+  <g class="t-m mid ink">
+    <text x="84" y="54">1</text><text x="130" y="54">2</text><text x="176" y="54">3</text><text x="222" y="54">4</text><text x="268" y="54">5</text>
+  </g>
+  <g class="t-m mid fl" font-weight="700">
+    <text x="84" y="98">2</text><text x="130" y="98">4</text><text x="176" y="98">6</text><text x="222" y="98">8</text><text x="268" y="98">10</text>
+  </g>
+  <text x="318" y="54" class="t-m mid soft">…</text>
+  <text x="318" y="98" class="t-m mid soft">…</text>
+  <path d="M84 60 V82 M130 60 V82 M176 60 V82 M222 60 V82 M268 60 V82" class="st-f" stroke-width="2"/>
+  <text x="344" y="116" class="t-xs end soft">どこまでもペアが続く → 同じ多さ</text>
+
+  <!-- 対角線論法 -->
+  <rect x="12" y="128" width="336" height="142" rx="12" class="bgc"/>
+  <text x="24" y="148" class="t-xs soft">小数を全部並べた一覧（のつもり）</text>
+  <g class="t-m ink">
+    <text x="30" y="174">1行目</text><text x="30" y="198">2行目</text><text x="30" y="222">3行目</text><text x="30" y="246">4行目</text>
+  </g>
+  <!-- 斜めのマス（k行目のk桁目） -->
+  <rect x="116" y="159" width="16" height="20" rx="3" class="fl"/>
+  <rect x="132" y="183" width="16" height="20" rx="3" class="fl"/>
+  <rect x="148" y="207" width="16" height="20" rx="3" class="fl"/>
+  <rect x="164" y="231" width="16" height="20" rx="3" class="fl"/>
+  <text x="98" y="174" class="t-m mid ink">0</text><text x="108" y="174" class="t-m mid ink">.</text>
+  <text x="124" y="174" class="t-m mid on">1</text><text x="140" y="174" class="t-m mid ink">4</text><text x="156" y="174" class="t-m mid ink">1</text><text x="172" y="174" class="t-m mid ink">5</text><text x="190" y="174" class="t-m mid soft">…</text>
+  <text x="98" y="198" class="t-m mid ink">0</text><text x="108" y="198" class="t-m mid ink">.</text>
+  <text x="124" y="198" class="t-m mid ink">5</text><text x="140" y="198" class="t-m mid on">0</text><text x="156" y="198" class="t-m mid ink">0</text><text x="172" y="198" class="t-m mid ink">0</text><text x="190" y="198" class="t-m mid soft">…</text>
+  <text x="98" y="222" class="t-m mid ink">0</text><text x="108" y="222" class="t-m mid ink">.</text>
+  <text x="124" y="222" class="t-m mid ink">3</text><text x="140" y="222" class="t-m mid ink">3</text><text x="156" y="222" class="t-m mid on">3</text><text x="172" y="222" class="t-m mid ink">3</text><text x="190" y="222" class="t-m mid soft">…</text>
+  <text x="98" y="246" class="t-m mid ink">0</text><text x="108" y="246" class="t-m mid ink">.</text>
+  <text x="124" y="246" class="t-m mid ink">7</text><text x="140" y="246" class="t-m mid ink">1</text><text x="156" y="246" class="t-m mid ink">8</text><text x="172" y="246" class="t-m mid on">2</text><text x="190" y="246" class="t-m mid soft">…</text>
+  <path d="M200 206 H222" class="st-f" stroke-width="2" marker-end="url(#a-math)"/>
+  <text x="282" y="182" class="t-xs mid fl">斜めの数字を1ずつ変える</text>
+  <rect x="228" y="190" width="108" height="32" rx="8" class="fl"/>
+  <text x="282" y="212" class="t-m mid on" font-weight="700">0.2143…</text>
+  <text x="282" y="240" class="t-xs mid ink">どの行とも違う数</text>
+  <text x="282" y="256" class="t-xs mid soft">→ 実数は並べきれない</text>
+</svg>

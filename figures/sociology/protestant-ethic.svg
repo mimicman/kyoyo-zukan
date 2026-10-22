@@ -1,0 +1,45 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- ウェーバーの説：予定説→救いの不安→天職として勤勉・倹約→貯めて再投資→資本主義の精神→やがて信仰が薄れ仕組みだけが残る -->
+  <text x="16" y="22" class="t-m ink">信仰の習慣が、働き方を変えたとした</text>
+
+  <!-- 1段目 -->
+  <rect x="12" y="38" width="100" height="62" rx="10" class="bgc st-soft" stroke-width="1"/>
+  <text x="62" y="58" class="t-s mid ink" font-weight="700">①予定説</text>
+  <text x="62" y="76" class="t-xs mid soft">救われる人は</text>
+  <text x="62" y="90" class="t-xs mid soft">神が決めている</text>
+  <rect x="130" y="38" width="100" height="62" rx="10" class="bgc st-soft" stroke-width="1"/>
+  <text x="180" y="58" class="t-s mid ink" font-weight="700">②不安</text>
+  <text x="180" y="76" class="t-xs mid soft">自分は救われる</text>
+  <text x="180" y="90" class="t-xs mid soft">側だろうか</text>
+  <rect x="248" y="38" width="100" height="62" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="298" y="58" class="t-s mid ink" font-weight="700">③天職</text>
+  <text x="298" y="76" class="t-xs mid soft">仕事に励み</text>
+  <text x="298" y="90" class="t-xs mid soft">ぜいたくを避ける</text>
+  <path d="M114 69 H126" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <path d="M232 69 H244" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+
+  <path d="M298 102 V122" class="st-f" stroke-width="2" marker-end="url(#a-sociology)"/>
+
+  <!-- 2段目（右から左へ） -->
+  <rect x="248" y="128" width="100" height="62" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="298" y="148" class="t-s mid ink" font-weight="700">④貯めて投資</text>
+  <text x="298" y="166" class="t-xs mid soft">使わずに</text>
+  <text x="298" y="180" class="t-xs mid soft">事業へ回す</text>
+  <rect x="112" y="128" width="118" height="62" rx="10" class="fl"/>
+  <text x="171" y="152" class="t-s mid on" font-weight="700">⑤資本主義の</text>
+  <text x="171" y="170" class="t-s mid on" font-weight="700">精神</text>
+  <path d="M246 159 H234" class="st-f" stroke-width="2" marker-end="url(#a-sociology)"/>
+  <!-- 利益がふえ続ける -->
+  <g class="fl">
+    <rect x="24" y="170" width="20" height="8" rx="2"/><rect x="24" y="161" width="20" height="8" rx="2"/>
+    <rect x="50" y="170" width="20" height="8" rx="2"/><rect x="50" y="161" width="20" height="8" rx="2"/><rect x="50" y="152" width="20" height="8" rx="2"/>
+    <rect x="76" y="170" width="20" height="8" rx="2"/><rect x="76" y="161" width="20" height="8" rx="2"/><rect x="76" y="152" width="20" height="8" rx="2"/><rect x="76" y="143" width="20" height="8" rx="2"/>
+  </g>
+  <text x="60" y="136" class="t-xs mid soft">利益を増やし続ける</text>
+
+  <!-- やがて -->
+  <path d="M171 192 V212" class="st-soft dash" stroke-width="2" marker-end="url(#a-soft)"/>
+  <rect x="12" y="218" width="336" height="52" rx="12" class="bgc st-soft dash" stroke-width="1.5"/>
+  <text x="180" y="238" class="t-s mid ink">⑥やがて信仰の意味は薄れ、仕組みだけが残る</text>
+  <text x="180" y="258" class="t-xs mid soft">人を縛る「鉄の檻」になるとウェーバーは考えた</text>
+</svg>

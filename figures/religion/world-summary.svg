@@ -1,6 +1,6 @@
-<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 360 320" xmlns="http://www.w3.org/2000/svg">
   <!-- 宗教を見渡す：生まれた地域ごとに3つのまとまり。濃い色は民族を越えて広がった宗教 -->
-  <text x="16" y="22" class="t-m ink">生まれた地域で、3つのまとまりに</text>
+  <text x="16" y="22" class="t-m ink">生まれた地域で3つに。共通する形もある</text>
 
   <!-- 列の見出し -->
   <rect x="12" y="36" width="108" height="26" rx="8" class="bgc st-soft" stroke-width="1"/>
@@ -47,4 +47,10 @@
   <text x="44" y="263" class="t-xs ink">民族を越えて広がった</text>
   <rect x="200" y="252" width="22" height="14" rx="7" class="tint st-soft" stroke-width="1"/>
   <text x="228" y="263" class="t-xs ink">主に一つの民族・地域</text>
+
+  <!-- どの宗教にも共通する形 -->
+  <rect x="12" y="276" width="336" height="38" rx="10" class="bgc st-f" stroke-width="1.5"/>
+  <path d="M28 306 V288 M40 306 V288 M24 286 H44" class="st-f" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="54" y="291" class="t-xs fl" font-weight="700">どの宗教にも</text>
+  <text x="54" y="306" class="t-xs ink">聖と俗を区切る ・ 人生の節目に通過儀礼を行う</text>
 </svg>

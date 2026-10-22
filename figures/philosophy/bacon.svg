@@ -1,0 +1,44 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- ベーコンの4つのイドラ（思い込み）を退け、観察を集めて法則へ進む（帰納法） -->
+  <text x="16" y="22" class="t-m ink">思い込みを退けてから、観察を集める</text>
+
+  <!-- 4つのイドラ -->
+  <rect x="12" y="34" width="164" height="54" rx="10" class="tint"/>
+  <text x="24" y="56" class="t-s ink" font-weight="700">種族のイドラ</text>
+  <text x="24" y="76" class="t-xs soft">人間みんなの錯覚・早とちり</text>
+  <rect x="184" y="34" width="164" height="54" rx="10" class="tint"/>
+  <text x="196" y="56" class="t-s ink" font-weight="700">洞窟のイドラ</text>
+  <text x="196" y="76" class="t-xs soft">自分の育ちや好みの偏り</text>
+  <rect x="12" y="94" width="164" height="54" rx="10" class="tint"/>
+  <text x="24" y="116" class="t-s ink" font-weight="700">市場のイドラ</text>
+  <text x="24" y="136" class="t-xs soft">言葉のあいまいさ・うわさ</text>
+  <rect x="184" y="94" width="164" height="54" rx="10" class="tint"/>
+  <text x="196" y="116" class="t-s ink" font-weight="700">劇場のイドラ</text>
+  <text x="196" y="136" class="t-xs soft">権威や学説のうのみ</text>
+
+  <!-- ×印：取り除く -->
+  <g class="st-f" stroke-width="2.5" stroke-linecap="round">
+    <path d="M152 46 L164 58 M164 46 L152 58"/>
+    <path d="M324 46 L336 58 M336 46 L324 58"/>
+    <path d="M152 106 L164 118 M164 106 L152 118"/>
+    <path d="M324 106 L336 118 M336 106 L324 118"/>
+  </g>
+
+  <path d="M180 152 V170" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <text x="190" y="166" class="t-xs soft">取り除いてから</text>
+
+  <!-- 帰納法：たくさんの観察から法則へ -->
+  <rect x="12" y="178" width="336" height="70" rx="12" class="bgc"/>
+  <text x="24" y="196" class="t-xs fl" font-weight="700">帰納法</text>
+  <g class="ink">
+    <circle cx="40" cy="212" r="5"/><circle cx="62" cy="222" r="5"/><circle cx="44" cy="228" r="5"/>
+    <circle cx="84" cy="208" r="5"/><circle cx="98" cy="226" r="5"/><circle cx="118" cy="216" r="5"/>
+  </g>
+  <text x="80" y="246" class="t-xs mid soft">観察・実験の結果</text>
+  <path d="M132 220 H222" class="st-f" stroke-width="2.5" marker-end="url(#a-philosophy)"/>
+  <text x="177" y="212" class="t-xs mid fl">共通点を探す</text>
+  <rect x="230" y="198" width="108" height="40" rx="10" class="fl"/>
+  <text x="284" y="223" class="t-s mid on" font-weight="700">一般的な法則</text>
+
+  <text x="16" y="270" class="t-xs soft">思い込みに気づき、証拠から考える。のちの科学の方法の土台に</text>
+</svg>

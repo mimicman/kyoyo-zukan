@@ -1,0 +1,40 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 相対的剥奪：昇進の少ない部隊より、多い部隊のほうが昇進への不満が大きかった。不満は期待と現実の差 -->
+  <text x="16" y="22" class="t-m ink">不満は、比べる相手との差で生まれる</text>
+
+  <!-- 昇進の少ない部隊 -->
+  <rect x="12" y="36" width="164" height="124" rx="12" class="bgc"/>
+  <text x="94" y="56" class="t-s mid ink" font-weight="700">昇進が少ない部隊</text>
+  <g class="soft">
+    <circle cx="40" cy="82" r="7"/><circle cx="72" cy="82" r="7"/><circle cx="104" cy="82" r="7"/><circle cx="136" cy="82" r="7"/>
+  </g>
+  <circle cx="160" cy="82" r="7" class="fl"/>
+  <text x="160" y="104" class="t-xs mid fl">昇進</text>
+  <text x="72" y="108" class="t-xs mid soft">周りも同じ</text>
+  <rect x="24" y="120" width="140" height="30" rx="8" class="tint"/>
+  <text x="94" y="140" class="t-s mid ink">不満は小さい</text>
+
+  <!-- 昇進の多い部隊 -->
+  <rect x="184" y="36" width="164" height="124" rx="12" class="bgc"/>
+  <text x="266" y="56" class="t-s mid ink" font-weight="700">昇進が多い部隊</text>
+  <g class="fl">
+    <circle cx="212" cy="82" r="7"/><circle cx="244" cy="82" r="7"/><circle cx="276" cy="82" r="7"/><circle cx="308" cy="82" r="7"/>
+  </g>
+  <circle cx="332" cy="82" r="7" class="soft"/>
+  <text x="260" y="104" class="t-xs mid fl">次々に昇進</text>
+  <text x="332" y="104" class="t-xs mid soft">自分</text>
+  <rect x="196" y="120" width="140" height="30" rx="8" class="fl"/>
+  <text x="266" y="140" class="t-s mid on" font-weight="700">不満は大きい</text>
+
+  <!-- 期待と現実の差 -->
+  <text x="16" y="186" class="t-xs soft">比べる相手（準拠集団）から思い描く期待</text>
+  <rect x="40" y="196" width="220" height="22" rx="4" class="tint st-f" stroke-width="1.5"/>
+  <text x="50" y="212" class="t-xs ink">期待</text>
+  <rect x="40" y="228" width="130" height="22" rx="4" class="fl"/>
+  <text x="50" y="244" class="t-xs on">自分の現実</text>
+  <path d="M174 239 H256" class="st-f dash" stroke-width="2"/>
+  <path d="M260 196 V250" class="st-f" stroke-width="1.5"/>
+  <text x="270" y="238" class="t-s fl" font-weight="700">この差が</text>
+  <text x="270" y="256" class="t-s fl" font-weight="700">不満に</text>
+  <text x="16" y="272" class="t-xs soft">暮らしの水準そのものより、差の感じ方が効く</text>
+</svg>

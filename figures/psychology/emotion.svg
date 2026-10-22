@@ -1,0 +1,44 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 感情の順番：常識（感情→体）、ジェームズ＝ランゲ説（体→感情）、二要因説（体＋解釈→感情） -->
+  <text x="16" y="22" class="t-m ink">怖いから震える？ 震えるから怖い？</text>
+
+  <!-- 1段目：常識 -->
+  <text x="16" y="46" class="t-xs soft">常識的な順番</text>
+  <rect x="16" y="52" width="88" height="36" rx="8" class="bgc"/>
+  <text x="60" y="75" class="t-s mid ink">クマに会う</text>
+  <rect x="134" y="52" width="88" height="36" rx="8" class="tint st-f" stroke-width="1.5"/>
+  <text x="178" y="75" class="t-s mid ink" font-weight="700">怖い</text>
+  <rect x="252" y="52" width="92" height="36" rx="8" class="bgc st-soft" stroke-width="1"/>
+  <text x="298" y="75" class="t-s mid ink">体が震える</text>
+  <path d="M106 70 H130" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <path d="M224 70 H248" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+
+  <!-- 2段目：ジェームズ＝ランゲ説 -->
+  <text x="16" y="114" class="t-xs fl" font-weight="700">ジェームズ＝ランゲ説（1880年代）</text>
+  <rect x="16" y="120" width="88" height="36" rx="8" class="bgc"/>
+  <text x="60" y="143" class="t-s mid ink">クマに会う</text>
+  <rect x="134" y="120" width="88" height="36" rx="8" class="bgc st-soft" stroke-width="1"/>
+  <text x="178" y="143" class="t-s mid ink">体が震える</text>
+  <rect x="252" y="120" width="92" height="36" rx="8" class="fl"/>
+  <text x="298" y="143" class="t-s mid on" font-weight="700">怖い</text>
+  <path d="M106 138 H130" class="st-f" stroke-width="2" marker-end="url(#a-psychology)"/>
+  <path d="M224 138 H248" class="st-f" stroke-width="2" marker-end="url(#a-psychology)"/>
+
+  <!-- 3段目：二要因説 -->
+  <text x="16" y="182" class="t-xs fl" font-weight="700">二要因説（1962年）</text>
+  <rect x="16" y="188" width="88" height="36" rx="8" class="bgc st-soft" stroke-width="1"/>
+  <text x="60" y="211" class="t-s mid ink">ドキドキ</text>
+  <text x="119" y="212" class="t-l mid ink">＋</text>
+  <rect x="134" y="188" width="88" height="36" rx="8" class="tint"/>
+  <text x="178" y="204" class="t-xs mid ink">「クマがいる」</text>
+  <text x="178" y="218" class="t-xs mid soft">という解釈</text>
+  <rect x="252" y="188" width="92" height="36" rx="8" class="fl"/>
+  <text x="298" y="211" class="t-s mid on" font-weight="700">怖い</text>
+  <path d="M224 206 H248" class="st-f" stroke-width="2" marker-end="url(#a-psychology)"/>
+
+  <!-- 吊り橋 -->
+  <path d="M24 252 Q90 274 156 252" class="st-soft" stroke-width="2" fill="none"/>
+  <path d="M24 244 Q90 266 156 244" class="st-soft" stroke-width="1" fill="none"/>
+  <text x="90" y="244" class="t-xs mid soft">揺れる吊り橋</text>
+  <text x="172" y="256" class="t-xs ink">ドキドキを好意と取り違えることも</text>
+</svg>

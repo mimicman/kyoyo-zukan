@@ -19,6 +19,10 @@
   <path d="M96 212 Q124 206 136 162" class="st-f" stroke-width="2" fill="none" marker-end="url(#a-sociology)"/>
   <path d="M166 146 Q194 140 204 96" class="st-f" stroke-width="2" fill="none" marker-end="url(#a-sociology)"/>
   <text x="228" y="226" class="t-xs end ink">世代をこえて層を移る</text>
+  <!-- 比べる心 -->
+  <path d="M60 158 V120" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="68" y="138" class="t-xs fl" font-weight="700">上と比べて</text>
+  <text x="68" y="152" class="t-xs fl" font-weight="700">不満に</text>
 
   <!-- 右：家族が渡すもの -->
   <rect x="244" y="40" width="104" height="96" rx="10" class="tint st-f" stroke-width="1.5"/>
@@ -28,12 +32,13 @@
     <text x="296" y="100">教育</text>
     <text x="296" y="118" class="fl">文化資本</text>
   </g>
-  <rect x="244" y="144" width="104" height="90" rx="10" class="bgc"/>
+  <rect x="244" y="144" width="104" height="106" rx="10" class="bgc"/>
   <text x="296" y="164" class="t-xs mid ink" font-weight="700">家族の形</text>
   <g class="t-xs mid soft">
     <text x="296" y="184">大家族</text>
     <text x="296" y="202">↓ 核家族</text>
     <text x="296" y="220">↓ さまざまな形</text>
   </g>
-  <text x="12" y="262" class="t-xs soft">開かれた社会ほど、親と違う層に移りやすい</text>
+  <text x="296" y="240" class="t-xs mid fl">性別の役割も変化</text>
+  <text x="12" y="266" class="t-xs soft">開かれた社会ほど、親と違う層に移りやすい</text>
 </svg>

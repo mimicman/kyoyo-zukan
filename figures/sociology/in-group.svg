@@ -1,0 +1,48 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 内集団と外集団：線を引くと、内には好意、外には一まとめの見方が向く。下はタジフェルの最小条件集団の実験 -->
+  <text x="16" y="22" class="t-m ink">線を引くだけで、内と外ができる</text>
+
+  <!-- 内集団 -->
+  <circle cx="88" cy="104" r="62" class="tint st-f" stroke-width="2"/>
+  <text x="88" y="66" class="t-s mid fl" font-weight="700">われわれ</text>
+  <g class="fl">
+    <circle cx="62" cy="96" r="7"/><circle cx="88" cy="88" r="7"/><circle cx="114" cy="96" r="7"/>
+    <circle cx="72" cy="122" r="7"/><circle cx="104" cy="122" r="7"/>
+  </g>
+  <text x="88" y="146" class="t-xs mid ink">好意・ひいき</text>
+  <text x="88" y="182" class="t-xs mid soft">内集団</text>
+
+  <!-- 境目 -->
+  <path d="M180 36 V176" class="st dash" stroke-width="2"/>
+
+  <!-- 外集団 -->
+  <circle cx="272" cy="104" r="62" class="bgc st-soft" stroke-width="1.5"/>
+  <text x="272" y="66" class="t-s mid ink" font-weight="700">あの人たち</text>
+  <g class="soft">
+    <circle cx="246" cy="96" r="7"/><circle cx="272" cy="88" r="7"/><circle cx="298" cy="96" r="7"/>
+    <circle cx="256" cy="122" r="7"/><circle cx="288" cy="122" r="7"/>
+  </g>
+  <text x="272" y="146" class="t-xs mid ink">ひとまとめに見る</text>
+  <text x="272" y="182" class="t-xs mid soft">外集団</text>
+
+  <path d="M152 92 H208" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <text x="180" y="86" class="t-xs mid soft halo">警戒</text>
+
+  <!-- 最小条件集団の実験 -->
+  <rect x="12" y="194" width="336" height="76" rx="12" class="bgc"/>
+  <text x="24" y="212" class="t-xs soft">絵の好みで適当に2組に分けただけでも…</text>
+  <rect x="24" y="222" width="70" height="36" rx="8" class="fl"/>
+  <text x="59" y="245" class="t-xs mid on" font-weight="700">自分の組</text>
+  <rect x="186" y="222" width="70" height="36" rx="8" class="tint"/>
+  <text x="221" y="245" class="t-xs mid ink">相手の組</text>
+  <!-- 配ったお金 -->
+  <g class="fl">
+    <circle cx="110" cy="250" r="6"/><circle cx="124" cy="250" r="6"/><circle cx="138" cy="250" r="6"/><circle cx="152" cy="250" r="6"/>
+    <circle cx="117" cy="238" r="6"/><circle cx="131" cy="238" r="6"/><circle cx="145" cy="238" r="6"/>
+  </g>
+  <g class="soft">
+    <circle cx="272" cy="250" r="6"/><circle cx="286" cy="250" r="6"/><circle cx="300" cy="250" r="6"/>
+    <circle cx="279" cy="238" r="6"/><circle cx="293" cy="238" r="6"/>
+  </g>
+  <text x="336" y="212" class="t-xs end fl" font-weight="700">自分の組に多めに配る</text>
+</svg>

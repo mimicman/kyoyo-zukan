@@ -1,5 +1,5 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- 確かな知識：合理論（左の流れ）と経験論（右の流れ）が、カントで合流する。縦は時代 -->
+  <!-- 確かな知識：合理論（左の流れ）と経験論（右の流れ、ベーコンから）が、カントで合流する。縦は時代 -->
   <text x="16" y="22" class="t-m ink">2つの流れが、カントで合流する</text>
 
   <!-- 左の年の目盛り -->
@@ -28,6 +28,9 @@
   <text x="100" y="156" class="t-xs end fl">理性で推論</text>
 
   <!-- 経験論の人物 -->
+  <circle cx="280" cy="60" r="6" class="ink"/>
+  <text x="270" y="60" class="t-xs end ink" font-weight="700">ベーコン</text>
+  <text x="270" y="74" class="t-xs end soft">思い込みを退ける</text>
   <circle cx="269" cy="116" r="6" class="ink"/>
   <text x="259" y="114" class="t-xs end ink" font-weight="700">ロック</text>
   <text x="259" y="128" class="t-xs end soft">心は白紙</text>

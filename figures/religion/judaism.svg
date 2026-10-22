@@ -1,0 +1,48 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- ユダヤ教：律法（トーラーの巻物）を、安息日・食の決まり・学びとして暮らしで守る。下は神殿から会堂への流れ -->
+  <text x="16" y="22" class="t-m ink">律法を、毎日の暮らしで守る</text>
+
+  <!-- トーラーの巻物 -->
+  <rect x="34" y="50" width="76" height="104" class="paper st" stroke-width="1.5"/>
+  <rect x="22" y="40" width="14" height="124" rx="7" class="fl"/>
+  <rect x="108" y="40" width="14" height="124" rx="7" class="fl"/>
+  <g class="st-soft" stroke-width="1.5">
+    <path d="M44 68 H100 M44 80 H100 M44 92 H100 M44 104 H100 M44 116 H100 M44 128 H100 M44 140 H84"/>
+  </g>
+  <text x="72" y="182" class="t-s mid ink" font-weight="700">トーラー（律法）</text>
+  <text x="72" y="198" class="t-xs mid soft">神との契約と決まり</text>
+
+  <!-- 暮らしの実践 -->
+  <path d="M126 80 Q140 60 156 58" class="st-f" stroke-width="2" fill="none" marker-end="url(#a-religion)"/>
+  <path d="M126 102 H156" class="st-f" stroke-width="2" marker-end="url(#a-religion)"/>
+  <path d="M126 124 Q140 146 156 148" class="st-f" stroke-width="2" fill="none" marker-end="url(#a-religion)"/>
+
+  <rect x="162" y="36" width="186" height="44" rx="10" class="tint"/>
+  <path d="M180 64 V50 M192 64 V50" class="st" stroke-width="3" stroke-linecap="round"/>
+  <path d="M180 47 V43 M192 47 V43" class="st-f" stroke-width="3" stroke-linecap="round"/>
+  <text x="206" y="55" class="t-s ink" font-weight="700">安息日</text>
+  <text x="206" y="72" class="t-xs soft">金曜の日没〜土曜は休む</text>
+
+  <rect x="162" y="86" width="186" height="44" rx="10" class="tint"/>
+  <circle cx="186" cy="108" r="10" class="st" stroke-width="2" fill="none"/>
+  <text x="206" y="105" class="t-s ink" font-weight="700">食の決まり</text>
+  <text x="206" y="122" class="t-xs soft">食べてよい物と調理法</text>
+
+  <rect x="162" y="136" width="186" height="44" rx="10" class="tint"/>
+  <path d="M176 168 V150 L186 154 L196 150 V168 L186 164 Z" class="st" stroke-width="1.5" fill="none"/>
+  <text x="206" y="155" class="t-s ink" font-weight="700">学びと祈り</text>
+  <text x="206" y="172" class="t-xs soft">会堂（シナゴーグ）で</text>
+
+  <!-- 神殿から会堂へ -->
+  <path d="M16 236 H344" class="st-line" stroke-width="1.5"/>
+  <rect x="16" y="214" width="96" height="44" rx="10" class="bgc st-soft" stroke-width="1"/>
+  <text x="64" y="233" class="t-xs mid ink" font-weight="700">エルサレム</text>
+  <text x="64" y="248" class="t-xs mid soft">の神殿が中心</text>
+  <circle cx="150" cy="236" r="7" class="ink"/>
+  <text x="150" y="222" class="t-xs mid ink">70年</text>
+  <text x="150" y="258" class="t-xs mid soft">神殿が壊される</text>
+  <rect x="200" y="214" width="144" height="44" rx="10" class="fl"/>
+  <text x="272" y="233" class="t-xs mid on" font-weight="700">各地の会堂と学びで</text>
+  <text x="272" y="248" class="t-xs mid on">信仰を受け継ぐ</text>
+  <text x="16" y="276" class="t-xs soft">守り方の厳しさは、流れや人によってさまざま</text>
+</svg>

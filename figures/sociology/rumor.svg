@@ -1,0 +1,50 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- うわさ：広がりやすさ＝重要さ×あいまいさ。人から人へ渡るうちに話が短く、強く、思い込みに合う形に変わる -->
+  <text x="16" y="22" class="t-m ink">大事であいまいな話ほど、広がり変わる</text>
+
+  <!-- うわさの公式 -->
+  <rect x="12" y="34" width="336" height="44" rx="10" class="tint"/>
+  <text x="24" y="61" class="t-s ink" font-weight="700">広がりやすさ</text>
+  <text x="112" y="61" class="t-s mid ink">＝</text>
+  <rect x="126" y="44" width="88" height="24" rx="6" class="fl"/>
+  <text x="170" y="61" class="t-s mid on" font-weight="700">重要さ</text>
+  <text x="228" y="61" class="t-s mid ink">×</text>
+  <rect x="242" y="44" width="94" height="24" rx="6" class="fl"/>
+  <text x="289" y="61" class="t-s mid on" font-weight="700">あいまいさ</text>
+
+  <!-- 伝言のリレー -->
+  <g class="ink">
+    <circle cx="36" cy="150" r="10"/><circle cx="120" cy="150" r="10"/><circle cx="204" cy="150" r="10"/><circle cx="288" cy="150" r="10"/>
+    <rect x="28" y="162" width="16" height="22" rx="6"/><rect x="112" y="162" width="16" height="22" rx="6"/>
+    <rect x="196" y="162" width="16" height="22" rx="6"/><rect x="280" y="162" width="16" height="22" rx="6"/>
+  </g>
+  <path d="M50 150 H104" class="st-f" stroke-width="2" marker-end="url(#a-sociology)"/>
+  <path d="M134 150 H188" class="st-f" stroke-width="2" marker-end="url(#a-sociology)"/>
+  <path d="M218 150 H272" class="st-f" stroke-width="2" marker-end="url(#a-sociology)"/>
+  <path d="M302 150 H340" class="st-f dash" stroke-width="2" marker-end="url(#a-sociology)"/>
+
+  <!-- 吹き出しの言葉が変わっていく -->
+  <rect x="12" y="88" width="84" height="40" rx="8" class="bgc st-soft" stroke-width="1"/>
+  <text x="54" y="104" class="t-xs mid ink">あの店、今日</text>
+  <text x="54" y="118" class="t-xs mid ink">休みかもね</text>
+  <rect x="99" y="92" width="76" height="34" rx="8" class="bgc st-soft" stroke-width="1"/>
+  <text x="137" y="113" class="t-xs mid ink">店が休みらしい</text>
+  <rect x="179" y="92" width="88" height="34" rx="8" class="tint st-f" stroke-width="1"/>
+  <text x="223" y="113" class="t-xs mid ink">店が危ないらしい</text>
+  <rect x="270" y="92" width="78" height="34" rx="8" class="fl"/>
+  <text x="309" y="113" class="t-xs mid on" font-weight="700">店がつぶれる！</text>
+
+  <!-- 3つの変わり方 -->
+  <rect x="12" y="200" width="108" height="70" rx="10" class="bgc"/>
+  <text x="66" y="222" class="t-s mid ink" font-weight="700">平均化</text>
+  <text x="66" y="242" class="t-xs mid soft">細かい所が落ち</text>
+  <text x="66" y="256" class="t-xs mid soft">短くなる</text>
+  <rect x="126" y="200" width="108" height="70" rx="10" class="bgc"/>
+  <text x="180" y="222" class="t-s mid ink" font-weight="700">強調</text>
+  <text x="180" y="242" class="t-xs mid soft">一部が大げさに</text>
+  <text x="180" y="256" class="t-xs mid soft">なる</text>
+  <rect x="240" y="200" width="108" height="70" rx="10" class="bgc"/>
+  <text x="294" y="222" class="t-s mid ink" font-weight="700">同化</text>
+  <text x="294" y="242" class="t-xs mid soft">聞き手の思い込み</text>
+  <text x="294" y="256" class="t-xs mid soft">に合う形になる</text>
+</svg>

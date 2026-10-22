@@ -1,0 +1,32 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- ジェンダー：下の箱が体の性、上の箱が社会や文化が期待する役割や「らしさ」。上の中身は時代・社会で変わり、育つ中で身につく -->
+  <text x="16" y="22" class="t-m ink">体の違いの上に、社会の「らしさ」が乗る</text>
+
+  <!-- ジェンダーの層 -->
+  <rect x="12" y="36" width="244" height="120" rx="12" class="tint st-f" stroke-width="1.5"/>
+  <text x="24" y="56" class="t-s fl" font-weight="700">ジェンダー（社会がつくる）</text>
+  <rect x="24" y="68" width="106" height="34" rx="8" class="paper"/>
+  <text x="77" y="90" class="t-xs mid ink">仕事の分け方</text>
+  <rect x="138" y="68" width="106" height="34" rx="8" class="paper"/>
+  <text x="191" y="90" class="t-xs mid ink">家事・育児</text>
+  <rect x="24" y="110" width="106" height="34" rx="8" class="paper"/>
+  <text x="77" y="132" class="t-xs mid ink">服装・ふるまい</text>
+  <rect x="138" y="110" width="106" height="34" rx="8" class="paper"/>
+  <text x="191" y="132" class="t-xs mid ink">言葉づかい</text>
+
+  <!-- 体の性の層 -->
+  <rect x="12" y="164" width="196" height="40" rx="12" class="bgc st" stroke-width="1.5"/>
+  <text x="110" y="189" class="t-s mid ink" font-weight="700">体の性（からだのつくり）</text>
+
+  <!-- 変わる -->
+  <path d="M270 46 C344 60 344 140 270 154" class="st-f" stroke-width="2.5" fill="none" marker-end="url(#a-sociology)"/>
+  <text x="304" y="98" class="t-s mid ink" font-weight="700">時代・</text>
+  <text x="304" y="116" class="t-s mid ink" font-weight="700">社会で</text>
+  <text x="304" y="134" class="t-s mid fl" font-weight="700">変わる</text>
+
+  <!-- 身につける -->
+  <path d="M232 236 V162" class="st dash" stroke-width="2" marker-end="url(#a-ink)"/>
+  <text x="242" y="204" class="t-xs ink">身につける</text>
+  <rect x="12" y="238" width="336" height="34" rx="10" class="bgc"/>
+  <text x="180" y="260" class="t-xs mid ink">育つ中で、家族・学校・メディアから身につけていく（社会化）</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 鎌倉仏教：平安までの仏教（国家・貴族、難しい修行）から、一つの行いを選ぶ3つの道（念仏・題目・坐禅）へ -->
+  <text x="16" y="22" class="t-m ink">一つの行いを選び、誰でも救われる道へ</text>
+
+  <!-- 平安まで -->
+  <rect x="62" y="34" width="236" height="46" rx="10" class="bgc st-soft" stroke-width="1"/>
+  <text x="180" y="53" class="t-xs mid soft">平安時代まで</text>
+  <text x="180" y="70" class="t-s mid ink">国や貴族のための祈り・難しい修行</text>
+
+  <path d="M180 82 V100" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <text x="190" y="96" class="t-xs soft">末法の不安・戦乱</text>
+
+  <!-- 3つの道 -->
+  <rect x="12" y="106" width="108" height="118" rx="12" class="fl"/>
+  <text x="66" y="128" class="t-m mid on" font-weight="700">念仏</text>
+  <text x="66" y="146" class="t-xs mid on">南無阿弥陀仏</text>
+  <text x="66" y="160" class="t-xs mid on">ととなえる</text>
+  <path d="M24 170 H108" class="st-line" stroke-width="1"/>
+  <text x="66" y="186" class="t-xs mid on">浄土宗　法然</text>
+  <text x="66" y="201" class="t-xs mid on">浄土真宗　親鸞</text>
+  <text x="66" y="216" class="t-xs mid on">時宗　一遍</text>
+
+  <rect x="126" y="106" width="108" height="118" rx="12" class="tint st-f" stroke-width="1.5"/>
+  <text x="180" y="128" class="t-m mid ink" font-weight="700">題目</text>
+  <text x="180" y="146" class="t-xs mid ink">南無妙法蓮華経</text>
+  <text x="180" y="160" class="t-xs mid ink">ととなえる</text>
+  <path d="M138 170 H222" class="st-soft" stroke-width="1"/>
+  <text x="180" y="186" class="t-xs mid ink">日蓮宗　日蓮</text>
+
+  <rect x="240" y="106" width="108" height="118" rx="12" class="paper st-f" stroke-width="1.5"/>
+  <text x="294" y="128" class="t-m mid ink" font-weight="700">坐禅</text>
+  <text x="294" y="146" class="t-xs mid ink">ひたすら坐る</text>
+  <text x="294" y="160" class="t-xs mid ink">問いに向き合う</text>
+  <path d="M252 170 H336" class="st-soft" stroke-width="1"/>
+  <text x="294" y="186" class="t-xs mid ink">臨済宗　栄西</text>
+  <text x="294" y="201" class="t-xs mid ink">曹洞宗　道元</text>
+
+  <path d="M66 82 V100 M294 82 V100" class="st-soft dash" stroke-width="1.5"/>
+
+  <!-- 広がり -->
+  <path d="M16 244 H344" class="st-f" stroke-width="2" marker-end="url(#a-religion)"/>
+  <text x="180" y="236" class="t-xs mid ink halo">身分や学問にかかわらず実践できる</text>
+  <text x="180" y="264" class="t-xs mid soft">武士・農民・町の人々へ広がり、今の寺の多くの宗派に</text>
+</svg>

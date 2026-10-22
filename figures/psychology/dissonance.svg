@@ -1,0 +1,44 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 認知的不協和：食い違う考えと事実のモヤモヤを、考えのほうを変えて解消する（キツネとぶどう）。下はフェスティンガーの1ドル・20ドル実験 -->
+  <text x="16" y="22" class="t-m ink">食い違いのモヤモヤを、考えを変えて消す</text>
+
+  <!-- 食い違う2つ -->
+  <rect x="12" y="38" width="124" height="44" rx="10" class="tint"/>
+  <text x="74" y="56" class="t-xs mid soft">考え</text>
+  <text x="74" y="73" class="t-s mid ink">ぶどうが欲しい</text>
+  <rect x="12" y="110" width="124" height="44" rx="10" class="tint"/>
+  <text x="74" y="128" class="t-xs mid soft">事実</text>
+  <text x="74" y="145" class="t-s mid ink">手が届かない</text>
+  <!-- ぎざぎざ（不協和） -->
+  <path d="M60 86 L70 92 L60 98 L70 104 L60 108" class="st-f" stroke-width="2.5" fill="none"/>
+  <text x="54" y="101" class="t-xs end fl" font-weight="700">モヤモヤ</text>
+  <text x="78" y="101" class="t-xs fl" font-weight="700">不協和</text>
+
+  <!-- 解消 -->
+  <path d="M140 96 H186" class="st-f" stroke-width="2.5" marker-end="url(#a-psychology)"/>
+  <rect x="192" y="62" width="156" height="68" rx="12" class="fl"/>
+  <text x="270" y="84" class="t-xs mid on">考えのほうを変える</text>
+  <text x="270" y="108" class="t-m mid on" font-weight="700">「どうせすっぱい」</text>
+  <text x="270" y="124" class="t-xs mid on">これで落ち着く</text>
+  <!-- ぶどう -->
+  <g class="soft">
+    <circle cx="300" cy="40" r="5"/><circle cx="311" cy="40" r="5"/><circle cx="322" cy="40" r="5"/>
+    <circle cx="305" cy="49" r="5"/><circle cx="316" cy="49" r="5"/><circle cx="311" cy="57" r="5"/>
+  </g>
+  <path d="M311 35 V28" class="st-soft" stroke-width="2"/>
+
+  <!-- 実験 -->
+  <rect x="12" y="166" width="336" height="104" rx="12" class="bgc"/>
+  <text x="24" y="186" class="t-xs soft">退屈な作業を「楽しい」と人に伝えたあと、本当の感想は？</text>
+  <path d="M60 256 H300" class="st" stroke-width="1.5"/>
+  <rect x="86" y="200" width="56" height="56" class="fl"/>
+  <rect x="218" y="230" width="56" height="26" class="soft"/>
+  <text x="114" y="196" class="t-xs mid fl" font-weight="700">楽しかった</text>
+  <text x="246" y="226" class="t-xs mid soft">退屈だった</text>
+  <g class="t-xs mid ink">
+    <text x="114" y="268">1ドルもらった</text><text x="246" y="268">20ドルもらった</text>
+  </g>
+  <text x="336" y="214" class="t-xs end soft">理由が弱い</text>
+  <text x="336" y="228" class="t-xs end soft">ほど考えが</text>
+  <text x="336" y="242" class="t-xs end soft">変わる</text>
+</svg>

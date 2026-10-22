@@ -1,0 +1,45 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- エコーチェンバー：部屋の中では似た意見がこだまし、壁のおすすめの仕組みが違う意見をはね返す。下は偏りが強まる輪 -->
+  <text x="16" y="22" class="t-m ink">似た声ばかりが、こだまして返る</text>
+
+  <!-- 部屋 -->
+  <rect x="12" y="36" width="230" height="142" rx="16" class="tint st-f" stroke-width="2"/>
+  <!-- 中の人 -->
+  <circle cx="70" cy="96" r="11" class="fl"/>
+  <rect x="61" y="109" width="18" height="30" rx="7" class="fl"/>
+  <text x="70" y="160" class="t-xs mid ink">わたし</text>
+  <!-- こだま -->
+  <g class="st-f" stroke-width="2" fill="none">
+    <path d="M94 86 Q104 104 94 122"/><path d="M106 76 Q122 104 106 132"/><path d="M118 66 Q140 104 118 142"/>
+  </g>
+  <g class="t-xs fl" font-weight="700">
+    <text x="150" y="70">そうだ！</text><text x="160" y="106">やっぱり！</text><text x="150" y="142">その通り！</text>
+  </g>
+
+  <!-- 壁のフィルター -->
+  <g class="st" stroke-width="1.5">
+    <path d="M242 50 V166 M252 50 V166 M232 70 H262 M232 100 H262 M232 130 H262 M232 160 H262"/>
+  </g>
+  <text x="248" y="196" class="t-xs mid ink">おすすめの仕組み</text>
+
+  <!-- 外の違う意見 -->
+  <rect x="282" y="56" width="66" height="28" rx="8" class="bgc st-soft" stroke-width="1"/>
+  <text x="315" y="75" class="t-xs mid soft">別の見方</text>
+  <rect x="282" y="122" width="66" height="28" rx="8" class="bgc st-soft" stroke-width="1"/>
+  <text x="315" y="141" class="t-xs mid soft">反対の声</text>
+  <path d="M282 72 Q262 82 280 96" class="st-soft dash" stroke-width="1.5" fill="none" marker-end="url(#a-soft)"/>
+  <path d="M282 138 Q262 128 280 114" class="st-soft dash" stroke-width="1.5" fill="none" marker-end="url(#a-soft)"/>
+  <text x="315" y="108" class="t-xs mid soft">届きにくい</text>
+
+  <!-- 偏りが強まる輪 -->
+  <rect x="12" y="208" width="104" height="36" rx="10" class="bgc"/>
+  <text x="64" y="231" class="t-xs mid ink">好きな情報を見る</text>
+  <rect x="128" y="208" width="104" height="36" rx="10" class="bgc"/>
+  <text x="180" y="231" class="t-xs mid ink">似た情報が届く</text>
+  <rect x="244" y="208" width="104" height="36" rx="10" class="fl"/>
+  <text x="296" y="231" class="t-xs mid on" font-weight="700">考えが強まる</text>
+  <path d="M117 226 H126" class="st-f" stroke-width="2" marker-end="url(#a-sociology)"/>
+  <path d="M233 226 H242" class="st-f" stroke-width="2" marker-end="url(#a-sociology)"/>
+  <path d="M296 246 Q296 268 180 268 Q64 268 64 250" class="st-f dash" stroke-width="1.5" fill="none" marker-end="url(#a-sociology)"/>
+  <text x="180" y="262" class="t-xs mid soft halo">くり返す</text>
+</svg>

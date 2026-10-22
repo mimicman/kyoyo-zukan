@@ -1,0 +1,41 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 通過儀礼の3段階：分離→移行（どちらでもない境界）→統合。下は人生の節目の儀礼 -->
+  <text x="16" y="22" class="t-m ink">古い立場を離れ、境目を通り、新しく戻る</text>
+
+  <!-- 境界の場 -->
+  <rect x="122" y="78" width="116" height="104" rx="12" class="tint st-f dash" stroke-width="1.5"/>
+  <text x="180" y="98" class="t-xs mid fl" font-weight="700">どちらでもない</text>
+  <text x="180" y="112" class="t-xs mid fl" font-weight="700">宙ぶらりん</text>
+
+  <!-- 道すじ -->
+  <path d="M20 66 H96 C118 66 118 150 140 150 H220 C242 150 242 54 264 54 H342" class="st-f" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <circle cx="180" cy="150" r="9" class="fl"/>
+  <circle cx="180" cy="150" r="4" class="paper"/>
+
+  <!-- 3段階のラベル -->
+  <text x="20" y="54" class="t-xs soft">元の立場（子ども）</text>
+  <text x="342" y="42" class="t-xs end soft">新しい立場（大人）</text>
+  <text x="60" y="94" class="t-s mid ink" font-weight="700">①分離</text>
+  <text x="60" y="110" class="t-xs mid soft">元の集団を</text>
+  <text x="60" y="124" class="t-xs mid soft">離れる</text>
+  <text x="180" y="172" class="t-s mid ink" font-weight="700">②移行</text>
+  <text x="300" y="82" class="t-s mid ink" font-weight="700">③統合</text>
+  <text x="300" y="98" class="t-xs mid soft">迎え入れられる</text>
+  <text x="180" y="132" class="t-xs mid soft">試練・特別な決まり</text>
+
+  <!-- 人生の節目 -->
+  <path d="M20 226 H340" class="st-line" stroke-width="2" marker-end="url(#a-soft)"/>
+  <g class="fl">
+    <circle cx="36" cy="226" r="6"/><circle cx="104" cy="226" r="6"/><circle cx="172" cy="226" r="6"/>
+    <circle cx="240" cy="226" r="6"/><circle cx="308" cy="226" r="6"/>
+  </g>
+  <g class="t-xs mid ink">
+    <text x="36" y="212">誕生</text><text x="104" y="212">子ども</text><text x="172" y="212">成人</text>
+    <text x="240" y="212">結婚</text><text x="308" y="212">死</text>
+  </g>
+  <g class="t-xs mid soft">
+    <text x="36" y="246">お宮参り</text><text x="104" y="246">七五三</text><text x="172" y="246">成人式</text>
+    <text x="240" y="246">結婚式</text><text x="308" y="246">葬儀</text>
+  </g>
+  <text x="180" y="272" class="t-xs mid soft">人生の節目ごとに、同じ3段階をくり返す</text>
+</svg>

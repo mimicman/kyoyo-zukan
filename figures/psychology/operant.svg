@@ -1,0 +1,46 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- オペラント条件づけ：スキナー箱でレバーを押すとエサ→行動が増える。下は強化と罰の4通り -->
+  <text x="16" y="22" class="t-m ink">結果しだいで、行動が増える・減る</text>
+
+  <!-- スキナー箱 -->
+  <rect x="12" y="36" width="140" height="112" rx="8" class="bgc st" stroke-width="1.5"/>
+  <text x="82" y="54" class="t-xs mid soft">スキナー箱</text>
+  <!-- レバーとエサ皿 -->
+  <path d="M130 96 H112" class="st" stroke-width="4" stroke-linecap="round"/>
+  <rect x="128" y="70" width="18" height="40" rx="3" class="st-soft" stroke-width="1.5" fill="none"/>
+  <path d="M118 130 H144" class="st" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="126" cy="125" r="3" class="fl"/><circle cx="134" cy="125" r="3" class="fl"/>
+  <!-- ネズミ -->
+  <ellipse cx="66" cy="114" rx="28" ry="16" class="ink"/>
+  <circle cx="92" cy="104" r="9" class="ink"/>
+  <circle cx="88" cy="96" r="4" class="ink"/>
+  <path d="M40 118 Q24 128 26 140" class="st" stroke-width="2" fill="none"/>
+  <path d="M100 104 L110 98" class="st" stroke-width="2"/>
+
+  <!-- 行動と結果の輪 -->
+  <rect x="176" y="38" width="84" height="46" rx="8" class="tint st-f" stroke-width="1.5"/>
+  <text x="218" y="57" class="t-s mid ink">行動</text>
+  <text x="218" y="75" class="t-xs mid soft">レバーを押す</text>
+  <rect x="270" y="98" width="78" height="46" rx="8" class="fl"/>
+  <text x="309" y="117" class="t-s mid on">結果</text>
+  <text x="309" y="135" class="t-xs mid on">エサが出る</text>
+  <path d="M262 60 Q306 60 309 94" class="st-f" stroke-width="2" fill="none" marker-end="url(#a-psychology)"/>
+  <path d="M268 132 Q216 152 212 90" class="st-f" stroke-width="2" fill="none" marker-end="url(#a-psychology)"/>
+  <text x="246" y="112" class="t-xs mid fl" font-weight="700">くり返す</text>
+
+  <!-- 4通りの表 -->
+  <text x="132" y="174" class="t-xs mid soft">与える</text>
+  <text x="276" y="174" class="t-xs mid soft">取り除く</text>
+  <text x="34" y="206" class="t-xs mid fl" font-weight="700">増やす</text>
+  <text x="34" y="220" class="t-xs mid fl">（強化）</text>
+  <text x="34" y="248" class="t-xs mid ink" font-weight="700">減らす</text>
+  <text x="34" y="262" class="t-xs mid ink">（罰）</text>
+  <rect x="64" y="182" width="136" height="42" rx="8" class="tint"/>
+  <text x="132" y="208" class="t-xs mid ink">ほめる・エサをあげる</text>
+  <rect x="204" y="182" width="144" height="42" rx="8" class="tint"/>
+  <text x="276" y="208" class="t-xs mid ink">うるさい音が止まる</text>
+  <rect x="64" y="228" width="136" height="42" rx="8" class="bgc"/>
+  <text x="132" y="254" class="t-xs mid ink">しかる</text>
+  <rect x="204" y="228" width="144" height="42" rx="8" class="bgc"/>
+  <text x="276" y="254" class="t-xs mid ink">ゲームを取り上げる</text>
+</svg>

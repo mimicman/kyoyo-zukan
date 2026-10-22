@@ -1,5 +1,5 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- 関数のグラフ：直線（毎回同じだけ増える）と指数関数（倍々）、接線の傾き＝微分、下の長方形の面積＝積分 -->
+  <!-- 関数のグラフ：直線（毎回同じだけ増える）と指数関数（倍々）、左上は対数（倍々を回数で数える）、接線の傾き＝微分、下の長方形の面積＝積分 -->
   <text x="12" y="22" class="t-m ink">xを決めると、yが1つ決まる</text>
 
   <!-- 積分：曲線の下を細い長方形で埋める -->
@@ -9,6 +9,17 @@
   <rect x="180" y="219.9" width="20" height="26.1" class="tint st-soft" stroke-width="0.8"/>
   <rect x="200" y="208.9" width="20" height="37.1" class="tint st-soft" stroke-width="0.8"/>
   <rect x="220" y="193.7" width="20" height="52.3" class="tint st-soft" stroke-width="0.8"/>
+
+  <!-- 対数：倍々を回数で数え直す -->
+  <rect x="52" y="58" width="150" height="76" rx="10" class="bgc st-soft" stroke-width="1"/>
+  <text x="62" y="76" class="t-xs fl" font-weight="700">対数＝何回かけたか</text>
+  <g class="t-s mid ink">
+    <text x="74" y="98">1</text><text x="100" y="98">2</text><text x="126" y="98">4</text><text x="152" y="98">8</text><text x="180" y="98">16</text>
+  </g>
+  <path d="M74 103 V110 M100 103 V110 M126 103 V110 M152 103 V110 M180 103 V110" class="st-soft" stroke-width="1.2"/>
+  <g class="t-s mid fl" font-weight="700">
+    <text x="74" y="126">0</text><text x="100" y="126">1</text><text x="126" y="126">2</text><text x="152" y="126">3</text><text x="180" y="126">4</text>
+  </g>
 
   <!-- 軸 -->
   <path d="M40 246 H344" class="st" stroke-width="1.5" marker-end="url(#a-ink)"/>

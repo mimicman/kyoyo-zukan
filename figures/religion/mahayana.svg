@@ -1,0 +1,46 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 仏教の2つの道：インドから南へ上座部（スリランカ・東南アジア）、北へ大乗（中央アジア→中国→朝鮮→日本）。位置は目安 -->
+  <text x="16" y="22" class="t-m ink">北の道と南の道で、アジアへ</text>
+
+  <!-- 地域（目安の位置） -->
+  <ellipse cx="96" cy="128" rx="34" ry="30" class="tint st-f" stroke-width="1.5"/>
+  <text x="96" y="132" class="t-s mid ink" font-weight="700">インド</text>
+  <ellipse cx="66" cy="56" rx="38" ry="16" class="bgc st-soft" stroke-width="1"/>
+  <text x="66" y="60" class="t-xs mid ink">中央アジア</text>
+  <ellipse cx="200" cy="70" rx="40" ry="24" class="bgc st-soft" stroke-width="1"/>
+  <text x="200" y="74" class="t-s mid ink">中国</text>
+  <ellipse cx="270" cy="56" rx="22" ry="14" class="bgc st-soft" stroke-width="1"/>
+  <text x="270" y="60" class="t-xs mid ink">朝鮮</text>
+  <ellipse cx="326" cy="74" rx="22" ry="16" class="fl"/>
+  <text x="326" y="78" class="t-xs mid on" font-weight="700">日本</text>
+  <ellipse cx="156" cy="110" rx="22" ry="12" class="bgc st-soft" stroke-width="1"/>
+  <text x="156" y="114" class="t-xs mid ink">チベット</text>
+  <ellipse cx="112" cy="188" rx="31" ry="13" class="bgc st-soft" stroke-width="1"/>
+  <text x="112" y="192" class="t-xs mid ink">スリランカ</text>
+  <ellipse cx="206" cy="160" rx="46" ry="18" class="bgc st-soft" stroke-width="1"/>
+  <text x="206" y="164" class="t-xs mid ink">タイ・ミャンマー</text>
+
+  <!-- 北の道（大乗） -->
+  <path d="M80 100 Q66 86 66 74" class="st-f" stroke-width="3" fill="none" marker-end="url(#a-religion)"/>
+  <path d="M102 54 Q140 46 158 62" class="st-f" stroke-width="3" fill="none" marker-end="url(#a-religion)"/>
+  <path d="M240 64 H244" class="st-f" stroke-width="3" marker-end="url(#a-religion)"/>
+  <path d="M292 60 Q298 62 302 66" class="st-f" stroke-width="3" fill="none" marker-end="url(#a-religion)"/>
+  <text x="126" y="40" class="t-s fl" font-weight="700">大乗（北の道）</text>
+
+  <!-- 南の道（上座部） -->
+  <path d="M100 158 V170" class="st-soft dash" stroke-width="3" marker-end="url(#a-soft)"/>
+  <path d="M142 182 Q152 176 158 170" class="st-soft dash" stroke-width="3" fill="none" marker-end="url(#a-soft)"/>
+  <text x="252" y="132" class="t-s ink" font-weight="700">上座部</text>
+  <text x="252" y="148" class="t-xs soft">（南の道）</text>
+
+  <!-- 比べる -->
+  <rect x="12" y="210" width="164" height="60" rx="12" class="bgc st-soft" stroke-width="1"/>
+  <text x="24" y="230" class="t-s ink" font-weight="700">上座部</text>
+  <text x="24" y="248" class="t-xs soft">古い戒律と経典を守る</text>
+  <text x="24" y="262" class="t-xs soft">出家者が修行して悟る</text>
+  <rect x="184" y="210" width="164" height="60" rx="12" class="fl"/>
+  <text x="196" y="230" class="t-s on" font-weight="700">大乗</text>
+  <text x="196" y="248" class="t-xs on">菩薩として多くの人を救う</text>
+  <text x="196" y="262" class="t-xs on">漢文の経典で東アジアへ</text>
+  <text x="348" y="196" class="t-xs end soft">位置は目安</text>
+</svg>

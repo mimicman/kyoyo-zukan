@@ -1,6 +1,6 @@
-<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 360 320" xmlns="http://www.w3.org/2000/svg">
   <!-- インドと仏教：輪廻の考え → ブッダの四諦 → 中国・日本へ伝わり禅になる。左から右へ西から東 -->
-  <text x="16" y="22" class="t-m ink">インドで生まれ、東へ伝わった</text>
+  <text x="16" y="22" class="t-m ink">インドで生まれ、北と南の道で広がった</text>
 
   <!-- 地域の帯 -->
   <rect x="12" y="38" width="128" height="160" rx="12" class="tint"/>
@@ -47,6 +47,12 @@
     <text x="300" y="232">鎌倉時代</text>
   </g>
 
-  <rect x="16" y="244" width="328" height="28" rx="10" class="bgc st-soft" stroke-width="1"/>
-  <text x="180" y="263" class="t-s mid ink">輪から抜ける → 苦をなくす → 坐って悟る</text>
+  <!-- 北の道の名前 -->
+  <text x="154" y="102" class="t-xs mid fl halo" font-weight="700">大乗</text>
+  <!-- 南の道 -->
+  <path d="M22 196 V240 Q22 254 30 254" class="st-soft dash" stroke-width="2.5" fill="none" marker-end="url(#a-soft)"/>
+  <rect x="34" y="240" width="310" height="28" rx="10" class="tint"/>
+  <text x="46" y="259" class="t-s ink"><tspan class="fl" font-weight="700">南の道：上座部</tspan>　スリランカ・東南アジアへ</text>
+  <rect x="16" y="280" width="328" height="28" rx="10" class="bgc st-soft" stroke-width="1"/>
+  <text x="180" y="299" class="t-s mid ink">輪から抜ける → 苦をなくす → 坐って悟る</text>
 </svg>

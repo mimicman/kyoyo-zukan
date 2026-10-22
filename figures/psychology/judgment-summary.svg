@@ -2,29 +2,33 @@
   <!-- 判断は、内側のクセ（認知バイアス）と外からの力（同調と服従）で曲がる -->
   <text x="12" y="24" class="t-m ink">判断は、内と外の両方から曲がる</text>
 
-  <rect x="12" y="44" width="112" height="136" rx="12" class="tint st-f" stroke-width="1.5"/>
-  <text x="68" y="66" class="t-xs mid soft">頭の中のクセ</text>
-  <text x="68" y="88" class="t-s mid fl" font-weight="700">認知バイアス</text>
+  <rect x="12" y="40" width="112" height="156" rx="12" class="tint st-f" stroke-width="1.5"/>
+  <text x="68" y="62" class="t-xs mid soft">頭の中のクセ</text>
+  <text x="68" y="84" class="t-s mid fl" font-weight="700">認知バイアス</text>
   <g class="t-xs mid ink">
-    <text x="68" y="114">速い直感に頼る</text>
-    <text x="68" y="134">合う情報だけ見る</text>
-    <text x="68" y="154">最初の数字に</text>
-    <text x="68" y="168">引きずられる</text>
+    <text x="68" y="108">速い直感に頼る</text>
+    <text x="68" y="126">合う情報だけ見る</text>
+    <text x="68" y="144">最初の数字に</text>
+    <text x="68" y="158">引きずられる</text>
+    <text x="68" y="176">つじつまを</text>
+    <text x="68" y="190">合わせる</text>
   </g>
 
-  <rect x="236" y="44" width="112" height="136" rx="12" class="tint st-f" stroke-width="1.5"/>
-  <text x="292" y="66" class="t-xs mid soft">周りからの力</text>
-  <text x="292" y="88" class="t-s mid fl" font-weight="700">同調と服従</text>
+  <rect x="236" y="40" width="112" height="156" rx="12" class="tint st-f" stroke-width="1.5"/>
+  <text x="292" y="62" class="t-xs mid soft">周りからの力</text>
+  <text x="292" y="84" class="t-s mid fl" font-weight="700">同調と服従</text>
   <g class="t-xs mid ink">
-    <text x="292" y="114">みんなに合わせる</text>
-    <text x="292" y="134">権威の指示に</text>
-    <text x="292" y="148">従ってしまう</text>
+    <text x="292" y="108">みんなに合わせる</text>
+    <text x="292" y="126">権威の指示に</text>
+    <text x="292" y="140">従ってしまう</text>
+    <text x="292" y="158">大勢いると</text>
+    <text x="292" y="172">誰も動かない</text>
   </g>
   <!-- 周りの人々 -->
-  <circle cx="262" cy="166" r="5" class="soft"/>
-  <circle cx="280" cy="166" r="5" class="soft"/>
-  <circle cx="298" cy="166" r="5" class="soft"/>
-  <circle cx="316" cy="166" r="5" class="soft"/>
+  <circle cx="265" cy="186" r="4" class="soft"/>
+  <circle cx="281" cy="186" r="4" class="soft"/>
+  <circle cx="297" cy="186" r="4" class="soft"/>
+  <circle cx="313" cy="186" r="4" class="soft"/>
 
   <circle cx="180" cy="112" r="40" class="fl"/>
   <text x="180" y="110" class="t-m mid on">あなたの</text>
@@ -32,7 +36,7 @@
   <path d="M126 112 H134" class="st-f" stroke-width="3" marker-end="url(#a-psychology)"/>
   <path d="M234 112 H226" class="st-f" stroke-width="3" marker-end="url(#a-psychology)"/>
 
-  <path d="M180 156 V198" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <path d="M180 156 V200" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
   <rect x="12" y="206" width="336" height="62" rx="12" class="bgc"/>
   <text x="180" y="230" class="t-m mid ink" font-weight="700">判断が決まった方向にずれる</text>
   <text x="180" y="252" class="t-xs mid soft">誰にでも起きる。大事な判断ほど時間を置き、反対の声も聞く</text>
