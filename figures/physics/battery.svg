@@ -1,0 +1,40 @@
+<svg viewBox="0 0 360 296" xmlns="http://www.w3.org/2000/svg">
+  <text x="12" y="16" class="t-xs soft">ダニエル電池のしくみ</text>
+  <!-- 導線と豆電球 -->
+  <path d="M88 84 V40 H169 M191 40 H272 V84" class="st" stroke-width="2"/>
+  <circle cx="180" cy="40" r="11" class="paper st" stroke-width="2"/>
+  <path d="M173 33 L187 47 M187 33 L173 47" class="st" stroke-width="1.5"/>
+  <text x="180" y="22" class="t-xs mid ink">豆電球が光る</text>
+  <!-- 電子の流れ（−極→＋極）と電流の向き -->
+  <path d="M108 32 H152" class="st-f" stroke-width="3" marker-end="url(#a-physics)"/>
+  <text x="130" y="56" class="t-xs mid fl">電子 e⁻</text>
+  <path d="M252 56 H208" class="st-soft dash" stroke-width="2" marker-end="url(#a-soft)"/>
+  <text x="230" y="72" class="t-xs mid soft">電流の向き</text>
+
+  <!-- 容器と水溶液 -->
+  <rect x="40" y="130" width="280" height="120" class="tint"/>
+  <path d="M40 118 V250 H320 V118" class="st" stroke-width="2"/>
+  <path d="M180 124 V250" class="st-soft dash" stroke-width="2"/>
+  <text x="180" y="114" class="t-xs mid soft">セロハン（仕切り）</text>
+  <!-- 亜鉛板（−極）と銅板（＋極） -->
+  <rect x="80" y="84" width="16" height="140" class="soft"/>
+  <rect x="264" y="84" width="16" height="140" class="fl"/>
+  <!-- 亜鉛がイオンになって溶け出す -->
+  <circle cx="138" cy="162" r="14" class="paper st" stroke-width="1.5"/>
+  <text x="138" y="166" class="t-xs mid ink">Zn²⁺</text>
+  <path d="M100 156 L120 160" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <text x="104" y="198" class="t-xs ink">溶け出す</text>
+  <!-- 銅イオンが電子を受け取る -->
+  <circle cx="222" cy="182" r="14" class="paper st-f" stroke-width="1.5"/>
+  <text x="222" y="186" class="t-xs mid ink">Cu²⁺</text>
+  <path d="M240 182 H258" class="st-f" stroke-width="2" marker-end="url(#a-physics)"/>
+  <text x="256" y="152" class="t-xs end fl">銅になる</text>
+  <text x="120" y="242" class="t-xs mid soft">硫酸亜鉛水溶液</text>
+  <text x="228" y="242" class="t-xs mid soft">硫酸銅水溶液</text>
+
+  <!-- 極と反応式 -->
+  <text x="88" y="268" class="t-s mid ink" font-weight="700">亜鉛（−極）</text>
+  <text x="272" y="268" class="t-s mid fl" font-weight="700">銅（＋極）</text>
+  <text x="88" y="286" class="t-xs mid ink">Zn → Zn²⁺ ＋ 2e⁻</text>
+  <text x="272" y="286" class="t-xs mid ink">Cu²⁺ ＋ 2e⁻ → Cu</text>
+</svg>

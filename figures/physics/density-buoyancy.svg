@@ -1,0 +1,46 @@
+<svg viewBox="0 0 360 296" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：同じ大きさの立方体の重さ -->
+  <text x="12" y="16" class="t-xs soft">① 同じ大きさ（1cm³）でも重さが違う＝密度</text>
+  <rect x="40" y="30" width="44" height="44" rx="3" class="soft" opacity="0.55"/>
+  <rect x="158" y="30" width="44" height="44" rx="3" class="tint st-f" stroke-width="2"/>
+  <rect x="276" y="30" width="44" height="44" rx="3" class="ink"/>
+  <text x="62" y="94" class="t-m mid ink">木</text>
+  <text x="180" y="94" class="t-m mid ink">水</text>
+  <text x="298" y="94" class="t-m mid ink">鉄</text>
+  <text x="62" y="112" class="t-s mid ink">約0.5g</text>
+  <text x="180" y="112" class="t-s mid fl" font-weight="700">1g</text>
+  <text x="298" y="112" class="t-s mid ink">約7.9g</text>
+  <text x="121" y="58" class="t-s mid soft">＜</text>
+  <text x="239" y="58" class="t-s mid soft">＜</text>
+
+  <path d="M8 126 H352" class="st-line" stroke-width="1.5"/>
+
+  <!-- 左下：水そうと浮力 -->
+  <text x="12" y="142" class="t-xs soft">② 水中では浮力を受ける</text>
+  <rect x="20" y="176" width="150" height="100" class="tint"/>
+  <path d="M20 160 V276 H170 V160" class="st" stroke-width="2"/>
+  <path d="M20 176 H170" class="st-f" stroke-width="2"/>
+  <!-- 木：半分沈んで釣り合う -->
+  <rect x="44" y="160" width="40" height="32" rx="2" class="soft" opacity="0.8"/>
+  <path d="M64 192 V214" class="st" stroke-width="2.5" marker-end="url(#a-ink)"/>
+  <text x="70" y="214" class="t-xs ink">重さ</text>
+  <path d="M38 214 V180" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+  <text x="30" y="228" class="t-xs fl">浮力</text>
+  <text x="92" y="244" class="t-xs mid ink">木は釣り合って浮く</text>
+  <!-- 鉄：沈む -->
+  <rect x="124" y="252" width="26" height="24" rx="2" class="ink"/>
+  <path d="M137 240 V230" class="st-f" stroke-width="2" marker-end="url(#a-physics)"/>
+  <text x="137" y="222" class="t-xs mid ink">鉄は沈む</text>
+  <text x="96" y="292" class="t-xs mid soft">浮力＝押しのけた水の重さ</text>
+
+  <!-- 右下：船 -->
+  <path d="M180 132 V290" class="st-line" stroke-width="1"/>
+  <text x="192" y="142" class="t-xs soft">③ 鉄の船が浮くわけ</text>
+  <rect x="188" y="206" width="164" height="70" class="tint"/>
+  <path d="M188 206 H352" class="st-f" stroke-width="2"/>
+  <path d="M206 180 H334 L318 222 H222 Z" class="paper st" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="246" y="164" width="38" height="16" rx="2" class="st" stroke-width="2"/>
+  <text x="270" y="200" class="t-xs mid soft">中は空気</text>
+  <text x="270" y="244" class="t-xs mid ink">鉄＋空気で</text>
+  <text x="270" y="260" class="t-xs mid fl">全体の密度＜水</text>
+</svg>

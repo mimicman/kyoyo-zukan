@@ -1,0 +1,41 @@
+<svg viewBox="0 0 360 296" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：化学反応式 -->
+  <text x="72" y="30" class="t-xl mid ink">2H₂</text>
+  <text x="126" y="30" class="t-l mid ink">＋</text>
+  <text x="168" y="30" class="t-xl mid ink">O₂</text>
+  <text x="212" y="30" class="t-l mid ink">→</text>
+  <text x="280" y="30" class="t-xl mid fl">2H₂O</text>
+  <text x="50" y="48" class="t-xs mid soft">係数</text>
+
+  <!-- 分子の玉（白＝水素、色＝酸素） -->
+  <circle cx="54" cy="80" r="9" class="paper st" stroke-width="1.5"/><circle cx="70" cy="80" r="9" class="paper st" stroke-width="1.5"/>
+  <circle cx="76" cy="106" r="9" class="paper st" stroke-width="1.5"/><circle cx="92" cy="106" r="9" class="paper st" stroke-width="1.5"/>
+  <circle cx="158" cy="92" r="13" class="fl"/><circle cx="180" cy="92" r="13" class="fl"/>
+  <path d="M204 92 H232" class="st" stroke-width="2.5" marker-end="url(#a-ink)"/>
+  <circle cx="264" cy="76" r="13" class="fl"/><circle cx="250" cy="88" r="9" class="paper st" stroke-width="1.5"/><circle cx="278" cy="88" r="9" class="paper st" stroke-width="1.5"/>
+  <circle cx="306" cy="104" r="13" class="fl"/><circle cx="292" cy="116" r="9" class="paper st" stroke-width="1.5"/><circle cx="320" cy="116" r="9" class="paper st" stroke-width="1.5"/>
+
+  <!-- 原子を数える -->
+  <rect x="20" y="136" width="186" height="28" rx="6" class="tint"/>
+  <text x="113" y="155" class="t-s mid ink">水素の原子4つ・酸素の原子2つ</text>
+  <rect x="232" y="136" width="116" height="28" rx="6" class="tint"/>
+  <text x="290" y="155" class="t-s mid ink">水素4つ・酸素2つ</text>
+  <text x="219" y="156" class="t-m mid fl">＝</text>
+
+  <path d="M8 176 H352" class="st-line" stroke-width="1.5"/>
+
+  <!-- 下：天びんで重さを比べる -->
+  <text x="12" y="194" class="t-xs soft">重さも保存される</text>
+  <path d="M180 214 V270 M150 270 H210" class="st" stroke-width="2.5"/>
+  <path d="M60 214 H300" class="st" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="180" cy="214" r="4" class="ink"/>
+  <path d="M80 214 V236 M280 214 V236" class="st-soft" stroke-width="1.5"/>
+  <path d="M30 238 H130 M230 238 H330" class="st" stroke-width="3"/>
+  <text x="80" y="230" class="t-xs mid ink halo">反応の前</text>
+  <text x="280" y="230" class="t-xs mid ink halo">反応の後</text>
+  <text x="80" y="258" class="t-s mid ink">水素4g＋酸素32g</text>
+  <text x="280" y="258" class="t-s mid fl" font-weight="700">水36g</text>
+  <text x="80" y="276" class="t-xs mid soft">合計36g</text>
+  <text x="280" y="276" class="t-xs mid soft">36g</text>
+  <text x="180" y="290" class="t-xs mid fl">釣り合う</text>
+</svg>

@@ -1,0 +1,55 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- ① 慣性：力がなければそのまま進む -->
+  <rect x="10" y="12" width="152" height="124" rx="10" class="tint"/>
+  <text x="22" y="32" class="t-s ink" font-weight="700">① 慣性の法則</text>
+  <path d="M22 92 H150" class="st-soft" stroke-width="1.5"/>
+  <circle cx="36" cy="80" r="11" class="paper st-soft dash" stroke-width="1.5"/>
+  <circle cx="72" cy="80" r="11" class="paper st-soft dash" stroke-width="1.5"/>
+  <circle cx="108" cy="80" r="11" class="fl"/>
+  <path d="M122 80 H150" class="st-f" stroke-width="2" marker-end="url(#a-physics)"/>
+  <text x="86" y="112" class="t-xs mid ink">力がなければ</text>
+  <text x="86" y="126" class="t-xs mid ink">同じ速さで進み続ける</text>
+
+  <!-- ② F=ma：押すと速さが変わる -->
+  <rect x="198" y="12" width="152" height="124" rx="10" class="tint"/>
+  <text x="210" y="32" class="t-s ink" font-weight="700">② 力と加速度</text>
+  <rect x="236" y="58" width="44" height="28" rx="4" class="fl"/>
+  <text x="258" y="77" class="t-xs mid on">m</text>
+  <circle cx="246" cy="90" r="5" class="ink"/>
+  <circle cx="270" cy="90" r="5" class="ink"/>
+  <path d="M208 72 H232" class="st" stroke-width="2.5" marker-end="url(#a-ink)"/>
+  <text x="214" y="64" class="t-xs ink">F</text>
+  <path d="M286 58 H302" class="st-f" stroke-width="2" marker-end="url(#a-physics)"/>
+  <path d="M286 72 H316" class="st-f" stroke-width="2" marker-end="url(#a-physics)"/>
+  <path d="M286 86 H332" class="st-f" stroke-width="2" marker-end="url(#a-physics)"/>
+  <text x="274" y="112" class="t-xs mid ink">押すほど速さが増える</text>
+  <text x="274" y="126" class="t-xs mid fl">F＝m×a</text>
+
+  <!-- ③ 作用反作用 -->
+  <rect x="10" y="158" width="152" height="124" rx="10" class="tint"/>
+  <text x="22" y="178" class="t-s ink" font-weight="700">③ 作用と反作用</text>
+  <rect x="50" y="200" width="34" height="34" rx="4" class="fl"/>
+  <text x="67" y="222" class="t-s mid on">A</text>
+  <rect x="88" y="200" width="34" height="34" rx="4" class="paper st" stroke-width="2"/>
+  <text x="105" y="222" class="t-s mid ink">B</text>
+  <path d="M46 217 H18" class="st" stroke-width="2.5" marker-end="url(#a-ink)"/>
+  <path d="M126 217 H154" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+  <text x="86" y="256" class="t-xs mid ink">押せば押し返される</text>
+  <text x="86" y="272" class="t-xs mid soft">同じ大きさで逆向き</text>
+
+  <!-- ④ 重さ：地球が引く力 -->
+  <rect x="198" y="158" width="152" height="124" rx="10" class="tint"/>
+  <text x="210" y="178" class="t-s ink" font-weight="700">④ 重さと質量</text>
+  <path d="M206 262 Q274 236 342 262" class="st" stroke-width="2"/>
+  <text x="322" y="276" class="t-xs end soft">地球</text>
+  <rect x="226" y="192" width="30" height="26" rx="4" class="fl"/>
+  <path d="M241 220 V244" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+  <text x="268" y="206" class="t-xs ink">重さ＝</text>
+  <text x="268" y="220" class="t-xs ink">地球が引く力</text>
+  <text x="268" y="236" class="t-xs soft">質量は不変</text>
+
+  <!-- 流れの矢印 -->
+  <path d="M164 74 H194" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+  <path d="M250 138 C 250 150, 110 142, 96 154" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+  <path d="M164 220 H194" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+</svg>

@@ -1,0 +1,47 @@
+<svg viewBox="0 0 360 296" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：pHの目盛り -->
+  <text x="12" y="14" class="t-xs soft">① pH（数字が小さいほど酸性）</text>
+  <rect x="24.0" y="60" width="22.6" height="20" class="fl" opacity="0.85"/><rect x="46.3" y="60" width="22.6" height="20" class="fl" opacity="0.74"/><rect x="68.6" y="60" width="22.6" height="20" class="fl" opacity="0.63"/><rect x="90.9" y="60" width="22.6" height="20" class="fl" opacity="0.52"/><rect x="113.1" y="60" width="22.6" height="20" class="fl" opacity="0.41"/><rect x="135.4" y="60" width="22.6" height="20" class="fl" opacity="0.30"/><rect x="157.7" y="60" width="22.6" height="20" class="fl" opacity="0.19"/><rect x="180.0" y="60" width="22.6" height="20" class="soft" opacity="0.10"/><rect x="202.3" y="60" width="22.6" height="20" class="soft" opacity="0.21"/><rect x="224.6" y="60" width="22.6" height="20" class="soft" opacity="0.32"/><rect x="246.9" y="60" width="22.6" height="20" class="soft" opacity="0.43"/><rect x="269.1" y="60" width="22.6" height="20" class="soft" opacity="0.54"/><rect x="291.4" y="60" width="22.6" height="20" class="soft" opacity="0.65"/><rect x="313.7" y="60" width="22.6" height="20" class="soft" opacity="0.76"/>
+  <rect x="24" y="60" width="312" height="20" class="st" stroke-width="1.2"/>
+  <path d="M68.6 34 V58" class="st-soft" stroke-width="1"/><text x="68.6" y="30" class="t-xs mid ink">レモン汁</text><path d="M90.9 52 V58" class="st-soft" stroke-width="1"/><text x="90.9" y="48" class="t-xs mid ink">酢</text><path d="M180.0 52 V58" class="st-soft" stroke-width="1"/><text x="180.0" y="48" class="t-xs mid ink">水</text><path d="M209.0 34 V58" class="st-soft" stroke-width="1"/><text x="209.0" y="30" class="t-xs mid ink">重曹水</text><path d="M246.9 52 V58" class="st-soft" stroke-width="1"/><text x="246.9" y="48" class="t-xs mid ink">石けん水</text>
+  <text x="24" y="94" class="t-xs mid ink">0</text>
+  <text x="180" y="94" class="t-xs mid ink">7</text>
+  <text x="336" y="94" class="t-xs mid ink">14</text>
+  <text x="90" y="98" class="t-m mid fl">酸性</text>
+  <text x="180" y="110" class="t-xs mid ink">中性</text>
+  <text x="270" y="98" class="t-m mid ink">アルカリ性</text>
+  <text x="90" y="116" class="t-xs mid ink">H⁺が多い</text>
+  <text x="270" y="116" class="t-xs mid ink">OH⁻が多い</text>
+  <!-- BTB液の色 -->
+  <text x="12" y="140" class="t-xs soft">BTB液</text>
+  <rect x="66" y="126" width="48" height="20" rx="4" class="paper st-soft" stroke-width="1.2"/>
+  <text x="90" y="140" class="t-xs mid ink">黄色</text>
+  <rect x="156" y="126" width="48" height="20" rx="4" class="paper st-soft" stroke-width="1.2"/>
+  <text x="180" y="140" class="t-xs mid ink">緑色</text>
+  <rect x="246" y="126" width="48" height="20" rx="4" class="paper st-soft" stroke-width="1.2"/>
+  <text x="270" y="140" class="t-xs mid ink">青色</text>
+
+  <path d="M8 160 H352" class="st-line" stroke-width="1.5"/>
+
+  <!-- 下：中和 -->
+  <text x="12" y="178" class="t-xs soft">② 中和：塩酸＋水酸化ナトリウム水溶液</text>
+  <circle cx="60" cy="214" r="17" class="paper st-f" stroke-width="2"/>
+  <text x="60" y="219" class="t-s mid ink">H⁺</text>
+  <text x="96" y="219" class="t-m mid ink">＋</text>
+  <circle cx="134" cy="214" r="19" class="ink"/>
+  <text x="134" y="219" class="t-s mid paper">OH⁻</text>
+  <path d="M164 214 H200" class="st-f" stroke-width="3" marker-end="url(#a-physics)"/>
+  <circle cx="232" cy="214" r="21" class="fl"/>
+  <text x="232" y="219" class="t-s mid on">H₂O</text>
+  <text x="264" y="212" class="t-s ink" font-weight="700">水</text>
+  <text x="264" y="228" class="t-xs soft">打ち消し合う</text>
+  <text x="60" y="246" class="t-xs mid soft">塩酸から</text>
+  <text x="134" y="246" class="t-xs mid soft">アルカリから</text>
+  <circle cx="60" cy="270" r="13" class="paper st-soft" stroke-width="1.5"/>
+  <text x="60" y="274" class="t-xs mid ink">Cl⁻</text>
+  <circle cx="134" cy="270" r="13" class="paper st-soft" stroke-width="1.5"/>
+  <text x="134" y="274" class="t-xs mid ink">Na⁺</text>
+  <path d="M164 270 H200" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <text x="212" y="268" class="t-s ink">食塩（塩化ナトリウム）</text>
+  <text x="212" y="284" class="t-xs soft">残りが結びつく</text>
+</svg>

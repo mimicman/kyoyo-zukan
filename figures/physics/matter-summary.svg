@@ -1,0 +1,86 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- ① 原子と分子 -->
+  <rect x="10" y="12" width="152" height="124" rx="10" class="tint"/>
+  <text x="22" y="32" class="t-s ink" font-weight="700">① 原子と分子</text>
+  <circle cx="34" cy="70" r="7" class="paper st" stroke-width="1.5"/>
+  <circle cx="34" cy="90" r="7" class="paper st" stroke-width="1.5"/>
+  <circle cx="60" cy="80" r="11" class="fl"/>
+  <text x="34" y="111" class="t-xs mid soft">H</text>
+  <text x="60" y="104" class="t-xs mid soft">O</text>
+  <path d="M78 80 H96" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <circle cx="128" cy="76" r="11" class="fl"/>
+  <circle cx="113" cy="88" r="7" class="paper st" stroke-width="1.5"/>
+  <circle cx="143" cy="88" r="7" class="paper st" stroke-width="1.5"/>
+  <text x="128" y="112" class="t-xs mid ink">水の分子</text>
+  <text x="86" y="128" class="t-xs mid soft">原子が結びつく</text>
+
+  <!-- ② 三態 -->
+  <rect x="198" y="12" width="152" height="124" rx="10" class="tint"/>
+  <text x="210" y="32" class="t-s ink" font-weight="700">② 固体・液体・気体</text>
+  <rect x="206" y="58" width="38" height="38" rx="3" class="paper st-soft" stroke-width="1.2"/>
+  <circle cx="212.0" cy="64.0" r="3.3" class="fl"/>
+  <circle cx="212.0" cy="72.7" r="3.3" class="fl"/>
+  <circle cx="212.0" cy="81.4" r="3.3" class="fl"/>
+  <circle cx="212.0" cy="90.1" r="3.3" class="fl"/>
+  <circle cx="220.7" cy="64.0" r="3.3" class="fl"/>
+  <circle cx="220.7" cy="72.7" r="3.3" class="fl"/>
+  <circle cx="220.7" cy="81.4" r="3.3" class="fl"/>
+  <circle cx="220.7" cy="90.1" r="3.3" class="fl"/>
+  <circle cx="229.4" cy="64.0" r="3.3" class="fl"/>
+  <circle cx="229.4" cy="72.7" r="3.3" class="fl"/>
+  <circle cx="229.4" cy="81.4" r="3.3" class="fl"/>
+  <circle cx="229.4" cy="90.1" r="3.3" class="fl"/>
+  <circle cx="238.1" cy="64.0" r="3.3" class="fl"/>
+  <circle cx="238.1" cy="72.7" r="3.3" class="fl"/>
+  <circle cx="238.1" cy="81.4" r="3.3" class="fl"/>
+  <circle cx="238.1" cy="90.1" r="3.3" class="fl"/>
+  <rect x="255" y="58" width="38" height="38" rx="3" class="paper st-soft" stroke-width="1.2"/>
+  <circle cx="262" cy="89" r="3.3" class="fl"/>
+  <circle cx="270" cy="90" r="3.3" class="fl"/>
+  <circle cx="278" cy="89" r="3.3" class="fl"/>
+  <circle cx="286" cy="90" r="3.3" class="fl"/>
+  <circle cx="265" cy="81" r="3.3" class="fl"/>
+  <circle cx="274" cy="82" r="3.3" class="fl"/>
+  <circle cx="283" cy="81" r="3.3" class="fl"/>
+  <circle cx="261" cy="73" r="3.3" class="fl"/>
+  <circle cx="270" cy="74" r="3.3" class="fl"/>
+  <circle cx="280" cy="73" r="3.3" class="fl"/>
+  <circle cx="287" cy="75" r="3.3" class="fl"/>
+  <rect x="304" y="58" width="38" height="38" rx="3" class="paper st-soft" stroke-width="1.2"/>
+  <circle cx="312" cy="67" r="3.3" class="fl"/>
+  <circle cx="333" cy="65" r="3.3" class="fl"/>
+  <circle cx="323" cy="79" r="3.3" class="fl"/>
+  <circle cx="311" cy="89" r="3.3" class="fl"/>
+  <circle cx="335" cy="88" r="3.3" class="fl"/>
+  <text x="225" y="112" class="t-xs mid ink">固体</text>
+  <text x="274" y="112" class="t-xs mid ink">液体</text>
+  <text x="323" y="112" class="t-xs mid ink">気体</text>
+  <text x="274" y="128" class="t-xs mid soft">粒の並び方の違い</text>
+
+  <!-- ③ 密度と浮力 -->
+  <rect x="10" y="158" width="152" height="124" rx="10" class="tint"/>
+  <text x="22" y="178" class="t-s ink" font-weight="700">③ 密度と浮力</text>
+  <rect x="30" y="206" width="112" height="50" class="paper"/>
+  <path d="M30 196 V256 H142 V196" class="st" stroke-width="2"/>
+  <path d="M30 206 H142" class="st-f" stroke-width="1.5"/>
+  <rect x="44" y="196" width="28" height="20" rx="2" class="soft"/>
+  <rect x="104" y="238" width="20" height="18" rx="2" class="ink"/>
+  <text x="58" y="234" class="t-xs mid ink">木</text>
+  <text x="114" y="230" class="t-xs mid ink">鉄</text>
+  <text x="86" y="274" class="t-xs mid soft">詰まり方で浮き沈み</text>
+
+  <!-- ④ 溶ける -->
+  <rect x="198" y="158" width="152" height="124" rx="10" class="tint"/>
+  <text x="210" y="178" class="t-s ink" font-weight="700">④ 溶ける</text>
+  <path d="M222 196 V262 H286 V196" class="st" stroke-width="2"/>
+  <path d="M222 208 H286" class="st-soft" stroke-width="1.2"/>
+  <circle cx="239.3" cy="237.9" r="2.6" class="fl"/><circle cx="246.7" cy="240.6" r="2.6" class="fl"/><circle cx="261.0" cy="216.9" r="2.6" class="fl"/><circle cx="226.7" cy="250.8" r="2.6" class="fl"/><circle cx="240.5" cy="224.3" r="2.6" class="fl"/><circle cx="281.8" cy="234.7" r="2.6" class="fl"/><circle cx="272.8" cy="235.0" r="2.6" class="fl"/><circle cx="261.8" cy="220.6" r="2.6" class="fl"/><circle cx="261.6" cy="252.2" r="2.6" class="fl"/><circle cx="255.3" cy="246.6" r="2.6" class="fl"/><circle cx="263.6" cy="216.8" r="2.6" class="fl"/><circle cx="268.5" cy="240.0" r="2.6" class="fl"/><circle cx="242.9" cy="215.4" r="2.6" class="fl"/><circle cx="274.5" cy="234.8" r="2.6" class="fl"/><circle cx="266.3" cy="252.7" r="2.6" class="fl"/><circle cx="266.0" cy="254.5" r="2.6" class="fl"/><circle cx="248.1" cy="249.2" r="2.6" class="fl"/><circle cx="250.9" cy="255.2" r="2.6" class="fl"/><circle cx="275.2" cy="218.3" r="2.6" class="fl"/><circle cx="233.6" cy="223.5" r="2.6" class="fl"/><circle cx="280.1" cy="233.2" r="2.6" class="fl"/><circle cx="261.1" cy="227.2" r="2.6" class="fl"/>
+  <text x="294" y="222" class="t-xs ink">粒が</text>
+  <text x="294" y="236" class="t-xs ink">散らばる</text>
+  <text x="274" y="276" class="t-xs mid soft">見えなくても消えない</text>
+
+  <!-- 流れの矢印 -->
+  <path d="M164 74 H194" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+  <path d="M250 138 C 250 150, 110 142, 96 154" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+  <path d="M164 220 H194" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+</svg>

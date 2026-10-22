@@ -1,0 +1,35 @@
+<svg viewBox="0 0 360 296" xmlns="http://www.w3.org/2000/svg">
+  <!-- ① 原子 -->
+  <text x="12" y="16" class="t-xs soft">① 原子：種類ごとに大きさと重さが決まっている</text>
+  <circle cx="70" cy="46" r="8" class="paper st" stroke-width="1.5"/>
+  <circle cx="180" cy="46" r="14" class="ink"/>
+  <circle cx="290" cy="46" r="13" class="fl"/>
+  <text x="70" y="78" class="t-s mid ink">水素 H</text>
+  <text x="180" y="78" class="t-s mid ink">炭素 C</text>
+  <text x="290" y="78" class="t-s mid ink">酸素 O</text>
+
+  <path d="M8 90 H352" class="st-line" stroke-width="1.5"/>
+
+  <!-- ② 分子：水 -->
+  <text x="12" y="106" class="t-xs soft">② 決まった数で結びつくと分子になる</text>
+  <circle cx="72.6" cy="149.5" r="8" class="paper st" stroke-width="1.5"/>
+  <circle cx="107.4" cy="149.5" r="8" class="paper st" stroke-width="1.5"/>
+  <circle cx="90" cy="136" r="13" class="fl"/>
+  <text x="90" y="180" class="t-m mid ink">水 H₂O</text>
+  <text x="150" y="136" class="t-s ink">酸素1つ ＋ 水素2つ</text>
+  <text x="150" y="154" class="t-xs soft">「く」の字の形に結びつく</text>
+
+  <path d="M8 192 H352" class="st-line" stroke-width="1.5"/>
+
+  <!-- ③ 組み方で別の物質 -->
+  <text x="12" y="208" class="t-xs soft">③ 同じ酸素の原子でも、組み方が変わると別の物質</text>
+  <circle cx="70" cy="238" r="13" class="fl"/>
+  <circle cx="92" cy="238" r="13" class="fl"/>
+  <text x="81" y="272" class="t-m mid ink">酸素 O₂</text>
+  <text x="81" y="288" class="t-xs mid soft">吸う気体</text>
+  <circle cx="226" cy="238" r="13" class="fl"/>
+  <circle cx="278" cy="238" r="13" class="fl"/>
+  <circle cx="252" cy="238" r="14" class="ink"/>
+  <text x="252" y="272" class="t-m mid ink">二酸化炭素 CO₂</text>
+  <text x="252" y="288" class="t-xs mid soft">吐く息に多い気体</text>
+</svg>

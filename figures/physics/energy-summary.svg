@@ -1,0 +1,45 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 中心：エネルギー -->
+  <circle cx="180" cy="145" r="42" class="fl"/>
+  <text x="180" y="142" class="t-m mid on">エネルギー</text>
+  <text x="180" y="160" class="t-xs mid on">形を変える</text>
+  <path d="M148 120 L142 114" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+  <path d="M212 120 L218 114" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+  <path d="M148 170 L142 176" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+  <path d="M212 170 L218 176" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+
+  <!-- 左上：てこと仕事 -->
+  <rect x="8" y="8" width="134" height="104" rx="10" class="tint"/>
+  <text x="18" y="27" class="t-s ink" font-weight="700">てこと仕事</text>
+  <path d="M28 76 L128 52" class="st" stroke-width="3" stroke-linecap="round"/>
+  <path d="M52 70 L44 86 H60 Z" class="ink"/>
+  <rect x="24" y="60" width="16" height="14" rx="2" class="fl" transform="rotate(-13 32 67)"/>
+  <path d="M124 36 V50" class="st-f" stroke-width="2" marker-end="url(#a-physics)"/>
+  <text x="75" y="104" class="t-xs mid ink">仕事＝力×距離</text>
+
+  <!-- 右上：波の性質 -->
+  <rect x="218" y="8" width="134" height="104" rx="10" class="tint"/>
+  <text x="228" y="27" class="t-s ink" font-weight="700">波の性質</text>
+  <path d="M230 64 Q242 40 254 64 T278 64 T302 64 T326 64" class="st-f" stroke-width="2.5"/>
+  <path d="M300 84 H336" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <text x="285" y="104" class="t-xs mid ink">ゆれが伝わる</text>
+
+  <!-- 左下：光と色 -->
+  <rect x="8" y="178" width="134" height="104" rx="10" class="tint"/>
+  <text x="18" y="197" class="t-s ink" font-weight="700">光と色</text>
+  <path d="M76 208 L100 252 H52 Z" class="paper st" stroke-width="1.5"/>
+  <path d="M16 238 L64 230" class="st" stroke-width="2.5"/>
+  <path d="M88 232 L134 222 M88 234 L134 236 M88 236 L134 250" class="st-f" stroke-width="2"/>
+  <text x="75" y="274" class="t-xs mid ink">色に分かれる</text>
+
+  <!-- 右下：電気回路 -->
+  <rect x="218" y="178" width="134" height="104" rx="10" class="tint"/>
+  <text x="228" y="197" class="t-s ink" font-weight="700">電気回路</text>
+  <path d="M244 214 H326 V256 H244 Z" class="st" stroke-width="2"/>
+  <path d="M238 228 H250 M241 240 H247" class="st" stroke-width="2.5"/>
+  <rect x="236" y="230" width="16" height="8" class="tint"/>
+  <circle cx="326" cy="235" r="9" class="paper st-f" stroke-width="2"/>
+  <path d="M320 229 L332 241 M332 229 L320 241" class="st-f" stroke-width="1.5"/>
+  <path d="M272 214 H300" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+  <text x="285" y="274" class="t-xs mid ink">電流が運ぶ</text>
+</svg>

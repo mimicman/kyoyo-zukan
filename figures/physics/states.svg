@@ -1,0 +1,75 @@
+<svg viewBox="0 0 360 296" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：粒の並び方 -->
+  <text x="12" y="16" class="t-xs soft">温めると右へ → 粒の動きが激しくなる</text>
+  <rect x="14" y="26" width="88" height="74" rx="6" class="paper st" stroke-width="1.5"/>
+  <circle cx="28" cy="40" r="6" class="fl"/>
+  <circle cx="28" cy="60" r="6" class="fl"/>
+  <circle cx="28" cy="80" r="6" class="fl"/>
+  <circle cx="48" cy="40" r="6" class="fl"/>
+  <circle cx="48" cy="60" r="6" class="fl"/>
+  <circle cx="48" cy="80" r="6" class="fl"/>
+  <circle cx="68" cy="40" r="6" class="fl"/>
+  <circle cx="68" cy="60" r="6" class="fl"/>
+  <circle cx="68" cy="80" r="6" class="fl"/>
+  <circle cx="88" cy="40" r="6" class="fl"/>
+  <circle cx="88" cy="60" r="6" class="fl"/>
+  <circle cx="88" cy="80" r="6" class="fl"/>
+  <rect x="136" y="26" width="88" height="74" rx="6" class="paper st" stroke-width="1.5"/>
+  <circle cx="148" cy="88" r="6" class="fl"/>
+  <circle cx="162" cy="90" r="6" class="fl"/>
+  <circle cx="176" cy="88" r="6" class="fl"/>
+  <circle cx="190" cy="89" r="6" class="fl"/>
+  <circle cx="204" cy="88" r="6" class="fl"/>
+  <circle cx="216" cy="84" r="6" class="fl"/>
+  <circle cx="154" cy="76" r="6" class="fl"/>
+  <circle cx="169" cy="76" r="6" class="fl"/>
+  <circle cx="184" cy="75" r="6" class="fl"/>
+  <circle cx="199" cy="77" r="6" class="fl"/>
+  <circle cx="212" cy="71" r="6" class="fl"/>
+  <circle cx="146" cy="64" r="6" class="fl"/>
+  <circle cx="176" cy="62" r="6" class="fl"/>
+  <circle cx="192" cy="64" r="6" class="fl"/>
+  <rect x="258" y="26" width="88" height="74" rx="6" class="paper st" stroke-width="1.5"/>
+  <circle cx="272" cy="42" r="6" class="fl"/>
+  <circle cx="328" cy="40" r="6" class="fl"/>
+  <circle cx="302" cy="66" r="6" class="fl"/>
+  <circle cx="274" cy="88" r="6" class="fl"/>
+  <circle cx="334" cy="86" r="6" class="fl"/>
+  <path d="M280 38 l10 -4" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M336 36 l-8 10" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M310 62 l10 6" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M282 84 l8 -8" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M342 82 l-10 -6" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="58" y="118" class="t-m mid ink">固体</text>
+  <text x="180" y="118" class="t-m mid ink">液体</text>
+  <text x="302" y="118" class="t-m mid ink">気体</text>
+  <text x="58" y="134" class="t-xs mid soft">きちんと並ぶ</text>
+  <text x="180" y="134" class="t-xs mid soft">寄り集まって動く</text>
+  <text x="302" y="134" class="t-xs mid soft">ばらばらに飛ぶ</text>
+  <!-- 状態の変化の矢印 -->
+  <path d="M104 54 H132" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+  <text x="119" y="47" class="t-xs mid fl">融解</text>
+  <path d="M134 78 H106" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <text x="119" y="93" class="t-xs mid soft">凝固</text>
+  <path d="M226 54 H254" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+  <text x="241" y="47" class="t-xs mid fl">蒸発</text>
+  <path d="M256 78 H228" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <text x="241" y="93" class="t-xs mid soft">凝縮</text>
+
+  <path d="M8 146 H352" class="st-line" stroke-width="1.5"/>
+
+  <!-- 下：水を温め続けたときの温度 -->
+  <text x="12" y="162" class="t-xs soft">水（氷）を温め続けたときの温度</text>
+  <path d="M50 172 V270 H346" class="st" stroke-width="1.5"/>
+  <text x="346" y="286" class="t-xs end soft">温めた時間 →</text>
+  <path d="M50 250 H346 M50 190 H346" class="st-line dash" stroke-width="1"/>
+  <text x="44" y="254" class="t-xs end ink">0℃</text>
+  <text x="44" y="194" class="t-xs end ink">100℃</text>
+  <path d="M54 264 L84 250 H134 L194 190 H318 L338 178" class="st-f" stroke-width="3" stroke-linejoin="round"/>
+  <text x="109" y="242" class="t-xs mid fl">とけている間</text>
+  <text x="109" y="266" class="t-xs mid soft">氷＋水</text>
+  <text x="256" y="182" class="t-xs mid fl">沸とうしている間</text>
+  <text x="256" y="206" class="t-xs mid soft">水＋水蒸気</text>
+  <text x="180" y="234" class="t-xs soft">水</text>
+  <text x="66" y="244" class="t-xs mid soft">氷</text>
+</svg>

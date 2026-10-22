@@ -1,0 +1,44 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：氷の上で押し合う2人 -->
+  <text x="12" y="16" class="t-xs soft">① 氷の上で、AがBを押す</text>
+  <path d="M20 122 H340" class="st-soft" stroke-width="1.5"/>
+  <text x="340" y="138" class="t-xs end soft">氷</text>
+  <!-- A -->
+  <circle cx="140" cy="56" r="10" class="fl"/>
+  <path d="M140 66 V98 M140 98 L132 122 M140 98 L148 122 M140 74 L174 78" class="st-f" stroke-width="4" stroke-linecap="round"/>
+  <text x="140" y="40" class="t-s mid fl">A</text>
+  <!-- B -->
+  <circle cx="220" cy="56" r="10" class="ink"/>
+  <path d="M220 66 V98 M220 98 L212 122 M220 98 L228 122 M220 74 L186 78" class="st" stroke-width="4" stroke-linecap="round"/>
+  <text x="220" y="40" class="t-s mid ink">B</text>
+  <!-- 力の矢印（同じ長さ・逆向き） -->
+  <path d="M236 86 H300" class="st-f" stroke-width="3" marker-end="url(#a-physics)"/>
+  <text x="268" y="78" class="t-xs mid fl">作用</text>
+  <text x="268" y="104" class="t-xs mid soft">AがBを押す</text>
+  <path d="M124 86 H60" class="st" stroke-width="3" marker-end="url(#a-ink)"/>
+  <text x="92" y="78" class="t-xs mid ink">反作用</text>
+  <text x="92" y="104" class="t-xs mid soft">BがAを押す</text>
+  <text x="180" y="150" class="t-s mid ink">同じ大きさで逆向き → 2人とも離れていく</text>
+
+  <path d="M8 162 H352" class="st-line" stroke-width="1.5"/>
+
+  <!-- 左下：ロケット -->
+  <text x="12" y="180" class="t-xs soft">② ロケット</text>
+  <path d="M70 196 L84 214 V250 H56 V214 Z" class="fl"/>
+  <path d="M56 238 L46 252 H56 Z M84 238 L94 252 H84 Z" class="fl"/>
+  <path d="M62 254 L58 270 M70 254 V274 M78 254 L82 270" class="st-soft" stroke-width="2"/>
+  <path d="M122 258 V280" class="st" stroke-width="2.5" marker-end="url(#a-ink)"/>
+  <text x="130" y="272" class="t-xs ink">ガスを後ろへ</text>
+  <path d="M122 232 V204" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+  <text x="130" y="214" class="t-xs fl">押し返されて</text>
+  <text x="130" y="228" class="t-xs fl">前へ進む</text>
+
+  <!-- 右下：歩く -->
+  <text x="220" y="180" class="t-xs soft">③ 歩く</text>
+  <path d="M220 262 H350" class="st-soft" stroke-width="1.5"/>
+  <path d="M262 206 L270 236 L262 262 M270 236 L292 262" class="st" stroke-width="4" stroke-linecap="round"/>
+  <path d="M286 270 H240" class="st" stroke-width="2.5" marker-end="url(#a-ink)"/>
+  <text x="300" y="282" class="t-xs mid ink">足が地面を後ろへ</text>
+  <path d="M300 244 H344" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+  <text x="322" y="234" class="t-xs mid fl">地面が前へ</text>
+</svg>

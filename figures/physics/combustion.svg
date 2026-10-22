@@ -1,0 +1,42 @@
+<svg viewBox="0 0 360 296" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左上：燃える3つの条件 -->
+  <text x="12" y="16" class="t-xs soft">① 燃える3つの条件</text>
+  <path d="M92 32 L32 132 H152 Z" class="tint st-f" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M92 66 C 106 84, 110 100, 102 114 C 96 124, 88 124, 82 114 C 74 100, 82 86, 92 66 Z" class="fl"/>
+  <path d="M92 94 C 98 102, 98 110, 92 116 C 86 110, 86 102, 92 94 Z" class="paper"/>
+  <text x="56" y="78" class="t-s end ink">酸素</text>
+  <text x="128" y="78" class="t-s ink">高い温度</text>
+  <text x="92" y="150" class="t-s mid ink">燃える物</text>
+
+  <!-- 右上：燃やすと重くなる -->
+  <path d="M182 24 V158" class="st-line" stroke-width="1"/>
+  <text x="192" y="16" class="t-xs soft">② スチールウールを燃やすと</text>
+  <path d="M268 64 V128 M248 128 H288" class="st" stroke-width="2"/>
+  <path d="M216 56 L320 72" class="st" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="268" cy="64" r="3.5" class="ink"/>
+  <path d="M216 56 L204 84 M216 56 L228 84 M320 72 L308 100 M320 72 L332 100" class="st-soft" stroke-width="1.2"/>
+  <path d="M200 84 H232 M304 100 H336" class="st" stroke-width="2.5"/>
+  <path d="M206 82 q4 -12 10 -6 q6 -10 10 2 q4 -6 2 4 Z" class="soft"/>
+  <path d="M310 98 q4 -12 10 -6 q6 -10 10 2 q4 -6 2 4 Z" class="ink"/>
+  <text x="216" y="104" class="t-xs mid ink">燃やす前</text>
+  <text x="320" y="120" class="t-xs mid ink">燃やした後</text>
+  <text x="320" y="136" class="t-xs mid fl">重くなる</text>
+  <text x="268" y="152" class="t-xs mid fl">鉄＋酸素＝酸化鉄</text>
+
+  <path d="M8 166 H352" class="st-line" stroke-width="1.5"/>
+
+  <!-- 下：酸化の速さ -->
+  <text x="12" y="184" class="t-xs soft">③ どれも酸化（物が酸素と結びつく）。違いは速さ</text>
+  <path d="M30 222 H330" class="st-f" stroke-width="3" marker-end="url(#a-physics)"/>
+  <text x="30" y="210" class="t-xs soft">ゆっくり</text>
+  <text x="330" y="210" class="t-xs end soft">激しい</text>
+  <circle cx="60" cy="222" r="7" class="paper st" stroke-width="2"/>
+  <circle cx="180" cy="222" r="7" class="paper st" stroke-width="2"/>
+  <circle cx="300" cy="222" r="7" class="fl"/>
+  <text x="60" y="248" class="t-m mid ink">さび</text>
+  <text x="60" y="266" class="t-xs mid soft">何日もかけて</text>
+  <text x="180" y="248" class="t-m mid ink">カイロ</text>
+  <text x="180" y="266" class="t-xs mid soft">じんわり温かい</text>
+  <text x="300" y="248" class="t-m mid ink">燃焼</text>
+  <text x="300" y="266" class="t-xs mid soft">熱と光を一気に</text>
+</svg>

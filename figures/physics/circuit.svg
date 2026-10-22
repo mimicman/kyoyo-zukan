@@ -1,0 +1,46 @@
+<svg viewBox="0 0 360 296" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：回路図 -->
+  <path d="M60 78 V40 H150 M210 40 H300 V73 M300 97 V130 H60 V90" class="st" stroke-width="2"/>
+  <!-- 電池（長い線が＋極） -->
+  <path d="M44 78 H76" class="st" stroke-width="3"/>
+  <path d="M52 90 H68" class="st" stroke-width="5"/>
+  <text x="84" y="80" class="t-s ink">＋</text>
+  <text x="84" y="98" class="t-s ink">−</text>
+  <text x="36" y="80" class="t-xs end soft">電池</text>
+  <text x="36" y="96" class="t-m end fl">3V</text>
+  <!-- 抵抗 -->
+  <rect x="150" y="32" width="60" height="16" class="paper st" stroke-width="2"/>
+  <text x="180" y="22" class="t-xs mid soft">抵抗</text>
+  <text x="180" y="66" class="t-m mid fl">15Ω</text>
+  <!-- 電流計 -->
+  <circle cx="300" cy="85" r="12" class="paper st" stroke-width="2"/>
+  <text x="300" y="90" class="t-s mid ink">A</text>
+  <text x="318" y="80" class="t-xs soft">電流計</text>
+  <text x="318" y="98" class="t-m fl">0.2A</text>
+  <!-- 電流の向き -->
+  <path d="M90 40 H124" class="st-f" stroke-width="3" marker-end="url(#a-physics)"/>
+  <path d="M230 40 H264" class="st-f" stroke-width="3" marker-end="url(#a-physics)"/>
+  <path d="M220 130 H160" class="st-f" stroke-width="3" marker-end="url(#a-physics)"/>
+  <text x="190" y="146" class="t-xs mid fl">電流（＋極→−極）</text>
+  <!-- 式 -->
+  <text x="180" y="166" class="t-m mid ink">電流 ＝ 電圧 ÷ 抵抗（3V÷15Ω＝0.2A）</text>
+
+  <path d="M8 176 H352" class="st-line" stroke-width="1.5"/>
+
+  <!-- 下：水の流れにたとえる -->
+  <text x="12" y="192" class="t-xs soft">水にたとえると</text>
+  <rect x="20" y="204" width="60" height="62" class="tint"/>
+  <rect x="280" y="246" width="60" height="20" class="tint"/>
+  <path d="M20 196 V266 H80 V196 M280 196 V266 H340 V196" class="st" stroke-width="2"/>
+  <path d="M20 204 H80" class="st-f" stroke-width="2"/>
+  <path d="M280 246 H340" class="st-f" stroke-width="2"/>
+  <!-- 管（中央が細い） -->
+  <path d="M80 254 H150 L160 259 H200 L210 254 H280 M80 264 H150 L160 261 H200 L210 264 H280" class="st" stroke-width="1.5"/>
+  <!-- 水位の差 -->
+  <path d="M80 204 H262" class="st-soft dash" stroke-width="1.2"/>
+  <path d="M256 208 V242" class="st-f" stroke-width="2" marker-end="url(#a-physics)"/>
+  <text x="248" y="228" class="t-xs end fl">水位の差＝電圧</text>
+  <text x="180" y="248" class="t-xs mid ink">細い管＝抵抗</text>
+  <path d="M110 276 H250" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+  <text x="180" y="288" class="t-xs mid fl">流れる水の量＝電流</text>
+</svg>

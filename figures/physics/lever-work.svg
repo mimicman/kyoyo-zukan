@@ -1,0 +1,36 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 動いた後のてこ（点線） -->
+  <path d="M40 88 L320 136" class="st-soft dash" stroke-width="2"/>
+  <!-- 釣り合っているてこ -->
+  <path d="M30 100 H330" class="st" stroke-width="4" stroke-linecap="round"/>
+  <path d="M110 100 L96 126 H124 Z" class="ink"/>
+  <text x="110" y="142" class="t-xs mid ink">支点</text>
+
+  <!-- 荷物（作用点） -->
+  <rect x="24" y="70" width="32" height="28" rx="3" class="fl"/>
+  <text x="40" y="89" class="t-xs mid on">60N</text>
+  <text x="40" y="62" class="t-xs mid ink">荷物</text>
+  <path d="M16 100 V80" class="st-f" stroke-width="2" marker-end="url(#a-physics)"/>
+  <text x="54" y="122" class="t-xs mid fl">10cm上がる</text>
+
+  <!-- 手（力点） -->
+  <path d="M320 46 V94" class="st" stroke-width="3" marker-end="url(#a-ink)"/>
+  <text x="320" y="24" class="t-s mid ink">手で押す</text>
+  <text x="320" y="40" class="t-s mid ink" font-weight="700">20N</text>
+  <path d="M344 104 V134" class="st-f" stroke-width="2" marker-end="url(#a-physics)"/>
+  <text x="292" y="152" class="t-xs mid fl">30cm下がる</text>
+
+  <!-- 支点からの長さ -->
+  <path d="M40 166 H108 M112 166 H320" class="st-soft" stroke-width="1.5"/>
+  <path d="M40 160 V172 M110 160 V172 M320 160 V172" class="st-soft" stroke-width="1.5"/>
+  <text x="75" y="184" class="t-s mid ink">長さ 1</text>
+  <text x="215" y="184" class="t-s mid ink">長さ 3</text>
+
+  <!-- 仕事の計算 -->
+  <rect x="12" y="196" width="336" height="88" rx="10" class="tint"/>
+  <text x="26" y="220" class="t-s soft">荷物の側</text>
+  <text x="110" y="220" class="t-m ink">60N × 0.1m ＝ 6J</text>
+  <text x="26" y="246" class="t-s soft">手の側</text>
+  <text x="110" y="246" class="t-m ink">20N × 0.3m ＝ 6J</text>
+  <text x="180" y="272" class="t-xs mid fl">力は3分の1、距離は3倍。仕事（力×距離）は同じ</text>
+</svg>

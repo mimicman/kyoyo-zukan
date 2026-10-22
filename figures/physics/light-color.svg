@@ -1,0 +1,49 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：プリズムで白い光が色に分かれる -->
+  <text x="12" y="18" class="t-s ink" font-weight="700">① プリズム</text>
+  <path d="M180 20 L230 120 H130 Z" class="tint st" stroke-width="1.5"/>
+  <path d="M16 98 L150 80" class="st" stroke-width="3.5"/>
+  <text x="40" y="82" class="t-xs ink">白い光（太陽）</text>
+  <path d="M150 80 L205.0 70.0 L318 50" class="st-f" stroke-width="2.2"/>
+  <text x="324" y="54" class="t-xs ink">赤</text>
+  <path d="M150 80 L206.2 72.4 L318 65" class="st-f" stroke-width="1.5"/>
+  <text x="324" y="69" class="t-xs ink">橙</text>
+  <path d="M150 80 L207.4 74.8 L318 80" class="st-f" stroke-width="1.5"/>
+  <text x="324" y="84" class="t-xs ink">黄</text>
+  <path d="M150 80 L208.6 77.2 L318 95" class="st-f" stroke-width="1.5"/>
+  <text x="324" y="99" class="t-xs ink">緑</text>
+  <path d="M150 80 L209.8 79.6 L318 110" class="st-f" stroke-width="1.5"/>
+  <text x="324" y="114" class="t-xs ink">青</text>
+  <path d="M150 80 L211.0 82.0 L318 125" class="st-f" stroke-width="2.2"/>
+  <text x="324" y="129" class="t-xs ink">紫</text>
+  <text x="250" y="44" class="t-xs mid soft">あまり曲がらない</text>
+  <text x="250" y="148" class="t-xs mid fl">紫ほど大きく曲がる</text>
+
+  <path d="M8 162 H352" class="st-line" stroke-width="1.5"/>
+
+  <!-- 左下：雨粒と虹 -->
+  <text x="12" y="180" class="t-s ink" font-weight="700">② 虹</text>
+  <text x="172" y="180" class="t-xs end soft">雨粒で屈折と反射</text>
+  <circle cx="126" cy="214" r="34" class="tint st-soft" stroke-width="1.5"/>
+  <path d="M14 192 H100" class="st" stroke-width="2.5"/>
+  <text x="14" y="206" class="t-xs soft">太陽の光</text>
+  <path d="M100 192 L158 225.6 L106.5 241.9" class="st-f" stroke-width="1.8"/>
+  <path d="M106.5 241.9 L87.2 264.8" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+  <path d="M106.5 241.9 L81.1 257.8" class="st-f" stroke-width="1.5" marker-end="url(#a-physics)"/>
+  <text x="76" y="252" class="t-xs end ink">紫 約40°</text>
+  <text x="82" y="280" class="t-xs end ink">赤 約42°</text>
+  <text x="146" y="248" class="t-xs soft">反射</text>
+
+  <!-- 右下：物の色 -->
+  <path d="M180 170 V284" class="st-line" stroke-width="1"/>
+  <text x="192" y="180" class="t-s ink" font-weight="700">③ 物の色</text>
+  <circle cx="230" cy="232" r="26" class="fl"/>
+  <path d="M230 206 Q236 196 244 194" class="st" stroke-width="2"/>
+  <path d="M310 192 L258 214" class="st" stroke-width="2.5" marker-end="url(#a-ink)"/>
+  <text x="300" y="186" class="t-xs ink">白い光</text>
+  <path d="M258 238 L318 252" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+  <text x="294" y="234" class="t-xs mid fl">赤だけはね返す</text>
+  <text x="230" y="276" class="t-xs mid soft">ほかの色は吸収</text>
+  <ellipse cx="336" cy="252" rx="12" ry="7" class="paper st" stroke-width="1.5"/>
+  <circle cx="336" cy="252" r="3" class="ink"/>
+</svg>

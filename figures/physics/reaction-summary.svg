@@ -1,0 +1,56 @@
+<svg viewBox="0 0 360 296" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：原子の組み替え -->
+  <rect x="8" y="8" width="344" height="108" rx="10" class="tint"/>
+  <text x="20" y="28" class="t-s ink" font-weight="700">原子の組み替え（化学反応式と質量保存）</text>
+  <!-- 反応前：水素2分子＋酸素1分子 -->
+  <circle cx="34" cy="62" r="7" class="paper st" stroke-width="1.5"/><circle cx="46" cy="62" r="7" class="paper st" stroke-width="1.5"/>
+  <circle cx="34" cy="84" r="7" class="paper st" stroke-width="1.5"/><circle cx="46" cy="84" r="7" class="paper st" stroke-width="1.5"/>
+  <text x="70" y="78" class="t-s mid ink">＋</text>
+  <circle cx="94" cy="73" r="11" class="fl"/><circle cx="112" cy="73" r="11" class="fl"/>
+  <path d="M136 73 H192" class="st" stroke-width="2.5" marker-end="url(#a-ink)"/>
+  <!-- 反応後：水2分子 -->
+  <circle cx="220" cy="66" r="11" class="fl"/><circle cx="208" cy="76" r="7" class="paper st" stroke-width="1.5"/><circle cx="232" cy="76" r="7" class="paper st" stroke-width="1.5"/>
+  <circle cx="270" cy="66" r="11" class="fl"/><circle cx="258" cy="76" r="7" class="paper st" stroke-width="1.5"/><circle cx="282" cy="76" r="7" class="paper st" stroke-width="1.5"/>
+  <text x="164" y="64" class="t-xs mid soft">組み替わる</text>
+  <text x="180" y="106" class="t-xs mid fl">原子の数も重さの合計も、前と後で同じ</text>
+  <text x="300" y="74" class="t-xs ink">水</text>
+
+  <!-- 下への矢印 -->
+  <path d="M63 118 V134" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+  <path d="M180 118 V134" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+  <path d="M297 118 V134" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+
+  <!-- 燃焼・酸化 -->
+  <rect x="8" y="140" width="110" height="146" rx="10" class="tint"/>
+  <text x="63" y="160" class="t-s mid ink" font-weight="700">燃焼・酸化</text>
+  <path d="M63 178 C 80 198, 84 214, 76 228 C 70 238, 56 238, 50 228 C 42 214, 52 200, 63 178 Z" class="fl"/>
+  <path d="M63 206 C 70 216, 70 226, 63 232 C 56 226, 56 216, 63 206 Z" class="paper"/>
+  <rect x="58" y="232" width="10" height="20" class="soft"/>
+  <text x="63" y="268" class="t-xs mid ink">酸素と結びつき</text>
+  <text x="63" y="281" class="t-xs mid soft">熱と光が出る</text>
+
+  <!-- 中和 -->
+  <rect x="125" y="140" width="110" height="146" rx="10" class="tint"/>
+  <text x="180" y="160" class="t-s mid ink" font-weight="700">酸とアルカリ</text>
+  <circle cx="148" cy="200" r="13" class="paper st" stroke-width="1.5"/>
+  <text x="148" y="204" class="t-xs mid ink">H⁺</text>
+  <text x="170" y="204" class="t-s mid ink">＋</text>
+  <circle cx="200" cy="200" r="17" class="fl"/>
+  <text x="200" y="204" class="t-xs mid on">OH⁻</text>
+  <path d="M180 222 V236" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <text x="180" y="254" class="t-m mid ink">H₂O</text>
+  <text x="180" y="268" class="t-xs mid ink">中和して水に</text>
+  <text x="180" y="281" class="t-xs mid soft">性質が打ち消し合う</text>
+
+  <!-- 電池 -->
+  <rect x="242" y="140" width="110" height="146" rx="10" class="tint"/>
+  <text x="297" y="160" class="t-s mid ink" font-weight="700">電池</text>
+  <path d="M260 236 V198 M334 236 V198" class="st" stroke-width="6"/>
+  <path d="M260 198 V178 H334 V198" class="st" stroke-width="1.5"/>
+  <path d="M276 178 H318" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+  <text x="297" y="194" class="t-xs mid fl">電子</text>
+  <text x="260" y="252" class="t-xs mid ink">亜鉛</text>
+  <text x="334" y="252" class="t-xs mid ink">銅</text>
+  <text x="297" y="268" class="t-xs mid ink">電子の受け渡しを</text>
+  <text x="297" y="281" class="t-xs mid soft">電気として取り出す</text>
+</svg>

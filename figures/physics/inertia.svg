@@ -1,0 +1,46 @@
+<svg viewBox="0 0 360 296" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：床のなめらかさと玉の進む距離 -->
+  <text x="12" y="16" class="t-xs soft">① 同じ勢いで玉を転がすと…</text>
+  <!-- 1本目 ざらざら -->
+  <text x="12" y="44" class="t-xs ink">じゅうたん</text>
+  <path d="M74 50 H352" class="st-soft" stroke-width="1.5"/>
+  <path d="M74 53 l6 4 M86 53 l6 4 M98 53 l6 4 M110 53 l6 4 M122 53 l6 4 M134 53 l6 4 M146 53 l6 4 M158 53 l6 4" class="st-soft" stroke-width="1.2"/>
+  <circle cx="84" cy="42" r="7" class="paper st-soft dash" stroke-width="1.2"/>
+  <circle cx="128" cy="42" r="8" class="fl"/>
+  <text x="142" y="40" class="t-xs fl">すぐ止まる</text>
+  <!-- 2本目 なめらか -->
+  <text x="12" y="84" class="t-xs ink">木の床</text>
+  <path d="M74 90 H352" class="st-soft" stroke-width="1.5"/>
+  <circle cx="84" cy="82" r="7" class="paper st-soft dash" stroke-width="1.2"/>
+  <circle cx="220" cy="82" r="8" class="fl"/>
+  <text x="234" y="80" class="t-xs fl">遠くで止まる</text>
+  <!-- 3本目 摩擦なし -->
+  <text x="12" y="124" class="t-xs ink">摩擦ゼロ</text>
+  <path d="M74 130 H352" class="st-f dash" stroke-width="1.5"/>
+  <circle cx="84" cy="122" r="7" class="paper st-soft dash" stroke-width="1.2"/>
+  <circle cx="290" cy="122" r="8" class="fl"/>
+  <path d="M302 122 H346" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+  <text x="186" y="118" class="t-xs mid fl">止まらず、ずっと進む</text>
+  <text x="352" y="150" class="t-xs end ink">止めているのは摩擦の力</text>
+
+  <path d="M8 162 H352" class="st-line" stroke-width="1.5"/>
+
+  <!-- 下：バスの急ブレーキ -->
+  <text x="12" y="180" class="t-xs soft">② バスの急ブレーキ</text>
+  <rect x="40" y="194" width="200" height="66" rx="10" class="tint st-f" stroke-width="2"/>
+  <rect x="196" y="204" width="34" height="26" rx="4" class="paper st-soft" stroke-width="1.5"/>
+  <circle cx="80" cy="270" r="12" class="ink"/>
+  <circle cx="200" cy="270" r="12" class="ink"/>
+  <!-- 前のめりの乗客 -->
+  <circle cx="134" cy="210" r="8" class="ink"/>
+  <path d="M122 254 L130 236 L134 220" class="st" stroke-width="4" stroke-linecap="round"/>
+  <path d="M138 254 L130 236" class="st" stroke-width="4" stroke-linecap="round"/>
+  <path d="M146 222 H182" class="st-f" stroke-width="2.5" marker-end="url(#a-physics)"/>
+  <text x="146" y="240" class="t-xs fl">体は前へ</text>
+  <!-- ブレーキの力 -->
+  <path d="M312 236 H250" class="st" stroke-width="3" marker-end="url(#a-ink)"/>
+  <text x="300" y="226" class="t-xs mid ink">ブレーキの力</text>
+  <text x="352" y="196" class="t-xs end fl">車体が止まっても</text>
+  <text x="352" y="210" class="t-xs end fl">体は進み続ける</text>
+  <text x="140" y="288" class="t-xs mid soft">進む向き →</text>
+</svg>

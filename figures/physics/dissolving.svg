@@ -1,0 +1,43 @@
+<svg viewBox="0 0 360 296" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左上：角砂糖が溶けて広がる -->
+  <text x="12" y="16" class="t-xs soft">① 溶ける＝粒が水の中に散らばる</text>
+  <path d="M20 54 V122 H70 V54 M104 54 V122 H160 V54" class="st" stroke-width="2"/>
+  <rect x="20" y="64" width="50" height="58" class="tint"/>
+  <rect x="104" y="64" width="56" height="58" class="tint"/>
+  <path d="M20 64 H70 M104 64 H160" class="st-f" stroke-width="1.5"/>
+  <rect x="34" y="102" width="20" height="20" rx="2" class="fl"/>
+  <text x="44" y="46" class="t-xs mid ink">角砂糖</text>
+  <path d="M76 90 H98" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <circle cx="124.2" cy="77.2" r="2.4" class="fl"/><circle cx="138.6" cy="73.5" r="2.4" class="fl"/><circle cx="133.6" cy="87.6" r="2.4" class="fl"/><circle cx="112.6" cy="94.4" r="2.4" class="fl"/><circle cx="111.6" cy="90.8" r="2.4" class="fl"/><circle cx="113.1" cy="74.4" r="2.4" class="fl"/><circle cx="128.7" cy="109.7" r="2.4" class="fl"/><circle cx="115.4" cy="80.7" r="2.4" class="fl"/><circle cx="137.6" cy="115.5" r="2.4" class="fl"/><circle cx="135.4" cy="89.0" r="2.4" class="fl"/><circle cx="153.0" cy="72.2" r="2.4" class="fl"/><circle cx="147.8" cy="83.9" r="2.4" class="fl"/><circle cx="116.3" cy="75.7" r="2.4" class="fl"/><circle cx="123.6" cy="109.2" r="2.4" class="fl"/><circle cx="118.0" cy="97.9" r="2.4" class="fl"/><circle cx="138.1" cy="87.9" r="2.4" class="fl"/><circle cx="134.1" cy="73.0" r="2.4" class="fl"/><circle cx="112.6" cy="79.9" r="2.4" class="fl"/><circle cx="139.9" cy="90.5" r="2.4" class="fl"/><circle cx="123.8" cy="98.1" r="2.4" class="fl"/>
+  <text x="132" y="46" class="t-xs mid ink">均一に広がる</text>
+  <text x="90" y="140" class="t-xs mid fl">全体の重さは変わらない</text>
+
+  <!-- 右上：濃度 -->
+  <path d="M176 24 V146" class="st-line" stroke-width="1"/>
+  <text x="188" y="16" class="t-xs soft">② 濃度</text>
+  <rect x="196" y="40" width="30" height="94" class="tint st-soft" stroke-width="1.2"/>
+  <rect x="196" y="40" width="30" height="10" class="fl"/>
+  <text x="234" y="50" class="t-xs fl">砂糖 10g</text>
+  <text x="234" y="96" class="t-xs ink">水 90g</text>
+  <text x="234" y="132" class="t-xs soft">全体 100g</text>
+  <text x="352" y="74" class="t-xs end ink">10 ÷ 100</text>
+  <text x="352" y="92" class="t-m end fl">＝ 10％</text>
+
+  <path d="M8 148 H352" class="st-line" stroke-width="1.5"/>
+
+  <!-- 下：溶解度のグラフ -->
+  <text x="12" y="161" class="t-xs soft">③ 100gの水に溶ける量（溶解度）</text>
+  <path d="M60 162 V272 H310" class="st" stroke-width="1.5"/>
+  <path d="M60 172 H310 M60 222 H310" class="st-line dash" stroke-width="1"/>
+  <text x="54" y="176" class="t-xs end ink">100g</text>
+  <text x="54" y="226" class="t-xs end ink">50g</text>
+  <text x="54" y="276" class="t-xs end ink">0</text>
+  <text x="60" y="288" class="t-xs mid soft">0℃</text>
+  <text x="140" y="288" class="t-xs mid soft">20℃</text>
+  <text x="220" y="288" class="t-xs mid soft">40℃</text>
+  <text x="300" y="288" class="t-xs mid soft">60℃</text>
+  <path d="M60 258.7 L100 251.1 L140 240.4 L180 226.2 L220 208.1 L260 186.5 L300 162.8" class="st-f" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M60 236.3 L140 236.2 L220 235.7 L300 234.9" class="st" stroke-width="2.5"/>
+  <text x="234" y="188" class="t-xs end fl">硝酸カリウム</text>
+  <text x="314" y="238" class="t-xs ink">食塩</text>
+</svg>

@@ -1,0 +1,46 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 見出し -->
+  <text x="112" y="16" class="t-xs mid soft">押す力</text>
+  <text x="182" y="16" class="t-xs mid soft">台車</text>
+  <text x="290" y="16" class="t-xs mid soft">1秒ごとの速さの増え方</text>
+
+  <!-- 上の段：基準 1kg・2N → 2m/s² -->
+  <text x="12" y="48" class="t-xs ink">基準</text>
+  <path d="M112 48 H156" class="st" stroke-width="3" marker-end="url(#a-ink)"/>
+  <text x="128" y="40" class="t-xs mid ink">2N</text>
+  <rect x="160" y="32" width="44" height="28" rx="4" class="fl"/>
+  <text x="182" y="51" class="t-xs mid on">1kg</text>
+  <circle cx="170" cy="64" r="4" class="ink"/><circle cx="194" cy="64" r="4" class="ink"/>
+  <path d="M150 69 H214" class="st-soft" stroke-width="1.5"/>
+  <path d="M222 46 H262" class="st-f" stroke-width="3" marker-end="url(#a-physics)"/>
+  <text x="308" y="50" class="t-s fl">＋2m/s</text>
+
+  <!-- 中の段：質量2倍 2kg・2N → 1m/s² -->
+  <text x="12" y="118" class="t-xs ink">質量2倍</text>
+  <path d="M102 118 H146" class="st" stroke-width="3" marker-end="url(#a-ink)"/>
+  <text x="118" y="110" class="t-xs mid ink">2N</text>
+  <rect x="150" y="102" width="64" height="28" rx="4" class="fl"/>
+  <text x="182" y="121" class="t-xs mid on">2kg</text>
+  <circle cx="162" cy="134" r="4" class="ink"/><circle cx="202" cy="134" r="4" class="ink"/>
+  <path d="M140 139 H214" class="st-soft" stroke-width="1.5"/>
+  <path d="M222 116 H242" class="st-f" stroke-width="3" marker-end="url(#a-physics)"/>
+  <text x="308" y="120" class="t-s fl">＋1m/s</text>
+  <text x="308" y="136" class="t-xs soft">半分</text>
+
+  <!-- 下の段：力2倍 1kg・4N → 4m/s² -->
+  <text x="12" y="188" class="t-xs ink">力2倍</text>
+  <path d="M68 188 H156" class="st" stroke-width="3" marker-end="url(#a-ink)"/>
+  <text x="108" y="180" class="t-xs mid ink">4N</text>
+  <rect x="160" y="172" width="44" height="28" rx="4" class="fl"/>
+  <text x="182" y="191" class="t-xs mid on">1kg</text>
+  <circle cx="170" cy="204" r="4" class="ink"/><circle cx="194" cy="204" r="4" class="ink"/>
+  <path d="M60 209 H214" class="st-soft" stroke-width="1.5"/>
+  <path d="M222 186 H302" class="st-f" stroke-width="3" marker-end="url(#a-physics)"/>
+  <text x="308" y="190" class="t-s fl">＋4m/s</text>
+  <text x="308" y="206" class="t-xs soft">2倍</text>
+
+  <!-- 式 -->
+  <rect x="24" y="230" width="312" height="52" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="180" y="254" class="t-l mid ink">力 F ＝ 質量 m × 加速度 a</text>
+  <text x="180" y="273" class="t-xs mid soft">1Nは、1kgの物を1秒ごとに1m/sずつ速くする力</text>
+</svg>
