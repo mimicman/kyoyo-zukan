@@ -1,46 +1,47 @@
-<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- 左：縄文 -->
-  <rect x="10" y="10" width="150" height="140" rx="14" class="bgc"/>
-  <text x="85" y="34" class="t-l mid ink">縄文</text>
-  <path d="M18 124 H152" class="st-soft" stroke-width="1.5"/>
-  <path d="M30 124 L70 60 L110 124 Z" class="tint st-f" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M62 124 V104 H78 V124" class="soft"/>
-  <path d="M70 60 L64 50 M70 60 L76 50" class="st-f" stroke-width="2"/>
-  <path d="M124 124 L120 98 Q117 90 123 86 L121 78 L127 83 L132 76 L137 83 L143 78 L141 86 Q147 90 144 98 L140 124 Z" class="fl"/>
-  <path d="M123 102 L141 108 M122 112 L142 118" class="st-line" stroke-width="1.5"/>
-  <path d="M26 140 Q36 132 46 140 Q36 148 26 140 Z M46 140 L53 135 V145 Z" class="soft"/>
-  <circle cx="70" cy="140" r="4" class="soft"/><circle cx="80" cy="142" r="4" class="soft"/>
-  <text x="132" y="142" class="t-xs mid soft">土器</text>
+<svg viewBox="0 0 360 320" xmlns="http://www.w3.org/2000/svg">
+  <!-- 見出し：いちばんの違い -->
+  <rect x="72" y="8" width="136" height="54" rx="12" class="tint st-f" stroke-width="1.5"/>
+  <text x="140" y="30" class="t-l mid ink">縄文</text>
+  <text x="140" y="51" class="t-s mid fl" font-weight="700">自然から「とる」</text>
+  <rect x="216" y="8" width="132" height="54" rx="12" class="fl"/>
+  <text x="282" y="30" class="t-l mid on">弥生</text>
+  <text x="282" y="51" class="t-s mid on" font-weight="700">米を「つくる」</text>
 
-  <!-- 中央：稲作が伝わる -->
-  <path d="M162 84 H198" class="st-f" stroke-width="3" marker-end="url(#a-japan)"/>
-  <text x="180" y="72" class="t-xs mid fl">稲作が</text>
-  <text x="180" y="102" class="t-xs mid fl">伝わる</text>
+  <!-- 比べる項目 -->
+  <rect x="12" y="70" width="336" height="34" rx="8" class="bgc"/>
+  <text x="40" y="92" class="t-s mid soft">食べ物</text>
+  <text x="140" y="92" class="t-s mid ink">狩り・漁・木の実</text>
+  <text x="282" y="92" class="t-s mid ink" font-weight="700">田んぼで米</text>
 
-  <!-- 右：弥生 -->
-  <rect x="200" y="10" width="150" height="140" rx="14" class="bgc"/>
-  <text x="275" y="34" class="t-l mid fl">弥生</text>
-  <path d="M244 62 L271 44 L298 62 Z" class="fl"/>
-  <rect x="249" y="62" width="44" height="22" class="fl"/>
-  <rect x="244" y="84" width="54" height="4" class="ink"/>
-  <path d="M252 88 V114 M271 88 V114 M290 88 V114" class="st" stroke-width="3"/>
-  <path d="M208 142 L228 116 L344 116 L324 142 Z" class="tint st-f" stroke-width="1.5"/>
-  <path d="M248 120 V128 M262 120 V128 M276 120 V128 M290 120 V128 M304 120 V128 M318 120 V128 M240 132 V140 M254 132 V140 M268 132 V140 M282 132 V140 M296 132 V140 M310 132 V140" class="st-f" stroke-width="2" stroke-linecap="round"/>
-  <text x="322" y="80" class="t-xs mid soft">高床倉庫</text>
-  <text x="220" y="110" class="t-xs mid soft">田んぼ</text>
+  <text x="40" y="126" class="t-s mid soft">たくわえ</text>
+  <text x="140" y="126" class="t-s mid ink">少しだけ</text>
+  <text x="282" y="126" class="t-s mid ink" font-weight="700">高床倉庫に保存</text>
 
-  <!-- 比べる -->
-  <path d="M12 191 H348 M12 217 H348 M12 243 H348" class="st-line" stroke-width="1"/>
-  <text x="180" y="182" class="t-xs mid soft">食べ物</text>
-  <text x="85" y="182" class="t-xs mid ink">狩り・漁・木の実</text>
-  <text x="275" y="182" class="t-xs mid fl">米づくり（稲作）</text>
-  <text x="180" y="208" class="t-xs mid soft">道具</text>
-  <text x="85" y="208" class="t-xs mid ink">縄文土器・石器</text>
-  <text x="275" y="208" class="t-xs mid fl">弥生土器・青銅器・鉄器</text>
-  <text x="180" y="234" class="t-xs mid soft">ムラ</text>
-  <text x="85" y="234" class="t-xs mid ink">竪穴住居のムラ</text>
-  <text x="275" y="234" class="t-xs mid fl">堀で囲んだムラ</text>
-  <text x="180" y="260" class="t-xs mid soft">社会</text>
-  <text x="85" y="260" class="t-xs mid ink">差が小さい</text>
-  <text x="275" y="260" class="t-xs mid fl">貧富の差・クニ</text>
+  <rect x="12" y="138" width="336" height="34" rx="8" class="bgc"/>
+  <text x="40" y="160" class="t-s mid soft">道具</text>
+  <text x="140" y="160" class="t-s mid ink">縄目の土器・石器</text>
+  <text x="282" y="160" class="t-s mid ink">鉄器・青銅器も</text>
+
+  <text x="40" y="194" class="t-s mid soft">ムラ</text>
+  <text x="140" y="194" class="t-s mid ink">開けたムラ</text>
+  <text x="282" y="194" class="t-s mid ink">堀や柵で守る</text>
+
+  <rect x="12" y="206" width="336" height="34" rx="8" class="bgc"/>
+  <text x="40" y="228" class="t-s mid soft">人の差</text>
+  <text x="140" y="228" class="t-s mid ink">小さい</text>
+  <text x="282" y="228" class="t-s mid ink" font-weight="700">貧富・身分の差</text>
+
+  <!-- 米が社会を変えた流れ -->
+  <text x="12" y="262" class="t-xs fl" font-weight="700">米づくりが社会を変えた流れ</text>
+  <rect x="10" y="272" width="74" height="34" rx="17" class="tint"/>
+  <text x="47" y="294" class="t-xs mid ink">米を蓄える</text>
+  <path d="M86 289 H96" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+  <rect x="100" y="272" width="74" height="34" rx="17" class="tint"/>
+  <text x="137" y="294" class="t-xs mid ink">差が生まれる</text>
+  <path d="M176 289 H186" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+  <rect x="190" y="272" width="74" height="34" rx="17" class="tint"/>
+  <text x="227" y="294" class="t-xs mid ink">争いと指導者</text>
+  <path d="M266 289 H276" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+  <rect x="280" y="272" width="70" height="34" rx="17" class="fl"/>
+  <text x="315" y="294" class="t-xs mid on" font-weight="700">クニの誕生</text>
 </svg>
