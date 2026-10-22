@@ -1,0 +1,24 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<path d="M174 0 C166 30 156 50 154 70 C146 92 124 112 118 140 C112 170 124 200 114 240 L104 280" class="st-soft" stroke-width="1.5"/>
+<text x="56" y="40" class="t-l soft">唐</text>
+<circle cx="46" cy="96" r="6" class="fl"/>
+<text x="12" y="132" class="t-xs ink">長安（都）</text>
+<path d="M196 182 C214 178 228 192 226 212 C224 236 212 250 198 246 C184 240 180 222 184 204 C186 192 190 184 196 182 Z" class="tint st-f" stroke-width="1.5"/>
+<path d="M232 178 C252 168 272 160 292 150 C312 140 328 120 342 96 C350 102 352 112 346 122 C334 146 314 164 294 176 C274 188 252 194 236 192 Z" class="tint st-f" stroke-width="1.5"/>
+<path d="M252 200 C264 196 282 196 292 202 C286 212 264 214 252 208 Z" class="tint st-f" stroke-width="1.5"/>
+<path d="M200 200 C170 236 120 232 96 180 C80 140 64 112 52 102" class="st-f" stroke-width="2.5" marker-end="url(#a-japan)"/>
+<text x="150" y="254" class="t-xs fl mid halo" font-weight="700">804年 唐へ渡る</text>
+<path d="M54 88 C100 52 170 96 200 180" class="st-f dash" stroke-width="2" marker-end="url(#a-japan)"/>
+<text x="120" y="56" class="t-xs fl mid halo" font-weight="700">806年 密教を伝える</text>
+<circle cx="270" cy="204" r="5" class="ink"/>
+<text x="250" y="232" class="t-xs ink mid halo">讃岐（生まれ）</text>
+<circle cx="288" cy="176" r="5" class="ink"/>
+<text x="330" y="196" class="t-xs ink mid">高野山</text>
+<text x="330" y="210" class="t-xs fl mid">816年</text>
+<path d="M292 178 L318 192" class="st-soft" stroke-width="1"/>
+<circle cx="302" cy="158" r="5" class="ink"/>
+<text x="260" y="118" class="t-xs ink mid">東寺（京都）</text>
+<text x="260" y="132" class="t-xs fl mid">823年</text>
+<path d="M298 154 L270 136" class="st-soft" stroke-width="1"/>
+<text x="348" y="272" class="t-xs ink end">高野山と東寺を真言宗の中心に</text>
+</svg>

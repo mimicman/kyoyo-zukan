@@ -1,0 +1,30 @@
+<svg viewBox="0 0 360 292" xmlns="http://www.w3.org/2000/svg">
+<text x="12" y="20" class="t-xs soft">平氏の勢い（イメージ）</text>
+<path d="M40 224 L85.0 200 L107.5 172 L167.5 104 C200 90 240 80 257.5 74 L265.0 86 L272.5 112 L302.5 228 L302.5 228 H40 Z" class="tint"/>
+<path d="M40 224 L85.0 200 L107.5 172 L167.5 104 C200 90 240 80 257.5 74 L265.0 86 L272.5 112 L302.5 228" class="st-f" stroke-width="3" stroke-linejoin="round"/>
+<path d="M40 228 H344" class="st" stroke-width="1.5"/>
+<text x="40.0" y="244" class="t-xs soft mid">1150</text>
+<text x="115.0" y="244" class="t-xs soft mid">1160</text>
+<text x="190.0" y="244" class="t-xs soft mid">1170</text>
+<text x="265.0" y="244" class="t-xs soft mid">1180</text>
+<text x="340.0" y="244" class="t-xs soft mid">1190</text>
+<circle cx="85.0" cy="200" r="4.5" class="fl"/>
+<circle cx="107.5" cy="172" r="4.5" class="fl"/>
+<circle cx="167.5" cy="104" r="4.5" class="fl"/>
+<circle cx="257.5" cy="74" r="4.5" class="fl"/>
+<circle cx="272.5" cy="112" r="4.5" class="fl"/>
+<circle cx="302.5" cy="228" r="4.5" class="fl"/>
+<text x="79.0" y="196" class="t-xs ink end">保元の乱</text>
+<text x="101.5" y="168" class="t-xs ink end">平治の乱</text>
+<text x="161.5" y="98" class="t-xs ink end" font-weight="700">太政大臣に</text>
+<text x="257.5" y="62" class="t-xs ink mid">実権を握る</text>
+<text x="280.5" y="114" class="t-xs ink">1180 源氏の挙兵</text>
+<text x="280.5" y="128" class="t-xs ink">1181 清盛が死去</text>
+<text x="348" y="190" class="t-xs fl end" font-weight="700">1185</text>
+<text x="348" y="204" class="t-xs fl end">壇ノ浦で</text>
+<text x="348" y="218" class="t-xs fl end">滅ぶ</text>
+<rect x="12" y="258" width="164" height="28" rx="8" class="tint st-f" stroke-width="1"/>
+<text x="94" y="276" class="t-xs ink mid">日宋貿易で富を集める</text>
+<rect x="184" y="258" width="164" height="28" rx="8" class="tint st-f" stroke-width="1"/>
+<text x="266" y="276" class="t-xs ink mid">娘を天皇のきさきにする</text>
+</svg>

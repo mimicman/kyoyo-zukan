@@ -1,0 +1,26 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<path d="M40 262 C90 270 180 262 236 248 C262 240 280 222 284 200 C290 170 292 130 298 100 C302 70 306 40 304 14 L250 10 C240 40 226 70 214 96 C200 120 182 140 160 158 C130 180 100 196 70 210 C56 218 44 230 40 262 Z" class="tint"/>
+<path d="M250 234 L240 196 L284 128 L276 96 L226 76 L188 132 L148 168 L90 236" class="st-f" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#a-japan)"/>
+<circle cx="250" cy="234" r="4" class="fl" stroke-width="1.5"/>
+<circle cx="240" cy="196" r="4" class="paper st-f" stroke-width="1.5"/>
+<circle cx="284" cy="128" r="4" class="paper st-f" stroke-width="1.5"/>
+<circle cx="276" cy="96" r="4" class="paper st-f" stroke-width="1.5"/>
+<circle cx="226" cy="76" r="4" class="paper st-f" stroke-width="1.5"/>
+<circle cx="188" cy="132" r="4" class="paper st-f" stroke-width="1.5"/>
+<circle cx="148" cy="168" r="4" class="paper st-f" stroke-width="1.5"/>
+<circle cx="90" cy="236" r="4" class="fl" stroke-width="1.5"/>
+<text x="258" y="252" class="t-xs ink  halo">江戸（深川）</text>
+<text x="230" y="200" class="t-xs ink end halo">日光</text>
+<text x="292" y="132" class="t-xs ink  halo">松島</text>
+<text x="286" y="96" class="t-xs ink  halo">平泉</text>
+<text x="216" y="80" class="t-xs ink end halo">象潟</text>
+<text x="178" y="136" class="t-xs ink end halo">越後</text>
+<text x="138" y="172" class="t-xs ink end halo">金沢</text>
+<text x="100" y="240" class="t-xs ink  halo">大垣</text>
+<text x="12" y="30" class="t-m fl">1689年の旅</text>
+<text x="12" y="50" class="t-xs ink">江戸を出て東北・北陸を</text>
+<text x="12" y="66" class="t-xs ink">めぐり、大垣で結ぶ</text>
+<text x="12" y="86" class="t-xs ink">約150日、各地で句を詠み</text>
+<text x="12" y="102" class="t-xs ink">紀行文『おくのほそ道』に</text>
+<text x="262" y="234" class="t-xs fl" font-weight="700">出発</text>
+</svg>

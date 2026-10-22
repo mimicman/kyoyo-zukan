@@ -568,5 +568,599 @@
     "artist": "大日本帝国政府",
     "license": "Public domain",
     "source": "https://commons.wikimedia.org/wiki/File:1_Yen_-_Empire_of_Japan_(Meiji_3_-_1870)_MA-Shops.jpg"
+  },
+  "food-coffea": {
+    "name": "コーヒーノキ（ケーラー『薬用植物』）",
+    "artist": "Franz Eugen Köhler",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Coffea_arabica_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-189.jpg"
+  },
+  "food-london-coffeehouse": {
+    "name": "17世紀ロンドンのコーヒーハウス（作者不詳）",
+    "artist": "AnonymousUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Interior_of_a_London_Coffee-house,_17th_century.JPG"
+  },
+  "food-ottoman-coffeehouse": {
+    "name": "オスマン帝国のコーヒーハウス（作者不詳の水彩画）",
+    "artist": "Unknown Greek watercolourist",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:V%26A_Turkish_coffehouse.jpg"
+  },
+  "food-dejima": {
+    "name": "長崎の出島の眺め（アムステルダム国立美術館所蔵）",
+    "artist": "Rijksmuseum",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Gezicht_op_Deshima,_RP-T-1921-488.jpg"
+  },
+  "people-himiko": {
+    "name": "『三国志』魏書の倭人の条を含む本文（作者不明）",
+    "artist": "不明",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Text_of_the_Wei_Zhi_(%E9%AD%8F%E5%BF%97),_297.jpg"
+  },
+  "people-shotoku-taishi": {
+    "name": "聖徳太子と従者の図（13世紀、作者不明）",
+    "artist": "Unknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Prince_Shotoku_with_Attendants,_13th_century.jpg"
+  },
+  "people-naka-no-oe": {
+    "name": "蘇我入鹿暗殺の図（住吉具慶）",
+    "artist": "Gukei Sumiyoshi",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Irukaansatsuzu.jpg"
+  },
+  "people-nakatomi-no-kamatari": {
+    "name": "多武峰縁起絵巻（談山神社、室町時代、作者不明）",
+    "artist": "Muromachi-period artist",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Tonomine_Engi_(Tanzan_Jinja).jpg"
+  },
+  "people-shomu-tenno": {
+    "name": "聖武天皇像（作者不明）",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Emperor_Shomu.jpg"
+  },
+  "people-kukai": {
+    "name": "弘法大師（空海）像（作者不明）",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_K%C5%8Db%C5%8D_Daishi.jpg"
+  },
+  "people-murasaki-shikibu": {
+    "name": "紫式部図（土佐光起）",
+    "artist": "Tosa Mitsuoki",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Tosa_Mitsuoki%E2%80%94Portrait_of_Murasaki_Shikibu.jpg"
+  },
+  "people-taira-no-kiyomori": {
+    "name": "『天子摂関御影』の平清盛（藤原豪信）",
+    "artist": "Fujiwara no Gōshin",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Taira_no_Kiyomori,TenshiSekkanMiei.jpg"
+  },
+  "people-minamoto-no-yoritomo": {
+    "name": "伝 源頼朝像（神護寺、作者不明）",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:%E3%80%8A%E4%BC%9D%E6%BA%90%E9%A0%BC%E6%9C%9D%E5%83%8F%E3%80%8B13%E4%B8%96%E7%B4%80%E3%80%81%E9%8E%8C%E5%80%89%E6%99%82%E4%BB%A3%E3%80%81%E7%A5%9E%E8%AD%B7%E5%AF%BA%E3%80%81%E4%BA%AC%E9%83%BD.jpg"
+  },
+  "people-hojo-tokimune": {
+    "name": "北条時宗像（作者不明）",
+    "artist": "不明",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Hojotokimune.jpg"
+  },
+  "people-ashikaga-yoshimitsu": {
+    "name": "足利義満像（作者不明）",
+    "artist": "Unknown (Inscription attributed to Asukai Masachika)",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Yoshimitsu_Ashikaga.jpg"
+  },
+  "people-oda-nobunaga": {
+    "name": "織田信長像（狩野宗秀）",
+    "artist": "狩野宗秀 (Kanō Sōshū, 1551 - 1601)",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Odanobunaga.jpg"
+  },
+  "people-toyotomi-hideyoshi": {
+    "name": "豊臣秀吉像（狩野光信）",
+    "artist": "Kanō Mitsunobu",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Toyotomi_Hideyoshi_(Kodaiji).jpg"
+  },
+  "people-tokugawa-ieyasu": {
+    "name": "徳川家康像（狩野探幽）",
+    "artist": "Kanō Tan'yū",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Tokugawa_Ieyasu2.JPG"
+  },
+  "people-tokugawa-iemitsu": {
+    "name": "徳川家光像（作者不明）",
+    "artist": "東京帝国大学編集",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Iemitsu_Tokugawa.jpg"
+  },
+  "people-matsuo-basho": {
+    "name": "芭蕉像（葛飾北斎）",
+    "artist": "Hokusai",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Basho_by_Hokusai-small.jpg"
+  },
+  "people-sakamoto-ryoma": {
+    "name": "坂本龍馬の写真（作者不明）",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Sakamoto_Ryoma.jpg"
+  },
+  "people-saigo-takamori": {
+    "name": "西郷隆盛の肖像画（キヨッソーネ）",
+    "artist": "Edoardo Chiossone (1833 - 1898)",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Takamori_Saigo.jpg"
+  },
+  "people-ito-hirobumi": {
+    "name": "伊藤博文の写真（作者不明）",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:IT%C5%8C_Hirobumi.jpg"
+  },
+  "people-fukuzawa-yukichi": {
+    "name": "福沢諭吉の写真（作者不明）",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Fukuzawa_Yukichi.jpg"
+  },
+  "people-noguchi-hideyo": {
+    "name": "野口英世の写真（作者不明）",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Noguchi_Hideyo.jpg"
+  },
+  "people-desmoulins-camille": {
+    "name": "カミーユ・デムーランの肖像（作者不詳、カルナヴァレ博物館）",
+    "artist": "anonymous",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Anonymous_-_Portrait_de_Camille_Desmoulins_(1760-1794),_homme_politique._-_P867_-_Mus%C3%A9e_Carnavalet.jpg"
+  },
+  "people-mercator-gerardus": {
+    "name": "ゲラルドゥス・メルカトルの肖像（フランス・ホーヘンベルフ）",
+    "artist": "Frans Hogenberg",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Gerardus_Mercator_3.jpg"
+  },
+  "people-mackinder-halford": {
+    "name": "ハルフォード・マッキンダーの肖像（ジェームズ・ラファイエット撮影）",
+    "artist": "James Lafayette",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_Sir_Halford_John_Mackinder.jpg"
+  },
+  "people-hobbes-thomas": {
+    "name": "トマス・ホッブズの肖像（ジョン・マイケル・ライト）",
+    "artist": "John Michael Wright",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Thomas_Hobbes_(portrait).jpg"
+  },
+  "people-jones-william": {
+    "name": "ウィリアム・ジョーンズの肖像（ジェームズ・ポッセルホワイト）",
+    "artist": "James Posselwhite",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_Sir_William_Jones_(4671559)_(cropped).jpg"
+  },
+  "people-locke-john": {
+    "name": "ジョン・ロックの肖像（ゴドフリー・ネラー）",
+    "artist": "Godfrey Kneller",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:John_Locke.jpg"
+  },
+  "people-rousseau-jean-jacques": {
+    "name": "ジャン＝ジャック・ルソーの肖像（モーリス・カンタン・ド・ラ・トゥール）",
+    "artist": "Maurice Quentin de La Tour",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Jean-Jacques_Rousseau_(painted_portrait).jpg"
+  },
+  "people-coke-edward": {
+    "name": "エドワード・コークの肖像（ジョン・ペインの版画）",
+    "artist": "John Payne",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Sir_Edward_Coke.jpg"
+  },
+  "people-champollion-jean-francois": {
+    "name": "シャンポリオンの肖像（レオン・コニエ）",
+    "artist": "Léon Cogniet",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Champollion,_by_L%C3%A9on_Cogniet.jpg"
+  },
+  "people-copernicus-nicolaus": {
+    "name": "コペルニクスの肖像（トルン、16世紀）",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Nikolaus_Kopernikus.jpg"
+  },
+  "people-maxwell-james": {
+    "name": "マクスウェルの肖像（ストダートの版画）",
+    "artist": "digitized from an engraving by G. J. Stodart from a photograph by Fergus of Greenock",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:James_Clerk_Maxwell_big.jpg"
+  },
+  "people-ortelius-abraham": {
+    "name": "アブラハム・オルテリウスの肖像（ルーベンス）",
+    "artist": "Peter Paul Rubens / After Adriaen Thomasz. Key",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Abraham_Ortelius_by_Peter_Paul_Rubens.jpg"
+  },
+  "people-bohr-niels": {
+    "name": "ニールス・ボーア（1922年頃）",
+    "artist": "The American Institute of Physics credits the photo [1] to AB Lagrelius & Westphal, which is the Swedish company used by the Nobel Foundation for most photos of its book series Les Prix Nobel.",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Niels_Bohr.jpg"
+  },
+  "people-archimedes": {
+    "name": "アルキメデス（ドメニコ・フェッティ、1620年）",
+    "artist": "Domenico Fetti",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Domenico-Fetti_Archimedes_1620.jpg"
+  },
+  "people-euclid": {
+    "name": "ユークリッド（ユストゥス・ファン・ヘント）",
+    "artist": "Justus van Gent",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Euklid2.jpg"
+  },
+  "people-whorf-benjamin": {
+    "name": "ベンジャミン・ウォーフの肖像（バクラック・スタジオ）",
+    "artist": "Bachrach Studios",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Benjamin_Lee_Whorf_by_Bachrach.jpg"
+  },
+  "people-napoleon": {
+    "name": "書斎のナポレオン（ジャック＝ルイ・ダヴィッド）",
+    "artist": "Jacques-Louis David",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg"
+  },
+  "people-columbus-christopher": {
+    "name": "コロンブスとされる男の肖像（セバスティアーノ・デル・ピオンボ）",
+    "artist": "Sebastiano del Piombo",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_a_Man,_Said_to_be_Christopher_Columbus.jpg"
+  },
+  "people-pasteur-louis": {
+    "name": "ルイ・パスツールの肖像写真（ポール・ナダール）",
+    "artist": "Paul Nadar",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Pasteur,_Louis_(1822-1895)_par_Paul_Nadar.jpg"
+  },
+  "people-genghis-khan": {
+    "name": "チンギス・ハン像（元代の帝后像、作者不明）",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumGenghisPortrait.jpg"
+  },
+  "people-koch-robert": {
+    "name": "ロベルト・コッホの肖像写真（作者不明）",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Robert_Koch_BeW.jpg"
+  },
+  "people-kublai-khan": {
+    "name": "フビライ・ハン像（元代の帝后像、アニゲ作と伝わる）",
+    "artist": "Araniko",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumKhubilaiPortrait.jpg"
+  },
+  "people-linnaeus-carl": {
+    "name": "カール・フォン・リンネの肖像（アレクサンデル・ロスリン）",
+    "artist": "Alexander Roslin",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Carl_von_Linn%C3%A9.jpg"
+  },
+  "people-qin-shi-huang": {
+    "name": "始皇帝像（後世の想像図、作者不明）",
+    "artist": "Unknown artistUnknown artist",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Qinshihuang.jpg"
+  },
+  "people-leeuwenhoek-antonie": {
+    "name": "レーウェンフックの肖像（ヤン・フェルコリエ, 1686年）",
+    "artist": "Jan Verkolje (1650—1693)",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Antoni_van_Leeuwenhoek_(by_Jan_Verkolje,_1686).jpg"
+  },
+  "people-gutenberg-johannes": {
+    "name": "グーテンベルクの肖像（後世の版画、作者不明）",
+    "artist": "不明",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Gutenberg.jpg"
+  },
+  "people-snow-john": {
+    "name": "ジョン・スノーの肖像写真（作者不明）",
+    "artist": "不明",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:John_Snow.jpg"
+  },
+  "people-watt-james": {
+    "name": "ジェームズ・ワットの肖像（カール・フレドリク・フォン・ブレダ）",
+    "artist": "Carl Frederik von Breda",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Watt_James_von_Breda.jpg"
+  },
+  "people-magellan-ferdinand": {
+    "name": "マゼランの肖像（作者不明）",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Ferdinand_Magellan.jpg"
+  },
+  "people-julius-caesar": {
+    "name": "カエサルの胸像（バチカン美術館）",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Gaius_Iulius_Caesar_(Vatican_Museum).jpg"
+  },
+  "people-augustus": {
+    "name": "プリマポルタのアウグストゥス像",
+    "artist": "Till Niermann",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Statue-Augustus.jpg"
+  },
+  "people-pericles": {
+    "name": "ペリクレスの胸像（クレシラスの原作の模刻）",
+    "artist": "Copy of Ktesilas",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Pericles_Pio-Clementino_Inv269.jpg"
+  },
+  "people-marco-polo": {
+    "name": "マルコ・ポーロの肖像（後世の想像図、作者不明）",
+    "artist": "不明",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Marco_Polo_portrait.jpg"
+  },
+  "people-alexander-the-great": {
+    "name": "アレクサンドロス・モザイク（部分、ポンペイ出土）",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Alexander_the_Great_mosaic.jpg"
+  },
+  "people-da-gama-vasco": {
+    "name": "バスコ・ダ・ガマ（『リズアルテ・デ・アブレウの書』より）",
+    "artist": "不明",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Vasco_da_Gama_(Livro_de_Lisuarte_de_Abreu).jpg"
+  },
+  "people-leonardo-da-vinci": {
+    "name": "自画像とされる素描（レオナルド・ダ・ヴィンチ）",
+    "artist": "Leonardo da Vinci",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Leonardo_self.jpg"
+  },
+  "people-caravaggio": {
+    "name": "カラヴァッジョの肖像（オッタヴィオ・レオーニ）",
+    "artist": "Ottavio Leoni",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Bild-Ottavio_Leoni,_Caravaggio.jpg"
+  },
+  "people-monet-claude": {
+    "name": "クロード・モネ（ナダール撮影）",
+    "artist": "Nadar",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Claude_Monet_1899_Nadar_crop.jpg"
+  },
+  "people-van-gogh-vincent": {
+    "name": "自画像（フィンセント・ファン・ゴッホ）",
+    "artist": "Vincent van Gogh",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_(454045).jpg"
+  },
+  "people-kandinsky-wassily": {
+    "name": "ワシリー・カンディンスキー（撮影者不明）",
+    "artist": "AnonymousUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Vassily-Kandinsky.jpeg"
+  },
+  "people-laplace-pierre-simon": {
+    "name": "ラプラスの肖像（作者不明）",
+    "artist": "不明",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Pierre-Simon-Laplace_(1749-1827).jpg"
+  },
+  "people-mondrian-piet": {
+    "name": "自画像（ピート・モンドリアン）",
+    "artist": "Paradise Chronicle",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Self_Portrait_by_Piet_Mondrian.jpg"
+  },
+  "people-delacroix-eugene": {
+    "name": "ウジェーヌ・ドラクロワ（ナダール撮影）",
+    "artist": "Nadar",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Nadar_1820-1910_portraits_Eug%C3%A8ne_Delacroix_restored.jpg"
+  },
+  "people-galton-francis": {
+    "name": "フランシス・ゴルトンの肖像（オクタヴィアス・オークリー）",
+    "artist": "Octavius Oakley",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Sir_Francis_Galton_by_Octavius_Oakley.jpg"
+  },
+  "people-paxton-joseph": {
+    "name": "ジョゼフ・パクストンの肖像（オクテイヴィアス・オークリー）",
+    "artist": "Octavius Oakley (1800-1867)",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Joseph_Paxton_by_Octavius_Oakley,_c1850.jpg"
+  },
+  "people-babbage-charles": {
+    "name": "チャールズ・バベッジの写真（アントワーヌ・クローデ）",
+    "artist": "Antoine Claudet",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Charles_Babbage_by_Antoine_Claudet_c1847-51-crop.jpg"
+  },
+  "people-palladio-andrea": {
+    "name": "アンドレア・パラーディオの肖像（ベルナール・ピカール）",
+    "artist": "Bernard Picart",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_Andrea_Palladio_MET_DP829039.jpg"
+  },
+  "people-taut-bruno": {
+    "name": "ブルーノ・タウト（撮影者不明）",
+    "artist": "Anonymous photographer, not identified anywhere",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:WP_Bruno_Taut.jpg"
+  },
+  "people-pearson-karl": {
+    "name": "カール・ピアソンの写真（1910年、撮影者不明）",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Karl_Pearson,_1910_(cropped).jpg"
+  },
+  "people-de-moivre-abraham": {
+    "name": "ド・モアブルの肖像（ジョゼフ・ハイモア）",
+    "artist": "Joseph Highmore",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Abraham_de_Moivre_by_Joseph_Highmore.jpg"
+  },
+  "people-shannon-claude": {
+    "name": "若いころのクロード・シャノン（1930年ごろ、撮影者不明）",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Claude_Shannon_c1930.png"
+  },
+  "people-cervantes-miguel": {
+    "name": "セルバンテスとされる肖像（伝フアン・デ・ハウレギ）",
+    "artist": "Attributed to Juan de Jáuregui",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Cervantes_J%C3%A1uregui.jpg"
+  },
+  "people-tolstoy-leo": {
+    "name": "トルストイの写真（プロクジン＝ゴルスキー、1908年）",
+    "artist": "Sergei Prokudin-Gorskii",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:L.N.Tolstoy_Prokudin-Gorsky.jpg"
+  },
+  "people-dostoevsky-fyodor": {
+    "name": "ドストエフスキーの肖像（ペロフ、1872年）",
+    "artist": "Vasily Perov",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg"
+  },
+  "people-mori-ogai": {
+    "name": "森鷗外の肖像写真",
+    "artist": "不明",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Ougai_Mori_October_22,_1911.jpg"
+  },
+  "people-mozart-wolfgang": {
+    "name": "モーツァルトの肖像（バルバラ・クラフト）",
+    "artist": "Barbara Krafft",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Wolfgang-amadeus-mozart_1.jpg"
+  },
+  "people-haydn-joseph": {
+    "name": "ハイドンの肖像（トーマス・ハーディ、1791年）",
+    "artist": "Thomas Hardy",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Joseph_Haydn.jpg"
+  },
+  "people-mendelssohn-felix": {
+    "name": "メンデルスゾーンの肖像（ジェームズ・ウォレン・チャイルド）",
+    "artist": "James Warren Childe",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Mendelssohn_Bartholdy.jpg"
+  },
+  "people-broca-paul": {
+    "name": "ポール・ブローカ（ピエール・プティ撮影）",
+    "artist": "Pierre Petit",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Paul_Broca.jpg"
+  },
+  "people-mead-george": {
+    "name": "ジョージ・ハーバート・ミード（撮影者不明）",
+    "artist": "不明",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:George_Herbert_Mead.jpg"
+  },
+  "people-piaget-jean": {
+    "name": "ジャン・ピアジェと妻ヴァランティーヌ（1932年、撮影者不明）",
+    "artist": "unknown (upload MHM-com 15:54, 6 January 2008 (UTC)) ; cropped by Ravit",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Valentine_et_Jean_Piaget_en_1932_-_cropped.jpg"
+  },
+  "people-confucius": {
+    "name": "孔子像（呉道子に基づく拓本）",
+    "artist": "Wu Daozi, 685-758, Tang Dynasty.",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Confucius_Tang_Dynasty.jpg"
+  },
+  "people-hume-david": {
+    "name": "デイヴィッド・ヒューム（アラン・ラムジー）",
+    "artist": "Allan Ramsay",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Allan_Ramsay_-_David_Hume,_1711_-_1776._Historian_and_philosopher_-_Google_Art_Project.jpg"
+  },
+  "people-luther-martin": {
+    "name": "マルティン・ルター（ルーカス・クラナッハ）",
+    "artist": "Lucas Cranach the Elder",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Lucas_Cranach_d.%C3%84._-_Martin_Luther,_1528_(Veste_Coburg).jpg"
+  },
+  "people-buddha": {
+    "name": "ガンダーラの仏坐像（2〜3世紀、東京国立博物館）",
+    "artist": "Daderot",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Seated_Buddha,_Gandhara,_Pakistan,_Kushan_dynasty,_100s-200s_AD,_schist_-_Tokyo_National_Museum_-_Tokyo,_Japan_-_DSC08664.jpg"
+  },
+  "people-paul": {
+    "name": "使徒パウロ（レンブラント）",
+    "artist": "Rembrandt",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_Apostle_Paul_-_WGA19120.jpg"
+  },
+  "people-hubble-edwin": {
+    "name": "エドウィン・ハッブルの肖像写真（ヨハン・ハーゲマイヤー）",
+    "artist": "Johan Hagemeyer",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Studio_portrait_photograph_of_Edwin_Powell_Hubble_(cropped).JPG"
+  },
+  "people-bessel-friedrich": {
+    "name": "ベッセルの肖像（クリスチャン・アルブレヒト・イェンセン、1839年）",
+    "artist": "Christian Albrecht Jensen",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Friedrich_Wilhelm_Bessel_(1839_painting).jpg"
+  },
+  "people-schwarzschild-karl": {
+    "name": "カール・シュバルツシルトの肖像写真（撮影者不明）",
+    "artist": "Not mentioned",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Karl_schwarzschild.portrait.jpg"
+  },
+  "people-koppen-wladimir": {
+    "name": "ヴラジーミル・ケッペンの肖像写真（撮影者不明）",
+    "artist": "不明",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Wladimir_Peter_K%C3%B6ppen.jpg"
+  },
+  "people-tyndall-john": {
+    "name": "ジョン・ティンダルの肖像写真（撮影者不明）",
+    "artist": "Tucker Collection",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:John_Tyndall_portrait_mid_career.jpg"
+  },
+  "people-arrhenius-svante": {
+    "name": "スヴァンテ・アレニウスの肖像（ヴィルヘルム・エンゲルマン社刊の写真版）",
+    "artist": "Verlag von Wilhelm Engelmann Leipzig - Photogravure Meisenbach Riffarth & Co. Leipzig.",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Svante_Arrhenius_01.jpg"
+  },
+  "people-hutton-james": {
+    "name": "ジェームズ・ハットンの肖像（ヘンリー・レイバーン）",
+    "artist": "Henry Raeburn",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Sir_Henry_Raeburn_-_James_Hutton,_1726_-_1797._Geologist_-_Google_Art_Project.jpg"
+  },
+  "people-lemaitre-georges": {
+    "name": "ジョルジュ・ルメートルの肖像写真（撮影者不明）",
+    "artist": "unknown photographer, probably a CalTech employee. Cropped by Artistosteles",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Lemaitre.jpg"
   }
 }

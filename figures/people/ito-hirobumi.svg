@@ -1,0 +1,25 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<rect x="12" y="10" width="336" height="26" rx="8" class="tint"/>
+<text x="180" y="28" class="t-xs ink mid">1882年 ヨーロッパで憲法を調べ、ドイツを手本に</text>
+<rect x="130" y="50" width="100" height="38" rx="10" class="fl"/>
+<text x="180" y="67" class="t-m on mid">天皇</text>
+<text x="180" y="82" class="t-xs on mid">主権者</text>
+<text x="240" y="72" class="t-xs fl" font-weight="700">1889年 憲法発布</text>
+<path d="M180 88 V104 M66 104 H294 M66 104 V120 M180 104 V120 M294 104 V120" class="st" stroke-width="1.5"/>
+<rect x="12" y="120" width="108" height="58" rx="8" class="tint st-f" stroke-width="1.5"/>
+<text x="66.0" y="147.0" class="t-m ink mid" font-weight="700">内閣</text>
+<text x="66.0" y="162.0" class="t-xs soft mid">総理大臣（1885〜）</text>
+<rect x="126" y="120" width="108" height="58" rx="8" class="tint st-f" stroke-width="1.5"/>
+<text x="180.0" y="147.0" class="t-m ink mid" font-weight="700">帝国議会</text>
+<text x="180.0" y="162.0" class="t-xs soft mid">貴族院・衆議院</text>
+<rect x="240" y="120" width="108" height="58" rx="8" class="tint st-f" stroke-width="1.5"/>
+<text x="294.0" y="147.0" class="t-m ink mid" font-weight="700">裁判所</text>
+<text x="294.0" y="162.0" class="t-xs soft mid">法にもとづく裁き</text>
+<rect x="126" y="236" width="108" height="34" rx="10" class="paper st" stroke-width="1.5"/>
+<text x="180" y="258" class="t-m ink mid">国民</text>
+<path d="M180 236 V184" class="st-f" stroke-width="2.5" marker-end="url(#a-japan)"/>
+<text x="190" y="206" class="t-xs fl">衆議院の選挙（1890年〜）</text>
+<text x="190" y="222" class="t-xs soft">投票できたのは一部の男性</text>
+<text x="66" y="200" class="t-xs ink mid">初代の総理大臣</text>
+<text x="66" y="214" class="t-xs ink mid" font-weight="700">＝伊藤博文</text>
+</svg>

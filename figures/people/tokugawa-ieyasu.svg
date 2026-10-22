@@ -1,0 +1,39 @@
+<svg viewBox="0 0 360 286" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 12 H108 L120 34 L108 56 H12 L24 34 Z" class="tint st-f" stroke-width="1.5"/>
+<text x="68" y="30" class="t-s fl mid" font-weight="700">1600年</text>
+<text x="68" y="47" class="t-xs ink mid">関ヶ原の戦い</text>
+<path d="M126 12 H222 L234 34 L222 56 H126 L138 34 Z" class="tint st-f" stroke-width="1.5"/>
+<text x="182" y="30" class="t-s fl mid" font-weight="700">1603年</text>
+<text x="182" y="47" class="t-xs ink mid">江戸幕府を開く</text>
+<path d="M240 12 H336 L348 34 L336 56 H240 L252 34 Z" class="fl" stroke-width="1.5"/>
+<text x="296" y="30" class="t-s on mid" font-weight="700">1615年</text>
+<text x="296" y="47" class="t-xs on mid">豊臣氏を滅ぼす</text>
+<circle cx="130" cy="182" r="98" class="st-soft dash" stroke-width="1.5"/>
+<circle cx="130" cy="182" r="62" class="tint"/>
+<circle cx="174" cy="182" r="5" class="fl"/>
+<circle cx="152" cy="220" r="5" class="fl"/>
+<circle cx="108" cy="220" r="5" class="fl"/>
+<circle cx="86" cy="182" r="5" class="fl"/>
+<circle cx="108" cy="144" r="5" class="fl"/>
+<circle cx="152" cy="144" r="5" class="fl"/>
+<circle cx="181" cy="246" r="5" class="paper st-soft" stroke-width="1.5"/>
+<circle cx="128" cy="264" r="5" class="paper st-soft" stroke-width="1.5"/>
+<circle cx="76" cy="243" r="5" class="paper st-soft" stroke-width="1.5"/>
+<circle cx="49" cy="194" r="5" class="paper st-soft" stroke-width="1.5"/>
+<circle cx="60" cy="139" r="5" class="paper st-soft" stroke-width="1.5"/>
+<circle cx="104" cy="104" r="5" class="paper st-soft" stroke-width="1.5"/>
+<circle cx="160" cy="106" r="5" class="paper st-soft" stroke-width="1.5"/>
+<circle cx="202" cy="143" r="5" class="paper st-soft" stroke-width="1.5"/>
+<circle cx="210" cy="198" r="5" class="paper st-soft" stroke-width="1.5"/>
+<circle cx="130" cy="182" r="26" class="fl"/>
+<text x="130" y="180" class="t-m on mid">江戸</text>
+<text x="130" y="196" class="t-xs on mid">将軍</text>
+<circle cx="240" cy="107" r="5" class="fl"/><circle cx="240" cy="153" r="5" class="fl"/><circle cx="240" cy="199" r="5" class="paper st-soft" stroke-width="1.5"/>
+<text x="250" y="112" class="t-s ink" font-weight="700">親藩</text>
+<text x="250" y="128" class="t-xs soft">徳川の一族</text>
+<text x="250" y="158" class="t-s ink" font-weight="700">譜代</text>
+<text x="250" y="174" class="t-xs soft">古くからの家来</text>
+<text x="250" y="204" class="t-s ink" font-weight="700">外様</text>
+<text x="250" y="220" class="t-xs soft">関ヶ原前後に従う</text>
+<text x="250" y="236" class="t-xs soft">江戸から遠くに置く</text>
+</svg>

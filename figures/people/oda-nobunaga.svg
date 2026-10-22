@@ -1,0 +1,35 @@
+<svg viewBox="0 0 360 292" xmlns="http://www.w3.org/2000/svg">
+<text x="12" y="18" class="t-xs soft">勢力の広がり（イメージ）</text>
+<path d="M30 160 V150 H139 V112 H207 V84 H235 V66 H330 V160 Z" class="tint"/>
+<path d="M30 150 H139 V112 H207 V84 H235 V66 H330" class="st-f" stroke-width="3"/>
+<path d="M330 66 V158" class="st-f dash" stroke-width="2"/>
+<path d="M30 160 H344" class="st" stroke-width="1.5"/>
+<text x="34" y="144" class="t-xs ink">1560 桶狭間</text>
+<text x="143.0909090909091" y="106" class="t-xs ink">1568 京都へ</text>
+<text x="211.27272727272728" y="102" class="t-xs ink">1573 室町幕府を</text>
+<text x="211.27272727272728" y="116" class="t-xs ink">終わらせる</text>
+<text x="238.54545454545453" y="60" class="t-xs ink">1575 長篠</text>
+<text x="326" y="40" class="t-xs fl end" font-weight="700">1582 本能寺の変</text>
+<rect x="12" y="180" width="104" height="106" rx="10" class="paper st-soft" stroke-width="1.5"/>
+<rect x="128" y="180" width="104" height="106" rx="10" class="paper st-soft" stroke-width="1.5"/>
+<rect x="244" y="180" width="104" height="106" rx="10" class="paper st-soft" stroke-width="1.5"/>
+<rect x="30" y="206" width="64" height="6" rx="2" class="ink"/>
+<path d="M30 209 L22 224 H34 L40 212 Z" class="ink"/>
+<path d="M150 206 L180 192 L210 206 Z" class="fl"/>
+<rect x="154" y="206" width="52" height="20" class="paper st" stroke-width="1.5"/>
+<circle cx="170" cy="216" r="4" class="st-f" stroke-width="1.5"/><circle cx="190" cy="216" r="4" class="st-f" stroke-width="1.5"/>
+<path d="M270 230 L274 220 H318 L322 230 Z" class="st-soft" stroke-width="1.5"/>
+<rect x="282" y="208" width="28" height="12" class="paper st" stroke-width="1.5"/>
+<path d="M276 208 L296 198 L316 208 Z" class="ink"/>
+<rect x="288" y="192" width="16" height="6" class="paper st" stroke-width="1"/>
+<path d="M284 192 L296 186 L308 192 Z" class="ink"/>
+<text x="64" y="248" class="t-m ink mid">鉄砲</text>
+<text x="64" y="264" class="t-xs soft mid">大量にそろえ</text>
+<text x="64" y="278" class="t-xs soft mid">戦い方を変える</text>
+<text x="180" y="248" class="t-m ink mid">楽市・楽座</text>
+<text x="180" y="264" class="t-xs soft mid">商売の独占をなくし</text>
+<text x="180" y="278" class="t-xs soft mid">自由に取引させる</text>
+<text x="296" y="248" class="t-m ink mid">安土城</text>
+<text x="296" y="264" class="t-xs soft mid">天守のある城と</text>
+<text x="296" y="278" class="t-xs soft mid">城下町をつくる</text>
+</svg>

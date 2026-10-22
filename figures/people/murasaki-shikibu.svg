@@ -1,0 +1,37 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="14" width="90" height="32" rx="8" class="paper st-soft" stroke-width="1.5"/>
+<text x="65.0" y="35.0" class="t-s ink mid" font-weight="700">藤原道隆</text>
+<rect x="250" y="14" width="90" height="32" rx="8" class="paper st-soft" stroke-width="1.5"/>
+<text x="295.0" y="35.0" class="t-s ink mid" font-weight="700">藤原道長</text>
+<path d="M110 30 H250" class="st-soft dash" stroke-width="1"/>
+<text x="180" y="25" class="t-xs soft mid">兄弟</text>
+<path d="M65 46 V74 M295 46 V74" class="st-soft" stroke-width="1.5"/>
+<text x="72" y="64" class="t-xs soft">娘</text>
+<text x="302" y="64" class="t-xs soft">娘</text>
+<rect x="20" y="74" width="90" height="34" rx="8" class="tint st-f" stroke-width="1.5"/>
+<text x="65.0" y="96.0" class="t-s ink mid" font-weight="700">定子</text>
+<rect x="250" y="74" width="90" height="34" rx="8" class="tint st-f" stroke-width="1.5"/>
+<text x="295.0" y="96.0" class="t-s ink mid" font-weight="700">彰子</text>
+<rect x="130" y="74" width="100" height="34" rx="8" class="paper st" stroke-width="1.5"/>
+<text x="180.0" y="96.0" class="t-s ink mid" font-weight="700">一条天皇</text>
+<path d="M110 91 H130 M230 91 H250" class="st" stroke-width="1.5"/>
+<text x="180" y="126" class="t-xs soft mid">同じ天皇の2人のきさき</text>
+<path d="M65 108 V138" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+<path d="M295 108 V138" class="st-f dash" stroke-width="1.5" marker-end="url(#a-japan)"/>
+<text x="72" y="128" class="t-xs soft">仕える</text>
+<text x="302" y="128" class="t-xs fl">仕える</text>
+<rect x="14" y="140" width="102" height="42" rx="8" class="paper st-soft" stroke-width="1.5"/>
+<text x="65.0" y="159.0" class="t-s ink mid" font-weight="700">清少納言</text>
+<text x="65.0" y="174.0" class="t-xs soft mid">993年ごろ〜</text>
+<rect x="240" y="140" width="110" height="42" rx="8" class="fl" stroke-width="1.5"/>
+<text x="295.0" y="159.0" class="t-m on mid" font-weight="700">紫式部</text>
+<text x="295.0" y="174.0" class="t-xs on mid">1006年ごろ〜</text>
+<path d="M65 182 V200" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+<path d="M295 182 V200" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+<text x="65" y="222" class="t-m ink mid">『枕草子』</text>
+<text x="65" y="240" class="t-xs soft mid">随筆</text>
+<text x="295" y="222" class="t-m fl mid">『源氏物語』</text>
+<text x="295" y="240" class="t-xs ink mid">『紫式部日記』</text>
+<rect x="12" y="252" width="336" height="24" rx="8" class="tint"/>
+<text x="180" y="268" class="t-xs fl mid" font-weight="700">どちらも、かな文字で書かれた宮廷の女性の文学</text>
+</svg>

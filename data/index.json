@@ -187,5 +187,9 @@
       "id": "culture",
       "name": "文化と芸術"
     }
+  ],
+  "people": [
+    "japan",
+    "food"
   ]
 }

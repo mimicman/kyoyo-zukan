@@ -1,0 +1,25 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0 H220 C205 14 192 30 186 48 C182 70 192 92 196 112 C200 130 192 146 178 156 C168 148 160 130 156 112 C150 92 140 82 120 84 C90 88 50 104 0 118 Z" class="st-soft" stroke-width="1.5"/>
+<text x="20" y="40" class="t-m soft">元（モンゴル）</text>
+<text x="176" y="96" class="t-xs soft mid">高麗</text>
+<ellipse cx="214" cy="180" rx="5" ry="11" class="tint st-f" stroke-width="1.5"/>
+<circle cx="238" cy="206" r="5" class="tint st-f" stroke-width="1.5"/>
+<path d="M250 220 C270 212 300 214 316 226 C334 240 336 266 330 280 H246 C240 260 240 236 250 220 Z" class="tint st-f" stroke-width="1.5"/>
+<path d="M322 204 C334 194 350 180 360 172 V214 C350 216 336 218 326 216 Z" class="tint st-f" stroke-width="1.5"/>
+<path d="M180 152 C196 166 204 172 210 176 M218 190 C226 198 232 202 234 204 M243 210 C252 214 258 216 262 218" class="st-f" stroke-width="2.5"/>
+<path d="M243 210 C252 214 258 216 264 218" class="st-f" stroke-width="2.5" marker-end="url(#a-japan)"/>
+<path d="M24 236 C100 250 180 246 260 226" class="st-soft dash" stroke-width="2" marker-end="url(#a-soft)"/>
+<text x="224" y="182" class="t-xs ink">対馬</text>
+<text x="232" y="220" class="t-xs ink end halo">壱岐</text>
+<path d="M256 228 C266 222 280 220 298 222" class="st" stroke-width="4" stroke-linecap="round"/>
+<circle cx="270" cy="222" r="4" class="ink"/>
+<text x="280" y="212" class="t-s ink" font-weight="700">博多</text>
+<text x="292" y="250" class="t-xs ink mid">石の防塁</text>
+<text x="292" y="264" class="t-xs soft mid">（1276年〜）</text>
+<text x="214" y="136" class="t-xs fl" font-weight="700">1274年・1281年</text>
+<text x="214" y="150" class="t-xs fl">朝鮮半島から</text>
+<text x="24" y="228" class="t-xs soft">1281年 中国南部からも</text>
+<rect x="236" y="12" width="112" height="44" rx="8" class="paper st-soft" stroke-width="1.5"/>
+<text x="292" y="30" class="t-s ink mid" font-weight="700">執権 北条時宗</text>
+<text x="292" y="47" class="t-xs soft mid">御家人に守らせる</text>
+</svg>

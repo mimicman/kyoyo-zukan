@@ -1,0 +1,30 @@
+<svg viewBox="0 0 360 296" xmlns="http://www.w3.org/2000/svg">
+<rect x="12" y="20" width="108" height="50" rx="8" class="paper st" stroke-width="1.5"/>
+<text x="66.0" y="43.0" class="t-m ink mid" font-weight="700">長州藩</text>
+<text x="66.0" y="58.0" class="t-xs soft mid">木戸孝允</text>
+<rect x="240" y="20" width="108" height="50" rx="8" class="paper st" stroke-width="1.5"/>
+<text x="294.0" y="43.0" class="t-m ink mid" font-weight="700">薩摩藩</text>
+<text x="294.0" y="58.0" class="t-xs soft mid">西郷隆盛</text>
+<path d="M120 45 H240" class="st-soft dash" stroke-width="1.5"/>
+<path d="M172 37 L188 53 M188 37 L172 53" class="st" stroke-width="2.5"/>
+<text x="180" y="30" class="t-xs soft mid">対立していた</text>
+<circle cx="180" cy="112" r="24" class="fl"/>
+<text x="180" y="117" class="t-m on mid">龍馬</text>
+<text x="180" y="152" class="t-xs ink mid" font-weight="700">亀山社中（長崎）</text>
+<path d="M158 102 C130 92 100 84 74 74" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+<path d="M202 102 C230 92 260 84 286 74" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+<text x="12" y="100" class="t-xs ink">武器・船を</text>
+<text x="12" y="114" class="t-xs ink">長州へ</text>
+<text x="348" y="100" class="t-xs ink end">米などを</text>
+<text x="348" y="114" class="t-xs ink end">薩摩へ</text>
+<path d="M180 160 V180" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+<rect x="80" y="184" width="200" height="34" rx="10" class="tint st-f" stroke-width="1.5"/>
+<text x="180" y="206" class="t-m fl mid">1866年 薩長同盟</text>
+<path d="M180 218 V236" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+<rect x="40" y="240" width="120" height="32" rx="8" class="paper st-soft" stroke-width="1.5"/>
+<text x="100" y="261" class="t-s ink mid">倒幕の動きへ</text>
+<path d="M162 256 H186" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+<rect x="190" y="240" width="130" height="32" rx="8" class="fl"/>
+<text x="255" y="261" class="t-s on mid" font-weight="700">1867年 大政奉還</text>
+<text x="180" y="288" class="t-xs soft mid">同じ1867年、龍馬は京都で暗殺された</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<text x="30" y="38" class="t-xs ink">北朝（京都）</text>
+<text x="30" y="110" class="t-xs ink">南朝（吉野）</text>
+<path d="M30 50 H184 C198 50 200 72 214 72 H340" class="st-f" stroke-width="4" stroke-linecap="round"/>
+<path d="M30 94 H184 C198 94 200 72 214 72" class="st" stroke-width="4" stroke-linecap="round"/>
+<text x="106" y="76" class="t-xs soft mid">約60年、2つの朝廷</text>
+<circle cx="214" cy="72" r="7" class="fl"/>
+<text x="224" y="100" class="t-s fl" font-weight="700">1392年 一つに</text>
+<text x="286" y="62" class="t-xs fl mid">義満のもとで</text>
+<path d="M12 124 H348" class="st-line" stroke-width="1"/>
+<text x="94" y="148" class="t-s ink mid" font-weight="700">日明貿易 1404年〜</text>
+<rect x="44" y="162" width="48" height="58" rx="3" class="paper st" stroke-width="1.5"/>
+<rect x="98" y="162" width="48" height="58" rx="3" class="paper st" stroke-width="1.5"/>
+<circle cx="95" cy="191" r="14" class="st-f" stroke-width="2.5"/>
+<text x="68" y="210" class="t-xs soft mid">明</text>
+<text x="122" y="210" class="t-xs soft mid">日本</text>
+<text x="94" y="240" class="t-xs ink mid">勘合：割り印を合わせて</text>
+<text x="94" y="256" class="t-xs ink mid">正式な船と確かめる</text>
+<text x="266" y="148" class="t-s ink mid" font-weight="700">金閣</text>
+<path d="M214 252 H318" class="st-soft" stroke-width="3"/>
+<rect x="228" y="224" width="76" height="26" class="paper st" stroke-width="1.5"/>
+<path d="M218 224 L236 214 H296 L314 224 Z" class="ink"/>
+<rect x="236" y="196" width="60" height="18" class="fl"/>
+<path d="M226 196 L242 188 H290 L306 196 Z" class="ink"/>
+<rect x="250" y="174" width="32" height="14" class="fl"/>
+<path d="M240 174 L258 164 H274 L292 174 Z" class="ink"/>
+<circle cx="266" cy="160" r="3" class="fl"/>
+<text x="266" y="270" class="t-xs ink mid">1397年 北山に造り始める</text>
+</svg>

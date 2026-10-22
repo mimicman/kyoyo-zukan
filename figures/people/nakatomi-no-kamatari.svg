@@ -1,0 +1,26 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="16" width="130" height="40" rx="10" class="fl"/>
+<text x="85" y="41" class="t-m on mid">中臣鎌足</text>
+<rect x="210" y="16" width="130" height="40" rx="10" class="tint st-f" stroke-width="1.5"/>
+<text x="275" y="34" class="t-s ink mid" font-weight="700">中大兄皇子</text>
+<text x="275" y="49" class="t-xs soft mid">のちの天智天皇</text>
+<path d="M150 36 H210" class="st-f" stroke-width="3"/>
+<text x="180" y="30" class="t-xs fl mid" font-weight="700">645年</text>
+<text x="180" y="50" class="t-xs soft mid">協力</text>
+<text x="275" y="76" class="t-xs ink mid">蘇我入鹿を倒し、大化の改新へ</text>
+<path d="M85 56 V106" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+<text x="96" y="98" class="t-xs fl">669年 「藤原」の姓を授かる</text>
+<rect x="20" y="110" width="130" height="34" rx="8" class="tint st-f" stroke-width="1.5"/>
+<text x="85" y="132" class="t-s ink mid">藤原氏のはじまり</text>
+<path d="M85 144 V166" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+<rect x="20" y="170" width="130" height="34" rx="8" class="tint st-f" stroke-width="1.5"/>
+<text x="85" y="192" class="t-s ink mid">藤原不比等（子）</text>
+<text x="162" y="184" class="t-xs ink">大宝律令づくりに加わる</text>
+<text x="162" y="200" class="t-xs ink">娘を天皇のきさきにする</text>
+<path d="M85 204 V232" class="st-f dash" stroke-width="2" marker-end="url(#a-japan)"/>
+<text x="96" y="224" class="t-xs soft">子孫が力を広げる（約300年）</text>
+<rect x="20" y="236" width="130" height="34" rx="8" class="fl"/>
+<text x="85" y="258" class="t-s on mid" font-weight="700">藤原道長・頼通</text>
+<text x="162" y="250" class="t-xs ink">11世紀 摂関政治の全盛</text>
+<text x="162" y="266" class="t-xs soft">天皇に代わって政治を動かす</text>
+</svg>

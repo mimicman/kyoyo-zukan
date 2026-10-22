@@ -1,0 +1,27 @@
+<svg viewBox="0 0 360 296" xmlns="http://www.w3.org/2000/svg">
+<path d="M72 60 H348" class="st-line" stroke-width="1"/>
+<path d="M72 120 H348" class="st-line" stroke-width="1"/>
+<path d="M72 180 H348" class="st-line" stroke-width="1"/>
+<text x="12" y="64" class="t-xs soft">倒幕の側</text>
+<text x="12" y="124" class="t-xs soft">新政府</text>
+<text x="12" y="184" class="t-xs soft">政府と対立</text>
+<path d="M100 60 H160 C175 60 175 120 190 120 H250 C265 120 265 180 280 180 H336" class="st-f" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="120" cy="60" r="5" class="fl"/>
+<circle cx="160" cy="60" r="5" class="fl"/>
+<circle cx="220" cy="120" r="5" class="fl"/>
+<circle cx="258" cy="150" r="5" class="fl"/>
+<circle cx="336" cy="180" r="5" class="fl"/>
+<text x="120" y="48" class="t-xs ink mid">1866 薩長同盟</text>
+<text x="168" y="48" class="t-xs ink" font-weight="700">1868 無血開城</text>
+<text x="220" y="108" class="t-xs ink mid">1871 廃藩置県</text>
+<text x="250" y="154" class="t-xs ink end">1873 政府を去る</text>
+<text x="336" y="202" class="t-xs fl end" font-weight="700">1877 西南戦争</text>
+<path d="M12 216 H348" class="st-line" stroke-width="1"/>
+<text x="180" y="234" class="t-xs fl mid" font-weight="700">1868年 江戸城の明け渡しを話し合う</text>
+<rect x="12" y="242" width="140" height="32" rx="8" class="fl"/>
+<text x="82" y="263" class="t-s on mid">西郷（新政府軍）</text>
+<rect x="208" y="242" width="140" height="32" rx="8" class="paper st" stroke-width="1.5"/>
+<text x="278" y="263" class="t-s ink mid">勝海舟（幕府）</text>
+<path d="M156 258 H204" class="st" stroke-width="2" marker-start="url(#a-ink)" marker-end="url(#a-ink)"/>
+<text x="180" y="290" class="t-xs soft mid">戦わずに開城し、江戸の町は戦火を免れた</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 50 C30 36 64 38 80 52 C88 66 76 84 60 90 C40 96 20 86 14 70 Z" class="st-soft" stroke-width="1.5"/>
+<text x="47" y="70" class="t-xs soft mid">ヨーロッパ</text>
+<path d="M88 40 C124 26 180 30 198 50 C204 70 194 96 178 110 C150 122 110 118 94 100 C86 80 86 60 88 40 Z" class="st-soft" stroke-width="1.5"/>
+<text x="140" y="76" class="t-xs soft mid">アジア</text>
+<path d="M214 104 C222 94 226 82 228 70" class="st-f" stroke-width="6" stroke-linecap="round"/>
+<text x="240" y="132" class="t-s ink" font-weight="700">日本</text>
+<path d="M272 30 C300 22 340 26 350 44 C354 70 340 96 326 110 C318 124 320 140 312 150 C300 146 296 128 290 112 C276 92 266 60 272 30 Z" class="st-soft" stroke-width="1.5"/>
+<text x="314" y="70" class="t-xs soft mid">アメリカ</text>
+<path d="M232 82 C246 68 258 62 276 60" class="st-f" stroke-width="2.5" marker-end="url(#a-japan)"/>
+<text x="250" y="48" class="t-xs fl mid halo" font-weight="700">1860 咸臨丸</text>
+<path d="M232 98 C262 114 300 114 340 92" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+<text x="290" y="128" class="t-xs fl mid halo" font-weight="700">1867</text>
+<path d="M212 110 C196 150 120 152 72 100" class="st-f" stroke-width="2.5" marker-end="url(#a-japan)"/>
+<text x="140" y="160" class="t-xs fl mid" font-weight="700">1862 ヨーロッパへ</text>
+<text x="12" y="184" class="t-xs soft">見聞したことを、本と学校で伝える</text>
+<rect x="12" y="192" width="100" height="72" rx="8" class="paper st-f" stroke-width="1.5"/>
+<text x="62.0" y="226.0" class="t-m ink mid" font-weight="700">西洋事情</text>
+<text x="62.0" y="241.0" class="t-xs soft mid">欧米の仕組み</text>
+<rect x="130" y="192" width="100" height="72" rx="8" class="paper st-f" stroke-width="1.5"/>
+<text x="180.0" y="226.0" class="t-m ink mid" font-weight="700">慶應義塾</text>
+<text x="180.0" y="241.0" class="t-xs soft mid">1868年に命名</text>
+<rect x="248" y="192" width="100" height="72" rx="8" class="fl" stroke-width="1.5"/>
+<text x="298.0" y="226.0" class="t-m on mid" font-weight="700">学問のすゝめ</text>
+<text x="298.0" y="241.0" class="t-xs on mid">学んで自立を</text>
+<text x="62" y="208" class="t-xs fl mid">1866年</text>
+<text x="298" y="208" class="t-xs on mid">1872年〜</text>
+<path d="M114 228 H128" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+<path d="M232 228 H246" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+<text x="180" y="282" class="t-xs soft mid">一万円札の肖像（1984〜2024年発行）</text>
+</svg>

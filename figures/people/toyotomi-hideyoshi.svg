@@ -1,0 +1,27 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<rect x="60" y="12" width="240" height="44" rx="10" class="paper st-soft" stroke-width="1.5"/>
+<text x="180" y="30" class="t-xs soft mid">それまで</text>
+<text x="180" y="48" class="t-s ink mid">農民も武器を持ち、戦にも出た</text>
+<path d="M130 56 L100 78" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+<path d="M230 56 L260 78" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+<rect x="12" y="80" width="164" height="70" rx="10" class="tint st-f" stroke-width="1.5"/>
+<text x="94" y="102" class="t-m fl mid">太閤検地</text>
+<text x="94" y="122" class="t-xs ink mid">田畑を同じものさしで測り</text>
+<text x="94" y="138" class="t-xs ink mid">石高と耕す人を記録</text>
+<rect x="184" y="80" width="164" height="70" rx="10" class="tint st-f" stroke-width="1.5"/>
+<text x="266" y="102" class="t-m fl mid">刀狩（1588年）</text>
+<text x="266" y="122" class="t-xs ink mid">農民から刀や鉄砲を</text>
+<text x="266" y="138" class="t-xs ink mid">取り上げる</text>
+<text x="180" y="168" class="t-xs fl mid" font-weight="700">身分を分ける（兵農分離）</text>
+<path d="M94 150 V176" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+<path d="M266 150 V176" class="st-f" stroke-width="2" marker-end="url(#a-japan)"/>
+<rect x="12" y="180" width="164" height="64" rx="10" class="fl"/>
+<text x="94" y="204" class="t-m on mid">武士</text>
+<text x="94" y="222" class="t-xs on mid">城下町に住み</text>
+<text x="94" y="236" class="t-xs on mid">戦と政治を担う</text>
+<rect x="184" y="180" width="164" height="64" rx="10" class="paper st" stroke-width="1.5"/>
+<text x="266" y="204" class="t-m ink mid">農民</text>
+<text x="266" y="222" class="t-xs ink mid">村で田畑を耕し</text>
+<text x="266" y="236" class="t-xs ink mid">年貢を納める</text>
+<text x="180" y="268" class="t-xs soft mid">石高は江戸時代の年貢・大名の格の基準に</text>
+</svg>

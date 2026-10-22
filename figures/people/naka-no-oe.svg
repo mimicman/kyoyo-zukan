@@ -1,0 +1,27 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0 H200 V12 C188 20 176 30 168 42 C160 56 162 72 166 90 C170 110 166 130 156 146 C148 140 140 126 136 110 C132 96 124 88 110 90 C80 96 40 110 0 120 Z" class="st-soft" stroke-width="1.5"/>
+<text x="40" y="46" class="t-l soft">唐</text>
+<text x="174" y="70" class="t-xs soft">朝鮮半島</text>
+<path d="M190 182 C208 178 222 192 220 212 C218 236 206 250 192 246 C178 240 174 222 178 204 C180 192 184 184 190 182 Z" class="tint st-f" stroke-width="1.5"/>
+<path d="M226 178 C246 168 266 160 286 150 C306 140 322 120 336 96 C344 102 346 112 340 122 C328 146 308 164 288 176 C268 188 246 194 230 192 Z" class="tint st-f" stroke-width="1.5"/>
+<path d="M278 166 C240 118 190 96 152 108" class="st-f" stroke-width="2.5" marker-end="url(#a-japan)"/>
+<text x="222" y="118" class="t-xs fl mid halo">大軍を送る</text>
+<path d="M146 124 C160 160 178 178 192 188" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+<text x="162" y="166" class="t-xs soft end">敗れて退く</text>
+<circle cx="284" cy="172" r="9" class="fl"/><text x="284" y="176" class="t-xs on mid" font-weight="700">1</text>
+<circle cx="140" cy="112" r="9" class="fl"/><text x="140" y="116" class="t-xs on mid" font-weight="700">2</text>
+<circle cx="200" cy="198" r="9" class="fl"/><text x="200" y="202" class="t-xs on mid" font-weight="700">3</text>
+<circle cx="308" cy="148" r="9" class="fl"/><text x="308" y="152" class="t-xs on mid" font-weight="700">4</text>
+<text x="284" y="198" class="t-xs ink mid halo">飛鳥</text>
+<text x="126" y="104" class="t-xs ink end">白村江</text>
+<text x="200" y="264" class="t-xs ink mid">大宰府</text>
+<text x="322" y="166" class="t-xs ink halo">大津</text>
+<circle cx="20" cy="196" r="7" class="fl"/><text x="20" y="200" class="t-xs on mid" font-weight="700">1</text>
+<text x="32" y="200" class="t-xs ink">645年 蘇我入鹿を倒す</text>
+<circle cx="20" cy="216" r="7" class="fl"/><text x="20" y="220" class="t-xs on mid" font-weight="700">2</text>
+<text x="32" y="220" class="t-xs ink">663年 白村江の戦いで敗れる</text>
+<circle cx="20" cy="236" r="7" class="fl"/><text x="20" y="240" class="t-xs on mid" font-weight="700">3</text>
+<text x="32" y="240" class="t-xs ink">九州に水城・山城を築く</text>
+<circle cx="20" cy="256" r="7" class="fl"/><text x="20" y="260" class="t-xs on mid" font-weight="700">4</text>
+<text x="32" y="260" class="t-xs ink">667年 大津へ。668年 即位</text>
+</svg>

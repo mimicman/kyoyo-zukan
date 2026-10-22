@@ -1,0 +1,54 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<text x="62" y="52" class="t-s soft mid">それまで</text>
+<rect x="14" y="62" width="96" height="110" rx="10" class="paper st-soft" stroke-width="1.5"/>
+<circle cx="38" cy="92" r="10" class="st-soft" stroke-width="1.5"/>
+<circle cx="62" cy="92" r="10" class="st-soft" stroke-width="1.5"/>
+<circle cx="86" cy="92" r="10" class="st-soft" stroke-width="1.5"/>
+<text x="62" y="128" class="t-xs ink mid">豪族の家柄で</text>
+<text x="62" y="144" class="t-xs ink mid">地位が決まる</text>
+<path d="M112 118 H128" class="st-f" stroke-width="2.5" marker-end="url(#a-japan)"/>
+<rect x="140" y="24" width="40" height="4" class="fl"/>
+<rect x="140" y="29" width="40" height="4" class="tint"/>
+<rect x="140" y="34" width="40" height="4" class="fl"/>
+<rect x="140" y="39" width="40" height="4" class="tint"/>
+<rect x="140" y="44" width="40" height="4" class="fl"/>
+<rect x="140" y="49" width="40" height="4" class="tint"/>
+<rect x="140" y="54" width="40" height="4" class="fl"/>
+<rect x="140" y="59" width="40" height="4" class="tint"/>
+<rect x="140" y="64" width="40" height="4" class="fl"/>
+<rect x="140" y="69" width="40" height="4" class="tint"/>
+<rect x="140" y="74" width="40" height="4" class="fl"/>
+<rect x="140" y="79" width="40" height="4" class="tint"/>
+<text x="194" y="46" class="t-m ink">冠位十二階</text>
+<text x="348" y="46" class="t-s fl end" font-weight="700">603年</text>
+<text x="194" y="66" class="t-xs soft">家柄でなく能力で位を与える</text>
+<rect x="140" y="104" width="40" height="52" rx="2" class="paper st" stroke-width="1.5"/>
+<path d="M146 110.0 H174" class="st-soft" stroke-width="0.8"/>
+<path d="M146 112.6 H174" class="st-soft" stroke-width="0.8"/>
+<path d="M146 115.2 H174" class="st-soft" stroke-width="0.8"/>
+<path d="M146 117.8 H174" class="st-soft" stroke-width="0.8"/>
+<path d="M146 120.4 H174" class="st-soft" stroke-width="0.8"/>
+<path d="M146 123.0 H174" class="st-soft" stroke-width="0.8"/>
+<path d="M146 125.6 H174" class="st-soft" stroke-width="0.8"/>
+<path d="M146 128.2 H174" class="st-soft" stroke-width="0.8"/>
+<path d="M146 130.8 H174" class="st-soft" stroke-width="0.8"/>
+<path d="M146 133.4 H174" class="st-soft" stroke-width="0.8"/>
+<path d="M146 136.0 H174" class="st-soft" stroke-width="0.8"/>
+<path d="M146 138.6 H174" class="st-soft" stroke-width="0.8"/>
+<path d="M146 141.2 H174" class="st-soft" stroke-width="0.8"/>
+<path d="M146 143.8 H174" class="st-soft" stroke-width="0.8"/>
+<path d="M146 146.4 H174" class="st-soft" stroke-width="0.8"/>
+<path d="M146 149.0 H174" class="st-soft" stroke-width="0.8"/>
+<path d="M146 151.6 H174" class="st-soft" stroke-width="0.8"/>
+<text x="194" y="126" class="t-m ink">十七条憲法</text>
+<text x="348" y="126" class="t-s fl end" font-weight="700">604年</text>
+<text x="194" y="146" class="t-xs soft">和を重んじ、仏教を敬う心がまえ</text>
+<path d="M136 206 H186 L176 218 H146 Z" class="fl"/>
+<path d="M160 180 V206" class="st" stroke-width="1.5"/>
+<path d="M161 182 L178 202 H161 Z" class="tint st-f" stroke-width="1.5"/>
+<text x="194" y="198" class="t-m ink">遣隋使</text>
+<text x="348" y="198" class="t-s fl end" font-weight="700">607年</text>
+<text x="194" y="218" class="t-xs soft">小野妹子を送り、中国に学ぶ</text>
+<rect x="12" y="240" width="336" height="30" rx="8" class="tint"/>
+<text x="180" y="260" class="t-s fl mid" font-weight="700">のちの大化の改新・律令の国へつながる</text>
+</svg>

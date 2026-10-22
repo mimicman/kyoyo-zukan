@@ -1,0 +1,25 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<rect x="110" y="14" width="140" height="44" rx="10" class="fl"/>
+<text x="180" y="34" class="t-m on mid">将軍 源頼朝</text>
+<text x="180" y="50" class="t-xs on mid">鎌倉に幕府</text>
+<rect x="110" y="148" width="140" height="38" rx="10" class="tint st-f" stroke-width="1.5"/>
+<text x="180" y="172" class="t-s ink mid" font-weight="700">御家人（家来の武士）</text>
+<path d="M112 46 C62 70 62 136 106 160" class="st-f" stroke-width="3" marker-end="url(#a-japan)"/>
+<path d="M254 162 C298 136 298 70 254 48" class="st" stroke-width="3" marker-end="url(#a-ink)"/>
+<text x="40" y="100" class="t-m fl mid">御恩</text>
+<text x="40" y="118" class="t-xs ink mid">土地を守り</text>
+<text x="40" y="134" class="t-xs ink mid">与える</text>
+<text x="322" y="100" class="t-m ink mid">奉公</text>
+<text x="322" y="118" class="t-xs ink mid">戦に出る</text>
+<text x="322" y="134" class="t-xs ink mid">京や鎌倉を</text>
+<text x="322" y="148" class="t-xs ink mid">警備する</text>
+<text x="180" y="104" class="t-s soft mid">主従の約束</text>
+<path d="M12 202 H348" class="st-line" stroke-width="1"/>
+<text x="180" y="220" class="t-xs fl mid" font-weight="700">1185年 朝廷に認めさせ、全国へ</text>
+<rect x="12" y="230" width="162" height="44" rx="10" class="paper st-f" stroke-width="1.5"/>
+<text x="93" y="249" class="t-m ink mid">守護</text>
+<text x="93" y="266" class="t-xs soft mid">国ごとに・軍事と警察</text>
+<rect x="186" y="230" width="162" height="44" rx="10" class="paper st-f" stroke-width="1.5"/>
+<text x="267" y="249" class="t-m ink mid">地頭</text>
+<text x="267" y="266" class="t-xs soft mid">荘園ごとに・年貢と土地</text>
+</svg>

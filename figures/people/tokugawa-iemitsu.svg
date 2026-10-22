@@ -1,0 +1,35 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<rect x="36" y="76" width="40" height="22" class="paper st" stroke-width="1.5"/><path d="M30 76 L56 58 L82 76 Z" class="ink"/>
+<rect x="284" y="76" width="40" height="22" class="paper st" stroke-width="1.5"/><path d="M278 76 L304 58 L330 76 Z" class="fl"/>
+<text x="56" y="116" class="t-s ink mid" font-weight="700">領地（藩）</text>
+<text x="304" y="116" class="t-s ink mid" font-weight="700">江戸</text>
+<text x="304" y="132" class="t-xs soft mid">妻子は江戸に住む</text>
+<path d="M90 62 C150 26 210 26 270 62" class="st-f" stroke-width="2.5" marker-end="url(#a-japan)"/>
+<circle cx="130" cy="42" r="3.5" class="paper st-f" stroke-width="1.5"/>
+<circle cx="180" cy="35" r="3.5" class="paper st-f" stroke-width="1.5"/>
+<circle cx="230" cy="42" r="3.5" class="paper st-f" stroke-width="1.5"/>
+<text x="180" y="22" class="t-xs fl mid" font-weight="700">1年おきに江戸へ</text>
+<path d="M270 96 C210 128 150 128 90 96" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+<text x="180" y="138" class="t-xs soft mid">領地へ戻る</text>
+<text x="180" y="160" class="t-s ink mid" font-weight="700">参勤交代（1635年〜）</text>
+<text x="180" y="176" class="t-xs soft mid">大名行列で街道と宿場町がにぎわった</text>
+<path d="M12 188 H348" class="st-line" stroke-width="1"/>
+<text x="12" y="202" class="t-xs soft">鎖国の体制が固まる</text>
+<path d="M24 228 H336" class="st-soft" stroke-width="2"/>
+<circle cx="48" cy="228" r="6" class="fl"/>
+<text x="48" y="216" class="t-xs fl mid" font-weight="700">1635</text>
+<text x="48" y="248" class="t-xs ink mid">日本人の</text>
+<text x="48" y="262" class="t-xs ink mid">海外渡航を禁止</text>
+<circle cx="136" cy="228" r="6" class="fl"/>
+<text x="136" y="216" class="t-xs fl mid" font-weight="700">1637</text>
+<text x="136" y="248" class="t-xs ink mid">島原・天草</text>
+<text x="136" y="262" class="t-xs ink mid">一揆が起きる</text>
+<circle cx="224" cy="228" r="6" class="fl"/>
+<text x="224" y="216" class="t-xs fl mid" font-weight="700">1639</text>
+<text x="224" y="248" class="t-xs ink mid">ポルトガル船</text>
+<text x="224" y="262" class="t-xs ink mid">の来航を禁止</text>
+<circle cx="312" cy="228" r="6" class="fl"/>
+<text x="312" y="216" class="t-xs fl mid" font-weight="700">1641</text>
+<text x="312" y="248" class="t-xs ink mid">オランダ商館</text>
+<text x="312" y="262" class="t-xs ink mid">を出島へ</text>
+</svg>

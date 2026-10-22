@@ -1,0 +1,35 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0 H230 V14 C215 22 200 34 185 46 C178 60 182 78 186 96 C190 116 184 136 172 150 C162 140 156 122 152 104 C150 92 142 84 128 86 C100 92 60 110 0 122 Z" class="st-soft" stroke-width="1.5"/>
+<text x="56" y="44" class="t-m ink">魏（中国）</text>
+<text x="56" y="62" class="t-xs soft">都は洛陽</text>
+<text x="196" y="92" class="t-xs soft">朝鮮半島</text>
+<path d="M196 182 C214 178 228 192 226 212 C224 236 212 250 198 246 C184 240 180 222 184 204 C186 192 190 184 196 182 Z" class="tint st-f" stroke-width="1.5"/>
+<path d="M232 178 C252 168 272 160 292 150 C312 140 328 120 342 96 C350 102 352 112 346 122 C334 146 314 164 294 176 C274 188 252 194 236 192 Z" class="tint st-f" stroke-width="1.5"/>
+<path d="M252 200 C264 196 282 196 292 202 C286 212 264 214 252 208 Z" class="tint st-f" stroke-width="1.5"/>
+<circle cx="196" cy="198" r="3" class="soft"/>
+<circle cx="212" cy="206" r="3" class="soft"/>
+<circle cx="200" cy="224" r="3" class="soft"/>
+<circle cx="214" cy="232" r="3" class="soft"/>
+<circle cx="240" cy="184" r="3" class="soft"/>
+<circle cx="256" cy="180" r="3" class="soft"/>
+<circle cx="272" cy="174" r="3" class="soft"/>
+<circle cx="288" cy="166" r="3" class="soft"/>
+<circle cx="304" cy="156" r="3" class="soft"/>
+<circle cx="318" cy="140" r="3" class="soft"/>
+<circle cx="264" cy="186" r="3" class="soft"/>
+<circle cx="270" cy="204" r="3" class="soft"/>
+<circle cx="204" cy="212" r="32" class="st-f dash" stroke-width="2"/>
+<circle cx="292" cy="162" r="24" class="st-f dash" stroke-width="2"/>
+<text x="204" y="266" class="t-s fl mid" font-weight="700">九州説</text>
+<text x="326" y="204" class="t-s fl mid" font-weight="700">近畿説</text>
+<text x="296" y="238" class="t-s ink mid" font-weight="700">邪馬台国はどこ？</text>
+<text x="296" y="254" class="t-xs soft mid">決着していない</text>
+<path d="M190 178 C172 148 140 108 106 78" class="st-f" stroke-width="2.5" marker-end="url(#a-japan)"/>
+<path d="M92 96 C116 138 146 172 176 192" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+<path d="M12 196 H34" class="st-f" stroke-width="2.5"/>
+<text x="40" y="200" class="t-xs ink">239年 女王が使いを送る</text>
+<path d="M12 218 H34" class="st-soft dash" stroke-width="1.5"/>
+<text x="40" y="222" class="t-xs ink">称号・銅鏡などを授かる</text>
+<circle cx="23" cy="242" r="3" class="soft"/>
+<text x="40" y="246" class="t-xs ink">倭の小さなクニ（約30）</text>
+</svg>
