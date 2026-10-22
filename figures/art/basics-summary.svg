@@ -1,0 +1,53 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 1枚の絵を、2つの道具（時代の地図・色の物差し）で読む -->
+  <!-- 中央：額に入った絵 -->
+  <rect x="134" y="44" width="92" height="112" rx="4" class="tint"/>
+  <rect x="134" y="44" width="92" height="112" rx="4" class="st" stroke-width="3"/>
+  <rect x="144" y="54" width="72" height="92" class="paper"/>
+  <circle cx="196" cy="74" r="9" class="fl"/>
+  <path d="M144 146 L164 110 L178 126 L194 100 L216 146Z" class="soft"/>
+  <text x="180" y="30" class="t-m mid ink" font-weight="700">1枚の絵</text>
+
+  <!-- 左：いつの絵か -->
+  <path d="M130 100 H96" class="st-f" stroke-width="2" marker-end="url(#a-art)"/>
+  <text x="62" y="30" class="t-s mid fl" font-weight="700">いつの絵か</text>
+  <text x="62" y="48" class="t-xs mid soft">時代の地図</text>
+  <path d="M22 70 C40 72 48 92 58 104 C70 118 84 130 100 138" class="st-f" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <g class="fl"><circle cx="22" cy="70" r="4"/><circle cx="58" cy="104" r="4"/><circle cx="100" cy="138" r="4"/></g>
+  <g class="t-xs ink">
+    <text x="30" y="66">本物らしく</text>
+    <text x="50" y="108" class="end">光へ</text>
+    <text x="92" y="146" class="end">形と色へ</text>
+  </g>
+  <text x="62" y="172" class="t-xs mid soft">15→20世紀</text>
+
+  <!-- 右：どんな色か -->
+  <path d="M230 100 H264" class="st-f" stroke-width="2" marker-end="url(#a-art)"/>
+  <text x="298" y="30" class="t-s mid fl" font-weight="700">どんな色か</text>
+  <text x="298" y="48" class="t-xs mid soft">色の物差し</text>
+  <g stroke-width="1.5" class="st-soft">
+    <path d="M298 100 L298 64 A36 36 0 0 1 329 82Z" class="fl"/>
+    <path d="M298 100 L329 82 A36 36 0 0 1 329 118Z" class="tint"/>
+    <path d="M298 100 L329 118 A36 36 0 0 1 298 136Z" class="soft"/>
+    <path d="M298 100 L298 136 A36 36 0 0 1 267 118Z" class="ink"/>
+    <path d="M298 100 L267 118 A36 36 0 0 1 267 82Z" class="paper"/>
+    <path d="M298 100 L267 82 A36 36 0 0 1 298 64Z" class="bgc"/>
+  </g>
+  <path d="M290 72 L306 128" class="st dash" stroke-width="1.5"/>
+  <g class="t-xs mid ink">
+    <text x="298" y="160">色相・明度・彩度</text>
+    <text x="298" y="176">向かい合う＝補色</text>
+  </g>
+
+  <!-- 下：この道具で次の章へ -->
+  <rect x="12" y="204" width="336" height="64" rx="12" class="bgc"/>
+  <text x="180" y="226" class="t-s mid ink" font-weight="700">2つの道具で、次の章の絵を読む</text>
+  <g class="t-xs mid">
+    <rect x="28" y="236" width="88" height="22" rx="11" class="tint"/>
+    <text x="72" y="251" class="ink">本物らしさ</text>
+    <rect x="136" y="236" width="88" height="22" rx="11" class="tint"/>
+    <text x="180" y="251" class="ink">近代の革新</text>
+    <rect x="244" y="236" width="88" height="22" rx="11" class="tint"/>
+    <text x="288" y="251" class="ink">日本と美術</text>
+  </g>
+</svg>

@@ -1,0 +1,54 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 重さを支えるものが「壁」から「骨組み」へ移った -->
+  <g class="t-s mid ink" font-weight="700">
+    <text x="62" y="22">壁で支える</text>
+    <text x="180" y="22" class="fl">鉄の骨組み</text>
+    <text x="298" y="22" class="fl">柱と床</text>
+  </g>
+  <g class="t-xs mid soft">
+    <text x="62" y="38">〜19世紀 石・れんが</text>
+    <text x="180" y="38">19世紀〜 鉄とガラス</text>
+    <text x="298" y="38">1920年代 コンクリート</text>
+  </g>
+
+  <!-- 1：厚い壁と小さい窓 -->
+  <path d="M26 196 L32 70 H92 L98 196Z" class="soft"/>
+  <g class="paper">
+    <rect x="50" y="86" width="10" height="14"/><rect x="66" y="86" width="10" height="14"/>
+    <rect x="50" y="118" width="10" height="14"/><rect x="66" y="118" width="10" height="14"/>
+    <rect x="50" y="152" width="10" height="14"/><rect x="66" y="152" width="10" height="14"/>
+  </g>
+  <path d="M28 200 H40 M84 200 H96" class="st" stroke-width="2"/>
+  <text x="62" y="214" class="t-xs mid ink">下ほど壁が厚い</text>
+
+  <!-- 2：鉄骨とガラスの高層 -->
+  <rect x="146" y="52" width="68" height="144" class="tint"/>
+  <g class="st" stroke-width="2.5">
+    <path d="M146 52 V196 M168 52 V196 M192 52 V196 M214 52 V196"/>
+    <path d="M146 52 H214 M146 76 H214 M146 100 H214 M146 124 H214 M146 148 H214 M146 172 H214 M146 196 H214"/>
+  </g>
+  <text x="180" y="214" class="t-xs mid ink">壁はガラスでよい</text>
+
+  <!-- 3：ドミノ（柱と床の板）、ピロティで持ち上げ -->
+  <g class="ink">
+    <rect x="252" y="96" width="92" height="7"/>
+    <rect x="252" y="136" width="92" height="7"/>
+    <rect x="252" y="176" width="92" height="7"/>
+  </g>
+  <g class="st" stroke-width="3"><path d="M262 103 V196 M298 103 V196 M334 103 V196"/></g>
+  <path d="M270 108 H326 V130 H270Z" class="paper"/>
+  <path d="M270 108 H326 V130 H270Z" class="st-soft dash" stroke-width="1.2" fill="none"/>
+  <text x="298" y="123" class="t-xs mid soft">横長の窓</text>
+  <path d="M266 82 Q280 70 296 82 Q312 70 330 82" class="st-f" stroke-width="2" fill="none"/>
+  <text x="298" y="66" class="t-xs mid fl">屋上庭園</text>
+  <text x="298" y="214" class="t-xs mid ink">ピロティで持ち上げ</text>
+
+  <!-- 移り変わり -->
+  <path d="M104 132 H136" class="st-f" stroke-width="2.5" marker-end="url(#a-architecture)"/>
+  <path d="M222 132 H244" class="st-f" stroke-width="2.5" marker-end="url(#a-architecture)"/>
+  <path d="M8 196 H352" class="st-soft" stroke-width="2"/>
+
+  <rect x="12" y="230" width="336" height="40" rx="12" class="bgc"/>
+  <text x="180" y="248" class="t-s mid ink" font-weight="700">壁が重さから自由になる</text>
+  <text x="180" y="263" class="t-xs mid soft">→ 窓も間取りも見た目も自由に</text>
+</svg>

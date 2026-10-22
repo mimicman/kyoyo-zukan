@@ -1,0 +1,67 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 本物らしく見せる3つの工夫を、時代順に -->
+  <g class="t-s mid fl" font-weight="700">
+    <text x="62" y="24">体の重心</text>
+    <text x="180" y="24">顔の向き</text>
+    <text x="298" y="24">光の当たり方</text>
+  </g>
+  <g class="paper">
+    <rect x="12" y="36" width="100" height="132" rx="10"/>
+    <rect x="130" y="36" width="100" height="132" rx="10"/>
+    <rect x="248" y="36" width="100" height="132" rx="10"/>
+  </g>
+  <g class="st-soft" stroke-width="1.2">
+    <rect x="12" y="36" width="100" height="132" rx="10" class="no-fill"/>
+    <rect x="130" y="36" width="100" height="132" rx="10" class="no-fill"/>
+    <rect x="248" y="36" width="100" height="132" rx="10" class="no-fill"/>
+  </g>
+
+  <!-- 1：片足重心の立ち姿（肩と腰が逆に傾く） -->
+  <circle cx="64" cy="56" r="9" class="ink"/>
+  <path d="M50 74 L78 68 L74 104 L52 110Z" class="soft"/>
+  <path d="M52 110 L56 154 M70 106 L80 150" class="st" stroke-width="5" stroke-linecap="round"/>
+  <path d="M40 72 L90 64" class="st-f dash" stroke-width="1.5"/>
+  <path d="M40 104 L90 114" class="st-f dash" stroke-width="1.5"/>
+  <text x="96" y="70" class="t-xs end fl halo">肩</text>
+  <text x="96" y="124" class="t-xs end fl halo">腰</text>
+
+  <!-- 2：横顔と斜め向き -->
+  <ellipse cx="158" cy="92" rx="16" ry="22" class="soft"/>
+  <path d="M142 92 L134 98 L142 100" class="st" stroke-width="2" fill="none"/>
+  <circle cx="148" cy="86" r="2.5" class="ink"/>
+  <ellipse cx="204" cy="92" rx="18" ry="22" class="tint"/>
+  <ellipse cx="204" cy="92" rx="18" ry="22" class="st-f" stroke-width="2" fill="none"/>
+  <circle cx="196" cy="86" r="2.5" class="ink"/><circle cx="210" cy="86" r="2.5" class="ink"/>
+  <path d="M200 92 L196 100 H202" class="st" stroke-width="1.5" fill="none"/>
+  <g class="t-xs mid">
+    <text x="158" y="134" class="soft">横顔</text>
+    <text x="204" y="134" class="fl" font-weight="700">斜め向き</text>
+    <text x="180" y="154" class="ink">表情が出る</text>
+  </g>
+
+  <!-- 3：一方向の光と影 -->
+  <rect x="256" y="44" width="84" height="84" rx="4" class="bgc"/>
+  <path d="M264 44 L256 52 M272 44 L256 60 M280 44 L256 68 M288 44 L256 76 M296 44 L256 84 M304 44 L256 92 M312 44 L256 100 M320 44 L256 108 M328 44 L256 116 M336 44 L256 124 M340 48 L260 128 M340 56 L268 128 M340 64 L276 128 M340 72 L284 128 M340 80 L292 128 M340 88 L300 128 M340 96 L308 128 M340 104 L316 128 M340 112 L324 128 M340 120 L332 128" class="st-soft" stroke-width="1" opacity="0.6"/>
+  <path d="M262 46 L282 46 L310 92 L290 96Z" class="tint"/>
+  <rect x="258" y="44" width="28" height="6" class="fl"/>
+  <circle cx="306" cy="100" r="20" class="soft"/>
+  <circle cx="299" cy="93" r="11" class="fl"/>
+  <text x="298" y="146" class="t-xs mid ink">一方向の光</text>
+  <text x="298" y="160" class="t-xs mid ink">背景は闇</text>
+
+  <!-- 名前と時代 -->
+  <g class="t-xs mid ink" font-weight="700">
+    <text x="62" y="188">ギリシャ彫刻</text>
+    <text x="180" y="188">肖像画</text>
+    <text x="298" y="188">光と影</text>
+  </g>
+  <path d="M14 210 H340" class="st-f" stroke-width="2" marker-end="url(#a-art)"/>
+  <g class="fl"><circle cx="62" cy="210" r="5"/><circle cx="180" cy="210" r="5"/><circle cx="298" cy="210" r="5"/></g>
+  <g class="t-xs mid soft">
+    <text x="62" y="230">前5世紀ごろ</text>
+    <text x="180" y="230">15世紀〜</text>
+    <text x="298" y="230">17世紀</text>
+  </g>
+  <rect x="40" y="244" width="280" height="26" rx="13" class="tint"/>
+  <text x="180" y="262" class="t-s mid ink">どれも、厚みと存在感を出す工夫</text>
+</svg>

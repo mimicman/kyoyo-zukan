@@ -1,0 +1,56 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 美術の行き来：大陸→日本（作り変え）→西洋、西洋→日本 -->
+  <rect x="8" y="40" width="82" height="150" rx="12" class="bgc"/>
+  <text x="49" y="64" class="t-m mid ink" font-weight="700">大陸</text>
+  <text x="49" y="82" class="t-xs mid soft">中国・朝鮮</text>
+
+  <rect x="126" y="28" width="108" height="174" rx="12" class="tint"/>
+  <text x="180" y="52" class="t-m mid ink" font-weight="700">日本</text>
+  <text x="180" y="70" class="t-xs mid fl" font-weight="700">作り変える</text>
+  <g class="t-xs mid ink">
+    <text x="180" y="94">大和絵・絵巻</text>
+    <text x="180" y="114">金屏風</text>
+    <text x="180" y="134">琳派</text>
+    <text x="180" y="154">浮世絵</text>
+  </g>
+  <path d="M180 98 V104 M180 118 V124 M180 138 V144" class="st-soft" stroke-width="1.5"/>
+
+  <rect x="270" y="40" width="82" height="150" rx="12" class="bgc"/>
+  <text x="311" y="64" class="t-m mid ink" font-weight="700">西洋</text>
+  <text x="311" y="82" class="t-xs mid soft">ヨーロッパ</text>
+
+  <!-- 大陸→日本 -->
+  <path d="M90 104 H120" class="st-f" stroke-width="2.5" marker-end="url(#a-art)"/>
+  <path d="M90 140 H120" class="st-f" stroke-width="2.5" marker-end="url(#a-art)"/>
+  <g class="t-xs mid ink">
+    <text x="49" y="110">仏像</text>
+    <text x="49" y="124" class="soft">6世紀〜</text>
+    <text x="49" y="146">水墨画</text>
+    <text x="49" y="160" class="soft">室町</text>
+  </g>
+
+  <!-- 日本→西洋（浮世絵） -->
+  <path d="M234 154 H264" class="st-f" stroke-width="2.5" marker-end="url(#a-art)"/>
+  <g class="t-xs mid">
+    <text x="311" y="142" class="fl" font-weight="700">ジャポ</text>
+    <text x="311" y="156" class="fl" font-weight="700">ニスム</text>
+    <text x="311" y="172" class="soft">19世紀後半</text>
+  </g>
+  <!-- 西洋→日本（油絵） -->
+  <path d="M270 104 H240" class="st dash" stroke-width="2" marker-end="url(#a-ink)"/>
+  <g class="t-xs mid">
+    <text x="311" y="106" class="ink">油絵</text>
+    <text x="311" y="120" class="soft">明治</text>
+  </g>
+
+  <!-- 下：時間の流れ -->
+  <path d="M14 226 H340" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <g class="fl"><circle cx="40" cy="226" r="4"/><circle cx="150" cy="226" r="4"/><circle cx="250" cy="226" r="4"/><circle cx="310" cy="226" r="4"/></g>
+  <g class="t-xs mid soft">
+    <text x="40" y="246">6世紀</text>
+    <text x="150" y="246">14〜16世紀</text>
+    <text x="250" y="246">江戸</text>
+    <text x="310" y="246">19世紀後半</text>
+  </g>
+  <text x="180" y="270" class="t-s mid ink">受け取る → 作り変える → 送り返す</text>
+</svg>

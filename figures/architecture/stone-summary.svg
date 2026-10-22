@@ -1,0 +1,50 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 重さを流す2つの方法（上）と、それを使った古代の建築（下） -->
+  <text x="90" y="20" class="t-m mid ink" font-weight="700">柱と梁</text>
+  <text x="270" y="20" class="t-m mid fl" font-weight="700">アーチ</text>
+  <path d="M180 10 V258" class="st-line dash" stroke-width="1"/>
+
+  <!-- 柱と梁：真ん中がたわむ -->
+  <path d="M90 28 V44" class="st" stroke-width="2.5" marker-end="url(#a-ink)"/>
+  <rect x="44" y="48" width="92" height="12" class="tint"/>
+  <rect x="44" y="48" width="92" height="12" class="st-soft" stroke-width="1.5"/>
+  <path d="M48 64 Q90 82 132 64" class="st-f dash" stroke-width="1.5" fill="none"/>
+  <rect x="50" y="60" width="12" height="52" class="st" stroke-width="2" fill="none"/>
+  <rect x="118" y="60" width="12" height="52" class="st" stroke-width="2" fill="none"/>
+  <text x="90" y="100" class="t-xs mid fl">たわむ</text>
+
+  <!-- アーチ：押し合って両脚へ -->
+  <path d="M270 28 V40" class="st" stroke-width="2.5" marker-end="url(#a-ink)"/>
+  <path d="M228 112 V80 A42 42 0 0 1 312 80 V112 H298 V80 A28 28 0 0 0 242 80 V112Z" class="tint"/>
+  <path d="M228 112 V80 A42 42 0 0 1 312 80 V112 H298 V80 A28 28 0 0 0 242 80 V112Z" class="st" stroke-width="2"/>
+  <path d="M264 44 C246 50 236 62 235 90 V108" class="st-f" stroke-width="2" fill="none" marker-end="url(#a-architecture)"/>
+  <path d="M276 44 C294 50 304 62 305 90 V108" class="st-f" stroke-width="2" fill="none" marker-end="url(#a-architecture)"/>
+  <text x="270" y="102" class="t-xs mid fl">押し合う</text>
+
+  <!-- 下へ：使われ方 -->
+  <path d="M90 120 V138" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <path d="M270 120 V138" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+
+  <!-- ギリシャ神殿 -->
+  <path d="M28 166 L90 146 L152 166Z" class="fl"/>
+  <rect x="28" y="166" width="124" height="8" class="soft"/>
+  <g class="st" stroke-width="5">
+    <path d="M36 176 V214 M54 176 V214 M72 176 V214 M90 176 V214 M108 176 V214 M126 176 V214 M144 176 V214"/>
+  </g>
+  <rect x="24" y="214" width="132" height="8" class="soft"/>
+  <text x="90" y="240" class="t-s mid ink" font-weight="700">ギリシャ神殿</text>
+  <text x="90" y="256" class="t-xs mid soft">柱がずらり・柱頭で様式</text>
+
+  <!-- ローマ：ドームと水道橋 -->
+  <path d="M252 186 A38 38 0 0 1 328 186Z" class="fl"/>
+  <rect x="248" y="186" width="84" height="36" class="tint"/>
+  <rect x="248" y="186" width="84" height="36" class="st-soft" stroke-width="1.5" fill="none"/>
+  <circle cx="290" cy="150" r="3" class="paper"/>
+  <rect x="192" y="180" width="50" height="8" class="soft"/>
+  <path d="M192 222 V202 A8 8 0 0 1 208 202 V222 M209 222 V202 A8 8 0 0 1 225 202 V222 M226 222 V202 A8 8 0 0 1 242 202 V222" class="st" stroke-width="2" fill="none"/>
+  <path d="M192 188 V202 M242 188 V202" class="st" stroke-width="2"/>
+  <text x="270" y="240" class="t-s mid ink" font-weight="700">ローマ</text>
+  <text x="270" y="256" class="t-xs mid soft">水道橋・ドーム</text>
+
+  <text x="180" y="276" class="t-xs mid ink">ローマは柱の様式も飾りとして受け継いだ</text>
+</svg>
