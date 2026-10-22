@@ -1,0 +1,60 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 浮世絵の作り方：版元→絵師→彫師→摺師の分業。色ごとの版木を同じ紙に重ねて刷る -->
+  <text x="16" y="24" class="t-m ink">分業と色ごとの版で、多色の絵を刷る</text>
+
+  <!-- 上：4つの役割 -->
+  <g class="bgc">
+    <rect x="12" y="38" width="72" height="52" rx="8"/>
+    <rect x="100" y="38" width="72" height="52" rx="8"/>
+    <rect x="188" y="38" width="72" height="52" rx="8"/>
+    <rect x="276" y="38" width="72" height="52" rx="8"/>
+  </g>
+  <g class="t-s mid ink" font-weight="700">
+    <text x="48" y="60">版元</text><text x="136" y="60">絵師</text><text x="224" y="60">彫師</text><text x="312" y="60">摺師</text>
+  </g>
+  <g class="t-xs mid soft">
+    <text x="48" y="78">企画・販売</text><text x="136" y="78">下絵を描く</text><text x="224" y="78">版木を彫る</text><text x="312" y="78">色を刷る</text>
+  </g>
+  <g class="st-f" stroke-width="2">
+    <path d="M84 64 H96" marker-end="url(#a-art)"/>
+    <path d="M172 64 H184" marker-end="url(#a-art)"/>
+    <path d="M260 64 H272" marker-end="url(#a-art)"/>
+  </g>
+
+  <!-- 下：色ごとの版を重ねる -->
+  <!-- 版1：墨の線 -->
+  <rect x="14" y="116" width="64" height="64" class="paper"/>
+  <rect x="14" y="116" width="64" height="64" class="st-soft" stroke-width="1"/>
+  <path d="M22 168 L46 130 L70 168 M22 170 C34 164 46 176 70 168" class="st" stroke-width="1.5"/>
+  <circle cx="64" cy="130" r="7" class="st" stroke-width="1.5"/>
+  <text x="96" y="152" class="t-l mid ink">＋</text>
+  <!-- 版2：赤（太陽） -->
+  <rect x="114" y="116" width="64" height="64" class="paper"/>
+  <rect x="114" y="116" width="64" height="64" class="st-soft" stroke-width="1"/>
+  <circle cx="164" cy="130" r="7" class="fl"/>
+  <text x="196" y="152" class="t-l mid ink">＋</text>
+  <!-- 版3：山の色 -->
+  <rect x="214" y="116" width="64" height="64" class="paper"/>
+  <rect x="214" y="116" width="64" height="64" class="st-soft" stroke-width="1"/>
+  <path d="M222 168 L246 130 L270 168 Z" class="soft" opacity="0.6"/>
+  <text x="294" y="152" class="t-l mid ink">＝</text>
+  <!-- 完成 -->
+  <rect x="306" y="110" width="44" height="76" class="paper"/>
+  <rect x="306" y="110" width="44" height="76" class="st" stroke-width="1.5"/>
+  <path d="M310 170 L328 136 L346 170 Z" class="soft" opacity="0.6"/>
+  <path d="M310 170 L328 136 L346 170 M310 172 C320 166 330 178 346 170" class="st" stroke-width="1.2"/>
+  <circle cx="340" cy="124" r="5" class="fl"/>
+  <circle cx="340" cy="124" r="5" class="st" stroke-width="1.2"/>
+  <!-- 見当（位置合わせの印） -->
+  <g class="st-f" stroke-width="2">
+    <path d="M18 172 V176 H26"/><path d="M118 172 V176 H126"/><path d="M218 172 V176 H226"/>
+  </g>
+  <g class="t-xs mid ink">
+    <text x="46" y="200">墨の線（主版）</text>
+    <text x="146" y="200">色版1</text>
+    <text x="246" y="200">色版2</text>
+    <text x="328" y="200">完成</text>
+  </g>
+  <text x="16" y="228" class="t-xs soft">左下のL字＝見当。紙をここに合わせ、色のずれを防ぐ</text>
+  <text x="180" y="258" class="t-s mid ink">色の数だけ版木を彫り、同じ紙に重ねて刷る</text>
+</svg>

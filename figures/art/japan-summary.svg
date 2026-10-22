@@ -1,5 +1,5 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- 美術の行き来：大陸→日本（作り変え）→西洋、西洋→日本 -->
+  <!-- 美術の行き来：大陸→日本（作り変え）→西洋、西洋→日本。③水墨画・④浮世絵はこの章の後半のカード -->
   <rect x="8" y="40" width="82" height="150" rx="12" class="bgc"/>
   <text x="49" y="64" class="t-m mid ink" font-weight="700">大陸</text>
   <text x="49" y="82" class="t-xs mid soft">中国・朝鮮</text>
@@ -8,12 +8,13 @@
   <text x="180" y="52" class="t-m mid ink" font-weight="700">日本</text>
   <text x="180" y="70" class="t-xs mid fl" font-weight="700">作り変える</text>
   <g class="t-xs mid ink">
-    <text x="180" y="94">大和絵・絵巻</text>
-    <text x="180" y="114">金屏風</text>
-    <text x="180" y="134">琳派</text>
-    <text x="180" y="154">浮世絵</text>
+    <text x="180" y="92">大和絵・絵巻</text>
+    <text x="180" y="110" class="fl" font-weight="700">③ 水墨画</text>
+    <text x="180" y="128">金屏風・琳派</text>
+    <text x="180" y="146" class="fl" font-weight="700">④ 浮世絵</text>
+    <text x="180" y="160" class="soft">分業の木版画</text>
   </g>
-  <path d="M180 98 V104 M180 118 V124 M180 138 V144" class="st-soft" stroke-width="1.5"/>
+  <path d="M180 96 V100 M180 114 V118 M180 132 V136" class="st-soft" stroke-width="1.5"/>
 
   <rect x="270" y="40" width="82" height="150" rx="12" class="bgc"/>
   <text x="311" y="64" class="t-m mid ink" font-weight="700">西洋</text>
@@ -32,7 +33,7 @@
   <!-- 日本→西洋（浮世絵） -->
   <path d="M234 154 H264" class="st-f" stroke-width="2.5" marker-end="url(#a-art)"/>
   <g class="t-xs mid">
-    <text x="311" y="142" class="fl" font-weight="700">ジャポ</text>
+    <text x="311" y="142" class="fl" font-weight="700">② ジャポ</text>
     <text x="311" y="156" class="fl" font-weight="700">ニスム</text>
     <text x="311" y="172" class="soft">19世紀後半</text>
   </g>

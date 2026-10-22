@@ -6,7 +6,8 @@
 
   <!-- ページの網（番号はページ番号） -->
   <path d="M124 44 L184 34 M184 34 L250 50 M250 50 L314 38 M184 34 L214 84 M250 50 L294 88 M214 84 L294 88 M250 50 L214 84" class="st-line" stroke-width="1.5"/>
-  <path d="M130 52 Q156 40 176 40 M192 42 Q220 44 240 52" class="st-f dash" stroke-width="1.8" marker-end="url(#a-technology)"/>
+  <path d="M130 52 Q156 40 176 40" class="st-f dash" stroke-width="1.8" marker-end="url(#a-technology)"/>
+  <path d="M192 42 Q220 44 240 52" class="st-f dash" stroke-width="1.8" marker-end="url(#a-technology)"/>
   <g class="t-xs">
     <rect x="110" y="34" width="28" height="20" rx="3" class="paper"/><rect x="110" y="34" width="28" height="20" rx="3" class="st-soft" stroke-width="1.2"/><text x="124" y="48" class="t-xs mid ink">1</text>
     <rect x="170" y="24" width="28" height="20" rx="3" class="paper"/><rect x="170" y="24" width="28" height="20" rx="3" class="st-soft" stroke-width="1.2"/><text x="184" y="38" class="t-xs mid ink">2</text>

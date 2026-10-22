@@ -1,0 +1,53 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 語り手と視点：目＝語り手。色の吹き出し＝読者に見える心の中。一人称・三人称（一人に寄りそう）・全知 -->
+  <text x="16" y="24" class="t-m ink">だれの目で語るかで、見えるものが変わる</text>
+  <rect x="12" y="36" width="104" height="150" rx="10" class="bgc"/>
+  <rect x="128" y="36" width="104" height="150" rx="10" class="bgc"/>
+  <rect x="244" y="36" width="104" height="150" rx="10" class="bgc"/>
+  <circle cx="44" cy="112" r="7" class="fl"/>
+  <path d="M35 142 Q44 118 53 142 Z" class="fl"/>
+  <circle cx="88" cy="112" r="7" class="soft"/>
+  <path d="M79 142 Q88 118 97 142 Z" class="soft"/>
+  <ellipse cx="44" cy="84" rx="13" ry="9" class="fl"/>
+  <path d="M41 98 L44 92" class="st-f" stroke-width="2"/>
+  <ellipse cx="88" cy="84" rx="13" ry="9" class="paper"/>
+  <ellipse cx="88" cy="84" rx="13" ry="9" class="st-soft dash" stroke-width="1.2"/>
+  <text x="88" y="88" class="t-xs mid soft">？</text>
+  <text x="44" y="164" class="t-s mid fl" font-weight="700">私</text>
+  <text x="88" y="164" class="t-xs mid soft">相手</text>
+  <circle cx="160" cy="112" r="7" class="ink"/>
+  <path d="M151 142 Q160 118 169 142 Z" class="ink"/>
+  <circle cx="204" cy="112" r="7" class="soft"/>
+  <path d="M195 142 Q204 118 213 142 Z" class="soft"/>
+  <ellipse cx="160" cy="84" rx="13" ry="9" class="fl"/>
+  <path d="M157 98 L160 92" class="st-f" stroke-width="2"/>
+  <ellipse cx="204" cy="84" rx="13" ry="9" class="paper"/>
+  <ellipse cx="204" cy="84" rx="13" ry="9" class="st-soft dash" stroke-width="1.2"/>
+  <text x="204" y="88" class="t-xs mid soft">？</text>
+  <path d="M128 58 Q140 49 152 58 Q140 67 128 58 Z" class="paper"/>
+  <path d="M128 58 Q140 49 152 58 Q140 67 128 58 Z" class="st" stroke-width="1.5"/>
+  <circle cx="140" cy="58" r="3.5" class="ink"/>
+  <path d="M146 64 L154 76" class="st-soft dash" stroke-width="1.2"/>
+  <text x="160" y="164" class="t-xs mid ink">彼・彼女</text>
+  <circle cx="276" cy="112" r="7" class="ink"/>
+  <path d="M267 142 Q276 118 285 142 Z" class="ink"/>
+  <circle cx="320" cy="112" r="7" class="ink"/>
+  <path d="M311 142 Q320 118 329 142 Z" class="ink"/>
+  <ellipse cx="276" cy="84" rx="13" ry="9" class="fl"/>
+  <path d="M273 98 L276 92" class="st-f" stroke-width="2"/>
+  <ellipse cx="320" cy="84" rx="13" ry="9" class="fl"/>
+  <path d="M317 98 L320 92" class="st-f" stroke-width="2"/>
+  <path d="M286 52 Q298 43 310 52 Q298 61 286 52 Z" class="paper"/>
+  <path d="M286 52 Q298 43 310 52 Q298 61 286 52 Z" class="st" stroke-width="1.5"/>
+  <circle cx="298" cy="52" r="3.5" class="ink"/>
+  <path d="M292 60 L282 74 M304 60 L314 74" class="st-soft dash" stroke-width="1.2"/>
+  <text x="298" y="164" class="t-xs mid ink">全員</text>
+  <g class="t-s mid ink" font-weight="700"><text x="64" y="206">一人称</text><text x="180" y="206">三人称</text><text x="296" y="206">全知</text></g>
+  <g class="t-xs mid soft"><text x="64" y="222">「私」が語る</text><text x="180" y="222">一人に寄りそう</text><text x="296" y="222">みんなの心を知る</text></g>
+  <ellipse cx="34" cy="250" rx="11" ry="7" class="fl"/>
+  <text x="50" y="254" class="t-xs ink">＝読者に見える心の中</text>
+  <path d="M198 250 Q210 243 222 250 Q210 257 198 250 Z" class="st" stroke-width="1.5"/>
+  <circle cx="210" cy="250" r="3" class="ink"/>
+  <text x="230" y="254" class="t-xs ink">＝語り手の目</text>
+  <text x="180" y="274" class="t-xs mid soft">作者と語り手は別。語り手がうそをつく作品もある</text>
+</svg>

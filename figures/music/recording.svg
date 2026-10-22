@@ -1,0 +1,37 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 録音：その場で消えた音が、残る・運ばれる・選ばれるようになった。下は道具の年表 -->
+  <text x="16" y="24" class="t-m ink">消えていた音が、残り、運ばれる</text>
+
+  <!-- 上：3つの変化 -->
+  <rect x="12" y="38" width="104" height="96" rx="10" class="tint"/>
+  <text x="64" y="60" class="t-s mid ink" font-weight="700">① 残る</text>
+  <path d="M40 96 C48 80 56 112 64 96 C72 80 80 112 88 96" class="st-f" stroke-width="2.5"/>
+  <text x="64" y="124" class="t-xs mid soft">何度でも聴ける</text>
+  <rect x="128" y="38" width="104" height="96" rx="10" class="tint"/>
+  <text x="180" y="60" class="t-s mid ink" font-weight="700">② 運ばれる</text>
+  <path d="M180 112 V86" class="st" stroke-width="2"/>
+  <path d="M168 80 A14 14 0 0 1 192 80 M162 74 A22 22 0 0 1 198 74" class="st-f" stroke-width="2"/>
+  <text x="180" y="124" class="t-xs mid soft">遠くの人に届く</text>
+  <rect x="244" y="38" width="104" height="96" rx="10" class="tint"/>
+  <text x="296" y="60" class="t-s mid ink" font-weight="700">③ 選ばれる</text>
+  <g class="fl"><rect x="270" y="76" width="14" height="14" rx="2"/><rect x="289" y="76" width="14" height="14" rx="2"/><rect x="308" y="76" width="14" height="14" rx="2"/></g>
+  <g class="soft"><rect x="270" y="95" width="14" height="14" rx="2"/><rect x="289" y="95" width="14" height="14" rx="2"/><rect x="308" y="95" width="14" height="14" rx="2"/></g>
+  <text x="296" y="124" class="t-xs mid soft">好きな曲をいつでも</text>
+
+  <!-- 下：年表 -->
+  <path d="M20 190 H340" class="st" stroke-width="1.5" marker-end="url(#a-ink)"/>
+  <g class="fl">
+    <circle cx="32" cy="190" r="5"/><circle cx="88" cy="190" r="5"/><circle cx="150" cy="190" r="5"/><circle cx="208" cy="190" r="5"/><circle cx="264" cy="190" r="5"/><circle cx="318" cy="190" r="5"/>
+  </g>
+  <g class="t-xs mid ink" font-weight="700">
+    <text x="32" y="176">蓄音機</text><text x="88" y="162">円盤</text><text x="88" y="176">レコード</text><text x="150" y="176">ラジオ</text><text x="208" y="176">LP</text><text x="264" y="176">CD</text><text x="318" y="176">配信</text>
+  </g>
+  <g class="t-xs mid soft">
+    <text x="32" y="208">1877</text><text x="88" y="208">1887</text><text x="150" y="208">1920年代</text><text x="208" y="208">1948</text><text x="264" y="208">1982</text><text x="318" y="208">2000年代</text>
+  </g>
+  <path d="M64 134 L40 168 M180 134 L150 160 M296 134 L318 160" class="st-soft dash" stroke-width="1"/>
+
+  <rect x="12" y="222" width="336" height="48" rx="10" class="bgc"/>
+  <text x="180" y="242" class="t-xs mid ink">ジャズやロックが世界に広まり、曲の長さや作り方も変わった</text>
+  <text x="180" y="260" class="t-xs mid soft">それまで音楽は、その場で演奏を聴くしかなかった</text>
+</svg>

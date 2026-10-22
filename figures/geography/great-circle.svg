@@ -1,0 +1,35 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 大圏航路：メルカトル図の直線（点線）より、北へふくらむ曲線（大円）が実際の最短の道 -->
+  <text x="16" y="24" class="t-m ink">地図の上の直線は、最短の道ではない</text>
+
+  <!-- 上：メルカトル図法の地図（北ほど緯線の間かくが広い） -->
+  <rect x="12" y="36" width="336" height="140" rx="10" class="tint"/>
+  <path d="M40 50 H340 M40 94 H340 M40 126 H340 M40 152 H340" class="st-line" stroke-width="1"/>
+  <text x="20" y="54" class="t-xs soft">75°</text>
+  <text x="20" y="98" class="t-xs soft">60°</text>
+  <text x="20" y="130" class="t-xs soft">45°</text>
+  <text x="20" y="156" class="t-xs soft">30°</text>
+
+  <!-- 地図上の直線（点線）と最短の道（実線の曲線） -->
+  <path d="M70 138 L296 130" class="st-soft dash" stroke-width="2"/>
+  <path d="M70 138 C104 44 262 40 296 130" class="st-f" stroke-width="3" marker-end="url(#a-geography)"/>
+  <circle cx="70" cy="138" r="5" class="ink"/>
+  <circle cx="296" cy="130" r="5" class="ink"/>
+  <text x="70" y="164" class="t-s mid ink" font-weight="700">東京</text>
+  <text x="296" y="156" class="t-s mid ink" font-weight="700">ニューヨーク</text>
+  <text x="183" y="84" class="t-s mid fl halo" font-weight="700">最短の道（大圏航路）</text>
+  <text x="183" y="122" class="t-xs mid soft halo">地図上のまっすぐな線</text>
+  <text x="336" y="170" class="t-xs end soft">メルカトル図法</text>
+
+  <!-- 下：地球の中心を通る面で切った円＝大円 -->
+  <rect x="12" y="186" width="336" height="86" rx="10" class="bgc"/>
+  <circle cx="62" cy="229" r="34" class="tint"/>
+  <circle cx="62" cy="229" r="34" class="st" stroke-width="1.5"/>
+  <ellipse cx="62" cy="229" rx="34" ry="11" transform="rotate(-28 62 229)" class="st-f" stroke-width="2.5"/>
+  <circle cx="62" cy="229" r="2.5" class="ink"/>
+  <circle cx="40" cy="245" r="3.5" class="ink"/>
+  <circle cx="86" cy="216" r="3.5" class="ink"/>
+  <text x="110" y="214" class="t-s ink" font-weight="700">大円＝地球の中心を通る円</text>
+  <text x="110" y="236" class="t-xs soft">球の上の2点を結ぶいちばん短い道は、</text>
+  <text x="110" y="254" class="t-xs soft">かならずこの大円の一部になる</text>
+</svg>

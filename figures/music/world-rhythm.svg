@@ -1,0 +1,76 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 世界のリズム：アフリカのポリリズム（3と2を重ねる）、インドのターラ（16拍の周期）、ガムラン（ゴングが周期を区切る層） -->
+  <text x="16" y="24" class="t-m ink">くり返す周期と、重なるリズム</text>
+  <!-- 左上：ポリリズム -->
+  <rect x="12" y="36" width="164" height="118" rx="10" class="bgc"/>
+  <text x="94" y="56" class="t-s mid ink" font-weight="700">重ねる（アフリカ）</text>
+  <path d="M44 66 V128" class="st-line" stroke-width="1"/>
+  <path d="M64 66 V128" class="st-line" stroke-width="1"/>
+  <path d="M84 66 V128" class="st-line" stroke-width="1"/>
+  <path d="M104 66 V128" class="st-line" stroke-width="1"/>
+  <path d="M124 66 V128" class="st-line" stroke-width="1"/>
+  <path d="M144 66 V128" class="st-line" stroke-width="1"/>
+  <path d="M164 66 V128" class="st-line" stroke-width="1"/>
+  <text x="18" y="86" class="t-xs soft">3つ</text><text x="18" y="114" class="t-xs soft">2つ</text>
+  <circle cx="54" cy="82" r="7" class="fl"/>
+  <circle cx="94" cy="82" r="7" class="fl"/>
+  <circle cx="134" cy="82" r="7" class="fl"/>
+  <circle cx="54" cy="110" r="7" class="ink"/>
+  <circle cx="114" cy="110" r="7" class="ink"/>
+  <text x="94" y="146" class="t-xs mid soft">同じ長さに3つ打ちと2つ打ち</text>
+  <!-- 右上：インドのターラ（16拍の周期） -->
+  <rect x="184" y="36" width="164" height="118" rx="10" class="bgc"/>
+  <text x="266" y="56" class="t-s mid ink" font-weight="700">回る（インド）</text>
+  <circle cx="266" cy="100" r="30" class="st-soft" stroke-width="1.2"/>
+  <circle cx="266.0" cy="70.0" r="6" class="fl"/>
+  <circle cx="277.5" cy="72.3" r="3.2" class="soft"/>
+  <circle cx="287.2" cy="78.8" r="3.2" class="soft"/>
+  <circle cx="293.7" cy="88.5" r="3.2" class="soft"/>
+  <circle cx="296.0" cy="100.0" r="4.2" class="ink"/>
+  <circle cx="293.7" cy="111.5" r="3.2" class="soft"/>
+  <circle cx="287.2" cy="121.2" r="3.2" class="soft"/>
+  <circle cx="277.5" cy="127.7" r="3.2" class="soft"/>
+  <circle cx="266.0" cy="130.0" r="4.2" class="ink"/>
+  <circle cx="254.5" cy="127.7" r="3.2" class="soft"/>
+  <circle cx="244.8" cy="121.2" r="3.2" class="soft"/>
+  <circle cx="238.3" cy="111.5" r="3.2" class="soft"/>
+  <circle cx="236.0" cy="100.0" r="4.2" class="ink"/>
+  <circle cx="238.3" cy="88.5" r="3.2" class="soft"/>
+  <circle cx="244.8" cy="78.8" r="3.2" class="soft"/>
+  <circle cx="254.5" cy="72.3" r="3.2" class="soft"/>
+  <path d="M286 65 A40 40 0 0 1 305 90" class="st-f" stroke-width="2" marker-end="url(#a-music)"/>
+  <text x="266" y="104" class="t-xs mid ink">16拍</text>
+  <text x="266" y="146" class="t-xs mid soft">1拍目に戻って、またそろう</text>
+  <!-- 下：ガムラン（層） -->
+  <rect x="12" y="162" width="336" height="108" rx="10" class="bgc"/>
+  <text x="26" y="182" class="t-s ink" font-weight="700">層になる（ガムラン）</text>
+  <text x="344" y="182" class="t-xs end soft">→ 時間</text>
+  <text x="26" y="208" class="t-xs ink">大きなゴング</text>
+  <path d="M112 204 H330" class="st-line" stroke-width="1"/>
+  <circle cx="330.0" cy="204" r="9" class="fl"/>
+  <text x="26" y="230" class="t-xs ink">中くらいの楽器</text>
+  <path d="M112 226 H330" class="st-line" stroke-width="1"/>
+  <circle cx="330.0" cy="226" r="5" class="ink"/>
+  <circle cx="276.5" cy="226" r="5" class="ink"/>
+  <circle cx="222.9" cy="226" r="5" class="ink"/>
+  <circle cx="169.4" cy="226" r="5" class="ink"/>
+  <text x="26" y="252" class="t-xs ink">細かい楽器</text>
+  <path d="M112 248 H330" class="st-line" stroke-width="1"/>
+  <circle cx="330.0" cy="248" r="3" class="soft"/>
+  <circle cx="316.6" cy="248" r="3" class="soft"/>
+  <circle cx="303.2" cy="248" r="3" class="soft"/>
+  <circle cx="289.8" cy="248" r="3" class="soft"/>
+  <circle cx="276.5" cy="248" r="3" class="soft"/>
+  <circle cx="263.1" cy="248" r="3" class="soft"/>
+  <circle cx="249.7" cy="248" r="3" class="soft"/>
+  <circle cx="236.3" cy="248" r="3" class="soft"/>
+  <circle cx="222.9" cy="248" r="3" class="soft"/>
+  <circle cx="209.5" cy="248" r="3" class="soft"/>
+  <circle cx="196.1" cy="248" r="3" class="soft"/>
+  <circle cx="182.8" cy="248" r="3" class="soft"/>
+  <circle cx="169.4" cy="248" r="3" class="soft"/>
+  <circle cx="156.0" cy="248" r="3" class="soft"/>
+  <circle cx="142.6" cy="248" r="3" class="soft"/>
+  <circle cx="129.2" cy="248" r="3" class="soft"/>
+  <text x="226" y="268" class="t-xs mid soft">ゴングが周期を区切り、細かい音ほど多く重なる</text>
+</svg>

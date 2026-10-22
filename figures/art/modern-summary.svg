@@ -1,69 +1,56 @@
 <svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
-  <!-- 何を描くかの移り変わり（上）と、見たままに近い度合い（下の線） -->
+  <!-- 何を描くかの移り変わり（上）と、見たままに近い度合い（下の線）。6つの流れを時代順に -->
   <text x="14" y="20" class="t-xs soft">何を描くか</text>
   <g class="t-s mid ink" font-weight="700">
-    <text x="40" y="44">英雄</text>
-    <text x="110" y="44">感情</text>
-    <text x="180" y="44">現実</text>
-    <text x="250" y="44" class="fl">光</text>
-    <text x="320" y="44" class="fl">色と形</text>
+    <text x="34" y="44">英雄</text>
+    <text x="92" y="44">感情</text>
+    <text x="150" y="44">現実</text>
+    <text x="208" y="44" class="fl">光</text>
+    <text x="266" y="44" class="fl">画家の目</text>
+    <text x="324" y="44" class="fl">色と形</text>
   </g>
   <g class="st-soft" stroke-width="1.5">
-    <path d="M60 40 H88" marker-end="url(#a-soft)"/>
-    <path d="M130 40 H158" marker-end="url(#a-soft)"/>
-    <path d="M200 40 H232" marker-end="url(#a-soft)"/>
-    <path d="M266 40 H290" marker-end="url(#a-soft)"/>
+    <path d="M49 40 H75" marker-end="url(#a-soft)"/>
+    <path d="M107 40 H133" marker-end="url(#a-soft)"/>
+    <path d="M165 40 H197" marker-end="url(#a-soft)"/>
+    <path d="M217 40 H237" marker-end="url(#a-soft)"/>
+    <path d="M293 40 H301" marker-end="url(#a-soft)"/>
   </g>
-
-  <!-- 各様式の目印 -->
-  <g class="paper">
-    <circle cx="40" cy="84" r="22"/><circle cx="110" cy="84" r="22"/><circle cx="180" cy="84" r="22"/>
-    <circle cx="250" cy="84" r="22"/><circle cx="320" cy="84" r="22"/>
-  </g>
-  <g class="st-soft" stroke-width="1.5" fill="none">
-    <circle cx="40" cy="84" r="22"/><circle cx="110" cy="84" r="22"/><circle cx="180" cy="84" r="22"/>
-    <circle cx="250" cy="84" r="22"/><circle cx="320" cy="84" r="22"/>
-  </g>
+  <g class="paper"><circle cx="34" cy="84" r="22"/><circle cx="92" cy="84" r="22"/><circle cx="150" cy="84" r="22"/><circle cx="208" cy="84" r="22"/><circle cx="266" cy="84" r="22"/><circle cx="324" cy="84" r="22"/></g>
+  <g class="st-soft" stroke-width="1.5"><circle cx="34" cy="84" r="22"/><circle cx="92" cy="84" r="22"/><circle cx="150" cy="84" r="22"/><circle cx="208" cy="84" r="22"/><circle cx="266" cy="84" r="22"/><circle cx="324" cy="84" r="22"/></g>
   <!-- 新古典：整然と並ぶ柱 -->
-  <path d="M28 96 V74 M36 96 V74 M44 96 V74 M52 96 V74 M24 72 H56 M24 98 H56" class="st" stroke-width="2"/>
+  <path d="M22 96 V74 M30 96 V74 M38 96 V74 M46 96 V74 M18 72 H50 M18 98 H50" class="st" stroke-width="2"/>
   <!-- ロマン主義：三角形の構図と斜めの動き -->
-  <path d="M94 98 L110 66 L126 98Z" class="fl"/>
-  <path d="M96 70 L124 96" class="st" stroke-width="2"/>
+  <path d="M76 98 L92 66 L108 98Z" class="fl"/>
+  <path d="M78 70 L106 96" class="st" stroke-width="2"/>
   <!-- 写実主義：地平線と働く人 -->
-  <path d="M160 92 H200" class="st-soft" stroke-width="2"/>
-  <circle cx="180" cy="72" r="4" class="ink"/>
-  <path d="M180 77 L176 92 M180 77 L186 90 M178 82 L190 86" class="st" stroke-width="2"/>
+  <path d="M130 92 H170" class="st-soft" stroke-width="2"/>
+  <circle cx="150" cy="72" r="4" class="ink"/>
+  <path d="M150 77 L146 92 M150 77 L156 90 M148 82 L160 86" class="st" stroke-width="2"/>
   <!-- 印象派：色の点 -->
-  <g class="fl"><circle cx="242" cy="76" r="4"/><circle cx="258" cy="78" r="4"/><circle cx="248" cy="92" r="4"/></g>
-  <g class="soft"><circle cx="252" cy="70" r="3.5"/><circle cx="262" cy="90" r="3.5"/><circle cx="240" cy="88" r="3.5"/></g>
+  <g class="fl"><circle cx="200" cy="76" r="4"/><circle cx="216" cy="78" r="4"/><circle cx="206" cy="92" r="4"/></g>
+  <g class="soft"><circle cx="210" cy="70" r="3.5"/><circle cx="220" cy="90" r="3.5"/><circle cx="198" cy="88" r="3.5"/></g>
+  <!-- ポスト印象派：うねる筆と単純な形 -->
+  <path d="M262 84 C262 78 272 78 272 84 C272 92 256 94 254 84 C252 72 276 68 278 84 C280 98 252 100 250 86" class="st-f" stroke-width="2"/>
   <!-- 抽象：格子 -->
-  <rect x="306" y="70" width="28" height="28" class="st" stroke-width="2" fill="none"/>
-  <rect x="306" y="70" width="12" height="14" class="fl"/>
-  <path d="M318 70 V98 M306 84 H334" class="st" stroke-width="2"/>
-
-  <!-- 名前と時代 -->
-  <g class="t-xs mid ink">
-    <text x="40" y="126">新古典主義</text><text x="110" y="126">ロマン主義</text><text x="180" y="126">写実主義</text>
-    <text x="250" y="126">印象派</text><text x="320" y="126">抽象</text>
-  </g>
-  <g class="mid soft" font-size="9.5">
-    <text x="40" y="140">18世紀後半</text><text x="110" y="140">19世紀前半</text><text x="180" y="140">19世紀半ば</text>
-    <text x="250" y="140">19世紀後半</text><text x="320" y="140">20世紀初め</text>
-  </g>
-
-  <!-- 見たままに近い度合い -->
-  <text x="14" y="164" class="t-xs soft">見たままに近い</text>
-  <path d="M40 172 C80 172 150 172 180 176 C210 182 230 196 250 204 C280 214 300 226 320 234" class="st-f" stroke-width="3" stroke-linecap="round" fill="none"/>
-  <g class="fl"><circle cx="40" cy="172" r="4"/><circle cx="110" cy="172" r="4"/><circle cx="180" cy="176" r="4"/><circle cx="250" cy="204" r="4"/><circle cx="320" cy="234" r="4"/></g>
-  <path d="M206 160 V246" class="st-soft dash" stroke-width="1.5"/>
-  <text x="200" y="230" class="t-xs end soft">写真が広まる</text>
-  <text x="200" y="244" class="t-xs end soft">（19世紀半ば〜）</text>
-
+  <rect x="310" y="70" width="28" height="28" class="st" stroke-width="2"/>
+  <rect x="310" y="70" width="12" height="14" class="fl"/>
+  <path d="M322 70 V98 M310 84 H338" class="st" stroke-width="2"/>
+  <g class="t-xs mid ink"><text x="34" y="126">新古典主義</text><text x="92" y="126">ロマン主義</text><text x="150" y="126">写実主義</text><text x="208" y="126">印象派</text><text x="266" y="126">ポスト印象派</text><text x="324" y="126">抽象</text></g>
+  <g class="t-xs mid soft"><text x="34" y="140">18世紀後半</text><text x="92" y="154">19世紀前半</text><text x="150" y="140">19世紀半ば</text><text x="208" y="154">19世紀後半</text><text x="266" y="140">19世紀末</text><text x="324" y="154">20世紀初め</text></g>
+  <text x="14" y="196" class="t-xs soft">見たままに</text>
+  <text x="14" y="210" class="t-xs soft">近いほど上</text>
+  <path d="M34 172 C70 172 120 172 150 176 C176 182 190 194 208 200 C230 208 246 212 266 218 C290 226 306 232 324 236" class="st-f" stroke-width="3" stroke-linecap="round"/>
+  <g class="fl"><circle cx="34" cy="172" r="4"/><circle cx="92" cy="172" r="4"/><circle cx="150" cy="176" r="4"/><circle cx="208" cy="200" r="4"/><circle cx="266" cy="218" r="4"/><circle cx="324" cy="236" r="4"/></g>
+  <path d="M179 162 V246" class="st-soft dash" stroke-width="1.5"/>
+  <text x="173" y="230" class="t-xs end soft">写真が広まる</text>
+  <text x="173" y="244" class="t-xs end soft">（19世紀半ば〜）</text>
   <!-- この章のカード -->
-  <path d="M18 258 V264 H202 V258 M228 258 V264 H272 V258 M298 258 V264 H342 V258" class="st-f" stroke-width="1.5"/>
+  <path d="M66 258 V264 H176 V258 M186 258 V264 H230 V258 M240 258 V264 H292 V258 M302 258 V264 H346 V258" class="st-f" stroke-width="1.5"/>
   <g class="t-xs mid fl">
-    <text x="110" y="278">ロマン主義と写実主義</text>
-    <text x="250" y="278">印象派</text>
-    <text x="320" y="278">抽象へ</text>
+    <text x="121" y="280">ロマン主義と写実主義</text>
+    <text x="208" y="280">印象派</text>
+    <text x="266" y="280">ポスト印象派</text>
+    <text x="324" y="280">抽象へ</text>
   </g>
 </svg>

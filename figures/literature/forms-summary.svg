@@ -1,12 +1,12 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- 3つの型：筋の山（作品全体）・英雄の旅の円（主人公）・詩の音の数（一行の言葉） -->
-  <text x="16" y="26" class="t-m ink">作品を支える3つの型</text>
+  <!-- 3つの型：筋の山（作品全体）・英雄の旅の円（主人公）・詩の音の数（一行の言葉）。下は④それを語る目（語り手と視点） -->
+  <text x="16" y="26" class="t-m ink">作品を支える3つの型と、語る目</text>
   <path d="M40 40 H320" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
   <text x="40" y="54" class="t-xs soft">大きな単位</text>
   <text x="320" y="54" class="t-xs end soft">小さな単位</text>
 
   <rect x="12" y="62" width="104" height="134" rx="12" class="tint"/>
-  <text x="64" y="82" class="t-s mid ink" font-weight="700">物語の型</text>
+  <text x="64" y="82" class="t-s mid ink" font-weight="700">① 物語の型</text>
   <path d="M24 148 L44 142 L62 126 L82 98 L100 148" class="st-f" stroke-width="2.5" stroke-linejoin="round"/>
   <circle cx="82" cy="98" r="4" class="fl"/>
   <path d="M24 152 H104" class="st-line" stroke-width="1.5"/>
@@ -14,7 +14,7 @@
   <text x="64" y="187" class="t-xs mid soft">作品全体の形</text>
 
   <rect x="128" y="62" width="104" height="134" rx="12" class="tint"/>
-  <text x="180" y="82" class="t-s mid ink" font-weight="700">英雄の旅</text>
+  <text x="180" y="82" class="t-s mid ink" font-weight="700">② 英雄の旅</text>
   <path d="M140 122 H220" class="st-soft dash" stroke-width="1.5"/>
   <circle cx="180" cy="122" r="28" class="st-f" stroke-width="2.5"/>
   <circle cx="180" cy="94" r="4.5" class="fl"/>
@@ -23,7 +23,7 @@
   <text x="180" y="187" class="t-xs mid soft">神話・映画に共通</text>
 
   <rect x="244" y="62" width="104" height="134" rx="12" class="tint"/>
-  <text x="296" y="82" class="t-s mid ink" font-weight="700">詩の形</text>
+  <text x="296" y="82" class="t-s mid ink" font-weight="700">③ 詩の形</text>
   <g class="fl">
     <rect x="266" y="98" width="10" height="10" rx="2"/><rect x="278" y="98" width="10" height="10" rx="2"/><rect x="290" y="98" width="10" height="10" rx="2"/><rect x="302" y="98" width="10" height="10" rx="2"/><rect x="314" y="98" width="10" height="10" rx="2"/>
     <rect x="254" y="114" width="10" height="10" rx="2"/><rect x="266" y="114" width="10" height="10" rx="2"/><rect x="278" y="114" width="10" height="10" rx="2"/><rect x="290" y="114" width="10" height="10" rx="2"/><rect x="302" y="114" width="10" height="10" rx="2"/><rect x="314" y="114" width="10" height="10" rx="2"/><rect x="326" y="114" width="10" height="10" rx="2"/>
@@ -33,7 +33,11 @@
   <text x="296" y="172" class="t-xs mid ink">音と行の数</text>
   <text x="296" y="187" class="t-xs mid soft">一行の言葉の形</text>
 
-  <rect x="12" y="208" width="336" height="60" rx="12" class="bgc"/>
-  <text x="26" y="232" class="t-s ink" font-weight="700">型＝多くの作品に共通する骨組み</text>
-  <text x="26" y="254" class="t-xs soft">規則ではなく、あとから整理した傾向。外して驚かせる名作も</text>
+  <rect x="12" y="208" width="336" height="64" rx="12" class="bgc"/>
+  <path d="M24 236 Q40 222 56 236 Q40 250 24 236 Z" class="paper"/>
+  <path d="M24 236 Q40 222 56 236 Q40 250 24 236 Z" class="st" stroke-width="1.5"/>
+  <circle cx="40" cy="236" r="4.5" class="fl"/>
+  <text x="68" y="230" class="t-s ink" font-weight="700">④ 語り手と視点</text>
+  <text x="68" y="250" class="t-xs soft">どの型も、だれの目で語るかで見え方が変わる</text>
+  <text x="68" y="264" class="t-xs soft">型は規則ではなく、あとから整理した傾向</text>
 </svg>

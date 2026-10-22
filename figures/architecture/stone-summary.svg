@@ -1,50 +1,55 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- 重さを流す2つの方法（上）と、それを使った古代の建築（下） -->
-  <text x="90" y="20" class="t-m mid ink" font-weight="700">柱と梁</text>
-  <text x="270" y="20" class="t-m mid fl" font-weight="700">アーチ</text>
-  <path d="M180 10 V258" class="st-line dash" stroke-width="1"/>
+  <!-- 重さを流す3つの方法（上：積む・架ける・押し合う）と、それを使った古代の建築（下） -->
+  <g class="t-m mid" font-weight="700">
+    <text x="62" y="22" class="ink">積む</text>
+    <text x="180" y="22" class="ink">柱と梁</text>
+    <text x="298" y="22" class="fl">アーチ</text>
+  </g>
+  <path d="M121 10 V250 M239 10 V250" class="st-line dash" stroke-width="1"/>
+
+  <!-- 積む：石の段 -->
+  <path d="M62 30 V42" class="st" stroke-width="2.5" marker-end="url(#a-ink)"/>
+  <g class="tint"><rect x="34" y="96" width="56" height="12"/><rect x="40" y="84" width="44" height="12"/><rect x="46" y="72" width="32" height="12"/><rect x="52" y="60" width="20" height="12"/><rect x="57" y="48" width="10" height="12"/></g>
+  <path d="M34 96 h56 v12 h-56 Z M40 84 h44 v12 h-44 Z M46 72 h32 v12 h-32 Z M52 60 h20 v12 h-20 Z M57 48 h10 v12 h-10 Z" class="st-soft" stroke-width="1"/>
+  <text x="62" y="124" class="t-xs mid soft">真下へ押しつける</text>
 
   <!-- 柱と梁：真ん中がたわむ -->
-  <path d="M90 28 V44" class="st" stroke-width="2.5" marker-end="url(#a-ink)"/>
-  <rect x="44" y="48" width="92" height="12" class="tint"/>
-  <rect x="44" y="48" width="92" height="12" class="st-soft" stroke-width="1.5"/>
-  <path d="M48 64 Q90 82 132 64" class="st-f dash" stroke-width="1.5" fill="none"/>
-  <rect x="50" y="60" width="12" height="52" class="st" stroke-width="2" fill="none"/>
-  <rect x="118" y="60" width="12" height="52" class="st" stroke-width="2" fill="none"/>
-  <text x="90" y="100" class="t-xs mid fl">たわむ</text>
+  <path d="M180 30 V44" class="st" stroke-width="2.5" marker-end="url(#a-ink)"/>
+  <rect x="140" y="48" width="80" height="12" class="tint"/>
+  <rect x="140" y="48" width="80" height="12" class="st-soft" stroke-width="1.5"/>
+  <path d="M144 64 Q180 80 216 64" class="st-f dash" stroke-width="1.5"/>
+  <rect x="146" y="60" width="10" height="48" class="st" stroke-width="2"/>
+  <rect x="204" y="60" width="10" height="48" class="st" stroke-width="2"/>
+  <text x="180" y="98" class="t-xs mid fl">たわむ</text>
+  <text x="180" y="124" class="t-xs mid soft">柱の間は狭い</text>
 
   <!-- アーチ：押し合って両脚へ -->
-  <path d="M270 28 V40" class="st" stroke-width="2.5" marker-end="url(#a-ink)"/>
-  <path d="M228 112 V80 A42 42 0 0 1 312 80 V112 H298 V80 A28 28 0 0 0 242 80 V112Z" class="tint"/>
-  <path d="M228 112 V80 A42 42 0 0 1 312 80 V112 H298 V80 A28 28 0 0 0 242 80 V112Z" class="st" stroke-width="2"/>
-  <path d="M264 44 C246 50 236 62 235 90 V108" class="st-f" stroke-width="2" fill="none" marker-end="url(#a-architecture)"/>
-  <path d="M276 44 C294 50 304 62 305 90 V108" class="st-f" stroke-width="2" fill="none" marker-end="url(#a-architecture)"/>
-  <text x="270" y="102" class="t-xs mid fl">押し合う</text>
+  <path d="M298 30 V40" class="st" stroke-width="2.5" marker-end="url(#a-ink)"/>
+  <path d="M260 108 V80 A38 38 0 0 1 336 80 V108 H323 V80 A25 25 0 0 0 273 80 V108Z" class="tint"/>
+  <path d="M260 108 V80 A38 38 0 0 1 336 80 V108 H323 V80 A25 25 0 0 0 273 80 V108Z" class="st" stroke-width="2"/>
+  <path d="M292 46 C276 52 268 62 267 88 V104" class="st-f" stroke-width="2" marker-end="url(#a-architecture)"/>
+  <path d="M304 46 C320 52 328 62 329 88 V104" class="st-f" stroke-width="2" marker-end="url(#a-architecture)"/>
+  <text x="298" y="124" class="t-xs mid soft">石が押し合う</text>
 
-  <!-- 下へ：使われ方 -->
-  <path d="M90 120 V138" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
-  <path d="M270 120 V138" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <path d="M62 132 V146" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <path d="M180 132 V146" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <path d="M298 132 V146" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
 
+  <!-- ピラミッド -->
+  <path d="M62 160 L104 222 H20 Z" class="fl"/>
+  <rect x="56" y="196" width="12" height="6" class="paper"/>
   <!-- ギリシャ神殿 -->
-  <path d="M28 166 L90 146 L152 166Z" class="fl"/>
-  <rect x="28" y="166" width="124" height="8" class="soft"/>
-  <g class="st" stroke-width="5">
-    <path d="M36 176 V214 M54 176 V214 M72 176 V214 M90 176 V214 M108 176 V214 M126 176 V214 M144 176 V214"/>
-  </g>
-  <rect x="24" y="214" width="132" height="8" class="soft"/>
-  <text x="90" y="240" class="t-s mid ink" font-weight="700">ギリシャ神殿</text>
-  <text x="90" y="256" class="t-xs mid soft">柱がずらり・柱頭で様式</text>
+  <path d="M132 176 L180 160 L228 176Z" class="fl"/>
+  <rect x="132" y="176" width="96" height="7" class="soft"/>
+  <path d="M140 185 V216 M156 185 V216 M172 185 V216 M188 185 V216 M204 185 V216 M220 185 V216" class="st" stroke-width="4"/>
+  <rect x="128" y="216" width="104" height="6" class="soft"/>
+  <!-- ローマのドーム -->
+  <path d="M264 192 A34 34 0 0 1 332 192Z" class="fl"/>
+  <rect x="260" y="192" width="76" height="30" class="tint"/>
+  <rect x="260" y="192" width="76" height="30" class="st-soft" stroke-width="1.5"/>
+  <path d="M290 222 V206 A8 8 0 0 1 306 206 V222" class="st" stroke-width="2"/>
 
-  <!-- ローマ：ドームと水道橋 -->
-  <path d="M252 186 A38 38 0 0 1 328 186Z" class="fl"/>
-  <rect x="248" y="186" width="84" height="36" class="tint"/>
-  <rect x="248" y="186" width="84" height="36" class="st-soft" stroke-width="1.5" fill="none"/>
-  <circle cx="290" cy="150" r="3" class="paper"/>
-  <rect x="192" y="180" width="50" height="8" class="soft"/>
-  <path d="M192 222 V202 A8 8 0 0 1 208 202 V222 M209 222 V202 A8 8 0 0 1 225 202 V222 M226 222 V202 A8 8 0 0 1 242 202 V222" class="st" stroke-width="2" fill="none"/>
-  <path d="M192 188 V202 M242 188 V202" class="st" stroke-width="2"/>
-  <text x="270" y="240" class="t-s mid ink" font-weight="700">ローマ</text>
-  <text x="270" y="256" class="t-xs mid soft">水道橋・ドーム</text>
-
-  <text x="180" y="276" class="t-xs mid ink">ローマは柱の様式も飾りとして受け継いだ</text>
+  <g class="t-s mid ink" font-weight="700"><text x="62" y="240">エジプト</text><text x="180" y="240">ギリシャ</text><text x="298" y="240">ローマ</text></g>
+  <path d="M30 256 H330" class="st-f" stroke-width="2" marker-end="url(#a-architecture)"/>
+  <text x="180" y="274" class="t-xs mid ink">積む → 架ける → 押し合う：中の空間が広くなる</text>
 </svg>

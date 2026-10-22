@@ -1,0 +1,44 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- バウハウス：芸術（手仕事）と工業の重なりを学び、家具・照明・建物の形を作った。1919〜1933年 -->
+  <text x="16" y="24" class="t-m ink">芸術と工業を結び、デザインの型を作った</text>
+
+  <!-- 2つの円 -->
+  <circle cx="74" cy="104" r="54" class="tint"/>
+  <circle cx="150" cy="104" r="54" class="tint"/>
+  <path d="M112 66 A54 54 0 0 1 112 142 A54 54 0 0 1 112 66 Z" class="fl"/>
+  <circle cx="74" cy="104" r="54" class="st-f" stroke-width="1.5"/>
+  <circle cx="150" cy="104" r="54" class="st-f" stroke-width="1.5"/>
+  <text x="52" y="100" class="t-s mid ink" font-weight="700">芸術</text>
+  <text x="52" y="116" class="t-xs mid soft">手仕事</text>
+  <text x="172" y="100" class="t-s mid ink" font-weight="700">工業</text>
+  <text x="172" y="116" class="t-xs mid soft">大量生産</text>
+  <text x="112" y="100" class="t-xs mid on" font-weight="700">デザ</text>
+  <text x="112" y="114" class="t-xs mid on" font-weight="700">イン</text>
+
+  <!-- 生まれた形 -->
+  <path d="M208 104 H226" class="st-f" stroke-width="2.5" marker-end="url(#a-architecture)"/>
+  <rect x="232" y="40" width="116" height="128" rx="10" class="bgc"/>
+  <!-- いす（鋼管） -->
+  <path d="M248 58 V84 H268 V100 M248 84 V100 M262 58 V76" class="st" stroke-width="2.5"/>
+  <text x="280" y="82" class="t-xs ink">鋼管のいす</text>
+  <!-- 照明 -->
+  <path d="M258 110 V118" class="st" stroke-width="2"/>
+  <path d="M248 128 A10 10 0 0 1 268 128 Z" class="soft"/>
+  <text x="280" y="126" class="t-xs ink">照明・食器</text>
+  <!-- 建物（ガラスの壁） -->
+  <rect x="246" y="140" width="26" height="20" class="tint"/>
+  <path d="M246 140 H272 V160 H246 Z M246 147 H272 M246 154 H272" class="st" stroke-width="1"/>
+  <text x="280" y="156" class="t-xs ink">ガラスの校舎</text>
+
+  <!-- 年表 -->
+  <path d="M20 206 H340" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <g class="fl"><circle cx="44" cy="206" r="5"/><circle cx="132" cy="206" r="5"/><circle cx="220" cy="206" r="5"/><circle cx="282" cy="206" r="5"/></g>
+  <g class="t-xs mid ink" font-weight="700">
+    <text x="44" y="194">ワイマール</text><text x="132" y="194">デッサウ</text><text x="220" y="194">ベルリン</text><text x="282" y="194">閉校</text>
+  </g>
+  <g class="t-xs mid soft">
+    <text x="44" y="224">1919年</text><text x="132" y="224">1925年</text><text x="220" y="224">1932年</text><text x="282" y="224">1933年</text>
+  </g>
+  <text x="336" y="224" class="t-xs end fl" font-weight="700">世界へ</text>
+  <text x="180" y="260" class="t-xs mid soft">飾りを減らし、工場で作りやすく使いやすい形を考えた</text>
+</svg>

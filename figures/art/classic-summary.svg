@@ -1,5 +1,5 @@
-<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- 本物らしく見せる3つの工夫を、時代順に -->
+<svg viewBox="0 0 360 310" xmlns="http://www.w3.org/2000/svg">
+  <!-- 本物らしく見せる3つの工夫を時代順に。下の帯は、それを支えた材料（④油絵の具） -->
   <g class="t-s mid fl" font-weight="700">
     <text x="62" y="24">体の重心</text>
     <text x="180" y="24">顔の向き</text>
@@ -62,6 +62,10 @@
     <text x="180" y="230">15世紀〜</text>
     <text x="298" y="230">17世紀</text>
   </g>
-  <rect x="40" y="244" width="280" height="26" rx="13" class="tint"/>
-  <text x="180" y="262" class="t-s mid ink">どれも、厚みと存在感を出す工夫</text>
+  <!-- ④ 材料：油絵の具が肖像画と光と影を支えた -->
+  <rect x="130" y="250" width="218" height="28" rx="14" class="fl"/>
+  <text x="239" y="269" class="t-xs mid on" font-weight="700">④ 材料：油絵の具（15世紀〜）</text>
+  <text x="70" y="262" class="t-xs mid soft">質感と深い色を</text>
+  <text x="70" y="276" class="t-xs mid soft">支えた →</text>
+  <text x="180" y="302" class="t-s mid ink">どれも、厚みと存在感を出す工夫</text>
 </svg>

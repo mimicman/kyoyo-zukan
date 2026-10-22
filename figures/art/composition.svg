@@ -1,0 +1,41 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 構図：三角形・対角線・三分割・放射の4つの型。線は画家が物を置いた骨組み -->
+  <text x="16" y="24" class="t-m ink">線の骨組みが、見る人の目を導く</text>
+
+  <!-- 1 三角形 -->
+  <rect x="16" y="38" width="156" height="86" rx="4" class="paper"/>
+  <rect x="16" y="38" width="156" height="86" rx="4" class="st-soft" stroke-width="1.5"/>
+  <path d="M94 48 L140 116 H48 Z" class="tint"/>
+  <path d="M94 48 L140 116 H48 Z" class="st-f" stroke-width="2"/>
+  <circle cx="94" cy="62" r="7" class="soft"/>
+  <path d="M84 72 L104 72 L118 112 H70 Z" class="soft" opacity="0.7"/>
+  <text x="94" y="140" class="t-xs mid ink"><tspan font-weight="700">三角形</tspan>：どっしり安定</text>
+
+  <!-- 2 対角線 -->
+  <rect x="188" y="38" width="156" height="86" rx="4" class="paper"/>
+  <rect x="188" y="38" width="156" height="86" rx="4" class="st-soft" stroke-width="1.5"/>
+  <path d="M196 118 L336 44" class="st-f" stroke-width="2"/>
+  <circle cx="222" cy="98" r="6" class="soft"/>
+  <circle cx="262" cy="80" r="8" class="soft"/>
+  <circle cx="306" cy="58" r="10" class="soft"/>
+  <path d="M232 114 L300 80" class="st-f" stroke-width="2" marker-end="url(#a-art)"/>
+  <text x="266" y="140" class="t-xs mid ink"><tspan font-weight="700">対角線</tspan>：動きと勢い</text>
+
+  <!-- 3 三分割 -->
+  <rect x="16" y="154" width="156" height="86" rx="4" class="paper"/>
+  <rect x="16" y="154" width="156" height="86" rx="4" class="st-soft" stroke-width="1.5"/>
+  <path d="M68 154 V240 M120 154 V240 M16 183 H172 M16 211 H172" class="st-soft dash" stroke-width="1"/>
+  <path d="M16 211 C60 206 120 214 172 208" class="st" stroke-width="1.5"/>
+  <circle cx="120" cy="183" r="9" class="fl"/>
+  <text x="94" y="256" class="t-xs mid ink"><tspan font-weight="700">三分割</tspan>：自然な余白</text>
+
+  <!-- 4 放射（1点に集まる線） -->
+  <rect x="188" y="154" width="156" height="86" rx="4" class="paper"/>
+  <rect x="188" y="154" width="156" height="86" rx="4" class="st-soft" stroke-width="1.5"/>
+  <path d="M266 192 L188 154 M266 192 L188 240 M266 192 L344 154 M266 192 L344 240 M266 192 L188 197 M266 192 L344 197 M266 192 L230 240 M266 192 L302 240" class="st-soft" stroke-width="1"/>
+  <rect x="188" y="208" width="156" height="12" class="tint"/>
+  <circle cx="266" cy="192" r="9" class="fl"/>
+  <text x="266" y="256" class="t-xs mid ink"><tspan font-weight="700">放射</tspan>：1点に目を集める</text>
+
+  <text x="180" y="274" class="t-xs mid soft">実際の名画は、いくつかの型を組み合わせていることが多い</text>
+</svg>

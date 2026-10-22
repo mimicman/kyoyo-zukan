@@ -14,12 +14,14 @@
   <circle cx="166" cy="117" r="12" class="fl"/>
   <text x="166" y="148" class="t-l mid fl">ジャズ</text>
   <text x="166" y="164" class="t-xs mid soft">20世紀初め</text>
-  <path d="M124 84 C170 50 214 58 238 70 M178 112 C200 100 220 86 236 78" class="st-f" stroke-width="2.5" marker-end="url(#a-music)"/>
+  <path d="M124 84 C170 50 214 58 238 70" class="st-f" stroke-width="2.5" marker-end="url(#a-music)"/>
+  <path d="M178 112 C200 100 220 86 236 78" class="st-f" stroke-width="2.5" marker-end="url(#a-music)"/>
   <circle cx="246" cy="76" r="8" class="fl"/>
   <text x="246" y="56" class="t-s mid ink">R&amp;B</text>
   <circle cx="236" cy="200" r="8" class="tint st-f" stroke-width="2"/>
   <text x="236" y="224" class="t-s mid ink">カントリー</text>
-  <path d="M252 84 C266 104 278 118 284 126 M242 192 C258 172 274 160 284 152" class="st-f" stroke-width="2.5" marker-end="url(#a-music)"/>
+  <path d="M252 84 C266 104 278 118 284 126" class="st-f" stroke-width="2.5" marker-end="url(#a-music)"/>
+  <path d="M242 192 C258 172 274 160 284 152" class="st-f" stroke-width="2.5" marker-end="url(#a-music)"/>
   <circle cx="294" cy="139" r="14" class="fl"/>
   <path d="M290 132 L300 139 L290 146 Z" class="paper"/>
   <text x="300" y="174" class="t-m mid fl">ロックンロール</text>

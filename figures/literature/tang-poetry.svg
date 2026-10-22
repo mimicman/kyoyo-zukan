@@ -1,0 +1,45 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 唐詩：五言絶句＝5字×4行。2・4行目の終わりで韻をふむ。起承転結。右は李白と杜甫、下は日本への伝わり -->
+  <text x="16" y="24" class="t-m ink">5字×4行に、景色と心を込める</text>
+
+  <!-- 五言絶句のマス（縦書き：右の行から読む） -->
+  <rect x="12" y="36" width="182" height="168" rx="10" class="bgc"/>
+  <text x="103" y="54" class="t-xs mid soft">五言絶句（右の行から読む）</text>
+  <g class="paper">
+    <rect x="136" y="64" width="22" height="22"/><rect x="136" y="88" width="22" height="22"/><rect x="136" y="112" width="22" height="22"/><rect x="136" y="136" width="22" height="22"/><rect x="136" y="160" width="22" height="22"/>
+    <rect x="104" y="64" width="22" height="22"/><rect x="104" y="88" width="22" height="22"/><rect x="104" y="112" width="22" height="22"/><rect x="104" y="136" width="22" height="22"/>
+    <rect x="72" y="64" width="22" height="22"/><rect x="72" y="88" width="22" height="22"/><rect x="72" y="112" width="22" height="22"/><rect x="72" y="136" width="22" height="22"/><rect x="72" y="160" width="22" height="22"/>
+    <rect x="40" y="64" width="22" height="22"/><rect x="40" y="88" width="22" height="22"/><rect x="40" y="112" width="22" height="22"/><rect x="40" y="136" width="22" height="22"/>
+  </g>
+  <g class="st-soft" stroke-width="1">
+    <path d="M136 64 h22 v118 h-22 Z M136 88 h22 M136 112 h22 M136 136 h22 M136 160 h22"/>
+    <path d="M104 64 h22 v118 h-22 Z M104 88 h22 M104 112 h22 M104 136 h22 M104 160 h22"/>
+    <path d="M72 64 h22 v118 h-22 Z M72 88 h22 M72 112 h22 M72 136 h22 M72 160 h22"/>
+    <path d="M40 64 h22 v118 h-22 Z M40 88 h22 M40 112 h22 M40 136 h22 M40 160 h22"/>
+  </g>
+  <!-- 韻をふむ字（2行目・4行目の最後） -->
+  <rect x="104" y="160" width="22" height="22" class="fl"/>
+  <rect x="40" y="160" width="22" height="22" class="fl"/>
+  <text x="147" y="198" class="t-xs mid ink" font-weight="700">起</text>
+  <text x="115" y="198" class="t-xs mid ink" font-weight="700">承</text>
+  <text x="83" y="198" class="t-xs mid ink" font-weight="700">転</text>
+  <text x="51" y="198" class="t-xs mid ink" font-weight="700">結</text>
+  <rect x="264" y="14" width="10" height="10" class="fl"/>
+  <text x="278" y="24" class="t-xs ink">＝韻をふむ字</text>
+
+  <!-- 右：李白と杜甫 -->
+  <rect x="204" y="36" width="144" height="76" rx="10" class="tint"/>
+  <text x="216" y="58" class="t-s ink" font-weight="700">李白（詩仙）</text>
+  <text x="216" y="78" class="t-xs soft">酒と月、自由な想像</text>
+  <text x="216" y="96" class="t-xs soft">のびやかな詩</text>
+  <rect x="204" y="120" width="144" height="84" rx="10" class="tint"/>
+  <text x="216" y="142" class="t-s ink" font-weight="700">杜甫（詩聖）</text>
+  <text x="216" y="162" class="t-xs soft">戦乱と人々の暮らしを</text>
+  <text x="216" y="180" class="t-xs soft">見つめ、形を極めた</text>
+
+  <!-- 下：日本へ -->
+  <path d="M30 222 H330" class="st-f" stroke-width="2" marker-end="url(#a-literature)"/>
+  <text x="30" y="242" class="t-xs ink">唐（7〜10世紀）</text>
+  <text x="330" y="242" class="t-xs end ink">日本：漢詩・漢文、和歌や物語へ</text>
+  <text x="180" y="266" class="t-xs mid soft">日本では返り点を付け、日本語の順に読みかえた（訓読）</text>
+</svg>

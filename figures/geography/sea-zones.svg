@@ -1,0 +1,41 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 領海とEEZ：海岸の基線から沖へ、領海・接続水域・排他的経済水域・公海と帯状に区切る -->
+  <text x="16" y="24" class="t-m ink">海岸からの距離で、海の権利が変わる</text>
+
+  <!-- 陸 -->
+  <path d="M12 46 Q12 36 22 36 H60 V166 H22 Q12 166 12 156 Z" class="soft" opacity="0.45"/>
+  <text x="36" y="106" class="t-m mid ink">陸</text>
+  <!-- 帯 -->
+  <rect x="60" y="36" width="50" height="130" class="fl"/>
+  <rect x="110" y="36" width="40" height="130" class="fl" opacity="0.55"/>
+  <rect x="150" y="36" width="150" height="130" class="tint"/>
+  <path d="M300 36 H338 Q348 36 348 46 V156 Q348 166 338 166 H300 Z" class="bgc"/>
+  <path d="M60 36 V166 M110 36 V166 M150 36 V166 M300 36 V166" class="st" stroke-width="1"/>
+  <text x="85" y="106" class="t-s mid on" font-weight="700">領海</text>
+  <text x="130" y="100" class="t-xs mid on">接続</text>
+  <text x="130" y="114" class="t-xs mid on">水域</text>
+  <text x="225" y="98" class="t-s mid ink" font-weight="700">排他的経済水域</text>
+  <text x="225" y="116" class="t-s mid ink" font-weight="700">（EEZ）</text>
+  <text x="324" y="106" class="t-s mid ink" font-weight="700">公海</text>
+  <text x="294" y="158" class="t-xs end soft">幅は実際の比ではない</text>
+
+  <!-- 距離のものさし -->
+  <path d="M60 182 H342" class="st" stroke-width="1.2" marker-end="url(#a-ink)"/>
+  <path d="M60 177 V187 M110 177 V187 M150 177 V187 M300 177 V187" class="st" stroke-width="1.2"/>
+  <text x="60" y="200" class="t-xs mid ink">基線</text>
+  <text x="110" y="200" class="t-xs mid ink">12海里</text>
+  <text x="150" y="200" class="t-xs mid ink">24</text>
+  <text x="300" y="200" class="t-xs mid ink">200海里</text>
+
+  <!-- それぞれの権利 -->
+  <rect x="24" y="210" width="10" height="10" class="fl"/>
+  <text x="40" y="219" class="t-xs ink">領海：国の主権が及ぶ（海の上の領土）</text>
+  <rect x="24" y="226" width="10" height="10" class="fl" opacity="0.55"/>
+  <text x="40" y="235" class="t-xs ink">接続水域：密輸などを取り締まれる</text>
+  <rect x="24" y="242" width="10" height="10" class="tint"/>
+  <path d="M24 242 h10 v10 h-10 Z" class="st-soft" stroke-width="0.8"/>
+  <text x="40" y="251" class="t-xs ink">EEZ：魚や海底の資源をとる権利をもつ</text>
+  <rect x="24" y="258" width="10" height="10" class="bgc"/>
+  <path d="M24 258 h10 v10 h-10 Z" class="st-soft" stroke-width="0.8"/>
+  <text x="40" y="267" class="t-xs ink">公海：どの国の船も自由に通れる</text>
+</svg>

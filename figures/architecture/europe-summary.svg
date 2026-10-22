@@ -1,54 +1,37 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- 上へ伸びるゴシック（左）と、左右対称で横に落ち着くルネサンス（右） -->
-  <text x="90" y="20" class="t-m mid ink" font-weight="700">ゴシック</text>
-  <text x="270" y="20" class="t-m mid ink" font-weight="700">ルネサンス</text>
-  <text x="90" y="36" class="t-xs mid soft">12〜15世紀</text>
-  <text x="270" y="36" class="t-xs mid soft">15〜16世紀</text>
-
-  <!-- ゴシック大聖堂：2本の尖塔と尖頭アーチの窓 -->
-  <path d="M40 210 V98 L54 56 L68 98 V210Z" class="tint"/>
-  <path d="M112 210 V98 L126 56 L140 98 V210Z" class="tint"/>
-  <path d="M68 210 V120 L90 94 L112 120 V210Z" class="soft"/>
-  <g class="st" stroke-width="2" fill="none">
-    <path d="M40 210 V98 L54 56 L68 98 V210"/>
-    <path d="M112 210 V98 L126 56 L140 98 V210"/>
-    <path d="M68 120 L90 94 L112 120"/>
+  <!-- ロマネスク → ゴシック → ルネサンス → バロック。形の向きと、何を大切にしたか -->
+  <g class="t-s mid ink" font-weight="700">
+    <text x="48" y="22">ロマネスク</text>
+    <text x="136" y="22">ゴシック</text>
+    <text x="224" y="22">ルネサンス</text>
+    <text x="312" y="22">バロック</text>
   </g>
-  <path d="M78 196 V146 Q90 124 102 146 V196Z" class="fl"/>
-  <circle cx="90" cy="112" r="6" class="paper"/>
-  <!-- 飛梁：外の控え壁から斜めに壁を支える -->
-  <rect x="12" y="150" width="12" height="60" class="soft"/>
-  <rect x="156" y="150" width="12" height="60" class="soft"/>
-  <path d="M18 150 Q24 128 40 122" class="st-f" stroke-width="3" fill="none"/>
-  <path d="M162 150 Q156 128 140 122" class="st-f" stroke-width="3" fill="none"/>
-  <text x="18" y="140" class="t-xs mid fl halo">飛梁</text>
-  <path d="M90 70 V48" class="st-f" stroke-width="2.5" marker-end="url(#a-architecture)"/>
-  <g class="t-xs mid">
-    <text x="90" y="226" class="fl" font-weight="700">上へ・光を入れる</text>
-    <text x="90" y="242" class="soft">尖頭アーチ・飛梁</text>
-    <text x="90" y="256" class="soft">ステンドグラス</text>
-  </g>
-
-  <!-- ルネサンス：左右対称、柱、ペディメント、ドーム -->
-  <path d="M240 112 A30 30 0 0 1 300 112Z" class="fl"/>
-  <rect x="210" y="138" width="120" height="72" class="tint"/>
-  <rect x="210" y="138" width="120" height="72" class="st" stroke-width="2" fill="none"/>
-  <path d="M236 138 L270 116 L304 138Z" class="soft"/>
-  <rect x="244" y="112" width="52" height="6" class="st" stroke-width="1.5" fill="none"/>
-  <g class="st" stroke-width="4">
-    <path d="M244 142 V206 M258 142 V206 M282 142 V206 M296 142 V206"/>
-  </g>
-  <g class="paper"><rect x="216" y="160" width="12" height="22"/><rect x="312" y="160" width="12" height="22"/></g>
-  <path d="M270 76 V214" class="st-f dash" stroke-width="1.5"/>
-  <g class="t-xs mid">
-    <text x="270" y="226" class="fl" font-weight="700">左右対称・簡単な比</text>
-    <text x="270" y="242" class="soft">柱・ペディメント</text>
-    <text x="270" y="256" class="soft">ドーム</text>
-  </g>
-  <!-- 手本は古代ローマ -->
-  <rect x="300" y="44" width="54" height="40" rx="8" class="bgc"/>
-  <text x="327" y="60" class="t-xs mid ink">古代</text>
-  <text x="327" y="76" class="t-xs mid ink">ローマ</text>
-  <path d="M310 86 Q296 98 290 106" class="st dash" stroke-width="1.5" fill="none" marker-end="url(#a-ink)"/>
-  <text x="180" y="276" class="t-xs mid ink">縦に伸びる形 → 横に落ち着く形へ</text>
+  <g class="t-xs mid soft"><text x="48" y="38">11〜12世紀</text><text x="136" y="38">12〜15世紀</text><text x="224" y="38">15〜16世紀</text><text x="312" y="38">17〜18世紀</text></g>
+  <!-- ロマネスク：厚い壁・半円アーチ・小さな窓 -->
+  <path d="M14 180 V110 A34 34 0 0 1 82 110 V180 Z" class="soft"/>
+  <path d="M42 150 V124 A6 6 0 0 1 54 124 V150 Z" class="paper"/>
+  <path d="M28 108 V100 A4 4 0 0 1 36 100 V108 Z M60 108 V100 A4 4 0 0 1 68 100 V108 Z" class="paper"/>
+  <!-- ゴシック：尖塔と大きな窓 -->
+  <path d="M108 180 V96 L118 60 L128 96 V180 Z M144 180 V96 L154 60 L164 96 V180 Z" class="tint"/>
+  <path d="M128 180 V112 L136 96 L144 112 V180 Z" class="soft"/>
+  <path d="M108 180 V96 L118 60 L128 96 V180 M144 180 V96 L154 60 L164 96 V180" class="st" stroke-width="1.5"/>
+  <path d="M114 170 V120 Q118 108 122 120 V170 Z M150 170 V120 Q154 108 158 120 V170 Z" class="fl"/>
+  <!-- ルネサンス：ドームと左右対称 -->
+  <path d="M204 116 A20 20 0 0 1 244 116 Z" class="fl"/>
+  <rect x="186" y="132" width="76" height="48" class="tint"/>
+  <rect x="186" y="132" width="76" height="48" class="st" stroke-width="1.5"/>
+  <path d="M200 132 L224 116 L248 132 Z" class="soft"/>
+  <path d="M198 136 V180 M210 136 V180 M238 136 V180 M250 136 V180" class="st" stroke-width="2.5"/>
+  <path d="M224 96 V184" class="st-f dash" stroke-width="1.2"/>
+  <!-- バロック：波打つ正面 -->
+  <path d="M272 180 V124 C284 124 290 114 296 108 C302 100 306 92 312 88 C318 92 322 100 328 108 C334 114 340 124 352 124 V180 Z" class="tint"/>
+  <path d="M272 180 V124 C284 124 290 114 296 108 C302 100 306 92 312 88 C318 92 322 100 328 108 C334 114 340 124 352 124 V180 Z" class="st" stroke-width="1.5"/>
+  <path d="M300 116 V180 M306 112 V180 M318 112 V180 M324 116 V180" class="st" stroke-width="2.5"/>
+  <ellipse cx="312" cy="106" rx="5" ry="4" class="paper"/>
+  <path d="M8 184 H352" class="st-soft" stroke-width="2"/>
+  <g class="t-xs mid fl" font-weight="700"><text x="48" y="204">重く暗い</text><text x="136" y="204">高さと光</text><text x="224" y="204">調和と比</text><text x="312" y="204">動きと光</text></g>
+  <g class="t-xs mid soft"><text x="48" y="220">厚い壁</text><text x="136" y="220">飛梁・大窓</text><text x="224" y="220">古代に学ぶ</text><text x="312" y="220">曲線・楕円</text></g>
+  <rect x="12" y="234" width="336" height="38" rx="12" class="bgc"/>
+  <text x="180" y="250" class="t-xs mid ink">中世は教会を高く明るく、ルネサンスは古代の調和へ</text>
+  <text x="180" y="265" class="t-xs mid ink">バロックはその形を曲げて、動きと驚きを加えた</text>
 </svg>

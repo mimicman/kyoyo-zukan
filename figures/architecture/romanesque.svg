@@ -1,0 +1,40 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- ロマネスク：半円の石の天井が外へ押す力を、厚い壁で受け止める。窓は小さく中は暗い -->
+  <text x="16" y="24" class="t-m ink">厚い壁と半円の天井で、重さを受け止める</text>
+
+  <!-- 左：教会の断面 -->
+  <path d="M30 236 V120 A76 76 0 0 1 182 120 V236 H156 V120 A50 50 0 0 0 56 120 V236 Z" class="tint"/>
+  <rect x="30" y="120" width="26" height="116" class="soft"/>
+  <rect x="156" y="120" width="26" height="116" class="soft"/>
+  <path d="M30 236 V120 A76 76 0 0 1 182 120 V236 H156 V120 A50 50 0 0 0 56 120 V236 Z" class="st" stroke-width="1.5"/>
+  <rect x="40" y="150" width="6" height="18" rx="3" class="paper"/>
+  <rect x="166" y="150" width="6" height="18" rx="3" class="paper"/>
+  <path d="M62 86 L30 102" class="st-f" stroke-width="2.5" marker-end="url(#a-architecture)"/>
+  <path d="M150 86 L182 102" class="st-f" stroke-width="2.5" marker-end="url(#a-architecture)"/>
+  <text x="106" y="60" class="t-xs mid ink">半円の石の天井</text>
+  <text x="106" y="148" class="t-xs mid fl" font-weight="700">外へ押す力</text>
+  <text x="106" y="166" class="t-xs mid soft">→ 厚い壁で受ける</text>
+  <text x="43" y="254" class="t-xs mid ink">厚い壁</text>
+  <text x="169" y="254" class="t-xs mid ink">小さな窓</text>
+  <path d="M169 244 V172" class="st-soft" stroke-width="1"/>
+  <path d="M16 236 H196" class="st" stroke-width="2"/>
+
+  <!-- 右：ロマネスクとゴシックの窓 -->
+  <rect x="210" y="40" width="138" height="88" rx="10" class="bgc"/>
+  <rect x="222" y="60" width="34" height="56" class="soft"/>
+  <path d="M234 106 V82 A5 5 0 0 1 244 82 V106 Z" class="paper"/>
+  <text x="266" y="64" class="t-s ink" font-weight="700">ロマネスク</text>
+  <text x="266" y="82" class="t-xs soft">半円アーチ</text>
+  <text x="266" y="96" class="t-xs soft">小さな窓</text>
+  <text x="266" y="110" class="t-xs soft">中は暗め</text>
+  <path d="M279 130 V144" class="st-f" stroke-width="2" marker-end="url(#a-architecture)"/>
+  <rect x="210" y="148" width="138" height="88" rx="10" class="tint"/>
+  <rect x="222" y="160" width="34" height="64" class="soft" opacity="0.5"/>
+  <path d="M227 222 V180 Q239 162 251 180 V222 Z" class="fl"/>
+  <text x="266" y="172" class="t-s ink" font-weight="700">ゴシック</text>
+  <text x="266" y="190" class="t-xs soft">尖頭アーチ</text>
+  <text x="266" y="204" class="t-xs soft">大きな窓</text>
+  <text x="266" y="218" class="t-xs soft">高く明るい</text>
+
+  <text x="180" y="274" class="t-xs mid soft">重さを壁で受け止めた時代から、外で支える時代へ</text>
+</svg>

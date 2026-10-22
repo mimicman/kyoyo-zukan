@@ -1,0 +1,32 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- チューネン圏：都市を中心に、運ぶ費用の大きい物ほど近くで作る同心円の模式図（半円で表示） -->
+  <text x="16" y="24" class="t-m ink">都市からの距離で、作る物が変わる</text>
+
+  <path d="M24 204 A156 156 0 0 1 336 204 Z" class="tint"/>
+  <path d="M62 204 A118 118 0 0 1 298 204 Z" class="paper"/>
+  <path d="M98 204 A82 82 0 0 1 262 204 Z" class="tint"/>
+  <path d="M134 204 A46 46 0 0 1 226 204 Z" class="paper"/>
+  <path d="M24 204 A156 156 0 0 1 336 204 M62 204 A118 118 0 0 1 298 204 M98 204 A82 82 0 0 1 262 204 M134 204 A46 46 0 0 1 226 204" class="st-soft" stroke-width="1.2"/>
+
+  <!-- 中心の都市 -->
+  <rect x="166" y="194" width="8" height="10" class="fl"/>
+  <rect x="176" y="188" width="9" height="16" class="fl"/>
+  <rect x="187" y="196" width="7" height="8" class="fl"/>
+
+  <!-- 帯の名前と理由 -->
+  <text x="180" y="182" class="t-xs mid ink" font-weight="700">① 野菜・牛乳</text>
+  <text x="180" y="140" class="t-s mid ink" font-weight="700">② 木材・薪</text>
+  <text x="180" y="154" class="t-xs mid soft">重くかさばる</text>
+  <text x="180" y="104" class="t-s mid ink" font-weight="700">③ 穀物</text>
+  <text x="180" y="118" class="t-xs mid soft">傷みにくく運べる</text>
+  <text x="180" y="69" class="t-s mid ink" font-weight="700">④ 放牧</text>
+  <text x="180" y="83" class="t-xs mid soft">広い土地がいる</text>
+
+  <!-- 地面と距離 -->
+  <path d="M16 204 H344" class="st" stroke-width="1.5"/>
+  <text x="180" y="220" class="t-xs mid ink" font-weight="700">都市</text>
+  <path d="M226 214 H332" class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
+  <text x="332" y="228" class="t-xs end soft">都市から遠い</text>
+  <text x="180" y="248" class="t-s mid ink">傷みやすく重い物ほど、都市の近くで作る</text>
+  <text x="180" y="268" class="t-xs mid soft">チューネン『孤立国』（1826年）の考えを簡単にした図</text>
+</svg>

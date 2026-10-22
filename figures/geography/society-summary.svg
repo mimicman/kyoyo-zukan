@@ -1,45 +1,57 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- 資源と都市：資源も人も均等には散らばらず、条件のそろった所に集まる -->
-  <text x="16" y="24" class="t-m ink">資源も人も、一部の場所に集まる</text>
+  <!-- 資源と都市：①資源 ②人 ③農地 ④人口の形。どれも均等には散らばらない -->
+  <text x="16" y="24" class="t-m ink">資源・農地・人は、どこにどう集まるか</text>
 
-  <!-- 左：資源（地層の断面） -->
-  <rect x="12" y="36" width="164" height="150" rx="10" class="bgc"/>
-  <text x="94" y="56" class="t-s mid ink" font-weight="700">資源</text>
-  <path d="M24 76 H164" class="st" stroke-width="1.5"/>
-  <text x="160" y="72" class="t-xs end soft">地面</text>
-  <path d="M24 156 C60 156 70 116 94 116 C118 116 128 156 164 156" class="st-soft" stroke-width="1" fill="none"/>
-  <path d="M24 136 C60 136 70 96 94 96 C118 96 128 136 164 136" class="st" stroke-width="3" fill="none"/>
-  <path d="M75 116 C82 101 106 101 113 116 Z" class="fl"/>
-  <path d="M110 108 L132 92" class="st-soft" stroke-width="1"/>
-  <text x="134" y="92" class="t-xs ink">石油</text>
-  <text x="94" y="176" class="t-xs mid soft">条件のそろった地層にだけ</text>
+  <!-- ① 資源 -->
+  <rect x="12" y="36" width="164" height="88" rx="10" class="bgc"/>
+  <text x="94" y="56" class="t-s mid ink" font-weight="700">① 資源</text>
+  <path d="M30 100 C60 100 70 72 94 72 C118 72 128 100 158 100" class="st" stroke-width="2.5"/>
+  <path d="M76 84 C84 70 104 70 112 84 Z" class="fl"/>
+  <text x="94" y="118" class="t-xs mid soft">条件のそろった地層にだけ</text>
 
-  <!-- 右：人（農村から都市へ） -->
-  <rect x="184" y="36" width="164" height="150" rx="10" class="bgc"/>
-  <text x="266" y="56" class="t-s mid ink" font-weight="700">人</text>
-  <circle cx="200" cy="84" r="3" class="soft"/>
-  <circle cx="222" cy="98" r="3" class="soft"/>
-  <circle cx="204" cy="118" r="3" class="soft"/>
-  <circle cx="228" cy="130" r="3" class="soft"/>
-  <circle cx="200" cy="146" r="3" class="soft"/>
-  <circle cx="220" cy="156" r="3" class="soft"/>
-  <path d="M236 108 L276 116" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/>
-  <path d="M236 146 L276 134" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/>
-  <rect x="286" y="104" width="12" height="52" class="fl"/>
-  <rect x="300" y="82" width="14" height="74" class="fl"/>
-  <rect x="316" y="96" width="12" height="60" class="fl"/>
-  <rect x="330" y="118" width="10" height="38" class="fl"/>
-  <path d="M282 156 H342" class="st" stroke-width="1.2"/>
-  <text x="214" y="176" class="t-xs mid soft">農村</text>
-  <text x="314" y="176" class="t-xs mid soft">都市</text>
+  <!-- ② 人（都市化） -->
+  <rect x="184" y="36" width="164" height="88" rx="10" class="bgc"/>
+  <text x="266" y="56" class="t-s mid ink" font-weight="700">② 人</text>
+  <circle cx="202" cy="72" r="3" class="soft"/>
+  <circle cx="218" cy="84" r="3" class="soft"/>
+  <circle cx="204" cy="96" r="3" class="soft"/>
+  <circle cx="220" cy="102" r="3" class="soft"/>
+  <path d="M232 86 L276 86" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/>
+  <rect x="290" y="76" width="10" height="28" class="fl"/>
+  <rect x="302" y="64" width="12" height="40" class="fl"/>
+  <rect x="316" y="72" width="10" height="32" class="fl"/>
+  <path d="M286 104 H332" class="st" stroke-width="1.2"/>
+  <text x="266" y="118" class="t-xs mid soft">仕事のある都市へ移る</text>
+
+  <!-- ③ 農地（チューネン圏） -->
+  <rect x="12" y="132" width="164" height="88" rx="10" class="bgc"/>
+  <text x="94" y="152" class="t-s mid ink" font-weight="700">③ 農地</text>
+  <path d="M58 198 A36 36 0 0 1 130 198 Z" class="tint"/>
+  <path d="M70 198 A24 24 0 0 1 118 198 Z" class="paper"/>
+  <path d="M82 198 A12 12 0 0 1 106 198 Z" class="tint"/>
+  <path d="M58 198 A36 36 0 0 1 130 198 M70 198 A24 24 0 0 1 118 198 M82 198 A12 12 0 0 1 106 198" class="st-soft" stroke-width="1"/>
+  <rect x="90" y="188" width="8" height="10" class="fl"/>
+  <path d="M50 198 H138" class="st" stroke-width="1.2"/>
+  <text x="94" y="214" class="t-xs mid soft">都市からの距離で決まる</text>
+
+  <!-- ④ 人口の形 -->
+  <rect x="184" y="132" width="164" height="88" rx="10" class="bgc"/>
+  <text x="266" y="152" class="t-s mid ink" font-weight="700">④ 人口の形</text>
+  <rect x="210" y="190" width="40" height="7" class="fl"/>
+  <rect x="214" y="182" width="32" height="7" class="fl"/>
+  <rect x="218" y="174" width="24" height="7" class="fl"/>
+  <rect x="222" y="166" width="16" height="7" class="fl"/>
+  <rect x="226" y="158" width="8" height="7" class="fl"/>
+  <path d="M256 178 H272" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/>
+  <rect x="290" y="190" width="24" height="7" class="fl"/>
+  <rect x="286" y="182" width="32" height="7" class="fl"/>
+  <rect x="284" y="174" width="36" height="7" class="fl"/>
+  <rect x="287" y="166" width="30" height="7" class="fl"/>
+  <rect x="293" y="158" width="18" height="7" class="fl"/>
+  <text x="266" y="214" class="t-xs mid soft">年齢ごとの人の数</text>
 
   <!-- 結果 -->
-  <path d="M94 186 V202" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/>
-  <path d="M266 186 V202" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/>
-  <rect x="12" y="206" width="336" height="62" rx="10" class="tint"/>
-  <path d="M180 216 V258" class="st-line" stroke-width="1"/>
-  <text x="94" y="230" class="t-s mid ink" font-weight="700">資源の貿易</text>
-  <text x="94" y="250" class="t-xs mid soft">国どうしの関係に響く</text>
-  <text x="266" y="230" class="t-s mid ink" font-weight="700">過密と過疎</text>
-  <text x="266" y="250" class="t-xs mid soft">都市の混雑・地方の人口減</text>
+  <rect x="12" y="228" width="336" height="44" rx="10" class="tint"/>
+  <text x="180" y="246" class="t-xs mid ink">集まる所と少ない所の差が、貿易・過密と過疎・高齢化を生む</text>
+  <text x="180" y="262" class="t-xs mid soft">「なぜそこに集まるのか」と問うと背景が見える</text>
 </svg>

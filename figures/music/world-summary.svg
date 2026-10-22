@@ -1,37 +1,51 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- 左：日本は時代ごとに積み重なる／右：アメリカは出会って混ざる -->
-  <path d="M180 30 V270" class="st-line dash" stroke-width="1.5"/>
-  <text x="94" y="26" class="t-xs mid soft">日本の伝統音楽</text>
-  <text x="94" y="48" class="t-m mid ink">積み重なる</text>
-  <text x="266" y="26" class="t-xs mid soft">アメリカの音楽</text>
-  <text x="266" y="48" class="t-m mid ink">混ざり合う</text>
+  <!-- 世界の音楽：①日本は積み重なり、③世界のリズムは周期で回り、②アメリカは混ざる。④録音がそれを世界へ運ぶ -->
+  <g class="t-s mid ink" font-weight="700">
+    <text x="60" y="22">① 日本</text>
+    <text x="180" y="22">③ 世界のリズム</text>
+    <text x="300" y="22">② アメリカ</text>
+  </g>
+  <g class="t-xs mid soft">
+    <text x="60" y="38">積み重なる</text><text x="180" y="38">くり返す周期</text><text x="300" y="38">混ざり合う</text>
+  </g>
+  <path d="M120 10 V150 M240 10 V150" class="st-line dash" stroke-width="1"/>
 
-  <path d="M16 224 V100" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
-  <rect x="24" y="104" width="144" height="34" rx="8" class="fl"/>
-  <text x="34" y="126" class="t-s on" font-weight="700">三味線音楽</text>
-  <text x="160" y="126" class="t-xs end on">江戸・町人</text>
-  <rect x="24" y="144" width="144" height="34" rx="8" class="tint"/>
-  <text x="34" y="166" class="t-s ink" font-weight="700">能</text>
-  <text x="160" y="166" class="t-xs end soft">室町・武家</text>
-  <rect x="24" y="184" width="144" height="34" rx="8" class="tint"/>
-  <text x="34" y="206" class="t-s ink" font-weight="700">雅楽</text>
-  <text x="160" y="206" class="t-xs end soft">奈良・平安・宮廷</text>
-  <text x="96" y="242" class="t-xs mid ink">古いものが消えず、今も続く</text>
+  <!-- 日本：時代ごとに積み重なる -->
+  <rect x="14" y="50" width="92" height="26" rx="6" class="fl"/>
+  <text x="60" y="68" class="t-xs mid on" font-weight="700">三味線（江戸）</text>
+  <rect x="14" y="82" width="92" height="26" rx="6" class="tint"/>
+  <text x="60" y="100" class="t-xs mid ink">能（室町）</text>
+  <rect x="14" y="114" width="92" height="26" rx="6" class="tint"/>
+  <text x="60" y="132" class="t-xs mid ink">雅楽（奈良〜）</text>
 
-  <rect x="190" y="66" width="74" height="44" rx="8" class="tint"/>
-  <text x="227" y="85" class="t-s mid ink" font-weight="700">アフリカ</text>
-  <text x="227" y="101" class="t-xs mid soft">由来の歌</text>
-  <rect x="270" y="66" width="78" height="44" rx="8" class="tint"/>
-  <text x="309" y="85" class="t-s mid ink" font-weight="700">ヨーロッパ</text>
-  <text x="309" y="101" class="t-xs mid soft">和音と楽器</text>
-  <path d="M227 112 Q230 136 260 146 M309 112 Q306 136 276 146" class="st-f" stroke-width="2"/>
-  <path d="M268 140 V148" class="st-f" stroke-width="2" marker-end="url(#a-music)"/>
-  <rect x="222" y="152" width="92" height="38" rx="8" class="fl"/>
-  <text x="268" y="168" class="t-s mid on" font-weight="700">ジャズ</text>
-  <text x="268" y="183" class="t-xs mid on">20世紀初め</text>
-  <path d="M268 191 V204" class="st-f" stroke-width="2" marker-end="url(#a-music)"/>
-  <rect x="222" y="208" width="92" height="38" rx="8" class="fl"/>
-  <text x="268" y="224" class="t-s mid on" font-weight="700">ロック</text>
-  <text x="268" y="239" class="t-xs mid on">1950年代</text>
-  <text x="266" y="266" class="t-xs mid ink">出会って混ざり、新しく生まれる</text>
+  <!-- 世界のリズム：周期の輪 -->
+  <circle cx="180" cy="95" r="34" class="st-soft" stroke-width="1.2"/>
+  <circle cx="180" cy="61" r="6" class="fl"/>
+  <g class="soft">
+    <circle cx="214" cy="95" r="3.5"/><circle cx="180" cy="129" r="3.5"/><circle cx="146" cy="95" r="3.5"/>
+    <circle cx="204" cy="71" r="3"/><circle cx="204" cy="119" r="3"/><circle cx="156" cy="119" r="3"/><circle cx="156" cy="71" r="3"/>
+  </g>
+  <text x="180" y="99" class="t-xs mid ink">アジア</text>
+  <text x="180" y="113" class="t-xs mid ink">アフリカ</text>
+
+  <!-- アメリカ：出会って混ざる -->
+  <rect x="248" y="50" width="48" height="26" rx="6" class="tint"/>
+  <text x="272" y="68" class="t-xs mid ink">アフリカ</text>
+  <rect x="300" y="50" width="54" height="26" rx="6" class="tint"/>
+  <text x="327" y="68" class="t-xs mid ink">ヨーロッパ</text>
+  <path d="M272 78 Q276 94 296 102" class="st-f" stroke-width="2"/>
+  <path d="M327 78 Q324 94 304 102" class="st-f" stroke-width="2"/>
+  <rect x="254" y="106" width="92" height="34" rx="6" class="fl"/>
+  <text x="300" y="128" class="t-xs mid on" font-weight="700">ジャズ・ロック</text>
+
+  <!-- 録音が世界へ運ぶ -->
+  <path d="M60 144 L140 172" class="st-f" stroke-width="2" marker-end="url(#a-music)"/>
+  <path d="M180 140 V170" class="st-f" stroke-width="2" marker-end="url(#a-music)"/>
+  <path d="M300 144 L220 172" class="st-f" stroke-width="2" marker-end="url(#a-music)"/>
+  <rect x="80" y="176" width="200" height="40" rx="10" class="fl"/>
+  <text x="180" y="194" class="t-s mid on" font-weight="700">④ 録音・ラジオ・配信</text>
+  <text x="180" y="209" class="t-xs mid on">1877年の蓄音機から</text>
+  <rect x="12" y="226" width="336" height="46" rx="10" class="bgc"/>
+  <text x="180" y="245" class="t-xs mid ink">土地ごとに育った音楽が、世界中で聴かれ、</text>
+  <text x="180" y="262" class="t-xs mid ink">出会って、また新しい音楽を生む</text>
 </svg>

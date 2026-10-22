@@ -1,49 +1,43 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- 地図と時間：地球の緯線・経線の網 → 左は平らな地図（投影法）、右は時刻（時差） -->
-  <text x="16" y="24" class="t-m ink">丸い地球を、平らな地図と時計に</text>
+  <!-- 地図と時間：中央の地球（緯線・経線の網）から、左は地図（①投影法→③大圏航路）、右は時刻（②時差→④GPS） -->
+  <text x="16" y="24" class="t-m ink">丸い地球を、地図と時計に写す</text>
+  <text x="72" y="48" class="t-s mid soft" font-weight="700">地図（場所）</text>
+  <text x="288" y="48" class="t-s mid soft" font-weight="700">時計（時刻）</text>
 
-  <!-- 中央の地球儀（緯線と経線の網） -->
-  <circle cx="180" cy="94" r="48" class="tint"/>
-  <circle cx="180" cy="94" r="48" class="st" fill="none" stroke-width="1.5"/>
-  <path d="M132 94 H228" class="st" stroke-width="1.5"/>
-  <path d="M137 70 H223 M137 118 H223" class="st-soft" stroke-width="1"/>
-  <path d="M180 46 V142" class="st-soft" stroke-width="1"/>
-  <ellipse cx="180" cy="94" rx="22" ry="48" class="st-soft" fill="none" stroke-width="1"/>
-  <text x="122" y="74" class="t-xs end soft">緯線＝南北の位置</text>
-  <text x="238" y="74" class="t-xs soft">経線＝東西の位置</text>
-  <text x="124" y="98" class="t-xs end soft">赤道</text>
-  <path d="M124 70 H140" class="st-soft" stroke-width="1"/>
-  <path d="M236 70 L200 62" class="st-soft" stroke-width="1"/>
+  <!-- 中央の地球儀 -->
+  <circle cx="180" cy="120" r="38" class="tint"/>
+  <circle cx="180" cy="120" r="38" class="st" stroke-width="1.5"/>
+  <path d="M142 120 H218" class="st" stroke-width="1.2"/>
+  <path d="M146 101 H214 M146 139 H214" class="st-soft" stroke-width="1"/>
+  <path d="M180 82 V158" class="st-soft" stroke-width="1"/>
+  <ellipse cx="180" cy="120" rx="17" ry="38" class="st-soft" stroke-width="1"/>
+  <text x="180" y="176" class="t-xs mid soft">緯線と経線の網</text>
 
-  <!-- 二つに分かれる矢印 -->
-  <path d="M150 134 L108 158" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/>
-  <path d="M210 134 L252 158" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/>
-  <text x="112" y="146" class="t-xs end ink">広げる</text>
-  <text x="248" y="146" class="t-xs ink">回る</text>
+  <!-- 左：① 投影法、③ 大圏航路 -->
+  <rect x="12" y="56" width="120" height="54" rx="10" class="bgc"/>
+  <text x="72" y="78" class="t-s mid ink" font-weight="700">① 投影法</text>
+  <text x="72" y="96" class="t-xs mid soft">平らにすると、ゆがむ</text>
+  <rect x="12" y="132" width="120" height="54" rx="10" class="bgc"/>
+  <text x="72" y="154" class="t-s mid ink" font-weight="700">③ 大圏航路</text>
+  <text x="72" y="172" class="t-xs mid soft">最短の道は北へ曲がる</text>
+  <path d="M72 112 V128" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M146 104 L136 92" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/>
+  <path d="M146 136 L136 148" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/>
 
-  <!-- 左：平らな地図 -->
-  <rect x="12" y="164" width="164" height="104" rx="10" class="bgc"/>
-  <text x="94" y="184" class="t-s mid ink" font-weight="700">平らな地図に</text>
-  <rect x="44" y="194" width="100" height="46" class="paper"/>
-  <path d="M44 194 H144 V240 H44 Z" class="st-soft" fill="none" stroke-width="1"/>
-  <path d="M44 217 H144" class="st" stroke-width="1.2"/>
-  <path d="M44 209 H144 M44 225 H144 M44 198 H144 M44 236 H144" class="st-soft" stroke-width="0.8"/>
-  <path d="M64 194 V240 M84 194 V240 M104 194 V240 M124 194 V240" class="st-soft" stroke-width="0.8"/>
-  <circle cx="64" cy="217" r="3.5" class="fl"/>
-  <circle cx="122" cy="201" r="6.5" class="fl"/>
-  <text x="94" y="258" class="t-xs mid soft">北ほど大きくのびる</text>
+  <!-- 右：② 時差、④ GPS -->
+  <rect x="228" y="56" width="120" height="54" rx="10" class="bgc"/>
+  <text x="288" y="78" class="t-s mid ink" font-weight="700">② 時差</text>
+  <text x="288" y="96" class="t-xs mid soft">経度15°で1時間</text>
+  <rect x="228" y="132" width="120" height="54" rx="10" class="bgc"/>
+  <text x="288" y="154" class="t-s mid ink" font-weight="700">④ GPS</text>
+  <text x="288" y="172" class="t-xs mid soft">時間から位置を測る</text>
+  <path d="M288 112 V128" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M214 104 L224 92" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/>
+  <path d="M214 136 L224 148" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/>
 
-  <!-- 右：時刻 -->
-  <rect x="184" y="164" width="164" height="104" rx="10" class="bgc"/>
-  <text x="266" y="184" class="t-s mid ink" font-weight="700">時計の時刻に</text>
-  <path d="M202 218 H332" class="st" stroke-width="1.5" marker-end="url(#a-geography)"/>
-  <path d="M206 213 V223 M246 213 V223 M286 213 V223" class="st" stroke-width="1.5"/>
-  <text x="206" y="206" class="t-xs mid soft">0°</text>
-  <text x="246" y="206" class="t-xs mid soft">15°</text>
-  <text x="286" y="206" class="t-xs mid soft">30°</text>
-  <text x="206" y="238" class="t-xs mid ink">12時</text>
-  <text x="246" y="238" class="t-xs mid ink">13時</text>
-  <text x="286" y="238" class="t-xs mid ink">14時</text>
-  <text x="330" y="208" class="t-xs end soft">東へ</text>
-  <text x="266" y="258" class="t-xs mid soft">経度15°で1時間ずれる</text>
+  <!-- 下：上下のカードのつながり -->
+  <rect x="12" y="200" width="336" height="70" rx="10" class="tint"/>
+  <text x="26" y="224" class="t-xs ink">①→③　地図上の直線は、最短の道とはかぎらない</text>
+  <text x="26" y="244" class="t-xs ink">②→④　正確な時刻が、位置の測り方を支える</text>
+  <text x="26" y="262" class="t-xs soft">どちらも、丸く回る地球を扱いやすく置きかえる工夫</text>
 </svg>

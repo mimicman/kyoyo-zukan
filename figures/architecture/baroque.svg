@@ -1,0 +1,36 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- バロック：ルネサンスの平らで静かな正面・円の平面に対し、波打つ正面・楕円の平面で動きを出す -->
+  <text x="93" y="24" class="t-m mid ink">ルネサンス</text>
+  <text x="267" y="24" class="t-m mid fl">バロック</text>
+  <path d="M180 36 V236" class="st-line dash" stroke-width="1"/>
+
+  <!-- 左：正面（平ら） -->
+  <path d="M40 80 L93 56 L146 80 Z" class="soft"/>
+  <rect x="40" y="80" width="106" height="70" class="tint"/>
+  <rect x="40" y="80" width="106" height="70" class="st" stroke-width="1.5"/>
+  <path d="M54 84 V150 M72 84 V150 M114 84 V150 M132 84 V150" class="st" stroke-width="3"/>
+  <path d="M85 150 V122 A8 8 0 0 1 101 122 V150 Z" class="paper"/>
+  <text x="93" y="44" class="t-xs mid soft">正面</text>
+  <!-- 左：平面（円と正方形） -->
+  <rect x="67" y="174" width="52" height="52" class="st-soft" stroke-width="1.2"/>
+  <circle cx="93" cy="200" r="24" class="tint"/>
+  <circle cx="93" cy="200" r="24" class="st" stroke-width="1.5"/>
+  <text x="93" y="246" class="t-xs mid ink">円・正方形・平らな壁</text>
+
+  <!-- 右：正面（波打つ輪郭） -->
+  <path d="M200 150 V96 C216 96 226 86 232 80 C242 70 254 58 267 52 C280 58 292 70 302 80 C308 86 318 96 334 96 V150 Z" class="tint"/>
+  <path d="M200 150 V96 C216 96 226 86 232 80 C242 70 254 58 267 52 C280 58 292 70 302 80 C308 86 318 96 334 96 V150 Z" class="st" stroke-width="1.5"/>
+  <path d="M238 92 V150 M246 90 V150 M288 90 V150 M296 92 V150 M212 104 V150 M322 104 V150" class="st" stroke-width="3"/>
+  <ellipse cx="267" cy="86" rx="9" ry="6" class="paper"/>
+  <path d="M259 150 V120 A8 8 0 0 1 275 120 V150 Z" class="paper"/>
+  <!-- 右：平面（楕円と波打つ正面） -->
+  <ellipse cx="267" cy="216" rx="38" ry="20" class="tint"/>
+  <ellipse cx="267" cy="216" rx="38" ry="20" class="st" stroke-width="1.5"/>
+  <path d="M196 180 C212 180 222 192 236 192 C250 192 256 172 267 172 C278 172 284 192 298 192 C312 192 322 180 338 180" class="st-f" stroke-width="2.5"/>
+  <text x="345" y="176" class="t-xs end fl halo">波打つ正面</text>
+  <text x="267" y="246" class="t-xs mid ink">楕円・曲線・光の演出</text>
+  <path d="M152 112 H192" class="st-f" stroke-width="2.5" marker-end="url(#a-architecture)"/>
+  <text x="172" y="104" class="t-xs mid fl halo">17世紀</text>
+
+  <text x="180" y="270" class="t-s mid ink">静かな調和から、動きと驚きへ</text>
+</svg>

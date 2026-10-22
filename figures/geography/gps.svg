@@ -1,0 +1,46 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- GPS：衛星からの電波が届くまでの時間で距離を出し、距離の円が重なる所が現在地 -->
+  <text x="16" y="24" class="t-m ink">時間を測って、場所を知る</text>
+
+  <!-- 左：距離の円（平面に簡単にした図） -->
+  <rect x="12" y="36" width="198" height="222" rx="10" class="bgc"/>
+  <circle cx="64" cy="108" r="54" class="st-f" stroke-width="1.5"/>
+  <circle cx="150" cy="112" r="55" class="st-f" stroke-width="1.5"/>
+  <circle cx="96" cy="196" r="57" class="st-f" stroke-width="1.5"/>
+  <path d="M64 108 L104 144" class="st-soft dash" stroke-width="1.2"/>
+  <path d="M150 112 L104 144" class="st-soft dash" stroke-width="1.2"/>
+  <path d="M96 196 L104 144" class="st-soft dash" stroke-width="1.2"/>
+
+  <!-- 衛星のアイコン -->
+  <rect x="47" y="105" width="10" height="6" class="soft"/>
+  <rect x="71" y="105" width="10" height="6" class="soft"/>
+  <rect x="59" y="103" width="10" height="10" class="ink"/>
+  <text x="64" y="96" class="t-xs mid ink halo">衛星A</text>
+  <rect x="133" y="109" width="10" height="6" class="soft"/>
+  <rect x="157" y="109" width="10" height="6" class="soft"/>
+  <rect x="145" y="107" width="10" height="10" class="ink"/>
+  <text x="150" y="100" class="t-xs mid ink halo">衛星B</text>
+  <rect x="79" y="193" width="10" height="6" class="soft"/>
+  <rect x="103" y="193" width="10" height="6" class="soft"/>
+  <rect x="91" y="191" width="10" height="10" class="ink"/>
+  <text x="96" y="216" class="t-xs mid ink halo">衛星C</text>
+
+  <!-- 3つの円が重なる1点＝現在地 -->
+  <circle cx="104" cy="144" r="6" class="fl"/>
+  <text x="114" y="160" class="t-s ink halo" font-weight="700">現在地</text>
+
+  <!-- 右：手順 -->
+  <text x="222" y="60" class="t-s ink" font-weight="700">① 衛星が、時刻を</text>
+  <text x="222" y="76" class="t-s ink" font-weight="700">のせた電波を出す</text>
+  <path d="M276 84 V96" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/>
+  <text x="222" y="116" class="t-s ink" font-weight="700">② 届くまでの時間</text>
+  <text x="222" y="132" class="t-s ink" font-weight="700">× 光の速さ＝距離</text>
+  <path d="M276 140 V152" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/>
+  <text x="222" y="172" class="t-s ink" font-weight="700">③ 距離の円が</text>
+  <text x="222" y="188" class="t-s ink" font-weight="700">重なる所が現在地</text>
+  <text x="222" y="216" class="t-xs soft">4機目の衛星で、</text>
+  <text x="222" y="232" class="t-xs soft">受信機の時計の</text>
+  <text x="222" y="248" class="t-xs soft">ずれを直す</text>
+
+  <text x="180" y="274" class="t-xs mid soft">実際は立体なので球が重なる。図は平面に簡単にしたもの</text>
+</svg>

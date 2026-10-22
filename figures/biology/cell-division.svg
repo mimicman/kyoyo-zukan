@@ -33,7 +33,8 @@
   <ellipse cx="246" cy="76" rx="32" ry="24" class="st-f" stroke-width="1.5"/>
   <path d="M226 66 L234 72 M226 86 L234 80" class="st" stroke-width="2.5"/>
   <path d="M266 66 L258 72 M266 86 L258 80" class="st-f" stroke-width="2.5"/>
-  <path d="M240 76 H224 M252 76 H268" class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
+  <path d="M240 76 H224" class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
+  <path d="M252 76 H268" class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
 
   <!-- ⑤ 2つの細胞 -->
   <circle cx="304" cy="76" r="17" class="tint"/>
@@ -65,7 +66,8 @@
   <!-- 下：2種類の分裂 -->
   <text x="12" y="178" class="t-s ink" font-weight="700">体をつくる分裂</text>
   <circle cx="40" cy="218" r="13" class="tint"/><circle cx="40" cy="218" r="13" class="st-f" stroke-width="1.5"/>
-  <path d="M56 212 L84 202 M56 224 L84 234" class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
+  <path d="M56 212 L84 202" class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
+  <path d="M56 224 L84 234" class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
   <circle cx="102" cy="200" r="13" class="tint"/><circle cx="102" cy="200" r="13" class="st-f" stroke-width="1.5"/>
   <circle cx="102" cy="236" r="13" class="tint"/><circle cx="102" cy="236" r="13" class="st-f" stroke-width="1.5"/>
   <text x="12" y="270" class="t-xs ink">染色体の数は同じまま</text>
@@ -74,10 +76,14 @@
 
   <text x="190" y="178" class="t-s ink" font-weight="700">減数分裂</text>
   <circle cx="212" cy="218" r="13" class="tint"/><circle cx="212" cy="218" r="13" class="st-f" stroke-width="1.5"/>
-  <path d="M228 212 L248 204 M228 224 L248 232" class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
+  <path d="M228 212 L248 204" class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
+  <path d="M228 224 L248 232" class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
   <circle cx="262" cy="202" r="10" class="tint"/><circle cx="262" cy="202" r="10" class="st-f" stroke-width="1.5"/>
   <circle cx="262" cy="234" r="10" class="tint"/><circle cx="262" cy="234" r="10" class="st-f" stroke-width="1.5"/>
-  <path d="M274 198 L294 192 M274 206 L294 210 M274 230 L294 226 M274 238 L294 244" class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
+  <path d="M274 198 L294 192" class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
+  <path d="M274 206 L294 210" class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
+  <path d="M274 230 L294 226" class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
+  <path d="M274 238 L294 244" class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
   <circle cx="306" cy="190" r="7" class="fl"/>
   <circle cx="306" cy="210" r="7" class="fl"/>
   <circle cx="306" cy="226" r="7" class="fl"/>

@@ -1,53 +1,57 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- 1枚の絵を、2つの道具（時代の地図・色の物差し）で読む -->
+  <!-- 1枚の絵を、4つの問い（いつ・どんな色・どう置く・どんな空間）で読む -->
+  <text x="180" y="24" class="t-m mid ink">1枚の絵を、4つの問いで読む</text>
+
   <!-- 中央：額に入った絵 -->
-  <rect x="134" y="44" width="92" height="112" rx="4" class="tint"/>
-  <rect x="134" y="44" width="92" height="112" rx="4" class="st" stroke-width="3"/>
-  <rect x="144" y="54" width="72" height="92" class="paper"/>
-  <circle cx="196" cy="74" r="9" class="fl"/>
-  <path d="M144 146 L164 110 L178 126 L194 100 L216 146Z" class="soft"/>
-  <text x="180" y="30" class="t-m mid ink" font-weight="700">1枚の絵</text>
+  <rect x="134" y="62" width="92" height="112" rx="4" class="tint"/>
+  <rect x="134" y="62" width="92" height="112" rx="4" class="st" stroke-width="3"/>
+  <rect x="144" y="72" width="72" height="92" class="paper"/>
+  <circle cx="196" cy="92" r="9" class="fl"/>
+  <path d="M144 164 L164 128 L178 144 L194 118 L216 164Z" class="soft"/>
 
-  <!-- 左：いつの絵か -->
-  <path d="M130 100 H96" class="st-f" stroke-width="2" marker-end="url(#a-art)"/>
-  <text x="62" y="30" class="t-s mid fl" font-weight="700">いつの絵か</text>
-  <text x="62" y="48" class="t-xs mid soft">時代の地図</text>
-  <path d="M22 70 C40 72 48 92 58 104 C70 118 84 130 100 138" class="st-f" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-  <g class="fl"><circle cx="22" cy="70" r="4"/><circle cx="58" cy="104" r="4"/><circle cx="100" cy="138" r="4"/></g>
-  <g class="t-xs ink">
-    <text x="30" y="66">本物らしく</text>
-    <text x="50" y="108" class="end">光へ</text>
-    <text x="92" y="146" class="end">形と色へ</text>
-  </g>
-  <text x="62" y="172" class="t-xs mid soft">15→20世紀</text>
+  <!-- ① いつの絵か：流れの地図 -->
+  <text x="64" y="50" class="t-s mid fl" font-weight="700">① いつの絵か</text>
+  <path d="M22 64 C40 66 50 80 62 88 C74 96 90 100 108 100" class="st-f" stroke-width="2.5" stroke-linecap="round"/>
+  <g class="fl"><circle cx="22" cy="64" r="4"/><circle cx="62" cy="88" r="4"/><circle cx="108" cy="100" r="4"/></g>
+  <text x="64" y="118" class="t-xs mid soft">時代の流れの地図</text>
 
-  <!-- 右：どんな色か -->
-  <path d="M230 100 H264" class="st-f" stroke-width="2" marker-end="url(#a-art)"/>
-  <text x="298" y="30" class="t-s mid fl" font-weight="700">どんな色か</text>
-  <text x="298" y="48" class="t-xs mid soft">色の物差し</text>
-  <g stroke-width="1.5" class="st-soft">
-    <path d="M298 100 L298 64 A36 36 0 0 1 329 82Z" class="fl"/>
-    <path d="M298 100 L329 82 A36 36 0 0 1 329 118Z" class="tint"/>
-    <path d="M298 100 L329 118 A36 36 0 0 1 298 136Z" class="soft"/>
-    <path d="M298 100 L298 136 A36 36 0 0 1 267 118Z" class="ink"/>
-    <path d="M298 100 L267 118 A36 36 0 0 1 267 82Z" class="paper"/>
-    <path d="M298 100 L267 82 A36 36 0 0 1 298 64Z" class="bgc"/>
+  <!-- ② どんな色か：色相環 -->
+  <text x="296" y="50" class="t-s mid fl" font-weight="700">② どんな色か</text>
+  <g stroke-width="1.2" class="st-soft">
+    <path d="M296 84 L296 64 A20 20 0 0 1 313 74Z" class="fl"/>
+    <path d="M296 84 L313 74 A20 20 0 0 1 313 94Z" class="tint"/>
+    <path d="M296 84 L313 94 A20 20 0 0 1 296 104Z" class="soft"/>
+    <path d="M296 84 L296 104 A20 20 0 0 1 279 94Z" class="ink"/>
+    <path d="M296 84 L279 94 A20 20 0 0 1 279 74Z" class="paper"/>
+    <path d="M296 84 L279 74 A20 20 0 0 1 296 64Z" class="bgc"/>
   </g>
-  <path d="M290 72 L306 128" class="st dash" stroke-width="1.5"/>
-  <g class="t-xs mid ink">
-    <text x="298" y="160">色相・明度・彩度</text>
-    <text x="298" y="176">向かい合う＝補色</text>
-  </g>
+  <text x="296" y="122" class="t-xs mid soft">色の物差しと補色</text>
+
+  <!-- ③ どう置いたか：構図 -->
+  <text x="64" y="144" class="t-s mid fl" font-weight="700">③ どう置いたか</text>
+  <rect x="30" y="154" width="68" height="42" class="paper"/>
+  <rect x="30" y="154" width="68" height="42" class="st-soft" stroke-width="1.2"/>
+  <path d="M64 158 L88 192 H40 Z" class="st-f" stroke-width="2"/>
+  <text x="64" y="212" class="t-xs mid soft">構図の骨組み</text>
+
+  <!-- ④ どんな空間か：遠近法 -->
+  <text x="296" y="144" class="t-s mid fl" font-weight="700">④ どんな空間か</text>
+  <rect x="262" y="154" width="68" height="42" class="paper"/>
+  <rect x="262" y="154" width="68" height="42" class="st-soft" stroke-width="1.2"/>
+  <path d="M262 170 H330" class="st" stroke-width="1"/>
+  <path d="M296 170 L266 196 M296 170 L282 196 M296 170 L310 196 M296 170 L326 196" class="st-soft" stroke-width="1"/>
+  <circle cx="296" cy="170" r="3" class="fl"/>
+  <text x="296" y="212" class="t-xs mid soft">遠近法の奥行き</text>
 
   <!-- 下：この道具で次の章へ -->
-  <rect x="12" y="204" width="336" height="64" rx="12" class="bgc"/>
-  <text x="180" y="226" class="t-s mid ink" font-weight="700">2つの道具で、次の章の絵を読む</text>
+  <rect x="12" y="222" width="336" height="50" rx="12" class="bgc"/>
+  <text x="180" y="240" class="t-xs mid ink" font-weight="700">4つの道具で、次の章の絵を読む</text>
   <g class="t-xs mid">
-    <rect x="28" y="236" width="88" height="22" rx="11" class="tint"/>
-    <text x="72" y="251" class="ink">本物らしさ</text>
-    <rect x="136" y="236" width="88" height="22" rx="11" class="tint"/>
-    <text x="180" y="251" class="ink">近代の革新</text>
-    <rect x="244" y="236" width="88" height="22" rx="11" class="tint"/>
-    <text x="288" y="251" class="ink">日本と美術</text>
+    <rect x="28" y="246" width="88" height="20" rx="10" class="tint"/>
+    <text x="72" y="260" class="ink">本物らしさ</text>
+    <rect x="136" y="246" width="88" height="20" rx="10" class="tint"/>
+    <text x="180" y="260" class="ink">近代の革新</text>
+    <rect x="244" y="246" width="88" height="20" rx="10" class="tint"/>
+    <text x="288" y="260" class="ink">日本と美術</text>
   </g>
 </svg>

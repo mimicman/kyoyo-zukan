@@ -1,0 +1,40 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 油彩：白い下地の上に不透明な色、透明な色の層を重ねる。光が層を通って下地ではね返る -->
+  <text x="16" y="24" class="t-m ink">色の層を重ねて、光と質感を描く</text>
+
+  <!-- 絵の具の層の断面 -->
+  <rect x="24" y="66" width="184" height="6" class="soft" opacity="0.35"/>
+  <rect x="24" y="72" width="184" height="14" class="fl" opacity="0.25"/>
+  <rect x="24" y="86" width="184" height="14" class="fl" opacity="0.45"/>
+  <rect x="24" y="100" width="184" height="20" class="fl" opacity="0.8"/>
+  <rect x="24" y="120" width="184" height="18" class="paper"/>
+  <rect x="24" y="120" width="184" height="18" class="st-soft" stroke-width="1"/>
+  <rect x="24" y="138" width="184" height="22" class="soft" opacity="0.6"/>
+
+  <!-- 光の道すじ -->
+  <path d="M44 36 L90 120" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <path d="M94 120 L140 40" class="st-f" stroke-width="2.5" marker-end="url(#a-art)"/>
+  <text x="36" y="48" class="t-xs end ink">光</text>
+  <text x="146" y="48" class="t-xs fl" font-weight="700">深い色に輝く</text>
+
+  <!-- 層の名前 -->
+  <g class="t-xs ink">
+    <text x="216" y="72">ワニス（保護）</text>
+    <text x="216" y="90">透明な色を薄く</text>
+    <text x="216" y="102">何度も重ねる</text>
+    <text x="216" y="115">不透明な色</text>
+    <text x="216" y="133">白い下地</text>
+    <text x="216" y="154">板・布（キャンバス）</text>
+  </g>
+  <text x="116" y="178" class="t-xs mid soft">下地ではね返った光が、色の層を通って目に届く</text>
+
+  <!-- テンペラと油彩の比較 -->
+  <rect x="12" y="192" width="164" height="78" rx="10" class="bgc"/>
+  <text x="94" y="214" class="t-s mid ink" font-weight="700">テンペラ（卵で溶く）</text>
+  <text x="94" y="236" class="t-xs mid soft">すぐ乾く。細い線を重ねて描く</text>
+  <text x="94" y="254" class="t-xs mid soft">なめらかなぼかしは苦手</text>
+  <rect x="184" y="192" width="164" height="78" rx="10" class="tint"/>
+  <text x="266" y="214" class="t-s mid ink" font-weight="700">油彩（油で溶く）</text>
+  <text x="266" y="236" class="t-xs mid ink">ゆっくり乾き、ぼかしやすい</text>
+  <text x="266" y="254" class="t-xs mid ink">透明な層で深い色と光沢</text>
+</svg>

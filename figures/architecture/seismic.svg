@@ -1,0 +1,40 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 地震への備え：耐震（強くして耐える）・制震（ダンパーで吸う）・免震（ゴムの台で伝えにくくする） -->
+  <text x="16" y="24" class="t-m ink">地震の揺れへの、3つの備え方</text>
+  <text x="344" y="24" class="t-xs end soft">矢印＝建物の揺れ</text>
+
+  <!-- 建物の揺れの大きさ -->
+  <path d="M40 48 H84" class="st-f" stroke-width="2" marker-start="url(#a-architecture)" marker-end="url(#a-architecture)"/>
+  <path d="M164 48 H196" class="st-f" stroke-width="2" marker-start="url(#a-architecture)" marker-end="url(#a-architecture)"/>
+  <path d="M290 48 H306" class="st-f" stroke-width="2" marker-start="url(#a-architecture)" marker-end="url(#a-architecture)"/>
+
+  <!-- 1 耐震：筋かいで固める -->
+  <rect x="30" y="64" width="64" height="136" class="tint"/>
+  <path d="M30 64 H94 V200 H30 Z M30 109 H94 M30 155 H94" class="st" stroke-width="3"/>
+  <path d="M30 64 L94 109 M94 64 L30 109 M30 109 L94 155 M94 109 L30 155 M30 155 L94 200 M94 155 L30 200" class="st-soft" stroke-width="1.5"/>
+
+  <!-- 2 制震：ダンパーが揺れを吸う -->
+  <rect x="148" y="64" width="64" height="136" class="tint"/>
+  <path d="M148 64 H212 V200 H148 Z M148 109 H212 M148 155 H212" class="st" stroke-width="3"/>
+  <g class="st-soft" stroke-width="1.5"><path d="M150 107 L210 66 M150 153 L210 111 M150 198 L210 157"/></g>
+  <g class="fl"><rect x="172" y="80" width="16" height="10" transform="rotate(-34 180 85)"/><rect x="172" y="126" width="16" height="10" transform="rotate(-34 180 131)"/><rect x="172" y="172" width="16" height="10" transform="rotate(-34 180 177)"/></g>
+
+  <!-- 3 免震：ゴムの台の上に建物 -->
+  <rect x="266" y="64" width="64" height="118" class="tint"/>
+  <path d="M266 64 H330 V182 H266 Z M266 103 H330 M266 143 H330" class="st" stroke-width="3"/>
+  <g class="fl"><rect x="270" y="186" width="14" height="14"/><rect x="291" y="186" width="14" height="14"/><rect x="312" y="186" width="14" height="14"/></g>
+  <path d="M270 190 H284 M270 195 H284 M291 190 H305 M291 195 H305 M312 190 H326 M312 195 H326" class="st-soft" stroke-width="1" opacity="0.8"/>
+
+  <!-- 地面と揺れ -->
+  <path d="M12 200 H348" class="st" stroke-width="2"/>
+  <path d="M14 212 L24 206 L34 218 L44 206 L54 218 L64 206 L74 218 L84 206 L94 218 L104 206 L114 218 L124 206 L134 218 L144 206 L154 218 L164 206 L174 218 L184 206 L194 218 L204 206 L214 218 L224 206 L234 218 L244 206 L254 218 L264 206 L274 218 L284 206 L294 218 L304 206 L314 218 L324 206 L334 218 L344 210" class="st-soft" stroke-width="1.5"/>
+
+  <!-- 名前と説明 -->
+  <g class="t-s mid ink" font-weight="700"><text x="62" y="238">耐震</text><text x="180" y="238">制震</text><text x="298" y="238">免震</text></g>
+  <g class="t-xs mid soft">
+    <text x="62" y="254">柱・壁・筋かいを</text><text x="62" y="268">強くして耐える</text>
+    <text x="180" y="254">ダンパーが</text><text x="180" y="268">揺れを吸い取る</text>
+    <text x="298" y="254">ゴムの台で揺れを</text><text x="298" y="268">建物に伝えにくく</text>
+  </g>
+  <text x="278" y="178" class="t-xs fl halo" font-weight="700">ゴムの台</text>
+</svg>

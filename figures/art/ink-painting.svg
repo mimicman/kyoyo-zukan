@@ -1,0 +1,32 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 水墨画：濃い墨＝近く、薄い墨＝遠く、何も描かない余白＝霧・水・空 -->
+  <text x="16" y="24" class="t-m ink">墨の濃さと余白で、遠さと空気を描く</text>
+  <rect x="12" y="36" width="222" height="200" rx="6" class="paper"/>
+  <rect x="12" y="36" width="222" height="200" rx="6" class="st-soft" stroke-width="1"/>
+
+  <!-- 遠くの山（薄い墨） -->
+  <path d="M110 112 C126 88 138 78 152 94 C164 72 182 58 204 82 C214 92 224 98 234 104 V114 C200 124 150 122 110 112 Z" class="soft" opacity="0.28"/>
+  <!-- 中ほどの丘（中くらいの墨） -->
+  <path d="M146 236 C156 204 172 192 192 200 C208 190 222 194 234 204 V236 Z" class="soft" opacity="0.55"/>
+  <!-- 近くの岩と木（濃い墨） -->
+  <path d="M12 236 V176 C26 156 42 146 58 160 C68 144 84 140 96 164 C104 180 112 204 118 236 Z" class="ink" opacity="0.85"/>
+  <path d="M46 154 V118 M46 132 L34 122 M46 126 L60 114 M46 140 L58 132" class="st" stroke-width="3" stroke-linecap="round"/>
+  <!-- 小さな舟 -->
+  <path d="M150 178 H176 L172 183 H154 Z" class="ink"/>
+  <path d="M164 178 V170" class="st" stroke-width="1.5"/>
+
+  <!-- 右：見方 -->
+  <rect x="246" y="62" width="14" height="14" class="ink" opacity="0.85"/>
+  <text x="266" y="74" class="t-s ink" font-weight="700">濃い墨</text>
+  <text x="266" y="90" class="t-xs soft">近くの岩や木</text>
+  <rect x="246" y="116" width="14" height="14" class="soft" opacity="0.3"/>
+  <text x="266" y="128" class="t-s ink" font-weight="700">薄い墨</text>
+  <text x="266" y="144" class="t-xs soft">遠くの山</text>
+  <rect x="246" y="170" width="14" height="14" class="paper"/>
+  <rect x="246" y="170" width="14" height="14" class="st-soft dash" stroke-width="1"/>
+  <text x="266" y="182" class="t-s ink" font-weight="700">余白</text>
+  <text x="266" y="198" class="t-xs soft">霧・水・空</text>
+  <text x="150" y="146" class="t-xs mid soft">（霧）</text>
+
+  <text x="180" y="262" class="t-s mid ink">描かない所も、絵の一部になる</text>
+</svg>

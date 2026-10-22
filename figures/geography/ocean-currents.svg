@@ -1,0 +1,45 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 海流：北太平洋の模式図。時計回りに回り、大陸の東岸を暖流が北へ、西岸を寒流が南へ流れる -->
+  <text x="16" y="24" class="t-m ink">海流は大洋を回り、熱を運ぶ</text>
+  <rect x="12" y="36" width="336" height="200" rx="10" class="tint"/>
+
+  <!-- 大陸と日本 -->
+  <path d="M12 46 Q12 36 22 36 H78 C74 70 66 110 74 150 C78 180 70 210 60 236 H22 Q12 236 12 226 Z" class="paper"/>
+  <path d="M78 36 C74 70 66 110 74 150 C78 180 70 210 60 236" class="st-soft" stroke-width="1.2"/>
+  <text x="40" y="132" class="t-s mid ink" font-weight="700">アジア</text>
+  <path d="M296 36 H338 Q348 36 348 46 V200 C330 196 314 176 306 150 C300 120 304 80 296 36 Z" class="paper"/>
+  <path d="M296 36 C304 80 300 120 306 150 C314 176 330 196 348 200" class="st-soft" stroke-width="1.2"/>
+  <text x="326" y="98" class="t-xs mid ink">北</text>
+  <text x="326" y="112" class="t-xs mid ink">ア</text>
+  <text x="326" y="126" class="t-xs mid ink">メ</text>
+  <text x="326" y="140" class="t-xs mid ink">リ</text>
+  <text x="326" y="154" class="t-xs mid ink">カ</text>
+  <path d="M94 152 C100 132 106 116 118 102 L124 106 C114 120 106 136 100 154 Z" class="paper"/>
+  <path d="M94 152 C100 132 106 116 118 102 L124 106 C114 120 106 136 100 154 Z" class="st-soft" stroke-width="1"/>
+  <ellipse cx="128" cy="94" rx="7" ry="5" class="paper"/>
+  <ellipse cx="128" cy="94" rx="7" ry="5" class="st-soft" stroke-width="1"/>
+  <text x="90" y="138" class="t-xs end ink halo">日本</text>
+
+  <!-- 暖流（実線）：北赤道海流 → 黒潮 → 北太平洋海流 -->
+  <path d="M278 208 C226 216 164 214 122 204" class="st-f" stroke-width="3" marker-end="url(#a-geography)"/>
+  <path d="M116 196 C110 176 112 150 130 118" class="st-f" stroke-width="3" marker-end="url(#a-geography)"/>
+  <path d="M146 100 C196 86 250 86 284 102" class="st-f" stroke-width="3" marker-end="url(#a-geography)"/>
+  <!-- 寒流（点線）：カリフォルニア海流・親潮 -->
+  <path d="M292 116 C300 146 298 172 286 198" class="st-soft dash" stroke-width="3" marker-end="url(#a-soft)"/>
+  <path d="M184 44 C166 58 150 74 138 90" class="st-soft dash" stroke-width="3" marker-end="url(#a-soft)"/>
+
+  <text x="124" y="168" class="t-xs ink halo">黒潮（暖流）</text>
+  <text x="190" y="56" class="t-xs ink halo">親潮（寒流）</text>
+  <text x="214" y="80" class="t-xs mid ink halo">北太平洋海流</text>
+  <text x="282" y="158" class="t-xs end ink halo">カリフォルニア海流</text>
+  <text x="282" y="172" class="t-xs end soft halo">（寒流）</text>
+  <text x="200" y="230" class="t-xs mid ink halo">北赤道海流（赤道近くで暖まる）</text>
+  <text x="196" y="138" class="t-s mid soft">時計回りに回る</text>
+  <text x="146" y="120" class="t-xs soft halo">潮目</text>
+
+  <!-- 凡例 -->
+  <path d="M24 258 H52" class="st-f" stroke-width="3"/>
+  <text x="58" y="262" class="t-xs ink">暖流：暖かい水を北へ運ぶ</text>
+  <path d="M196 258 H224" class="st-soft dash" stroke-width="3"/>
+  <text x="230" y="262" class="t-xs ink">寒流：冷たい水</text>
+</svg>

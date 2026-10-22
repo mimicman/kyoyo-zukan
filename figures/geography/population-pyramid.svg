@@ -1,0 +1,68 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 人口ピラミッド：富士山型 → つりがね型 → つぼ型。生まれる子と亡くなる人が減ると形が変わる -->
+  <text x="16" y="24" class="t-m ink">人口の形は、富士山型からつぼ型へ</text>
+  <rect x="20" y="164" width="46" height="12" class="fl"/>
+  <rect x="66" y="164" width="46" height="12" class="fl" opacity="0.5"/>
+  <rect x="26" y="150" width="40" height="12" class="fl"/>
+  <rect x="66" y="150" width="40" height="12" class="fl" opacity="0.5"/>
+  <rect x="32" y="136" width="34" height="12" class="fl"/>
+  <rect x="66" y="136" width="34" height="12" class="fl" opacity="0.5"/>
+  <rect x="38" y="122" width="28" height="12" class="fl"/>
+  <rect x="66" y="122" width="28" height="12" class="fl" opacity="0.5"/>
+  <rect x="44" y="108" width="22" height="12" class="fl"/>
+  <rect x="66" y="108" width="22" height="12" class="fl" opacity="0.5"/>
+  <rect x="50" y="94" width="16" height="12" class="fl"/>
+  <rect x="66" y="94" width="16" height="12" class="fl" opacity="0.5"/>
+  <rect x="56" y="80" width="10" height="12" class="fl"/>
+  <rect x="66" y="80" width="10" height="12" class="fl" opacity="0.5"/>
+  <rect x="61" y="66" width="5" height="12" class="fl"/>
+  <rect x="66" y="66" width="5" height="12" class="fl" opacity="0.5"/>
+  <path d="M66 60 V178" class="st-line" stroke-width="1.5"/>
+  <rect x="152" y="164" width="30" height="12" class="fl"/>
+  <rect x="182" y="164" width="30" height="12" class="fl" opacity="0.5"/>
+  <rect x="152" y="150" width="30" height="12" class="fl"/>
+  <rect x="182" y="150" width="30" height="12" class="fl" opacity="0.5"/>
+  <rect x="152" y="136" width="30" height="12" class="fl"/>
+  <rect x="182" y="136" width="30" height="12" class="fl" opacity="0.5"/>
+  <rect x="153" y="122" width="29" height="12" class="fl"/>
+  <rect x="182" y="122" width="29" height="12" class="fl" opacity="0.5"/>
+  <rect x="154" y="108" width="28" height="12" class="fl"/>
+  <rect x="182" y="108" width="28" height="12" class="fl" opacity="0.5"/>
+  <rect x="158" y="94" width="24" height="12" class="fl"/>
+  <rect x="182" y="94" width="24" height="12" class="fl" opacity="0.5"/>
+  <rect x="165" y="80" width="17" height="12" class="fl"/>
+  <rect x="182" y="80" width="17" height="12" class="fl" opacity="0.5"/>
+  <rect x="173" y="66" width="9" height="12" class="fl"/>
+  <rect x="182" y="66" width="9" height="12" class="fl" opacity="0.5"/>
+  <path d="M182 60 V178" class="st-line" stroke-width="1.5"/>
+  <rect x="278" y="164" width="20" height="12" class="fl"/>
+  <rect x="298" y="164" width="20" height="12" class="fl" opacity="0.5"/>
+  <rect x="274" y="150" width="24" height="12" class="fl"/>
+  <rect x="298" y="150" width="24" height="12" class="fl" opacity="0.5"/>
+  <rect x="270" y="136" width="28" height="12" class="fl"/>
+  <rect x="298" y="136" width="28" height="12" class="fl" opacity="0.5"/>
+  <rect x="266" y="122" width="32" height="12" class="fl"/>
+  <rect x="298" y="122" width="32" height="12" class="fl" opacity="0.5"/>
+  <rect x="264" y="108" width="34" height="12" class="fl"/>
+  <rect x="298" y="108" width="34" height="12" class="fl" opacity="0.5"/>
+  <rect x="267" y="94" width="31" height="12" class="fl"/>
+  <rect x="298" y="94" width="31" height="12" class="fl" opacity="0.5"/>
+  <rect x="275" y="80" width="23" height="12" class="fl"/>
+  <rect x="298" y="80" width="23" height="12" class="fl" opacity="0.5"/>
+  <rect x="286" y="66" width="12" height="12" class="fl"/>
+  <rect x="298" y="66" width="12" height="12" class="fl" opacity="0.5"/>
+  <path d="M298 60 V178" class="st-line" stroke-width="1.5"/>
+  <path d="M116 120 H134" class="st-f" stroke-width="2.5" marker-end="url(#a-geography)"/>
+  <path d="M230 120 H254" class="st-f" stroke-width="2.5" marker-end="url(#a-geography)"/>
+  <text x="66" y="196" class="t-s mid ink" font-weight="700">富士山型</text>
+  <text x="66" y="212" class="t-xs mid soft">多産多死</text>
+  <text x="182" y="196" class="t-s mid ink" font-weight="700">つりがね型</text>
+  <text x="182" y="212" class="t-xs mid soft">少産少死</text>
+  <text x="298" y="196" class="t-s mid ink" font-weight="700">つぼ型</text>
+  <text x="298" y="212" class="t-xs mid soft">少子高齢化</text>
+  <text x="38" y="56" class="t-xs mid soft">男</text>
+  <text x="94" y="56" class="t-xs mid soft">女</text>
+  <rect x="12" y="222" width="336" height="50" rx="10" class="bgc"/>
+  <text x="180" y="242" class="t-xs mid ink">横の棒＝年齢ごとの人口（下が子ども、上ほど高齢）</text>
+  <text x="180" y="262" class="t-xs mid ink">医療や栄養が良くなる → まず死亡が減り → やがて出生も減る</text>
+</svg>
