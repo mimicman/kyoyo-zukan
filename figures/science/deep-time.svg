@@ -1,0 +1,44 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 地球の古さ：傾いて削られた古い地層の上に、平らな新しい地層（不整合）。今の速さで説明すると途方もない時間が要る -->
+  <text x="12" y="22" class="t-m ink">崖の地層が語る、長い時間</text>
+
+  <!-- 新しい地層（平ら） -->
+  <rect x="12" y="38" width="148" height="22" class="tint"/>
+  <rect x="12" y="60" width="148" height="24" class="paper"/>
+  <rect x="12" y="84" width="148" height="26" class="tint"/>
+  <rect x="12" y="38" width="148" height="72" class="st-line" stroke-width="1"/>
+  <path d="M12 60 H160 M12 84 H160" class="st-line" stroke-width="1"/>
+  <text x="86" y="77" class="t-xs mid ink halo">新しい地層（平ら）</text>
+
+  <!-- 古い地層（傾いた） -->
+  <rect x="12" y="110" width="148" height="88" class="bgc"/>
+  <g class="st-soft" stroke-width="2">
+    <path d="M12 168 L36 110"/><path d="M22 198 L58 110"/><path d="M44 198 L80 110"/><path d="M66 198 L102 110"/>
+    <path d="M88 198 L124 110"/><path d="M110 198 L146 110"/><path d="M132 198 L160 130"/>
+  </g>
+  <rect x="12" y="110" width="148" height="88" class="st-line" stroke-width="1"/>
+  <text x="86" y="162" class="t-xs mid ink halo">古い地層（傾いた）</text>
+
+  <!-- 削られた面（不整合） -->
+  <path d="M12 112 Q34 104 58 111 T104 110 T160 108" class="st-f" stroke-width="3"/>
+  <path d="M164 110 H172" class="st-f" stroke-width="1.5"/>
+  <text x="176" y="114" class="t-xs fl" font-weight="700">削られた面</text>
+
+  <!-- 右：できるまでの手順 -->
+  <text x="232" y="44" class="t-xs ink">① 海の底に積もる</text>
+  <text x="232" y="62" class="t-xs ink">② 固まって傾く</text>
+  <text x="232" y="80" class="t-xs ink">③ 陸に出て削られる</text>
+  <text x="232" y="98" class="t-xs ink">④ 沈んで、また積もる</text>
+  <text x="232" y="150" class="t-xs soft">今と同じ速さなら</text>
+  <text x="232" y="168" class="t-xs fl" font-weight="700">途方もない時間</text>
+
+  <!-- 下：地球の年齢の見積もり（長さは目安） -->
+  <text x="12" y="218" class="t-xs soft">地球の年齢の見積もり（長さは目安）</text>
+  <rect x="12" y="226" width="10" height="12" rx="2" class="soft"/>
+  <text x="30" y="236" class="t-xs ink">数千年（18世紀の通説）</text>
+  <rect x="12" y="242" width="150" height="12" rx="2" class="tint"/>
+  <rect x="12" y="242" width="150" height="12" rx="2" class="st-f" stroke-width="1.2"/>
+  <text x="170" y="252" class="t-xs ink">数億年以上（ハットン・ライエル）</text>
+  <rect x="12" y="258" width="336" height="16" rx="3" class="fl"/>
+  <text x="180" y="270" class="t-xs mid on" font-weight="700">約46億年（20世紀、放射性元素で測定）</text>
+</svg>

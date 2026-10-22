@@ -1,6 +1,6 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- 遺伝：見える特徴から分子へとズームしていく4段（左に絵、右に説明と年代） -->
-  <path d="M152 70 H348 M152 134 H348 M152 198 H348" class="st-line" stroke-width="1"/>
+  <!-- 遺伝：見える特徴から分子へとズームしていく4段（左に絵、右に説明と年代）。DNAの段に遺伝子編集（はさみ） -->
+  <path d="M152 70 H348 M152 134 H348 M152 202 H348" class="st-line" stroke-width="1"/>
 
   <!-- 1 見える特徴 -->
   <circle cx="58" cy="40" r="14" class="fl"/>
@@ -24,8 +24,13 @@
   <path d="M50 162 V178 M70 162 V178 M90 162 V178 M110 162 V178" class="st-soft" stroke-width="1.5"/>
   <path d="M40 170 Q50 154 60 170 T80 170 T100 170 T120 170" class="st-f" stroke-width="2.5"/>
   <path d="M40 170 Q50 186 60 170 T80 170 T100 170 T120 170" class="st" stroke-width="2.5"/>
-  <text x="164" y="164" class="t-s ink" font-weight="700">DNA（二重らせん）</text>
-  <text x="164" y="182" class="t-xs soft">1953年：A・T・G・Cの4文字</text>
+  <text x="164" y="158" class="t-s ink" font-weight="700">DNA（二重らせん）</text>
+  <text x="164" y="175" class="t-xs soft">1953年：A・T・G・Cの4文字</text>
+  <text x="164" y="192" class="t-xs fl" font-weight="700">2012年〜：狙って書きかえる</text>
+  <!-- はさみ（遺伝子編集） -->
+  <circle cx="132" cy="186" r="4" class="st-f" stroke-width="1.8"/>
+  <circle cx="142" cy="186" r="4" class="st-f" stroke-width="1.8"/>
+  <path d="M134 183 L146 166 M140 183 L128 166" class="st-f" stroke-width="2" stroke-linecap="round"/>
 
   <!-- 4 RNA → タンパク質 -->
   <path d="M80 190 V208" class="st-f" stroke-width="2" marker-end="url(#a-biology)"/>

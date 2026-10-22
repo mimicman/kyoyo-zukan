@@ -1,10 +1,12 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- 上：46億年の長さ。下：数億年かけて地下にたまった炭素を、短い期間で大気へ戻している → 温室効果が強まる -->
+  <!-- 上：46億年の長さと、自然にくり返す氷期（のこぎりの線は模式）。下：数億年かけて地下にたまった炭素を、短い期間で大気へ戻している → 温室効果が強まる -->
   <text x="20" y="22" class="t-xs ink" font-weight="700">地球の46億年</text>
   <text x="342" y="22" class="t-xs end soft">人の時代は右端の一瞬</text>
   <rect x="20" y="30" width="320" height="10" rx="5" class="tint"/>
   <rect x="336" y="28" width="4" height="14" class="fl"/>
   <text x="20" y="56" class="t-xs soft">46億年前</text>
+  <path d="M218 47 l9 6 l2 -6 l9 6 l2 -6 l9 6 l2 -6 l9 6 l2 -6 l9 6 l2 -6 l9 6 l2 -6 l9 6 l2 -6 l9 6 l2 -6 l9 6 l2 -6" class="st-f" stroke-width="1.2" stroke-linejoin="round"/>
+  <text x="330" y="64" class="t-xs end fl">氷期と間氷期のくり返し</text>
   <text x="340" y="56" class="t-xs end soft">今</text>
 
   <!-- 大気 -->

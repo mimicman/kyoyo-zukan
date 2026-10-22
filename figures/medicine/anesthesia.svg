@@ -1,0 +1,43 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 麻酔と外科手術：手術をはばんだ「痛み」と「感染」の2つの壁を、1846年の麻酔と1867年の消毒が越えた -->
+  <text x="12" y="22" class="t-m ink">手術をはばんだ2つの壁</text>
+
+  <!-- 壁① 痛み -->
+  <text x="128" y="56" class="t-s mid ink" font-weight="700">壁① 痛み</text>
+  <rect x="118" y="66" width="20" height="40" rx="2" class="soft"/>
+  <rect x="118" y="134" width="20" height="40" rx="2" class="soft"/>
+  <path d="M118 80 h20 M118 93 h20 M118 148 h20 M118 161 h20 M128 66 v14 M128 93 v13 M128 134 v14 M128 161 v13" class="st-line" stroke-width="1.2"/>
+  <!-- 壁② 感染 -->
+  <text x="232" y="56" class="t-s mid ink" font-weight="700">壁② 感染</text>
+  <rect x="222" y="66" width="20" height="40" rx="2" class="soft"/>
+  <rect x="222" y="134" width="20" height="40" rx="2" class="soft"/>
+  <path d="M222 80 h20 M222 93 h20 M222 148 h20 M222 161 h20 M232 66 v14 M232 93 v13 M232 134 v14 M232 161 v13" class="st-line" stroke-width="1.2"/>
+
+  <!-- 手術の進む道 -->
+  <path d="M16 120 H344" class="st-f" stroke-width="3" marker-end="url(#a-medicine)"/>
+
+  <text x="60" y="90" class="t-xs mid ink" font-weight="700">以前の手術</text>
+  <text x="60" y="106" class="t-xs mid soft">数分で急いで</text>
+  <text x="60" y="142" class="t-xs mid soft">術後に傷が</text>
+  <text x="60" y="156" class="t-xs mid soft">膿むことが多い</text>
+
+  <text x="180" y="98" class="t-xs mid ink">眠って</text>
+  <text x="180" y="142" class="t-xs mid ink">痛みなく</text>
+
+  <text x="296" y="90" class="t-xs mid ink" font-weight="700">今の手術へ</text>
+  <text x="296" y="106" class="t-xs mid ink">菌を防いで</text>
+  <text x="296" y="142" class="t-xs mid ink">長く丁寧な</text>
+  <text x="296" y="156" class="t-xs mid ink">手術ができる</text>
+
+  <!-- 越えた方法 -->
+  <rect x="84" y="186" width="88" height="44" rx="8" class="fl"/>
+  <text x="128" y="204" class="t-xs mid on" font-weight="700">1846年 麻酔</text>
+  <text x="128" y="220" class="t-xs mid on">エーテルで眠る</text>
+  <rect x="188" y="186" width="88" height="44" rx="8" class="fl"/>
+  <text x="232" y="204" class="t-xs mid on" font-weight="700">1867年 消毒</text>
+  <text x="232" y="220" class="t-xs mid on">リスター</text>
+  <path d="M128 184 V176 M232 184 V176" class="st-f" stroke-width="2"/>
+
+  <text x="12" y="254" class="t-xs soft">日本では1804年、華岡青洲が全身麻酔で手術</text>
+  <text x="12" y="270" class="t-xs soft">19世紀末には、器具を熱で殺菌する無菌手術へ</text>
+</svg>

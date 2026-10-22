@@ -1,0 +1,42 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 高気圧と低気圧、寒冷前線：高気圧は空気が下りて晴れ、低気圧は集まって昇り雲ができる。前線では冷たい空気が暖かい空気を押し上げる -->
+  <!-- 上：高気圧と低気圧（横から見た図） -->
+  <circle cx="28" cy="34" r="9" class="fl"/>
+  <path d="M28 18 v-6 M28 50 v6 M12 34 h-6 M44 34 h6" class="st-f" stroke-width="1.5"/>
+  <path d="M68 40 V92 M96 40 V92" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <text x="82" y="74" class="t-l mid ink">高</text>
+  <path d="M70 108 H26" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <path d="M100 108 H222" class="st-f" stroke-width="2.5" marker-end="url(#a-earth)"/>
+  <text x="160" y="102" class="t-xs mid fl halo">風は高から低へ</text>
+  <path d="M340 108 H292" class="st-f" stroke-width="2.5" marker-end="url(#a-earth)"/>
+  <path d="M256 100 V52 M284 100 V52" class="st-f" stroke-width="2" marker-end="url(#a-earth)"/>
+  <text x="270" y="86" class="t-l mid ink">低</text>
+  <path d="M232 46 a12 12 0 0 1 16 -14 a16 16 0 0 1 30 -4 a13 13 0 0 1 22 8 a10 10 0 0 1 4 18 h-66 a9 9 0 0 1 -6 -8 Z" class="tint"/>
+  <path d="M232 46 a12 12 0 0 1 16 -14 a16 16 0 0 1 30 -4 a13 13 0 0 1 22 8 a10 10 0 0 1 4 18 h-66 a9 9 0 0 1 -6 -8 Z" class="st-soft" stroke-width="1.2"/>
+  <path d="M316 60 l-4 12 M326 60 l-4 12 M336 60 l-4 12" class="st-soft" stroke-width="1.5"/>
+  <path d="M12 118 H348" class="st" stroke-width="1.5"/>
+  <text x="82" y="136" class="t-xs mid ink">高気圧：下りて晴れ</text>
+  <text x="270" y="136" class="t-xs mid ink">低気圧：昇って雲や雨</text>
+
+  <path d="M12 150 H348" class="st-line" stroke-width="1"/>
+
+  <!-- 下：寒冷前線の断面 -->
+  <text x="12" y="172" class="t-s ink" font-weight="700">寒冷前線</text>
+  <text x="12" y="188" class="t-xs soft">冷たい空気がもぐり込む</text>
+  <polygon points="12,262 12,204 96,208 160,232 200,262" class="bgc"/>
+  <polyline points="12,204 96,208 160,232 200,262" class="st" stroke-width="1.8"/>
+  <path d="M24 230 H86" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <text x="22" y="252" class="t-xs ink">冷たい空気</text>
+  <path d="M330 252 C270 252 216 240 184 206" class="st-f" stroke-width="2" marker-end="url(#a-earth)"/>
+  <text x="300" y="240" class="t-xs mid fl">暖かい空気</text>
+  <path d="M150 204 a10 10 0 0 1 6 -16 a12 12 0 0 1 8 -18 a14 14 0 0 1 26 2 a12 12 0 0 1 10 16 a10 10 0 0 1 2 16 Z" class="tint"/>
+  <path d="M150 204 a10 10 0 0 1 6 -16 a12 12 0 0 1 8 -18 a14 14 0 0 1 26 2 a12 12 0 0 1 10 16 a10 10 0 0 1 2 16 Z" class="st-soft" stroke-width="1.2"/>
+  <path d="M160 210 l-4 12 M172 210 l-4 12 M184 210 l-4 12 M196 210 l-4 10" class="st-soft" stroke-width="1.5"/>
+  <text x="212" y="174" class="t-xs ink">背の高い雲</text>
+  <text x="212" y="188" class="t-xs ink">→ 激しい雨・雷</text>
+  <path d="M254 208 H340" class="st" stroke-width="2"/>
+  <path d="M262 208 l6 -9 l6 9 Z M286 208 l6 -9 l6 9 Z M310 208 l6 -9 l6 9 Z" class="ink"/>
+  <text x="297" y="224" class="t-xs mid soft">天気図の記号</text>
+  <path d="M12 262 H348" class="st" stroke-width="1.5"/>
+  <text x="180" y="277" class="t-xs mid soft">温暖前線は、暖かい空気がゆっくりはい上がり、長い雨</text>
+</svg>

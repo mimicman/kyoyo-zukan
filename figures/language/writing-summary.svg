@@ -22,8 +22,9 @@
   <!-- 東の流れ -->
   <text x="12" y="162" class="t-xs soft">東の流れ（東アジア）</text>
   <rect x="12" y="170" width="96" height="52" rx="10" class="tint"/>
-  <text x="60" y="192" class="t-s mid ink" font-weight="700">漢字</text>
-  <text x="60" y="210" class="t-xs mid soft">1字で1語</text>
+  <text x="60" y="189" class="t-s mid ink" font-weight="700">漢字</text>
+  <text x="60" y="204" class="t-xs mid soft">1字で1語</text>
+  <text x="60" y="217" class="t-xs mid fl">部品を組み合わせ</text>
   <path d="M110 196 H128" class="st-f" stroke-width="2" marker-end="url(#a-language)"/>
   <rect x="132" y="170" width="96" height="52" rx="10" class="tint"/>
   <text x="180" y="192" class="t-s mid ink" font-weight="700">万葉仮名</text>

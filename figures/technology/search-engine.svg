@@ -1,0 +1,52 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 検索エンジン：①リンクをたどって集め、②語ごとの索引を作り置きし、③頼まれたら索引を引いて順位を付ける -->
+  <text x="12" y="30" class="t-s ink" font-weight="700">① 集める</text>
+  <text x="12" y="46" class="t-xs soft">クローラーが</text>
+  <text x="12" y="60" class="t-xs soft">リンクをたどる</text>
+
+  <!-- ページの網（番号はページ番号） -->
+  <path d="M124 44 L184 34 M184 34 L250 50 M250 50 L314 38 M184 34 L214 84 M250 50 L294 88 M214 84 L294 88 M250 50 L214 84" class="st-line" stroke-width="1.5"/>
+  <path d="M130 52 Q156 40 176 40 M192 42 Q220 44 240 52" class="st-f dash" stroke-width="1.8" marker-end="url(#a-technology)"/>
+  <g class="t-xs">
+    <rect x="110" y="34" width="28" height="20" rx="3" class="paper"/><rect x="110" y="34" width="28" height="20" rx="3" class="st-soft" stroke-width="1.2"/><text x="124" y="48" class="t-xs mid ink">1</text>
+    <rect x="170" y="24" width="28" height="20" rx="3" class="paper"/><rect x="170" y="24" width="28" height="20" rx="3" class="st-soft" stroke-width="1.2"/><text x="184" y="38" class="t-xs mid ink">2</text>
+    <rect x="236" y="40" width="28" height="20" rx="3" class="paper"/><rect x="236" y="40" width="28" height="20" rx="3" class="st-soft" stroke-width="1.2"/><text x="250" y="54" class="t-xs mid ink">3</text>
+    <rect x="300" y="28" width="28" height="20" rx="3" class="paper"/><rect x="300" y="28" width="28" height="20" rx="3" class="st-soft" stroke-width="1.2"/><text x="314" y="42" class="t-xs mid ink">4</text>
+    <rect x="200" y="74" width="28" height="20" rx="3" class="fl"/><text x="214" y="88" class="t-xs mid on">5</text>
+    <rect x="280" y="78" width="28" height="20" rx="3" class="paper"/><rect x="280" y="78" width="28" height="20" rx="3" class="st-soft" stroke-width="1.2"/><text x="294" y="92" class="t-xs mid ink">6</text>
+  </g>
+
+  <path d="M12 110 H348" class="st-line" stroke-width="1"/>
+
+  <!-- ②索引 -->
+  <text x="12" y="134" class="t-s ink" font-weight="700">② 索引</text>
+  <text x="12" y="150" class="t-xs soft">本の索引と同じ</text>
+  <text x="12" y="164" class="t-xs soft">作り置きの表</text>
+  <rect x="110" y="120" width="238" height="74" rx="8" class="bgc"/>
+  <text x="122" y="138" class="t-xs soft">語</text>
+  <text x="200" y="138" class="t-xs soft">その語があるページ</text>
+  <path d="M116 144 H342" class="st-line" stroke-width="1"/>
+  <text x="122" y="160" class="t-xs ink" font-weight="700">猫</text>
+  <text x="200" y="160" class="t-xs ink">2、5</text>
+  <text x="122" y="174" class="t-xs ink" font-weight="700">飼い方</text>
+  <text x="200" y="174" class="t-xs ink">5、6</text>
+  <text x="122" y="188" class="t-xs ink" font-weight="700">雨</text>
+  <text x="200" y="188" class="t-xs ink">1、3</text>
+
+  <path d="M12 206 H348" class="st-line" stroke-width="1"/>
+
+  <!-- ③順位 -->
+  <text x="12" y="230" class="t-s ink" font-weight="700">③ 並べる</text>
+  <text x="12" y="246" class="t-xs soft">検索したとき</text>
+  <rect x="110" y="218" width="96" height="26" rx="13" class="paper"/>
+  <rect x="110" y="218" width="96" height="26" rx="13" class="st" stroke-width="1.5"/>
+  <text x="158" y="235" class="t-xs mid ink">猫　飼い方</text>
+  <text x="158" y="264" class="t-xs mid soft">リンクが多いと上へ</text>
+  <path d="M210 231 H226" class="st-f" stroke-width="2" marker-end="url(#a-technology)"/>
+  <rect x="232" y="214" width="116" height="18" rx="4" class="fl"/>
+  <text x="240" y="227" class="t-xs on" font-weight="700">1位　ページ5</text>
+  <rect x="232" y="236" width="116" height="16" rx="4" class="tint"/>
+  <text x="240" y="248" class="t-xs ink">2位　ページ2</text>
+  <rect x="232" y="256" width="116" height="16" rx="4" class="tint"/>
+  <text x="240" y="268" class="t-xs ink">3位　ページ6</text>
+</svg>

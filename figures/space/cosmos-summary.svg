@@ -1,5 +1,5 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- 上：宇宙の138億年（長さは時間に比例）。下：章の3枚がそれぞれ答えようとする問い -->
+  <!-- 上：宇宙の138億年（長さは時間に比例）。下：章の4枚がそれぞれ答えようとする問い -->
   <text x="14" y="14" class="t-xs soft">宇宙の138億年（帯の長さは時間に比例）</text>
   <rect x="20" y="44" width="320" height="10" rx="5" class="tint"/>
   <rect x="233" y="44" width="107" height="10" rx="5" class="fl"/>
@@ -12,46 +12,57 @@
   <text x="233" y="70" class="t-xs mid soft">46億年前</text>
   <text x="346" y="36" class="t-xs end ink" font-weight="700">今</text>
 
-  <path d="M30 76 L56 94" class="st-line dash" stroke-width="1.2"/>
-  <path d="M326 60 L206 94" class="st-line dash" stroke-width="1.2"/>
-  <path d="M338 60 L316 94" class="st-line dash" stroke-width="1.2"/>
+  <path d="M30 76 L50 94" class="st-line dash" stroke-width="1.2"/>
+  <path d="M330 60 L136 94" class="st-line dash" stroke-width="1.2"/>
+  <path d="M334 60 L222 94" class="st-line dash" stroke-width="1.2"/>
+  <path d="M338 60 L308 94" class="st-line dash" stroke-width="1.2"/>
 
   <!-- 1. ビッグバン -->
-  <rect x="10" y="96" width="106" height="176" rx="12" class="tint"/>
-  <circle cx="63" cy="140" r="28" class="st-soft dash" stroke-width="1.2"/>
-  <circle cx="63" cy="140" r="16" class="st-f dash" stroke-width="1.5"/>
-  <circle cx="63" cy="140" r="6" class="fl"/>
-  <path d="M75 128 L83 120" class="st-f" stroke-width="1.5" marker-end="url(#a-space)"/>
-  <path d="M51 152 L43 160" class="st-f" stroke-width="1.5" marker-end="url(#a-space)"/>
-  <text x="63" y="190" class="t-xs mid soft">宇宙はどう</text>
-  <text x="63" y="204" class="t-xs mid soft">始まった？</text>
-  <text x="63" y="228" class="t-s mid ink" font-weight="700">ビッグバン</text>
-  <text x="63" y="246" class="t-xs mid soft">空間が膨らみ</text>
-  <text x="63" y="260" class="t-xs mid soft">続けている</text>
+  <rect x="10" y="96" width="80" height="176" rx="12" class="tint"/>
+  <circle cx="50" cy="138" r="26" class="st-soft dash" stroke-width="1.2"/>
+  <circle cx="50" cy="138" r="15" class="st-f dash" stroke-width="1.5"/>
+  <circle cx="50" cy="138" r="6" class="fl"/>
+  <path d="M61 127 L69 119" class="st-f" stroke-width="1.5" marker-end="url(#a-space)"/>
+  <path d="M39 149 L31 157" class="st-f" stroke-width="1.5" marker-end="url(#a-space)"/>
+  <text x="50" y="186" class="t-xs mid soft">どう</text>
+  <text x="50" y="200" class="t-xs mid soft">始まった？</text>
+  <text x="50" y="226" class="t-s mid ink" font-weight="700">ビッグバン</text>
+  <text x="50" y="244" class="t-xs mid soft">空間が膨らみ</text>
+  <text x="50" y="258" class="t-xs mid soft">続けている</text>
 
-  <!-- 2. 系外惑星 -->
-  <rect x="127" y="96" width="106" height="176" rx="12" class="tint"/>
-  <ellipse cx="176" cy="130" rx="32" ry="10" class="st-soft" stroke-width="1.2"/>
-  <circle cx="176" cy="130" r="12" class="fl"/>
-  <circle cx="206" cy="132" r="4" class="ink"/>
-  <path d="M150 154 H170 L174 160 H186 L190 154 H210" class="st-f" stroke-width="2"/>
-  <text x="180" y="174" class="t-xs mid soft">横切ると暗くなる</text>
-  <text x="180" y="196" class="t-xs mid soft">ほかの星にも</text>
-  <text x="180" y="210" class="t-xs mid soft">惑星はある？</text>
-  <text x="180" y="232" class="t-s mid ink" font-weight="700">系外惑星</text>
-  <text x="180" y="250" class="t-xs mid soft">1995年から</text>
-  <text x="180" y="264" class="t-xs mid soft">見つかり始めた</text>
+  <!-- 2. 暗黒物質 -->
+  <rect x="96" y="96" width="80" height="176" rx="12" class="tint"/>
+  <circle cx="136" cy="138" r="28" class="st-soft dash" stroke-width="1.2"/>
+  <ellipse cx="136" cy="138" rx="20" ry="7" class="fl"/>
+  <circle cx="136" cy="138" r="4" class="paper"/>
+  <text x="136" y="186" class="t-xs mid soft">何で</text>
+  <text x="136" y="200" class="t-xs mid soft">できている？</text>
+  <text x="136" y="226" class="t-s mid ink" font-weight="700">暗黒物質</text>
+  <text x="136" y="244" class="t-xs mid soft">中身の大半は</text>
+  <text x="136" y="258" class="t-xs mid soft">正体不明</text>
 
-  <!-- 3. 宇宙探査 -->
-  <rect x="244" y="96" width="106" height="176" rx="12" class="tint"/>
-  <path d="M297 106 Q307 118 307 140 L307 156 L287 156 L287 140 Q287 118 297 106Z" class="fl"/>
-  <path d="M287 142 L279 160 L287 156Z" class="fl"/>
-  <path d="M307 142 L315 160 L307 156Z" class="fl"/>
-  <circle cx="297" cy="130" r="4" class="paper"/>
-  <path d="M291 158 L297 172 L303 158Z" class="soft"/>
-  <text x="297" y="190" class="t-xs mid soft">行って調べ</text>
-  <text x="297" y="204" class="t-xs mid soft">確かめる</text>
-  <text x="297" y="228" class="t-s mid ink" font-weight="700">宇宙探査</text>
-  <text x="297" y="246" class="t-xs mid soft">1957年の</text>
-  <text x="297" y="260" class="t-xs mid soft">人工衛星から</text>
+  <!-- 3. 系外惑星 -->
+  <rect x="182" y="96" width="80" height="176" rx="12" class="tint"/>
+  <ellipse cx="220" cy="128" rx="28" ry="9" class="st-soft" stroke-width="1.2"/>
+  <circle cx="220" cy="128" r="11" class="fl"/>
+  <circle cx="246" cy="130" r="4" class="ink"/>
+  <path d="M196 152 H212 L216 158 H226 L230 152 H246" class="st-f" stroke-width="2"/>
+  <text x="222" y="186" class="t-xs mid soft">ほかの星にも</text>
+  <text x="222" y="200" class="t-xs mid soft">惑星はある？</text>
+  <text x="222" y="226" class="t-s mid ink" font-weight="700">系外惑星</text>
+  <text x="222" y="244" class="t-xs mid soft">1995年から</text>
+  <text x="222" y="258" class="t-xs mid soft">見つかり始めた</text>
+
+  <!-- 4. 宇宙探査 -->
+  <rect x="268" y="96" width="80" height="176" rx="12" class="tint"/>
+  <path d="M308 106 Q318 118 318 140 L318 156 L298 156 L298 140 Q298 118 308 106Z" class="fl"/>
+  <path d="M298 142 L290 160 L298 156Z" class="fl"/>
+  <path d="M318 142 L326 160 L318 156Z" class="fl"/>
+  <circle cx="308" cy="130" r="4" class="paper"/>
+  <path d="M302 158 L308 172 L314 158Z" class="soft"/>
+  <text x="308" y="186" class="t-xs mid soft">行って調べ</text>
+  <text x="308" y="200" class="t-xs mid soft">確かめる</text>
+  <text x="308" y="226" class="t-s mid ink" font-weight="700">宇宙探査</text>
+  <text x="308" y="244" class="t-xs mid soft">1957年の</text>
+  <text x="308" y="258" class="t-xs mid soft">人工衛星から</text>
 </svg>

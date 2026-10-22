@@ -1,0 +1,23 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 箱ひげ図：点数を小さい順に並べ、4等分する区切り（最小・25%・中央値・75%・最大）で箱とひげを描く。下は2つの組の比較 -->
+  <text x="12" y="22" class="t-m ink">真ん中の半分を、箱で示す</text>
+  <text x="12" y="44" class="t-xs soft">テストの点数（11人）を小さい順に</text>
+  <circle cx="145" cy="62" r="4.5" class="fl"/><circle cx="184" cy="62" r="4.5" class="fl"/><circle cx="196" cy="62" r="4.5" class="fl"/><circle cx="205" cy="62" r="4.5" class="fl"/><circle cx="214" cy="62" r="4.5" class="fl"/><circle cx="226" cy="62" r="4.5" class="fl"/><circle cx="235" cy="62" r="4.5" class="fl"/><circle cx="250" cy="62" r="4.5" class="fl"/><circle cx="262" cy="62" r="4.5" class="fl"/><circle cx="280" cy="62" r="4.5" class="fl"/><circle cx="325" cy="62" r="4.5" class="fl"/>
+  <path d="M145 68 V96" class="st-soft dash" stroke-width="1"/><path d="M196 68 V96" class="st-soft dash" stroke-width="1"/><path d="M226 68 V96" class="st-soft dash" stroke-width="1"/><path d="M262 68 V96" class="st-soft dash" stroke-width="1"/><path d="M325 68 V96" class="st-soft dash" stroke-width="1"/>
+  <path d="M145 114.0 H196 M262 114.0 H325 M145 103 V125 M325 103 V125" class="st" stroke-width="1.5"/><rect x="196" y="100" width="66" height="28" rx="2" class="tint"/><rect x="196" y="100" width="66" height="28" rx="2" class="st-f" stroke-width="1.5"/><path d="M226 100 V128" class="st-f" stroke-width="3"/>
+  <text x="12" y="110" class="t-xs fl">箱＝真ん中の半分</text>
+  <text x="12" y="126" class="t-xs fl">太線＝中央値</text>
+  <text x="145" y="146" class="t-xs mid ink">最小</text><text x="145" y="160" class="t-xs mid soft">35</text><text x="196" y="146" class="t-xs mid ink">25%</text><text x="196" y="160" class="t-xs mid soft">52</text><text x="226" y="146" class="t-xs mid ink">中央値</text><text x="226" y="160" class="t-xs mid soft">62</text><text x="262" y="146" class="t-xs mid ink">75%</text><text x="262" y="160" class="t-xs mid soft">74</text><text x="325" y="146" class="t-xs mid ink">最大</text><text x="325" y="160" class="t-xs mid soft">95</text>
+  <path d="M40 172 H340" class="st-soft" stroke-width="1.2"/>
+  <path d="M40 168 V176 M190 168 V176 M340 168 V176" class="st-soft" stroke-width="1.2"/>
+  <text x="40" y="188" class="t-xs mid soft">0点</text>
+  <text x="190" y="188" class="t-xs mid soft">50点</text>
+  <text x="340" y="188" class="t-xs end soft">100点</text>
+
+  <path d="M12 200 H348" class="st-line" stroke-width="1"/>
+  <text x="12" y="227" class="t-s ink" font-weight="700">A組</text>
+  <path d="M160 222.0 H205 M250 222.0 H295 M160 215 V229 M295 215 V229" class="st" stroke-width="1.5"/><rect x="205" y="212" width="45" height="20" rx="2" class="tint"/><rect x="205" y="212" width="45" height="20" rx="2" class="st-f" stroke-width="1.5"/><path d="M226 212 V232" class="st-f" stroke-width="3"/>
+  <text x="12" y="257" class="t-s ink" font-weight="700">B組</text>
+  <path d="M100 252.0 H160 M295 252.0 H340 M100 245 V259 M340 245 V259" class="st" stroke-width="1.5"/><rect x="160" y="242" width="135" height="20" rx="2" class="tint"/><rect x="160" y="242" width="135" height="20" rx="2" class="st-f" stroke-width="1.5"/><path d="M226 242 V262" class="st-f" stroke-width="3"/>
+  <text x="180" y="278" class="t-xs mid soft">中央値は同じでも、B組のほうが散らばりが大きい</text>
+</svg>

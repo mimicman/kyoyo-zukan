@@ -1,5 +1,5 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- 太陽系の中の地球と月：何が何のまわりを回っているか。下の3つの箱が章の3枚に対応 -->
+  <!-- 太陽系の中の地球と月：何が何のまわりを回っているか。下の4つの箱が章の4枚に対応 -->
   <text x="14" y="20" class="t-s ink" font-weight="700">何が、何のまわりを回るか</text>
 
   <!-- ほかの惑星の通り道（外側） -->
@@ -28,22 +28,25 @@
   <text x="328" y="138" class="t-xs mid ink">木星など</text>
   <text x="300" y="166" class="t-xs mid soft halo">ほかの惑星</text>
 
-  <!-- 章の3枚 -->
-  <rect x="10" y="190" width="106" height="82" rx="10" class="tint"/>
-  <text x="63" y="211" class="t-s mid ink" font-weight="700">季節</text>
-  <text x="63" y="231" class="t-xs mid soft">地球が太陽を</text>
-  <text x="63" y="246" class="t-xs mid soft">1年かけて回る</text>
-  <text x="63" y="261" class="t-xs mid ink" font-weight="700">＋地軸の傾き</text>
-
-  <rect x="127" y="190" width="106" height="82" rx="10" class="tint"/>
-  <text x="180" y="211" class="t-s mid ink" font-weight="700">月の満ち欠け</text>
-  <text x="180" y="231" class="t-xs mid soft">月が地球を</text>
-  <text x="180" y="246" class="t-xs mid soft">約1か月で回る</text>
-  <text x="180" y="261" class="t-xs mid ink" font-weight="700">見える角度が変化</text>
-
-  <rect x="244" y="190" width="106" height="82" rx="10" class="tint"/>
-  <text x="297" y="211" class="t-s mid ink" font-weight="700">太陽系の惑星</text>
-  <text x="297" y="231" class="t-xs mid soft">8つの惑星が</text>
-  <text x="297" y="246" class="t-xs mid soft">太陽を回る</text>
-  <text x="297" y="261" class="t-xs mid ink" font-weight="700">内は岩、外はガス</text>
+  <!-- 章の4枚 -->
+  <rect x="10" y="190" width="80" height="82" rx="10" class="tint"/>
+  <text x="50" y="211" class="t-s mid ink" font-weight="700">季節</text>
+  <text x="50" y="231" class="t-xs mid soft">地球が太陽を</text>
+  <text x="50" y="246" class="t-xs mid soft">1年かけて回る</text>
+  <text x="50" y="261" class="t-xs mid ink" font-weight="700">＋地軸の傾き</text>
+  <rect x="96" y="190" width="80" height="82" rx="10" class="tint"/>
+  <text x="136" y="211" class="t-s mid ink" font-weight="700">月の満ち欠け</text>
+  <text x="136" y="231" class="t-xs mid soft">月が地球を</text>
+  <text x="136" y="246" class="t-xs mid soft">約1か月で回る</text>
+  <text x="136" y="261" class="t-xs mid ink" font-weight="700">見る角度が変化</text>
+  <rect x="182" y="190" width="80" height="82" rx="10" class="tint"/>
+  <text x="222" y="211" class="t-s mid ink" font-weight="700">太陽系の惑星</text>
+  <text x="222" y="231" class="t-xs mid soft">8つの惑星が</text>
+  <text x="222" y="246" class="t-xs mid soft">太陽を回る</text>
+  <text x="222" y="261" class="t-xs mid ink" font-weight="700">岩とガスの星</text>
+  <rect x="268" y="190" width="80" height="82" rx="10" class="tint"/>
+  <text x="308" y="211" class="t-s mid ink" font-weight="700">日食と月食</text>
+  <text x="308" y="231" class="t-xs mid soft">3つが一直線に</text>
+  <text x="308" y="246" class="t-xs mid soft">並ぶとき</text>
+  <text x="308" y="261" class="t-xs mid ink" font-weight="700">影が重なる</text>
 </svg>

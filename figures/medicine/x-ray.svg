@@ -1,0 +1,52 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- X線と画像診断：X線は体を通りぬけるが骨は通りにくく、影が白く写る。右はX線写真・CT・MRIの比べ -->
+  <text x="12" y="22" class="t-m ink">体を開かずに、中を見る</text>
+
+  <!-- X線の出口 -->
+  <rect x="50" y="36" width="60" height="16" rx="8" class="soft"/>
+  <text x="120" y="48" class="t-xs fl" font-weight="700">X線</text>
+  <g class="st-soft dash" stroke-width="1">
+    <path d="M72 52 L34 198 M80 52 L66 198 M88 52 L104 198 M96 52 L136 198"/>
+  </g>
+  <!-- 手（やわらかい部分と骨） -->
+  <rect x="56" y="118" width="54" height="44" rx="12" class="tint"/>
+  <rect x="58" y="80" width="10" height="44" rx="5" class="tint"/>
+  <rect x="71" y="74" width="10" height="50" rx="5" class="tint"/>
+  <rect x="84" y="76" width="10" height="48" rx="5" class="tint"/>
+  <rect x="97" y="84" width="10" height="40" rx="5" class="tint"/>
+  <path d="M110 140 L126 118" class="st-f" stroke-width="10" stroke-linecap="round" opacity="0.35"/>
+  <g class="st" stroke-width="2.5" stroke-linecap="round">
+    <path d="M63 86 V156 M76 80 V156 M89 82 V156 M102 90 V156 M111 140 L123 122"/>
+  </g>
+  <circle cx="76" cy="110" r="6" class="st-f" stroke-width="2.5"/>
+  <!-- フィルム -->
+  <rect x="24" y="200" width="122" height="16" rx="3" class="soft"/>
+  <path d="M60 208 H74 M78 208 H92 M96 208 H110" class="st-line" stroke-width="4" stroke-linecap="round"/>
+  <text x="84" y="236" class="t-xs mid ink">骨は通りにくく、</text>
+  <text x="84" y="251" class="t-xs mid ink">影が白く写る</text>
+  <text x="84" y="270" class="t-xs mid soft">1895年 レントゲン</text>
+
+  <path d="M168 40 V272" class="st-line" stroke-width="1"/>
+
+  <!-- 右：3つの方法 -->
+  <rect x="180" y="44" width="34" height="44" rx="4" class="soft"/>
+  <path d="M190 52 V80 M197 50 V80 M204 54 V80" class="st-line" stroke-width="3" stroke-linecap="round"/>
+  <text x="224" y="58" class="t-s ink" font-weight="700">X線写真</text>
+  <text x="224" y="74" class="t-xs soft">1895年〜</text>
+  <text x="224" y="89" class="t-xs ink">1方向から影を写す</text>
+
+  <circle cx="197" cy="142" r="18" class="st-f" stroke-width="3"/>
+  <ellipse cx="197" cy="142" rx="9" ry="6" class="tint"/>
+  <path d="M197 118 v6 M221 142 h-6 M197 166 v-6 M173 142 h6" class="st-f" stroke-width="2"/>
+  <text x="224" y="130" class="t-s ink" font-weight="700">CT</text>
+  <text x="224" y="146" class="t-xs soft">1970年代〜</text>
+  <text x="224" y="161" class="t-xs ink">まわりから当て輪切り</text>
+
+  <rect x="180" y="196" width="34" height="40" rx="17" class="tint"/>
+  <rect x="180" y="196" width="34" height="40" rx="17" class="st-soft" stroke-width="2"/>
+  <text x="197" y="221" class="t-xs mid ink" font-weight="700">磁</text>
+  <text x="224" y="204" class="t-s ink" font-weight="700">MRI</text>
+  <text x="224" y="220" class="t-xs soft">1980年ごろ〜</text>
+  <text x="224" y="235" class="t-xs ink">磁石と電波で写す</text>
+  <text x="224" y="250" class="t-xs soft">脳や筋肉も見える</text>
+</svg>

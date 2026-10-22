@@ -1,35 +1,45 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- データから判断：①集める→②読み解く→③見せる。各段階の下に落とし穴 -->
-  <text x="16" y="24" class="t-m ink">データから判断するまでの3段階</text>
-  <circle cx="62" cy="97" r="38" class="tint"/>
-  <circle cx="62" cy="97" r="38" class="st-soft" stroke-width="1"/>
-  <circle cx="43" cy="72" r="2.4" class="soft"/><circle cx="52" cy="72" r="2.4" class="soft"/><circle cx="61" cy="72" r="2.4" class="soft"/><circle cx="70" cy="72" r="3.6" class="fl"/><circle cx="79" cy="72" r="2.4" class="soft"/><circle cx="38" cy="82" r="2.4" class="soft"/><circle cx="47" cy="82" r="2.4" class="soft"/><circle cx="56" cy="82" r="2.4" class="soft"/><circle cx="65" cy="82" r="2.4" class="soft"/><circle cx="74" cy="82" r="2.4" class="soft"/><circle cx="83" cy="82" r="2.4" class="soft"/><circle cx="92" cy="82" r="3.6" class="fl"/><circle cx="34" cy="92" r="2.4" class="soft"/><circle cx="43" cy="92" r="2.4" class="soft"/><circle cx="52" cy="92" r="2.4" class="soft"/><circle cx="61" cy="92" r="2.4" class="soft"/><circle cx="70" cy="92" r="2.4" class="soft"/><circle cx="79" cy="92" r="3.6" class="fl"/><circle cx="88" cy="92" r="2.4" class="soft"/><circle cx="38" cy="102" r="2.4" class="soft"/><circle cx="47" cy="102" r="2.4" class="soft"/><circle cx="56" cy="102" r="2.4" class="soft"/><circle cx="65" cy="102" r="2.4" class="soft"/><circle cx="74" cy="102" r="2.4" class="soft"/><circle cx="83" cy="102" r="3.6" class="fl"/><circle cx="92" cy="102" r="2.4" class="soft"/><circle cx="34" cy="112" r="2.4" class="soft"/><circle cx="43" cy="112" r="2.4" class="soft"/><circle cx="52" cy="112" r="2.4" class="soft"/><circle cx="61" cy="112" r="2.4" class="soft"/><circle cx="70" cy="112" r="3.6" class="fl"/><circle cx="79" cy="112" r="2.4" class="soft"/><circle cx="88" cy="112" r="2.4" class="soft"/><circle cx="47" cy="122" r="2.4" class="soft"/><circle cx="56" cy="122" r="2.4" class="soft"/><circle cx="65" cy="122" r="2.4" class="soft"/><circle cx="74" cy="122" r="2.4" class="soft"/><circle cx="83" cy="122" r="2.4" class="soft"/>
-  <text x="62" y="166" class="t-s mid ink" font-weight="700">① 集める</text>
-  <text x="62" y="182" class="t-xs mid soft">全体からくじで選ぶ</text>
+  <!-- データから判断：①集める→②読み解く→③偶然か確かめる→④見せる。各段階の下に落とし穴 -->
+  <text x="16" y="24" class="t-m ink">データから判断するまでの4段階</text>
+  <circle cx="52" cy="92" r="32" class="tint"/>
+  <circle cx="52" cy="92" r="32" class="st-soft" stroke-width="1"/>
+  <circle cx="40" cy="74" r="2.2" class="soft"/><circle cx="48" cy="74" r="2.2" class="soft"/><circle cx="56" cy="74" r="2.2" class="soft"/><circle cx="64" cy="74" r="2.2" class="soft"/><circle cx="32" cy="83" r="2.2" class="soft"/><circle cx="40" cy="83" r="3.2" class="fl"/><circle cx="48" cy="83" r="2.2" class="soft"/><circle cx="56" cy="83" r="2.2" class="soft"/><circle cx="64" cy="83" r="2.2" class="soft"/><circle cx="72" cy="83" r="2.2" class="soft"/><circle cx="28" cy="92" r="3.2" class="fl"/><circle cx="36" cy="92" r="2.2" class="soft"/><circle cx="44" cy="92" r="2.2" class="soft"/><circle cx="52" cy="92" r="2.2" class="soft"/><circle cx="60" cy="92" r="2.2" class="soft"/><circle cx="68" cy="92" r="3.2" class="fl"/><circle cx="76" cy="92" r="2.2" class="soft"/><circle cx="32" cy="101" r="2.2" class="soft"/><circle cx="40" cy="101" r="2.2" class="soft"/><circle cx="48" cy="101" r="2.2" class="soft"/><circle cx="56" cy="101" r="3.2" class="fl"/><circle cx="64" cy="101" r="2.2" class="soft"/><circle cx="72" cy="101" r="2.2" class="soft"/><circle cx="40" cy="110" r="2.2" class="soft"/><circle cx="48" cy="110" r="2.2" class="soft"/><circle cx="56" cy="110" r="2.2" class="soft"/><circle cx="64" cy="110" r="3.2" class="fl"/>
+  <path d="M104 124 H170 M104 124 V66" class="st" stroke-width="1.5"/>
+  <circle cx="110" cy="116" r="3" class="fl"/><circle cx="117" cy="106" r="3" class="fl"/><circle cx="124" cy="111" r="3" class="fl"/><circle cx="130" cy="98" r="3" class="fl"/><circle cx="137" cy="101" r="3" class="fl"/><circle cx="143" cy="88" r="3" class="fl"/><circle cx="150" cy="92" r="3" class="fl"/><circle cx="156" cy="78" r="3" class="fl"/><circle cx="162" cy="82" r="3" class="fl"/>
+  <path d="M108 120 L166 76" class="st-soft dash" stroke-width="1.5"/>
+  <path d="M240 120 L239.8 116.6 L241.6 117.9 L243.4 118.7 L245.2 119.3 L247.0 119.6 L248.8 119.8 L250.6 119.9 L252.4 119.9 L254.2 120.0 L256.0 120.0 L256 120 Z" class="fl"/>
+  <path d="M184 120 L184.0 120.0 L185.8 120.0 L187.6 119.9 L189.4 119.9 L191.2 119.8 L193.0 119.6 L194.8 119.3 L196.6 118.7 L198.4 117.9 L200.2 116.6 L202.0 114.8 L203.8 112.3 L205.6 109.2 L207.4 105.3 L209.2 100.8 L211.0 96.0 L212.8 91.1 L214.6 86.7 L216.4 83.1 L218.2 80.8 L220.0 80.0 L221.8 80.8 L223.6 83.1 L225.4 86.7 L227.2 91.1 L229.0 96.0 L230.8 100.8 L232.6 105.3 L234.4 109.2 L236.2 112.3 L238.0 114.8 L239.8 116.6 L241.6 117.9 L243.4 118.7 L245.2 119.3 L247.0 119.6 L248.8 119.8 L250.6 119.9 L252.4 119.9 L254.2 120.0 L256.0 120.0" class="st-f" stroke-width="2"/>
+  <path d="M184 124 H258" class="st" stroke-width="1.5"/>
+  <text x="250" y="72" class="t-xs mid fl">まれ？</text>
+  <path d="M276 124 H340" class="st" stroke-width="1.5"/>
+  <rect x="282" y="86" width="20" height="38" class="soft"/>
+  <rect x="312" y="70" width="20" height="54" class="fl"/>
 
-  <path d="M142 146 H222 M142 146 V66" class="st" stroke-width="1.5"/>
-  <circle cx="150" cy="140" r="3.5" class="fl"/><circle cx="158" cy="128" r="3.5" class="fl"/><circle cx="166" cy="134" r="3.5" class="fl"/><circle cx="172" cy="118" r="3.5" class="fl"/><circle cx="180" cy="122" r="3.5" class="fl"/><circle cx="186" cy="108" r="3.5" class="fl"/><circle cx="194" cy="112" r="3.5" class="fl"/><circle cx="200" cy="96" r="3.5" class="fl"/><circle cx="208" cy="100" r="3.5" class="fl"/><circle cx="212" cy="86" r="3.5" class="fl"/>
-  <path d="M146 144 L218 82" class="st-soft dash" stroke-width="1.5"/>
-  <text x="180" y="166" class="t-s mid ink" font-weight="700">② 読み解く</text>
-  <text x="180" y="182" class="t-xs mid soft">一緒に動くか見る</text>
+  <g class="st-f" stroke-width="2">
+    <path d="M86 92 H96" marker-end="url(#a-statistics)"/>
+    <path d="M172 92 H180" marker-end="url(#a-statistics)"/>
+    <path d="M262 92 H272" marker-end="url(#a-statistics)"/>
+  </g>
+  <text x="52" y="152" class="t-s mid ink" font-weight="700">① 集める</text>
+  <text x="52" y="168" class="t-xs mid soft">くじで選ぶ</text>
+  <text x="136" y="152" class="t-s mid ink" font-weight="700">② 読み解く</text>
+  <text x="136" y="168" class="t-xs mid soft">一緒に動くか</text>
+  <text x="220" y="152" class="t-s mid ink" font-weight="700">③ 確かめる</text>
+  <text x="220" y="168" class="t-xs mid soft">偶然か調べる</text>
+  <text x="304" y="152" class="t-s mid ink" font-weight="700">④ 見せる</text>
+  <text x="304" y="168" class="t-xs mid soft">グラフで伝える</text>
 
-  <path d="M256 146 H340" class="st" stroke-width="1.5"/>
-  <rect x="266" y="92" width="26" height="54" class="soft"/>
-  <rect x="304" y="78" width="26" height="68" class="fl"/>
-  <text x="298" y="166" class="t-s mid ink" font-weight="700">③ 見せる</text>
-  <text x="298" y="182" class="t-xs mid soft">グラフで伝える</text>
-
-  <path d="M106 100 H132" class="st-f" stroke-width="2" marker-end="url(#a-statistics)"/>
-  <path d="M228 100 H250" class="st-f" stroke-width="2" marker-end="url(#a-statistics)"/>
-
-  <text x="16" y="210" class="t-xs soft">落とし穴</text>
-  <rect x="12" y="216" width="104" height="52" rx="10" class="bgc"/>
-  <text x="64" y="238" class="t-xs mid ink" font-weight="700">選び方の偏り</text>
-  <text x="64" y="255" class="t-xs mid soft">答えたい人だけ</text>
-  <rect x="128" y="216" width="104" height="52" rx="10" class="bgc"/>
-  <text x="180" y="238" class="t-xs mid ink" font-weight="700">相関≠因果</text>
-  <text x="180" y="255" class="t-xs mid soft">第3の要因かも</text>
-  <rect x="244" y="216" width="104" height="52" rx="10" class="bgc"/>
-  <text x="296" y="238" class="t-xs mid ink" font-weight="700">軸の切り方</text>
-  <text x="296" y="255" class="t-xs mid soft">差が大きく見える</text>
+  <text x="16" y="196" class="t-xs soft">落とし穴</text>
+  <rect x="12" y="204" width="80" height="56" rx="10" class="bgc"/>
+  <text x="52" y="226" class="t-xs mid ink" font-weight="700">選び方の偏り</text>
+  <text x="52" y="244" class="t-xs mid soft">答えたい人だけ</text>
+  <rect x="96" y="204" width="80" height="56" rx="10" class="bgc"/>
+  <text x="136" y="226" class="t-xs mid ink" font-weight="700">相関≠因果</text>
+  <text x="136" y="244" class="t-xs mid soft">第3の要因かも</text>
+  <rect x="180" y="204" width="80" height="56" rx="10" class="bgc"/>
+  <text x="220" y="226" class="t-xs mid ink" font-weight="700">p値の誤読</text>
+  <text x="220" y="244" class="t-xs mid soft">差の大きさは別</text>
+  <rect x="264" y="204" width="80" height="56" rx="10" class="bgc"/>
+  <text x="304" y="226" class="t-xs mid ink" font-weight="700">軸の切り方</text>
+  <text x="304" y="244" class="t-xs mid soft">差を誇張する</text>
 </svg>

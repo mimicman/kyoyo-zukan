@@ -1600,5 +1600,17 @@
     "artist": "不明",
     "license": "Public domain",
     "source": "https://commons.wikimedia.org/wiki/File:WalterGropius-1919.jpg"
+  },
+  "music-edison-phonograph": {
+    "name": "蓄音機とエジソン（1878年、ブレイディのスタジオ）",
+    "artist": "Levin C. Handy (per http://hdl.loc.gov/loc.pnp/cwpbh.04326)",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Edison_and_phonograph_edit1.jpg"
+  },
+  "people-li-bai": {
+    "name": "李白吟行図（梁楷）",
+    "artist": "Liang Kai",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Liang_Kai_-_Li_Bai_Strolling.jpg"
   }
 }

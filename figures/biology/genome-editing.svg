@@ -1,0 +1,54 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 遺伝子編集：案内役のRNAが同じ並びの場所を探し、はさみ役のタンパク質がDNAを切る。細胞の修理で文字が書きかわる -->
+  <text x="190" y="22" class="t-xs mid fl" font-weight="700">案内役のRNA</text>
+  <path d="M146 34 H234" class="st-f" stroke-width="3" stroke-linecap="round"/>
+  <path d="M190 26 V32" class="st-f" stroke-width="1.2"/>
+
+  <!-- はさみ役（Cas9）が包む範囲 -->
+  <rect x="138" y="28" width="104" height="64" rx="18" class="tint" opacity="0.8"/>
+  <rect x="138" y="28" width="104" height="64" rx="18" class="st-f dash" stroke-width="1.5"/>
+
+  <!-- DNAの2本の鎖とはしご -->
+  <path d="M16 50 H344 M16 74 H344" class="st" stroke-width="2.5"/>
+  <g class="st-soft" stroke-width="1.5">
+    <path d="M24 50 V74 M38 50 V74 M52 50 V74 M66 50 V74 M80 50 V74 M94 50 V74 M108 50 V74 M122 50 V74"/>
+    <path d="M258 50 V74 M272 50 V74 M286 50 V74 M300 50 V74 M314 50 V74 M328 50 V74"/>
+  </g>
+  <g class="t-xs">
+    <text x="150" y="66" class="t-xs mid ink">G</text><text x="164" y="66" class="t-xs mid ink">A</text>
+    <text x="178" y="66" class="t-xs mid ink">C</text><text x="192" y="66" class="t-xs mid ink">T</text>
+    <text x="206" y="66" class="t-xs mid ink">T</text><text x="220" y="66" class="t-xs mid ink">A</text>
+  </g>
+  <!-- 切る所 -->
+  <path d="M238 42 L232 52 L240 62 L232 72 L238 82" class="st-f" stroke-width="2.5"/>
+  <text x="190" y="108" class="t-xs mid fl" font-weight="700">はさみ役（Cas9）が切る</text>
+  <text x="16" y="40" class="t-xs soft">DNA（2本の鎖）</text>
+
+  <path d="M190 116 V134" class="st-f" stroke-width="2" marker-end="url(#a-biology)"/>
+  <text x="200" y="130" class="t-xs ink">細胞が切れ目を修理</text>
+
+  <!-- 修理の2つの結果 -->
+  <rect x="12" y="146" width="162" height="90" rx="10" class="bgc"/>
+  <text x="93" y="166" class="t-s mid ink" font-weight="700">つなぎ直す</text>
+  <path d="M28 186 H82 M100 186 H158" class="st" stroke-width="2.5"/>
+  <path d="M86 180 L96 192 M96 180 L86 192" class="st-soft" stroke-width="1.8"/>
+  <text x="93" y="210" class="t-xs mid ink">文字がずれて</text>
+  <text x="93" y="226" class="t-xs mid soft">その遺伝子が働かなくなる</text>
+
+  <rect x="186" y="146" width="162" height="90" rx="10" class="bgc"/>
+  <text x="267" y="166" class="t-s mid ink" font-weight="700">手本を入れる</text>
+  <path d="M202 186 H246 M288 186 H332" class="st" stroke-width="2.5"/>
+  <rect x="246" y="180" width="42" height="12" rx="3" class="fl"/>
+  <text x="267" y="210" class="t-xs mid ink">手本どおりに</text>
+  <text x="267" y="226" class="t-xs mid soft">ねらった文字に書きかわる</text>
+
+  <!-- 下：品種改良からの流れ -->
+  <text x="12" y="262" class="t-xs soft">交配で選ぶ</text>
+  <path d="M70 258 H86" class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
+  <text x="92" y="262" class="t-xs soft">外から足す（組み換え）</text>
+  <path d="M212 258 H228" class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
+  <text x="234" y="262" class="t-xs fl" font-weight="700">ねらって直す（編集）</text>
+  <text x="12" y="276" class="t-xs soft">品種改良</text>
+  <text x="92" y="276" class="t-xs soft">1970年代〜</text>
+  <text x="234" y="276" class="t-xs soft">2012年〜</text>
+</svg>

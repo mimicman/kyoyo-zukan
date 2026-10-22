@@ -1,0 +1,33 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 日食と月食：太陽・月・地球の順なら月の影が地球に落ちて日食。太陽・地球・月の順なら地球の影に月が入って月食 -->
+  <text x="12" y="22" class="t-s ink" font-weight="700">日食（新月のとき）</text>
+  <text x="348" y="22" class="t-xs end soft">大きさ・距離は目安</text>
+  <circle cx="40" cy="78" r="34" class="fl"/>
+  <path d="M60 51 L188 70 M60 105 L188 86" class="st-soft dash" stroke-width="1"/>
+  <polygon points="196,71 196,85 290,79 290,77" class="ink" opacity="0.35"/>
+  <circle cx="194" cy="78" r="8" class="ink"/>
+  <circle cx="312" cy="78" r="24" class="tint"/>
+  <circle cx="312" cy="78" r="24" class="st-soft" stroke-width="1.5"/>
+  <circle cx="289" cy="78" r="3.5" class="ink"/>
+  <text x="40" y="128" class="t-xs mid ink">太陽</text>
+  <text x="194" y="104" class="t-xs mid ink">月</text>
+  <text x="312" y="118" class="t-xs mid ink">地球</text>
+  <text x="250" y="60" class="t-xs mid soft">月の影</text>
+  <text x="348" y="136" class="t-xs end fl">影の落ちた狭い所だけで見える</text>
+
+  <path d="M12 148 H348" class="st-line" stroke-width="1"/>
+
+  <text x="12" y="170" class="t-s ink" font-weight="700">月食（満月のとき）</text>
+  <circle cx="40" cy="220" r="34" class="fl"/>
+  <path d="M60 193 L196 199 M60 247 L196 241" class="st-soft dash" stroke-width="1"/>
+  <polygon points="200,199 200,241 350,228 350,212" class="ink" opacity="0.18"/>
+  <circle cx="200" cy="220" r="22" class="tint"/>
+  <circle cx="200" cy="220" r="22" class="st-soft" stroke-width="1.5"/>
+  <circle cx="314" cy="220" r="8" class="fl" opacity="0.7"/>
+  <circle cx="314" cy="220" r="8" class="st" stroke-width="1"/>
+  <text x="40" y="270" class="t-xs mid ink">太陽</text>
+  <text x="200" y="258" class="t-xs mid ink">地球</text>
+  <text x="314" y="250" class="t-xs mid ink">月</text>
+  <text x="270" y="202" class="t-xs mid soft">地球の影</text>
+  <text x="348" y="270" class="t-xs end fl">赤黒く、夜の側のどこでも見える</text>
+</svg>

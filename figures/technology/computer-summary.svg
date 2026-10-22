@@ -1,31 +1,29 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- 計算機のしくみ：0と1（土台）の上に5つの装置、その上で手順（アルゴリズム）が動く。積み重ね -->
-  <text x="16" y="24" class="t-m ink">下の層を土台に、上の層が動く</text>
-  <text x="196" y="50" class="t-xs mid soft">アプリ・ゲーム・AIなど</text>
+  <!-- 計算機のしくみ：トランジスタ（スイッチ）の上に0と1、その上に5つの装置、その上で手順（アルゴリズム）が動く。4層の積み重ね -->
+  <text x="16" y="22" class="t-m ink">下の層を土台に、上の層が動く</text>
+  <text x="212" y="42" class="t-xs mid soft">アプリ・ゲーム・AIなど</text>
 
-  <rect x="72" y="60" width="248" height="58" rx="10" class="fl"/>
-  <text x="88" y="84" class="t-s on" font-weight="700">③ 手順（アルゴリズム）</text>
-  <text x="88" y="104" class="t-xs on">どう解くかの段取り。半分ずつ探す など</text>
+  <rect x="96" y="50" width="244" height="48" rx="10" class="fl"/>
+  <text x="110" y="70" class="t-s on" font-weight="700">④ 手順（アルゴリズム）</text>
+  <text x="110" y="88" class="t-xs on">どう解くかの段取り。半分ずつ探す など</text>
 
-  <rect x="52" y="128" width="288" height="58" rx="10" class="tint"/>
-  <text x="68" y="152" class="t-s ink" font-weight="700">② 5つの装置</text>
-  <text x="68" y="172" class="t-xs soft">入力 → CPU（制御・演算）⇄ 記憶 → 出力</text>
+  <rect x="72" y="104" width="268" height="48" rx="10" class="tint"/>
+  <text x="86" y="124" class="t-s ink" font-weight="700">③ 5つの装置</text>
+  <text x="86" y="142" class="t-xs soft">入力 → CPU（制御・演算）⇄ 記憶 → 出力</text>
 
-  <rect x="32" y="196" width="308" height="58" rx="10" class="bgc"/>
-  <rect x="32" y="196" width="308" height="58" rx="10" class="st-line" stroke-width="1"/>
-  <text x="48" y="220" class="t-s ink" font-weight="700">① 0と1（ビット）</text>
-  <g class="t-xs">
-    <rect x="186" y="208" width="16" height="18" class="paper"/><text x="194" y="221" class="t-xs mid ink">0</text>
-    <rect x="204" y="208" width="16" height="18" class="fl"/><text x="212" y="221" class="t-xs mid on">1</text>
-    <rect x="222" y="208" width="16" height="18" class="paper"/><text x="230" y="221" class="t-xs mid ink">0</text>
-    <rect x="240" y="208" width="16" height="18" class="paper"/><text x="248" y="221" class="t-xs mid ink">0</text>
-    <rect x="258" y="208" width="16" height="18" class="paper"/><text x="266" y="221" class="t-xs mid ink">0</text>
-    <rect x="276" y="208" width="16" height="18" class="paper"/><text x="284" y="221" class="t-xs mid ink">0</text>
-    <rect x="294" y="208" width="16" height="18" class="paper"/><text x="302" y="221" class="t-xs mid ink">0</text>
-    <rect x="312" y="208" width="16" height="18" class="fl"/><text x="320" y="221" class="t-xs mid on">1</text>
-  </g>
-  <text x="48" y="242" class="t-xs soft">入・切の並びで、数も文字も表す（65＝A）</text>
+  <rect x="48" y="158" width="292" height="48" rx="10" class="bgc"/>
+  <rect x="48" y="158" width="292" height="48" rx="10" class="st-line" stroke-width="1"/>
+  <text x="62" y="178" class="t-s ink" font-weight="700">② 0と1（ビット）</text>
+  <rect x="190" y="166" width="16" height="18" class="paper"/><text x="198" y="179" class="t-xs mid ink">0</text><rect x="208" y="166" width="16" height="18" class="fl"/><text x="216" y="179" class="t-xs mid on">1</text><rect x="226" y="166" width="16" height="18" class="paper"/><text x="234" y="179" class="t-xs mid ink">0</text><rect x="244" y="166" width="16" height="18" class="paper"/><text x="252" y="179" class="t-xs mid ink">0</text><rect x="262" y="166" width="16" height="18" class="paper"/><text x="270" y="179" class="t-xs mid ink">0</text><rect x="280" y="166" width="16" height="18" class="paper"/><text x="288" y="179" class="t-xs mid ink">0</text><rect x="298" y="166" width="16" height="18" class="paper"/><text x="306" y="179" class="t-xs mid ink">0</text><rect x="316" y="166" width="16" height="18" class="fl"/><text x="324" y="179" class="t-xs mid on">1</text>
+  <text x="62" y="196" class="t-xs soft">数も文字も表す（65＝A）</text>
 
-  <path d="M18 250 V66" class="st-f" stroke-width="2" marker-end="url(#a-technology)"/>
-  <text x="14" y="272" class="t-xs soft">下ほど機械に近く、上ほど人の目的に近い</text>
+  <rect x="24" y="212" width="316" height="44" rx="10" class="paper"/>
+  <rect x="24" y="212" width="316" height="44" rx="10" class="st-f" stroke-width="1.5"/>
+  <text x="38" y="231" class="t-s ink" font-weight="700">① トランジスタ</text>
+  <text x="38" y="248" class="t-xs soft">電気で開け閉めするスイッチ</text>
+  <path d="M196 236 h10" class="st-soft" stroke-width="2"/><rect x="198" y="226" width="6" height="4" class="fl"/><path d="M212 236 h10" class="st-soft" stroke-width="2"/><rect x="214" y="226" width="6" height="4" class="fl"/><path d="M228 236 h10" class="st-soft" stroke-width="2"/><rect x="230" y="226" width="6" height="4" class="fl"/><path d="M244 236 h10" class="st-soft" stroke-width="2"/><rect x="246" y="226" width="6" height="4" class="fl"/><path d="M260 236 h10" class="st-soft" stroke-width="2"/><rect x="262" y="226" width="6" height="4" class="fl"/><path d="M276 236 h10" class="st-soft" stroke-width="2"/><rect x="278" y="226" width="6" height="4" class="fl"/><path d="M292 236 h10" class="st-soft" stroke-width="2"/><rect x="294" y="226" width="6" height="4" class="fl"/><path d="M308 236 h10" class="st-soft" stroke-width="2"/><rect x="310" y="226" width="6" height="4" class="fl"/><path d="M324 236 h10" class="st-soft" stroke-width="2"/><rect x="326" y="226" width="6" height="4" class="fl"/>
+  <text x="268" y="250" class="t-xs mid fl">チップに数十億個</text>
+
+  <path d="M12 252 V56" class="st-f" stroke-width="2" marker-end="url(#a-technology)"/>
+  <text x="16" y="274" class="t-xs soft">下ほど機械に近く、上ほど人の目的に近い</text>
 </svg>

@@ -1,0 +1,57 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- トランジスタ：ゲートの電気で、入口から出口への電流を開け閉めするスイッチ。右は小さく・多くなった歩み -->
+  <text x="12" y="22" class="t-m ink">電気で切り替える、小さなスイッチ</text>
+
+  <!-- 左上：ゲートに電気あり＝流れる -->
+  <text x="12" y="50" class="t-xs ink" font-weight="700">ゲートに電気あり</text>
+  <path d="M90 56 V66" class="st-f" stroke-width="2"/>
+  <rect x="60" y="66" width="60" height="9" rx="2" class="fl"/>
+  <rect x="24" y="80" width="132" height="24" rx="5" class="tint"/>
+  <text x="24" y="118" class="t-xs soft">入口</text>
+  <text x="156" y="118" class="t-xs end soft">出口</text>
+  <path d="M32 92 H146" class="st-f" stroke-width="2.5" marker-end="url(#a-technology)"/>
+  <text x="90" y="134" class="t-s mid fl" font-weight="700">流れる＝1</text>
+
+  <!-- 左下：ゲートに電気なし＝止まる -->
+  <text x="12" y="160" class="t-xs ink" font-weight="700">ゲートに電気なし</text>
+  <rect x="60" y="176" width="60" height="9" rx="2" class="paper"/>
+  <rect x="60" y="176" width="60" height="9" rx="2" class="st-soft" stroke-width="1.2"/>
+  <rect x="24" y="190" width="132" height="24" rx="5" class="tint"/>
+  <text x="24" y="228" class="t-xs soft">入口</text>
+  <text x="156" y="228" class="t-xs end soft">出口</text>
+  <path d="M32 202 H74" class="st-soft" stroke-width="2.5"/>
+  <path d="M80 195 L94 209 M94 195 L80 209" class="st" stroke-width="2"/>
+  <text x="90" y="244" class="t-s mid soft" font-weight="700">止まる＝0</text>
+  <text x="12" y="268" class="t-xs soft">ゲート＝開け閉めのつまみ</text>
+
+  <path d="M174 40 V268" class="st-line" stroke-width="1"/>
+
+  <!-- 右：小さく、たくさんに -->
+  <text x="268" y="46" class="t-xs mid soft">小さく、たくさんに</text>
+  <path d="M194 66 V250" class="st-f" stroke-width="2" marker-end="url(#a-technology)"/>
+
+  <rect x="184" y="58" width="20" height="30" rx="8" class="paper"/>
+  <rect x="184" y="58" width="20" height="30" rx="8" class="st-soft" stroke-width="1.5"/>
+  <text x="214" y="70" class="t-xs ink" font-weight="700">真空管</text>
+  <text x="214" y="85" class="t-xs soft">1940年代・大きく熱い</text>
+
+  <circle cx="194" cy="111" r="6" class="soft"/>
+  <path d="M190 117 v6 M194 117 v6 M198 117 v6" class="st-soft" stroke-width="1.5"/>
+  <text x="214" y="110" class="t-xs ink" font-weight="700">トランジスタ</text>
+  <text x="214" y="125" class="t-xs soft">1947年・1個ずつの部品</text>
+
+  <rect x="186" y="142" width="16" height="16" rx="2" class="tint"/>
+  <rect x="186" y="142" width="16" height="16" rx="2" class="st-f" stroke-width="1.5"/>
+  <text x="214" y="150" class="t-xs ink" font-weight="700">集積回路（IC）</text>
+  <text x="214" y="165" class="t-xs soft">1958年ごろ・1枚にまとめる</text>
+
+  <rect x="185" y="181" width="18" height="18" rx="2" class="tint"/>
+  <path d="M185 187 h18 M185 193 h18 M191 181 v18 M197 181 v18" class="st-f" stroke-width="1"/>
+  <text x="214" y="190" class="t-xs ink" font-weight="700">マイクロプロセッサ</text>
+  <text x="214" y="205" class="t-xs soft">1971年・数千個</text>
+
+  <rect x="184" y="222" width="20" height="20" rx="2" class="fl"/>
+  <path d="M184 227 h20 M184 232 h20 M184 237 h20 M189 222 v20 M194 222 v20 M199 222 v20" class="st-line" stroke-width="0.8"/>
+  <text x="214" y="230" class="t-xs ink" font-weight="700">今のチップ</text>
+  <text x="214" y="245" class="t-xs fl" font-weight="700">数十億個以上</text>
+</svg>

@@ -1,5 +1,5 @@
 <svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
-  <!-- ことばのしくみ：音（下）→ 文の組み立て（中）→ 考え（上）と積み上がる -->
+  <!-- ことばのしくみ：音（下）→ 文の組み立て（中）→ 考え（上）と積み上がる。右の矢印は子どもが身につける順 -->
   <text x="16" y="24" class="t-m ink">小さな単位から積み上がる</text>
 
   <!-- 上：考え -->
@@ -19,6 +19,12 @@
   <rect x="230" y="132" width="62" height="28" rx="6" class="fl"/>
   <text x="261" y="151" class="t-s mid on">食べる</text>
   <text x="191" y="182" class="t-xs mid soft">S・O・V の順に並べる（語順のタイプ）</text>
+
+  <!-- 右：子どもが身につける順 -->
+  <path d="M334 200 V112" class="st-f" stroke-width="2.5" marker-end="url(#a-language)"/>
+  <text x="346" y="52" class="t-xs end fl" font-weight="700">習得の順</text>
+  <text x="346" y="68" class="t-xs end soft">喃語→1語</text>
+  <text x="346" y="84" class="t-xs end soft">→2語→文</text>
 
   <!-- 下：音 -->
   <rect x="12" y="204" width="336" height="88" rx="10" class="tint"/>

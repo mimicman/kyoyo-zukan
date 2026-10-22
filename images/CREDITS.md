@@ -100,6 +100,7 @@
 | moko-shurai | 蒙古襲来絵詞 | 作者不明（竹崎季長の発注） | Public domain | https://commons.wikimedia.org/wiki/File:M%C5%8Dko_Sh%C5%ABrai_Ekotoba.jpg |
 | music-bach | バッハの肖像（ハウスマン） | エリアス・ゴットロープ・ハウスマン | Public domain | https://commons.wikimedia.org/wiki/File:Johann_Sebastian_Bach.jpg |
 | music-beethoven | ベートーヴェンの肖像（シュティーラー） | ヨーゼフ・カール・シュティーラー | Public domain | https://commons.wikimedia.org/wiki/File:Beethoven.jpg |
+| music-edison-phonograph | 蓄音機とエジソン（1878年、ブレイディのスタジオ） | Levin C. Handy (per http://hdl.loc.gov/loc.pnp/cwpbh.04326) | Public domain | https://commons.wikimedia.org/wiki/File:Edison_and_phonograph_edit1.jpg |
 | music-laudario | コルトーナのラウダ集（作者不詳、13世紀の写本） | 作者不明 | Public domain | https://commons.wikimedia.org/wiki/File:Laudario_Di_Cortona.jpg |
 | music-shamisen | 三味線を持つ女（葛飾北斎） | 葛飾北斎 | Public domain | https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Seated_Woman_with_Shamisen_-_Katsushika_Hokusai.jpg |
 | newton | ニュートンの肖像（ネラー、1689年） | ゴドフリー・ネラー | Public domain | https://commons.wikimedia.org/wiki/File:Portrait_of_Sir_Isaac_Newton,_1689_(brightened).jpg |
@@ -165,6 +166,7 @@
 | people-leeuwenhoek-antonie | レーウェンフックの肖像（ヤン・フェルコリエ, 1686年） | ヤン・フェルコリエ | Public domain | https://commons.wikimedia.org/wiki/File:Antoni_van_Leeuwenhoek_(by_Jan_Verkolje,_1686).jpg |
 | people-lemaitre-georges | ジョルジュ・ルメートルの肖像写真（撮影者不明） | 撮影者不明 | Public domain | https://commons.wikimedia.org/wiki/File:Lemaitre.jpg |
 | people-leonardo-da-vinci | 自画像とされる素描（レオナルド・ダ・ヴィンチ） | レオナルド・ダ・ヴィンチ（自画像とされる） | Public domain | https://commons.wikimedia.org/wiki/File:Leonardo_self.jpg |
+| people-li-bai | 李白吟行図（梁楷） | Liang Kai | Public domain | https://commons.wikimedia.org/wiki/File:Liang_Kai_-_Li_Bai_Strolling.jpg |
 | people-linnaeus-carl | カール・フォン・リンネの肖像（アレクサンデル・ロスリン） | アレクサンデル・ロスリン | Public domain | https://commons.wikimedia.org/wiki/File:Carl_von_Linn%C3%A9.jpg |
 | people-locke-john | ジョン・ロックの肖像（ゴドフリー・ネラー） | ゴドフリー・ネラー | Public domain | https://commons.wikimedia.org/wiki/File:John_Locke.jpg |
 | people-lumiere-brothers | リュミエール兄弟の写真（作者不明） | Unknown authorUnknown author | Public domain | https://commons.wikimedia.org/wiki/File:Auguste_and_Louis_Lumi%C3%A8re.jpg |

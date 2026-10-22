@@ -1,0 +1,28 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 暗黒物質：銀河の外側の星も速く回る（実線）ので、見えない重さがあると考える。右は宇宙の中身の割合 -->
+  <text x="12" y="22" class="t-m ink">見えない重さと、見えない力</text>
+  <text x="20" y="48" class="t-xs soft">銀河の星が回る速さ</text>
+  <path d="M28 58 V206 H196" class="st" stroke-width="1.5"/>
+  <text x="196" y="222" class="t-xs end soft">中心からの距離 →</text>
+  <text x="34" y="72" class="t-xs soft">速い</text>
+  <path d="M30 204 C38 120 54 96 74 96 C106 98 150 136 194 160" class="st-soft dash" stroke-width="2"/>
+  <path d="M30 204 C38 116 54 90 74 88 C110 86 150 86 194 86" class="st-f" stroke-width="3"/>
+  <text x="194" y="78" class="t-xs end fl" font-weight="700">実際（外でも速い）</text>
+  <text x="194" y="180" class="t-xs end soft">見える星だけなら</text>
+  <text x="194" y="194" class="t-xs end soft">（外ほど遅いはず）</text>
+  <path d="M130 94 V124" class="st-f" stroke-width="1.2" marker-end="url(#a-space)"/>
+  <text x="124" y="134" class="t-xs end ink">この差が</text>
+  <text x="124" y="148" class="t-xs end ink">暗黒物質</text>
+
+  <text x="280" y="48" class="t-xs mid soft">宇宙の中身</text>
+  <path d="M280 116 L280.0 64.0 A52 52 0 0 1 296.1 66.5 Z" class="fl"/><path d="M280 116 L296.1 66.5 A52 52 0 0 1 327.1 138.1 Z" class="soft"/><path d="M280 116 L327.1 138.1 A52 52 0 1 1 280.0 64.0 Z" class="tint"/>
+  <circle cx="280" cy="116" r="52" class="st-line" stroke-width="1"/>
+  <rect x="214" y="190" width="12" height="12" rx="2" class="fl"/>
+  <text x="232" y="200" class="t-xs ink">ふつうの物質 約5%</text>
+  <rect x="214" y="210" width="12" height="12" rx="2" class="soft"/>
+  <text x="232" y="220" class="t-xs ink">暗黒物質 約27%</text>
+  <rect x="214" y="230" width="12" height="12" rx="2" class="tint"/>
+  <rect x="214" y="230" width="12" height="12" rx="2" class="st-line" stroke-width="1"/>
+  <text x="232" y="240" class="t-xs ink">暗黒エネルギー 約68%</text>
+  <text x="12" y="270" class="t-xs soft">星も惑星も私たちも「ふつうの物質」。残りの正体はまだわからない</text>
+</svg>

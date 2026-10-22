@@ -1,5 +1,5 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- 細胞と体：1個の細胞の中のエネルギーの流れ（左）と、細胞が集まった体の調節（右） -->
+  <!-- 細胞と体：1個の細胞の中のエネルギーの流れ（左）と、分裂して増えた細胞が集まった体の調節（右） -->
   <text x="110" y="30" class="t-s mid ink" font-weight="700">① 1個の細胞</text>
   <text x="290" y="30" class="t-s mid ink" font-weight="700">③ 集まって体に</text>
 
@@ -34,17 +34,16 @@
   <text x="196" y="176" class="t-xs mid ink halo">生きる力</text>
   <text x="114" y="266" class="t-s mid ink" font-weight="700">② 光合成と呼吸</text>
 
-  <!-- 細胞が集まる -->
-  <g class="tint">
-    <circle cx="272" cy="58" r="9"/><circle cx="290" cy="58" r="9"/><circle cx="308" cy="58" r="9"/>
-    <circle cx="281" cy="74" r="9"/><circle cx="299" cy="74" r="9"/>
-  </g>
-  <g class="st-f" stroke-width="1.5">
-    <circle cx="272" cy="58" r="9"/><circle cx="290" cy="58" r="9"/><circle cx="308" cy="58" r="9"/>
-    <circle cx="281" cy="74" r="9"/><circle cx="299" cy="74" r="9"/>
-  </g>
-  <text x="290" y="102" class="t-xs mid soft">細胞が集まる</text>
-  <path d="M290 110 V130" class="st-f" stroke-width="2" marker-end="url(#a-biology)"/>
+  <!-- 細胞が分裂して増え、集まる -->
+  <circle cx="258" cy="66" r="9" class="tint"/><circle cx="258" cy="66" r="9" class="st-f" stroke-width="1.5"/>
+  <path d="M270 66 H278" class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
+  <circle cx="290" cy="57" r="7" class="tint"/><circle cx="290" cy="57" r="7" class="st-f" stroke-width="1.5"/>
+  <circle cx="290" cy="75" r="7" class="tint"/><circle cx="290" cy="75" r="7" class="st-f" stroke-width="1.5"/>
+  <path d="M300 66 H308" class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
+  <g class="tint"><circle cx="320" cy="52" r="5.5"/><circle cx="333" cy="58" r="5.5"/><circle cx="320" cy="68" r="5.5"/><circle cx="333" cy="74" r="5.5"/><circle cx="320" cy="84" r="5.5"/><circle cx="333" cy="90" r="5.5"/></g>
+  <g class="st-f" stroke-width="1.2"><circle cx="320" cy="52" r="5.5"/><circle cx="333" cy="58" r="5.5"/><circle cx="320" cy="68" r="5.5"/><circle cx="333" cy="74" r="5.5"/><circle cx="320" cy="84" r="5.5"/><circle cx="333" cy="90" r="5.5"/></g>
+  <text x="290" y="108" class="t-xs mid fl" font-weight="700">④ 分裂して増える</text>
+  <path d="M290 114 V132" class="st-f" stroke-width="2" marker-end="url(#a-biology)"/>
 
   <!-- 体と体温計 -->
   <circle cx="284" cy="152" r="13" class="soft"/>

@@ -1,11 +1,15 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- ネットとWeb：ブラウザとサーバーの間を、ルーターの網が運ぶ。Webは頼む・返すの約束、暗号は中身を守る -->
-  <text x="16" y="24" class="t-m ink">1回のページ表示に、3つの仕組み</text>
+  <!-- ネットとWeb：ブラウザとサーバーの間を、ルーターの網が運ぶ。Webは頼む・返すの約束、暗号は中身を守り、検索エンジンが見たいページを探す -->
+  <text x="16" y="24" class="t-m ink">ページを探して見るまでの4つの仕組み</text>
 
   <rect x="12" y="66" width="72" height="56" rx="8" class="tint"/>
   <rect x="12" y="66" width="72" height="56" rx="8" class="st-soft" stroke-width="1"/>
   <text x="48" y="90" class="t-xs mid ink" font-weight="700">あなた</text>
   <text x="48" y="106" class="t-xs mid soft">ブラウザ</text>
+  <circle cx="30" cy="52" r="7" class="paper"/>
+  <circle cx="30" cy="52" r="7" class="st-f" stroke-width="2"/>
+  <path d="M35 57 L42 64" class="st-f" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="48" y="58" class="t-xs fl">④</text>
   <rect x="276" y="66" width="72" height="56" rx="8" class="tint"/>
   <rect x="276" y="66" width="72" height="56" rx="8" class="st-soft" stroke-width="1"/>
   <text x="312" y="90" class="t-xs mid ink" font-weight="700">サーバー</text>
@@ -22,18 +26,20 @@
   <rect x="166" y="86" width="28" height="20" rx="3" class="fl"/>
   <path d="M174 86 v-5 a6 6 0 0 1 12 0 v5" class="st-f" stroke-width="2"/>
   <text x="180" y="100" class="t-xs mid on">③</text>
-  <text x="180" y="140" class="t-xs mid soft">ルーター（中継機）の網</text>
+  <text x="180" y="46" class="t-xs mid soft">ルーター（中継機）の網</text>
 
-  <path d="M48 166 H312" class="st-f" stroke-width="1.5" marker-end="url(#a-technology)"/>
-  <text x="180" y="161" class="t-xs mid fl halo">② 頼む（URL）</text>
-  <path d="M312 180 H48" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
-  <text x="180" y="184" class="t-xs mid ink halo">返す（HTML）</text>
+  <path d="M48 152 H312" class="st-f" stroke-width="1.5" marker-end="url(#a-technology)"/>
+  <text x="180" y="147" class="t-xs mid fl halo">② 頼む（URL）</text>
+  <path d="M312 164 H48" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="180" y="168" class="t-xs mid ink halo">返す（HTML）</text>
 
-  <rect x="12" y="194" width="336" height="80" rx="10" class="bgc"/>
-  <text x="24" y="216" class="t-xs ink" font-weight="700">① 運ぶ</text>
-  <text x="80" y="216" class="t-xs soft">インターネット：小包に分け、網の目で中継</text>
-  <text x="24" y="240" class="t-xs ink" font-weight="700">② 頼む</text>
-  <text x="80" y="240" class="t-xs soft">Web：URLで頼み、ページが返ってくる</text>
-  <text x="24" y="264" class="t-xs ink" font-weight="700">③ 守る</text>
-  <text x="80" y="264" class="t-xs soft">公開鍵暗号：途中で中身を読まれない</text>
+  <rect x="12" y="176" width="336" height="100" rx="10" class="bgc"/>
+  <text x="24" y="196" class="t-xs ink" font-weight="700">① 運ぶ</text>
+  <text x="80" y="196" class="t-xs soft">インターネット：小包に分け、網の目で中継</text>
+  <text x="24" y="218" class="t-xs ink" font-weight="700">② 頼む</text>
+  <text x="80" y="218" class="t-xs soft">Web：URLで頼み、ページが返ってくる</text>
+  <text x="24" y="240" class="t-xs ink" font-weight="700">③ 守る</text>
+  <text x="80" y="240" class="t-xs soft">公開鍵暗号：途中で中身を読まれない</text>
+  <text x="24" y="262" class="t-xs ink" font-weight="700">④ 探す</text>
+  <text x="80" y="262" class="t-xs soft">検索エンジン：作り置きの索引で見つける</text>
 </svg>

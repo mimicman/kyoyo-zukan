@@ -1,9 +1,17 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- データの要約：1つの分布を「真ん中・散らばり・形」の3つの問いで読む -->
-  <text x="16" y="24" class="t-m ink">たくさんの数を、3つの問いで読む</text>
+  <!-- データの要約：1つの分布を「真ん中・散らばり・形」の3つの問いで読み、左上の箱ひげ図で比べる -->
+  <text x="16" y="24" class="t-m ink">たくさんの数を、3つの問いと図で読む</text>
   <text x="16" y="42" class="t-xs soft">点1つが1人分のデータ（例：テストの点数）</text>
   <circle cx="60" cy="196" r="6.5" class="soft"/><circle cx="84" cy="196" r="6.5" class="soft"/><circle cx="84" cy="181" r="6.5" class="soft"/><circle cx="108" cy="196" r="6.5" class="soft"/><circle cx="108" cy="181" r="6.5" class="soft"/><circle cx="108" cy="166" r="6.5" class="soft"/><circle cx="132" cy="196" r="6.5" class="fl"/><circle cx="132" cy="181" r="6.5" class="fl"/><circle cx="132" cy="166" r="6.5" class="fl"/><circle cx="132" cy="151" r="6.5" class="fl"/><circle cx="132" cy="136" r="6.5" class="fl"/><circle cx="156" cy="196" r="6.5" class="fl"/><circle cx="156" cy="181" r="6.5" class="fl"/><circle cx="156" cy="166" r="6.5" class="fl"/><circle cx="156" cy="151" r="6.5" class="fl"/><circle cx="156" cy="136" r="6.5" class="fl"/><circle cx="156" cy="121" r="6.5" class="fl"/><circle cx="180" cy="196" r="6.5" class="fl"/><circle cx="180" cy="181" r="6.5" class="fl"/><circle cx="180" cy="166" r="6.5" class="fl"/><circle cx="180" cy="151" r="6.5" class="fl"/><circle cx="180" cy="136" r="6.5" class="fl"/><circle cx="180" cy="121" r="6.5" class="fl"/><circle cx="180" cy="106" r="6.5" class="fl"/><circle cx="204" cy="196" r="6.5" class="fl"/><circle cx="204" cy="181" r="6.5" class="fl"/><circle cx="204" cy="166" r="6.5" class="fl"/><circle cx="204" cy="151" r="6.5" class="fl"/><circle cx="204" cy="136" r="6.5" class="fl"/><circle cx="204" cy="121" r="6.5" class="fl"/><circle cx="228" cy="196" r="6.5" class="fl"/><circle cx="228" cy="181" r="6.5" class="fl"/><circle cx="228" cy="166" r="6.5" class="fl"/><circle cx="228" cy="151" r="6.5" class="fl"/><circle cx="228" cy="136" r="6.5" class="fl"/><circle cx="252" cy="196" r="6.5" class="soft"/><circle cx="252" cy="181" r="6.5" class="soft"/><circle cx="252" cy="166" r="6.5" class="soft"/><circle cx="276" cy="196" r="6.5" class="soft"/><circle cx="276" cy="181" r="6.5" class="soft"/><circle cx="300" cy="196" r="6.5" class="soft"/>
   <path d="M40 201.5 L45 200.9 L50 200.2 L55 199.4 L60 198.3 L65 196.9 L70 195.2 L75 193.1 L80 190.7 L85 187.8 L90 184.4 L95 180.5 L100 176.1 L105 171.1 L110 165.7 L115 159.8 L120 153.6 L125 147.0 L130 140.2 L135 133.4 L140 126.7 L145 120.2 L150 114.2 L155 108.7 L160 104.0 L165 100.1 L170 97.3 L175 95.6 L180 95.0 L185 95.6 L190 97.3 L195 100.1 L200 104.0 L205 108.7 L210 114.2 L215 120.2 L220 126.7 L225 133.4 L230 140.2 L235 147.0 L240 153.6 L245 159.8 L250 165.7 L255 171.1 L260 176.1 L265 180.5 L270 184.4 L275 187.8 L280 190.7 L285 193.1 L290 195.2 L295 196.9 L300 198.3 L305 199.4 L310 200.2 L315 200.9 L320 201.5" class="st-f" stroke-width="2.5"/>
+
+  <!-- ④ 箱ひげ図（左上） -->
+  <text x="16" y="84" class="t-xs fl" font-weight="700">④ 箱ひげ図</text>
+  <path d="M20 106 H34 M70 106 H96 M20 99 V113 M96 99 V113" class="st" stroke-width="1.5"/>
+  <rect x="34" y="97" width="36" height="18" rx="2" class="tint"/>
+  <rect x="34" y="97" width="36" height="18" rx="2" class="st-f" stroke-width="1.5"/>
+  <path d="M52 97 V115" class="st-f" stroke-width="3"/>
+  <text x="16" y="132" class="t-xs soft">4等分で比べる</text>
   <path d="M180 214 V78" class="st dash" stroke-width="1.5"/>
   <text x="180" y="70" class="t-xs mid ink halo">① 真ん中は？（平均・中央値）</text>
   <text x="344" y="112" class="t-xs end fl">③ 山の形は？</text>

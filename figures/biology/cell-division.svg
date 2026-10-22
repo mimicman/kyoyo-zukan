@@ -1,0 +1,88 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 細胞分裂：DNAを写して2組にし、染色体が真ん中に並んで両側へ引かれ、2つの細胞になる。下は体細胞分裂と減数分裂の比較 -->
+  <g class="t-xs">
+    <text x="36" y="28" class="t-xs mid soft">①</text>
+    <text x="106" y="28" class="t-xs mid soft">②</text>
+    <text x="176" y="28" class="t-xs mid soft">③</text>
+    <text x="246" y="28" class="t-xs mid soft">④</text>
+    <text x="320" y="28" class="t-xs mid soft">⑤</text>
+  </g>
+
+  <!-- ① ふだん -->
+  <circle cx="36" cy="76" r="28" class="tint"/>
+  <circle cx="36" cy="76" r="28" class="st-f" stroke-width="1.5"/>
+  <circle cx="36" cy="76" r="13" class="paper"/>
+  <circle cx="36" cy="76" r="13" class="st-soft" stroke-width="1.2"/>
+  <path d="M28 72 q4 -6 8 0 t8 0 M28 80 q4 6 8 0 t8 0" class="st-soft" stroke-width="1.2"/>
+
+  <!-- ② DNAを写す（X字の染色体が2つ） -->
+  <circle cx="106" cy="76" r="28" class="tint"/>
+  <circle cx="106" cy="76" r="28" class="st-f" stroke-width="1.5"/>
+  <path d="M94 64 L102 76 L94 88 M102 64 L94 76 L102 88" class="st" stroke-width="2.5"/>
+  <path d="M110 66 L118 78 L110 90 M118 66 L110 78 L118 90" class="st-f" stroke-width="2.5"/>
+
+  <!-- ③ 真ん中に並ぶ -->
+  <circle cx="176" cy="76" r="28" class="tint"/>
+  <circle cx="176" cy="76" r="28" class="st-f" stroke-width="1.5"/>
+  <path d="M152 76 L172 64 M152 76 L172 88 M200 76 L180 64 M200 76 L180 88" class="st-soft dash" stroke-width="1"/>
+  <path d="M170 60 L182 70 M182 60 L170 70" class="st" stroke-width="2.5"/>
+  <path d="M170 82 L182 92 M182 82 L170 92" class="st-f" stroke-width="2.5"/>
+
+  <!-- ④ 両側へ引く -->
+  <ellipse cx="246" cy="76" rx="32" ry="24" class="tint"/>
+  <ellipse cx="246" cy="76" rx="32" ry="24" class="st-f" stroke-width="1.5"/>
+  <path d="M226 66 L234 72 M226 86 L234 80" class="st" stroke-width="2.5"/>
+  <path d="M266 66 L258 72 M266 86 L258 80" class="st-f" stroke-width="2.5"/>
+  <path d="M240 76 H224 M252 76 H268" class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
+
+  <!-- ⑤ 2つの細胞 -->
+  <circle cx="304" cy="76" r="17" class="tint"/>
+  <circle cx="304" cy="76" r="17" class="st-f" stroke-width="1.5"/>
+  <circle cx="304" cy="76" r="7" class="paper"/>
+  <circle cx="304" cy="76" r="7" class="st-soft" stroke-width="1.2"/>
+  <circle cx="338" cy="76" r="17" class="tint"/>
+  <circle cx="338" cy="76" r="17" class="st-f" stroke-width="1.5"/>
+  <circle cx="338" cy="76" r="7" class="paper"/>
+  <circle cx="338" cy="76" r="7" class="st-soft" stroke-width="1.2"/>
+
+  <g class="st-soft" stroke-width="1.2">
+    <path d="M66 76 H74" marker-end="url(#a-soft)"/>
+    <path d="M136 76 H144" marker-end="url(#a-soft)"/>
+    <path d="M206 76 H210" marker-end="url(#a-soft)"/>
+    <path d="M280 76 H284" marker-end="url(#a-soft)"/>
+  </g>
+
+  <text x="36" y="124" class="t-xs mid ink">ふだん</text>
+  <text x="106" y="124" class="t-xs mid ink">DNAを写す</text>
+  <text x="176" y="124" class="t-xs mid ink">真ん中に並ぶ</text>
+  <text x="246" y="124" class="t-xs mid ink">両側へ引く</text>
+  <text x="321" y="124" class="t-xs mid fl" font-weight="700">2つの細胞</text>
+  <text x="106" y="140" class="t-xs mid soft">2組になる</text>
+  <text x="176" y="140" class="t-xs mid soft">染色体が見える</text>
+
+  <path d="M12 156 H348" class="st-line" stroke-width="1"/>
+
+  <!-- 下：2種類の分裂 -->
+  <text x="12" y="178" class="t-s ink" font-weight="700">体をつくる分裂</text>
+  <circle cx="40" cy="218" r="13" class="tint"/><circle cx="40" cy="218" r="13" class="st-f" stroke-width="1.5"/>
+  <path d="M56 212 L84 202 M56 224 L84 234" class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
+  <circle cx="102" cy="200" r="13" class="tint"/><circle cx="102" cy="200" r="13" class="st-f" stroke-width="1.5"/>
+  <circle cx="102" cy="236" r="13" class="tint"/><circle cx="102" cy="236" r="13" class="st-f" stroke-width="1.5"/>
+  <text x="12" y="270" class="t-xs ink">染色体の数は同じまま</text>
+
+  <path d="M178 166 V272" class="st-line" stroke-width="1"/>
+
+  <text x="190" y="178" class="t-s ink" font-weight="700">減数分裂</text>
+  <circle cx="212" cy="218" r="13" class="tint"/><circle cx="212" cy="218" r="13" class="st-f" stroke-width="1.5"/>
+  <path d="M228 212 L248 204 M228 224 L248 232" class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
+  <circle cx="262" cy="202" r="10" class="tint"/><circle cx="262" cy="202" r="10" class="st-f" stroke-width="1.5"/>
+  <circle cx="262" cy="234" r="10" class="tint"/><circle cx="262" cy="234" r="10" class="st-f" stroke-width="1.5"/>
+  <path d="M274 198 L294 192 M274 206 L294 210 M274 230 L294 226 M274 238 L294 244" class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
+  <circle cx="306" cy="190" r="7" class="fl"/>
+  <circle cx="306" cy="210" r="7" class="fl"/>
+  <circle cx="306" cy="226" r="7" class="fl"/>
+  <circle cx="306" cy="246" r="7" class="fl"/>
+  <text x="318" y="214" class="t-xs ink">卵や</text>
+  <text x="318" y="230" class="t-xs ink">精子</text>
+  <text x="190" y="270" class="t-xs ink">染色体の数が半分に</text>
+</svg>

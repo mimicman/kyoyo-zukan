@@ -1,0 +1,28 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 仮説検定：偏りのないコインを20回投げたときの表の回数の出やすさ。実際の16回以上は約0.6%しか起きない -->
+  <rect x="12" y="10" width="108" height="44" rx="8" class="tint"/>
+  <text x="66" y="28" class="t-s mid ink" font-weight="700">① 仮定</text>
+  <text x="66" y="45" class="t-xs mid ink">表と裏は半々</text>
+  <rect x="126" y="10" width="108" height="44" rx="8" class="tint"/>
+  <text x="180" y="28" class="t-s mid ink" font-weight="700">② 実験</text>
+  <text x="180" y="45" class="t-xs mid ink">20回中、表が16回</text>
+  <rect x="240" y="10" width="108" height="44" rx="8" class="fl"/>
+  <text x="294" y="28" class="t-s mid on" font-weight="700">③ 判断</text>
+  <text x="294" y="45" class="t-xs mid on">まれ→仮定を疑う</text>
+  <path d="M120 32 h4 M234 32 h4" class="st-f" stroke-width="2"/>
+
+  <text x="24" y="84" class="t-xs soft">仮定が正しいときの</text>
+  <text x="24" y="99" class="t-xs soft">表の回数の出やすさ</text>
+  <rect x="73.5" y="225.3" width="12" height="0.7" class="tint"/><rect x="88.0" y="222.9" width="12" height="3.1" class="tint"/><rect x="102.5" y="215.9" width="12" height="10.1" class="tint"/><rect x="117.0" y="200.8" width="12" height="25.2" class="tint"/><rect x="131.5" y="175.7" width="12" height="50.3" class="tint"/><rect x="146.0" y="144.2" width="12" height="81.8" class="tint"/><rect x="160.5" y="116.9" width="12" height="109.1" class="tint"/><rect x="175.0" y="106.0" width="12" height="120.0" class="tint"/><rect x="189.5" y="116.9" width="12" height="109.1" class="tint"/><rect x="204.0" y="144.2" width="12" height="81.8" class="tint"/><rect x="218.5" y="175.7" width="12" height="50.3" class="tint"/><rect x="233.0" y="200.8" width="12" height="25.2" class="tint"/><rect x="247.5" y="215.9" width="12" height="10.1" class="tint"/><rect x="262.0" y="222.9" width="12" height="3.1" class="fl"/><rect x="276.5" y="224.5" width="12" height="1.5" class="fl"/><rect x="291.0" y="224.5" width="12" height="1.5" class="fl"/><rect x="305.5" y="224.5" width="12" height="1.5" class="fl"/><rect x="320.0" y="224.5" width="12" height="1.5" class="fl"/>
+  <path d="M24 226 H344" class="st" stroke-width="1.5"/>
+  <path d="M268.0 228 V128" class="st-f dash" stroke-width="1.5"/>
+  <text x="268.0" y="120" class="t-xs mid fl halo">実際は16回</text>
+  <text x="346" y="160" class="t-s end fl" font-weight="700">16回以上</text>
+  <text x="346" y="180" class="t-m end fl">約0.6%</text>
+  <path d="M318 188 L284.5 214" class="st-f" stroke-width="1.5" marker-end="url(#a-statistics)"/>
+  <text x="36.0" y="242" class="t-xs mid soft">0</text>
+  <text x="181.0" y="242" class="t-xs mid soft">10</text>
+  <text x="326.0" y="242" class="t-xs mid soft">20</text>
+  <text x="181.0" y="258" class="t-xs mid soft">表が出た回数</text>
+  <text x="12" y="276" class="t-xs ink">基準（よく使うのは5%）より小さい → 「偏りなし」を疑う</text>
+</svg>

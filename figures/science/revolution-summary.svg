@@ -1,5 +1,5 @@
 <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
-  <!-- 科学革命：天の流れと地上の流れが、ニュートンの万有引力で合流する。土台は科学的方法 -->
+  <!-- 科学革命：天の流れと地上の流れが、ニュートンの万有引力で合流する。土台は科学的方法と、学会・論文で確かめ合う仕組み -->
   <rect x="90" y="10" width="180" height="54" rx="12" class="fl"/>
   <text x="180" y="34" class="t-m mid on">万有引力（1687）</text>
   <text x="180" y="53" class="t-xs mid on">ニュートン：空も地上も同じ法則</text>
@@ -35,9 +35,10 @@
   <text x="196" y="218" class="t-xs soft">古代</text>
   <text x="228" y="218" class="t-xs soft">重い物ほど速く落ちる</text>
 
-  <!-- 土台：科学的方法 -->
-  <rect x="12" y="238" width="336" height="34" rx="10" class="bgc st-line"/>
-  <text x="24" y="260" class="t-s ink" font-weight="700">土台：科学的方法</text>
-  <text x="136" y="260" class="t-xs soft">観察 → 仮説 → 実験 → 検証</text>
-  <path d="M318 248 A10 10 0 1 1 312 264" class="st-f" stroke-width="1.8" marker-end="url(#a-science)"/>
+  <!-- 土台：科学的方法と、学会・雑誌で確かめ合う仕組み -->
+  <rect x="12" y="234" width="336" height="42" rx="10" class="bgc st-line"/>
+  <text x="22" y="251" class="t-xs ink" font-weight="700">土台：科学的方法</text>
+  <text x="128" y="251" class="t-xs soft">観察 → 仮説 → 実験 → 検証</text>
+  <text x="22" y="268" class="t-xs ink" font-weight="700">広める：学会と論文</text>
+  <text x="128" y="268" class="t-xs soft">1660 王立協会、公開して確かめ合う</text>
 </svg>
