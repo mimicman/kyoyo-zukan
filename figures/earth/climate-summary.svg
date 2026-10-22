@@ -1,0 +1,45 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：46億年の長さ。下：数億年かけて地下にたまった炭素を、短い期間で大気へ戻している → 温室効果が強まる -->
+  <text x="20" y="22" class="t-xs ink" font-weight="700">地球の46億年</text>
+  <text x="342" y="22" class="t-xs end soft">人の時代は右端の一瞬</text>
+  <rect x="20" y="30" width="320" height="10" rx="5" class="tint"/>
+  <rect x="336" y="28" width="4" height="14" class="fl"/>
+  <text x="20" y="56" class="t-xs soft">46億年前</text>
+  <text x="340" y="56" class="t-xs end soft">今</text>
+
+  <!-- 大気 -->
+  <rect x="10" y="68" width="340" height="52" rx="8" class="tint"/>
+  <text x="20" y="92" class="t-s ink" font-weight="700">大気</text>
+  <circle cx="150" cy="84" r="3.5" class="soft"/>
+  <circle cx="172" cy="94" r="3.5" class="soft"/>
+  <circle cx="196" cy="82" r="3.5" class="soft"/>
+  <circle cx="232" cy="88" r="3.5" class="soft"/>
+  <circle cx="262" cy="80" r="3.5" class="soft"/>
+  <circle cx="300" cy="86" r="3.5" class="soft"/>
+  <circle cx="330" cy="80" r="3.5" class="soft"/>
+  <text x="340" y="112" class="t-xs end ink">CO2が増えて、熱がこもる</text>
+
+  <!-- 地表と地下 -->
+  <path d="M10 200 H350 M10 230 H350" class="st-line" stroke-width="1"/>
+  <path d="M10 170 H350" class="st-soft" stroke-width="2"/>
+  <rect x="52" y="140" width="6" height="30" class="soft"/>
+  <circle cx="55" cy="134" r="16" class="fl"/>
+  <text x="55" y="188" class="t-xs mid ink">植物</text>
+  <path d="M92 120 Q92 134 76 134" class="st-f" stroke-width="2" marker-end="url(#a-earth)"/>
+  <text x="98" y="142" class="t-xs ink">光合成で吸う</text>
+
+  <ellipse cx="200" cy="248" rx="58" ry="16" class="ink"/>
+  <text x="200" y="252" class="t-xs mid paper" font-weight="700">化石燃料</text>
+  <path d="M72 194 Q80 240 136 246" class="st-soft dash" stroke-width="1.8" marker-end="url(#a-soft)"/>
+  <text x="84" y="196" class="t-xs soft">数億年かけて</text>
+  <text x="84" y="210" class="t-xs soft">地下に埋まる</text>
+
+  <path d="M208 230 V126" class="st-f" stroke-width="3.5" marker-end="url(#a-earth)"/>
+  <text x="216" y="196" class="t-xs ink" font-weight="700">燃やして</text>
+  <text x="216" y="210" class="t-xs ink" font-weight="700">約200年で放出</text>
+
+  <!-- 温室効果 -->
+  <path d="M280 166 V128" class="st-f" stroke-width="2" marker-end="url(#a-earth)"/>
+  <path d="M290 126 Q304 146 292 164" class="st-f" stroke-width="2" marker-end="url(#a-earth)"/>
+  <text x="310" y="150" class="t-xs ink">熱が戻る</text>
+</svg>

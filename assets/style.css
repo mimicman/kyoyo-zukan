@@ -44,6 +44,7 @@
     --bg: #131518; --surface: #1c1f23; --ink: #ebe8e2; --ink-soft: #a2a8af; --line: #353a41;
     --accent: #e3906a; --c-philosophy: #a993ec; --c-economics: #5cc6a0; --c-history: #e3906a;
     --c-religion: #d9b24a; --c-japan: #e2767d; --c-politics: #8fa9d1; --c-science: #6f9ee8; --c-psychology: #4fc1c9; --c-art: #e57ba3;
+    --c-math: #9a9ef0; --c-statistics: #b4c66a; --c-biology: #7fcf6e; --c-space: #8a9ff0; --c-earth: #c9b27a; --c-medicine: #ef8a96; --c-sociology: #b6a3e6; --c-geography: #e5a274; --c-technology: #9fb1c8; --c-architecture: #cfc77a; --c-music: #e08ad0; --c-literature: #d98bbd; --c-language: #6cc0e0; --c-food: #d39a74;
     --on-field: #15171a; --shadow: none; color-scheme: dark;
   }
 }
@@ -51,6 +52,7 @@
   --bg: #131518; --surface: #1c1f23; --ink: #ebe8e2; --ink-soft: #a2a8af; --line: #353a41;
   --accent: #e3906a; --c-philosophy: #a993ec; --c-economics: #5cc6a0; --c-history: #e3906a;
     --c-religion: #d9b24a; --c-japan: #e2767d; --c-politics: #8fa9d1; --c-science: #6f9ee8; --c-psychology: #4fc1c9; --c-art: #e57ba3;
+    --c-math: #9a9ef0; --c-statistics: #b4c66a; --c-biology: #7fcf6e; --c-space: #8a9ff0; --c-earth: #c9b27a; --c-medicine: #ef8a96; --c-sociology: #b6a3e6; --c-geography: #e5a274; --c-technology: #9fb1c8; --c-architecture: #cfc77a; --c-music: #e08ad0; --c-literature: #d98bbd; --c-language: #6cc0e0; --c-food: #d39a74;
   --on-field: #15171a; --shadow: none; color-scheme: dark;
 }
 

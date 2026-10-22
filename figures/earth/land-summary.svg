@@ -1,0 +1,41 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 地球の断面（一部）：核とマントルの熱 → プレートが動く → 沈み込む所で地震・津波・火山 -->
+  <text x="14" y="20" class="t-s ink" font-weight="700">内部の熱が、地表の板を動かす</text>
+
+  <!-- マントルと核 -->
+  <rect x="10" y="108" width="340" height="172" class="tint"/>
+  <ellipse cx="180" cy="306" rx="130" ry="56" class="fl"/>
+  <text x="180" y="272" class="t-s mid on" font-weight="700">核（主に鉄）</text>
+  <text x="150" y="190" class="t-s mid ink" font-weight="700">マントル</text>
+  <text x="150" y="207" class="t-xs mid soft">固い岩だが、ゆっくり流れる</text>
+  <path d="M260 186 Q252 246 160 242 Q66 238 50 132" class="st-f dash" stroke-width="2" marker-end="url(#a-earth)"/>
+
+  <!-- 海と海のプレート -->
+  <path d="M10 84 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0 q6 -5 12 0" class="st-f" stroke-width="1.5"/>
+  <text x="20" y="97" class="t-xs ink" font-weight="700">海</text>
+  <path d="M10 100 H200 L264 166 L252 176 L194 116 H10Z" class="soft"/>
+  <text x="96" y="132" class="t-xs mid ink">海のプレート</text>
+  <path d="M46 100 L50 94 L54 100Z" class="soft"/>
+  <text x="50" y="78" class="t-xs mid ink">海嶺</text>
+  <path d="M66 92 H150" class="st-f" stroke-width="2" marker-end="url(#a-earth)"/>
+  <text x="110" y="78" class="t-xs mid ink">年に数cm動く</text>
+
+  <!-- 大陸 -->
+  <path d="M204 100 L214 90 H350 V124 H226Z" class="bgc"/>
+  <path d="M204 100 L214 90 H350 V124 H226Z" class="st-soft" stroke-width="1.2"/>
+  <text x="330" y="114" class="t-xs mid ink">大陸</text>
+
+  <!-- 地震と津波 -->
+  <path d="M222.0 112.0 L223.5 118.3 L229.1 114.9 L225.7 120.5 L232.0 122.0 L225.7 123.5 L229.1 129.1 L223.5 125.7 L222.0 132.0 L220.5 125.7 L214.9 129.1 L218.3 123.5 L212.0 122.0 L218.3 120.5 L214.9 114.9 L220.5 118.3Z" class="fl"/>
+  <text x="206" y="146" class="t-xs end ink" font-weight="700">地震</text>
+  <path d="M164 88 Q176 72 188 88" class="st-f" stroke-width="2.5"/>
+  <text x="176" y="66" class="t-xs mid ink" font-weight="700">津波</text>
+
+  <!-- 火山 -->
+  <path d="M258 162 Q282 132 290 64" class="st-f dash" stroke-width="2.5"/>
+  <path d="M264 90 L290 60 L316 90Z" class="soft"/>
+  <circle cx="294" cy="48" r="5" class="soft"/>
+  <circle cx="304" cy="40" r="6" class="soft"/>
+  <text x="322" y="66" class="t-xs ink" font-weight="700">火山</text>
+  <text x="284" y="150" class="t-xs ink">マグマ</text>
+</svg>

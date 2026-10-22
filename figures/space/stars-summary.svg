@@ -1,0 +1,52 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：光年のものさし（光が届くまでの時間）。下：銀河の中で星が生まれて死に、また生まれる -->
+  <text x="14" y="16" class="t-xs soft">ものさしは光：光が届くまでの時間で距離を表す</text>
+  <path d="M30 50 H320" class="st-soft" stroke-width="1.5"/>
+  <path d="M30 44 V56" class="st" stroke-width="2"/>
+  <text x="30" y="38" class="t-xs mid ink">月</text>
+  <text x="30" y="72" class="t-xs mid soft">約1秒</text>
+  <path d="M100 44 V56" class="st" stroke-width="2"/>
+  <text x="100" y="38" class="t-xs mid ink">太陽</text>
+  <text x="100" y="72" class="t-xs mid soft">約8分</text>
+  <path d="M175 44 V56" class="st" stroke-width="2"/>
+  <text x="175" y="38" class="t-xs mid ink">となりの星</text>
+  <text x="175" y="72" class="t-xs mid soft">約4年</text>
+  <path d="M250 44 V56" class="st" stroke-width="2"/>
+  <text x="250" y="38" class="t-xs mid ink">銀河の直径</text>
+  <text x="250" y="72" class="t-xs mid soft">約10万年</text>
+  <path d="M320 44 V56" class="st" stroke-width="2"/>
+  <text x="320" y="38" class="t-xs mid ink">別の銀河</text>
+  <text x="320" y="72" class="t-xs mid soft">約250万年</text>
+
+  <!-- 銀河 -->
+  <ellipse cx="180" cy="182" rx="166" ry="84" class="tint"/>
+  <ellipse cx="180" cy="182" rx="166" ry="84" class="st-f dash" stroke-width="1.2"/>
+  <text x="180" y="122" class="t-s mid ink" font-weight="700">銀河（星が数千億集まる）</text>
+  <circle cx="40" cy="150" r="1.6" class="soft"/>
+  <circle cx="320" cy="142" r="1.6" class="soft"/>
+  <circle cx="252" cy="240" r="1.6" class="soft"/>
+  <circle cx="94" cy="236" r="1.6" class="soft"/>
+  <circle cx="60" cy="226" r="1.6" class="soft"/>
+  <circle cx="300" cy="236" r="1.6" class="soft"/>
+
+  <!-- 星雲 → 星 → 重い星の最期 -->
+  <ellipse cx="60" cy="166" rx="18" ry="12" class="bgc"/>
+  <ellipse cx="72" cy="176" rx="12" ry="8" class="bgc"/>
+  <ellipse cx="52" cy="178" rx="10" ry="7" class="bgc"/>
+  <text x="62" y="204" class="t-xs mid ink">星雲</text>
+  <path d="M88 168 H110" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <circle cx="130" cy="166" r="12" class="fl"/>
+  <text x="130" y="196" class="t-xs mid ink">星が輝く</text>
+  <path d="M146 166 H202" class="st-f" stroke-width="2" marker-end="url(#a-space)"/>
+  <text x="174" y="157" class="t-xs mid fl">重い星は</text>
+  <path d="M222.0 153.0 L223.5 161.2 L229.6 155.5 L226.0 163.1 L234.4 162.0 L227.0 166.0 L234.4 170.0 L226.0 168.9 L229.6 176.5 L223.5 170.8 L222.0 179.0 L220.5 170.8 L214.4 176.5 L218.0 168.9 L209.6 170.0 L217.0 166.0 L209.6 162.0 L218.0 163.1 L214.4 155.5 L220.5 161.2Z" class="fl"/>
+  <text x="222" y="143" class="t-xs mid ink">超新星爆発</text>
+  <path d="M238 172 L276 182" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <circle cx="292" cy="184" r="11" class="bgc"/>
+  <circle cx="292" cy="184" r="11" class="st" stroke-width="2.5"/>
+  <text x="292" y="212" class="t-xs mid ink">ブラックホール</text>
+
+  <!-- 元素のリサイクル -->
+  <path d="M214 182 Q150 252 74 210" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="146" y="248" class="t-xs mid soft">元素が次の星の材料に</text>
+</svg>
