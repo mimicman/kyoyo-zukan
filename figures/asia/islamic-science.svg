@@ -1,0 +1,45 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左：受けついだ知　中：イスラーム世界で発展　右：ヨーロッパへ -->
+  <text x="62" y="26" class="t-m mid ink">受けつぐ</text>
+  <text x="180" y="26" class="t-m mid ink">広げる</text>
+  <text x="298" y="26" class="t-m mid ink">手渡す</text>
+
+  <rect x="20" y="40" width="86" height="38" rx="6" class="tint"/>
+  <text x="63" y="56" class="t-s mid ink" font-weight="700">ギリシャ</text>
+  <text x="63" y="71" class="t-xs mid soft">哲学・医学</text>
+  <rect x="20" y="88" width="86" height="38" rx="6" class="tint"/>
+  <text x="63" y="104" class="t-s mid ink" font-weight="700">インド</text>
+  <text x="63" y="119" class="t-xs mid soft">数字・ゼロ</text>
+  <rect x="20" y="136" width="86" height="38" rx="6" class="tint"/>
+  <text x="63" y="152" class="t-s mid ink" font-weight="700">ペルシャ</text>
+  <text x="63" y="167" class="t-xs mid soft">天文・文学</text>
+  <path d="M108 59 L122 80 M108 107 H122 M108 155 L122 134" class="st-f" stroke-width="2"/>
+
+  <rect x="124" y="40" width="112" height="134" rx="8" class="fl"/>
+  <text x="180" y="60" class="t-s mid on" font-weight="700">代数学</text>
+  <text x="180" y="74" class="t-xs mid on">フワーリズミー</text>
+  <text x="180" y="94" class="t-s mid on" font-weight="700">医学典範</text>
+  <text x="180" y="108" class="t-xs mid on">イブン・シーナー</text>
+  <text x="180" y="128" class="t-s mid on" font-weight="700">光学</text>
+  <text x="180" y="142" class="t-xs mid on">イブン・ハイサム</text>
+  <text x="180" y="164" class="t-xs mid on">天文学・三角法</text>
+
+  <path d="M238 107 H248" class="st-f" stroke-width="2" marker-end="url(#a-asia)"/>
+  <rect x="252" y="64" width="94" height="76" rx="6" class="tint st-f" stroke-width="1.5"/>
+  <text x="299" y="84" class="t-xs mid ink">12世紀</text>
+  <text x="299" y="102" class="t-xs mid ink">トレドなどで</text>
+  <text x="299" y="118" class="t-xs mid ink">ラテン語に</text>
+  <text x="299" y="132" class="t-xs mid ink">翻訳</text>
+  <path d="M299 142 V156" class="st-f" stroke-width="2" marker-end="url(#a-asia)"/>
+  <rect x="252" y="160" width="94" height="38" rx="6" class="paper st" stroke-width="1.5"/>
+  <text x="299" y="176" class="t-xs mid ink">ヨーロッパの</text>
+  <text x="299" y="190" class="t-xs mid ink">大学・ルネサンス</text>
+
+  <text x="20" y="226" class="t-s ink" font-weight="700">アラビアから来た言葉</text>
+  <rect x="20" y="238" width="118" height="26" rx="13" class="tint"/>
+  <text x="79" y="255" class="t-xs mid ink">アルジェブラ（代数）</text>
+  <rect x="146" y="238" width="78" height="26" rx="13" class="tint"/>
+  <text x="185" y="255" class="t-xs mid ink">アルコール</text>
+  <rect x="232" y="238" width="96" height="26" rx="13" class="tint"/>
+  <text x="280" y="255" class="t-xs mid ink">アルゴリズム</text>
+</svg>

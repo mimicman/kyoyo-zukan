@@ -1,0 +1,33 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左上：海の道の略図　下：アンコール・ワットの正面と意味 -->
+  <path d="M20 40 L56 34 L62 70 L44 100 L30 70 Z" class="tint"/>
+  <path d="M96 58 L116 52 L122 78 L110 100 L100 82 Z" class="tint"/>
+  <path d="M118 20 L156 18 L156 46 L128 50 Z" class="tint"/>
+  <text x="40" y="118" class="t-xs mid ink">インド</text>
+  <text x="137" y="38" class="t-xs mid ink">中国</text>
+  <text x="108" y="118" class="t-xs mid ink">クメール</text>
+  <path d="M56 84 Q80 104 98 88" class="st-f dash" stroke-width="2" marker-end="url(#a-asia)"/>
+  <path d="M118 62 Q126 52 128 50" class="st-f dash" stroke-width="2"/>
+
+  <text x="176" y="34" class="t-s ink" font-weight="700">海の道で伝わったもの</text>
+  <text x="176" y="54" class="t-xs ink">・ヒンドゥー教と仏教</text>
+  <text x="176" y="70" class="t-xs ink">・サンスクリットの文字</text>
+  <text x="176" y="86" class="t-xs ink">・王を神と結びつける考え</text>
+
+  <!-- アンコール・ワット -->
+  <rect x="20" y="250" width="320" height="18" rx="4" class="tint"/>
+  <text x="180" y="263" class="t-xs mid ink">堀＝世界を囲む海</text>
+  <rect x="40" y="226" width="280" height="24" class="paper st" stroke-width="1.5"/>
+  <rect x="70" y="204" width="220" height="22" class="paper st" stroke-width="1.5"/>
+  <rect x="106" y="182" width="148" height="22" class="paper st" stroke-width="1.5"/>
+  <path d="M120 182 Q120 156 130 146 Q140 156 140 182 Z" class="tint st-f" stroke-width="1.5"/>
+  <path d="M220 182 Q220 156 230 146 Q240 156 240 182 Z" class="tint st-f" stroke-width="1.5"/>
+  <path d="M146 182 Q146 150 155 138 Q164 150 164 182 Z" class="tint st-f" stroke-width="1.5"/>
+  <path d="M196 182 Q196 150 205 138 Q214 150 214 182 Z" class="tint st-f" stroke-width="1.5"/>
+  <path d="M166 182 Q166 132 180 110 Q194 132 194 182 Z" class="fl"/>
+  <text x="54" y="242" class="t-xs ink">回廊</text>
+  <path d="M196 124 H254" class="st-soft" stroke-width="1.5"/>
+  <text x="258" y="122" class="t-s ink" font-weight="700">中央の塔</text>
+  <text x="258" y="138" class="t-xs ink">＝須弥山</text>
+  <text x="258" y="152" class="t-xs soft">（神々の山）</text>
+</svg>

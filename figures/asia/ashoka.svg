@@ -1,0 +1,34 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- マウリヤ朝の範囲、都、カリンガ、法を刻んだ石柱・岩、獅子の柱頭 -->
+  <path d="M40 66 L70 40 L150 30 L230 40 L290 80 L270 105 L235 122 L210 190 L176 258 L140 190 L110 122 L70 106 Z" class="paper st-soft" stroke-width="1.5"/>
+  <path d="M14 50 L70 40 L150 30 L230 40 L290 80 L270 105 L235 122 L217 172 L202 214 L152 214 L140 190 L110 122 L70 106 L30 92 Z" class="tint st-f" stroke-width="2"/>
+  <ellipse cx="204" cy="262" rx="7" ry="10" class="paper st-soft"/>
+
+  <circle cx="214" cy="80" r="7" class="fl"/>
+  <text x="214" y="64" class="t-xs mid ink" font-weight="700">都パータリプトラ</text>
+  <path d="M232 124 l12 12 M244 124 l-12 12" class="st" stroke-width="3"/>
+  <text x="252" y="136" class="t-xs ink">カリンガの戦い</text>
+
+  <g class="ink">
+    <circle cx="36" cy="64" r="4"/><circle cx="90" cy="58" r="4"/><circle cx="150" cy="48" r="4"/><circle cx="186" cy="72" r="4"/>
+    <circle cx="124" cy="108" r="4"/><circle cx="168" cy="140" r="4"/><circle cx="196" cy="186" r="4"/><circle cx="110" cy="84" r="4"/><circle cx="250" cy="98" r="4"/>
+  </g>
+
+  <path d="M186 210 Q196 230 200 246" class="st-f dash" stroke-width="2" marker-end="url(#a-asia)"/>
+  <text x="214" y="232" class="t-xs ink">仏教を伝える</text>
+
+  <!-- 凡例 -->
+  <rect x="20" y="230" width="14" height="12" rx="2" class="tint st-f"/>
+  <text x="40" y="240" class="t-xs ink">マウリヤ朝</text>
+  <circle cx="27" cy="258" r="4" class="ink"/>
+  <text x="40" y="262" class="t-xs ink">法を刻んだ石柱・岩</text>
+
+  <!-- 獅子の柱頭 -->
+  <text x="322" y="166" class="t-xs mid soft">獅子の柱頭</text>
+  <circle cx="310" cy="186" r="9" class="fl"/>
+  <circle cx="334" cy="186" r="9" class="fl"/>
+  <circle cx="322" cy="180" r="9" class="fl"/>
+  <rect x="304" y="194" width="36" height="8" rx="2" class="fl"/>
+  <path d="M308 202 Q322 216 336 202 Z" class="tint st-f"/>
+  <rect x="318" y="210" width="8" height="52" class="tint st-f"/>
+</svg>

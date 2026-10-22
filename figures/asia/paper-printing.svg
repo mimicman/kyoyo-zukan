@@ -1,0 +1,64 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：書く材料と写す方法の変化　下：紙が西へ伝わった道 -->
+  <text x="20" y="24" class="t-s ink" font-weight="700">書く材料と、写す方法の変化</text>
+
+  <!-- 竹の札 -->
+  <rect x="22" y="46" width="6" height="52" class="tint st-soft"/>
+  <rect x="30" y="46" width="6" height="52" class="tint st-soft"/>
+  <rect x="38" y="46" width="6" height="52" class="tint st-soft"/>
+  <rect x="46" y="46" width="6" height="52" class="tint st-soft"/>
+  <rect x="54" y="46" width="6" height="52" class="tint st-soft"/>
+  <rect x="62" y="46" width="6" height="52" class="tint st-soft"/>
+  <path d="M19 58 H71 M19 86 H71" class="st-soft" stroke-width="1.5"/>
+  <text x="45" y="116" class="t-s mid ink" font-weight="700">竹の札</text>
+  <text x="45" y="132" class="t-xs mid soft">重くかさばる</text>
+
+  <!-- 紙 -->
+  <rect x="104" y="46" width="42" height="52" rx="2" class="paper st"/>
+  <path d="M112 56 V90 M120 56 V90 M128 56 V90 M136 56 V90" class="st-line" stroke-width="1.5"/>
+  <text x="125" y="116" class="t-s mid ink" font-weight="700">紙</text>
+  <text x="125" y="132" class="t-xs mid soft">105年 蔡倫</text>
+
+  <!-- 木版 -->
+  <rect x="190" y="58" width="44" height="40" rx="2" class="paper st-soft"/>
+  <rect x="182" y="50" width="44" height="40" rx="2" class="tint st"/>
+  <path d="M190 58 h8 v8 h-8z M204 58 h8 v8 h-8z M190 72 h8 v8 h-8z M204 72 h8 v8 h-8z" class="ink"/>
+  <text x="208" y="116" class="t-s mid ink" font-weight="700">木版印刷</text>
+  <text x="208" y="132" class="t-xs mid soft">唐：板を彫る</text>
+
+  <!-- 活字 -->
+  <rect x="282" y="50" width="14" height="14" rx="2" class="fl"/>
+  <rect x="300" y="50" width="14" height="14" rx="2" class="fl"/>
+  <rect x="318" y="50" width="14" height="14" rx="2" class="tint st-f"/>
+  <rect x="282" y="68" width="14" height="14" rx="2" class="tint st-f"/>
+  <rect x="300" y="68" width="14" height="14" rx="2" class="fl"/>
+  <rect x="318" y="68" width="14" height="14" rx="2" class="fl"/>
+  <rect x="282" y="86" width="14" height="14" rx="2" class="fl"/>
+  <rect x="300" y="86" width="14" height="14" rx="2" class="tint st-f"/>
+  <rect x="318" y="86" width="14" height="14" rx="2" class="fl"/>
+  <text x="307" y="116" class="t-s mid ink" font-weight="700">活字</text>
+  <text x="307" y="132" class="t-xs mid soft">宋：1字ずつ</text>
+
+  <path d="M74 72 H98" class="st-f" stroke-width="2" marker-end="url(#a-asia)"/>
+  <path d="M150 72 H176" class="st-f" stroke-width="2" marker-end="url(#a-asia)"/>
+  <path d="M238 72 H276" class="st-f" stroke-width="2" marker-end="url(#a-asia)"/>
+
+  <!-- 紙が西へ -->
+  <path d="M20 150 H340" class="st-line" stroke-width="1"/>
+  <text x="20" y="170" class="t-s ink" font-weight="700">紙の作り方が西へ伝わった道</text>
+  <rect x="104" y="190" width="164" height="26" rx="13" class="tint"/>
+  <path d="M318 203 H54" class="st-f dash" stroke-width="2" marker-end="url(#a-asia)"/>
+  <circle cx="320" cy="203" r="6" class="fl"/>
+  <circle cx="225" cy="203" r="5" class="fl"/>
+  <circle cx="140" cy="203" r="5" class="fl"/>
+  <circle cx="45" cy="203" r="6" class="fl"/>
+  <text x="320" y="186" class="t-s mid ink">中国</text>
+  <text x="225" y="186" class="t-s mid ink">サマルカンド</text>
+  <text x="140" y="186" class="t-s mid ink">バグダード</text>
+  <text x="45" y="186" class="t-s mid ink">ヨーロッパ</text>
+  <text x="225" y="232" class="t-xs mid soft">8世紀ごろ</text>
+  <text x="140" y="232" class="t-xs mid soft">紙の工房</text>
+  <text x="45" y="232" class="t-xs mid soft">12世紀ごろ</text>
+  <text x="186" y="250" class="t-xs mid ink">イスラーム世界</text>
+  <text x="180" y="272" class="t-s mid ink">本が安くなり、知識が広まる土台に</text>
+</svg>

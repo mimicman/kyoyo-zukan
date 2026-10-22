@@ -1,0 +1,29 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 円い都バグダードと、四方から集まった知と物 -->
+  <path d="M282 20 Q270 80 282 140 Q294 200 286 238" class="st-f" stroke-width="7" stroke-linecap="round"/>
+  <text x="294" y="150" class="t-xs ink">ティグリス川</text>
+
+  <text x="180" y="72" class="t-s mid ink" font-weight="700">バグダード（762年）</text>
+  <circle cx="180" cy="145" r="62" class="tint st" stroke-width="2"/>
+  <circle cx="180" cy="145" r="52" class="paper st-soft" stroke-width="1.5"/>
+  <path d="M143 108 L217 182 M217 108 L143 182" class="st-line" stroke-width="2"/>
+  <rect x="164" y="129" width="32" height="32" rx="3" class="fl"/>
+  <text x="180" y="149" class="t-xs mid on">宮殿</text>
+  <rect x="131" y="96" width="12" height="12" rx="2" class="fl"/>
+  <rect x="217" y="96" width="12" height="12" rx="2" class="fl"/>
+  <rect x="131" y="182" width="12" height="12" rx="2" class="fl"/>
+  <rect x="217" y="182" width="12" height="12" rx="2" class="fl"/>
+  <text x="180" y="116" class="t-xs mid soft">4つの門</text>
+
+  <path d="M40 40 L126 92" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <text x="20" y="32" class="t-xs ink">ギリシャの学問</text>
+  <path d="M340 44 L236 92" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <text x="340" y="32" class="t-xs end ink">中国の紙</text>
+  <path d="M40 252 L126 198" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <text x="20" y="270" class="t-xs ink">インドの数字</text>
+  <path d="M330 252 L236 198" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <text x="340" y="270" class="t-xs end ink">ペルシャの文化</text>
+
+  <rect x="118" y="218" width="124" height="28" rx="14" class="fl"/>
+  <text x="180" y="236" class="t-s mid on">アラビア語に翻訳</text>
+</svg>

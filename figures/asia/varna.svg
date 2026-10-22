@@ -1,0 +1,42 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左：4つのヴァルナ（枠）　右：数多くのジャーティ（集団） -->
+  <text x="95" y="30" class="t-s mid ink" font-weight="700">ヴァルナ（4つの枠）</text>
+  <rect x="50" y="42" width="90" height="34" rx="4" class="fl"/>
+  <text x="95" y="57" class="t-s mid on" font-weight="700">バラモン</text>
+  <text x="95" y="71" class="t-xs mid on">祭司</text>
+  <rect x="35" y="80" width="120" height="34" rx="4" class="fl"/>
+  <text x="95" y="95" class="t-s mid on" font-weight="700">クシャトリヤ</text>
+  <text x="95" y="109" class="t-xs mid on">王・戦士</text>
+  <rect x="20" y="118" width="150" height="34" rx="4" class="tint st-f" stroke-width="1.5"/>
+  <text x="95" y="133" class="t-s mid ink" font-weight="700">ヴァイシャ</text>
+  <text x="95" y="147" class="t-xs mid soft">庶民（農民・商人）</text>
+  <rect x="20" y="156" width="150" height="34" rx="4" class="tint"/>
+  <text x="95" y="171" class="t-s mid ink" font-weight="700">シュードラ</text>
+  <text x="95" y="185" class="t-xs mid soft">隷属民</text>
+  <rect x="20" y="196" width="150" height="26" rx="4" class="paper st-soft dash" stroke-width="1.5"/>
+  <text x="95" y="213" class="t-xs mid soft">枠の外に置かれた人々</text>
+
+  <!-- ジャーティ -->
+  <text x="272" y="30" class="t-s mid ink" font-weight="700">ジャーティ（集団）</text>
+  <g class="tint">
+    <rect x="200" y="42" width="32" height="20" rx="3"/><rect x="236" y="42" width="32" height="20" rx="3"/><rect x="272" y="42" width="32" height="20" rx="3"/><rect x="308" y="42" width="32" height="20" rx="3"/>
+    <rect x="200" y="68" width="32" height="20" rx="3"/><rect x="236" y="68" width="32" height="20" rx="3"/><rect x="272" y="68" width="32" height="20" rx="3"/><rect x="308" y="68" width="32" height="20" rx="3"/>
+    <rect x="200" y="94" width="32" height="20" rx="3"/><rect x="236" y="94" width="32" height="20" rx="3"/><rect x="272" y="94" width="32" height="20" rx="3"/><rect x="308" y="94" width="32" height="20" rx="3"/>
+    <rect x="200" y="120" width="32" height="20" rx="3"/><rect x="236" y="120" width="32" height="20" rx="3"/><rect x="272" y="120" width="32" height="20" rx="3"/><rect x="308" y="120" width="32" height="20" rx="3"/>
+    <rect x="200" y="146" width="32" height="20" rx="3"/><rect x="236" y="146" width="32" height="20" rx="3"/><rect x="272" y="146" width="32" height="20" rx="3"/><rect x="308" y="146" width="32" height="20" rx="3"/>
+    <rect x="200" y="172" width="32" height="20" rx="3"/><rect x="236" y="172" width="32" height="20" rx="3"/><rect x="272" y="172" width="32" height="20" rx="3"/><rect x="308" y="172" width="32" height="20" rx="3"/>
+  </g>
+  <text x="216" y="56" class="t-xs mid ink">司祭</text>
+  <text x="288" y="82" class="t-xs mid ink">書記</text>
+  <text x="252" y="108" class="t-xs mid ink">商人</text>
+  <text x="324" y="134" class="t-xs mid ink">陶工</text>
+  <text x="216" y="134" class="t-xs mid ink">農民</text>
+  <text x="288" y="160" class="t-xs mid ink">織工</text>
+  <text x="252" y="186" class="t-xs mid ink">鍛冶</text>
+  <text x="324" y="186" class="t-xs mid ink">漁民</text>
+  <path d="M142 59 H196 M157 97 H196 M172 135 H196 M172 173 H196" class="st-soft dash" stroke-width="1.2"/>
+  <text x="270" y="212" class="t-xs mid soft">同じ集団の中で結婚・食事</text>
+
+  <rect x="20" y="236" width="320" height="30" rx="15" class="tint"/>
+  <text x="180" y="255" class="t-xs mid ink">2つが結びついた仕組み＝カースト制（今の憲法は差別を禁止）</text>
+</svg>

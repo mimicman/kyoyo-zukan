@@ -1,0 +1,42 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 略地図。濃い色：632年まで、淡い色：661年まで（正統カリフ）、点線：750年まで（ウマイヤ朝） -->
+  <text x="110" y="24" class="t-s ink" font-weight="700">7〜8世紀の広がり</text>
+
+  <!-- ウマイヤ朝で加わった地域（点線） -->
+  <path d="M14 52 L52 44 L66 60 L58 84 L22 86 Z" class="paper st-f dash" stroke-width="1.5"/>
+  <path d="M24 116 L158 112 L158 150 L28 150 Z" class="paper st-f dash" stroke-width="1.5"/>
+  <path d="M302 42 L346 42 L346 140 L302 128 Z" class="paper st-f dash" stroke-width="1.5"/>
+  <text x="38" y="38" class="t-xs mid ink">イベリア半島</text>
+  <text x="90" y="136" class="t-xs mid ink">北アフリカ</text>
+  <text x="324" y="34" class="t-xs mid ink">中央アジア</text>
+  <text x="324" y="158" class="t-xs mid ink">インダス川</text>
+
+  <!-- 正統カリフの時代（淡い色） -->
+  <path d="M162 112 L204 110 L206 150 L162 150 Z" class="tint"/>
+  <path d="M206 70 L236 66 L236 112 L206 110 Z" class="tint"/>
+  <path d="M238 56 L300 44 L300 126 L238 118 Z" class="tint"/>
+  <text x="183" y="135" class="t-xs mid ink">エジプト</text>
+  <text x="221" y="94" class="t-xs mid ink">シリア</text>
+  <text x="269" y="90" class="t-xs mid ink">イラン</text>
+
+  <!-- アラビア半島（濃い色） -->
+  <path d="M212 126 L248 122 L288 150 L274 206 L238 222 L214 176 Z" class="fl"/>
+  <circle cx="240" cy="160" r="4" class="paper"/>
+  <circle cx="236" cy="194" r="4" class="paper"/>
+  <path d="M244 162 L290 174 M240 196 L290 200" class="st-soft" stroke-width="1"/>
+  <text x="294" y="178" class="t-xs ink">メディナ</text>
+  <text x="294" y="204" class="t-xs ink">メッカ</text>
+
+  <!-- 地中海 -->
+  <ellipse cx="128" cy="96" rx="74" ry="13" class="bgc st-line"/>
+  <text x="128" y="100" class="t-xs mid soft">地中海</text>
+
+  <!-- 凡例 -->
+  <rect x="20" y="186" width="14" height="12" rx="2" class="fl"/>
+  <text x="40" y="196" class="t-xs ink">632年まで（ムハンマド）</text>
+  <rect x="20" y="208" width="14" height="12" rx="2" class="tint"/>
+  <text x="40" y="218" class="t-xs ink">661年まで（正統カリフ）</text>
+  <rect x="20" y="230" width="14" height="12" rx="2" class="paper st-f dash"/>
+  <text x="40" y="240" class="t-xs ink">750年まで（ウマイヤ朝）</text>
+  <text x="180" y="270" class="t-xs mid soft">改宗は急がされず、信仰は数百年かけて根づいた</text>
+</svg>

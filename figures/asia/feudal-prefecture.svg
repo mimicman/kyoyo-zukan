@@ -1,0 +1,62 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左：周の封建制　右：秦の郡県制 -->
+  <path d="M180 18 V222" class="st-line dash" stroke-width="1.5"/>
+  <text x="90" y="26" class="t-m mid ink">周：封建</text>
+  <text x="272" y="26" class="t-m mid ink">秦：郡県</text>
+
+  <!-- 周 -->
+  <rect x="55" y="38" width="70" height="26" rx="13" class="fl"/>
+  <text x="90" y="55" class="t-s mid on" font-weight="700">周の王</text>
+  <path d="M90 64 L35 98 M90 64 V98 M90 64 L145 98" class="st-f" stroke-width="2"/>
+  <text x="90" y="86" class="t-xs mid ink halo">土地を分ける</text>
+  <rect x="12" y="98" width="46" height="24" rx="6" class="tint"/>
+  <rect x="67" y="98" width="46" height="24" rx="6" class="tint"/>
+  <rect x="122" y="98" width="46" height="24" rx="6" class="tint"/>
+  <text x="35" y="114" class="t-s mid ink">諸侯</text>
+  <text x="90" y="114" class="t-s mid ink">諸侯</text>
+  <text x="145" y="114" class="t-s mid ink">諸侯</text>
+  <text x="90" y="138" class="t-xs mid soft">王の親族・家臣</text>
+  <circle cx="35" cy="168" r="18" class="tint"/>
+  <circle cx="90" cy="168" r="18" class="tint"/>
+  <circle cx="145" cy="168" r="18" class="tint"/>
+  <path d="M35 122 V150 M90 142 V150 M145 122 V150" class="st-soft" stroke-width="1.5"/>
+  <text x="35" y="172" class="t-xs mid ink">国</text>
+  <text x="90" y="172" class="t-xs mid ink">国</text>
+  <text x="145" y="172" class="t-xs mid ink">国</text>
+  <text x="90" y="206" class="t-xs mid soft">代々受けつぐ（世襲）</text>
+
+  <!-- 秦 -->
+  <rect x="237" y="38" width="70" height="26" rx="13" class="fl"/>
+  <text x="272" y="55" class="t-s mid on" font-weight="700">皇帝</text>
+  <path d="M272 64 L215 98 M272 64 V98 M272 64 L329 98" class="st-f" stroke-width="2"/>
+  <text x="272" y="86" class="t-xs mid ink halo">役人を送る</text>
+  <rect x="192" y="98" width="46" height="24" rx="6" class="tint"/>
+  <rect x="249" y="98" width="46" height="24" rx="6" class="tint"/>
+  <rect x="306" y="98" width="46" height="24" rx="6" class="tint"/>
+  <text x="215" y="114" class="t-s mid ink">郡</text>
+  <text x="272" y="114" class="t-s mid ink">郡</text>
+  <text x="329" y="114" class="t-s mid ink">郡</text>
+  <path d="M215 122 L202 150 M215 122 L228 150 M272 122 L259 150 M272 122 L285 150 M329 122 L316 150 M329 122 L342 150" class="st-soft" stroke-width="1.5"/>
+  <rect x="192" y="150" width="20" height="18" rx="4" class="paper st-soft"/>
+  <rect x="218" y="150" width="20" height="18" rx="4" class="paper st-soft"/>
+  <rect x="249" y="150" width="20" height="18" rx="4" class="paper st-soft"/>
+  <rect x="275" y="150" width="20" height="18" rx="4" class="paper st-soft"/>
+  <rect x="306" y="150" width="20" height="18" rx="4" class="paper st-soft"/>
+  <rect x="332" y="150" width="20" height="18" rx="4" class="paper st-soft"/>
+  <text x="202" y="163" class="t-xs mid ink">県</text>
+  <text x="228" y="163" class="t-xs mid ink">県</text>
+  <text x="259" y="163" class="t-xs mid ink">県</text>
+  <text x="285" y="163" class="t-xs mid ink">県</text>
+  <text x="316" y="163" class="t-xs mid ink">県</text>
+  <text x="342" y="163" class="t-xs mid ink">県</text>
+  <text x="272" y="190" class="t-xs mid soft">任命し、入れかえる</text>
+  <text x="272" y="206" class="t-xs mid soft">（世襲しない）</text>
+
+  <!-- 結果 -->
+  <rect x="20" y="228" width="140" height="26" rx="8" class="tint"/>
+  <text x="90" y="245" class="t-s mid ink">諸侯が強まり争う</text>
+  <rect x="200" y="228" width="144" height="26" rx="8" class="fl"/>
+  <text x="272" y="245" class="t-s mid on">命令が全国に届く</text>
+  <path d="M162 241 H196" class="st-f" stroke-width="2" marker-end="url(#a-asia)"/>
+  <text x="180" y="272" class="t-xs mid soft">漢は両方を組み合わせた郡国制から始めた</text>
+</svg>

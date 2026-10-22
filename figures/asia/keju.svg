@@ -1,0 +1,31 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 科挙の段階：下から上へ。上ほど合格者が少ない -->
+  <text x="20" y="22" class="t-s ink" font-weight="700">出題：儒教の経典（四書五経）</text>
+  <text x="20" y="38" class="t-xs soft">答案で合否を決め、家柄は問わない</text>
+
+  <circle cx="180" cy="64" r="18" class="fl"/>
+  <text x="180" y="69" class="t-s mid on" font-weight="700">進士</text>
+  <path d="M180 84 V92" class="st-f" stroke-width="2"/>
+
+  <rect x="135" y="94" width="90" height="38" rx="6" class="fl"/>
+  <text x="180" y="110" class="t-s mid on" font-weight="700">殿試</text>
+  <text x="180" y="125" class="t-xs mid on">皇帝の前で</text>
+
+  <rect x="100" y="138" width="160" height="38" rx="6" class="tint st-f" stroke-width="1.5"/>
+  <text x="180" y="154" class="t-s mid ink" font-weight="700">会試</text>
+  <text x="180" y="169" class="t-xs mid soft">都で受ける</text>
+
+  <rect x="65" y="182" width="230" height="38" rx="6" class="tint"/>
+  <text x="180" y="198" class="t-s mid ink" font-weight="700">郷試</text>
+  <text x="180" y="213" class="t-xs mid soft">各省で受ける（合格者は挙人）</text>
+
+  <rect x="30" y="226" width="300" height="38" rx="6" class="paper st-soft" stroke-width="1.5"/>
+  <text x="180" y="242" class="t-s mid ink" font-weight="700">地方の試験</text>
+  <text x="180" y="257" class="t-xs mid soft">学問を積んだ多くの人が受ける</text>
+
+  <path d="M18 262 V104" class="st-f" stroke-width="2" marker-end="url(#a-asia)"/>
+  <text x="26" y="104" class="t-xs ink">上ほど</text>
+  <text x="26" y="118" class="t-xs ink">少ない</text>
+
+  <text x="180" y="282" class="t-xs mid soft">隋で始まり（6世紀末）、宋で広がり、1905年に廃止</text>
+</svg>

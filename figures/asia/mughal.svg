@@ -1,0 +1,31 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：ムガル帝国の年表　下：ペルシャとインドの文化が合わさる -->
+  <rect x="57" y="56" width="44" height="12" rx="3" class="tint"/>
+  <path d="M30 62 H330" class="st-f" stroke-width="2.5"/>
+  <circle cx="30" cy="62" r="5" class="fl"/>
+  <circle cx="57" cy="62" r="5" class="fl"/>
+  <circle cx="126" cy="62" r="5" class="fl"/>
+  <circle cx="193" cy="62" r="5" class="fl"/>
+  <circle cx="330" cy="62" r="5" class="fl"/>
+  <text x="20" y="46" class="t-xs ink">1526 建国</text>
+  <text x="57" y="86" class="t-xs mid ink">1556 アクバル</text>
+  <text x="126" y="46" class="t-xs mid ink">1632 タージ・マハル</text>
+  <text x="193" y="86" class="t-xs mid ink">1707〜 弱まる</text>
+  <text x="340" y="46" class="t-xs end ink">1858 滅亡</text>
+  <text x="340" y="86" class="t-xs end soft">→ 英国の支配へ</text>
+
+  <circle cx="100" cy="148" r="42" class="tint st-f" stroke-width="1.5"/>
+  <text x="100" y="145" class="t-s mid ink" font-weight="700">ペルシャ</text>
+  <text x="100" y="162" class="t-xs mid soft">宮廷の言葉・絵</text>
+  <circle cx="260" cy="148" r="42" class="tint st-f" stroke-width="1.5"/>
+  <text x="260" y="145" class="t-s mid ink" font-weight="700">インド</text>
+  <text x="260" y="162" class="t-xs mid soft">ヒンドゥー</text>
+  <text x="180" y="140" class="t-xs mid ink">共存策</text>
+  <path d="M148 150 H212" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)" marker-start="url(#a-soft)"/>
+
+  <path d="M124 184 L156 214" class="st-f" stroke-width="2" marker-end="url(#a-asia)"/>
+  <path d="M236 184 L204 214" class="st-f" stroke-width="2" marker-end="url(#a-asia)"/>
+  <rect x="70" y="218" width="220" height="50" rx="10" class="fl"/>
+  <text x="180" y="239" class="t-m mid on">ムガルの文化</text>
+  <text x="180" y="258" class="t-xs mid on">タージ・マハル・細密画・ウルドゥー語</text>
+</svg>

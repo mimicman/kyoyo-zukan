@@ -1,0 +1,30 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：最盛期の領土の略図　下：宗教ごとの共同体 -->
+  <path d="M110 30 L170 24 L182 58 L256 56 L322 70 L332 112 L304 150 L266 150 L252 124 L216 140 L40 146 L40 128 L120 124 L104 80 Z" class="tint st-f" stroke-width="2"/>
+  <ellipse cx="216" cy="38" rx="42" ry="14" class="bgc st-line"/>
+  <text x="216" y="42" class="t-xs mid soft">黒海</text>
+  <ellipse cx="160" cy="104" rx="66" ry="13" class="bgc st-line"/>
+  <text x="160" y="108" class="t-xs mid soft">地中海</text>
+  <circle cx="182" cy="62" r="6" class="fl"/>
+  <text x="176" y="80" class="t-xs end ink" font-weight="700">イスタンブル</text>
+  <text x="140" y="52" class="t-xs mid ink">ヨーロッパ</text>
+  <text x="232" y="80" class="t-xs mid ink">アジア</text>
+  <text x="96" y="140" class="t-xs mid ink">アフリカ</text>
+  <text x="290" y="110" class="t-xs mid ink">中東</text>
+  <circle cx="96" cy="34" r="5" class="paper st" stroke-width="1.5"/>
+  <text x="20" y="22" class="t-xs ink">ウィーン包囲（1529）</text>
+  <text x="180" y="166" class="t-xs mid soft">1299 建国 ・ 1453 ビザンツを滅ぼす ・ 1922 終わる</text>
+
+  <!-- 宗教ごとの共同体 -->
+  <rect x="20" y="178" width="320" height="88" rx="10" class="paper st" stroke-width="1.5"/>
+  <text x="180" y="197" class="t-s mid ink" font-weight="700">スルタンの下で</text>
+  <rect x="31" y="206" width="70" height="28" rx="6" class="fl"/>
+  <text x="66" y="224" class="t-xs mid on">ムスリム</text>
+  <rect x="107" y="206" width="70" height="28" rx="6" class="tint"/>
+  <text x="142" y="224" class="t-xs mid ink">正教徒</text>
+  <rect x="183" y="206" width="70" height="28" rx="6" class="tint"/>
+  <text x="218" y="224" class="t-xs mid ink">アルメニア</text>
+  <rect x="259" y="206" width="70" height="28" rx="6" class="tint"/>
+  <text x="294" y="224" class="t-xs mid ink">ユダヤ教徒</text>
+  <text x="180" y="254" class="t-xs mid soft">税を納め、宗教ごとの決まりで暮らす</text>
+</svg>

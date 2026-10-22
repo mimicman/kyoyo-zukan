@@ -143,7 +143,6 @@
 | people-genghis-khan | チンギス・ハン像（元代の帝后像、作者不明） | 作者不明 | Public domain | https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumGenghisPortrait.jpg |
 | people-gropius-walter | ヴァルター・グロピウス（1919年、撮影者不詳） | 不明 | Public domain | https://commons.wikimedia.org/wiki/File:WalterGropius-1919.jpg |
 | people-gutenberg-johannes | グーテンベルクの肖像（後世の版画、作者不明） | 作者不明 | Public domain | https://commons.wikimedia.org/wiki/File:Gutenberg.jpg |
-| people-han-wudi | 漢の武帝像（古い書物の挿絵、作者不明） | Unknown authorUnknown author | Public domain | https://commons.wikimedia.org/wiki/File:%E6%BC%A2%E6%AD%A6%E5%B8%9D.jpg |
 | people-hara-takashi | 原敬の写真（作者不明） | Unknown authorUnknown author | Public domain | https://commons.wikimedia.org/wiki/File:Takashi_Hara_formal.jpg |
 | people-haydn-joseph | ハイドンの肖像（トーマス・ハーディ、1791年） | トーマス・ハーディ | Public domain | https://commons.wikimedia.org/wiki/File:Joseph_Haydn.jpg |
 | people-himiko | 『三国志』魏書の倭人の条を含む本文（作者不明） | 作者不明（『三国志』魏書の写本） | Public domain | https://commons.wikimedia.org/wiki/File:Text_of_the_Wei_Zhi_(%E9%AD%8F%E5%BF%97),_297.jpg |
@@ -230,7 +229,6 @@
 | people-wang-yangming | 王陽明像（明代、沈俊 画） | Shen Junhui (沈俊繪) | Public domain | https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E5%AE%88%E4%BB%81.jpg |
 | people-watt-james | ジェームズ・ワットの肖像（カール・フレドリク・フォン・ブレダ） | カール・フレデリク・フォン・ブレダ | Public domain | https://commons.wikimedia.org/wiki/File:Watt_James_von_Breda.jpg |
 | people-whorf-benjamin | ベンジャミン・ウォーフの肖像（バクラック・スタジオ） | バクラック・スタジオ | Public domain | https://commons.wikimedia.org/wiki/File:Benjamin_Lee_Whorf_by_Bachrach.jpg |
-| people-xunzi | 荀子像（後世の想像図、作者不明） | Unknown authorUnknown author | Public domain | https://commons.wikimedia.org/wiki/File:Portrait_of_Xun_Zi.jpg |
 | people-yoshino-sakuzo | 吉野作造の写真（作者不明） | Unknown authorUnknown author | Public domain | https://commons.wikimedia.org/wiki/File:Sakuzo_Yoshino.jpg |
 | people-young-thomas | トマス・ヤング（トマス・ローレンス） | 不明 | Public domain | https://commons.wikimedia.org/wiki/File:Thomas_Young_by_Thomas_Lawrence.jpg |
 | people-zhang-qian | 張騫の西域への出発（莫高窟の壁画、8世紀ごろ） | Unknown authorUnknown author | Public domain | https://commons.wikimedia.org/wiki/File:Zhang_Qian.jpg |

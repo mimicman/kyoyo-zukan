@@ -1,0 +1,33 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 諸子百家の地図。横軸：徳・心 ↔ 法・力、縦軸：働きかける ↔ 手を加えない -->
+  <text x="20" y="24" class="t-m ink">乱世をどう治めるか</text>
+  <path d="M190 254 V40" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M40 145 H340" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)" marker-start="url(#a-soft)"/>
+  <text x="196" y="40" class="t-xs soft">働きかける</text>
+  <text x="196" y="268" class="t-xs soft">手を加えない</text>
+  <text x="42" y="162" class="t-xs soft">徳・心</text>
+  <text x="338" y="162" class="t-xs end soft">法・力</text>
+
+  <circle cx="86" cy="84" r="30" class="fl"/>
+  <text x="86" y="83" class="t-m mid on">儒家</text>
+  <text x="86" y="99" class="t-xs mid on">徳と礼</text>
+  <text x="86" y="128" class="t-xs mid ink">→ 漢から国の柱</text>
+
+  <circle cx="156" cy="98" r="31" class="tint st-f" stroke-width="1.5"/>
+  <text x="156" y="97" class="t-m mid ink">墨家</text>
+  <text x="156" y="112" class="t-xs mid soft">兼愛・非攻</text>
+  <text x="156" y="144" class="t-xs mid soft halo">（のち途絶える）</text>
+
+  <circle cx="284" cy="82" r="30" class="fl"/>
+  <text x="284" y="81" class="t-m mid on">法家</text>
+  <text x="284" y="97" class="t-xs mid on">法と賞罰</text>
+  <text x="284" y="126" class="t-xs mid ink">→ 秦が採用</text>
+
+  <circle cx="276" cy="200" r="31" class="tint st-f" stroke-width="1.5"/>
+  <text x="276" y="199" class="t-m mid ink">兵家</text>
+  <text x="276" y="214" class="t-xs mid soft">勝つ戦い方</text>
+
+  <circle cx="98" cy="210" r="30" class="fl"/>
+  <text x="98" y="209" class="t-m mid on">道家</text>
+  <text x="98" y="225" class="t-xs mid on">無為自然</text>
+</svg>

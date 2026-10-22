@@ -1,0 +1,59 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 中国の思想の系統図。上から下へ時代が進む。太い線が儒家 -->
+  <text x="20" y="44" class="t-xs soft">前6世紀</text>
+  <text x="20" y="104" class="t-xs soft">前4世紀</text>
+  <text x="20" y="152" class="t-xs soft">前3世紀</text>
+  <text x="20" y="226" class="t-xs soft">12世紀</text>
+  <text x="20" y="266" class="t-xs soft">16世紀</text>
+
+  <text x="150" y="20" class="t-xs mid soft">儒家</text>
+  <text x="250" y="20" class="t-xs mid soft">墨家</text>
+  <text x="315" y="20" class="t-xs mid soft">道家</text>
+
+  <!-- 線 -->
+  <path d="M140 52 L112 88 M160 52 L178 88" class="st-f" stroke-width="4"/>
+  <path d="M108 112 L128 210" class="st-f" stroke-width="4"/>
+  <path d="M130 234 V250" class="st-f" stroke-width="4"/>
+  <path d="M206 112 L230 138" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M315 52 V86" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M250 52 V84" class="st-soft dash" stroke-width="1.5"/>
+  <path d="M244 86 l12 10 M256 86 l-12 10" class="st-soft" stroke-width="1.5"/>
+  <text x="250" y="112" class="t-xs mid soft">途絶える</text>
+
+  <!-- 時代の飛び -->
+  <path d="M70 180 q10 -5 20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0" class="st-line" stroke-width="1.5"/>
+  <path d="M70 188 q10 -5 20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0" class="st-line" stroke-width="1.5"/>
+  <text x="236" y="174" class="t-xs soft">（約1400年後）</text>
+
+  <!-- 人物 -->
+  <rect x="118" y="28" width="64" height="24" rx="12" class="fl"/>
+  <text x="150" y="44" class="t-s mid on" font-weight="700">孔子</text>
+  <rect x="222" y="28" width="56" height="24" rx="12" class="tint"/>
+  <text x="250" y="44" class="t-s mid ink">墨子</text>
+  <rect x="288" y="28" width="54" height="24" rx="12" class="tint"/>
+  <text x="315" y="44" class="t-s mid ink">老子</text>
+
+  <rect x="80" y="88" width="56" height="24" rx="12" class="tint st-f" stroke-width="1.5"/>
+  <text x="108" y="104" class="t-s mid ink">孟子</text>
+  <text x="78" y="128" class="t-xs end soft">性善説</text>
+  <rect x="160" y="88" width="56" height="24" rx="12" class="tint st-f" stroke-width="1.5"/>
+  <text x="188" y="104" class="t-s mid ink">荀子</text>
+  <text x="176" y="128" class="t-xs mid soft">性悪説</text>
+  <rect x="288" y="88" width="54" height="24" rx="12" class="tint"/>
+  <text x="315" y="104" class="t-s mid ink">荘子</text>
+
+  <rect x="222" y="138" width="56" height="24" rx="12" class="tint"/>
+  <text x="250" y="154" class="t-s mid ink">韓非</text>
+  <text x="286" y="154" class="t-xs ink">法家</text>
+
+  <rect x="102" y="210" width="56" height="24" rx="12" class="fl"/>
+  <text x="130" y="226" class="t-s mid on" font-weight="700">朱熹</text>
+  <text x="166" y="230" class="t-xs ink">朱子学（宋）</text>
+  <path d="M286 198 L162 211" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="290" y="202" class="t-xs soft">仏教・道教</text>
+
+  <rect x="96" y="250" width="68" height="24" rx="12" class="fl"/>
+  <text x="130" y="266" class="t-s mid on" font-weight="700">王陽明</text>
+  <text x="172" y="266" class="t-xs ink">陽明学（明）</text>
+  <text x="340" y="266" class="t-xs end soft">太い線＝儒家</text>
+</svg>

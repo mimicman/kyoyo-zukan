@@ -1,0 +1,33 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：君主の3つの道具（法・術・勢）　下：賞と罰で人を動かす -->
+  <circle cx="180" cy="44" r="26" class="fl"/>
+  <text x="180" y="49" class="t-m mid on">君主</text>
+  <path d="M164 64 L80 98 M180 70 V98 M196 64 L280 98" class="st-f" stroke-width="2"/>
+
+  <rect x="25" y="98" width="90" height="56" rx="8" class="tint"/>
+  <text x="70" y="126" class="t-l mid ink">法</text>
+  <text x="70" y="144" class="t-xs mid soft">だれにも同じ規則</text>
+  <rect x="135" y="98" width="90" height="56" rx="8" class="tint"/>
+  <text x="180" y="126" class="t-l mid ink">術</text>
+  <text x="180" y="144" class="t-xs mid soft">家臣を見抜く</text>
+  <rect x="245" y="98" width="90" height="56" rx="8" class="tint"/>
+  <text x="290" y="126" class="t-l mid ink">勢</text>
+  <text x="290" y="144" class="t-xs mid soft">地位の力</text>
+
+  <!-- 賞と罰 -->
+  <circle cx="64" cy="206" r="26" class="fl"/>
+  <text x="64" y="205" class="t-l mid on">賞</text>
+  <text x="64" y="221" class="t-xs mid on">ほうび</text>
+  <circle cx="296" cy="206" r="26" class="fl"/>
+  <text x="296" y="205" class="t-l mid on">罰</text>
+  <text x="296" y="221" class="t-xs mid on">罰則</text>
+  <path d="M94 206 H156" class="st-f" stroke-width="2.5" marker-end="url(#a-asia)"/>
+  <path d="M266 206 H204" class="st-f" stroke-width="2.5" marker-end="url(#a-asia)"/>
+  <text x="125" y="198" class="t-xs mid ink">得を求め</text>
+  <text x="235" y="198" class="t-xs mid ink">損を避ける</text>
+  <circle cx="180" cy="190" r="9" class="ink"/>
+  <path d="M166 226 Q166 202 180 202 Q194 202 194 226 Z" class="ink"/>
+  <text x="180" y="244" class="t-xs mid ink">人は損得で動く</text>
+
+  <text x="180" y="272" class="t-xs mid soft">秦の統一（前221年）→ 厳しすぎて約15年で滅ぶ</text>
+</svg>

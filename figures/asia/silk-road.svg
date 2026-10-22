@@ -1,0 +1,44 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：東西の道と運ばれた物　右下：長安の町　左下：漢と唐 -->
+  <path d="M330 60 H42" class="st-f" stroke-width="2" marker-end="url(#a-asia)"/>
+  <text x="186" y="52" class="t-s mid ink">絹・紙・漆器が西へ</text>
+
+  <ellipse cx="232" cy="111" rx="30" ry="13" class="tint"/>
+  <text x="232" y="115" class="t-xs mid soft">砂漠</text>
+  <path d="M20 112 L90 106 L160 112 L196 111" class="st" stroke-width="2.5"/>
+  <path d="M196 111 Q205 90 232 92 Q262 92 280 110" class="st" stroke-width="2"/>
+  <path d="M196 111 Q205 132 232 130 Q262 130 280 110" class="st" stroke-width="2"/>
+  <path d="M280 110 L333 110" class="st" stroke-width="2.5"/>
+
+  <circle cx="90" cy="106" r="5" class="fl"/>
+  <circle cx="160" cy="112" r="5" class="fl"/>
+  <circle cx="280" cy="110" r="5" class="fl"/>
+  <circle cx="335" cy="110" r="7" class="fl"/>
+  <text x="20" y="98" class="t-xs soft">地中海へ</text>
+  <text x="90" y="94" class="t-xs mid ink">ペルシャ</text>
+  <text x="160" y="100" class="t-xs mid ink">サマルカンド</text>
+  <text x="290" y="134" class="t-xs mid ink">敦煌</text>
+  <text x="335" y="96" class="t-s mid ink" font-weight="700">長安</text>
+  <text x="232" y="148" class="t-xs mid soft">オアシスの町をつなぐ</text>
+
+  <path d="M42 162 H330" class="st-f" stroke-width="2" marker-end="url(#a-asia)"/>
+  <text x="186" y="180" class="t-s mid ink">馬・ぶどう・ガラス・仏教が東へ</text>
+
+  <!-- 漢と唐 -->
+  <text x="20" y="208" class="t-s ink" font-weight="700">前2世紀 漢</text>
+  <text x="20" y="224" class="t-xs soft">張騫が西域へ。道が開く</text>
+  <text x="20" y="248" class="t-s ink" font-weight="700">7〜8世紀 唐</text>
+  <text x="20" y="264" class="t-xs soft">長安に商人・僧・留学生</text>
+
+  <!-- 長安の町（碁盤の目） -->
+  <text x="292" y="198" class="t-xs mid soft">長安の町</text>
+  <rect x="244" y="204" width="96" height="68" class="paper st" stroke-width="1.5"/>
+  <path d="M244 221 H340 M244 238 H340 M244 255 H340 M268 204 V272 M316 204 V272" class="st-line" stroke-width="1"/>
+  <rect x="276" y="205" width="32" height="15" class="tint"/>
+  <text x="292" y="216" class="t-xs mid ink">宮城</text>
+  <path d="M292 220 V272" class="st-f" stroke-width="3"/>
+  <rect x="250" y="240" width="14" height="12" class="fl"/>
+  <rect x="320" y="240" width="14" height="12" class="fl"/>
+  <text x="257" y="266" class="t-xs mid ink">西市</text>
+  <text x="327" y="266" class="t-xs mid ink">東市</text>
+</svg>

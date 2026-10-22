@@ -1,0 +1,39 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 南アジアと東南アジアの略図。番号はこの章の4枚の舞台 -->
+  <path d="M58 72 L118 50 L198 54 L246 84 L236 110 L208 132 L184 198 L156 252 L130 200 L102 132 L66 116 L48 92 Z" class="tint"/>
+  <ellipse cx="172" cy="264" rx="7" ry="10" class="tint"/>
+  <path d="M276 92 L318 82 L338 110 L330 150 L306 174 L302 214 L288 192 L282 140 L268 116 Z" class="tint"/>
+  <ellipse cx="300" cy="252" rx="22" ry="7" class="tint"/>
+  <ellipse cx="342" cy="244" rx="12" ry="6" class="tint"/>
+  <text x="150" y="176" class="t-m mid soft">インド</text>
+  <text x="318" y="230" class="t-xs mid soft">東南アジア</text>
+
+  <!-- 外から入った人々 -->
+  <path d="M16 34 Q52 42 80 66" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <text x="16" y="24" class="t-xs ink">アーリヤ人（前15世紀ごろ）</text>
+  <path d="M14 150 Q40 124 64 106" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <text x="14" y="168" class="t-xs ink">イスラーム</text>
+  <text x="14" y="182" class="t-xs ink">（10世紀〜）</text>
+
+  <!-- 海の道 -->
+  <path d="M206 160 Q244 206 286 188" class="st-f dash" stroke-width="2" marker-end="url(#a-asia)"/>
+  <text x="240" y="214" class="t-xs mid ink halo">海の道</text>
+  <path d="M336 104 Q348 80 346 52" class="st-f dash" stroke-width="2" marker-end="url(#a-asia)"/>
+  <text x="340" y="40" class="t-xs end ink">中国へ</text>
+
+  <!-- 番号 -->
+  <circle cx="105" cy="96" r="10" class="fl"/>
+  <text x="105" y="100" class="t-xs mid on" font-weight="700">3</text>
+  <text x="105" y="124" class="t-xs mid ink">ムガル</text>
+  <circle cx="160" cy="96" r="10" class="fl"/>
+  <text x="160" y="100" class="t-xs mid on" font-weight="700">1</text>
+  <text x="160" y="124" class="t-xs mid ink">身分の枠</text>
+  <circle cx="218" cy="96" r="10" class="fl"/>
+  <text x="218" y="100" class="t-xs mid on" font-weight="700">2</text>
+  <text x="218" y="124" class="t-xs mid ink">アショーカ</text>
+  <circle cx="306" cy="140" r="10" class="fl"/>
+  <text x="306" y="144" class="t-xs mid on" font-weight="700">4</text>
+  <text x="306" y="166" class="t-xs mid ink">アンコール</text>
+  <path d="M130 84 Q160 76 196 84" class="st-soft" stroke-width="1.5"/>
+  <text x="160" y="72" class="t-xs mid soft">ガンジス川</text>
+</svg>

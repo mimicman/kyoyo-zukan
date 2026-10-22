@@ -1,0 +1,43 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- この章の4つのしくみが続いた時期（横軸は前1100〜1912年、おおよその長さ） -->
+  <text x="20" y="24" class="t-m ink">4つのしくみが続いた時期</text>
+
+  <rect x="25" y="40" width="91" height="26" rx="6" class="fl"/>
+  <text x="70.5" y="57" class="t-s mid on" font-weight="700">封建→郡県</text>
+  <text x="124" y="57" class="t-xs soft">親族に分ける → 役人を送る</text>
+
+  <rect x="123" y="76" width="113" height="26" rx="6" class="fl"/>
+  <text x="179.5" y="93" class="t-s mid on" font-weight="700">シルクロード</text>
+  <text x="244" y="93" class="t-xs soft">絹・紙・仏教</text>
+
+  <rect x="150" y="112" width="101" height="26" rx="6" class="fl"/>
+  <text x="200.5" y="129" class="t-s mid on" font-weight="700">紙と印刷</text>
+  <text x="144" y="129" class="t-xs end soft">105年 蔡倫の紙</text>
+
+  <rect x="202" y="148" width="141" height="26" rx="6" class="fl"/>
+  <text x="272.5" y="165" class="t-s mid on" font-weight="700">科挙</text>
+  <text x="196" y="165" class="t-xs end soft">家柄より試験</text>
+
+  <path d="M253 125 Q290 125 290 145" class="st-f" stroke-width="2" marker-end="url(#a-asia)"/>
+  <text x="258" y="119" class="t-xs ink">本が受験を支える</text>
+
+  <!-- 王朝の帯 -->
+  <rect x="20" y="192" width="324" height="24" rx="4" class="tint"/>
+  <path d="M107 192 V216 M114 192 V216 M162 192 V216 M201 192 V216 M236 192 V216 M241 192 V216 M276 192 V216 M285 192 V216 M315 192 V216" class="st-line" stroke-width="1.5"/>
+  <text x="66" y="208" class="t-s mid ink">周</text>
+  <text x="138" y="208" class="t-s mid ink">秦・漢</text>
+  <text x="181" y="208" class="t-xs mid soft">分裂</text>
+  <text x="218" y="208" class="t-s mid ink">隋唐</text>
+  <text x="258" y="208" class="t-s mid ink">宋</text>
+  <text x="300" y="208" class="t-s mid ink">明</text>
+  <text x="330" y="208" class="t-s mid ink">清</text>
+  <text x="20" y="186" class="t-xs soft">王朝</text>
+
+  <path d="M20 224 H344" class="st-soft" stroke-width="1.5"/>
+  <path d="M31 224 v5 M138 224 v5 M246 224 v5 M343 224 v5" class="st-soft" stroke-width="1.5"/>
+  <text x="31" y="242" class="t-xs mid soft">前1000</text>
+  <text x="138" y="242" class="t-xs mid soft">0</text>
+  <text x="246" y="242" class="t-xs mid soft">1000</text>
+  <text x="343" y="242" class="t-xs end soft">1900</text>
+  <text x="180" y="268" class="t-s mid ink">王朝が代わっても、しくみは受けつがれた</text>
+</svg>

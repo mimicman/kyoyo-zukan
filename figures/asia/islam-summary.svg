@@ -1,0 +1,38 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：都の移り変わり　下：王朝・帝国が続いた時期（600〜1925年、おおよそ） -->
+  <path d="M53 36 H122 M143 36 H212 M233 36 H302" class="st-f" stroke-width="2" marker-end="url(#a-asia)"/>
+  <circle cx="45" cy="36" r="8" class="fl"/>
+  <circle cx="135" cy="36" r="8" class="fl"/>
+  <circle cx="225" cy="36" r="8" class="fl"/>
+  <circle cx="315" cy="36" r="8" class="fl"/>
+  <text x="45" y="62" class="t-s mid ink">メディナ</text>
+  <text x="135" y="62" class="t-s mid ink">ダマスクス</text>
+  <text x="225" y="62" class="t-s mid ink">バグダード</text>
+  <text x="315" y="62" class="t-s mid ink">イスタンブル</text>
+  <text x="45" y="78" class="t-xs mid soft">622〜</text>
+  <text x="135" y="78" class="t-xs mid soft">661〜</text>
+  <text x="225" y="78" class="t-xs mid soft">762〜</text>
+  <text x="315" y="78" class="t-xs mid soft">1453〜</text>
+
+  <!-- 学問の時代 -->
+  <rect x="74" y="108" width="91" height="134" class="tint"/>
+  <text x="120" y="102" class="t-xs mid ink">学問が栄えた</text>
+
+  <rect x="22" y="114" width="13" height="20" rx="3" class="fl"/>
+  <text x="42" y="128" class="t-xs ink">ムハンマドと正統カリフ</text>
+  <rect x="35" y="140" width="21" height="20" rx="3" class="fl"/>
+  <text x="62" y="154" class="t-xs ink halo">ウマイヤ朝</text>
+  <rect x="56" y="166" width="123" height="20" rx="3" class="fl"/>
+  <text x="117" y="180" class="t-s mid on">アッバース朝</text>
+  <rect x="189" y="192" width="150" height="20" rx="3" class="fl"/>
+  <text x="264" y="206" class="t-s mid on">オスマン帝国</text>
+  <rect x="243" y="218" width="82" height="20" rx="3" class="st-f tint" stroke-width="1.5"/>
+  <text x="284" y="232" class="t-xs mid ink">ムガル帝国</text>
+  <text x="236" y="232" class="t-xs end soft">インドでは</text>
+
+  <path d="M20 250 H344" class="st-soft" stroke-width="1.5"/>
+  <text x="22" y="266" class="t-xs soft">600</text>
+  <text x="119" y="266" class="t-xs mid soft">1000</text>
+  <text x="239" y="266" class="t-xs mid soft">1500</text>
+  <text x="340" y="266" class="t-xs end soft">1900</text>
+</svg>
