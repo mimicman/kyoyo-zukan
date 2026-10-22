@@ -1,0 +1,43 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：絵を線に分けて読む → 電気信号 → 電波 → テレビが同じ順に光らせる。下：普及までの年表 -->
+  <rect x="14" y="20" width="72" height="72" rx="4" class="paper st" stroke-width="1.5"/>
+  <path d="M30 56 L50 38 L70 56 Z" class="tint st-f" stroke-width="1.5"/>
+  <rect x="34" y="56" width="32" height="28" class="tint st-f" stroke-width="1.5"/>
+  <path d="M18 28 H82 M18 36 H82 M18 44 H82 M18 52 H82 M18 60 H82 M18 68 H82 M18 76 H82 M18 84 H82" class="st-f" stroke-width="1" opacity="0.7"/>
+
+  <path d="M90 56 H112" class="st-f" stroke-width="2" marker-end="url(#a-lifestyle)"/>
+  <path d="M118 74 L126 74 L130 44 L136 66 L142 38 L148 70 L154 52 L160 60 L166 40 L172 74 L180 74" class="st-f" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M116 78 H182" class="st-line" stroke-width="1"/>
+
+  <path d="M214 34 L204 92 M214 34 L224 92 M207 72 H221" class="st" stroke-width="2"/>
+  <path d="M226 30 a8 8 0 0 1 0 14 M232 24 a14 14 0 0 1 0 26" class="st-f" stroke-width="2"/>
+  <path d="M186 60 H202" class="st-f" stroke-width="2" marker-end="url(#a-lifestyle)"/>
+
+  <rect x="252" y="24" width="96" height="68" rx="8" class="tint st-f" stroke-width="1.5"/>
+  <rect x="260" y="31" width="80" height="54" rx="3" class="paper"/>
+  <path d="M282 64 L300 46 L318 64 Z" class="tint st-f" stroke-width="1.5"/>
+  <rect x="286" y="64" width="28" height="18" class="tint st-f" stroke-width="1.5"/>
+  <path d="M262 38 H338 M262 46 H338 M262 54 H338 M262 62 H338 M262 70 H338 M262 78 H338" class="st-f" stroke-width="1" opacity="0.7"/>
+  <path d="M272 92 L266 102 M328 92 L334 102" class="st-f" stroke-width="2"/>
+
+  <text x="50" y="112" class="t-xs mid soft">絵を線に分ける</text>
+  <text x="149" y="112" class="t-xs mid soft">電気信号に</text>
+  <text x="214" y="112" class="t-xs mid soft">電波で</text>
+  <text x="300" y="118" class="t-xs mid soft">線を順に光らせる</text>
+
+  <!-- 年表 -->
+  <text x="14" y="148" class="t-xs soft">家庭に届くまで</text>
+  <path d="M104 162 V262" class="st-line" stroke-width="2"/>
+  <circle cx="104" cy="168" r="4" class="fl"/>
+  <circle cx="104" cy="200" r="4" class="fl"/>
+  <circle cx="104" cy="232" r="4" class="fl"/>
+  <circle cx="104" cy="264" r="5" class="fl"/>
+  <text x="96" y="172" class="t-s end fl" font-weight="700">1920年代</text>
+  <text x="114" y="172" class="t-xs ink">ベアードらが像を電気で送る</text>
+  <text x="96" y="204" class="t-s end fl" font-weight="700">1930年代</text>
+  <text x="114" y="204" class="t-xs ink">電子式のテレビで定期放送が始まる</text>
+  <text x="96" y="236" class="t-s end fl" font-weight="700">1953年</text>
+  <text x="114" y="236" class="t-xs ink">日本でテレビ放送が始まる</text>
+  <text x="96" y="268" class="t-s end fl" font-weight="700">1950〜60年代</text>
+  <text x="114" y="268" class="t-xs ink" font-weight="700">家庭に広まり、家族で見る</text>
+</svg>

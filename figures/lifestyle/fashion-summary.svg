@@ -1,0 +1,53 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 素材から和服と洋服の2本の流れが出て、右の「流行」に合流する -->
+  <text x="12" y="26" class="t-m ink">布が服になり、服が流行になる</text>
+
+  <!-- 2本の流れ（箱の後ろを通る線） -->
+  <path d="M80 128 C88 128 84 89 94 89 H292" class="st-f" stroke-width="2.5" marker-end="url(#a-lifestyle)"/>
+  <path d="M80 162 C88 162 84 209 94 209 H292" class="st-f" stroke-width="2.5" marker-end="url(#a-lifestyle)"/>
+
+  <!-- 素材 -->
+  <rect x="12" y="104" width="68" height="82" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="46" y="134" class="t-m mid ink">素材</text>
+  <text x="46" y="154" class="t-xs mid soft">綿・麻</text>
+  <text x="46" y="170" class="t-xs mid soft">絹・羊毛</text>
+
+  <!-- 日本の流れ -->
+  <text x="94" y="58" class="t-xs fl" font-weight="700">日本の服（和服）</text>
+  <rect x="94" y="66" width="60" height="46" rx="8" class="tint"/>
+  <text x="124" y="85" class="t-xs mid soft">奈良</text>
+  <text x="124" y="102" class="t-s mid ink" font-weight="700">唐風の衣</text>
+  <rect x="160" y="66" width="60" height="46" rx="8" class="tint"/>
+  <text x="190" y="85" class="t-xs mid soft">平安</text>
+  <text x="190" y="102" class="t-s mid ink" font-weight="700">十二単</text>
+  <rect x="226" y="66" width="60" height="46" rx="8" class="tint"/>
+  <text x="256" y="85" class="t-xs mid soft">室町〜江戸</text>
+  <text x="256" y="102" class="t-s mid ink" font-weight="700">小袖</text>
+
+  <!-- 明治の洋装化 -->
+  <path d="M256 114 V182" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="248" y="152" class="t-xs end soft">明治から洋服へ</text>
+
+  <!-- 西洋の流れ -->
+  <text x="94" y="178" class="t-xs fl" font-weight="700">西洋の服（洋服）</text>
+  <rect x="94" y="186" width="60" height="46" rx="8" class="tint"/>
+  <text x="124" y="205" class="t-xs mid soft">16世紀〜</text>
+  <text x="124" y="222" class="t-xs mid ink" font-weight="700">コルセット</text>
+  <rect x="160" y="186" width="60" height="46" rx="8" class="tint"/>
+  <text x="190" y="205" class="t-xs mid soft">19世紀</text>
+  <text x="190" y="222" class="t-s mid ink" font-weight="700">ミシン</text>
+  <rect x="226" y="186" width="60" height="46" rx="8" class="tint"/>
+  <text x="256" y="205" class="t-xs mid soft">20世紀</text>
+  <text x="256" y="222" class="t-s mid ink" font-weight="700">既製服</text>
+
+  <!-- 流行 -->
+  <rect x="296" y="66" width="54" height="166" rx="10" class="fl"/>
+  <text x="323" y="140" class="t-m mid on">流行</text>
+  <text x="323" y="164" class="t-xs mid on">まねる</text>
+  <text x="323" y="180" class="t-xs mid on">ずらす</text>
+
+  <!-- 時の向き -->
+  <path d="M94 254 H286" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="94" y="272" class="t-xs soft">古い時代</text>
+  <text x="286" y="272" class="t-xs end soft">新しい時代</text>
+</svg>

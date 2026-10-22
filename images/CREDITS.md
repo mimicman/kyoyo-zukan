@@ -6,10 +6,12 @@
 |---|---|---|---|---|
 | adam-smith | アダム・スミスの肖像（ミュア肖像） | 作者不明 | Public domain | https://commons.wikimedia.org/wiki/File:Adam_Smith_The_Muir_portrait.jpg |
 | architecture-crystal-palace | 水晶宮（ジョン・アブソロン、1851年ごろの石版画） | ジョン・アブソロン | Public domain | https://commons.wikimedia.org/wiki/File:John_Absolon,_Crystal_Palace,_General_View,_lithograph,_coloured_by_hand.jpg |
+| architecture-giza | ギザのピラミッド（フェリックス・ボンフィス撮影、19世紀） | Félix Bonfils | CC0 | https://commons.wikimedia.org/wiki/File:Giza,_Pyramids,_Pictures,_F._Bonfils,_photo_5_of_27_-_Archivio_fotografico_Museo_Egizio,_Turin_INV01_007.jpg |
 | architecture-himeji | 明治時代の姫路城（古写真） | 撮影者不明 | Public domain | https://commons.wikimedia.org/wiki/File:Himejicastle-meiji.jpg |
 | architecture-notre-dame | ノートルダム大聖堂（フォトクローム、1890〜1900年ごろ） | 作者不明 | Public domain | https://commons.wikimedia.org/wiki/File:Notre_Dame,_Paris,_France,_ca._1890-1900.jpg |
 | architecture-pantheon | パンテオンの内部（パニーニ、18世紀） | ジョヴァンニ・パオロ・パニーニ | Public domain | https://commons.wikimedia.org/wiki/File:Giovanni_Paolo_Panini_-_Interior_of_the_Pantheon,_Rome_-_Google_Art_Project.jpg |
 | architecture-parthenon | パルテノン神殿（フォトクローム、19世紀末ごろ） | フォトグロブ社（発行） | Public domain | https://commons.wikimedia.org/wiki/File:Ath%C3%A8nes._Parthenon_LCCN2017658100.jpg |
+| architecture-st-peters | サン・ピエトロ広場（ピラネージ、1772年） | Giovanni Battista Piranesi | Public domain | https://commons.wikimedia.org/wiki/File:Giovanni_Battista_Piranesi,_Peterspladsen,_1772,_KKSgb9860-101,_Statens_Museum_for_Kunst.jpg |
 | art-arnolfini | アルノルフィーニ夫妻の肖像（ヤン・ファン・エイク、1434年） | Jan van Eyck | Public domain | https://commons.wikimedia.org/wiki/File:Van_Eyck_-_Arnolfini_Portrait.jpg |
 | art-harunobu | 座敷八景 塗桶の暮雪（鈴木春信） | Suzuki Harunobu | Public domain | https://commons.wikimedia.org/wiki/File:Suzuki_Harunobu_-_Evening_Snow_on_the_Heater.jpg |
 | art-liberty | 民衆を導く自由の女神（ドラクロワ、1830年） | ウジェーヌ・ドラクロワ | Public domain | https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Delacroix_-_Le_28_Juillet._La_Libert%C3%A9_guidant_le_peuple.jpg |
@@ -140,6 +142,7 @@
 | people-fukuzawa-yukichi | 福沢諭吉の写真（作者不明） | 撮影者不明 | Public domain | https://commons.wikimedia.org/wiki/File:Fukuzawa_Yukichi.jpg |
 | people-galton-francis | フランシス・ゴルトンの肖像（オクタヴィアス・オークリー） | オクタヴィアス・オークリー | Public domain | https://commons.wikimedia.org/wiki/File:Sir_Francis_Galton_by_Octavius_Oakley.jpg |
 | people-genghis-khan | チンギス・ハン像（元代の帝后像、作者不明） | 作者不明 | Public domain | https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumGenghisPortrait.jpg |
+| people-gropius-walter | ヴァルター・グロピウス（1919年、撮影者不詳） | 不明 | Public domain | https://commons.wikimedia.org/wiki/File:WalterGropius-1919.jpg |
 | people-gutenberg-johannes | グーテンベルクの肖像（後世の版画、作者不明） | 作者不明 | Public domain | https://commons.wikimedia.org/wiki/File:Gutenberg.jpg |
 | people-han-wudi | 漢の武帝像（古い書物の挿絵、作者不明） | Unknown authorUnknown author | Public domain | https://commons.wikimedia.org/wiki/File:%E6%BC%A2%E6%AD%A6%E5%B8%9D.jpg |
 | people-hara-takashi | 原敬の写真（作者不明） | Unknown authorUnknown author | Public domain | https://commons.wikimedia.org/wiki/File:Takashi_Hara_formal.jpg |

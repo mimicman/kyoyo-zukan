@@ -1,0 +1,40 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 時の流れ（途中に約1500年の切れ目）。上が世界、下が日本 -->
+  <path d="M12 150 H112" class="st-soft" stroke-width="2"/>
+  <path d="M130 150 H344" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <path d="M110 160 L118 140 M124 160 L132 140" class="st-soft" stroke-width="2"/>
+
+  <!-- 古代から近代への復活 -->
+  <path d="M62 66 C100 20 260 20 298 66" class="st-f dash" stroke-width="2" marker-end="url(#a-lifestyle)"/>
+  <text x="180" y="34" class="t-xs mid fl halo" font-weight="700">約1500年後に復活</text>
+
+  <rect x="16" y="70" width="92" height="66" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="62" y="88" class="t-xs mid soft">前8〜4世紀</text>
+  <text x="62" y="108" class="t-m mid ink">古代</text>
+  <text x="62" y="126" class="t-xs mid ink">オリンピック</text>
+
+  <rect x="140" y="70" width="96" height="66" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="188" y="88" class="t-xs mid soft">19世紀イギリス</text>
+  <text x="188" y="108" class="t-m mid ink">近代スポーツ</text>
+  <text x="188" y="126" class="t-xs mid ink">ルールと協会</text>
+
+  <path d="M238 103 H252" class="st-f" stroke-width="2" marker-end="url(#a-lifestyle)"/>
+
+  <rect x="256" y="70" width="90" height="66" rx="10" class="fl"/>
+  <text x="301" y="88" class="t-xs mid on">1896年</text>
+  <text x="301" y="108" class="t-m mid on">近代</text>
+  <text x="301" y="126" class="t-xs mid on">オリンピック</text>
+
+  <!-- 日本 -->
+  <text x="20" y="200" class="t-s ink" font-weight="700">日本では</text>
+  <path d="M82 196 H132" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <rect x="140" y="170" width="96" height="56" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="188" y="194" class="t-m mid ink">武術</text>
+  <text x="188" y="213" class="t-xs mid soft">戦いの技</text>
+  <path d="M238 198 H252" class="st-f" stroke-width="2" marker-end="url(#a-lifestyle)"/>
+  <rect x="256" y="170" width="90" height="56" rx="10" class="fl"/>
+  <text x="301" y="194" class="t-m mid on">武道</text>
+  <text x="301" y="213" class="t-xs mid on">心と体をきたえる</text>
+
+  <text x="180" y="262" class="t-s mid ink" font-weight="700">土地ごとの祭りや技 → 世界共通のルールへ</text>
+</svg>

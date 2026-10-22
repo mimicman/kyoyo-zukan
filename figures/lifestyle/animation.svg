@@ -1,0 +1,41 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：少しずつ違う5枚の絵。中：速く切り替えると、脳が1つの動きにつなげる。下：回転のぞき絵 -->
+  <rect x="14" y="20" width="58" height="56" rx="4" class="paper st-line" stroke-width="1.5"/>
+  <rect x="82" y="20" width="58" height="56" rx="4" class="paper st-line" stroke-width="1.5"/>
+  <rect x="150" y="20" width="58" height="56" rx="4" class="paper st-line" stroke-width="1.5"/>
+  <rect x="218" y="20" width="58" height="56" rx="4" class="paper st-line" stroke-width="1.5"/>
+  <rect x="286" y="20" width="58" height="56" rx="4" class="paper st-line" stroke-width="1.5"/>
+  <path d="M18 70 H68 M86 70 H136 M154 70 H204 M222 70 H272 M290 70 H340" class="st-soft" stroke-width="1.5"/>
+  <circle cx="30" cy="32" r="7" class="fl"/>
+  <circle cx="104" cy="48" r="7" class="fl"/>
+  <ellipse cx="179" cy="65" rx="9" ry="5" class="fl"/>
+  <circle cx="254" cy="48" r="7" class="fl"/>
+  <circle cx="328" cy="32" r="7" class="fl"/>
+  <text x="43" y="92" class="t-xs mid soft">1</text>
+  <text x="111" y="92" class="t-xs mid soft">2</text>
+  <text x="179" y="92" class="t-xs mid soft">3</text>
+  <text x="247" y="92" class="t-xs mid soft">4</text>
+  <text x="315" y="92" class="t-xs mid soft">5</text>
+
+  <path d="M180 100 V128" class="st-f" stroke-width="2.5" marker-end="url(#a-lifestyle)"/>
+  <text x="192" y="120" class="t-xs fl" font-weight="700">速く切り替える</text>
+
+  <rect x="70" y="134" width="220" height="84" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <path d="M84 212 H276" class="st-soft" stroke-width="1.5"/>
+  <path d="M100 150 C130 160 160 206 180 206 C200 206 230 160 260 150" class="st-f dash" stroke-width="1.5"/>
+  <circle cx="100" cy="150" r="8" class="paper st-f dash" stroke-width="1.5"/>
+  <circle cx="140" cy="182" r="8" class="paper st-f dash" stroke-width="1.5"/>
+  <circle cx="180" cy="204" r="8" class="paper st-f dash" stroke-width="1.5"/>
+  <circle cx="220" cy="182" r="8" class="paper st-f dash" stroke-width="1.5"/>
+  <circle cx="260" cy="150" r="8" class="fl"/>
+  <text x="180" y="238" class="t-s mid ink" font-weight="700">脳が1つの動きにつなげて見る</text>
+
+  <!-- 回転のぞき絵 -->
+  <circle cx="40" cy="274" r="22" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="40" cy="274" r="4" class="st" stroke-width="1.5"/>
+  <path d="M40 252 v8 M62 274 h-8 M40 296 v-8 M18 274 h8 M55.6 258.4 l-5.6 5.6 M55.6 289.6 l-5.6 -5.6 M24.4 289.6 l5.6 -5.6 M24.4 258.4 l5.6 5.6" class="st" stroke-width="2"/>
+  <text x="72" y="268" class="t-xs ink" font-weight="700">回転のぞき絵（1830年代）</text>
+  <text x="72" y="285" class="t-xs soft">円盤を回し、すき間からのぞく</text>
+  <text x="344" y="268" class="t-xs end ink" font-weight="700">手描きもCGも</text>
+  <text x="344" y="285" class="t-xs end soft">同じしくみ</text>
+</svg>

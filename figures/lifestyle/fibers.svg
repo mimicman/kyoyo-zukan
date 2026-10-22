@@ -1,0 +1,65 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上段：植物の繊維、下段：動物の繊維。下は 繊維→糸→布 -->
+  <rect x="12" y="14" width="34" height="110" rx="8" class="fl"/>
+  <text x="29" y="64" class="t-m mid on">植</text>
+  <text x="29" y="84" class="t-m mid on">物</text>
+  <rect x="12" y="132" width="34" height="110" rx="8" class="tint st-f" stroke-width="1.5"/>
+  <text x="29" y="182" class="t-m mid ink">動</text>
+  <text x="29" y="202" class="t-m mid ink">物</text>
+
+  <!-- 綿 -->
+  <rect x="54" y="14" width="144" height="110" rx="10" class="paper st-line" stroke-width="1.5"/>
+  <path d="M82 72 V106" class="st-f" stroke-width="2"/>
+  <ellipse cx="74" cy="92" rx="7" ry="3.5" class="fl" transform="rotate(-25 74 92)"/>
+  <ellipse cx="90" cy="96" rx="7" ry="3.5" class="fl" transform="rotate(25 90 96)"/>
+  <circle cx="74" cy="64" r="9" class="paper st" stroke-width="1.5"/>
+  <circle cx="90" cy="64" r="9" class="paper st" stroke-width="1.5"/>
+  <circle cx="82" cy="52" r="9" class="paper st" stroke-width="1.5"/>
+  <text x="114" y="50" class="t-l ink">綿</text>
+  <text x="114" y="70" class="t-xs soft">種を包む綿毛</text>
+  <text x="114" y="90" class="t-xs fl" font-weight="700">汗を吸う</text>
+  <text x="114" y="106" class="t-xs ink">洗いやすい</text>
+
+  <!-- 麻 -->
+  <rect x="206" y="14" width="144" height="110" rx="10" class="paper st-line" stroke-width="1.5"/>
+  <path d="M226 106 V36 M236 106 V30 M246 106 V40" class="st-f" stroke-width="2.5"/>
+  <path d="M226 60 l-8 -6 M236 52 l8 -7 M246 66 l8 -6 M226 80 l8 -6 M236 86 l-8 -6" class="st-f" stroke-width="2"/>
+  <text x="266" y="50" class="t-l ink">麻</text>
+  <text x="266" y="70" class="t-xs soft">茎の繊維</text>
+  <text x="266" y="90" class="t-xs fl" font-weight="700">涼しい</text>
+  <text x="266" y="106" class="t-xs ink">丈夫</text>
+
+  <!-- 絹 -->
+  <rect x="54" y="132" width="144" height="110" rx="10" class="paper st-line" stroke-width="1.5"/>
+  <ellipse cx="80" cy="182" rx="16" ry="11" class="tint st-f" stroke-width="2"/>
+  <path d="M96 182 C104 178 98 200 90 206 C82 212 96 222 104 216" class="st-soft" stroke-width="1.5"/>
+  <text x="114" y="168" class="t-l ink">絹</text>
+  <text x="114" y="188" class="t-xs soft">蚕のまゆの糸</text>
+  <text x="114" y="208" class="t-xs fl" font-weight="700">光沢がある</text>
+  <text x="114" y="224" class="t-xs ink">軽くなめらか</text>
+
+  <!-- 羊毛 -->
+  <rect x="206" y="132" width="144" height="110" rx="10" class="paper st-line" stroke-width="1.5"/>
+  <circle cx="226" cy="186" r="9" class="paper st" stroke-width="1.5"/>
+  <circle cx="240" cy="180" r="10" class="paper st" stroke-width="1.5"/>
+  <circle cx="240" cy="194" r="9" class="paper st" stroke-width="1.5"/>
+  <circle cx="228" cy="198" r="8" class="paper st" stroke-width="1.5"/>
+  <ellipse cx="254" cy="178" rx="6" ry="8" class="ink"/>
+  <path d="M228 206 V218 M244 204 V218" class="st" stroke-width="2"/>
+  <text x="266" y="168" class="t-l ink">羊毛</text>
+  <text x="266" y="188" class="t-xs soft">羊の毛</text>
+  <text x="266" y="208" class="t-xs fl" font-weight="700">暖かい</text>
+  <text x="266" y="224" class="t-xs ink">空気を含む</text>
+
+  <!-- 繊維 → 糸 → 布 -->
+  <rect x="20" y="258" width="76" height="32" rx="16" class="tint"/>
+  <text x="58" y="279" class="t-s mid ink" font-weight="700">繊維</text>
+  <path d="M100 274 H136" class="st-f" stroke-width="2" marker-end="url(#a-lifestyle)"/>
+  <text x="118" y="266" class="t-xs mid fl halo">紡ぐ</text>
+  <rect x="142" y="258" width="76" height="32" rx="16" class="tint"/>
+  <text x="180" y="279" class="t-s mid ink" font-weight="700">糸</text>
+  <path d="M222 274 H258" class="st-f" stroke-width="2" marker-end="url(#a-lifestyle)"/>
+  <text x="240" y="266" class="t-xs mid fl halo">織る</text>
+  <rect x="264" y="258" width="76" height="32" rx="16" class="fl"/>
+  <text x="302" y="279" class="t-s mid on" font-weight="700">布</text>
+</svg>

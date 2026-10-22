@@ -1,0 +1,52 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：時代ごとの姿（左から右へ時代順） -->
+  <!-- 奈良：唐風の衣 -->
+  <circle cx="48" cy="40" r="10" class="soft"/>
+  <path d="M34 54 H62 L64 90 H32 Z" class="tint st-f" stroke-width="1.5"/>
+  <path d="M32 90 H64 L72 140 H24 Z" class="fl"/>
+  <!-- 平安：十二単（重ね着） -->
+  <circle cx="136" cy="40" r="10" class="soft"/>
+  <path d="M136 52 L178 140 H94 Z" class="tint st-f" stroke-width="1.5"/>
+  <path d="M136 58 L172 140 H100 Z" class="fl"/>
+  <path d="M136 64 L166 140 H106 Z" class="tint"/>
+  <path d="M136 70 L160 140 H112 Z" class="fl"/>
+  <!-- 室町〜江戸：小袖と帯 -->
+  <circle cx="224" cy="40" r="10" class="soft"/>
+  <rect x="196" y="58" width="13" height="34" rx="3" class="tint st-f" stroke-width="1.5"/>
+  <rect x="239" y="58" width="13" height="34" rx="3" class="tint st-f" stroke-width="1.5"/>
+  <rect x="209" y="54" width="30" height="86" rx="4" class="tint st-f" stroke-width="1.5"/>
+  <rect x="209" y="84" width="30" height="12" class="fl"/>
+  <!-- 明治〜：洋服 -->
+  <circle cx="312" cy="40" r="10" class="soft"/>
+  <path d="M298 54 H326 L330 100 H294 Z" class="tint st" stroke-width="1.5"/>
+  <rect x="298" y="100" width="12" height="40" class="soft"/>
+  <rect x="314" y="100" width="12" height="40" class="soft"/>
+
+  <text x="48" y="162" class="t-xs mid soft">奈良</text>
+  <text x="48" y="180" class="t-s mid ink" font-weight="700">唐風の衣</text>
+  <text x="136" y="162" class="t-xs mid soft">平安</text>
+  <text x="136" y="180" class="t-s mid ink" font-weight="700">十二単</text>
+  <text x="224" y="162" class="t-xs mid soft">室町〜江戸</text>
+  <text x="224" y="180" class="t-s mid fl" font-weight="700">小袖と帯</text>
+  <text x="312" y="162" class="t-xs mid soft">明治〜</text>
+  <text x="312" y="180" class="t-s mid ink" font-weight="700">洋服も</text>
+  <path d="M16 194 H344" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+
+  <!-- 下：小袖の出世（いちばん内側→いちばん外側） -->
+  <text x="94" y="216" class="t-xs mid soft">平安の貴族の重ね着</text>
+  <rect x="22" y="222" width="144" height="72" rx="8" class="tint st-f" stroke-width="1.5"/>
+  <text x="94" y="237" class="t-xs mid ink">上に重ねる衣</text>
+  <rect x="38" y="242" width="112" height="46" rx="6" class="paper st-f" stroke-width="1.5"/>
+  <text x="94" y="256" class="t-xs mid ink">袿（何枚も）</text>
+  <rect x="56" y="262" width="76" height="22" rx="4" class="fl"/>
+  <text x="94" y="277" class="t-xs mid on" font-weight="700">小袖（下着）</text>
+
+  <path d="M170 258 H200" class="st-f" stroke-width="2.5" marker-end="url(#a-lifestyle)"/>
+  <text x="185" y="250" class="t-xs mid fl" font-weight="700">表へ</text>
+
+  <text x="274" y="216" class="t-xs mid soft">室町〜江戸の姿</text>
+  <rect x="206" y="226" width="136" height="34" rx="6" class="fl"/>
+  <text x="274" y="248" class="t-s mid on" font-weight="700">小袖を表に着る</text>
+  <rect x="206" y="266" width="136" height="24" rx="6" class="tint st-f" stroke-width="1.5"/>
+  <text x="274" y="282" class="t-xs mid ink">帯で前を留める</text>
+</svg>

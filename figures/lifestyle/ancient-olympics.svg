@@ -1,0 +1,42 @@
+<svg viewBox="0 0 360 296" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左：4年の周期。右：主な競技。下：競走路スタディオン -->
+  <circle cx="88" cy="110" r="60" class="st-line" stroke-width="14"/>
+  <path d="M88 50 A60 60 0 0 1 148 110" class="st-f" stroke-width="14"/>
+  <text x="88" y="106" class="t-m mid ink">4年に</text>
+  <text x="88" y="124" class="t-m mid ink">1度</text>
+  <text x="134" y="58" class="t-xs mid fl halo" font-weight="700">祭典の年</text>
+  <text x="130" y="156" class="t-xs mid soft halo">2年目</text>
+  <text x="46" y="156" class="t-xs mid soft halo">3年目</text>
+  <text x="46" y="68" class="t-xs mid soft halo">4年目</text>
+  <text x="88" y="200" class="t-s mid ink" font-weight="700">祭典の前後は休戦</text>
+  <text x="88" y="216" class="t-xs mid soft">選手や観客が安全に旅した</text>
+
+  <text x="176" y="30" class="t-xs soft">主な競技</text>
+  <rect x="176" y="38" width="172" height="36" rx="8" class="paper st-line" stroke-width="1.5"/>
+  <circle cx="194" cy="56" r="10" class="fl"/>
+  <text x="194" y="60" class="t-xs mid on">1</text>
+  <text x="212" y="53" class="t-s ink" font-weight="700">競走</text>
+  <text x="212" y="68" class="t-xs soft">最古の種目は短距離走</text>
+  <rect x="176" y="80" width="172" height="36" rx="8" class="paper st-line" stroke-width="1.5"/>
+  <circle cx="194" cy="98" r="10" class="fl"/>
+  <text x="194" y="102" class="t-xs mid on">2</text>
+  <text x="212" y="95" class="t-s ink" font-weight="700">五種競技</text>
+  <text x="212" y="110" class="t-xs soft">走・跳・投げなど5種</text>
+  <rect x="176" y="122" width="172" height="36" rx="8" class="paper st-line" stroke-width="1.5"/>
+  <circle cx="194" cy="140" r="10" class="fl"/>
+  <text x="194" y="144" class="t-xs mid on">3</text>
+  <text x="212" y="137" class="t-s ink" font-weight="700">レスリング</text>
+  <text x="212" y="152" class="t-xs soft">組み合って投げる</text>
+  <rect x="176" y="164" width="172" height="36" rx="8" class="paper st-line" stroke-width="1.5"/>
+  <circle cx="194" cy="182" r="10" class="fl"/>
+  <text x="194" y="186" class="t-xs mid on">4</text>
+  <text x="212" y="179" class="t-s ink" font-weight="700">戦車競走</text>
+  <text x="212" y="194" class="t-xs soft">馬が引く車で競う</text>
+
+  <!-- スタディオン -->
+  <text x="12" y="240" class="t-xs soft">競走路スタディオン</text>
+  <rect x="12" y="248" width="336" height="26" rx="13" class="tint st-f" stroke-width="1.5"/>
+  <path d="M28 251 V271 M332 251 V271" class="st" stroke-width="2.5"/>
+  <text x="180" y="266" class="t-s mid ink" font-weight="700">約190m を走る</text>
+  <text x="180" y="290" class="t-xs mid fl" font-weight="700">この名が「スタジアム」の語源</text>
+</svg>

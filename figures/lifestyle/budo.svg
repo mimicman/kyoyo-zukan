@@ -1,0 +1,46 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左：戦いの技「術」、右：心身をきたえる「道」。下：礼を重んじる -->
+  <rect x="12" y="12" width="148" height="46" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="86" y="34" class="t-l mid ink">武術</text>
+  <text x="86" y="51" class="t-xs mid soft">戦いの技（〜江戸）</text>
+  <path d="M164 42 H196" class="st-f" stroke-width="3" marker-end="url(#a-lifestyle)"/>
+  <text x="179" y="30" class="t-xs mid fl" font-weight="700">明治</text>
+  <rect x="200" y="12" width="148" height="46" rx="10" class="fl"/>
+  <text x="274" y="34" class="t-l mid on">武道</text>
+  <text x="274" y="51" class="t-xs mid on">心と体をきたえる</text>
+
+  <!-- 剣 -->
+  <rect x="12" y="68" width="148" height="48" rx="8" class="paper st-line" stroke-width="1.5"/>
+  <text x="24" y="89" class="t-m ink">剣術</text>
+  <text x="24" y="107" class="t-xs soft">真剣や木刀で型を練る</text>
+  <path d="M166 92 H194" class="st-f" stroke-width="2" marker-end="url(#a-lifestyle)"/>
+  <rect x="200" y="68" width="148" height="48" rx="8" class="paper st-f" stroke-width="1.5"/>
+  <text x="212" y="89" class="t-m fl">剣道</text>
+  <text x="212" y="107" class="t-xs ink">竹刀と防具で打ち合う</text>
+
+  <!-- 柔 -->
+  <rect x="12" y="124" width="148" height="48" rx="8" class="paper st-line" stroke-width="1.5"/>
+  <text x="24" y="145" class="t-m ink">柔術</text>
+  <text x="24" y="163" class="t-xs soft">相手を倒す多くの技</text>
+  <path d="M166 148 H194" class="st-f" stroke-width="2" marker-end="url(#a-lifestyle)"/>
+  <rect x="200" y="124" width="148" height="48" rx="8" class="paper st-f" stroke-width="1.5"/>
+  <text x="212" y="145" class="t-m fl">柔道</text>
+  <text x="212" y="163" class="t-xs ink">危ない技を除き投げ合う</text>
+
+  <!-- 弓 -->
+  <rect x="12" y="180" width="148" height="48" rx="8" class="paper st-line" stroke-width="1.5"/>
+  <text x="24" y="201" class="t-m ink">弓術</text>
+  <text x="24" y="219" class="t-xs soft">戦で敵を射る</text>
+  <path d="M166 204 H194" class="st-f" stroke-width="2" marker-end="url(#a-lifestyle)"/>
+  <rect x="200" y="180" width="148" height="48" rx="8" class="paper st-f" stroke-width="1.5"/>
+  <text x="212" y="201" class="t-m fl">弓道</text>
+  <text x="212" y="219" class="t-xs ink">姿勢と心を整えて射る</text>
+
+  <!-- 礼 -->
+  <rect x="12" y="240" width="336" height="52" rx="10" class="bgc"/>
+  <path d="M30 286 V272 L40 258 M76 286 V272 L66 258" class="st" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="43" cy="254" r="5" class="ink"/>
+  <circle cx="63" cy="254" r="5" class="ink"/>
+  <text x="96" y="262" class="t-s ink" font-weight="700">礼に始まり、礼に終わる</text>
+  <text x="96" y="281" class="t-xs soft">1964年、柔道がオリンピックの種目に</text>
+</svg>

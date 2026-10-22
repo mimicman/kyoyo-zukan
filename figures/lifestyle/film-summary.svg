@@ -1,0 +1,45 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 写真 → 映画 → テレビ。下のアニメーションも映画と同じしくみ -->
+  <text x="12" y="24" class="t-m ink">像を残す → 動かす → 遠くへ送る</text>
+
+  <!-- 写真（カメラ） -->
+  <rect x="46" y="52" width="18" height="8" rx="2" class="tint st-f" stroke-width="1.5"/>
+  <rect x="34" y="60" width="60" height="42" rx="6" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="64" cy="81" r="13" class="paper st-f" stroke-width="2"/>
+  <circle cx="64" cy="81" r="5" class="fl"/>
+
+  <!-- 映画（フィルム） -->
+  <rect x="152" y="48" width="56" height="66" rx="3" class="fl"/>
+  <rect x="164" y="53" width="32" height="16" class="paper"/>
+  <rect x="164" y="72" width="32" height="16" class="paper"/>
+  <rect x="164" y="91" width="32" height="16" class="paper"/>
+  <path d="M157 54 v4 M157 66 v4 M157 78 v4 M157 90 v4 M157 102 v4 M203 54 v4 M203 66 v4 M203 78 v4 M203 90 v4 M203 102 v4" class="st-line" stroke-width="3"/>
+
+  <!-- テレビ -->
+  <path d="M286 52 L278 40 M306 52 L314 40" class="st-f" stroke-width="2"/>
+  <rect x="262" y="52" width="68" height="50" rx="8" class="tint st-f" stroke-width="1.5"/>
+  <rect x="270" y="59" width="52" height="36" rx="4" class="paper st-f" stroke-width="1"/>
+  <path d="M278 102 L272 114 M314 102 L320 114" class="st-f" stroke-width="2"/>
+
+  <path d="M100 81 H144" class="st-f" stroke-width="2.5" marker-end="url(#a-lifestyle)"/>
+  <text x="122" y="72" class="t-xs mid fl" font-weight="700">+動き</text>
+  <path d="M216 81 H254" class="st-f" stroke-width="2.5" marker-end="url(#a-lifestyle)"/>
+  <text x="235" y="72" class="t-xs mid fl" font-weight="700">+電波</text>
+
+  <text x="64" y="138" class="t-m mid ink">写真</text>
+  <text x="64" y="156" class="t-xs mid soft">1839年 公表</text>
+  <text x="64" y="176" class="t-xs mid ink">一瞬を残す</text>
+  <text x="180" y="138" class="t-m mid ink">映画</text>
+  <text x="180" y="156" class="t-xs mid soft">1895年 上映</text>
+  <text x="180" y="176" class="t-xs mid ink">動きを見せる</text>
+  <text x="296" y="138" class="t-m mid ink">テレビ</text>
+  <text x="296" y="156" class="t-xs mid soft">20世紀半ば 普及</text>
+  <text x="296" y="176" class="t-xs mid ink">家で見る</text>
+
+  <!-- アニメーション -->
+  <path d="M180 210 V186" class="st-f" stroke-width="2" marker-end="url(#a-lifestyle)"/>
+  <text x="190" y="202" class="t-xs fl" font-weight="700">同じしくみ</text>
+  <rect x="100" y="212" width="160" height="48" rx="12" class="tint st-f" stroke-width="1.5"/>
+  <text x="180" y="233" class="t-s mid ink" font-weight="700">アニメーション</text>
+  <text x="180" y="251" class="t-xs mid soft">少しずつ違う絵を続ける</text>
+</svg>

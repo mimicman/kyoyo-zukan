@@ -1,0 +1,40 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左：19世紀の締める服、右：1920年代の締めない服、中央：変化を後押ししたもの -->
+  <circle cx="80" cy="34" r="10" class="soft"/>
+  <path d="M68 48 H92 L86 90 H74 Z" class="tint st-f" stroke-width="1.5"/>
+  <path d="M70 62 H90 L86 90 H74 Z" class="fl"/>
+  <path d="M74 90 H86 C118 118 128 168 136 188 H24 C32 168 42 118 74 90 Z" class="tint st-f" stroke-width="1.5"/>
+  <path d="M60 70 H69" class="st-soft" stroke-width="1"/>
+  <text x="58" y="74" class="t-xs end fl" font-weight="700">コルセット</text>
+
+  <circle cx="290" cy="34" r="10" class="soft"/>
+  <path d="M276 48 H304 L310 150 H270 Z" class="tint st-f" stroke-width="1.5"/>
+  <path d="M273 104 H307" class="st-f dash" stroke-width="1.5"/>
+  <path d="M282 150 V188 M298 150 V188" class="st" stroke-width="2.5"/>
+
+  <text x="194" y="30" class="t-xs mid soft">変化を後押ししたもの</text>
+  <rect x="146" y="42" width="96" height="28" rx="14" class="tint"/>
+  <text x="194" y="61" class="t-xs mid ink">ミシンで速く縫う</text>
+  <rect x="146" y="80" width="96" height="28" rx="14" class="tint"/>
+  <text x="194" y="99" class="t-xs mid ink">同じ型で大量に</text>
+  <rect x="146" y="118" width="96" height="28" rx="14" class="tint"/>
+  <text x="194" y="137" class="t-xs mid ink">働く女性が増える</text>
+  <path d="M148 168 H240" class="st-f" stroke-width="3" marker-end="url(#a-lifestyle)"/>
+
+  <text x="80" y="208" class="t-s mid ink" font-weight="700">腰を締める服</text>
+  <text x="80" y="224" class="t-xs mid soft">19世紀</text>
+  <text x="290" y="208" class="t-s mid fl" font-weight="700">まっすぐな服</text>
+  <text x="290" y="224" class="t-xs mid soft">1920年代</text>
+
+  <!-- 年表 -->
+  <path d="M20 246 H340" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <circle cx="60" cy="246" r="5" class="soft"/>
+  <circle cx="180" cy="246" r="5" class="soft"/>
+  <circle cx="300" cy="246" r="5" class="fl"/>
+  <text x="60" y="266" class="t-xs mid fl" font-weight="700">16世紀〜</text>
+  <text x="60" y="284" class="t-xs mid ink">コルセット</text>
+  <text x="180" y="266" class="t-xs mid fl" font-weight="700">19世紀半ば</text>
+  <text x="180" y="284" class="t-xs mid ink">ミシンの実用化</text>
+  <text x="300" y="266" class="t-xs mid fl" font-weight="700">20世紀初め</text>
+  <text x="300" y="284" class="t-xs mid ink">締めない服</text>
+</svg>

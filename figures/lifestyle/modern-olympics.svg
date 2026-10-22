@@ -1,0 +1,35 @@
+<svg viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：五つの輪と始まりの年。下：古代と近代の比較 -->
+  <circle cx="34" cy="30" r="14" class="st" stroke-width="2.5"/>
+  <circle cx="66" cy="30" r="14" class="st-f" stroke-width="2.5"/>
+  <circle cx="98" cy="30" r="14" class="st" stroke-width="2.5"/>
+  <circle cx="50" cy="46" r="14" class="st-f" stroke-width="2.5"/>
+  <circle cx="82" cy="46" r="14" class="st-f" stroke-width="2.5"/>
+  <text x="128" y="32" class="t-s ink" font-weight="700">1894年 国際委員会ができる</text>
+  <text x="128" y="52" class="t-s fl" font-weight="700">1896年 アテネで第1回大会</text>
+
+  <rect x="70" y="76" width="112" height="30" rx="8" class="tint st-f" stroke-width="1.5"/>
+  <text x="126" y="96" class="t-m mid ink">古代</text>
+  <rect x="190" y="76" width="158" height="30" rx="8" class="fl"/>
+  <text x="269" y="96" class="t-m mid on">近代</text>
+
+  <rect x="12" y="112" width="336" height="34" rx="8" class="bgc"/>
+  <text x="38" y="134" class="t-xs mid soft">目的</text>
+  <text x="126" y="134" class="t-s mid ink">神ゼウスの祭り</text>
+  <text x="269" y="134" class="t-s mid ink" font-weight="700">平和と若者の教育</text>
+
+  <text x="38" y="168" class="t-xs mid soft">選手</text>
+  <text x="126" y="168" class="t-s mid ink">ギリシャの男性</text>
+  <text x="269" y="168" class="t-s mid ink" font-weight="700">世界から、女性も</text>
+
+  <rect x="12" y="180" width="336" height="34" rx="8" class="bgc"/>
+  <text x="38" y="202" class="t-xs mid soft">会場</text>
+  <text x="126" y="202" class="t-s mid ink">いつもオリンピア</text>
+  <text x="269" y="202" class="t-s mid ink" font-weight="700">毎回別の都市</text>
+
+  <text x="38" y="236" class="t-xs mid soft">賞</text>
+  <text x="126" y="236" class="t-s mid ink">オリーブの冠</text>
+  <text x="269" y="236" class="t-s mid ink" font-weight="700">メダル</text>
+
+  <text x="180" y="272" class="t-xs mid soft">4年に1度という周期は、古代と同じ</text>
+</svg>

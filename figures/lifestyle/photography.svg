@@ -1,0 +1,37 @@
+<svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：暗い箱（カメラ）に入った光が、奥の感光板に逆さの像を作る。下：発明の年表 -->
+  <rect x="130" y="30" width="188" height="110" rx="6" class="tint st-f" stroke-width="1.5"/>
+  <rect x="312" y="36" width="6" height="98" class="fl"/>
+  <!-- 写すもの（木） -->
+  <rect x="27" y="90" width="6" height="22" class="soft"/>
+  <circle cx="30" cy="76" r="16" class="paper st-f" stroke-width="2"/>
+  <!-- 逆さの像 -->
+  <rect x="289" y="40" width="6" height="56" class="soft"/>
+  <circle cx="292" cy="114" r="16" class="paper st-f" stroke-width="2"/>
+  <!-- 光の道すじ -->
+  <path d="M30 60 L310 133 M30 112 L310 39" class="st-soft dash" stroke-width="1.5"/>
+  <circle cx="130" cy="86" r="5" class="ink"/>
+
+  <text x="130" y="22" class="t-xs mid soft">小さな穴・レンズ</text>
+  <text x="315" y="22" class="t-xs end fl" font-weight="700">感光板</text>
+  <text x="30" y="130" class="t-xs mid soft">写すもの</text>
+  <text x="224" y="156" class="t-xs mid ink">暗い箱の奥に、像が逆さに映る</text>
+
+  <!-- 年表 -->
+  <path d="M20 196 H340" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <circle cx="60" cy="196" r="6" class="fl"/>
+  <circle cx="180" cy="196" r="6" class="fl"/>
+  <circle cx="300" cy="196" r="6" class="fl"/>
+  <text x="60" y="184" class="t-xs mid fl" font-weight="700">1826年ごろ</text>
+  <text x="180" y="184" class="t-xs mid fl" font-weight="700">1839年</text>
+  <text x="300" y="184" class="t-xs mid fl" font-weight="700">1841年</text>
+  <text x="60" y="220" class="t-s mid ink" font-weight="700">ニエプス</text>
+  <text x="180" y="220" class="t-s mid ink" font-weight="700">ダゲール</text>
+  <text x="300" y="220" class="t-s mid ink" font-weight="700">タルボット</text>
+  <text x="60" y="238" class="t-xs mid ink">最古の写真</text>
+  <text x="180" y="238" class="t-xs mid ink">銀板写真</text>
+  <text x="300" y="238" class="t-xs mid ink">ネガ・ポジ法</text>
+  <text x="60" y="256" class="t-xs mid soft">露光に何時間も</text>
+  <text x="180" y="256" class="t-xs mid soft">露光は数分</text>
+  <text x="300" y="256" class="t-xs mid soft">何枚も焼ける</text>
+</svg>

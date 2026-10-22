@@ -1600,5 +1600,23 @@
     "artist": "Suzuki Harunobu",
     "license": "Public domain",
     "source": "https://commons.wikimedia.org/wiki/File:Suzuki_Harunobu_-_Evening_Snow_on_the_Heater.jpg"
+  },
+  "architecture-giza": {
+    "name": "ギザのピラミッド（フェリックス・ボンフィス撮影、19世紀）",
+    "artist": "Félix Bonfils",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Giza,_Pyramids,_Pictures,_F._Bonfils,_photo_5_of_27_-_Archivio_fotografico_Museo_Egizio,_Turin_INV01_007.jpg"
+  },
+  "architecture-st-peters": {
+    "name": "サン・ピエトロ広場（ピラネージ、1772年）",
+    "artist": "Giovanni Battista Piranesi",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Giovanni_Battista_Piranesi,_Peterspladsen,_1772,_KKSgb9860-101,_Statens_Museum_for_Kunst.jpg"
+  },
+  "people-gropius-walter": {
+    "name": "ヴァルター・グロピウス（1919年、撮影者不詳）",
+    "artist": "不明",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:WalterGropius-1919.jpg"
   }
 }
