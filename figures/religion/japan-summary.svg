@@ -1,0 +1,38 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 日本の神と仏：神（上の線）と仏（下の線）が、千年以上より合わさり、1868年に分けられた。横は時代 -->
+  <text x="16" y="22" class="t-m ink">神と仏は、より合わさって続いた</text>
+
+  <!-- 神の線 -->
+  <path d="M16 70 H96 C130 70 130 120 150 124 H270 C290 128 290 70 330 70 H344" class="st-soft" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <text x="20" y="58" class="t-s ink" font-weight="700">神（神道）</text>
+  <text x="20" y="92" class="t-xs soft">山・海・岩に神</text>
+
+  <!-- 仏の線（6世紀に伝わる） -->
+  <path d="M84 182 C120 182 126 132 150 130 H270 C290 132 290 182 330 182 H344" class="st-f" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <path d="M40 182 H76" class="st-f dash" stroke-width="2" marker-end="url(#a-religion)"/>
+  <text x="20" y="206" class="t-s fl" font-weight="700">仏（仏教）</text>
+  <text x="20" y="170" class="t-xs soft">大陸から</text>
+
+  <!-- より合わさった部分 -->
+  <text x="200" y="106" class="t-s mid fl" font-weight="700">神仏習合</text>
+  <text x="184" y="154" class="t-xs mid soft">神宮寺・本地垂迹</text>
+
+  <!-- 分ける -->
+  <path d="M280 96 V178" class="st dash" stroke-width="1.5"/>
+  <text x="274" y="174" class="t-xs end ink">神仏分離</text>
+
+  <text x="344" y="58" class="t-xs end ink">神社</text>
+  <text x="344" y="206" class="t-xs end ink">寺</text>
+
+  <!-- 時代の目盛り -->
+  <path d="M16 232 H344" class="st-line" stroke-width="1.5"/>
+  <path d="M84 227 V237 M150 227 V237 M280 227 V237" class="st-line" stroke-width="1.5"/>
+  <g class="t-xs mid soft">
+    <text x="30" y="252">古代</text>
+    <text x="84" y="252">6世紀</text>
+    <text x="150" y="252">8世紀〜</text>
+    <text x="280" y="252">1868</text>
+  </g>
+  <text x="344" y="252" class="t-xs end soft">今</text>
+  <text x="180" y="272" class="t-xs mid soft">今も、初詣は神社、お盆やお葬式は寺という人が多い</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- ことばのしくみ：音（下）→ 文の組み立て（中）→ 考え（上）と積み上がる -->
+  <text x="16" y="24" class="t-m ink">小さな単位から積み上がる</text>
+
+  <!-- 上：考え -->
+  <rect x="72" y="38" width="216" height="66" rx="10" class="fl"/>
+  <text x="180" y="62" class="t-m mid on" font-weight="700">考え</text>
+  <text x="180" y="80" class="t-xs mid on">区切り方で、ものの見方は変わる？</text>
+  <text x="180" y="96" class="t-xs mid on">（ことばと思考）</text>
+
+  <!-- 中：文 -->
+  <rect x="40" y="114" width="280" height="80" rx="10" class="tint"/>
+  <text x="64" y="150" class="t-m mid ink" font-weight="700">文</text>
+  <rect x="90" y="132" width="54" height="28" rx="6" class="paper"/>
+  <path d="M96 132 H138 A6 6 0 0 1 144 138 V154 A6 6 0 0 1 138 160 H96 A6 6 0 0 1 90 154 V138 A6 6 0 0 1 96 132 Z" class="st" fill="none" stroke-width="1.2"/>
+  <text x="117" y="151" class="t-s mid ink">私は</text>
+  <rect x="150" y="132" width="74" height="28" rx="6" class="soft" opacity="0.5"/>
+  <text x="187" y="151" class="t-s mid ink">りんごを</text>
+  <rect x="230" y="132" width="62" height="28" rx="6" class="fl"/>
+  <text x="261" y="151" class="t-s mid on">食べる</text>
+  <text x="191" y="182" class="t-xs mid soft">S・O・V の順に並べる（語順のタイプ）</text>
+
+  <!-- 下：音 -->
+  <rect x="12" y="204" width="336" height="88" rx="10" class="tint"/>
+  <text x="40" y="254" class="t-m mid ink" font-weight="700">音</text>
+  <text x="76" y="232" class="t-xs soft">母音</text>
+  <text x="112" y="234" class="t-m ink" letter-spacing="6">a i u e o</text>
+  <text x="76" y="260" class="t-xs soft">子音</text>
+  <text x="112" y="262" class="t-m ink" letter-spacing="6">k s t n m …</text>
+  <text x="196" y="284" class="t-xs mid soft">声帯でつくり、舌と唇で変える（声の出る仕組み）</text>
+</svg>

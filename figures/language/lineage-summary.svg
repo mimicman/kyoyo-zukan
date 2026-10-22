@@ -1,0 +1,37 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 系統と変化：祖語から枝分かれ（語族）、枝の中で変化、方言に分かれる、ほかの枝から借りる -->
+  <text x="16" y="24" class="t-m ink">分かれる・変わる・借りる</text>
+
+  <!-- 祖語 -->
+  <circle cx="40" cy="130" r="17" class="fl"/>
+  <text x="40" y="134" class="t-xs mid on">祖語</text>
+
+  <!-- 枝 -->
+  <path d="M57 130 H90 C120 130 120 60 150 60 H262" class="st" stroke-width="2.5" fill="none"/>
+  <path d="M90 130 C120 130 120 180 150 180 H170" class="st" stroke-width="2.5" fill="none"/>
+  <path d="M170 180 C190 180 190 140 210 140 H290" class="st" stroke-width="2.5" fill="none"/>
+  <path d="M170 180 C190 180 190 216 210 216 H290" class="st" stroke-width="2.5" fill="none"/>
+  <!-- 方言に分かれる細い枝 -->
+  <path d="M262 60 L290 48 M262 60 H290 M262 60 L290 72" class="st-soft" stroke-width="1.5"/>
+
+  <text x="298" y="64" class="t-s ink">ロシア語</text>
+  <text x="298" y="144" class="t-s ink">ドイツ語</text>
+  <text x="298" y="220" class="t-s ink">英語</text>
+
+  <text x="80" y="96" class="t-xs mid ink halo">①分かれる</text>
+  <text x="262" y="92" class="t-xs mid ink">③地域ごとに方言</text>
+  <circle cx="228" cy="140" r="3.5" class="soft"/>
+  <circle cx="250" cy="140" r="3.5" class="soft"/>
+  <circle cx="272" cy="140" r="3.5" class="soft"/>
+  <text x="250" y="126" class="t-xs mid ink">②音や意味が変わる</text>
+
+  <!-- ④ 借用 -->
+  <rect x="196" y="248" width="92" height="26" rx="13" class="bgc"/>
+  <text x="242" y="265" class="t-xs mid ink">フランス語など</text>
+  <path d="M242 248 V226" class="st-f dash" stroke-width="2" marker-end="url(#a-language)"/>
+  <text x="252" y="242" class="t-xs ink">④借りる</text>
+
+  <!-- 時間 -->
+  <path d="M20 290 H170" class="st-soft" stroke-width="1.2" marker-end="url(#a-soft)"/>
+  <text x="20" y="282" class="t-xs soft">昔 → 今</text>
+</svg>

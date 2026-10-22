@@ -1,0 +1,54 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 地球と気候：二つの原因（陸と海の配置・地軸の傾き）→ 気候 → 暮らし -->
+  <text x="16" y="24" class="t-m ink">二つの原因が気候を決め、暮らしを決める</text>
+
+  <!-- 原因1：陸と海の配置 -->
+  <rect x="12" y="36" width="164" height="96" rx="10" class="bgc"/>
+  <text x="94" y="56" class="t-s mid ink" font-weight="700">陸と海の配置</text>
+  <rect x="24" y="66" width="140" height="38" rx="6" class="tint"/>
+  <path d="M24 104 V82 C46 76 62 70 84 72 C104 74 108 90 128 92 C142 94 154 98 164 104 Z" class="soft" opacity="0.55"/>
+  <text x="50" y="98" class="t-xs mid ink">陸</text>
+  <text x="140" y="82" class="t-xs mid ink">海</text>
+  <text x="94" y="122" class="t-xs mid soft">海の近くは温度差が小さい</text>
+
+  <!-- 原因2：地軸の傾き -->
+  <rect x="184" y="36" width="164" height="96" rx="10" class="bgc"/>
+  <text x="266" y="56" class="t-s mid ink" font-weight="700">地軸の傾き</text>
+  <circle cx="240" cy="86" r="17" class="tint"/>
+  <circle cx="240" cy="86" r="17" class="st" fill="none" stroke-width="1.2"/>
+  <path d="M232 66 L248 106" class="st" stroke-width="1.5"/>
+  <path d="M223 86 H257" class="st-soft" stroke-width="1"/>
+  <circle cx="320" cy="86" r="10" class="fl"/>
+  <path d="M320 70 V66 M320 102 V106 M336 86 H340 M309 75 L306 72 M331 75 L334 72 M309 97 L306 100 M331 97 L334 100" class="st-f" stroke-width="1.5"/>
+  <path d="M304 86 H264" class="st-soft dash" stroke-width="1.2" marker-end="url(#a-soft)"/>
+  <text x="266" y="122" class="t-xs mid soft">太陽の高さと昼の長さ</text>
+
+  <!-- 合わさって気候になる -->
+  <path d="M94 132 L146 150" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/>
+  <path d="M266 132 L214 150" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/>
+  <rect x="90" y="154" width="180" height="44" rx="10" class="fl"/>
+  <text x="180" y="174" class="t-m mid on" font-weight="700">気候</text>
+  <text x="180" y="190" class="t-xs mid on">気温・雨・季節の差</text>
+  <path d="M180 198 V212" class="st-f" stroke-width="2" marker-end="url(#a-geography)"/>
+
+  <!-- 結果：暮らし -->
+  <rect x="12" y="216" width="336" height="76" rx="10" class="bgc"/>
+  <text x="26" y="240" class="t-s ink" font-weight="700">暮らし</text>
+  <text x="26" y="256" class="t-xs soft">家・服・食</text>
+  <!-- 高床の家 -->
+  <path d="M100 248 L124 232 L148 248 Z" class="soft"/>
+  <rect x="106" y="248" width="36" height="12" class="tint"/>
+  <path d="M106 248 H142 V260 H106 Z M110 260 V270 M138 260 V270" class="st" fill="none" stroke-width="1.2"/>
+  <text x="124" y="285" class="t-xs mid ink">暑い：高床</text>
+  <!-- 厚い壁の家 -->
+  <rect x="194" y="238" width="44" height="32" class="soft"/>
+  <rect x="212" y="248" width="8" height="8" class="paper"/>
+  <text x="216" y="285" class="t-xs mid ink">乾燥：厚い壁</text>
+  <!-- 二重窓の家 -->
+  <path d="M284 246 L304 228 L324 246 Z" class="soft"/>
+  <rect x="288" y="246" width="32" height="24" class="tint"/>
+  <path d="M288 246 H320 V270 H288 Z" class="st" fill="none" stroke-width="1.2"/>
+  <rect x="297" y="251" width="14" height="12" class="paper"/>
+  <path d="M297 251 H311 V263 H297 Z M300 254 H308 V260 H300 Z" class="st" fill="none" stroke-width="1"/>
+  <text x="304" y="285" class="t-xs mid ink">寒い：二重窓</text>
+</svg>

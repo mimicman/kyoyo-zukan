@@ -1,0 +1,29 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 3つの層（やる気・欲求・無意識）が、それぞれ行動を動かす -->
+  <text x="12" y="24" class="t-m ink">見えない力から、行動が生まれる</text>
+
+  <rect x="12" y="40" width="216" height="58" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="24" y="62" class="t-s ink" font-weight="700">やる気（動機づけ）</text>
+  <text x="24" y="84" class="t-xs soft">楽しいから？ ごほうびのため？</text>
+
+  <rect x="12" y="106" width="216" height="58" rx="10" class="tint"/>
+  <text x="24" y="128" class="t-s ink" font-weight="700">欲求の階層</text>
+  <text x="24" y="150" class="t-xs soft">生理→安全→所属→承認→自己実現</text>
+
+  <path d="M8 170 H232" class="st-soft dash" stroke-width="1.2"/>
+  <text x="232" y="184" class="t-xs end soft">ここから下は気づけない</text>
+
+  <rect x="12" y="190" width="216" height="76" rx="10" class="fl"/>
+  <text x="24" y="212" class="t-s on" font-weight="700">無意識</text>
+  <text x="24" y="232" class="t-xs on">気づかない欲求や記憶</text>
+  <text x="24" y="250" class="t-xs on">夢や言い間違いに表れるとした</text>
+
+  <rect x="272" y="120" width="76" height="64" rx="12" class="fl"/>
+  <text x="310" y="150" class="t-l mid on">行動</text>
+  <text x="310" y="170" class="t-xs mid on">選ぶ・続ける</text>
+  <path d="M232 70 Q256 76 270 126" class="st-f" stroke-width="2" marker-end="url(#a-psychology)"/>
+  <path d="M232 136 H266" class="st-f" stroke-width="2" marker-end="url(#a-psychology)"/>
+  <path d="M232 228 Q258 220 272 190" class="st-f" stroke-width="2" marker-end="url(#a-psychology)"/>
+  <text x="310" y="210" class="t-xs mid soft">理由は</text>
+  <text x="310" y="224" class="t-xs mid soft">重なりあう</text>
+</svg>

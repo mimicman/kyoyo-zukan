@@ -1,0 +1,35 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- データから判断：①集める→②読み解く→③見せる。各段階の下に落とし穴 -->
+  <text x="16" y="24" class="t-m ink">データから判断するまでの3段階</text>
+  <circle cx="62" cy="97" r="38" class="tint"/>
+  <circle cx="62" cy="97" r="38" class="st-soft" stroke-width="1"/>
+  <circle cx="43" cy="72" r="2.4" class="soft"/><circle cx="52" cy="72" r="2.4" class="soft"/><circle cx="61" cy="72" r="2.4" class="soft"/><circle cx="70" cy="72" r="3.6" class="fl"/><circle cx="79" cy="72" r="2.4" class="soft"/><circle cx="38" cy="82" r="2.4" class="soft"/><circle cx="47" cy="82" r="2.4" class="soft"/><circle cx="56" cy="82" r="2.4" class="soft"/><circle cx="65" cy="82" r="2.4" class="soft"/><circle cx="74" cy="82" r="2.4" class="soft"/><circle cx="83" cy="82" r="2.4" class="soft"/><circle cx="92" cy="82" r="3.6" class="fl"/><circle cx="34" cy="92" r="2.4" class="soft"/><circle cx="43" cy="92" r="2.4" class="soft"/><circle cx="52" cy="92" r="2.4" class="soft"/><circle cx="61" cy="92" r="2.4" class="soft"/><circle cx="70" cy="92" r="2.4" class="soft"/><circle cx="79" cy="92" r="3.6" class="fl"/><circle cx="88" cy="92" r="2.4" class="soft"/><circle cx="38" cy="102" r="2.4" class="soft"/><circle cx="47" cy="102" r="2.4" class="soft"/><circle cx="56" cy="102" r="2.4" class="soft"/><circle cx="65" cy="102" r="2.4" class="soft"/><circle cx="74" cy="102" r="2.4" class="soft"/><circle cx="83" cy="102" r="3.6" class="fl"/><circle cx="92" cy="102" r="2.4" class="soft"/><circle cx="34" cy="112" r="2.4" class="soft"/><circle cx="43" cy="112" r="2.4" class="soft"/><circle cx="52" cy="112" r="2.4" class="soft"/><circle cx="61" cy="112" r="2.4" class="soft"/><circle cx="70" cy="112" r="3.6" class="fl"/><circle cx="79" cy="112" r="2.4" class="soft"/><circle cx="88" cy="112" r="2.4" class="soft"/><circle cx="47" cy="122" r="2.4" class="soft"/><circle cx="56" cy="122" r="2.4" class="soft"/><circle cx="65" cy="122" r="2.4" class="soft"/><circle cx="74" cy="122" r="2.4" class="soft"/><circle cx="83" cy="122" r="2.4" class="soft"/>
+  <text x="62" y="166" class="t-s mid ink" font-weight="700">① 集める</text>
+  <text x="62" y="182" class="t-xs mid soft">全体からくじで選ぶ</text>
+
+  <path d="M142 146 H222 M142 146 V66" class="st" stroke-width="1.5"/>
+  <circle cx="150" cy="140" r="3.5" class="fl"/><circle cx="158" cy="128" r="3.5" class="fl"/><circle cx="166" cy="134" r="3.5" class="fl"/><circle cx="172" cy="118" r="3.5" class="fl"/><circle cx="180" cy="122" r="3.5" class="fl"/><circle cx="186" cy="108" r="3.5" class="fl"/><circle cx="194" cy="112" r="3.5" class="fl"/><circle cx="200" cy="96" r="3.5" class="fl"/><circle cx="208" cy="100" r="3.5" class="fl"/><circle cx="212" cy="86" r="3.5" class="fl"/>
+  <path d="M146 144 L218 82" class="st-soft dash" stroke-width="1.5"/>
+  <text x="180" y="166" class="t-s mid ink" font-weight="700">② 読み解く</text>
+  <text x="180" y="182" class="t-xs mid soft">一緒に動くか見る</text>
+
+  <path d="M256 146 H340" class="st" stroke-width="1.5"/>
+  <rect x="266" y="92" width="26" height="54" class="soft"/>
+  <rect x="304" y="78" width="26" height="68" class="fl"/>
+  <text x="298" y="166" class="t-s mid ink" font-weight="700">③ 見せる</text>
+  <text x="298" y="182" class="t-xs mid soft">グラフで伝える</text>
+
+  <path d="M106 100 H132" class="st-f" stroke-width="2" marker-end="url(#a-statistics)"/>
+  <path d="M228 100 H250" class="st-f" stroke-width="2" marker-end="url(#a-statistics)"/>
+
+  <text x="16" y="210" class="t-xs soft">落とし穴</text>
+  <rect x="12" y="216" width="104" height="52" rx="10" class="bgc"/>
+  <text x="64" y="238" class="t-xs mid ink" font-weight="700">選び方の偏り</text>
+  <text x="64" y="255" class="t-xs mid soft">答えたい人だけ</text>
+  <rect x="128" y="216" width="104" height="52" rx="10" class="bgc"/>
+  <text x="180" y="238" class="t-xs mid ink" font-weight="700">相関≠因果</text>
+  <text x="180" y="255" class="t-xs mid soft">第3の要因かも</text>
+  <rect x="244" y="216" width="104" height="52" rx="10" class="bgc"/>
+  <text x="296" y="238" class="t-xs mid ink" font-weight="700">軸の切り方</text>
+  <text x="296" y="255" class="t-xs mid soft">差が大きく見える</text>
+</svg>

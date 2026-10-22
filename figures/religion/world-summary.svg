@@ -1,0 +1,50 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 宗教を見渡す：生まれた地域ごとに3つのまとまり。濃い色は民族を越えて広がった宗教 -->
+  <text x="16" y="22" class="t-m ink">生まれた地域で、3つのまとまりに</text>
+
+  <!-- 列の見出し -->
+  <rect x="12" y="36" width="108" height="26" rx="8" class="bgc st-soft" stroke-width="1"/>
+  <text x="66" y="54" class="t-s mid ink" font-weight="700">中東</text>
+  <rect x="126" y="36" width="108" height="26" rx="8" class="bgc st-soft" stroke-width="1"/>
+  <text x="180" y="54" class="t-s mid ink" font-weight="700">インド</text>
+  <rect x="240" y="36" width="108" height="26" rx="8" class="bgc st-soft" stroke-width="1"/>
+  <text x="294" y="54" class="t-s mid ink" font-weight="700">日本</text>
+
+  <!-- 中東：ユダヤ教から2つが生まれる -->
+  <rect x="20" y="74" width="92" height="28" rx="14" class="tint st-soft" stroke-width="1"/>
+  <text x="66" y="93" class="t-s mid ink">ユダヤ教</text>
+  <path d="M45 102 V116" class="st-f" stroke-width="2" marker-end="url(#a-religion)"/>
+  <path d="M88 102 V164" class="st-f" stroke-width="2" marker-end="url(#a-religion)"/>
+  <rect x="14" y="120" width="62" height="28" rx="14" class="fl"/>
+  <text x="45" y="139" class="t-xs mid on" font-weight="700">キリスト教</text>
+  <rect x="42" y="168" width="78" height="28" rx="14" class="fl"/>
+  <text x="81" y="187" class="t-xs mid on" font-weight="700">イスラム教</text>
+  <text x="66" y="218" class="t-s mid fl" font-weight="700">唯一の神</text>
+  <text x="66" y="234" class="t-xs mid soft">聖書・クルアーン</text>
+
+  <!-- インド：輪廻の考えから仏教が生まれる -->
+  <rect x="134" y="74" width="92" height="28" rx="14" class="tint st-soft" stroke-width="1"/>
+  <text x="180" y="93" class="t-s mid ink">ヒンドゥー教</text>
+  <path d="M180 102 V116" class="st-f" stroke-width="2" marker-end="url(#a-religion)"/>
+  <rect x="134" y="120" width="92" height="28" rx="14" class="fl"/>
+  <text x="180" y="139" class="t-s mid on" font-weight="700">仏教</text>
+  <text x="180" y="218" class="t-s mid fl" font-weight="700">輪廻と解脱</text>
+  <text x="180" y="234" class="t-xs mid soft">仏典（お経）</text>
+
+  <!-- 日本：神道に仏教が伝わる -->
+  <rect x="248" y="74" width="92" height="28" rx="14" class="tint st-soft" stroke-width="1"/>
+  <text x="294" y="93" class="t-s mid ink">神道</text>
+  <path d="M226 134 C250 134 262 150 270 166" class="st-f dash" stroke-width="2" marker-end="url(#a-religion)"/>
+  <text x="200" y="168" class="t-xs mid soft">中国経由で</text>
+  <path d="M294 102 V164" class="st-soft" stroke-width="2" marker-end="url(#a-soft)"/>
+  <rect x="248" y="168" width="92" height="28" rx="14" class="paper st-f" stroke-width="1.5"/>
+  <text x="294" y="187" class="t-s mid ink">神仏習合</text>
+  <text x="294" y="218" class="t-s mid fl" font-weight="700">八百万の神</text>
+  <text x="294" y="234" class="t-xs mid soft">一つの経典はない</text>
+
+  <!-- 凡例 -->
+  <rect x="16" y="252" width="22" height="14" rx="7" class="fl"/>
+  <text x="44" y="263" class="t-xs ink">民族を越えて広がった</text>
+  <rect x="200" y="252" width="22" height="14" rx="7" class="tint st-soft" stroke-width="1"/>
+  <text x="228" y="263" class="t-xs ink">主に一つの民族・地域</text>
+</svg>

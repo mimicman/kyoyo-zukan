@@ -1,0 +1,28 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 社会化→役割と規範→ラベリング→…と巡る、個人と社会の関係 -->
+  <text x="12" y="24" class="t-m ink">社会が人をつくり、人が社会を動かす</text>
+
+  <rect x="112" y="40" width="136" height="48" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="180" y="60" class="t-s mid ink" font-weight="700">① 社会化</text>
+  <text x="180" y="78" class="t-xs mid soft">ことばとルールを学ぶ</text>
+
+  <rect x="212" y="196" width="136" height="48" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="280" y="216" class="t-s mid ink" font-weight="700">② 役割と規範</text>
+  <text x="280" y="234" class="t-xs mid soft">場面ごとに役を演じる</text>
+
+  <rect x="12" y="196" width="136" height="48" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="80" y="216" class="t-s mid ink" font-weight="700">③ ラベリング</text>
+  <text x="80" y="234" class="t-xs mid soft">周りの見方で変わる</text>
+
+  <!-- 時計回りの矢印 -->
+  <path d="M252 66 Q318 80 300 190" class="st-f" stroke-width="2.5" fill="none" marker-end="url(#a-sociology)"/>
+  <path d="M208 236 Q180 260 152 236" class="st-f" stroke-width="2.5" fill="none" marker-end="url(#a-sociology)"/>
+  <path d="M60 192 Q42 82 106 66" class="st-f" stroke-width="2.5" fill="none" marker-end="url(#a-sociology)"/>
+
+  <!-- 中心の人 -->
+  <circle cx="180" cy="146" r="38" class="fl"/>
+  <circle cx="180" cy="132" r="9" class="on"/>
+  <path d="M164 160 Q180 140 196 160" class="on" />
+  <text x="180" y="174" class="t-s mid on">わたし</text>
+  <text x="180" y="272" class="t-xs mid soft">人も周りに働きかけ、社会を変えていく</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- データとAI：データベースにためたデータを、機械学習が使う。ニューラルネットは機械学習の一種、言語モデルはさらにその一種（入れ子） -->
+  <text x="16" y="24" class="t-m ink">ためたデータから、機械が学ぶ</text>
+
+  <!-- データベース（円筒） -->
+  <path d="M20 112 V178 A30 9 0 0 0 80 178 V112" class="tint"/>
+  <ellipse cx="50" cy="112" rx="30" ry="9" class="fl"/>
+  <path d="M20 112 V178 A30 9 0 0 0 80 178 V112" class="st-soft" stroke-width="1"/>
+  <path d="M20 134 A30 9 0 0 0 80 134 M20 156 A30 9 0 0 0 80 156" class="st-line" stroke-width="1"/>
+  <text x="50" y="208" class="t-xs mid ink" font-weight="700">データベース</text>
+  <text x="50" y="224" class="t-xs mid soft">表にためて</text>
+  <text x="50" y="238" class="t-xs mid soft">取り出す</text>
+  <path d="M86 146 H110" class="st-f" stroke-width="2" marker-end="url(#a-technology)"/>
+  <text x="98" y="136" class="t-xs mid soft">データ</text>
+
+  <!-- 入れ子：機械学習 ⊃ ニューラルネット ⊃ 言語モデル -->
+  <rect x="114" y="44" width="234" height="226" rx="16" class="tint"/>
+  <text x="128" y="66" class="t-s ink" font-weight="700">機械学習</text>
+  <text x="128" y="82" class="t-xs soft">例からルールを見つける</text>
+  <rect x="130" y="94" width="202" height="164" rx="14" class="paper"/>
+  <rect x="130" y="94" width="202" height="164" rx="14" class="st-soft" stroke-width="1"/>
+  <text x="144" y="116" class="t-s ink" font-weight="700">ニューラルネット</text>
+  <text x="144" y="132" class="t-xs soft">点と線の重みを直して覚える</text>
+  <rect x="146" y="146" width="170" height="98" rx="12" class="fl"/>
+  <text x="160" y="168" class="t-s on" font-weight="700">生成AI・言語モデル</text>
+  <text x="160" y="186" class="t-xs on">大量の文章で学び</text>
+  <text x="160" y="201" class="t-xs on">次の語を予測して</text>
+  <text x="160" y="216" class="t-xs on">文を作る</text>
+  <!-- 小さなネットワークの絵 -->
+  <circle cx="276" cy="196" r="4" class="paper"/><circle cx="276" cy="220" r="4" class="paper"/>
+  <circle cx="300" cy="184" r="4" class="paper"/><circle cx="300" cy="208" r="4" class="paper"/><circle cx="300" cy="232" r="4" class="paper"/>
+  <path d="M280 196 L296 184 M280 196 L296 208 M280 196 L296 232 M280 220 L296 184 M280 220 L296 208 M280 220 L296 232" class="st-line" stroke-width="1"/>
+  <text x="56" y="256" class="t-xs mid soft">内側は外側の</text>
+  <text x="56" y="270" class="t-xs mid soft">一種</text>
+</svg>

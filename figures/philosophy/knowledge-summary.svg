@@ -1,0 +1,44 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 確かな知識：合理論（左の流れ）と経験論（右の流れ）が、カントで合流する。縦は時代 -->
+  <text x="16" y="22" class="t-m ink">2つの流れが、カントで合流する</text>
+
+  <!-- 左の年の目盛り -->
+  <path d="M46 50 V236" class="st-line" stroke-width="1.5"/>
+  <g class="t-xs end soft">
+    <text x="40" y="70">1637</text>
+    <text x="40" y="120">1690</text>
+    <text x="40" y="170">1739</text>
+    <text x="40" y="246">1781</text>
+  </g>
+
+  <!-- 流れの見出し -->
+  <text x="100" y="46" class="t-s mid fl" font-weight="700">合理論（大陸）</text>
+  <text x="280" y="46" class="t-s mid ink" font-weight="700">経験論（イギリス）</text>
+
+  <!-- 2本の流れ -->
+  <path d="M100 56 C100 150 150 180 180 228" class="st-f" stroke-width="6" stroke-linecap="round"/>
+  <path d="M280 56 C280 150 210 180 180 228" class="st-soft" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- 合理論の人物 -->
+  <circle cx="100" cy="66" r="6" class="fl"/>
+  <text x="110" y="64" class="t-xs ink" font-weight="700">デカルト</text>
+  <text x="110" y="78" class="t-xs soft">疑う私は残る</text>
+  <text x="96" y="118" class="t-xs end soft">スピノザ</text>
+  <text x="96" y="132" class="t-xs end soft">ライプニッツ</text>
+  <text x="100" y="156" class="t-xs end fl">理性で推論</text>
+
+  <!-- 経験論の人物 -->
+  <circle cx="269" cy="116" r="6" class="ink"/>
+  <text x="259" y="114" class="t-xs end ink" font-weight="700">ロック</text>
+  <text x="259" y="128" class="t-xs end soft">心は白紙</text>
+  <circle cx="241" cy="159" r="6" class="ink"/>
+  <text x="251" y="157" class="t-xs ink" font-weight="700">ヒューム</text>
+  <text x="251" y="171" class="t-xs soft">因果も習慣？</text>
+  <path d="M256 182 C262 196 264 208 264 220" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="272" y="204" class="t-xs soft">疑いで揺さぶる</text>
+
+  <!-- 合流：カント -->
+  <rect x="76" y="226" width="208" height="44" rx="12" class="fl"/>
+  <text x="180" y="245" class="t-s mid on" font-weight="700">カント『純粋理性批判』</text>
+  <text x="180" y="262" class="t-xs mid on">材料は経験から、整理する枠は心から</text>
+</svg>

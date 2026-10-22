@@ -1,0 +1,49 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左：村の共同体（全員がつながる）、右：近代の3つの変化 -->
+  <text x="12" y="24" class="t-m ink">村の暮らしから、都市と大きな組織へ</text>
+
+  <rect x="12" y="52" width="104" height="180" rx="12" class="tint"/>
+  <g class="st" stroke-width="1.5">
+    <path d="M64 92 L95 114 L83 150 L45 150 L33 114 Z"/>
+    <path d="M64 92 L83 150 L33 114 L95 114 L45 150 Z"/>
+  </g>
+  <circle cx="64" cy="92" r="6" class="ink"/>
+  <circle cx="95" cy="114" r="6" class="ink"/>
+  <circle cx="83" cy="150" r="6" class="ink"/>
+  <circle cx="45" cy="150" r="6" class="ink"/>
+  <circle cx="33" cy="114" r="6" class="ink"/>
+  <text x="64" y="184" class="t-s mid ink" font-weight="700">共同体</text>
+  <text x="64" y="204" class="t-xs mid soft">まるごとの</text>
+  <text x="64" y="218" class="t-xs mid soft">付き合い</text>
+  <text x="64" y="70" class="t-xs mid soft">村・家族</text>
+
+  <path d="M120 130 Q150 120 174 76" class="st-f" stroke-width="2" fill="none" marker-end="url(#a-sociology)"/>
+  <path d="M120 140 H172" class="st-f" stroke-width="2" marker-end="url(#a-sociology)"/>
+  <path d="M120 150 Q150 160 174 206" class="st-f" stroke-width="2" fill="none" marker-end="url(#a-sociology)"/>
+  <text x="146" y="134" class="t-xs mid fl halo">近代化</text>
+
+  <!-- 利益社会 -->
+  <g class="st-soft" stroke-width="1.5"><path d="M186 58 L214 50"/><path d="M196 92 L228 98"/></g>
+  <g class="soft"><circle cx="186" cy="58" r="5"/><circle cx="214" cy="50" r="5"/><circle cx="238" cy="72" r="5"/><circle cx="196" cy="92" r="5"/><circle cx="228" cy="98" r="5"/></g>
+  <text x="252" y="62" class="t-s ink" font-weight="700">利益社会</text>
+  <text x="252" y="80" class="t-xs soft">目的ごとに</text>
+  <text x="252" y="94" class="t-xs soft">つながる</text>
+
+  <!-- 官僚制 -->
+  <path d="M212 116 L182 170 L242 170 Z" class="fl"/>
+  <path d="M199 140 H225 M191 156 H233" class="st-line" stroke-width="1.5"/>
+  <text x="252" y="134" class="t-s ink" font-weight="700">官僚制</text>
+  <text x="252" y="152" class="t-xs soft">規則と階層で</text>
+  <text x="252" y="166" class="t-xs soft">大組織を動かす</text>
+
+  <!-- 個人化 -->
+  <circle cx="186" cy="214" r="6" class="fl"/>
+  <g class="st-f" stroke-width="2" fill="none">
+    <path d="M192 214 Q210 214 236 192"/><path d="M192 214 H238"/><path d="M192 214 Q210 214 236 236"/>
+  </g>
+  <text x="252" y="206" class="t-s ink" font-weight="700">個人化</text>
+  <text x="252" y="224" class="t-xs soft">人生を自分で</text>
+  <text x="252" y="238" class="t-xs soft">選び、背負う</text>
+
+  <text x="12" y="266" class="t-xs soft">19世紀〜 工業化と都市化で、つながり方と生き方が変わった</text>
+</svg>

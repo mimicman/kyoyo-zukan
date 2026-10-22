@@ -1,0 +1,39 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- ネットとWeb：ブラウザとサーバーの間を、ルーターの網が運ぶ。Webは頼む・返すの約束、暗号は中身を守る -->
+  <text x="16" y="24" class="t-m ink">1回のページ表示に、3つの仕組み</text>
+
+  <rect x="12" y="66" width="72" height="56" rx="8" class="tint"/>
+  <rect x="12" y="66" width="72" height="56" rx="8" class="st-soft" stroke-width="1"/>
+  <text x="48" y="90" class="t-xs mid ink" font-weight="700">あなた</text>
+  <text x="48" y="106" class="t-xs mid soft">ブラウザ</text>
+  <rect x="276" y="66" width="72" height="56" rx="8" class="tint"/>
+  <rect x="276" y="66" width="72" height="56" rx="8" class="st-soft" stroke-width="1"/>
+  <text x="312" y="90" class="t-xs mid ink" font-weight="700">サーバー</text>
+  <text x="312" y="106" class="t-xs mid soft">ページを持つ</text>
+
+  <!-- ルーターの網 -->
+  <path d="M84 94 L126 78 L180 62 L234 78 L276 94 M126 78 L150 118 L210 118 L234 78 M180 62 L150 118 M180 62 L210 118 M84 94 L150 118 M210 118 L276 94" class="st-line" stroke-width="2"/>
+  <circle cx="126" cy="78" r="7" class="soft"/>
+  <circle cx="180" cy="62" r="7" class="soft"/>
+  <circle cx="234" cy="78" r="7" class="soft"/>
+  <circle cx="150" cy="118" r="7" class="soft"/>
+  <circle cx="210" cy="118" r="7" class="soft"/>
+  <!-- 鍵のかかった小包 -->
+  <rect x="166" y="86" width="28" height="20" rx="3" class="fl"/>
+  <path d="M174 86 v-5 a6 6 0 0 1 12 0 v5" class="st-f" stroke-width="2"/>
+  <text x="180" y="100" class="t-xs mid on">③</text>
+  <text x="180" y="140" class="t-xs mid soft">ルーター（中継機）の網</text>
+
+  <path d="M48 166 H312" class="st-f" stroke-width="1.5" marker-end="url(#a-technology)"/>
+  <text x="180" y="161" class="t-xs mid fl halo">② 頼む（URL）</text>
+  <path d="M312 180 H48" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="180" y="184" class="t-xs mid ink halo">返す（HTML）</text>
+
+  <rect x="12" y="194" width="336" height="80" rx="10" class="bgc"/>
+  <text x="24" y="216" class="t-xs ink" font-weight="700">① 運ぶ</text>
+  <text x="80" y="216" class="t-xs soft">インターネット：小包に分け、網の目で中継</text>
+  <text x="24" y="240" class="t-xs ink" font-weight="700">② 頼む</text>
+  <text x="80" y="240" class="t-xs soft">Web：URLで頼み、ページが返ってくる</text>
+  <text x="24" y="264" class="t-xs ink" font-weight="700">③ 守る</text>
+  <text x="80" y="264" class="t-xs soft">公開鍵暗号：途中で中身を読まれない</text>
+</svg>

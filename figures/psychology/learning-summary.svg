@@ -1,0 +1,42 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：経験で反応が結びつく（条件反射）、下：年齢とともに上がる発達の階段 -->
+  <text x="12" y="24" class="t-m ink">経験で学び、年齢とともに育つ</text>
+
+  <rect x="12" y="36" width="336" height="76" rx="12" class="tint"/>
+  <text x="24" y="56" class="t-s ink" font-weight="700">条件反射：経験で反応が結びつく</text>
+  <rect x="24" y="74" width="44" height="24" rx="6" class="bgc"/>
+  <text x="46" y="91" class="t-s mid ink">ベル</text>
+  <text x="78" y="91" class="t-s mid ink">＋</text>
+  <rect x="88" y="74" width="44" height="24" rx="6" class="bgc"/>
+  <text x="110" y="91" class="t-s mid ink">エサ</text>
+  <path d="M138 86 H182" class="st-f" stroke-width="2" marker-end="url(#a-psychology)"/>
+  <text x="160" y="78" class="t-xs mid fl">くり返す</text>
+  <rect x="190" y="74" width="44" height="24" rx="6" class="fl"/>
+  <text x="212" y="91" class="t-s mid on">ベル</text>
+  <path d="M240 86 H272" class="st-f" stroke-width="2" marker-end="url(#a-psychology)"/>
+  <text x="280" y="91" class="t-s ink">よだれ</text>
+
+  <!-- 学習はどの年齢でも -->
+  <path d="M60 114 V212" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M140 114 V188" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M220 114 V164" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <path d="M300 114 V140" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="100" y="146" class="t-xs mid soft">どの年齢でも</text>
+  <text x="100" y="160" class="t-xs mid soft">経験から学ぶ</text>
+
+  <!-- 発達の階段 -->
+  <rect x="20" y="220" width="80" height="36" class="tint st-f" stroke-width="1.2"/>
+  <rect x="100" y="196" width="80" height="60" class="tint st-f" stroke-width="1.2"/>
+  <rect x="180" y="172" width="80" height="84" class="tint st-f" stroke-width="1.2"/>
+  <rect x="260" y="148" width="80" height="108" class="fl"/>
+  <text x="60" y="235" class="t-xs mid ink" font-weight="700">0〜2歳</text>
+  <text x="60" y="250" class="t-xs mid soft">体で知る</text>
+  <text x="140" y="212" class="t-xs mid ink" font-weight="700">2〜7歳</text>
+  <text x="140" y="227" class="t-xs mid soft">言葉で考える</text>
+  <text x="220" y="188" class="t-xs mid ink" font-weight="700">7〜11歳</text>
+  <text x="220" y="203" class="t-xs mid soft">筋道を立てる</text>
+  <text x="300" y="164" class="t-xs mid on" font-weight="700">11歳〜</text>
+  <text x="300" y="179" class="t-xs mid on">仮の話も考える</text>
+  <path d="M20 262 H336" class="st" stroke-width="1.5" marker-end="url(#a-ink)"/>
+  <text x="20" y="276" class="t-xs soft">年齢とともに考え方が段階的に変わる（子どもの発達）</text>
+</svg>

@@ -123,7 +123,8 @@ function buildPersonIndex() {
   data.people.forEach((p) => [p.name, ...(p.aliases || [])].forEach((n) => { if (n && n.length >= 2) personByName.set(n, p.id); }));
   const names = [...personByName.keys()].sort((a, b) => b.length - a.length)
     .map((n) => n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
-  personRe = names.length ? new RegExp(names.join("|"), "g") : null;
+  // カタカナ語の一部（「カントリー」の中の「カント」など）は人名として扱わない
+  personRe = names.length ? new RegExp(`(?<![ァ-ヶー])(?:${names.join("|")})(?![ァ-ヶー])`, "g") : null;
 }
 /** 文をエスケープし、辞典にある人名をボタンにする（1枚のカードで同じ人は最初の1回だけ） */
 function linkPeople(text, seen) {

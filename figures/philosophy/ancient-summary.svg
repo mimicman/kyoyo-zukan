@@ -1,0 +1,48 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 古代の知恵：同じころ、ギリシャ（上）と中国（下）で哲学が生まれた。横は時代 -->
+  <text x="16" y="24" class="t-m ink">同じころ、東と西で哲学が生まれた</text>
+
+  <!-- 上：ギリシャ（師から弟子へ） -->
+  <text x="16" y="74" class="t-s fl" font-weight="700">ギリシャ</text>
+  <text x="16" y="90" class="t-xs soft">アテネ</text>
+  <rect x="104" y="48" width="78" height="62" rx="10" class="tint"/>
+  <text x="143" y="68" class="t-xs mid soft">ソクラテス</text>
+  <text x="143" y="88" class="t-s mid ink" font-weight="700">無知の知</text>
+  <text x="143" y="102" class="t-xs mid soft">問い続ける</text>
+  <rect x="192" y="48" width="70" height="62" rx="10" class="tint"/>
+  <text x="227" y="68" class="t-xs mid soft">プラトン</text>
+  <text x="227" y="88" class="t-s mid ink" font-weight="700">イデア</text>
+  <text x="227" y="102" class="t-xs mid soft">洞窟の比喩</text>
+  <rect x="270" y="48" width="80" height="62" rx="10" class="tint"/>
+  <text x="310" y="68" class="t-xs mid soft">アリストテレス</text>
+  <text x="310" y="88" class="t-s mid ink" font-weight="700">中庸と目的</text>
+  <text x="310" y="102" class="t-xs mid soft">万学の祖</text>
+  <path d="M182 79 H190" class="st-f" stroke-width="2" marker-end="url(#a-philosophy)"/>
+  <path d="M262 79 H268" class="st-f" stroke-width="2" marker-end="url(#a-philosophy)"/>
+  <text x="227" y="42" class="t-xs mid fl">師 → 弟子 → その弟子</text>
+
+  <!-- 真ん中：時代の目盛り -->
+  <path d="M16 138 H344" class="st-line" stroke-width="1.5"/>
+  <path d="M90 132 V144 M190 132 V144 M290 132 V144" class="st-line" stroke-width="1.5"/>
+  <text x="90" y="128" class="t-xs mid soft">前6世紀</text>
+  <text x="190" y="128" class="t-xs mid soft">前5世紀</text>
+  <text x="290" y="128" class="t-xs mid soft">前4世紀</text>
+
+  <!-- 下：中国（春秋・戦国時代） -->
+  <text x="16" y="186" class="t-s fl" font-weight="700">中国</text>
+  <text x="16" y="202" class="t-xs soft">春秋・戦国</text>
+  <rect x="78" y="160" width="84" height="62" rx="10" class="fl"/>
+  <text x="120" y="180" class="t-xs mid on">孔子（儒家）</text>
+  <text x="120" y="200" class="t-s mid on" font-weight="700">仁と礼</text>
+  <text x="120" y="214" class="t-xs mid on">人の努力で</text>
+  <rect x="206" y="160" width="84" height="62" rx="10" class="paper st-f dash" stroke-width="1.5"/>
+  <text x="248" y="180" class="t-xs mid soft">老子（道家）</text>
+  <text x="248" y="200" class="t-s mid ink" font-weight="700">無為自然</text>
+  <text x="248" y="214" class="t-xs mid soft">時代は不明</text>
+  <path d="M168 191 H200" class="st-f" stroke-width="2" marker-start="url(#a-philosophy)" marker-end="url(#a-philosophy)"/>
+  <text x="184" y="184" class="t-xs mid fl">対比</text>
+
+  <!-- 一番下：共通の問い -->
+  <rect x="16" y="240" width="328" height="30" rx="10" class="bgc st-soft" stroke-width="1"/>
+  <text x="180" y="260" class="t-s mid ink">問い：本当のものは何か・どう生きるか</text>
+</svg>

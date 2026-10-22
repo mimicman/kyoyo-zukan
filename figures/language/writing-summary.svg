@@ -1,0 +1,43 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 文字：西（地中海）と東（東アジア）の二つの流れ。意味を表す字から音を表す字へ -->
+  <text x="16" y="24" class="t-m ink">絵と意味の字から、音の字へ</text>
+
+  <!-- 西の流れ -->
+  <text x="12" y="52" class="t-xs soft">西の流れ（地中海）</text>
+  <rect x="12" y="60" width="96" height="52" rx="10" class="tint"/>
+  <text x="60" y="82" class="t-s mid ink" font-weight="700">ヒエログリフ</text>
+  <text x="60" y="100" class="t-xs mid soft">絵と意味の字</text>
+  <path d="M110 86 H128" class="st-f" stroke-width="2" marker-end="url(#a-language)"/>
+  <rect x="132" y="60" width="96" height="52" rx="10" class="tint"/>
+  <text x="180" y="82" class="t-s mid ink" font-weight="700">フェニキア文字</text>
+  <text x="180" y="100" class="t-xs mid soft">子音だけ22字</text>
+  <path d="M230 86 H248" class="st-f" stroke-width="2" marker-end="url(#a-language)"/>
+  <rect x="252" y="60" width="96" height="52" rx="10" class="fl"/>
+  <text x="300" y="82" class="t-s mid on" font-weight="700">ラテン文字</text>
+  <text x="300" y="100" class="t-xs mid on">母音も書く ABC</text>
+  <text x="60" y="128" class="t-xs mid soft">前3000年ごろ</text>
+  <text x="180" y="128" class="t-xs mid soft">前11世紀ごろ</text>
+  <text x="300" y="128" class="t-xs mid soft">ギリシャ経由</text>
+
+  <!-- 東の流れ -->
+  <text x="12" y="162" class="t-xs soft">東の流れ（東アジア）</text>
+  <rect x="12" y="170" width="96" height="52" rx="10" class="tint"/>
+  <text x="60" y="192" class="t-s mid ink" font-weight="700">漢字</text>
+  <text x="60" y="210" class="t-xs mid soft">1字で1語</text>
+  <path d="M110 196 H128" class="st-f" stroke-width="2" marker-end="url(#a-language)"/>
+  <rect x="132" y="170" width="96" height="52" rx="10" class="tint"/>
+  <text x="180" y="192" class="t-s mid ink" font-weight="700">万葉仮名</text>
+  <text x="180" y="210" class="t-xs mid soft">漢字の音を借りる</text>
+  <path d="M230 196 H248" class="st-f" stroke-width="2" marker-end="url(#a-language)"/>
+  <rect x="252" y="170" width="96" height="52" rx="10" class="fl"/>
+  <text x="300" y="192" class="t-s mid on" font-weight="700">かな</text>
+  <text x="300" y="210" class="t-xs mid on">1字で1音節 あア</text>
+  <text x="60" y="238" class="t-xs mid soft">前13世紀ごろ</text>
+  <text x="180" y="238" class="t-xs mid soft">7〜8世紀</text>
+  <text x="300" y="238" class="t-xs mid soft">9世紀ごろ</text>
+
+  <!-- まとめの帯 -->
+  <rect x="12" y="254" width="336" height="36" rx="10" class="bgc"/>
+  <path d="M28 272 H76" class="st-f" stroke-width="2" marker-end="url(#a-language)"/>
+  <text x="86" y="276" class="t-xs ink">右へ進むほど、字の種類が少なくなる</text>
+</svg>

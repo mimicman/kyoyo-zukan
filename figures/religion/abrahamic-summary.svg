@@ -1,0 +1,48 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 一神教の流れ：ユダヤ教の幹から、キリスト教とイスラム教が枝分かれする。横は時代（等間隔ではない） -->
+  <text x="16" y="22" class="t-m ink">一つの幹から、枝が分かれる</text>
+
+  <!-- 共通の祖 -->
+  <circle cx="26" cy="110" r="9" class="ink"/>
+  <text x="14" y="138" class="t-xs soft">アブラハム</text>
+  <text x="14" y="152" class="t-xs soft">（共通の祖）</text>
+
+  <!-- イスラム教（7世紀に分かれる） -->
+  <path d="M170 110 C186 110 186 60 206 60 H336" class="st-f" stroke-width="5" stroke-linecap="round"/>
+  <text x="344" y="52" class="t-s end fl" font-weight="700">イスラム教</text>
+  <text x="214" y="78" class="t-xs soft">ムハンマド・六信五行</text>
+
+  <!-- ユダヤ教（幹） -->
+  <path d="M35 110 H336" class="st-soft" stroke-width="6" stroke-linecap="round"/>
+  <text x="344" y="102" class="t-s end ink" font-weight="700">ユダヤ教</text>
+  <text x="44" y="102" class="t-xs soft">唯一の神と契約</text>
+
+  <!-- キリスト教（1世紀に分かれ、さらに分かれる） -->
+  <path d="M100 110 C116 110 116 160 136 160 H214" class="st-f" stroke-width="6" stroke-linecap="round"/>
+  <text x="142" y="152" class="t-xs fl" font-weight="700">キリスト教</text>
+  <text x="142" y="178" class="t-xs soft">イエス・新約聖書</text>
+  <path d="M214 160 C228 160 228 140 242 140 H336" class="st-f" stroke-width="4" stroke-linecap="round"/>
+  <text x="344" y="134" class="t-xs end ink">正教会</text>
+  <path d="M214 160 C228 160 228 186 242 186 H336" class="st-f" stroke-width="4" stroke-linecap="round"/>
+  <text x="344" y="180" class="t-xs end ink">カトリック</text>
+  <path d="M272 186 C284 186 284 216 298 216 H336" class="st-f" stroke-width="3" stroke-linecap="round"/>
+  <text x="344" y="234" class="t-xs end ink">プロテスタント</text>
+
+  <!-- 分かれ目の印 -->
+  <circle cx="100" cy="110" r="5" class="paper st-f" stroke-width="2"/>
+  <circle cx="170" cy="110" r="5" class="paper st-f" stroke-width="2"/>
+  <circle cx="214" cy="160" r="5" class="paper st-f" stroke-width="2"/>
+  <circle cx="272" cy="186" r="5" class="paper st-f" stroke-width="2"/>
+
+  <!-- 時代の目盛り -->
+  <path d="M16 252 H344" class="st-line" stroke-width="1.5"/>
+  <path d="M26 247 V257 M100 247 V257 M170 247 V257 M214 247 V257 M272 247 V257" class="st-line" stroke-width="1.5"/>
+  <g class="t-xs mid soft">
+    <text x="26" y="272">古代</text>
+    <text x="100" y="272">1世紀</text>
+    <text x="170" y="272">7世紀</text>
+    <text x="214" y="272">1054</text>
+    <text x="272" y="272">1517</text>
+  </g>
+  <text x="344" y="272" class="t-xs end soft">現在</text>
+</svg>

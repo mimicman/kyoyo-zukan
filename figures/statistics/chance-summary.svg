@@ -1,0 +1,46 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 確率と偶然：①数える→②くり返す→③1回ごとは独立→④手がかりで考え直す（時計回り） -->
+  <text x="16" y="24" class="t-m ink">偶然を数で考える4つの見方</text>
+  <text x="344" y="24" class="t-xs end soft">①→④の順に時計回り</text>
+
+  <rect x="12" y="38" width="158" height="112" rx="10" class="tint"/>
+  <text x="24" y="58" class="t-s ink" font-weight="700">① 数える</text>
+  <text x="24" y="76" class="t-xs soft">サイコロ2つで和が7</text>
+  <rect x="24" y="92" width="8" height="8" class="paper"/><rect x="33" y="92" width="8" height="8" class="paper"/><rect x="42" y="92" width="8" height="8" class="paper"/><rect x="51" y="92" width="8" height="8" class="paper"/><rect x="60" y="92" width="8" height="8" class="paper"/><rect x="69" y="92" width="8" height="8" class="fl"/><rect x="24" y="101" width="8" height="8" class="paper"/><rect x="33" y="101" width="8" height="8" class="paper"/><rect x="42" y="101" width="8" height="8" class="paper"/><rect x="51" y="101" width="8" height="8" class="paper"/><rect x="60" y="101" width="8" height="8" class="fl"/><rect x="69" y="101" width="8" height="8" class="paper"/><rect x="24" y="110" width="8" height="8" class="paper"/><rect x="33" y="110" width="8" height="8" class="paper"/><rect x="42" y="110" width="8" height="8" class="paper"/><rect x="51" y="110" width="8" height="8" class="fl"/><rect x="60" y="110" width="8" height="8" class="paper"/><rect x="69" y="110" width="8" height="8" class="paper"/><rect x="24" y="119" width="8" height="8" class="paper"/><rect x="33" y="119" width="8" height="8" class="paper"/><rect x="42" y="119" width="8" height="8" class="fl"/><rect x="51" y="119" width="8" height="8" class="paper"/><rect x="60" y="119" width="8" height="8" class="paper"/><rect x="69" y="119" width="8" height="8" class="paper"/><rect x="24" y="128" width="8" height="8" class="paper"/><rect x="33" y="128" width="8" height="8" class="fl"/><rect x="42" y="128" width="8" height="8" class="paper"/><rect x="51" y="128" width="8" height="8" class="paper"/><rect x="60" y="128" width="8" height="8" class="paper"/><rect x="69" y="128" width="8" height="8" class="paper"/><rect x="24" y="137" width="8" height="8" class="fl"/><rect x="33" y="137" width="8" height="8" class="paper"/><rect x="42" y="137" width="8" height="8" class="paper"/><rect x="51" y="137" width="8" height="8" class="paper"/><rect x="60" y="137" width="8" height="8" class="paper"/><rect x="69" y="137" width="8" height="8" class="paper"/>
+  <text x="88" y="114" class="t-s ink">6 / 36</text>
+  <text x="88" y="132" class="t-xs soft">＝ 1/6</text>
+
+  <rect x="190" y="38" width="158" height="112" rx="10" class="tint"/>
+  <text x="202" y="58" class="t-s ink" font-weight="700">② くり返す</text>
+  <text x="202" y="76" class="t-xs soft">割合が確率に近づく</text>
+  <path d="M200 133.0 H338" class="st-soft dash" stroke-width="1.5"/>
+  <text x="338" y="127.0" class="t-xs end soft">1/6</text>
+  <path d="M200.0 103.0 L205.6 148.0 L211.2 118.3 L216.8 125.5 L222.4 112.0 L228.0 118.3 L233.6 135.4 L239.2 125.5 L244.8 128.2 L250.4 139.0 L256.0 131.8 L261.6 125.5 L267.2 134.5 L272.8 129.1 L278.4 136.3 L284.0 130.9 L289.6 131.8 L295.2 134.5 L300.8 132.7 L306.4 133.6 L312.0 132.7 L317.6 133.2 L323.2 132.9 L328.8 133.1" class="st-f" stroke-width="2"/>
+  <text x="338" y="144" class="t-xs end soft">回数 →</text>
+
+  <rect x="190" y="160" width="158" height="108" rx="10" class="tint"/>
+  <text x="202" y="180" class="t-s ink" font-weight="700">③ 1回ずつは独立</text>
+  <text x="202" y="198" class="t-xs soft">表が続いても、次も1/2</text>
+  <circle cx="212" cy="226" r="10" class="fl"/><text x="212" y="230" class="t-xs mid on">表</text>
+  <circle cx="236" cy="226" r="10" class="fl"/><text x="236" y="230" class="t-xs mid on">表</text>
+  <circle cx="260" cy="226" r="10" class="fl"/><text x="260" y="230" class="t-xs mid on">表</text>
+  <circle cx="284" cy="226" r="10" class="fl"/><text x="284" y="230" class="t-xs mid on">表</text>
+  <circle cx="318" cy="226" r="11" class="paper"/><circle cx="318" cy="226" r="11" class="st-f dash" stroke-width="1.5"/>
+  <text x="318" y="230" class="t-xs mid fl">？</text>
+  <text x="202" y="256" class="t-xs soft">「次こそ裏」は思い込み</text>
+
+  <rect x="12" y="160" width="158" height="108" rx="10" class="tint"/>
+  <text x="24" y="180" class="t-s ink" font-weight="700">④ 考え直す</text>
+  <text x="24" y="198" class="t-xs soft">手がかりで確率を更新</text>
+  <rect x="30" y="236" width="40" height="10" class="soft"/>
+  <text x="50" y="226" class="t-xs mid soft">前</text>
+  <rect x="112" y="216" width="40" height="30" class="fl"/>
+  <text x="132" y="210" class="t-xs mid fl">後</text>
+  <path d="M74 236 H106" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="90" y="230" class="t-xs mid ink">検査</text>
+  <text x="24" y="262" class="t-xs soft">元の割合 × 新しい手がかり</text>
+
+  <path d="M172 94 H186" class="st-f" stroke-width="2" marker-end="url(#a-statistics)"/>
+  <path d="M269 151 V157" class="st-f" stroke-width="2" marker-end="url(#a-statistics)"/>
+  <path d="M188 214 H174" class="st-f" stroke-width="2" marker-end="url(#a-statistics)"/>
+</svg>

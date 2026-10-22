@@ -1,0 +1,35 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- カントのあと：カントから3つの問いが枝分かれし、それぞれの答え方が生まれた -->
+  <text x="16" y="22" class="t-m ink">カントのあとに続いた3つの問い</text>
+
+  <!-- 根：カント -->
+  <circle cx="46" cy="150" r="30" class="fl"/>
+  <text x="46" y="148" class="t-s mid on" font-weight="700">カント</text>
+  <text x="46" y="163" class="t-xs mid on">18世紀</text>
+
+  <!-- 3本の枝 -->
+  <path d="M70 132 C100 90 110 70 132 70" class="st-f" stroke-width="2.5" marker-end="url(#a-philosophy)"/>
+  <path d="M78 150 H130" class="st-f" stroke-width="2.5" marker-end="url(#a-philosophy)"/>
+  <path d="M70 168 C100 210 110 230 132 230" class="st-f" stroke-width="2.5" marker-end="url(#a-philosophy)"/>
+
+  <!-- 枝1：歴史 -->
+  <rect x="138" y="40" width="210" height="62" rx="10" class="tint"/>
+  <text x="150" y="58" class="t-xs soft">問い：考えや歴史はどう進む？</text>
+  <text x="150" y="78" class="t-s ink" font-weight="700">弁証法（正・反・合）</text>
+  <text x="150" y="94" class="t-xs fl">ヘーゲル　19世紀前半</text>
+
+  <!-- 枝2：生き方 -->
+  <rect x="138" y="119" width="210" height="62" rx="10" class="tint"/>
+  <text x="150" y="137" class="t-xs soft">問い：私はどう生きればいい？</text>
+  <text x="150" y="157" class="t-s ink" font-weight="700">実存は本質に先立つ</text>
+  <text x="150" y="173" class="t-xs fl">サルトル　20世紀</text>
+
+  <!-- 枝3：善悪 -->
+  <rect x="138" y="198" width="210" height="62" rx="10" class="tint"/>
+  <text x="150" y="216" class="t-xs soft">問い：正しい行いとは何か？</text>
+  <text x="150" y="236" class="t-s ink" font-weight="700">結果（功利主義）か義務か</text>
+  <text x="150" y="252" class="t-xs fl">ベンサム・ミル／カント</text>
+
+  <text x="46" y="200" class="t-xs mid soft">認識の</text>
+  <text x="46" y="214" class="t-xs mid soft">枠を示す</text>
+</svg>

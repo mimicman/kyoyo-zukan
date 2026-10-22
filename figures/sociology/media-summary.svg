@@ -1,0 +1,40 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- メディア→詳しい人→仲間の輪。輪と輪は弱い紐帯（点線）でつながる -->
+  <text x="12" y="24" class="t-m ink">情報は報道と人のつながりで広がる</text>
+
+  <rect x="130" y="36" width="100" height="34" rx="8" class="fl"/>
+  <text x="180" y="58" class="t-s mid on">メディア</text>
+  <text x="122" y="52" class="t-xs end fl">議題設定</text>
+  <text x="238" y="52" class="t-xs soft">何が大事な話題か</text>
+
+  <path d="M156 72 Q120 96 106 138" class="st-f" stroke-width="2" fill="none" marker-end="url(#a-sociology)"/>
+  <path d="M204 72 Q240 96 254 138" class="st-f" stroke-width="2" fill="none" marker-end="url(#a-sociology)"/>
+
+  <!-- 左の輪 -->
+  <g class="st" stroke-width="2.5">
+    <path d="M100 150 L60 172 L55 212 L95 226 L130 192 Z"/>
+    <path d="M100 150 L55 212 M100 150 L95 226 M60 172 L130 192 M60 172 L95 226 M55 212 L130 192"/>
+  </g>
+  <!-- 右の輪 -->
+  <g class="st" stroke-width="2.5">
+    <path d="M260 150 L300 172 L305 212 L265 226 L230 192 Z"/>
+    <path d="M260 150 L305 212 M260 150 L265 226 M300 172 L230 192 M300 172 L265 226 M305 212 L230 192"/>
+  </g>
+  <!-- 弱い紐帯 -->
+  <path d="M130 192 H230" class="st-f dash" stroke-width="2.5"/>
+  <text x="180" y="186" class="t-xs mid fl halo" font-weight="700">弱い紐帯</text>
+  <text x="180" y="210" class="t-xs mid soft">新しい情報</text>
+
+  <g class="ink">
+    <circle cx="60" cy="172" r="6"/><circle cx="55" cy="212" r="6"/><circle cx="95" cy="226" r="6"/><circle cx="130" cy="192" r="7"/>
+    <circle cx="300" cy="172" r="6"/><circle cx="305" cy="212" r="6"/><circle cx="265" cy="226" r="6"/><circle cx="230" cy="192" r="7"/>
+  </g>
+  <circle cx="100" cy="150" r="9" class="fl"/>
+  <circle cx="260" cy="150" r="9" class="fl"/>
+  <text x="86" y="140" class="t-xs end soft">詳しい人</text>
+  <text x="274" y="140" class="t-xs soft">詳しい人</text>
+
+  <text x="90" y="252" class="t-xs mid soft">仲間の輪（強い紐帯）</text>
+  <text x="270" y="252" class="t-xs mid soft">別の仲間の輪</text>
+  <text x="180" y="274" class="t-xs mid soft">輪の中では同じ話が回りがち</text>
+</svg>
