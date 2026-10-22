@@ -1,0 +1,36 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：保険者 -->
+  <rect x="110" y="12" width="140" height="48" rx="10" class="fl"/>
+  <text x="180" y="34" class="t-m mid on">保険者</text>
+  <text x="180" y="51" class="t-xs mid on">健保組合・国保など</text>
+
+  <!-- 下：加入者と医療機関 -->
+  <rect x="12" y="140" width="100" height="48" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="62" y="162" class="t-m mid ink">加入者</text>
+  <text x="62" y="179" class="t-xs mid soft">（患者）</text>
+  <rect x="248" y="140" width="100" height="48" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="298" y="162" class="t-m mid ink">医療機関</text>
+  <text x="298" y="179" class="t-xs mid soft">病院・診療所</text>
+
+  <!-- ① 保険料 -->
+  <path d="M62 138 L118 64" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <text x="82" y="100" class="t-xs end ink">①保険料</text>
+  <!-- ② 受診と一部負担／診療 -->
+  <path d="M114 154 H245" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <text x="180" y="147" class="t-xs mid ink">②受診・窓口で一部を払う</text>
+  <path d="M246 176 H115" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="180" y="192" class="t-xs mid soft">診療</text>
+  <!-- ③ 請求 ④ 支払い -->
+  <path d="M290 138 L238 64" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <text x="256" y="108" class="t-xs end ink">③残りを請求</text>
+  <path d="M254 62 L306 136" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <text x="300" y="94" class="t-xs ink">④支払い</text>
+
+  <!-- 下：医療費の分け方 -->
+  <text x="12" y="216" class="t-xs ink">かかった医療費の全体</text>
+  <rect x="12" y="222" width="84" height="28" rx="4" class="bgc st-soft" stroke-width="1.5"/>
+  <text x="54" y="240" class="t-xs mid ink">窓口で払う</text>
+  <rect x="96" y="222" width="252" height="28" rx="4" class="fl"/>
+  <text x="222" y="240" class="t-s mid on">残りは保険から出る</text>
+  <text x="12" y="270" class="t-xs soft">払う割合は、年齢や所得によって違う</text>
+</svg>

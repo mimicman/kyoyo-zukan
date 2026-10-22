@@ -47,6 +47,13 @@
       "group": "history"
     },
     {
+      "id": "asia",
+      "name": "アジアの歴史と思想",
+      "desc": "中国・インド・イスラームの世界",
+      "icon": "<path d=\"M24 6v4M14 14h20l-4 4H18zM12 24h24l-4 4H16zM10 34h28l-4 4H14zM20 38v4M28 38v4\"/>",
+      "group": "history"
+    },
+    {
       "id": "politics",
       "name": "政治・法",
       "desc": "社会のルールの決め方",
@@ -58,6 +65,13 @@
       "name": "経済",
       "desc": "限られたものの分け方",
       "icon": "<path d=\"M8 38h32\"/><path d=\"M10 32l9-9 6 6 13-14\"/><path d=\"M31 15h7v7\"/>",
+      "group": "society"
+    },
+    {
+      "id": "law-money",
+      "name": "法律とお金",
+      "desc": "暮らしを支えるルールとお金のしくみ",
+      "icon": "<circle cx=\"24\" cy=\"24\" r=\"17\"/><path d=\"M17 14l7 10 7-10M24 24v12M18 26h12M18 31h12\"/>",
       "group": "society"
     },
     {
@@ -86,6 +100,13 @@
       "name": "科学史",
       "desc": "自然の見方が変わった瞬間",
       "icon": "<circle cx=\"24\" cy=\"24\" r=\"3\"/><ellipse cx=\"24\" cy=\"24\" rx=\"18\" ry=\"7\"/><ellipse cx=\"24\" cy=\"24\" rx=\"18\" ry=\"7\" transform=\"rotate(60 24 24)\"/><ellipse cx=\"24\" cy=\"24\" rx=\"18\" ry=\"7\" transform=\"rotate(120 24 24)\"/>",
+      "group": "nature"
+    },
+    {
+      "id": "physics",
+      "name": "物理と化学",
+      "desc": "身の回りの「なぜ」を法則で",
+      "icon": "<path d=\"M19 6h10M21 6v12L11 38a3 3 0 0 0 3 4h20a3 3 0 0 0 3-4L27 18V6\"/><path d=\"M15 30h18\"/>",
       "group": "nature"
     },
     {
@@ -164,6 +185,13 @@
       "desc": "毎日の一杯から広がる世界",
       "icon": "<path d=\"M10 20h24v8a12 12 0 0 1-24 0z\"/><path d=\"M34 22h3a4 4 0 0 1 0 8h-3\"/><path d=\"M16 8c-2 3 2 5 0 8M22 8c-2 3 2 5 0 8M28 8c-2 3 2 5 0 8\"/><path d=\"M8 42h28\"/>",
       "group": "culture"
+    },
+    {
+      "id": "lifestyle",
+      "name": "暮らしの文化",
+      "desc": "服・スポーツ・映画と写真",
+      "icon": "<path d=\"M17 8l-9 6 4 7 4-2v21h16V19l4 2 4-7-9-6c-1 3-4 5-7 5s-6-2-7-5z\"/>",
+      "group": "culture"
     }
   ],
   "groups": [
@@ -190,27 +218,28 @@
   ],
   "people": [
     "japan",
-    "philosophy",
-    "religion",
-    "psychology",
-    "math",
+    "food",
     "history",
     "politics",
     "economics",
+    "philosophy",
+    "religion",
+    "psychology",
     "sociology",
     "geography",
-    "technology",
-    "science",
+    "language",
     "statistics",
-    "biology",
-    "space",
-    "earth",
-    "medicine",
+    "technology",
+    "literature",
+    "music",
     "art",
     "architecture",
-    "music",
-    "literature",
-    "language",
-    "food"
+    "science",
+    "math",
+    "space",
+    "earth",
+    "biology",
+    "medicine",
+    "law-money"
   ]
 }

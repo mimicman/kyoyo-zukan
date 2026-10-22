@@ -1,0 +1,47 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 法律案 -->
+  <rect x="12" y="10" width="104" height="46" rx="10" class="fl"/>
+  <text x="64" y="31" class="t-m mid on">法律案</text>
+  <text x="64" y="48" class="t-xs mid on">内閣か議員が提出</text>
+  <text x="130" y="38" class="t-xs soft">どちらの議院から始めてもよい</text>
+  <path d="M64 58 V82" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+
+  <!-- 2つの議院 -->
+  <rect x="12" y="86" width="152" height="92" rx="12" class="tint st-f" stroke-width="1.5"/>
+  <text x="88" y="106" class="t-m mid ink">衆議院</text>
+  <rect x="20" y="118" width="60" height="30" rx="6" class="paper st-f"/>
+  <text x="50" y="138" class="t-s mid ink">委員会</text>
+  <rect x="96" y="118" width="60" height="30" rx="6" class="paper st-f"/>
+  <text x="126" y="138" class="t-s mid ink">本会議</text>
+  <path d="M81 133 H93" class="st-f" stroke-width="1.5" marker-end="url(#a-law-money)"/>
+  <text x="88" y="168" class="t-xs mid soft">詳しく議論→多数決</text>
+
+  <rect x="196" y="86" width="152" height="92" rx="12" class="tint st-f" stroke-width="1.5"/>
+  <text x="272" y="106" class="t-m mid ink">参議院</text>
+  <rect x="204" y="118" width="60" height="30" rx="6" class="paper st-f"/>
+  <text x="234" y="138" class="t-s mid ink">委員会</text>
+  <rect x="280" y="118" width="60" height="30" rx="6" class="paper st-f"/>
+  <text x="310" y="138" class="t-s mid ink">本会議</text>
+  <path d="M265 133 H277" class="st-f" stroke-width="1.5" marker-end="url(#a-law-money)"/>
+  <text x="272" y="168" class="t-xs mid soft">詳しく議論→多数決</text>
+
+  <path d="M166 124 H193" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <text x="180" y="117" class="t-xs mid ink">可決</text>
+  <path d="M194 158 H167" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="180" y="172" class="t-xs mid soft">否決</text>
+
+  <!-- 成立・公布・施行 -->
+  <path d="M272 180 C272 200 64 190 64 206" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <rect x="12" y="210" width="100" height="44" rx="10" class="fl"/>
+  <text x="62" y="231" class="t-m mid on">成立</text>
+  <text x="62" y="247" class="t-xs mid on">両院で可決</text>
+  <rect x="130" y="210" width="100" height="44" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="180" y="231" class="t-m mid ink">公布</text>
+  <text x="180" y="247" class="t-xs mid soft">国民に知らせる</text>
+  <rect x="248" y="210" width="100" height="44" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="298" y="231" class="t-m mid ink">施行</text>
+  <text x="298" y="247" class="t-xs mid soft">効き目が始まる</text>
+  <path d="M113 232 H127" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <path d="M231 232 H245" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <text x="12" y="272" class="t-xs soft">点線：参議院が否決しても、衆議院が3分の2以上で再可決すれば成立</text>
+</svg>

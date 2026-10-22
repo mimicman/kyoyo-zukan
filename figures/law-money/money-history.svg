@@ -1,0 +1,42 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 時代の流れ（左→右） -->
+  <path d="M12 112 H346" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <!-- 品物 -->
+  <ellipse cx="36" cy="78" rx="18" ry="12" class="tint st-f" stroke-width="1.5"/>
+  <path d="M22 78 H50" class="st-f" stroke-width="1.5"/>
+  <!-- 硬貨 -->
+  <circle cx="108" cy="78" r="17" class="fl"/>
+  <circle cx="108" cy="78" r="11" class="st" stroke-width="1" opacity="0.35"/>
+  <!-- 紙幣 -->
+  <rect x="160" y="64" width="40" height="28" rx="3" class="tint st-f" stroke-width="1.5"/>
+  <path d="M166 72 H194 M166 78 H186 M166 84 H190" class="st-f" stroke-width="1.2"/>
+  <!-- 金本位制（金の延べ棒） -->
+  <path d="M232 98 L236 84 H268 L272 98 Z" class="fl"/>
+  <path d="M241 81 L245 69 H259 L263 81 Z" class="fl"/>
+  <!-- 信用のお金 -->
+  <rect x="306" y="64" width="36" height="28" rx="3" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="324" cy="78" r="9" class="fl"/>
+  <text x="324" y="82" class="t-xs mid on">信</text>
+
+  <g class="ink">
+    <circle cx="36" cy="112" r="4"/><circle cx="108" cy="112" r="4"/><circle cx="180" cy="112" r="4"/><circle cx="252" cy="112" r="4"/><circle cx="324" cy="112" r="4"/>
+  </g>
+  <text x="36" y="136" class="t-s mid ink">品物</text>
+  <text x="36" y="152" class="t-xs mid soft">貝・米・布</text>
+  <text x="108" y="136" class="t-s mid ink">硬貨</text>
+  <text x="108" y="152" class="t-xs mid soft">前7世紀ごろ</text>
+  <text x="180" y="136" class="t-s mid ink">紙幣</text>
+  <text x="180" y="152" class="t-xs mid soft">11世紀 中国</text>
+  <text x="252" y="136" class="t-s mid ink">金本位制</text>
+  <text x="252" y="152" class="t-xs mid soft">金と交換できる</text>
+  <text x="324" y="136" class="t-s mid ink">信用</text>
+  <text x="324" y="152" class="t-xs mid soft">1971年〜</text>
+  <text x="12" y="30" class="t-s ink">お金の形の移り変わり</text>
+
+  <!-- 下：素材の値打ちと信用 -->
+  <path d="M28 266 H344" class="st-soft" stroke-width="1.5"/>
+  <path d="M36 196 C120 210 220 246 326 258" class="st-soft" stroke-width="3"/>
+  <path d="M36 258 C140 248 230 214 326 196" class="st-f" stroke-width="3"/>
+  <text x="44" y="190" class="t-xs soft">素材そのものの値打ち</text>
+  <text x="326" y="188" class="t-xs end fl">発行する国への信用</text>
+</svg>

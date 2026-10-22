@@ -1,0 +1,43 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左：3つの財源 -->
+  <text x="61" y="20" class="t-xs mid soft">財源</text>
+  <rect x="12" y="28" width="98" height="46" rx="8" class="tint st-f" stroke-width="1.5"/>
+  <text x="61" y="48" class="t-m mid ink">保険料</text>
+  <text x="61" y="65" class="t-xs mid soft">働く人・会社</text>
+  <rect x="12" y="88" width="98" height="46" rx="8" class="tint st-f" stroke-width="1.5"/>
+  <text x="61" y="108" class="t-m mid ink">税</text>
+  <text x="61" y="125" class="t-xs mid soft">所得税・消費税</text>
+  <rect x="12" y="148" width="98" height="46" rx="8" class="paper st-f dash" stroke-width="1.5"/>
+  <text x="61" y="168" class="t-m mid ink">国の借金</text>
+  <text x="61" y="185" class="t-xs mid soft">国債</text>
+
+  <path d="M112 51 L146 96" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <path d="M112 111 H146" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <path d="M112 171 L146 128" class="st-f dash" stroke-width="2" marker-end="url(#a-law-money)"/>
+
+  <!-- まん中 -->
+  <rect x="150" y="76" width="78" height="70" rx="10" class="fl"/>
+  <text x="189" y="108" class="t-m mid on">社会保障</text>
+  <text x="189" y="126" class="t-xs mid on">の給付</text>
+
+  <!-- 右：給付 -->
+  <path d="M230 111 H246 M246 43 V179 M246 43 H254 M246 77 H254 M246 111 H254 M246 145 H254 M246 179 H254" class="st-f" stroke-width="1.5"/>
+  <text x="302" y="20" class="t-xs mid soft">暮らしに戻る</text>
+  <rect x="256" y="30" width="92" height="26" rx="6" class="tint"/><text x="302" y="48" class="t-s mid ink">年金</text>
+  <rect x="256" y="64" width="92" height="26" rx="6" class="tint"/><text x="302" y="82" class="t-s mid ink">医療</text>
+  <rect x="256" y="98" width="92" height="26" rx="6" class="tint"/><text x="302" y="116" class="t-s mid ink">介護</text>
+  <rect x="256" y="132" width="92" height="26" rx="6" class="tint"/><text x="302" y="150" class="t-s mid ink">子育て・福祉</text>
+  <rect x="256" y="166" width="92" height="26" rx="6" class="tint"/><text x="302" y="184" class="t-s mid ink">生活保護</text>
+
+  <!-- 下：負担と給付のてんびん -->
+  <path d="M10 204 H350" class="st-line" stroke-width="1"/>
+  <path d="M180 232 L168 258 H192 Z" class="soft"/>
+  <path d="M92 222 L268 242" class="st" stroke-width="3"/>
+  <rect x="52" y="206" width="80" height="22" rx="5" class="tint st-f" stroke-width="1.5"/>
+  <text x="92" y="222" class="t-s mid ink">負担</text>
+  <rect x="228" y="226" width="80" height="22" rx="5" class="fl"/>
+  <text x="268" y="242" class="t-s mid on">給付</text>
+  <text x="92" y="246" class="t-xs mid soft">保険料・税</text>
+  <text x="268" y="266" class="t-xs mid soft">高齢化で増える</text>
+  <text x="92" y="270" class="t-xs mid ink">どう釣り合わせる？</text>
+</svg>

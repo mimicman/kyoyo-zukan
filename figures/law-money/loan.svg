@@ -1,0 +1,38 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 凡例 -->
+  <rect x="16" y="16" width="12" height="12" rx="3" class="fl"/>
+  <text x="32" y="27" class="t-xs ink">利息</text>
+  <rect x="70" y="16" width="12" height="12" rx="3" class="soft"/>
+  <text x="86" y="27" class="t-xs ink">元金の返済</text>
+  <text x="16" y="48" class="t-xs soft">棒＝毎回の返済額（毎回同じ）</text>
+
+  <!-- 残りの借金（点線） -->
+  <path d="M30 66 C100 70 180 84 250 104" class="st-f dash" stroke-width="1.5"/>
+  <text x="252" y="96" class="t-xs fl">残りの借金</text>
+
+  <!-- 元利均等返済：利息の部分がだんだん減る（棒の高さ120） -->
+  <path d="M16 230 H256" class="st-soft" stroke-width="1.5"/>
+  <rect x="20" y="110" width="22" height="74" class="fl"/><rect x="20" y="184" width="22" height="46" class="soft"/>
+  <rect x="50" y="110" width="22" height="66" class="fl"/><rect x="50" y="176" width="22" height="54" class="soft"/>
+  <rect x="80" y="110" width="22" height="56" class="fl"/><rect x="80" y="166" width="22" height="64" class="soft"/>
+  <rect x="110" y="110" width="22" height="47" class="fl"/><rect x="110" y="157" width="22" height="73" class="soft"/>
+  <rect x="140" y="110" width="22" height="37" class="fl"/><rect x="140" y="147" width="22" height="83" class="soft"/>
+  <rect x="170" y="110" width="22" height="26" class="fl"/><rect x="170" y="136" width="22" height="94" class="soft"/>
+  <rect x="200" y="110" width="22" height="17" class="fl"/><rect x="200" y="127" width="22" height="103" class="soft"/>
+  <rect x="230" y="110" width="22" height="6" class="fl"/><rect x="230" y="116" width="22" height="114" class="soft"/>
+  <text x="20" y="102" class="t-xs fl">最初は利息が多い</text>
+  <text x="31" y="246" class="t-xs mid soft">1回目</text>
+  <text x="241" y="246" class="t-xs mid soft">最後</text>
+  <path d="M56 242 H214" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="136" y="264" class="t-xs mid soft">返済が進むと、元金の割合が増える</text>
+
+  <!-- 右：返す期間と利息の合計 -->
+  <path d="M264 110 V250" class="st-line dash" stroke-width="1"/>
+  <text x="312" y="124" class="t-xs mid ink">利息の合計</text>
+  <path d="M272 230 H352" class="st-soft" stroke-width="1.5"/>
+  <rect x="280" y="194" width="24" height="36" rx="3" class="fl"/>
+  <rect x="320" y="138" width="24" height="92" rx="3" class="fl"/>
+  <text x="292" y="246" class="t-xs mid ink">短い</text>
+  <text x="332" y="246" class="t-xs mid ink">長い</text>
+  <text x="312" y="262" class="t-xs mid soft">返す期間</text>
+</svg>

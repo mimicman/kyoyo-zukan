@@ -1,0 +1,43 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左：民事 -->
+  <rect x="8" y="10" width="168" height="186" rx="12" class="paper st-line" stroke-width="1.5"/>
+  <rect x="8" y="10" width="168" height="32" rx="12" class="fl"/>
+  <text x="92" y="32" class="t-l mid on">民事</text>
+  <text x="92" y="58" class="t-xs mid soft">人どうしの争い</text>
+  <rect x="62" y="66" width="60" height="22" rx="5" class="bgc st-soft"/>
+  <text x="92" y="81" class="t-xs mid ink">裁判官</text>
+  <circle cx="40" cy="122" r="21" class="tint st-f" stroke-width="1.5"/>
+  <text x="40" y="126" class="t-s mid ink">原告</text>
+  <circle cx="144" cy="122" r="21" class="tint st-f" stroke-width="1.5"/>
+  <text x="144" y="126" class="t-s mid ink">被告</text>
+  <path d="M63 122 H119" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <text x="91" y="115" class="t-xs mid ink">訴える</text>
+  <rect x="20" y="160" width="144" height="28" rx="7" class="tint"/>
+  <text x="92" y="179" class="t-s mid ink">賠償・支払い／和解</text>
+
+  <!-- 右：刑事 -->
+  <rect x="184" y="10" width="168" height="186" rx="12" class="paper st-line" stroke-width="1.5"/>
+  <rect x="184" y="10" width="168" height="32" rx="12" class="fl"/>
+  <text x="268" y="32" class="t-l mid on">刑事</text>
+  <text x="268" y="58" class="t-xs mid soft">犯罪を裁く</text>
+  <rect x="238" y="66" width="60" height="22" rx="5" class="bgc st-soft"/>
+  <text x="268" y="81" class="t-xs mid ink">裁判官</text>
+  <circle cx="216" cy="122" r="21" class="tint st-f" stroke-width="1.5"/>
+  <text x="216" y="126" class="t-xs mid ink">検察官</text>
+  <circle cx="320" cy="122" r="21" class="tint st-f" stroke-width="1.5"/>
+  <text x="320" y="126" class="t-xs mid ink">被告人</text>
+  <text x="320" y="156" class="t-xs mid soft">＋弁護人</text>
+  <path d="M239 122 H295" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <text x="267" y="115" class="t-xs mid ink">起訴</text>
+  <rect x="196" y="160" width="144" height="28" rx="7" class="tint"/>
+  <text x="268" y="179" class="t-s mid ink">有罪なら刑罰</text>
+
+  <!-- 下：1つの出来事から両方 -->
+  <rect x="112" y="222" width="136" height="50" rx="10" class="bgc st-soft" stroke-width="1.5"/>
+  <text x="180" y="243" class="t-m mid ink">1つの事故</text>
+  <text x="180" y="262" class="t-xs mid soft">例：自転車でけが</text>
+  <path d="M110 238 C80 236 70 222 72 202" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <path d="M250 238 C280 236 290 222 288 202" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <text x="12" y="262" class="t-xs ink">賠償は民事で</text>
+  <text x="348" y="262" class="t-xs end ink">罰は刑事で</text>
+</svg>

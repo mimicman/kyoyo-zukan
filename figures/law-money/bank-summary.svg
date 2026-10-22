@@ -1,0 +1,45 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：お金の形の移り変わり -->
+  <path d="M16 30 H344" class="st-soft" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <ellipse cx="45" cy="30" rx="16" ry="11" class="tint st-f" stroke-width="1.5"/>
+  <path d="M33 30 H57" class="st-f" stroke-width="1.5"/>
+  <circle cx="135" cy="30" r="14" class="fl"/>
+  <rect x="130" y="25" width="10" height="10" class="paper"/>
+  <rect x="207" y="19" width="36" height="22" rx="3" class="tint st-f" stroke-width="1.5"/>
+  <circle cx="225" cy="30" r="6" class="st-f" stroke-width="1.5"/>
+  <rect x="305" y="14" width="20" height="32" rx="4" class="paper st-f" stroke-width="1.5"/>
+  <path d="M310 24 H320 M310 30 H320 M310 36 H316" class="st-f" stroke-width="1.5"/>
+  <text x="45" y="60" class="t-xs mid ink">貝・米</text>
+  <text x="135" y="60" class="t-xs mid ink">硬貨</text>
+  <text x="225" y="60" class="t-xs mid ink">紙幣</text>
+  <text x="315" y="60" class="t-xs mid ink">電子のお金</text>
+
+  <!-- まん中：家計・銀行・企業 -->
+  <path d="M60 110 C80 64 280 64 300 110" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="180" y="96" class="t-xs mid soft halo">代金や給料が、また誰かの預金に</text>
+  <circle cx="54" cy="142" r="32" class="tint st-f" stroke-width="1.5"/>
+  <text x="54" y="147" class="t-m mid ink">家計</text>
+  <rect x="140" y="112" width="80" height="60" rx="10" class="fl"/>
+  <text x="180" y="148" class="t-l mid on">銀行</text>
+  <circle cx="306" cy="142" r="32" class="tint st-f" stroke-width="1.5"/>
+  <text x="306" y="147" class="t-m mid ink">企業</text>
+  <path d="M88 128 H137" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <text x="112" y="122" class="t-xs mid ink">預金</text>
+  <path d="M137 158 H88" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <text x="112" y="174" class="t-xs mid ink">利息</text>
+  <path d="M223 128 H272" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <text x="248" y="122" class="t-xs mid ink">貸し出し</text>
+  <path d="M272 158 H223" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <text x="248" y="174" class="t-xs mid ink">返済</text>
+
+  <!-- 下：決済と金利 -->
+  <path d="M160 174 L112 204 M200 174 L248 204" class="st-soft" stroke-width="1.5"/>
+  <rect x="12" y="206" width="160" height="62" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="92" y="230" class="t-l mid ink">決済</text>
+  <text x="92" y="248" class="t-xs mid ink">支払いを済ませる</text>
+  <text x="92" y="262" class="t-xs mid soft">現金・キャッシュレス</text>
+  <rect x="188" y="206" width="160" height="62" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="268" y="230" class="t-l mid ink">金利</text>
+  <text x="268" y="248" class="t-xs mid ink">お金を借りる値段</text>
+  <text x="268" y="262" class="t-xs mid soft">借金と利息</text>
+</svg>

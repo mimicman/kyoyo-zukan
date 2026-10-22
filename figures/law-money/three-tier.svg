@@ -1,0 +1,31 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <text x="12" y="24" class="t-s ink">1つの事件で、原則3回まで</text>
+
+  <!-- 3段の階段 -->
+  <rect x="208" y="44" width="140" height="58" rx="10" class="fl"/>
+  <text x="278" y="70" class="t-m mid on">最高裁判所</text>
+  <text x="278" y="90" class="t-xs mid on">第三審（全国に1つ）</text>
+
+  <rect x="110" y="124" width="140" height="58" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="180" y="150" class="t-m mid ink">高等裁判所</text>
+  <text x="180" y="170" class="t-xs mid soft">第二審</text>
+
+  <rect x="12" y="204" width="140" height="58" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="82" y="230" class="t-m mid ink">地方裁判所</text>
+  <text x="82" y="250" class="t-xs mid soft">第一審</text>
+
+  <!-- 上へ進む矢印 -->
+  <path d="M70 200 C70 166 88 153 106 153" class="st-f" stroke-width="2.5" marker-end="url(#a-law-money)"/>
+  <text x="64" y="176" class="t-s end fl">控訴</text>
+  <path d="M168 120 C168 86 186 73 204 73" class="st-f" stroke-width="2.5" marker-end="url(#a-law-money)"/>
+  <text x="162" y="96" class="t-s end fl">上告</text>
+
+  <!-- 各段の役割 -->
+  <text x="14" y="58" class="t-xs ink">憲法・法律の解釈を</text>
+  <text x="14" y="74" class="t-xs ink">中心に判断</text>
+  <text x="258" y="148" class="t-xs ink">事実と法の</text>
+  <text x="258" y="164" class="t-xs ink">当てはめを見直す</text>
+  <text x="162" y="228" class="t-xs ink">証拠を調べ、</text>
+  <text x="162" y="244" class="t-xs ink">何があったかを確かめる</text>
+  <text x="12" y="276" class="t-xs soft">第一審は簡易裁判所や家庭裁判所のことも</text>
+</svg>

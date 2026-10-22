@@ -1,0 +1,32 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 法律の一生：作る→分ける→争い→裁判→改正へ（時計回り） -->
+  <rect x="105" y="10" width="150" height="54" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="180" y="34" class="t-m mid ink">①法律ができる</text>
+  <text x="180" y="53" class="t-xs mid soft">国会で議論して可決</text>
+
+  <rect x="234" y="100" width="118" height="80" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="293" y="124" class="t-m mid ink">②法の種類</text>
+  <text x="293" y="146" class="t-xs mid ink">公法：国と人</text>
+  <text x="293" y="164" class="t-xs mid ink">私法：人と人</text>
+
+  <rect x="105" y="216" width="150" height="54" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="180" y="240" class="t-m mid ink">③争い→裁判</text>
+  <text x="180" y="259" class="t-xs mid soft">民事／刑事</text>
+
+  <rect x="8" y="100" width="118" height="80" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="67" y="124" class="t-m mid ink">④三審制</text>
+  <text x="67" y="146" class="t-xs mid ink">不服なら</text>
+  <text x="67" y="164" class="t-xs mid ink">上の裁判所へ</text>
+
+  <!-- 時計回りの矢印 -->
+  <path d="M258 36 Q300 38 300 94" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <path d="M300 184 Q300 242 260 243" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <path d="M102 243 Q60 242 60 186" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <path d="M60 96 Q60 38 100 37" class="st-f dash" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <text x="14" y="62" class="t-xs ink halo">改正へ</text>
+
+  <!-- まん中 -->
+  <circle cx="180" cy="140" r="36" class="fl"/>
+  <text x="180" y="138" class="t-xl mid on">法</text>
+  <text x="180" y="158" class="t-xs mid on">社会のルール</text>
+</svg>

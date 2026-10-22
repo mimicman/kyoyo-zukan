@@ -1,0 +1,41 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：お金が減るタイミング -->
+  <text x="14" y="26" class="t-xs ink">●＝口座などのお金が減る時</text>
+  <text x="180" y="44" class="t-s mid ink">買い物の日</text>
+  <path d="M14 70 H344" class="st" stroke-width="2" marker-end="url(#a-ink)"/>
+  <path d="M180 50 V86" class="st-f dash" stroke-width="1.5"/>
+  <circle cx="68" cy="70" r="6" class="fl"/>
+  <circle cx="180" cy="70" r="6" class="fl"/>
+  <circle cx="292" cy="70" r="6" class="fl"/>
+  <text x="344" y="62" class="t-xs end soft">時間</text>
+
+  <rect x="14" y="90" width="108" height="62" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="68" y="110" class="t-m mid fl">前払い</text>
+  <text x="68" y="128" class="t-xs mid ink">電子マネー</text>
+  <text x="68" y="143" class="t-xs mid soft">先にチャージ</text>
+  <rect x="126" y="90" width="108" height="62" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="180" y="110" class="t-m mid fl">即時払い</text>
+  <text x="180" y="128" class="t-xs mid ink">デビットカード</text>
+  <text x="180" y="143" class="t-xs mid soft">その場で口座から</text>
+  <rect x="238" y="90" width="108" height="62" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="292" y="110" class="t-m mid fl">後払い</text>
+  <text x="292" y="128" class="t-xs mid ink">クレジットカード</text>
+  <text x="292" y="143" class="t-xs mid soft">翌月などに口座から</text>
+
+  <!-- 下：支払いの流れ -->
+  <text x="14" y="184" class="t-s soft">支払いの流れ</text>
+  <rect x="12" y="194" width="84" height="42" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="54" y="220" class="t-s mid ink">利用者</text>
+  <rect x="138" y="194" width="84" height="42" rx="10" class="fl"/>
+  <text x="180" y="220" class="t-s mid on">決済の会社</text>
+  <rect x="264" y="194" width="84" height="42" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="306" y="220" class="t-s mid ink">お店</text>
+  <path d="M98 208 H135" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <text x="117" y="202" class="t-xs mid ink">支払い</text>
+  <path d="M224 208 H261" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <text x="243" y="202" class="t-xs mid ink">代金</text>
+  <path d="M261 226 H224" class="st-soft dash" stroke-width="1.5" marker-end="url(#a-soft)"/>
+  <text x="243" y="246" class="t-xs mid soft">手数料</text>
+  <rect x="12" y="254" width="336" height="24" rx="6" class="bgc"/>
+  <text x="180" y="270" class="t-xs mid ink">どの方式でも、最後は銀行口座のお金が動く</text>
+</svg>

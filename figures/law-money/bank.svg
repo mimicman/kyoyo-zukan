@@ -1,0 +1,53 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：銀行の基本 -->
+  <rect x="10" y="24" width="76" height="46" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="48" y="52" class="t-m mid ink">預金者</text>
+  <rect x="142" y="24" width="76" height="46" rx="10" class="fl"/>
+  <text x="180" y="53" class="t-l mid on">銀行</text>
+  <rect x="274" y="24" width="76" height="46" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="312" y="52" class="t-m mid ink">借り手</text>
+  <path d="M88 36 H139" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <text x="114" y="30" class="t-xs mid ink">預金</text>
+  <path d="M139 60 H88" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <text x="114" y="80" class="t-xs mid ink">利息（小）</text>
+  <path d="M220 36 H271" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <text x="246" y="30" class="t-xs mid ink">貸し出し</text>
+  <path d="M271 60 H220" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <text x="246" y="80" class="t-xs mid ink">利息（大）</text>
+  <text x="180" y="94" class="t-xs mid soft">利息の差が銀行の収入</text>
+
+  <!-- 下：信用創造（1割を手元に残す例） -->
+  <path d="M10 104 H350" class="st-line" stroke-width="1"/>
+  <text x="12" y="124" class="t-s ink">信用創造（1割を手元に残す例）</text>
+  <rect x="12" y="134" width="10" height="10" rx="2" class="soft"/>
+  <text x="26" y="143" class="t-xs ink">手元に残す</text>
+  <rect x="94" y="134" width="10" height="10" rx="2" class="fl"/>
+  <text x="108" y="143" class="t-xs ink">貸し出す</text>
+
+  <path d="M20 262 H280" class="st-soft" stroke-width="1.5"/>
+  <!-- 高さ＝金額（100→90→81→73→66） -->
+  <rect x="24" y="162" width="34" height="10" class="soft"/><rect x="24" y="172" width="34" height="90" class="fl"/>
+  <rect x="76" y="172" width="34" height="9" class="soft"/><rect x="76" y="181" width="34" height="81" class="fl"/>
+  <rect x="128" y="181" width="34" height="8" class="soft"/><rect x="128" y="189" width="34" height="73" class="fl"/>
+  <rect x="180" y="189" width="34" height="7" class="soft"/><rect x="180" y="196" width="34" height="66" class="fl"/>
+  <rect x="232" y="196" width="34" height="7" class="soft"/><rect x="232" y="203" width="34" height="59" class="fl"/>
+  <text x="41" y="156" class="t-xs mid ink">100</text>
+  <text x="93" y="166" class="t-xs mid ink">90</text>
+  <text x="145" y="175" class="t-xs mid ink">81</text>
+  <text x="197" y="183" class="t-xs mid ink">73</text>
+  <text x="249" y="190" class="t-xs mid ink">66</text>
+  <path d="M59 236 H74" class="st" stroke-width="1.5" marker-end="url(#a-ink)"/>
+  <path d="M111 236 H126" class="st" stroke-width="1.5" marker-end="url(#a-ink)"/>
+  <path d="M163 236 H178" class="st" stroke-width="1.5" marker-end="url(#a-ink)"/>
+  <path d="M215 236 H230" class="st" stroke-width="1.5" marker-end="url(#a-ink)"/>
+  <text x="124" y="160" class="t-xs ink">貸すと、別の人の預金に</text>
+  <text x="41" y="276" class="t-xs mid soft">最初</text>
+  <text x="93" y="276" class="t-xs mid soft">2回目</text>
+  <text x="145" y="276" class="t-xs mid soft">3回目</text>
+  <text x="197" y="276" class="t-xs mid soft">4回目</text>
+  <text x="249" y="276" class="t-xs mid soft">5回目</text>
+  <text x="290" y="212" class="t-m ink">…</text>
+  <text x="290" y="228" class="t-xs ink">と続き、</text>
+  <text x="290" y="244" class="t-xs fl">預金の合計</text>
+  <text x="290" y="258" class="t-xs fl">は何倍にも</text>
+</svg>

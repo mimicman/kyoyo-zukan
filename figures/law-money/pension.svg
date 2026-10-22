@@ -1,0 +1,38 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 左：賦課方式 -->
+  <rect x="8" y="10" width="168" height="182" rx="12" class="paper st-line" stroke-width="1.5"/>
+  <rect x="8" y="10" width="168" height="32" rx="12" class="fl"/>
+  <text x="92" y="32" class="t-m mid on">賦課方式</text>
+  <circle cx="44" cy="64.0" r="5.0" class="fl"/><path d="M36.0 80.0 Q36.0 71.0 44 71.0 Q52.0 71.0 52.0 80.0 Z" class="fl"/><circle cx="74" cy="64.0" r="5.0" class="fl"/><path d="M66.0 80.0 Q66.0 71.0 74 71.0 Q82.0 71.0 82.0 80.0 Z" class="fl"/><circle cx="104" cy="64.0" r="5.0" class="fl"/><path d="M96.0 80.0 Q96.0 71.0 104 71.0 Q112.0 71.0 112.0 80.0 Z" class="fl"/><circle cx="134" cy="64.0" r="5.0" class="fl"/><path d="M126.0 80.0 Q126.0 71.0 134 71.0 Q142.0 71.0 142.0 80.0 Z" class="fl"/>
+  <text x="92" y="98" class="t-xs mid ink">今の現役世代</text>
+  <path d="M92 104 V128" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <text x="100" y="120" class="t-xs ink">保険料</text>
+  <circle cx="74" cy="140.0" r="5.0" class="soft"/><path d="M66.0 156.0 Q66.0 147.0 74 147.0 Q82.0 147.0 82.0 156.0 Z" class="soft"/><circle cx="110" cy="140.0" r="5.0" class="soft"/><path d="M102.0 156.0 Q102.0 147.0 110 147.0 Q118.0 147.0 118.0 156.0 Z" class="soft"/>
+  <text x="92" y="172" class="t-xs mid ink">今の高齢者の年金に</text>
+  <text x="92" y="186" class="t-xs mid soft">世代の支え合い</text>
+
+  <!-- 右：積立方式 -->
+  <rect x="184" y="10" width="168" height="182" rx="12" class="paper st-line" stroke-width="1.5"/>
+  <rect x="184" y="10" width="168" height="32" rx="12" class="fl"/>
+  <text x="268" y="32" class="t-m mid on">積立方式</text>
+  <circle cx="210" cy="68.0" r="5.0" class="fl"/><path d="M202.0 84.0 Q202.0 75.0 210 75.0 Q218.0 75.0 218.0 84.0 Z" class="fl"/>
+  <text x="210" y="98" class="t-xs mid ink">若いとき</text>
+  <rect x="242" y="114" width="20" height="10" rx="2" class="tint st-f"/>
+  <rect x="268" y="104" width="20" height="10" rx="2" class="tint st-f"/><rect x="268" y="114" width="20" height="10" rx="2" class="tint st-f"/>
+  <rect x="294" y="94" width="20" height="10" rx="2" class="tint st-f"/><rect x="294" y="104" width="20" height="10" rx="2" class="tint st-f"/><rect x="294" y="114" width="20" height="10" rx="2" class="tint st-f"/>
+  <path d="M244 136 H316" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <text x="280" y="152" class="t-xs mid ink">積み立て＋運用</text>
+  <circle cx="330" cy="68.0" r="5.0" class="soft"/><path d="M322.0 84.0 Q322.0 75.0 330 75.0 Q338.0 75.0 338.0 84.0 Z" class="soft"/>
+  <text x="330" y="98" class="t-xs mid ink">老後</text>
+  <text x="268" y="172" class="t-xs mid ink">自分の分を自分で</text>
+  <text x="268" y="186" class="t-xs mid soft">将来の自分へ</text>
+
+  <!-- 下：弱点の違い -->
+  <rect x="8" y="202" width="168" height="48" rx="10" class="tint"/>
+  <text x="92" y="221" class="t-xs mid ink">少子高齢化で支え手が</text>
+  <text x="92" y="238" class="t-xs mid ink">減ると、負担が重くなる</text>
+  <rect x="184" y="202" width="168" height="48" rx="10" class="tint"/>
+  <text x="268" y="221" class="t-xs mid ink">物価の上昇や運用の</text>
+  <text x="268" y="238" class="t-xs mid ink">結果に左右されやすい</text>
+  <text x="180" y="270" class="t-xs mid soft">日本：賦課方式を基本に、積立金も活用</text>
+</svg>

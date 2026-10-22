@@ -1,0 +1,31 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 枝分かれ：知的財産権 → 著作権／産業財産権 -->
+  <rect x="110" y="10" width="140" height="38" rx="10" class="fl"/>
+  <text x="180" y="35" class="t-m mid on">知的財産権</text>
+  <path d="M150 48 L100 74 M210 48 L260 74" class="st-f" stroke-width="2"/>
+
+  <rect x="12" y="76" width="158" height="96" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="91" y="100" class="t-l mid ink">著作権</text>
+  <text x="91" y="120" class="t-xs mid ink">文章・音楽・絵・写真</text>
+  <text x="91" y="136" class="t-xs mid ink">プログラムなど</text>
+  <text x="91" y="160" class="t-xs mid fl">創った時点で自動で発生</text>
+
+  <rect x="190" y="76" width="158" height="96" rx="10" class="tint st-f" stroke-width="1.5"/>
+  <text x="269" y="100" class="t-l mid ink">産業財産権</text>
+  <text x="269" y="118" class="t-xs mid ink">特許＝発明</text>
+  <text x="269" y="132" class="t-xs mid ink">商標＝名前・マーク</text>
+  <text x="269" y="146" class="t-xs mid ink">意匠＝デザイン</text>
+  <text x="269" y="164" class="t-xs mid fl">国に出願して登録</text>
+
+  <!-- 守られる期間 -->
+  <text x="12" y="202" class="t-s ink">守られる期間には限りがある</text>
+  <path d="M235 212 V242" class="st dash" stroke-width="1.5"/>
+  <text x="235" y="208" class="t-xs mid ink">期間が終わる</text>
+  <rect x="20" y="216" width="212" height="24" rx="5" class="tint st-f" stroke-width="1.5"/>
+  <text x="126" y="233" class="t-s mid ink">保護期間</text>
+  <rect x="240" y="216" width="104" height="24" rx="5" class="fl"/>
+  <text x="292" y="232" class="t-xs mid on">パブリックドメイン</text>
+  <text x="20" y="256" class="t-xs ink">創作・登録</text>
+  <text x="292" y="256" class="t-xs mid ink">誰でも自由に使える</text>
+  <text x="20" y="274" class="t-xs soft">例：古い名画、古典の文学や音楽</text>
+</svg>

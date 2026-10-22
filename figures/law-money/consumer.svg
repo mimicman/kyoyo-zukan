@@ -1,0 +1,36 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- てんびん：事業者が重く、消費者が軽い -->
+  <path d="M180 62 L166 104 H194 Z" class="soft"/>
+  <path d="M56 84 L304 40" class="st" stroke-width="3"/>
+  <rect x="12" y="86" width="88" height="30" rx="6" class="fl"/>
+  <text x="56" y="106" class="t-m mid on">事業者</text>
+  <path d="M56 84 V86" class="st" stroke-width="2"/>
+  <text x="56" y="132" class="t-xs mid ink">知識・交渉力 大</text>
+  <rect x="260" y="42" width="88" height="30" rx="6" class="tint st-f" stroke-width="1.5"/>
+  <text x="304" y="62" class="t-m mid ink">消費者</text>
+  <text x="304" y="88" class="t-xs mid ink">一人で不意打ち</text>
+
+  <!-- 消費者を支える3つ -->
+  <path d="M66 138 H304 M66 138 V146 M180 138 V146 M294 138 V146" class="st-f" stroke-width="1.5"/>
+  <path d="M304 138 V98" class="st-f" stroke-width="2" marker-end="url(#a-law-money)"/>
+  <text x="298" y="122" class="t-xs end fl halo">支える</text>
+  <rect x="12" y="148" width="108" height="46" rx="8" class="tint"/>
+  <text x="66" y="168" class="t-s mid ink">クーリング・オフ</text>
+  <text x="66" y="185" class="t-xs mid soft">理由なく解約</text>
+  <rect x="126" y="148" width="108" height="46" rx="8" class="tint"/>
+  <text x="180" y="168" class="t-s mid ink">契約の取り消し</text>
+  <text x="180" y="185" class="t-xs mid soft">うそ・強引な勧誘</text>
+  <rect x="240" y="148" width="108" height="46" rx="8" class="tint"/>
+  <text x="294" y="168" class="t-s mid ink">相談窓口</text>
+  <text x="294" y="185" class="t-xs mid soft">消費生活センター</text>
+
+  <!-- クーリング・オフの期間 -->
+  <text x="12" y="222" class="t-s ink">クーリング・オフ（訪問販売など）</text>
+  <path d="M20 246 H342" class="st-soft" stroke-width="1.5"/>
+  <rect x="48" y="236" width="172" height="20" rx="4" class="fl"/>
+  <text x="134" y="250" class="t-xs mid on">この期間なら理由なく解約できる</text>
+  <path d="M222 246 H340" class="st-soft dash" stroke-width="2"/>
+  <text x="282" y="236" class="t-xs mid soft">過ぎると原則できない</text>
+  <circle cx="48" cy="246" r="5" class="ink"/>
+  <text x="48" y="272" class="t-xs mid ink">書面を受け取る</text>
+</svg>
