@@ -1,0 +1,44 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 上：武士の一生（生まれる→政治の中心→役人になる→身分がなくなる） -->
+  <path d="M30 52 H330" class="st-soft" stroke-width="2"/>
+  <circle cx="48" cy="52" r="9" class="fl"/>
+  <circle cx="136" cy="52" r="9" class="fl"/>
+  <circle cx="224" cy="52" r="9" class="fl"/>
+  <circle cx="312" cy="52" r="9" class="soft"/>
+  <text x="48" y="28" class="t-xs mid soft">10世紀ごろ</text>
+  <text x="136" y="28" class="t-xs mid soft">1185年ごろ〜</text>
+  <text x="224" y="28" class="t-xs mid soft">江戸時代</text>
+  <text x="312" y="28" class="t-xs mid soft">1870年代</text>
+  <text x="48" y="80" class="t-s mid ink" font-weight="700">生まれる</text>
+  <text x="48" y="96" class="t-xs mid soft">地方で武装し</text>
+  <text x="48" y="110" class="t-xs mid soft">土地を守る</text>
+  <text x="136" y="80" class="t-s mid ink" font-weight="700">政治の中心</text>
+  <text x="136" y="96" class="t-xs mid soft">幕府を開き</text>
+  <text x="136" y="110" class="t-xs mid soft">国を治める</text>
+  <text x="224" y="80" class="t-s mid ink" font-weight="700">役人になる</text>
+  <text x="224" y="96" class="t-xs mid soft">戦が減り</text>
+  <text x="224" y="110" class="t-xs mid soft">城で政務を担う</text>
+  <text x="312" y="80" class="t-s mid ink" font-weight="700">特権が消える</text>
+  <text x="312" y="96" class="t-xs mid soft">明治の改革で</text>
+  <text x="312" y="110" class="t-xs mid soft">身分を廃止</text>
+
+  <!-- 下：主君と家来の結びつき（御恩と奉公） -->
+  <rect x="12" y="132" width="336" height="140" rx="14" class="tint"/>
+  <text x="26" y="152" class="t-xs fl" font-weight="700">武士を結びつけた約束</text>
+
+  <rect x="40" y="166" width="96" height="40" rx="10" class="fl"/>
+  <text x="88" y="191" class="t-m mid on">主君</text>
+  <text x="88" y="224" class="t-xs mid soft">将軍・大名</text>
+
+  <rect x="224" y="166" width="96" height="40" rx="10" class="paper st-f" stroke-width="2"/>
+  <text x="272" y="191" class="t-m mid ink">家来の武士</text>
+  <text x="272" y="224" class="t-xs mid soft">御家人・家臣</text>
+
+  <path d="M140 176 H218" class="st-f" stroke-width="2.5" marker-end="url(#a-japan)"/>
+  <text x="180" y="168" class="t-s mid fl halo" font-weight="700">御恩</text>
+  <path d="M220 198 H142" class="st" stroke-width="2.5" marker-end="url(#a-ink)"/>
+  <text x="180" y="216" class="t-s mid ink halo" font-weight="700">奉公</text>
+
+  <text x="88" y="250" class="t-xs mid ink">土地を守る・与える</text>
+  <text x="272" y="250" class="t-xs mid ink">戦う・警備・仕事</text>
+</svg>
