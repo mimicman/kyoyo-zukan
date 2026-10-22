@@ -1,0 +1,33 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 関数のグラフ：直線（毎回同じだけ増える）と指数関数（倍々）、接線の傾き＝微分、下の長方形の面積＝積分 -->
+  <text x="12" y="22" class="t-m ink">xを決めると、yが1つ決まる</text>
+
+  <!-- 積分：曲線の下を細い長方形で埋める -->
+  <rect x="120" y="237.9" width="20" height="8.1" class="tint st-soft" stroke-width="0.8"/>
+  <rect x="140" y="233.7" width="20" height="12.3" class="tint st-soft" stroke-width="0.8"/>
+  <rect x="160" y="227.9" width="20" height="18.1" class="tint st-soft" stroke-width="0.8"/>
+  <rect x="180" y="219.9" width="20" height="26.1" class="tint st-soft" stroke-width="0.8"/>
+  <rect x="200" y="208.9" width="20" height="37.1" class="tint st-soft" stroke-width="0.8"/>
+  <rect x="220" y="193.7" width="20" height="52.3" class="tint st-soft" stroke-width="0.8"/>
+
+  <!-- 軸 -->
+  <path d="M40 246 H344" class="st" stroke-width="1.5" marker-end="url(#a-ink)"/>
+  <path d="M40 246 V40" class="st" stroke-width="1.5" marker-end="url(#a-ink)"/>
+  <text x="346" y="262" class="t-xs end soft">x</text>
+  <text x="32" y="48" class="t-xs end soft">y</text>
+
+  <!-- 直線：毎回同じだけ増える -->
+  <path d="M40 246 L336 147.0" class="st-soft dash" stroke-width="2"/>
+  <!-- 指数関数：倍々で増える -->
+  <polyline points="40,246.0 50,245.5 60,244.8 70,244.1 80,243.2 90,242.2 100,241.0 110,239.6 120,237.9 130,236.0 140,233.7 150,231.0 160,227.9 170,224.2 180,219.9 190,214.8 200,208.9 210,201.9 220,193.7 230,184.1 240,172.9 250,159.6 260,144.1 270,125.9 280,104.5 290,79.4 300,50.0" class="st-f" stroke-width="3"/>
+
+  <!-- 微分：接線の傾き -->
+  <path d="M228 199.7 L294 85.2" class="st" stroke-width="2"/>
+  <circle cx="262" cy="140.7" r="4.5" class="fl"/>
+
+  <text x="288" y="44" class="t-xs end ink" font-weight="700">指数関数：倍々で急に増える</text>
+  <text x="348" y="212" class="t-xs end soft">直線：同じだけ増える</text>
+  <text x="252" y="142.7" class="t-xs end ink halo">微分＝この点の傾き</text>
+  <text x="128" y="264" class="t-xs ink">積分＝下の面積</text>
+  <text x="40" y="264" class="t-xs soft">0</text>
+</svg>

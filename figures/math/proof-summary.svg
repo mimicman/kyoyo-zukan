@@ -1,0 +1,35 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 公理を土台に、「ならば」でつないで定理を積み上げる -->
+  <text x="12" y="22" class="t-m ink">前提から、論理で積み上げる</text>
+  <text x="12" y="40" class="t-xs soft">下から上へ読む</text>
+
+  <!-- いちばん上：よく知られた定理 -->
+  <rect x="40" y="54" width="136" height="56" rx="10" class="fl"/>
+  <text x="108" y="77" class="t-s mid on" font-weight="700">ピタゴラスの定理</text>
+  <text x="108" y="97" class="t-s mid on">a²＋b²＝c²</text>
+  <rect x="184" y="54" width="136" height="56" rx="10" class="fl"/>
+  <text x="252" y="77" class="t-s mid on" font-weight="700">円周率の範囲</text>
+  <text x="252" y="97" class="t-s mid on">3 ＜ π ＜ 4</text>
+
+  <path d="M108 144 V116" class="st-f" stroke-width="2" marker-end="url(#a-math)"/>
+  <path d="M252 144 V116" class="st-f" stroke-width="2" marker-end="url(#a-math)"/>
+  <text x="114" y="134" class="t-xs ink">ならば</text>
+  <text x="258" y="134" class="t-xs ink">ならば</text>
+
+  <!-- 中：証明された定理 -->
+  <rect x="28" y="148" width="304" height="42" rx="10" class="tint"/>
+  <text x="180" y="168" class="t-s mid ink" font-weight="700">定理（証明された事実）</text>
+  <text x="180" y="183" class="t-xs mid soft">次の定理の材料になる</text>
+
+  <path d="M90 222 V196" class="st-f" stroke-width="2" marker-end="url(#a-math)"/>
+  <path d="M180 222 V196" class="st-f" stroke-width="2" marker-end="url(#a-math)"/>
+  <path d="M270 222 V196" class="st-f" stroke-width="2" marker-end="url(#a-math)"/>
+  <text x="96" y="214" class="t-xs ink">ならば</text>
+  <text x="186" y="214" class="t-xs ink">ならば</text>
+  <text x="276" y="214" class="t-xs ink">ならば</text>
+
+  <!-- 土台：公理 -->
+  <rect x="12" y="226" width="336" height="44" rx="10" class="bgc st-f" stroke-width="1.5"/>
+  <text x="180" y="245" class="t-s mid ink" font-weight="700">公理（出発点の約束）</text>
+  <text x="180" y="261" class="t-xs mid soft">例：2点は1本の直線で結べる</text>
+</svg>

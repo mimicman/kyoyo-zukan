@@ -1,0 +1,61 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 19世紀の3つの流れ：熱・電気と磁気・生命を、1800〜1900年の時間軸に並べる -->
+  <text x="12" y="22" class="t-m ink">19世紀、3つの分野で大発見</text>
+
+  <rect x="8" y="34" width="344" height="58" rx="10" class="tint"/>
+  <rect x="8" y="100" width="344" height="58" rx="10" class="tint"/>
+  <rect x="8" y="166" width="344" height="58" rx="10" class="tint"/>
+
+  <!-- 分野の名前と、わかったこと -->
+  <text x="16" y="60" class="t-s ink" font-weight="700">熱</text>
+  <text x="16" y="78" class="t-xs soft">保存と散らばり</text>
+  <text x="16" y="126" class="t-s ink" font-weight="700">電気と磁気</text>
+  <text x="16" y="144" class="t-xs soft">光は電磁波</text>
+  <text x="16" y="192" class="t-s ink" font-weight="700">生命</text>
+  <text x="16" y="210" class="t-xs soft">進化と自然選択</text>
+
+  <!-- 時間の線（1800→1900） x = 96 + 2.48×(年−1800) -->
+  <g class="st-soft" stroke-width="1.5">
+    <path d="M96 63 H342" marker-end="url(#a-soft)"/>
+    <path d="M96 129 H342" marker-end="url(#a-soft)"/>
+    <path d="M96 195 H342" marker-end="url(#a-soft)"/>
+  </g>
+
+  <!-- 熱：1824 カルノー、1843 ジュール、1865 クラウジウス -->
+  <circle cx="156" cy="63" r="5" class="fl"/>
+  <circle cx="203" cy="63" r="5" class="fl"/>
+  <circle cx="257" cy="63" r="5" class="fl"/>
+  <text x="151" y="53" class="t-xs mid ink">カルノー</text>
+  <text x="199" y="53" class="t-xs mid ink">ジュール</text>
+  <text x="263" y="53" class="t-xs mid ink">クラウジウス</text>
+  <text x="156" y="82" class="t-xs mid soft">1824</text>
+  <text x="203" y="82" class="t-xs mid soft">1843</text>
+  <text x="257" y="82" class="t-xs mid soft">1865</text>
+
+  <!-- 電気と磁気：1831 ファラデー、1864 マクスウェル、1888 ヘルツ -->
+  <circle cx="173" cy="129" r="5" class="fl"/>
+  <circle cx="255" cy="129" r="5" class="fl"/>
+  <circle cx="314" cy="129" r="5" class="fl"/>
+  <text x="173" y="119" class="t-xs mid ink">ファラデー</text>
+  <text x="255" y="119" class="t-xs mid ink">マクスウェル</text>
+  <text x="314" y="119" class="t-xs mid ink">ヘルツ</text>
+  <text x="173" y="148" class="t-xs mid soft">1831</text>
+  <text x="255" y="148" class="t-xs mid soft">1864</text>
+  <text x="314" y="148" class="t-xs mid soft">1888</text>
+
+  <!-- 生命：1831 ビーグル号、1859 種の起源 -->
+  <circle cx="173" cy="195" r="5" class="fl"/>
+  <circle cx="242" cy="195" r="5" class="fl"/>
+  <text x="173" y="185" class="t-xs mid ink">ビーグル号</text>
+  <text x="242" y="185" class="t-xs mid ink">『種の起源』</text>
+  <text x="173" y="214" class="t-xs mid soft">1831</text>
+  <text x="242" y="214" class="t-xs mid soft">1859 ダーウィン</text>
+
+  <!-- 年の目盛り -->
+  <path d="M96 238 H344" class="st-line" stroke-width="1.5"/>
+  <path d="M96 234 V242 M220 234 V242 M344 234 V242" class="st-soft" stroke-width="1.5"/>
+  <text x="96" y="258" class="t-xs mid soft">1800</text>
+  <text x="220" y="258" class="t-xs mid soft">1850</text>
+  <text x="344" y="258" class="t-xs end soft">1900</text>
+  <text x="348" y="22" class="t-xs end soft">背景：産業革命</text>
+</svg>

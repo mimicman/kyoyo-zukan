@@ -1,0 +1,51 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 大きさと速さの軸の上に、量子力学（小さい世界）・ニュートン力学（日常）・相対性理論（大きく速い世界）を並べる -->
+  <text x="12" y="22" class="t-m ink">小さい世界と速い世界に、新しい法則</text>
+
+  <!-- 左：小さな世界 -->
+  <rect x="8" y="34" width="128" height="198" rx="12" class="bgc st-line"/>
+  <text x="72" y="52" class="t-s mid ink" font-weight="700">小さな世界</text>
+  <rect x="18" y="64" width="108" height="38" rx="8" class="tint"/>
+  <text x="72" y="81" class="t-s mid ink">周期表</text>
+  <text x="72" y="96" class="t-xs mid soft">1869</text>
+  <path d="M72 103 V113" class="st-f" stroke-width="2" marker-end="url(#a-science)"/>
+  <rect x="18" y="116" width="108" height="38" rx="8" class="tint"/>
+  <text x="72" y="133" class="t-s mid ink">原子の模型</text>
+  <text x="72" y="148" class="t-xs mid soft">1897〜1913</text>
+  <path d="M72 155 V165" class="st-f" stroke-width="2" marker-end="url(#a-science)"/>
+  <rect x="18" y="168" width="108" height="52" rx="8" class="fl"/>
+  <text x="72" y="190" class="t-s mid on" font-weight="700">量子力学</text>
+  <text x="72" y="208" class="t-xs mid on">1920年代</text>
+
+  <!-- 中央：日常の世界 -->
+  <rect x="144" y="34" width="72" height="198" rx="12" class="paper st-line"/>
+  <text x="180" y="52" class="t-s mid ink" font-weight="700">日常</text>
+  <circle cx="180" cy="104" r="16" class="tint st-f" stroke-width="1.5"/>
+  <path d="M180 88 C182 82 186 80 190 80" class="st-f" stroke-width="1.5"/>
+  <text x="180" y="176" class="t-xs mid ink">ニュートン</text>
+  <text x="180" y="192" class="t-xs mid ink">の力学で</text>
+  <text x="180" y="208" class="t-xs mid ink">十分</text>
+
+  <!-- 右：大きく速い世界 -->
+  <rect x="224" y="34" width="128" height="198" rx="12" class="bgc st-line"/>
+  <text x="288" y="52" class="t-s mid ink" font-weight="700">大きく速い世界</text>
+  <g class="st-soft" stroke-width="1.2">
+    <path d="M234 72 C266 72 272 112 288 112 C304 112 310 72 342 72"/>
+    <path d="M234 84 C262 84 270 120 288 120 C306 120 314 84 342 84"/>
+    <path d="M250 64 C262 90 270 122 288 124 C306 122 314 90 326 64"/>
+  </g>
+  <circle cx="288" cy="116" r="7" class="fl"/>
+  <text x="288" y="140" class="t-xs mid soft">重さが時空を曲げる</text>
+  <rect x="234" y="148" width="108" height="34" rx="8" class="tint"/>
+  <text x="288" y="164" class="t-s mid ink">特殊相対性</text>
+  <text x="288" y="177" class="t-xs mid soft">1905 速さと時間</text>
+  <rect x="234" y="188" width="108" height="36" rx="8" class="fl"/>
+  <text x="288" y="204" class="t-s mid on" font-weight="700">一般相対性</text>
+  <text x="288" y="218" class="t-xs mid on">1915 重力と時空</text>
+
+  <!-- 下：大きさと速さの軸 -->
+  <path d="M22 250 H338" class="st-soft" stroke-width="2" marker-start="url(#a-soft)" marker-end="url(#a-soft)"/>
+  <text x="12" y="270" class="t-xs soft">小さい（原子）</text>
+  <text x="180" y="270" class="t-xs mid soft">人の大きさ</text>
+  <text x="348" y="270" class="t-xs end soft">大きい・光速に近い</text>
+</svg>

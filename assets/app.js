@@ -109,6 +109,7 @@ function fmtYear(y) {
 function fmtSpan(ys) {
   if (!ys) return "";
   const [a, b] = ys;
+  if (a == null && b == null) return "生没年不明";
   if (a == null) return `〜${fmtYear(b)}`;
   return b != null && b !== a ? `${fmtYear(a)}〜${fmtYear(b)}` : fmtYear(a);
 }
