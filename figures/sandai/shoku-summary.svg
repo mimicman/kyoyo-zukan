@@ -1,0 +1,37 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 食の三大 -->
+  <rect x="8" y="8.0" width="82" height="70.7" rx="10" class="fl"/>
+  <text x="49" y="47.3" class="t-xs mid on" font-weight="700">三大ラーメン</text>
+  <rect x="98" y="8.0" width="80" height="70.7" rx="9" class="tint"/>
+  <text x="138" y="41.3" class="t-xs mid ink" font-weight="700">札幌</text>
+  <text x="138" y="56.3" class="t-xs mid soft">味噌</text>
+  <rect x="184" y="8.0" width="80" height="70.7" rx="9" class="tint"/>
+  <text x="224" y="41.3" class="t-xs mid ink" font-weight="700">喜多方</text>
+  <text x="224" y="56.3" class="t-xs mid soft">醤油</text>
+  <rect x="270" y="8.0" width="80" height="70.7" rx="9" class="tint"/>
+  <text x="310" y="41.3" class="t-xs mid ink" font-weight="700">博多</text>
+  <text x="310" y="56.3" class="t-xs mid soft">豚骨</text>
+  <rect x="8" y="90.7" width="82" height="70.7" rx="10" class="fl"/>
+  <text x="49" y="130.0" class="t-xs mid on" font-weight="700">三大うどん</text>
+  <rect x="98" y="90.7" width="80" height="70.7" rx="9" class="tint"/>
+  <text x="138" y="124.0" class="t-xs mid ink" font-weight="700">讃岐</text>
+  <text x="138" y="139.0" class="t-xs mid soft">香川</text>
+  <rect x="184" y="90.7" width="80" height="70.7" rx="9" class="tint"/>
+  <text x="224" y="124.0" class="t-xs mid ink" font-weight="700">稲庭</text>
+  <text x="224" y="139.0" class="t-xs mid soft">秋田</text>
+  <rect x="270" y="90.7" width="80" height="70.7" rx="9" class="paper st-f dash" stroke-width="1.2"/>
+  <text x="310" y="124.0" class="t-xs mid ink" font-weight="700">水沢・五島など</text>
+  <text x="310" y="139.0" class="t-xs mid soft">三つ目は諸説</text>
+  <rect x="8" y="173.3" width="82" height="70.7" rx="10" class="fl"/>
+  <text x="49" y="212.6" class="t-xs mid on" font-weight="700">三大和牛</text>
+  <rect x="98" y="173.3" width="80" height="70.7" rx="9" class="tint"/>
+  <text x="138" y="206.6" class="t-xs mid ink" font-weight="700">松阪牛</text>
+  <text x="138" y="221.6" class="t-xs mid soft">三重</text>
+  <rect x="184" y="173.3" width="80" height="70.7" rx="9" class="tint"/>
+  <text x="224" y="206.6" class="t-xs mid ink" font-weight="700">神戸ビーフ</text>
+  <text x="224" y="221.6" class="t-xs mid soft">兵庫</text>
+  <rect x="270" y="173.3" width="80" height="70.7" rx="9" class="paper st-f dash" stroke-width="1.2"/>
+  <text x="310" y="206.6" class="t-xs mid ink" font-weight="700">近江牛・米沢牛</text>
+  <text x="310" y="221.6" class="t-xs mid soft">三つ目は諸説</text>
+  <text x="352" y="272" class="t-xs end soft">点線＝説が分かれる</text>
+</svg>

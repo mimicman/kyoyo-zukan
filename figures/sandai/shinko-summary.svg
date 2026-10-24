@@ -1,0 +1,48 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 信仰と商いの三大 -->
+  <rect x="8" y="8.0" width="82" height="50.0" rx="10" class="fl"/>
+  <text x="49" y="37.0" class="t-xs mid on" font-weight="700">三大稲荷</text>
+  <rect x="98" y="8.0" width="80" height="50.0" rx="9" class="tint"/>
+  <text x="138" y="31.0" class="t-xs mid ink" font-weight="700">伏見稲荷大社</text>
+  <text x="138" y="46.0" class="t-xs mid soft">京都</text>
+  <rect x="184" y="8.0" width="80" height="50.0" rx="9" class="paper st-f dash" stroke-width="1.2"/>
+  <text x="224" y="31.0" class="t-xs mid ink" font-weight="700">豊川・笠間</text>
+  <text x="224" y="46.0" class="t-xs mid soft">諸説あり</text>
+  <rect x="270" y="8.0" width="80" height="50.0" rx="9" class="paper st-f dash" stroke-width="1.2"/>
+  <text x="310" y="31.0" class="t-xs mid ink" font-weight="700">祐徳・最上</text>
+  <text x="310" y="46.0" class="t-xs mid soft">などが名乗る</text>
+  <rect x="8" y="70.0" width="82" height="50.0" rx="10" class="fl"/>
+  <text x="49" y="99.0" class="t-xs mid on" font-weight="700">三大八幡宮</text>
+  <rect x="98" y="70.0" width="80" height="50.0" rx="9" class="tint"/>
+  <text x="138" y="93.0" class="t-xs mid ink" font-weight="700">宇佐神宮</text>
+  <text x="138" y="108.0" class="t-xs mid soft">大分</text>
+  <rect x="184" y="70.0" width="80" height="50.0" rx="9" class="tint"/>
+  <text x="224" y="93.0" class="t-xs mid ink" font-weight="700">石清水八幡宮</text>
+  <text x="224" y="108.0" class="t-xs mid soft">京都</text>
+  <rect x="270" y="70.0" width="80" height="50.0" rx="9" class="paper st-f dash" stroke-width="1.2"/>
+  <text x="310" y="93.0" class="t-xs mid ink" font-weight="700">鶴岡・筥崎</text>
+  <text x="310" y="108.0" class="t-xs mid soft">三つ目は諸説</text>
+  <rect x="8" y="132.0" width="82" height="50.0" rx="10" class="fl"/>
+  <text x="49" y="161.0" class="t-xs mid on" font-weight="700">三大商人</text>
+  <rect x="98" y="132.0" width="80" height="50.0" rx="9" class="tint"/>
+  <text x="138" y="155.0" class="t-xs mid ink" font-weight="700">近江商人</text>
+  <text x="138" y="170.0" class="t-xs mid soft">滋賀</text>
+  <rect x="184" y="132.0" width="80" height="50.0" rx="9" class="tint"/>
+  <text x="224" y="155.0" class="t-xs mid ink" font-weight="700">伊勢商人</text>
+  <text x="224" y="170.0" class="t-xs mid soft">三重</text>
+  <rect x="270" y="132.0" width="80" height="50.0" rx="9" class="tint"/>
+  <text x="310" y="155.0" class="t-xs mid ink" font-weight="700">大坂商人</text>
+  <text x="310" y="170.0" class="t-xs mid soft">大阪</text>
+  <rect x="8" y="194.0" width="82" height="50.0" rx="10" class="fl"/>
+  <text x="49" y="223.0" class="t-xs mid on" font-weight="700">三大中華街</text>
+  <rect x="98" y="194.0" width="80" height="50.0" rx="9" class="tint"/>
+  <text x="138" y="217.0" class="t-xs mid ink" font-weight="700">横浜中華街</text>
+  <text x="138" y="232.0" class="t-xs mid soft">神奈川</text>
+  <rect x="184" y="194.0" width="80" height="50.0" rx="9" class="tint"/>
+  <text x="224" y="217.0" class="t-xs mid ink" font-weight="700">南京町</text>
+  <text x="224" y="232.0" class="t-xs mid soft">兵庫（神戸）</text>
+  <rect x="270" y="194.0" width="80" height="50.0" rx="9" class="tint"/>
+  <text x="310" y="217.0" class="t-xs mid ink" font-weight="700">新地中華街</text>
+  <text x="310" y="232.0" class="t-xs mid soft">長崎</text>
+  <text x="352" y="272" class="t-xs end soft">点線＝説が分かれる</text>
+</svg>

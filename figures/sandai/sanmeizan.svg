@@ -1,0 +1,20 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 三名山の高さくらべ（実際の高さの比） -->
+  <path d="M8 236 L70 68.0 L132 236 Z" class="tint st-f" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M60.4 90.0 L70 68.0 L79.6 90.0 L74 85.0 L70 90.0 L66 85.0 Z" class="paper st-f" stroke-width="1"/>
+  <text x="70" y="44.0" class="t-m mid ink">富士山</text>
+  <text x="70" y="60.0" class="t-xs mid fl" font-weight="700">3776m</text>
+  <text x="70" y="254" class="t-xs mid soft">山梨・静岡</text>
+  <path d="M118 236 L180 102.4 L242 236 Z" class="tint st-f" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M170.4 124.4 L180 102.4 L189.6 124.4 L184 119.4 L180 124.4 L176 119.4 Z" class="paper st-f" stroke-width="1"/>
+  <text x="180" y="78.4" class="t-m mid ink">立山</text>
+  <text x="180" y="94.4" class="t-xs mid fl" font-weight="700">3003m（雄山）</text>
+  <text x="180" y="254" class="t-xs mid soft">富山</text>
+  <path d="M228 236 L290 115.8 L352 236 Z" class="tint st-f" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M280.4 137.8 L290 115.8 L299.6 137.8 L294 132.8 L290 137.8 L286 132.8 Z" class="paper st-f" stroke-width="1"/>
+  <text x="290" y="91.8" class="t-m mid ink">白山</text>
+  <text x="290" y="107.8" class="t-xs mid fl" font-weight="700">2702m</text>
+  <text x="290" y="254" class="t-xs mid soft">石川・岐阜</text>
+  <path d="M8 236 H352" class="st" stroke-width="1.5"/>
+  <text x="352" y="272" class="t-xs end soft">どれも山そのものが信仰の対象</text>
+</svg>

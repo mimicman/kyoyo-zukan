@@ -1,0 +1,39 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 三大中華街の場所 -->
+  <polygon points="168.8,10.9 180.8,22.5 197.6,32.7 209.6,28.3 206.0,38.5 215.6,41.4 198.8,48.6 185.6,61.7 170.0,54.4 158.0,57.3 150.8,67.5 146.0,70.4 146.0,57.3 150.8,44.2 162.8,42.8 165.2,28.3 165.2,13.8" class="tint st-soft" stroke-width="1" stroke-linejoin="round"/>
+  <polygon points="156.8,68.9 164.0,70.4 162.8,82.0 168.8,90.7 170.0,97.9 165.2,113.9 158.0,116.8 156.8,135.6 153.2,144.3 155.6,153.0 144.8,164.6 143.6,154.5 141.2,158.8 135.2,160.2 131.6,169.0 128.0,163.2 120.8,169.0 110.0,167.5 108.8,173.3 102.8,176.2 95.6,186.4 87.2,179.1 88.4,173.3 90.8,167.5 81.2,167.5 70.4,170.4 62.0,173.3 52.4,176.2 38.0,179.1 36.8,173.3 42.8,170.4 56.0,158.8 65.6,154.5 78.8,154.5 90.8,154.5 96.8,151.6 99.2,145.8 106.4,138.5 106.4,128.4 113.6,126.9 110.0,135.6 116.0,135.6 128.0,128.4 138.8,116.8 143.6,105.2 146.0,92.1 143.6,82.0 149.6,73.2 154.4,77.6" class="tint st-soft" stroke-width="1" stroke-linejoin="round"/>
+  <polygon points="54.8,179.1 60.8,176.2 69.2,173.3 81.2,174.8 82.4,180.6 76.4,187.8 69.2,184.9 62.0,196.5 56.0,193.6 50.0,187.8" class="tint st-soft" stroke-width="1" stroke-linejoin="round"/>
+  <polygon points="36.8,179.1 45.2,183.5 48.8,192.2 45.2,202.3 42.8,213.9 34.4,221.2 28.4,218.3 29.6,208.1 33.2,198.0 28.4,195.1 23.6,198.0 21.2,190.7 23.6,186.4 30.8,183.5" class="tint st-soft" stroke-width="1" stroke-linejoin="round"/>
+  <path d="M141.7 156.8 L149.7 174.8" class="st-f" stroke-width="1.2"/>
+  <circle cx="141.7" cy="156.8" r="2.5" class="fl"/>
+  <circle cx="149.7" cy="174.8" r="8.5" class="fl"/>
+  <text x="149.7" y="178.8" class="t-xs mid on" font-weight="700">1</text>
+  <path d="M88.3 167.6 L84.3 187.6" class="st-f" stroke-width="1.2"/>
+  <circle cx="88.3" cy="167.6" r="2.5" class="fl"/>
+  <circle cx="84.3" cy="187.6" r="8.5" class="fl"/>
+  <text x="84.3" y="191.6" class="t-xs mid on" font-weight="700">2</text>
+  <path d="M24.6 195.9 L22.6 213.9" class="st-f" stroke-width="1.2"/>
+  <circle cx="24.6" cy="195.9" r="2.5" class="fl"/>
+  <circle cx="22.6" cy="213.9" r="8.5" class="fl"/>
+  <text x="22.6" y="217.9" class="t-xs mid on" font-weight="700">3</text>
+  <rect x="234" y="10" width="118" height="78" rx="10" class="bgc"/>
+  <circle cx="250" cy="28" r="8.5" class="fl"/>
+  <text x="250" y="32" class="t-xs mid on" font-weight="700">1</text>
+  <text x="264" y="32" class="t-s ink" font-weight="700">横浜中華街</text>
+  <text x="244" y="54" class="t-xs soft">神奈川県</text>
+  <text x="244" y="71" class="t-xs ink">幕末の開港から</text>
+  <rect x="234" y="96" width="118" height="78" rx="10" class="bgc"/>
+  <circle cx="250" cy="114" r="8.5" class="fl"/>
+  <text x="250" y="118" class="t-xs mid on" font-weight="700">2</text>
+  <text x="264" y="118" class="t-s ink" font-weight="700">南京町</text>
+  <text x="244" y="140" class="t-xs soft">兵庫県（神戸）</text>
+  <text x="244" y="157" class="t-xs ink">明治の開港から</text>
+  <rect x="234" y="182" width="118" height="78" rx="10" class="bgc"/>
+  <circle cx="250" cy="200" r="8.5" class="fl"/>
+  <text x="250" y="204" class="t-xs mid on" font-weight="700">3</text>
+  <text x="264" y="204" class="t-s ink" font-weight="700">新地中華街</text>
+  <text x="244" y="226" class="t-xs soft">長崎県</text>
+  <text x="244" y="243" class="t-xs ink">唐人屋敷の近くから</text>
+  <text x="10" y="252" class="t-xs soft">どれも外国の船が出入りした港町</text>
+  <text x="10" y="270" class="t-xs fl" font-weight="700">春節の祭りでにぎわう</text>
+</svg>

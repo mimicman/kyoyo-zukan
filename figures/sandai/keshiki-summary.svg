@@ -1,0 +1,36 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 景色と名所の三大 -->
+  <rect x="8" y="8.0" width="82" height="77.3" rx="10" class="fl"/>
+  <text x="49" y="50.7" class="t-xs mid on" font-weight="700">日本三景</text>
+  <rect x="98" y="8.0" width="80" height="77.3" rx="9" class="tint"/>
+  <text x="138" y="44.7" class="t-xs mid ink" font-weight="700">松島</text>
+  <text x="138" y="59.7" class="t-xs mid soft">宮城</text>
+  <rect x="184" y="8.0" width="80" height="77.3" rx="9" class="tint"/>
+  <text x="224" y="44.7" class="t-xs mid ink" font-weight="700">天橋立</text>
+  <text x="224" y="59.7" class="t-xs mid soft">京都</text>
+  <rect x="270" y="8.0" width="80" height="77.3" rx="9" class="tint"/>
+  <text x="310" y="44.7" class="t-xs mid ink" font-weight="700">宮島</text>
+  <text x="310" y="59.7" class="t-xs mid soft">広島</text>
+  <rect x="8" y="97.3" width="82" height="77.3" rx="10" class="fl"/>
+  <text x="49" y="140.0" class="t-xs mid on" font-weight="700">三名山</text>
+  <rect x="98" y="97.3" width="80" height="77.3" rx="9" class="tint"/>
+  <text x="138" y="134.0" class="t-xs mid ink" font-weight="700">富士山</text>
+  <text x="138" y="149.0" class="t-xs mid soft">山梨・静岡</text>
+  <rect x="184" y="97.3" width="80" height="77.3" rx="9" class="tint"/>
+  <text x="224" y="134.0" class="t-xs mid ink" font-weight="700">立山</text>
+  <text x="224" y="149.0" class="t-xs mid soft">富山</text>
+  <rect x="270" y="97.3" width="80" height="77.3" rx="9" class="tint"/>
+  <text x="310" y="134.0" class="t-xs mid ink" font-weight="700">白山</text>
+  <text x="310" y="149.0" class="t-xs mid soft">石川・岐阜</text>
+  <rect x="8" y="186.7" width="82" height="77.3" rx="10" class="fl"/>
+  <text x="49" y="229.4" class="t-xs mid on" font-weight="700">三大夜景</text>
+  <rect x="98" y="186.7" width="80" height="77.3" rx="9" class="tint"/>
+  <text x="138" y="223.4" class="t-xs mid ink" font-weight="700">函館山</text>
+  <text x="138" y="238.4" class="t-xs mid soft">北海道</text>
+  <rect x="184" y="186.7" width="80" height="77.3" rx="9" class="tint"/>
+  <text x="224" y="223.4" class="t-xs mid ink" font-weight="700">摩耶山・六甲山</text>
+  <text x="224" y="238.4" class="t-xs mid soft">兵庫</text>
+  <rect x="270" y="186.7" width="80" height="77.3" rx="9" class="tint"/>
+  <text x="310" y="223.4" class="t-xs mid ink" font-weight="700">稲佐山</text>
+  <text x="310" y="238.4" class="t-xs mid soft">長崎</text>
+</svg>

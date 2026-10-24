@@ -1,0 +1,37 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 庭・城・大仏の三大 -->
+  <rect x="8" y="8.0" width="82" height="70.7" rx="10" class="fl"/>
+  <text x="49" y="47.3" class="t-xs mid on" font-weight="700">三名園</text>
+  <rect x="98" y="8.0" width="80" height="70.7" rx="9" class="tint"/>
+  <text x="138" y="41.3" class="t-xs mid ink" font-weight="700">兼六園</text>
+  <text x="138" y="56.3" class="t-xs mid soft">石川（金沢）</text>
+  <rect x="184" y="8.0" width="80" height="70.7" rx="9" class="tint"/>
+  <text x="224" y="41.3" class="t-xs mid ink" font-weight="700">後楽園</text>
+  <text x="224" y="56.3" class="t-xs mid soft">岡山</text>
+  <rect x="270" y="8.0" width="80" height="70.7" rx="9" class="tint"/>
+  <text x="310" y="41.3" class="t-xs mid ink" font-weight="700">偕楽園</text>
+  <text x="310" y="56.3" class="t-xs mid soft">茨城（水戸）</text>
+  <rect x="8" y="90.7" width="82" height="70.7" rx="10" class="fl"/>
+  <text x="49" y="130.0" class="t-xs mid on" font-weight="700">三名城</text>
+  <rect x="98" y="90.7" width="80" height="70.7" rx="9" class="tint"/>
+  <text x="138" y="124.0" class="t-xs mid ink" font-weight="700">名古屋城</text>
+  <text x="138" y="139.0" class="t-xs mid soft">愛知</text>
+  <rect x="184" y="90.7" width="80" height="70.7" rx="9" class="tint"/>
+  <text x="224" y="124.0" class="t-xs mid ink" font-weight="700">大坂城</text>
+  <text x="224" y="139.0" class="t-xs mid soft">大阪</text>
+  <rect x="270" y="90.7" width="80" height="70.7" rx="9" class="tint"/>
+  <text x="310" y="124.0" class="t-xs mid ink" font-weight="700">熊本城</text>
+  <text x="310" y="139.0" class="t-xs mid soft">熊本</text>
+  <rect x="8" y="173.3" width="82" height="70.7" rx="10" class="fl"/>
+  <text x="49" y="212.6" class="t-xs mid on" font-weight="700">三大仏</text>
+  <rect x="98" y="173.3" width="80" height="70.7" rx="9" class="tint"/>
+  <text x="138" y="206.6" class="t-xs mid ink" font-weight="700">奈良の大仏</text>
+  <text x="138" y="221.6" class="t-xs mid soft">東大寺</text>
+  <rect x="184" y="173.3" width="80" height="70.7" rx="9" class="tint"/>
+  <text x="224" y="206.6" class="t-xs mid ink" font-weight="700">鎌倉の大仏</text>
+  <text x="224" y="221.6" class="t-xs mid soft">高徳院</text>
+  <rect x="270" y="173.3" width="80" height="70.7" rx="9" class="paper st-f dash" stroke-width="1.2"/>
+  <text x="310" y="206.6" class="t-xs mid ink" font-weight="700">高岡大仏など</text>
+  <text x="310" y="221.6" class="t-xs mid soft">富山ほか</text>
+  <text x="352" y="272" class="t-xs end soft">点線＝説が分かれる</text>
+</svg>

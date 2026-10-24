@@ -1,0 +1,36 @@
+<svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 滝・急流・鍾乳洞の三大 -->
+  <rect x="8" y="8.0" width="82" height="77.3" rx="10" class="fl"/>
+  <text x="49" y="50.7" class="t-xs mid on" font-weight="700">三名瀑</text>
+  <rect x="98" y="8.0" width="80" height="77.3" rx="9" class="tint"/>
+  <text x="138" y="44.7" class="t-xs mid ink" font-weight="700">華厳滝</text>
+  <text x="138" y="59.7" class="t-xs mid soft">栃木</text>
+  <rect x="184" y="8.0" width="80" height="77.3" rx="9" class="tint"/>
+  <text x="224" y="44.7" class="t-xs mid ink" font-weight="700">那智滝</text>
+  <text x="224" y="59.7" class="t-xs mid soft">和歌山</text>
+  <rect x="270" y="8.0" width="80" height="77.3" rx="9" class="tint"/>
+  <text x="310" y="44.7" class="t-xs mid ink" font-weight="700">袋田の滝</text>
+  <text x="310" y="59.7" class="t-xs mid soft">茨城</text>
+  <rect x="8" y="97.3" width="82" height="77.3" rx="10" class="fl"/>
+  <text x="49" y="140.0" class="t-xs mid on" font-weight="700">三大急流</text>
+  <rect x="98" y="97.3" width="80" height="77.3" rx="9" class="tint"/>
+  <text x="138" y="134.0" class="t-xs mid ink" font-weight="700">最上川</text>
+  <text x="138" y="149.0" class="t-xs mid soft">山形</text>
+  <rect x="184" y="97.3" width="80" height="77.3" rx="9" class="tint"/>
+  <text x="224" y="134.0" class="t-xs mid ink" font-weight="700">富士川</text>
+  <text x="224" y="149.0" class="t-xs mid soft">山梨・静岡</text>
+  <rect x="270" y="97.3" width="80" height="77.3" rx="9" class="tint"/>
+  <text x="310" y="134.0" class="t-xs mid ink" font-weight="700">球磨川</text>
+  <text x="310" y="149.0" class="t-xs mid soft">熊本</text>
+  <rect x="8" y="186.7" width="82" height="77.3" rx="10" class="fl"/>
+  <text x="49" y="229.4" class="t-xs mid on" font-weight="700">三大鍾乳洞</text>
+  <rect x="98" y="186.7" width="80" height="77.3" rx="9" class="tint"/>
+  <text x="138" y="223.4" class="t-xs mid ink" font-weight="700">秋芳洞</text>
+  <text x="138" y="238.4" class="t-xs mid soft">山口</text>
+  <rect x="184" y="186.7" width="80" height="77.3" rx="9" class="tint"/>
+  <text x="224" y="223.4" class="t-xs mid ink" font-weight="700">龍泉洞</text>
+  <text x="224" y="238.4" class="t-xs mid soft">岩手</text>
+  <rect x="270" y="186.7" width="80" height="77.3" rx="9" class="tint"/>
+  <text x="310" y="223.4" class="t-xs mid ink" font-weight="700">龍河洞</text>
+  <text x="310" y="238.4" class="t-xs mid soft">高知</text>
+</svg>
