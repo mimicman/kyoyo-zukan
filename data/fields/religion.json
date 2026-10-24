@@ -621,7 +621,8 @@
       "links": [
         "japan/eras",
         "japan/ancient-summary",
-        "japan/meiji"
+        "japan/meiji",
+        "sandai/shinko-summary"
       ]
     },
     {
@@ -658,7 +659,8 @@
       "links": [
         "japan/eras",
         "architecture/japanese-temple",
-        "japan/ritsuryo"
+        "japan/ritsuryo",
+        "sandai/inari"
       ],
       "chapter": "japan"
     },
@@ -778,7 +780,8 @@
       "links": [
         "religion/syncretism",
         "japan/edo-culture",
-        "space/seasons"
+        "space/seasons",
+        "sandai/matsuri"
       ]
     }
   ]

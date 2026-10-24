@@ -193,7 +193,8 @@
       "links": [
         "earth/plates",
         "geography/resources",
-        "history/rome"
+        "history/rome",
+        "sandai/onsen"
       ],
       "chapter": "land"
     },
@@ -288,7 +289,8 @@
       "links": [
         "biology/ecosystem",
         "earth/carbon-cycle",
-        "science/energy"
+        "science/energy",
+        "sandai/kyuryu"
       ],
       "chapter": "sky"
     },
@@ -460,7 +462,8 @@
       "links": [
         "biology/photosynthesis",
         "history/industrial",
-        "biology/ecosystem"
+        "biology/ecosystem",
+        "sandai/shonyudo"
       ],
       "chapter": "climate"
     },
